@@ -1,5 +1,5 @@
 # EcoDynIZW
-### We are the Department of Ecological Dynamics at the Leibniz Institute for Zoo and WIldlife Research (IZW).
+### We are the Department of Ecological Dynamics at the Leibniz Institute for Zoo and Wildlife Research (IZW).
 
 ![](https://ecologicaldynamicsizw.files.wordpress.com/2019/03/slide1-1.png)
 
