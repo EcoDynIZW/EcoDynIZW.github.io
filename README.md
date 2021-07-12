@@ -13,7 +13,7 @@
 
 ### Repositories of Published Studies
 
-- [Marescot, Franz, Benhaiem et al. 2021 *J Anim Ecol*](https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol) ([Paper](https://doi.org/10.1111/1365-2656.13555))
+- [Marescot, Franz, Benhaiem et al. (accepted) *J Anim Ecol*](https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol) ([Paper](https://doi.org/10.1111/1365-2656.13555))
 - [Kürschner et al. 2021 *Ecol Evol*](https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol) ([Paper](http://doi.org/10.1002/ece3.7478))
 - [Scherer et al. 2020 *OIKOS*](https://github.com/EcoDynIZW/Scherer_2020_OIKOS) ([Paper](http://doi.org/10.1111/oik.07002))
 - [Radchuk et al. 2019 *Nat Com*](https://github.com/EcoDynIZW/Radchuk_2019_NatCom) ([Paper](http://doi.org/10.1038/s41467-019-10924-4))
