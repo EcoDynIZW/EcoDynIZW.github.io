@@ -1,12 +1,9 @@
 ---
 title: "Team 1 — Individual Dynamics"
 description: |
-  **Lead: Dr. Marion L. East & Dr. Sarah Benhaiem**   
-  **Assistance: Dagmar Thierer, Karl Stephan & Dr. Sonja Metzger**  
+  <b>Lead: Dr. Marion L. East & Dr. Sarah Benhaiem</b>  
+  <b>Assistance: Dagmar Thierer, Karl Stephan & Dr. Sonja Metzger</b>  
   In collaboration with Prof. Heribert Hofer
-output:
-  distill::distill_article:
-    toc: false
 ---
 
 ```{r setup, include=FALSE}
@@ -23,7 +20,7 @@ knitr::include_graphics("img/team-ind-header.png")
   </span>
 </div>
 
-### Overview of our main research foci and methods:
+<b style='font-size16px;'Overview of our main research foci and methods:</b>
 
 ![](img/team-ind-research.png)  
 ![](img/team-ind-methods.png)

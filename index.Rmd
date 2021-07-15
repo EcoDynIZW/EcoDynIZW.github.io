@@ -16,6 +16,10 @@ knitr::opts_chunk$set(echo = FALSE)
   </span>
 </div>
 
+```{r, layout="l-screen-inset"}
+knitr::include_graphics("img/Inf-MV-inferno-cut-a.png")
+```
+
 ## Our Vision
 
 Our ultimate goal is to predict the future viability of wildlife populations and species faced with accelerating environmental change in the anthropocene and to improve landscape scale planning for conservation.
@@ -73,7 +77,7 @@ leaflet() %>%
 - d6raster: A package to automate raster access and processing
 - NLMR (add)
 - Isorix (add)
-- ...
+- camtrapR (add)
 
 
 ## Contact {.appendix}

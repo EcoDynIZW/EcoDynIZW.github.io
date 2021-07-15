@@ -18,21 +18,3 @@ knitr::include_graphics("img/teams-map.png")
 &rarr;&ensp; [Team 1: Individual Dynamics](team-individual.html)  
 &rarr;&ensp; [Team 2: Population Dynamics](team-population.html)  
 &rarr;&ensp; [Team 3: Bioviversity Dynamics](team-biodiversity.html)  
-
-```{r, layout="l-screen-inset shaded"}
-library(leaflet)
-leaflet() %>%
-  #addTiles() %>%  # Add default OpenStreetMap map tiles
-  addProviderTiles(providers$CartoDB.Voyager, group = "Default") %>%
-  addProviderTiles(providers$Stamen.Terrain, group = "Terrain") %>% 
-  addProviderTiles(providers$CartoDB.DarkMatter, group = "Dark") %>%
-  addTiles(group = "OpenStreetMap") %>% 
-  addPopups(lng = 13.521167153974313, lat = 52.506286189883994, 
-            popup = "Leibniz Institute for<br>Zoo and Wildlife Research",
-            options = popupOptions(closeButton = FALSE)) %>%
-  # Layers control
-  addLayersControl(
-    baseGroups = c("Default", "Terrain", "Dark", "OpenStreetMap"),
-    options = layersControlOptions(collapsed = FALSE)
-  )
-```

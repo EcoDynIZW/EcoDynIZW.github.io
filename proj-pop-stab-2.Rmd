@@ -12,5 +12,5 @@ Large changes in Earth’s climate are apparent, and there is some evidence that
 
 <figure>
   <img src="img/chero_picture.jpg" alt="Guillaume Chero" style="width:30%">
-  <cap>Guillaume Chero</cap>
+  <figcaption>Guillaume Chero</figcaption>
 </figure>

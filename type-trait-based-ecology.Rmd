@@ -14,7 +14,7 @@ We study how climate change affects phenological and morphological traits in ani
 
 <figure>
   <img src="img/jones_picture-3.jpg" alt="Carys Jones" style="width:30%">
-  <cap>Carys Jones</cap>
+  <figcaption>Carys Jones</figcaption>
 </figure>
 
 ---
@@ -25,5 +25,5 @@ Large changes in Earth’s climate are apparent, and there is some evidence that
 
 <figure>
   <img src="img/chero_picture.jpg" alt="Guillaume Chero" style="width:40%">
-  <cap>Guillaume Chero</cap>
+  <figcaption>Guillaume Chero</figcaption>
 </figure>

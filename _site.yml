@@ -16,8 +16,6 @@ navbar:
     image: img/d6_white.png
   search: true
   right:
-    - text: "Home"
-      href: index.html
     - text: "Teams"
       menu:
         - text: "Overview"
@@ -28,9 +26,21 @@ navbar:
           href: team-population.html
         - text: "Team 3: Biodiversity Dynamics"
           href: team-biodiversity.html
+    - text: "Research"
+      menu:
+        - text: "Publications"
+          href: publications.html
+        - text: "Competences"
+          href: competences.html
+        - text: "Theses"
+          href: theses.html
+    - text: "Guidelines"
+      href: guidelines.html
     - text: "Wiki"
       href: wiki.html
     - text: "About"
       href: about.html
+    - icon: fa fa-twitter
+      href: https://twitter.com/EcoDynIZW
   source_url: https://github.com/EcoDynIZW/D6_Distill_Webpage
 output: distill::distill_article

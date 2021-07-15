@@ -1,12 +1,16 @@
 ---
 title: "Team 3 — Biodiversity Dynamics"
 description: |
-  **Lead: Dr. Andreas Wilting**   
-  **Assistance: Jan Axtner**  
+  <b>Lead: Dr. Andreas Wilting</b>
+  <b> Assistance: Jan Axtner</b>
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, layout="l-screen-inset"}
+knitr::include_graphics("img/team-div-header.png")
 ```
 
 <div class='highlightbox'>
