@@ -1,7 +1,0 @@
-"0","library(leaflet)
-"
-"2","Paket ‘leaflet’ wurde unter R Version 4.0.3 erstellt"
-"2","Registered S3 method overwritten by 'htmlwidgets':
-  method           from         
-  print.htmlwidget tools:rstudio
-"
