@@ -1,0 +1,48 @@
+---
+title: "Team 2 — Population Dynamics"
+description: |
+  **Lead: Dr. Stephanie Kramer-Schadt & Dr. Viktoriia Radchuk**  
+  **Assistance: Conny Landgraf & Moritz Wenzler** 
+output:
+  distill::distill_article:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, layout="l-screen-inset"}
+knitr::include_graphics("img/team-pop-header.png")
+```
+
+<div class='highlightbox'>
+  <span class='highlight'>
+  We are motivated scientists with complementary skills leading a team dedicated to unravel the drivers behind ecological and evolutionary dynamics of wildlife, with the ultimate aim of contributing to biodiversity conservation under global change. We combine theory with applied ecology, field work with advanced data analysis and simulation modelling.
+  </span>
+</div>
+
+**Stephanie Kramer-Schadt**, Department and Team Lead —  applied ecologist, population and disease dynamics at the landscape scale, passionate about wildlife per se, carnivores in particular, D6 and movement ecology, uses models as tools to communicate management issues.
+
+**Viktoriia Rachuk**, Team Lead —  quantitative ecologist, stability of populations and communities under global change, interested in theory, synthesis, and integration of data with models to assist conservation.
+
+**Dr.Conny Landgraf**, Coordination — organizes us, behavioral ecologist, interested in sensory and acoustic cues of animals.
+
+**Moritz Wenzler**, GIS-Lab — geodata analyst, responsible for the GIS lab, providing geodata and supporting coding.
+
+---
+
+# Running Projects
+
+<div class='headerbox'><hbox>Theory and Synthesis</hbox></div>
+
+### Stability under global change and across levels of organization
+
+![team-pop-stability-overview-figure](img/team-pop-stability.png)
+
+To understand how populations and communities react to global change we study how their stability is affected by disturbances. To this end we model disturbances of different types and intensity and measure several stability metrics.
+
+* [**How do animals respond to climate change?**](proj-pop-stab-1.html)
+* [**How does environmental variation affect stability of populations and communities?**](proj-pop-stab-2.html)
+
+People involved: **Viktoriia Radchuk**, **Guillaume Chero**, **Cédric Scherer**, **Carys Jones**

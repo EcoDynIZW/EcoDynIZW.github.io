@@ -1,0 +1,11 @@
+---
+title: "About D6"
+description: ""
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<span class='highlight'>We are scientists of the Department of Ecological Dynamics at the Leibniz Institute for Zoo and Wildlife Research, Berlin, Germany. Our research is focused on understanding ecological dynamics in space and time, at different levels of organisation, from individuals to communities, and across gradients of human altered environments. We investigate how fitness consequences of processes acting at the individual level, such as social behaviour or movements, competition, predator-prey or host-pathogen interactions, shape population and community dynamics, also at evolutionary scales.</span>
