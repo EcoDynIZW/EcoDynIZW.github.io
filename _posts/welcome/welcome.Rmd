@@ -7,6 +7,10 @@ author:
   - name: Stephanie Kramer–Schadt
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+  - name: Cédric Scherer
+    url: htttps://cedricscherer.com
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
 date: 07-15-2021
 output:
   distill::distill_article:

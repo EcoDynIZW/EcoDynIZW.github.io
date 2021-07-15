@@ -2,18 +2,22 @@
   {
     "path": "posts/welcome/",
     "title": "Welcome to Ecological Dynamics",
-    "description": "Welcome to our new blog, Ecological Dynamics. We hope you enjoy \nreading what we have to say!",
+    "description": "Welcome to our new page for the IZW department Ecological Dynamics. We hope you enjoy \nreading what we have to say and share!",
     "author": [
       {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
+        "name": "Stephanie Kramer–Schadt",
+        "url": {}
+      },
+      {
+        "name": "Cédric Scherer",
+        "url": "htttps://cedricscherer.com"
       }
     ],
-    "date": "2021-07-12",
+    "date": "2021-07-15",
     "categories": [],
     "contents": "\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-07-12T16:47:18+02:00",
+    "last_modified": "2021-07-15T22:45:55+02:00",
     "input_file": {}
   }
 ]
