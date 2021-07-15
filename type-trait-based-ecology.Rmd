@@ -1,7 +1,6 @@
 ---
 title: "Project Type: Trait-Based Ecology"
-description: |
-  Theory and Synthesis | Trait-Based Ecology
+description: ""
 ---
 
 ```{r setup, include=FALSE}

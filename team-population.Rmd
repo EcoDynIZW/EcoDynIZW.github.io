@@ -1,7 +1,7 @@
 ---
 title: "Team 2 — Population Dynamics"
 description: |
-  <b>Lead: Dr. Stephanie Kramer-Schadt & Dr. Viktoriia Radchuk</b>
+  <b>Lead: Dr. Stephanie Kramer-Schadt & Dr. Viktoriia Radchuk</b>  
   <b>Assistance: Conny Landgraf & Moritz Wenzler</b>
 ---
 
@@ -52,7 +52,6 @@ People involved: **Dr. Cédric Scherer**, **Guillaume Chero**, **Carys Jones**
    </ul>
 </small>
 
-<div class='headerbox'><hbox>Theory and Synthesis</hbox></div>
 
 ### Wildlife disease dynamics: Linking host and pathogen traits
 
@@ -60,7 +59,7 @@ People involved: **Dr. Cédric Scherer**, **Guillaume Chero**, **Carys Jones**
 
 Pathogens are an integral part of biodiversity, influencing population dynamics of their hosts and playing an important functional role in shaping community structure. Here, our aim is to understand the effect that species as ‘mobile pathogen links’ with their different movement types and life-history strategies have on disease distribution, spread, persistence and evolution. 
 
-&rarr;&ensp; see als [BioMove Graduate School](https://www.bio-move.org/)
+&ensp;&rarr;&ensp;see also [BioMove Graduate School](https://www.bio-move.org/)
 
 * **Infections on the move**
 * **Pathogen evolution in dynamic landscapes**
@@ -71,7 +70,7 @@ People involved: **Dr. Cédric Scherer**, **Tobias Kürschner**
   <b>Key Publications:</b>
   <ul>
     <li><b>Kramer-Schadt S</b>, Fernandez N, Eisinger D, Grimm V & Thulke HH (2009) Individual variation in infectiousness explains long-term disease persistence in wildlife populations. OIKOS 118: 199-208.</li>
-    </li><b>Kürschner T</b>, </b>Scherer C<b>, <b>Radchuk V</b>, Blaum N & <b>Kramer-Schadt S</b> (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. Ecology and Evolution, accepted.
+    </li><b>Kürschner T</b>, <b>Scherer C</b>, <b>Radchuk V</b>, Blaum N & <b>Kramer-Schadt S</b> (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. Ecology and Evolution, accepted.
   <li><b>Marescot L</b>, <b>Benhaiem S</b>, Gimenez O, <b>Hofer H</b>, Lebreton JD, Olarte-Castillo X A, b>Kramer-Schadt S</b> & <b>Marion L. East</b> (2018) Social status mediates the fitness costs of infection with canine distemper virus in a social carnivore. Functional Ecology. DOI: <a href='https://doi.org/10.1111/1365-2435.13059'>10.1111/1365-2435.13059</a></li>
   <li><b>Scherer C</b>, <b>Radchuk V</b>, <b>Franz M</b>, Thulke HH, Lange M, Grimm V & <b>Kramer‐Schadt S</b> (2020) Moving infections: individual movement decisions drive disease persistence in spatially structured landscapes. OIKOS. DOI: <a href='https://doi.org/10.1111/oik.07002'>10.1111/oik.07002</a></li>
   <li><b>Scherer C</b>, <b>Radchuk V</b>, Staubach C, Müller S, Blaum N, Thulke HH & <b>Kramer‐Schadt S</b> (2019) Seasonal host life‐history processes fuel disease dynamics at different spatial scales. Journal of Animal Ecology. DOI: <a href='https://doi.org/10.1111/1365-2656.13070'>10.1111/1365-2656.13070</a></li>
@@ -82,12 +81,12 @@ People involved: **Dr. Cédric Scherer**, **Tobias Kürschner**
 
 ### Urban wildlife ecology: How do animals respond to novel environments?
 
-![](img/team-pop-urban.jpg)
+![](img/team-pop-urban.png)
 
 Urbanisation poses risks and opportunities for wildlife. We investigate how species cope with these everyday challenges by analysing the spatial factors and species interactions that underlie their distributions along a rural to urban gradient and by making inference on their behavioral plasticity. 
 
-&rarr;&ensp; see also [BIBS — rural-urban coupling](https://www.bbib.org/rural-urban-coupling.html)
-&rarr;&ensp; see also [WT Impact](https://www.wtimpact.de/)
+&ensp;&rarr;&ensp;see also [BIBS — rural-urban coupling](https://www.bbib.org/rural-urban-coupling.html)  
+&ensp;&rarr;&ensp;see also [WT Impact](https://www.wtimpact.de/)
 
 People involved: **Dr. Aimara Planillo**, **Dr. Julie Louvrier**, **Carolin Scholz**, **Sophia Kimmig**, **Simon Moesch**
 
@@ -97,7 +96,7 @@ TBA
 
 ### Wildlife distributions, population dynamics and conservation
 
-![](img/team-pop-wildlife.jpg)
+![](img/team-pop-wildlife.png)
 
 Wildlife faces big challenges persisting in human-dominated landscapes. We model their population dynamics, viability and connectivity using individual-based models on a spatially-explicit basis, with the aim of supporting wildlife management and conservation.
 

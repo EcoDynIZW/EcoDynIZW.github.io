@@ -15,6 +15,6 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::include_graphics("img/teams-map.png")
 ```
 
-&rarr;&ensp; [Team 1: Individual Dynamics](team-individual.html)  
-&rarr;&ensp; [Team 2: Population Dynamics](team-population.html)  
-&rarr;&ensp; [Team 3: Bioviversity Dynamics](team-biodiversity.html)  
+&ensp;&rarr;&ensp;[Team 1: Individual Dynamics](team-individual.html)  
+&ensp;&rarr;&ensp;[Team 2: Population Dynamics](team-population.html)  
+&ensp;&rarr;&ensp;[Team 3: Bioviversity Dynamics](team-biodiversity.html)  
