@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.cap = FALSE)
 We study how climate change affects phenological and morphological traits in animals worldwide. Further, we investigate what are the implications of such trait changes for population dynamics (sTraitChange workshop) and for individual fitness (see also: sDiv workshop [sTraitChange](https://www.idiv.de/de/sdiv/arbeitsgruppen/pool-of-working-groups/straitchange.html). We are currently assembling the trait data base for analysing whether phenological or morphological traits of terrestrial animals are adaptive under climate change scenarios. I am working with Viktoriia Radchuk on the sTraitChange project – a meta-analysis, covering the whole world and multiple taxa, where we are looking at the effects of climate change on traits, and how these changes mediate effects on demographic rates (survival and reproduction) and population dynamics.
 
 
-```{r , fig.cap="Carys Jones"}
-knitr::include_graphics("img/jones_picture-3.jpg")
-```
+<figure>
+  <img src="img/jones_picture-3.jpg" alt="Carys Jones" style="width:30%"><br>
+  <figcaption>Carys Jones</figcaption>
+</figure>
