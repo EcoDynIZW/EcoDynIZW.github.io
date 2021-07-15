@@ -34,10 +34,12 @@ navbar:
           href: competences.html
         - text: "Theses"
           href: theses.html
-    - text: "Guidelines"
-      href: guidelines.html
-    - text: "Wiki"
-      href: wiki.html
+    - text: "Ressources"
+      menu:
+        - text: "Guidelines"
+          href: guidelines.html
+        - text: "Wiki"
+          href: wiki.html
     - text: "About"
       href: about.html
     - icon: fa fa-twitter

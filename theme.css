@@ -30,10 +30,10 @@ html {
   --aside-color:     rgba(0, 0, 0, 0.6);
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
-  --heading-font:    PT Sans Caption; /*-- PT Serif, PT Sans Caption  --*/
+  --heading-font:    PT Sans Caption;
   --mono-font:       PT Mono;
-  --body-font:       PT Sans; /*-- PT Serif   --*/
-  --navbar-font:     PT Sans Narrow;  /* websites + blogs only */
+  --body-font:       PT Sans;
+  --navbar-font:     PT Sans Narrow;
 }
 
 /*-- ARTICLE METADATA --*/
@@ -62,8 +62,8 @@ d-appendix {
 /* These properties only apply to Distill sites and blogs  */
 
 .distill-site-header {
-  --title-size:       22px;
-  --text-size:        19px;
+  --title-size:       20px;
+  --text-size:        17px;
   --text-color:       rgba(255, 255, 255, .8);
   --hover-color:      white;
   --bkgd-color:       #110a31;
@@ -124,7 +124,7 @@ hbox{
 }
 .highlight {
     font-family: PT Serif;
-    font-size:21px;
+    font-size:19px;
     font-weight:600;
     line-height:140%;
 }
