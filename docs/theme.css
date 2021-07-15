@@ -79,6 +79,10 @@ d-appendix {
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
 
+.nav-search {
+  font-size: 13px;
+}
+
 d-article h2 {
     margin: 1rem 0 1rem 0;
 }
@@ -104,10 +108,10 @@ hbox{
   font-weight: bold;
 }
 
-.cap {
+.figcaption {
   font-family: PT Serif;
   color: grey;
-  font-size: 10px;
+  font-size: 11.5px;
   font-style: italic;
 }
 
@@ -120,9 +124,15 @@ hbox{
 }
 .highlight {
     font-family: PT Serif;
-    font-size:20px;
+    font-size:21px;
     font-weight:600;
     line-height:140%;
+}
+
+small {
+    font-family: PT Serif;
+    font-size:11px;
+    line-height:780%;
 }
 
 .nospace {
@@ -148,13 +158,22 @@ hbox{
 		position:fixed;
 		top:0;
 	}
+
   html {
     --title-size: 42px;
     --body-size: 1.1rem;
   }
+
   .distill-site-header {
-    --title-size:       15px;
-    --text-size:        15px;
+    --title-size:       22px;
+    --text-size:        22px;
+  }
+
+  .highlight {
+      font-family: PT Serif;
+      font-size:17px;
+      font-weight:600;
+      line-height:140%;
   }
 }
 

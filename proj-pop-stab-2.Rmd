@@ -1,7 +1,7 @@
 ---
 title: "How does environmental variation affect stability of populations and communities?"
 description: |
-  Theory and Synthesis | [Trait-Based Ecology](type-trait-based-ecology.html), [Simulation Model](https://ecological-dynamics-izw.com/project-type/simulation-model/)
+  Theory and Synthesis | <a href='type-trait-based-ecology.html'>Trait-Based Ecology</a>, <a href='type-simulation-models.html'>Simulation Model</a>
 ---
 
 ```{r setup, include=FALSE}

@@ -18,7 +18,7 @@ The department is composed of three teams on (1) Individual Dynamics, (2) Popula
 
 Stephanie Kramer-Schadt is the department head and leader of the Population Dynamics team. Conny Landgraf is the assistant of the department head; she can assist with administrative duties (e.g. contracts, travel sheets, etc.). Moritz Wenzler and Jan Axtner are responsible for data management, data storage and the working group’s R code collection. As each department member has a specific area of expertise, we created an expert list (see 1.3) if you need help on specific topics. PhD students and scientists are obliged to update this expert list with their own skills and responsibilities as well. 
 
-For information on the Department, check [our webpage](https://www.ecological-dynamics-izw.com) (https://www.ecological-dynamics-izw.com) or subscribe to [our Twitter account](https://www.twitter.com/EcoDynIZW) (@EcoDynIZW) for news about papers, helpful R-code, courses or scientific positions.
+For information on the Department, check [our webpage](https://www.ecological-dynamics-izw.com) or subscribe to [our Twitter account](https://www.twitter.com/EcoDynIZW) (@EcoDynIZW) for news about papers, helpful R-code, courses or scientific positions.
 
 
 ### Teams of the Department of Ecological Dynamics:
@@ -98,7 +98,7 @@ Project documentation is not a final task, but an ongoing process starting from 
 
 #### Electronic lab-book
 
-At the start of each new project, create an electronic lab-book to document your workflow and decisions therein. It is of major importance that you keep this lab-book updated. For the ease of use we recommend simple .doc files (MS Word, Libre Office etc.) to keep record of our work. Write down important thoughts, things you have tried, also failed experiments. Try to use clear and comprehensible notes. Although this generates some additional effort you will realize soon that it will help you and others to track your work and make it reproducible. We highly recommend to use GitHub as version control of your project. You have to connect your GitHub account to the EcoDynIZW organization on [GitHub](https://github.com/EcoDynIZW/d6) (https://github.com/EcoDynIZW/d6) to share code with colleagues. Please create repositories on the EcoDynIZW account and not on your private account! It is mandatory to hand over the electronic lab-book to the institute as part of the ‘Safeguarding and Storing of Primary Data’ regulation of the German Research Council DFG after finishing your project. 
+At the start of each new project, create an electronic lab-book to document your workflow and decisions therein. It is of major importance that you keep this lab-book updated. For the ease of use we recommend simple .doc files (MS Word, Libre Office etc.) to keep record of our work. Write down important thoughts, things you have tried, also failed experiments. Try to use clear and comprehensible notes. Although this generates some additional effort you will realize soon that it will help you and others to track your work and make it reproducible. We highly recommend to use GitHub as version control of your project. You have to connect your GitHub account to the EcoDynIZW organization on [GitHub](https://github.com/EcoDynIZW/) to share code with colleagues. Please create repositories on the EcoDynIZW account and not on your private account! It is mandatory to hand over the electronic lab-book to the institute as part of the ‘Safeguarding and Storing of Primary Data’ regulation of the German Research Council DFG after finishing your project. 
 To document scripting we recommend to use R Markdown (`.rmd`) files if possible. Between your code chunks you should annotate the script with everything that is necessary to understand and follow the code. Additionally, if you push new code to GitHub for version control, you have to comment on your committed code as well. It may be necessary to have an additional word document.
 
 
@@ -109,7 +109,7 @@ To document scripting we recommend to use R Markdown (`.rmd`) files if possible.
 * Write the author, name and date in a header (you can use the d6 package templates for this as well).
 *	Keep code in scripts as concise as possible.
 *	Use in-line comments to explain your code that others can follow your code. 
-*	If possible, use dynamic paths (i.e. see R-package [`here`](https://here.r-lib.org/) (https://here.r-lib.org/)).
+*	If possible, use dynamic paths (i.e. see R-package [`here`](https://here.r-lib.org/).
 *	Always set variables/ parameters at the top of your script; do not set values somewhere inside the code as this is error prone, because these values tend to be forgotten to get changed when updating a script. The same applies to loading packages. Please also make sure to only load packages that are really needed and remove those that you are not using for the final analysis.
 *	Save the output of a script as .rds file to smoothly load it in the next script. Additionally, save the output in a file format usable beyond R, e.g. use .csv or .txt if you want to save tabular data or GeoTiff if you want to save a raster map.
 *	Use separate scripts to create figures of publishable quality (700 dpi) from the results. Use a vector graphics format like pdf.
@@ -118,7 +118,7 @@ To document scripting we recommend to use R Markdown (`.rmd`) files if possible.
 
 ### R
 
-*	Stick to the [Rstudio style guide](https://style.tidyverse.org/index.html) (https://style.tidyverse.org/index.html) to ensure readability of code. 
+*	Stick to the [Rstudio style guide](https://style.tidyverse.org/index.html) to ensure readability of code. 
 *	We recommend using R-Studio projects and R Markdown documents when scripting in R. If you use another “integrated development environment” (IDE) make sure you can provide versioned plain R scripts using a relative path to the used data files. 
 *	Implement version control by using GitHub. If you install packages or use scripts and code chunks from GitHub provided by others, be aware to acknowledge the code developer prior to publication of scripts.
 *	Do not save the R history or the R environment. Always start a fresh and an empty R session to avoid artifacts by using objects of functions that were not defined in your script. More details here: https://www.tidyverse.org/blog/2017/12/workflow-vs-script/.
@@ -169,7 +169,7 @@ Please find additional information on ‘how to write a scientific paper’, how
 
 ## Appendix A) Folder Structure for Project Folders
 
-A new project can be started by installing the [d6 R-package](https://github.com/EcoDynIZW/d6) (https://github.com/EcoDynIZW/d6). Running `new_project()` with a unique and descriptive name for your project (see below) will create a full scaffolding structure for all your future analysis steps. If you like, you can also specify a path and the project will be created there. 
+A new project can be started by installing the [d6 R-package](https://github.com/EcoDynIZW/d6). Running `new_project()` with a unique and descriptive name for your project (see below) will create a full scaffolding structure for all your future analysis steps. If you like, you can also specify a path and the project will be created there. 
 
 Please create repositories on the EcoDynIZW account and not on your private
 account!

@@ -1,7 +1,7 @@
 ---
 title: "How do animals respond to climate change?"
 description: |
-  Theory and Synthesis | [Trait-Based Ecology](type-trait-based-ecology.html)
+  Theory and Synthesis | <a href='type-trait-based-ecology.html'>Trait-Based Ecology</a>
 ---
 
 ```{r setup, include=FALSE}
