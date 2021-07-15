@@ -2141,10 +2141,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --aside-color:     rgba(0, 0, 0, 0.6);
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    PT Sans Caption; /*-- PT Serif, PT Sans Caption  --*/
+    --heading-font:    PT Sans Caption;
     --mono-font:       PT Mono;
-    --body-font:       PT Sans; /*-- PT Serif   --*/
-    --navbar-font:     PT Sans Narrow;  /* websites + blogs only */
+    --body-font:       PT Sans;
+    --navbar-font:     PT Sans Narrow;
   }
 
   /*-- ARTICLE METADATA --*/
@@ -2173,7 +2173,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* These properties only apply to Distill sites and blogs  */
 
   .distill-site-header {
-    --title-size:       21px;
+    --title-size:       20px;
     --text-size:        17px;
     --text-color:       rgba(255, 255, 255, .8);
     --hover-color:      white;
@@ -2262,7 +2262,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     clear: both;
   }
 
-  @media screen and (max-width: 898px) {
+  @media screen and (max-width: 768px) {
   	.distill-site-header.responsive{
   		max-height:100vh;
   		overflow-y:auto;
@@ -2288,7 +2288,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     }
   }
 
-  @media screen and (min-width: 899px) {
+  @media screen and (min-width: 769px) {
   	.nav-dropdown-content{
   		max-height:100vh;
   		overflow-y:auto;
@@ -2509,8 +2509,17 @@ Research
 <a href="theses.html">Theses</a>
 </div>
 </div>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+Ressources
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
 <a href="guidelines.html">Guidelines</a>
 <a href="wiki.html">Wiki</a>
+</div>
+</div>
 <a href="about.html">About</a>
 <a href="https://twitter.com/EcoDynIZW">
 <i class="fa fa-twitter" aria-hidden="true"></i>
