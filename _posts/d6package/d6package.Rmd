@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-The [`d6` package](https://github.com/EcoDynIZW/d6) aims to simplify workflows of D& research projects by providing a standardized folder structure incl. version control, Rmarkdown templates, and other utilities.
+The [`d6` package](https://github.com/EcoDynIZW/d6) aims to simplify workflows of our D6 research projects by providing a standardized folder structure incl. version control, Rmarkdown templates, and other utilities.
 
 There are four main functionalities:
 
