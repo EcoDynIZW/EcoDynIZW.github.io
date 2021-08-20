@@ -1,7 +1,7 @@
 ---
-title: "The `d6` package: Simplify workflows of D6 research projects"
+title: "The {d6} R package: Simplify workflows of D6 research projects"
 description: |
-  The goal of the `{d6}` package is to simplify the project workflow within the department “Ecological Dynamics” at the Leibniz Institute for Zoo and Wildlife Research by providing a standardized folder structure, templates for reports and utility functions.
+  The goal of the {d6} package is to simplify the project workflow within the department “Ecological Dynamics” at the Leibniz Institute for Zoo and Wildlife Research by providing a standardized folder structure, templates for reports and utility functions.
 preview: https://raw.githubusercontent.com/EcoDynIZW/d6/master/man/figures/hexlogo_pure.png
 author:
   - name: Cédric Scherer
@@ -50,9 +50,9 @@ install.packages("devtools")
 devtools::install_github("EcoDynIZW/d6")
 ```
 
-(Note: If you are asked if you want to update other packgaes either
+If you are asked if you want to update other packages either
 press “No” (option 3) and continue or update the packages before running
-the install command again.)
+the install command again.
 
 <br>
 
@@ -120,7 +120,7 @@ additional files looks like this:
     └── project.Rproj       —  Rproject file: use to start your project
 ```
 
-# 
+<br>
 
 ### Use A Custom Root Directory
 
@@ -138,7 +138,7 @@ d6::new_project("unicornus_wl_sdm_smith_j", path = "absolute/path/to/the/root/fo
 The resulting final directory of your project would be
 `absolute/path/to/the/root/folder/unicornus_wl_sdm_smith_j`.
 
-# 
+<br> 
 
 ### Use Version Control
 
@@ -160,7 +160,7 @@ Note that to create a GitHub repo you will need to have configured your
 system as explained
 [here](https://gist.github.com/Z3tt/3dab3535007acf108391649766409421).
 
-# 
+<br>
 
 ### Setup without Geo Directories
 
@@ -172,7 +172,7 @@ setting `geo` to `FALSE`:
 d6::new_project("unicornus_wl_sdm_smith_j", geo = FALSE)
 ```
 
-# 
+<br>
 
 ### Add Documentation to Your Project
 
@@ -260,7 +260,7 @@ d6::render_report("notsurewhybutIhaveasubfolder/my-report.Rmd")
 
 ---
 
-## Acknowledgements:
+## Acknowledgements
 
 This package would not exist without the work of many great people!
 
