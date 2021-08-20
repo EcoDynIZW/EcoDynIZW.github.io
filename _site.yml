@@ -40,8 +40,10 @@ navbar:
           href: guidelines.html
         - text: "Wiki"
           href: wiki.html
-    - text: "About"
-      href: about.html
+    - text: "Theses"
+      href: theses.html
+    #- text: "About"
+    #  href: about.html
     - icon: fa fa-twitter
       href: https://twitter.com/EcoDynIZW
   source_url: https://github.com/EcoDynIZW
