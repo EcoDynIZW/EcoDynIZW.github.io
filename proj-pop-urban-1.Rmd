@@ -1,0 +1,17 @@
+---
+title: "Bridging spatial data in community distribution models"
+description: |
+  Applied Ecology | <a href='type-spatial-model.html'>Spatial Model</a>, <a href='type-urban-ecology.html'>Urban Ecology</a>
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.cap = FALSE)
+```
+
+Understanding species distributions is fundamental for wildlife management and landscape planning. Species distributions are largely driven by their habitat associations and their response to environmental or anthropogenic factors. In addition, species distributions and the structure of ecological communities are also driven by species interactions such as predation or competition. Using data that were collected in fundamentally different ways complicates the process of modeling the distribution and structure of biological communities. Based on this problematic, I will work on evaluating how environmental and anthropogenic drivers shape the assembly and dynamics of mammalian communities at different spatiotemporal scales.
+
+<figure>
+  <img src="img/people-louvrier.jpg" alt="Dr. Julie Louvrier" style="width:30%"><br>
+  <figcaption>Dr. Julie Louvrier</figcaption>
+</figure>

@@ -7,7 +7,7 @@ description: ""
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-### [Disentangling the effects of species interactions and human disturbance on community composition in urban areas]()
+### [Effects of species interactions and human disturbance on community composition in urban areas](proj-pop-urban-2.html)
 
 Urban areas present new challenges to wildlife communities. Special conditions created by human disturbance and novel stressors, such as noise or light, affect both species response to urban environment and species interactions. In order to better understand species and communities’ response to urban environment and to predict (multi)species distributions, I work with hierarchical multi-response models to study community composition and analyse how species interactions are modified by anthropogenic disturbance in an urbanization gradient. I do this with data from invertebrates, birds and mammals, including competition/facilitation relationships, as well as predator-prey interactions.
 
@@ -27,4 +27,26 @@ In this project, we have addressed this gap using both theoretical and empirical
 <figure>
   <img src="img/people-scherer.jpg" alt="Dr. Cédric Scherer" style="width:30%"><br>
   <figcaption>Dr. Cédric Scherer</figcaption>
+</figure>
+
+
+
+### [Bridging spatial data in community distribution models](proj-pop-urban-1.html)
+
+Understanding species distributions is fundamental for wildlife management and landscape planning. Species distributions are largely driven by their habitat associations and their response to environmental or anthropogenic factors. In addition, species distributions and the structure of ecological communities are also driven by species interactions such as predation or competition. Using data that were collected in fundamentally different ways complicates the process of modeling the distribution and structure of biological communities. Based on this problematic, I will work on evaluating how environmental and anthropogenic drivers shape the assembly and dynamics of mammalian communities at different spatiotemporal scales.
+
+<figure>
+  <img src="img/people-louvrier.jpg" alt="Dr. Julie Louvrier" style="width:30%"><br>
+  <figcaption>Dr. Julie Louvrier</figcaption>
+</figure>
+
+
+
+### [Jaguar connectivity in Central America]()
+
+For large carnivores in fragmented landscapes such as the jaguar, connectivity is a conservation priority to secure population viability and genetic diversity. Management of jaguar populations requires an understanding on how the species’ movement is influenced by individual traits and the structure and configuration of their landscape. Therefore, I aim at developing a spatially explicit agent-based model of jaguar movement and population dynamics, to quantify functional connectivity and population viability in Middle America, a region which is particularly critical for jaguar connectivity and where jaguars have started exhibiting early signs of genetic isolation.
+
+<figure>
+  <img src="img/people-calderon.jpg" alt="Patricia Calderon" style="width:30%"><br>
+  <figcaption>Patricia Calderon</figcaption>
 </figure>

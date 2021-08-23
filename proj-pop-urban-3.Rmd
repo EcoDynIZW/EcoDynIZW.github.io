@@ -1,0 +1,17 @@
+---
+title: "Ecology of red foxes (*Vulpes vulpes*) in anthropogenic landscapes"
+description: |
+  Applied Ecology | <a href='type-urban-ecology.html'>Urban Ecology</a>
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.cap = FALSE)
+```
+
+We live in a time in which our environment is subject to constant anthropogenic change. This change has direct and indirect effects on wildlife. However, certain species like the red fox (*Vulpes vulpes*) have adapted to these human dominated habitats very well. But what is the secret of success? With this project I am trying to get one step closer to deciphering the mystery by using an overarching approach that deals with movement ecology, foraging strategies and diseases (parasites and microbiomes) of this successful carnivore.
+
+<figure>
+  <img src="img/people-scholz.jpg" alt="Dr. Carolin Scholz" style="width:30%"><br>
+  <figcaption>Dr. Carolin Scholz</figcaption>
+</figure>

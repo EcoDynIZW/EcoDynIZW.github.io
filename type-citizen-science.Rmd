@@ -1,0 +1,18 @@
+---
+title: "Project Type: Citizen Science"
+description: ""
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+### [Effects of species interactions and human disturbance on community composition in urban areas](proj-pop-urban-2.html)
+
+Urban areas present new challenges to wildlife communities. Special conditions created by human disturbance and novel stressors, such as noise or light, affect both species response to urban environment and species interactions. In order to better understand species and communities’ response to urban environment and to predict (multi)species distributions, I work with hierarchical multi-response models to study community composition and analyse how species interactions are modified by anthropogenic disturbance in an urbanization gradient. I do this with data from invertebrates, birds and mammals, including competition/facilitation relationships, as well as predator-prey interactions.
+
+<figure>
+  <img src="img/people-planillo.jpg" alt="Dr. Aimara Planillo" style="width:30%"><br>
+  <figcaption>Dr. Aimara Planillo</figcaption>
+</figure>
