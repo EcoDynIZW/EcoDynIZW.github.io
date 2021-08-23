@@ -69,11 +69,11 @@ People involved: **Dr. Cédric Scherer**, **Tobias Kürschner**
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li><b>Kramer-Schadt S</b>, Fernandez N, Eisinger D, Grimm V & Thulke HH (2009) Individual variation in infectiousness explains long-term disease persistence in wildlife populations. OIKOS 118: 199-208.</li>
-    </li><b>Kürschner T</b>, <b>Scherer C</b>, <b>Radchuk V</b>, Blaum N & <b>Kramer-Schadt S</b> (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. Ecology and Evolution, accepted.
-  <li><b>Marescot L</b>, <b>Benhaiem S</b>, Gimenez O, <b>Hofer H</b>, Lebreton JD, Olarte-Castillo X A, b>Kramer-Schadt S</b> & <b>Marion L. East</b> (2018) Social status mediates the fitness costs of infection with canine distemper virus in a social carnivore. Functional Ecology. DOI: <a href='https://doi.org/10.1111/1365-2435.13059'>10.1111/1365-2435.13059</a></li>
+    <li><b>Kürschner T</b>, <b>Scherer C</b>, <b>Radchuk V</b>, Blaum N & <b>Kramer-Schadt S</b> (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. Ecology and Evolution, accepted.</li>
   <li><b>Scherer C</b>, <b>Radchuk V</b>, <b>Franz M</b>, Thulke HH, Lange M, Grimm V & <b>Kramer‐Schadt S</b> (2020) Moving infections: individual movement decisions drive disease persistence in spatially structured landscapes. OIKOS. DOI: <a href='https://doi.org/10.1111/oik.07002'>10.1111/oik.07002</a></li>
   <li><b>Scherer C</b>, <b>Radchuk V</b>, Staubach C, Müller S, Blaum N, Thulke HH & <b>Kramer‐Schadt S</b> (2019) Seasonal host life‐history processes fuel disease dynamics at different spatial scales. Journal of Animal Ecology. DOI: <a href='https://doi.org/10.1111/1365-2656.13070'>10.1111/1365-2656.13070</a></li>
+  <li><b>Marescot L</b>, <b>Benhaiem S</b>, Gimenez O, <b>Hofer H</b>, Lebreton JD, Olarte-Castillo X A, <b>Kramer-Schadt S</b> & <b>Marion L. East</b> (2018) Social status mediates the fitness costs of infection with canine distemper virus in a social carnivore. Functional Ecology. DOI: <a href='https://doi.org/10.1111/1365-2435.13059'>10.1111/1365-2435.13059</a></li>
+    <li><b>Kramer-Schadt S</b>, Fernandez N, Eisinger D, Grimm V & Thulke HH (2009) Individual variation in infectiousness explains long-term disease persistence in wildlife populations. OIKOS 118: 199-208.</li>
    </ul>
 </small>
 
