@@ -93,4 +93,4 @@ Department of Ecological Dynamics
 Alfred-Kowalke-Str. 17  
 D-10315 Berlin, Germany  
 
-[Impressum](https://www.cedricscherer.com/top/impressum/)
+[Impressum](impressum.html)
