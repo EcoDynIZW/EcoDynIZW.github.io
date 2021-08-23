@@ -1,0 +1,29 @@
+---
+title: "Project Type: Large Carnivore Conservation"
+description: ""
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+### [Jaguar connectivity in Central America](proj-pop-wildlife-1.html)
+
+For large carnivores in fragmented landscapes such as the jaguar, connectivity is a conservation priority to secure population viability and genetic diversity. Management of jaguar populations requires an understanding on how the species’ movement is influenced by individual traits and the structure and configuration of their landscape. Therefore, I aim at developing a spatially explicit agent-based model of jaguar movement and population dynamics, to quantify functional connectivity and population viability in Middle America, a region which is particularly critical for jaguar connectivity and where jaguars have started exhibiting early signs of genetic isolation.
+
+<figure>
+  <img src="img/people-calderon.jpg" alt="Patricia Calderon" style="width:30%"><br>
+  <figcaption>Patricia Calderon</figcaption>
+</figure>
+
+
+
+### [Modelling genetic processes to support the conservation management of Eurasian lynx](proj-pop-wildlife-2.html)
+
+The genetic viability of the reintroduced populations of large carnivores such as Eurasian lynx (Lynx lynx) has been called into question due to the weak genetic exchange. I am developing an existing population model to include individual genetics for testing conservation management scenarios in order to reveal the potential for enhancing the genetic viability of a Central European meta-population.
+
+<figure>
+  <img src="img/people-premier.jpg" alt="Joe Premier" style="width:30%"><br>
+  <figcaption>Joe Premier</figcaption>
+</figure>

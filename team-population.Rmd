@@ -100,14 +100,14 @@ People involved: **Dr. Aimara Planillo**, **Dr. Julie Louvrier**, **Carolin Scho
   <ul>
     <li><b>Planillo A</b>, Fiechter L, Sturm U, Heucke-Voigt S & <b>Kramer-Schadt S</b> (2021) Citizen science data for urban planning: Comparing different sampling schemes for modelling urban bird distribution. Landscape and Urban Planning 211:104098. DOI: <a href='https://doi.org/10.1016/j.landurbplan.2021.104098'>10.1016/j.landurbplan.2021.104098</a>.</li>
     <li><b>Planillo A</b>, <b>Kramer-Schadt S</b>, Buchholz S, <b>Gras P</b>, von der Lippe M & <b>Radchuk V</b> Arthropod abundance modulates bird community responses to urbanization (2020) Diversity and Distributions 27:34–49. DOI: <a href='https://doi.org/10.1111/ddi.13169'>10.1111/ddi.13169</a>.</li>
-    <li><b>Gras P</b>, <b>Knuth S</b>, <b>Börner K</b>, <b>Marescot L</b>, <b>Benhaiem S</b>, Aue A, Wittstatt U, Kleinschmit B & <b>Kramer-Schadt S</b> (2018) Landscape structure affects risk of canine distemper in urban wildlife. Frontiers in Ecology and Evolution 6:136. DOI: <a href='https://doi.org/10.1111/ddi.13169'>10.1111/ddi.13169</a></li>
-    <li><b>Stillfried M</b>, <b>Gras P</b>, <b>Börner K</b>, Göritz F, Painer J, Röllig K, <b>Wenzler M</b>, Hofer H, Ortmann S & <b>Kramer-Schadt S</b> (2017) Secrets of Success in a Landscape of Fear: Urban Wild Boar Adjust Risk Perception and Tolerate Disturbance. Frontiers in Ecology and Evolution 5:157. DOI: <a href='https://doi.org/10.3389/fevo.2017.00157'>10.3389/fevo.2017.00157</a>.</li>
+    <li><b>Gras P</b>, <b>Knuth S</b>, <b>Börner K</b>, <b>Marescot L</b>, <b>Benhaiem S</b>, Aue A, Wittstatt U, Kleinschmit B & <b>Kramer-Schadt S</b> (2018) Landscape structure affects risk of canine distemper in urban wildlife. Frontiers in Ecology and Evolution 6:136. DOI: <a href='https://doi.org/10.3389/fevo.2018.00136'>10.3389/fevo.2018.00136</a></li>
+    <li><b>Stillfried M</b>, <b>Gras P</b>, <b>Börner K</b>, Göritz F, Painer J, Röllig K, <b>Wenzler M</b>, Hofer H, Ortmann S & <b>Kramer-Schadt S</b> (2017) Secrets of success in a landscape of fear: urban wild boar adjust risk perception and tolerate disturbance. Frontiers in Ecology and Evolution 5:157. DOI: <a href='https://doi.org/10.3389/fevo.2017.00157'>10.3389/fevo.2017.00157</a>.</li>
    </ul>
 </small>
 
 ---
 
-### Wildlife distributions, population dynamics and conservation
+### Wildlife distributions, population dynamics, and conservation
 
 ![](img/team-pop-wildlife.png)
 
@@ -115,4 +115,15 @@ Wildlife faces big challenges persisting in human-dominated landscapes. We model
 
 People involved: **Dr. Julie Louvrier**, **Dr. Aimara Planillo**, **Joe Premier**, **Ana Patricia Calderon Quinonez**, **Moritz Wenzler**
 
-* [****](proj-pop-wildlife-1.html)
+* [**Jaguar connectivity in Central America**](proj-pop-wildlife-1.html)
+* [**Modelling genetic processes to support the conservation management of Eurasian lynx**](proj-pop-wildlife-2.html)
+
+<small>
+  <b>Key Publications:</b>
+  <ul>
+    <li><b>Premier J</b>, Fickel J, Heurich M & <b>Kramer-Schadt S</b> (2020) The boon and bane of boldness: movement syndrome as saviour and sink for population genetic diversity. Movement Ecology 8:16. DOI <a href='https://doi.org/10.1186/s40462-020-00204-y'>10.1186/s40462-020-00204-y</a>.</li>
+    <li>Heurich M, <b>Schultze-Naumburg J</b>, Piacenza N, Magg N, Červený J, Engleder T, Herdtfelder M, Sladova M & <b>Kramer-Schadt S</b> (2018) Illegal hunting as a major driver of the source-sink dynamics of a reintroduced lynx population in Central Europe. Biological Conservation 224:355-365. DOI: <a href='https://doi.org/10.1016/j.biocon.2018.05.011'>10.1016/j.biocon.2018.05.011</a>.</li>
+    <li><b>Radchuk V</b>, Ims RA & Andreassen HP (2016) From individuals to population cycles: the role of extrinsic and intrinsic factors in rodent populations. Ecology 97:720-732. <a href='https://doi.org/10.1890/15-0756.1'>10.1890/15-0756.1</a></li>
+    <li>Struebig M, Wilting A, Gaveau DLA, Meijaard E, Smith R, The Borneo Mammal Distribution Consortium, <b>Fischer M</b>, Metcalfe K & <b>Kramer-Schadt S</b> (2015) Targeted conservation safeguards a biodiversity hotspot from climate and land-cover change. Current Biology 25:372–378. DOI: <a href='https://doi.org/10.1016/j.cub.2014.11.067'>10.1016/j.cub.2014.11.067</a>.</li>
+   </ul>
+</small>

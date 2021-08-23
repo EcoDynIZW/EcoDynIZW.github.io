@@ -1,0 +1,17 @@
+---
+title: "Jaguar connectivity in Central America"
+description: |
+  Applied Ecology | <a href='type-large-carnivore-conservation.html'>Large Carnivore Conservation</a>, <a href='type-spatial-model.html'>Spatial Model</a>, <a href='type-simulation-model.html'>Simulation Model</a>
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.cap = FALSE)
+```
+
+For large carnivores in fragmented landscapes such as the jaguar, connectivity is a conservation priority to secure population viability and genetic diversity. Management of jaguar populations requires an understanding on how the species’ movement is influenced by individual traits and the structure and configuration of their landscape. Therefore, I aim at developing a spatially explicit agent-based model of jaguar movement and population dynamics, to quantify functional connectivity and population viability in Middle America, a region which is particularly critical for jaguar connectivity and where jaguars have started exhibiting early signs of genetic isolation.
+
+<figure>
+  <img src="img/people-calderon.jpg" alt="Patricia Calderon" style="width:30%"><br>
+  <figcaption>Patricia Calderon</figcaption>
+</figure>

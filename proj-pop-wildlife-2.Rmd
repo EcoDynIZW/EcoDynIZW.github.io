@@ -1,0 +1,17 @@
+---
+title: "Modelling genetic processes to support the conservation management of Eurasian lynx"
+description: |
+  Applied Ecology | <a href='type-large-carnivore-conservation.html'>Large Carnivore Conservation</a>, <a href='type-simulation-model.html'>Simulation Model</a>
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.cap = FALSE)
+```
+
+The genetic viability of the reintroduced populations of large carnivores such as Eurasian lynx (Lynx lynx) has been called into question due to the weak genetic exchange. I am developing an existing population model to include individual genetics for testing conservation management scenarios in order to reveal the potential for enhancing the genetic viability of a Central European meta-population.
+
+<figure>
+  <img src="img/people-premier.jpg" alt="Joe Premier" style="width:30%"><br>
+  <figcaption>Joe Premier</figcaption>
+</figure>
