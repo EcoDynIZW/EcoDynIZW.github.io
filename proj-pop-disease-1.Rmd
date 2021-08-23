@@ -1,0 +1,19 @@
+---
+title: "Infections on the move"
+description: |
+  Theory and Synthesis | <a href='type-disease-ecology.html'>Disease Ecology</a>, <a href='type-simulation-model.html'>Simulation Model</a>, <a href='type-spatial-model.html'>Spatial Model</a>
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.cap = FALSE)
+```
+
+Movement plays a major role in shaping population densities and contact rates among individuals, two factors that are particularly relevant for disease outbreaks. Although any differences in movement behaviour due to individual characteristics of the host and heterogeneity in landscape structure are likely to have considerable consequences for disease dynamics, these mechanisms are neglected in most epidemiological studies. Therefore, developing a general understanding how the interaction of movement behaviour and spatial heterogeneity shapes host densities, contact rates and ultimately pathogen spread is a key question in ecological and epidemiological research.
+
+In this project, we have addressed this gap using both theoretical and empirical modelling approaches. In the theoretical part of my thesis, we have investigated bottom-up effects of individual movement behaviour and landscape structure on host density, contact rates, and ultimately disease dynamics. We have extended an established agent-based model that simulates ecological and epidemiological key processes to incorporate explicit movement of host individuals and landscape complexity. In the empirical part, we have focused on the spatiotemporal dynamics of Classical Swine Fever in a wild boar population by analysing epidemiological data that was collected during an outbreak in Northern Germany persisting for eight years.
+
+<figure>
+  <img src="img/people-scherer.jpg" alt="Dr. Cédric Scherer" style="width:30%"><br>
+  <figcaption>Dr. Cédric Scherer</figcaption>
+</figure>
