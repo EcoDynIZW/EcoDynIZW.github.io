@@ -39,8 +39,8 @@ knitr::include_graphics("img/team-pop-header.png")
 
 To understand how populations and communities react to global change we study how their stability is affected by disturbances. To this end we model disturbances of different types and intensity and measure several stability metrics.
 
-* [**How do animals respond to climate change?**](proj-pop-stab-1.html)
-* [**How does environmental variation affect stability of populations and communities?**](proj-pop-stab-2.html)
+* [**How do animals respond to climate change?**](proj-pop-stability-1.html)
+* [**How does environmental variation affect stability of populations and communities?**](proj-pop-stability-2.html)
 
 People involved: **Dr. Cédric Scherer**, **Guillaume Chero**, **Carys Jones**
 
@@ -61,8 +61,8 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
 
 &ensp;&rarr;&ensp;see also [BioMove Graduate School](https://www.bio-move.org/)
 
-* **Infections on the move**
-* **Pathogen evolution in dynamic landscapes**
+* [**Infections on the move**](proj-pop-disease-1.html)
+* [**Pathogen evolution in dynamic landscapes**](proj-pop-disease-2.html)
 
 People involved: **Dr. Cédric Scherer**, **Tobias Kürschner**
 
