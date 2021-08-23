@@ -12,6 +12,6 @@ We study how climate change affects phenological and morphological traits in ani
 
 
 <figure>
-  <img src="img/jones_picture-3.jpg" alt="Carys Jones" style="width:30%"><br>
+  <img src="img/people-jones.jpg" alt="Carys Jones" style="width:30%"><br>
   <figcaption>Carys Jones</figcaption>
 </figure>
