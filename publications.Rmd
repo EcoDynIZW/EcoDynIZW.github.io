@@ -22,11 +22,11 @@ For older publications please check here: &ensp;[2020](pubs-2020.html)&ensp;|&en
 * **Alfano N**, Dayaram A, **Axtner J** Tsangaras K, **Kampmann ML**, **Mohamed A**, **Wong ST**, Gilbert MTP, **Wilting A** & Greenwood AD (2021). Non-invasive surveys of mammalian viruses using environmental DNA. Methods in Ecology and Evolution, in press. DOI: [10.1111/2041-210X.13661](https://doi.org/10.1111/2041-210X.13661)
 
 * Asad S, **Abrams JF**, **Guharajan R**, Lagan P, Kissing J, Sikui J, **Wilting A** & Rödel MO (2021). Amphibian responses to conventional and reduced impact logging. 
-Forest Ecology and Management 484:118949. DOI: [10.1016/J.foreco.2021.118949]](https://doi.org/10.1016/J.foreco.2021.118949)
+Forest Ecology and Management 484:118949. DOI: [10.1016/J.foreco.2021.118949](https://doi.org/10.1016/J.foreco.2021.118949)
 
 * Ayllón D, Augusiak J, Baveco H, Berger U, Charles S, Martin R, Focks A, Galic N, Gallagher C, Liu C, van Loon EE, Nabe-Nielsen J, Piou C, Polhill JG, Preuss TG, **Radchuk V**, Schmolke A, Stadnicka-Michalak J, Thorbek P, Railsback SF & Grimm V (2021). Keeping modelling notebooks with TRACE: good for you and good for environmental research and management support. Environmental Modelling & Software 136:104932. DOI: [10.1016/j.envsoft.2020.104932](https://doi.org/10.1016/j.envsoft.2020.104932)
 
-* Bastianelli ML, **Premier J**, Herrmann M, Anile S, Monterroso P, Kuemmerle T, … & Heurich M (2021). Survival and cause-specific mortality of European wildcat (*Felis silvestris*) across Europe. Biological Conservation 261:109239. DOI: [j.biocon.2021.109239](https://doi.org/10.1016/j.biocon.2021.109239)
+* Bastianelli ML, **Premier J**, Herrmann M, Anile S, Monterroso P, Kuemmerle T, …, & Heurich M (2021). Survival and cause-specific mortality of European wildcat (*Felis silvestris*) across Europe. Biological Conservation 261:109239. DOI: [j.biocon.2021.109239](https://doi.org/10.1016/j.biocon.2021.109239)
 
 * Bruckermann T, Greving H, Schumann A, **Stillfried M**, **Börner K**, **Kimmig SE**, **Hagen R**, Brandt M & Harms U. (2021). To know about science is to love it? Unraveling cause–effect relationships between knowledge and attitudes toward science in citizen science on urban wildlife ecology. Journal of Research in Science Teaching:tea.21697. DOI: [10.1002/tea.21697](https://doi.org/10.1002/tea.21697)
 
@@ -84,7 +84,7 @@ Forest Ecology and Management 484:118949. DOI: [10.1016/J.foreco.2021.118949]](h
 
 * **Drenske S**, **Radchuk V**, **Scherer C**, Esterer C, Kowarik I, Fritz J & **Kramer-Schadt S** (2021). Halfway to self-sustainability: Reintroduced migratory European Northern Bald Ibises (Geronticus eremita) still need management interventions for population viability. bioRxiv. DOI: [10.1101/2021.04.03.438331](https://doi.org/10.1101/2021.04.03.438331)
 
-* Hermanns K, Marklewitz M, Zirkel F, Kopp K, **Kramer-Schadt S**, Junglen S (2021). Mosquito community composition shapes virus prevalence patterns along anthropogenic disturbance gradients. bioRXiv. DOI: [10.1101/2021.02.04.429754](https://doi.org/10.1101/2021.02.04.429754)
+* Hermanns K, Marklewitz M, Zirkel F, Kopp K, **Kramer-Schadt S** & Junglen S (2021). Mosquito community composition shapes virus prevalence patterns along anthropogenic disturbance gradients. bioRXiv. DOI: [10.1101/2021.02.04.429754](https://doi.org/10.1101/2021.02.04.429754)
 
 
 

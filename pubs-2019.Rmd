@@ -1,5 +1,5 @@
 ---
-title: "Publications 20xx"
+title: "Publications 2019"
 description: ""
 ---
 
@@ -9,13 +9,67 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
+* **Abrams JF**, Vashishtha A, **Wong ST**, **Nguyen A**, **Mohamed A**, **Wieser S**, Kuijper A, **Wilting A** & Mukhopadhyay A (2019). Habitat-Net: segmentation of habitat images using deep learning. Ecological Informatics 51:121-128. DOI: [10.1016/j.ecoinf.2019.01.009](https://doi.org/10.1016/j.ecoinf.2019.01.009).
+
+* **Abrams JF**, Hörig LA, Brozovic R, **Axtner J**, **Crampton-Platt A**, **Mohamed A**, **Wong ST**, Sollmann R, Yu DW & **Wilting A** (2019). Shifting up a gear with iDNA: from mammal detection events to standardised surveys. Journal of Applied Ecology 56:1637-1648. DOI: [10.1111/1365-2664.13411](https://doi.org/10.1111/1365-2664.13411).
+
+* **Axtner J**, **Crampton-Platt A**, **Hörig LA**, **Mohamed A**, Xu CCY, Yu DW & **Wilting A** (2019). An efficient and robust laboratory workflow and tetrapod database for larger scale environmental DNA studies. GigaScience 8:giz025. DOI: [10.1093/gigascience/giz029](https://doi.org/10.1093/gigascience/giz029).
+
+* Dalleau M, **Kramer‐Schadt S**, Gangat Y, Bourjea J, Lajoie G & Grimm V (2019). Modeling the emergence of migratory corridors and foraging hot spots of green sea turtle. Ecology and Evolution 9;10317-10342. DOI: [10.1002/ece3.5552](https://doi.org/10.1002/ece3.5552).
+
+* **Ferreira SCM**, Torelli F, Klein S, Fyumagwa R, Karesh WB, Hofer H, Seeber F & **East ML** (2019). Evidence of high exposure to Toxoplasma gondii in free-ranging and captive African carnivores. International Journal for Parasitology: Parasites and Wildlife 8:111-117. DOI: [10.1016/j.ijppaw.2018.12.007](https://doi.org/10.1016/j.ijppaw.2018.12.007).
+
+* **Ferreira SCM**, Hofer H, Madeira de Carvalho L & **East ML** (2019). Parasite infections in a social carnivore: evidence of their fitness consequences and factors modulating infection load. Ecology and Evolution 9:8783-8799. DOI: [10.1002/ece3.5431](https://doi.org/10.1002/ece3.5431).
+
+* Fischer M, Di Stefano J, **Gras P**, **Kramer‐Schadt S**, Sutherland DR, Coulson G & **Stillfried M** (2019). Circadian rhythms enable efficient resource selection in a human‐modified landscape. Ecology and Evolution 9:7509-7527. DOI: [10.1002/ece3.5283](https://doi.org/10.1002/ece3.5283).
+
+* Kanagaraj R, Araujo MB, Barman R, Davidar P, De R, Digal DK, Gopi GV, Johnsingh AJT, Kakati K, **Kramer‐Schadt S**, Lamichhane BR, (…), Goyal SP (2019):.Predicting range shifts of Asian elephants under global change. Diversity and Distributions 25:822-838. DOI: [10.1111/ddi.12898](https://doi.org/10.1111/ddi.12898).
+
+* Khwaja H, Buchan C, Wearn OR, Bahaa-el-din L, Bantlin D, Bernard H, Bitariho R, **Bohm T**, Borah J, Brodie J, Chutipong W, du Preez B, Ebang-Mbele A, Edwards S, Fairet E, Frechette JL, Garside A, Gibson L, Giordano A, Veeraswami Gopi G, Granados A, Gubbi S, Harich F, Haurez B, Havmøller RW, Helmy O, Isbell LA, Jenks K, Kalle R, Kamjing A, Khamcha D, Kiebou-Opepa C, Kinnaird M, Kruger C, Laudisoit A, Lynam A, Macdonald SE, **Mathai J**, Metsio Sienne J, Meier A, Mills D, Mohd-AzlanJ, Nakashima Y, Nash HC, Ngoprasert D, **Nguyen A**, O’Brien T, Olson D, Orbell C, Poulsen J, Ramesh T, Reeder D, Reyna R, Rich LN, Rode-Margono J, Rovero F, Sheil D, Shirley MH, Stratford K, Sukumal N, Suwanrat S, Tantipisanuh N, **Tilker A**, Van Berkel T, Van der Weyde LK, Varney M, Weise F, Wiesel I, **Wilting A**, **Wong ST**, Waterman C, Challender DWS (2019). Pangolins in global camera trap data: Implications for ecological monitoring. 
+Global Ecology and Conservation 20:e00769. DOI: [10.1016/j.gecco.2019.e00769](https://doi.org/10.1016/j.gecco.2019.e00769).
+
+* Maas B, Heath S, Grass I, Cassano C, Classen A, Faria D, **Gras P**, Williams-Guillén K, Johnson M, Karp D, Linden V, Martínez Salinas MA, Schmack J, Kross S (2019): Experimental field exclosure of birds and bats in agricultural systems – methodological insights, potential improvements, and cost-benefit trade-offs. Basic and Applied Ecology 351-12. DOI: [10.1016/j.baae.2018.12.002](https://doi.org/10.1016/j.baae.2018.12.002).
+
+* **Mathai J**, **Niedballa J**, **Radchuk V**, Sollmann R, **Heckmann I**, Brodie J, Struebig M, Hearn AJ, Ross J, Macdonald DW, Hin J & **Wilting A** (2019). Identifying refuges for Borneo’s elusive Hose’s civet. Global Ecology and Conservation 17:e00531. DOI: [10.1016/j.gecco.2019.e00531](https://doi.org/10.1016/j.gecco.2019.e00531).
+
+* **Niedballa J**, **Wilting A**, Sollmann R, Hofer H & Courtiol A (2019). Assessing analytical methods for detecting spatiotemporal interactions between species from camera trapping data. Remote Sensing in Ecology and Conservation 5:272-285. DOI: [10.1002/rse2.107](https://doi.org/10.1002/rse2.107).
+
+* **Nguyen A**, Tran VB, Huang MD, Nguyen TAM, Nguyen DT, Tran VT, Long B, Meijaard E, Holland J, **Wilting A** & **Tilker A** (2019). Camera-trap evidence that the silver-backed chevrotain *Tragulus versicolor* remains in the wild in Vietnam. Nature Ecology & Evolution 3:1650–1654. DOI: [10.1038/s41559-019-1027-7](https://doi.org/10.1038/s41559-019-1027-7).
+
+* Prinz C, **Stillfried M**, Neubert LK & Denner J (2019). Detection of PCV3 in German wild boars. Virology Journal 16:25. DOI: [10.1186/s12985-019-1133-9](https://doi.org/10.1186/s12985-019-1133-9).
+
+* **Radchuk** V, Reed T, Teplitsky C, van de Pol M, Charmantier A, Hassall C, Adamík P, Adriaensen F, Ahola, Markus, Arcese P, Avilés JM, Balbontin J, Blanckenhorn W, Borras A, Burthe S, Clobert J, Dehnhard N, de Lope F, Dhondt AA, Dingemanse NJ, Doi H, Eeva T, Fickel J, Filella I, Fossøy F, Goodenough AE, Hall SJG, Hansson B, Harris M, Hasselquist D, Hickler T, Joshi J, Kharouba H, Martínez JG, Mihoub J-B, Mills JA, Molina-Morales M, Moksnes A, Ozgul A, Parejo D, Pilard P, Poisbleau M, Rousset F, Rödel MO, Scott D, Senar JC, Stefanescu C, Stokke BG, Tamotsu K, Tarka M, Tarwater C, Thonicke K, Thorley J, **Wilting A**, Tryjanowski P, Merilä J, Sheldon B, Møller AP, Matthysen E, Janzen F, Dobson S, Visser ME, Beissinger SR, Courtiol A & **Kramer-Schadt S** (2019). Adaptive responses of animals to climate change: not universal, likely insufficient. Nature Communications 10:3109. DOI: [10.1038/s41467-019-10924-4](https://doi.org/10.1038/s41467-019-10924-4).
+
+* **Radchuk V**, **Kramer-Schadt S** & Grimm V (2019). Transferability of mechanistic ecological models is about emergence. Trends in Ecology & Evolution 34:487-488. DOI: [10.1016/j.tree.2019.01.010](https://doi.org/10.1016/j.tree.2019.01.010).
+
+* **Radchuk V**, **Kramer-Schadt S**, Fickel J & **Wilting A** (2019). Distributions of mammals in Southeast Asia: the role of the legacy of climate and species body mass. Journal of Biogeography 46:2350-2362. DOI: [10.1111/jbi.13675](https://doi.org/10.1111/jbi.13675). Data DOI: [10.5061/dryad.qp44619](https://datadryad.org/stash/dataset/doi:10.5061/dryad.qp44619).
+
+* **Radchuk V**, De Laender F, Sarmento Cabral J, Boulangeat I, Crawford M, Bohn F, De Raedt J, **Scherer C**, Svenning JC, Thonicke K, Schurr FM, Grimm V & **Kramer‐Schadt S** (2019). The dimensionality of stability depends on disturbance type. Ecology Letters 22:674-684.  DOI: [10.1111/ele.13226](https://doi.org/10.1111/ele.13226).
+
+* Renner IW, **Louvrier J** & Gimenez O (2019). Combining multiple data sources in species distribution models while accounting for spatial dependence and overfitting with combined penalized likelihood maximization. Methods in Ecology and Evolution 10:2118-2128. DOI: [10.1111/2041-210X.13297](https://doi.org/10.1111/2041-210X.13297)
+
+* Runting RK, Ruslandi G, Bronson W, Struebig MJ, Satar M, Meijaard E, Burivalova Z, Cheyne SM, Deere NJ, Game ET, Putz FE, Wells JA, **Wilting A**, Ancrenaz M, Ellis P, Khan FA, Leavitt SM, Marshall AJ, Possingham HP, Watson JEM & Venter OPY (2019). Larger gains from improved management over sparing–sharing for tropical forests. NAT SUSTAIN 2:53-61. DOI: [10.1038/s41893-018-0203-0](https://doi.org/10.1038/s41893-018-0203-0).
+
+* **Scherer C**, **Radchuk V**, Staubach C, Müller S, Blaum N, Thulke HH & **Kramer-Schadt S** (2019). Seasonal host life-history processes fuel disease dynamics at different spatial scales. Journal of Animal Ecology 88:1812-1824. DOI: [10.1111/1365-2656.13070](https://doi.org/10.1111/1365-2656.13070).
+
+* Seeber PA, Franz M, Greenwood AD & **East ML** (2019). Life history stage and extrinsic factors affect behavioural time allocation in plains zebras (*Equus quagga*) in the Serengeti ecosystem. Behavioral Ecology and Sociobiology 73:126. DOI: [10.1007/s00265-019-2738-0](https://doi.org/10.1007/s00265-019-2738-0).
+
+* Seeber PA, McEwen GK, Löber U, Förster DW, **East ML**, Melzheimer J & Greenwood AD (2019). Terrestrial mammal surveillance using hybridization capture of environmental DNA from African waterholes. Molecular Ecology Resources 19:1486-1496. DOI: [10.1111/1755-0998.13069](https://doi.org/10.1111/1755-0998.13069).
+
+* Straka T, Wolff M, **Gras P**, Buchholz S & Voigt CC (2019). Tree cover mediates the effect of artificial light on urban bats. Frontiers in Ecology and Evolution, DOI: [10.3389/fevo.2019.00091](https://doi.org/10.3389/fevo.2019.00091).
+
+* Teckentrup L, **Kramer-Schadt S** & Jeltsch F (2019). The risk of ignoring fear: Underestimating the effects of habitat loss and fragmentation on biodiversity. Landscape Ecology 34:2851–2868. DOI: [10.1007/s10980-019-00922-8](https://doi.org/10.1007/s10980-019-00922-8).
+
+* **Tilker A**, **Abrams JF**, **Mohamed A**, **Nguyen A**, **Wong ST**, Sollmann R, **Niedballa J**, **Bhagwat T**, Gray TNE, Rawson BM, Guegan F, Kissing J, Wegmann M & **Wilting A** (2019). Habitat degradation and indiscriminate hunting differentially impact faunal communities in the Southeast Asian tropical biodiversity hotspot. Communications Biology 2:396. DOI: [10.1038/s42003-019-0640-y](https://doi.org/10.1038/s42003-019-0640-y).
+
+* **Wong ST**, Belant JL, Sollmann R, **Mohamed A**, **Niedballa J**, **Mathai J**, Street GM & **Wilting A** (2019). Influence of body mass, sociality, and movement behavior on improved detection probabilities when using a second camera trap. 
+Global Ecology and Conservation 20:e00791. DOI: [10.1016/j.gecco.2019.e00791](https://doi.org/10.1016/j.gecco.2019.e00791).
 
 
 
 
-<div class='headerbox'><hbox>Preprints</hbox></div><br>
+<div class='headerbox'><hbox>Book Chapters & Reports</hbox></div><br>
 
+* Abrams RW & **Abrams JF** (2019). Why should we care so much about old world tropical rainforests? In: Reference Module in Earth Systems and Environmental Sciences. Scott A. Elias (ed), Elsevier, ISBN 9780124095489. DOI: [10.1016/B978-0-12-409548-9.11969-4](https://doi.org/10.1016/B978-0-12-409548-9.11969-4)
 
-
-
-<div class='headerbox'><hbox>Other (book chapters, reports et al.)</hbox></div><br>
+* Courtiol A, Rousset F, **Rohwäder MS**, Soto DX, Lehnert LS, Voigt CC, Hobson KA, Wassenaar LI & **Kramer-Schadt S** (2019). Isoscape computation and inference of spatial origins with mixed models using the R package IsoriX. In: Tracking Animals with stable isotopes. Hobson KA & Wassenaar L (eds), pp. 207-236, Elsevier Academic Press, Cambridge, USA.
