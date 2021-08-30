@@ -15,7 +15,7 @@ For older publications please check here: &ensp;[2020](pubs-2020.html)&ensp;|&en
 
 ## In Press
 
-* **Alfano N**, Dayaram A, **Axtner J** Tsangaras K, **Kampmann ML**, **Mohamed A**, **Wong ST**, Gilbert MTP, **Wilting A** & Greenwood AD (in press). Non-invasive surveys of mammalian viruses using environmental DNA. Methods in Ecology and Evolution. DOI: [10.1111/2041-210X.13661](https://doi.org/10.1111/2041-210X.13661)
+* **Alfano N**, Dayaram A, **Axtner J**, Tsangaras K, **Kampmann ML**, **Mohamed A**, **Wong ST**, Gilbert MTP, **Wilting A** & Greenwood AD (in press). Non-invasive surveys of mammalian viruses using environmental DNA. Methods in Ecology and Evolution. DOI: [10.1111/2041-210X.13661](https://doi.org/10.1111/2041-210X.13661)
 
 * **Hagen R**, Ortmann S, Elliger A & Arnold J (in press). Advanced roe deer (*Capreolus capreolus*) parturition date in response to climate change. Ecosphere. 
 
@@ -38,7 +38,7 @@ For older publications please check here: &ensp;[2020](pubs-2020.html)&ensp;|&en
 
 * Bastianelli ML, **Premier J**, Herrmann M, Anile S, Monterroso P, Kuemmerle T, …, & Heurich M (2021). Survival and cause-specific mortality of European wildcat (*Felis silvestris*) across Europe. Biological Conservation 261:109239. DOI: [j.biocon.2021.109239](https://doi.org/10.1016/j.biocon.2021.109239)
 
-* Bruckermann T, Greving H, Schumann A, **Stillfried M**, **Börner K**, **Kimmig SE**, **Hagen R**, Brandt M & Harms U. (2021). To know about science is to love it? Unraveling cause–effect relationships between knowledge and attitudes toward science in citizen science on urban wildlife ecology. Journal of Research in Science Teaching:tea.21697. DOI: [10.1002/tea.21697](https://doi.org/10.1002/tea.21697)
+* Bruckermann T, Greving H, Schumann A, **Stillfried M**, **Börner K**, **Kimmig SE**, **Hagen R**, Brandt M & Harms U. (2021). To know about science is to love it? Unraveling cause–effect relationships between knowledge and attitudes toward science in citizen science on urban wildlife ecology. Journal of Research in Science Teaching:21697. DOI: [10.1002/tea.21697](https://doi.org/10.1002/tea.21697)
 
 * Clark AT, Arnoldi J‐F, Zelnik YR, Barabas G, Hodapp D, Karakoç C, König S, **Radchuk V**, Donohue I, Huth A, Jacquet C, de Mazancourt C, Mentges A, Nothaaß D, Shoemaker LG, Taubert F, Wiegand T, Wang S, Chase JM, Loreau M & Harpole S (2021). General statistical scaling laws for stability in ecological systems. Ecology Letters 24:1474-1486. DOI: [10.1111/ele.13760](https://doi.org/10.1111/ele.13760).
 
