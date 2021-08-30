@@ -13,16 +13,24 @@ For older publications please check here: &ensp;[2020](pubs-2020.html)&ensp;|&en
 
 <br>
 
+## In Press
+
+* **Alfano N**, Dayaram A, **Axtner J** Tsangaras K, **Kampmann ML**, **Mohamed A**, **Wong ST**, Gilbert MTP, **Wilting A** & Greenwood AD (in press). Non-invasive surveys of mammalian viruses using environmental DNA. Methods in Ecology and Evolution. DOI: [10.1111/2041-210X.13661](https://doi.org/10.1111/2041-210X.13661)
+
+* **Hagen R**, Ortmann S, Elliger A & Arnold J (in press). Advanced roe deer (*Capreolus capreolus*) parturition date in response to climate change. Ecosphere. 
+
+* **Marescot L**, **Franz M**, **Benhaiem S**, Hofer H, **Scherer C**, **East ML** & **Kramer-Schadt S** (in press). Keeping the kids at home can limit the persistence of contagious pathogens in social animals. Journal of Animal Ecology. DOI: [10.1111/1365-2656.13555](https://doi.org/10.1111/1365-2656.13555).
+
+* Tran DV, Viet DP, Tien TV, **Nguyen A**, Van CP & **Tilker A** (in press). New records of the forest musk deer Moschus berezovskii in Viet Nam revealed by camera-traps. Oryx.
+
+
 ## 2021
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
 * **Abrams JF**, **Sollmann R**, Mitchel SL, Struebig MJ & **Wilting A** (2021). Occupancy-based diversity profiles: capturing biodiversity complexities while accounting for imperfect detection. Ecography 44:975-986. DOI: [10.1111/ecog.05577](https://doi.org/10.1111/ecog.0557).
 
-* **Alfano N**, Dayaram A, **Axtner J** Tsangaras K, **Kampmann ML**, **Mohamed A**, **Wong ST**, Gilbert MTP, **Wilting A** & Greenwood AD (2021). Non-invasive surveys of mammalian viruses using environmental DNA. Methods in Ecology and Evolution, in press. DOI: [10.1111/2041-210X.13661](https://doi.org/10.1111/2041-210X.13661)
-
-* Asad S, **Abrams JF**, **Guharajan R**, Lagan P, Kissing J, Sikui J, **Wilting A** & Rödel MO (2021). Amphibian responses to conventional and reduced impact logging. 
-Forest Ecology and Management 484:118949. DOI: [10.1016/J.foreco.2021.118949](https://doi.org/10.1016/J.foreco.2021.118949)
+* Asad S, **Abrams JF**, **Guharajan R**, Lagan P, Kissing J, Sikui J, **Wilting A** & Rödel MO (2021). Amphibian responses to conventional and reduced impact logging. Forest Ecology and Management 484:118949. DOI: [10.1016/J.foreco.2021.118949](https://doi.org/10.1016/J.foreco.2021.118949)
 
 * Ayllón D, Augusiak J, Baveco H, Berger U, Charles S, Martin R, Focks A, Galic N, Gallagher C, Liu C, van Loon EE, Nabe-Nielsen J, Piou C, Polhill JG, Preuss TG, **Radchuk V**, Schmolke A, Stadnicka-Michalak J, Thorbek P, Railsback SF & Grimm V (2021). Keeping modelling notebooks with TRACE: good for you and good for environmental research and management support. Environmental Modelling & Software 136:104932. DOI: [10.1016/j.envsoft.2020.104932](https://doi.org/10.1016/j.envsoft.2020.104932)
 
@@ -42,8 +50,6 @@ Forest Ecology and Management 484:118949. DOI: [10.1016/J.foreco.2021.118949](ht
 
 * **Guharajan R**, **Mohamed A**, **Wong ST**, **Niedballa J**, **Petrus A**, **Jubili J**, Lietz R, Clements GR, Wong WM, Kissing J, Lagan P & **Wilting A** (2021). Sustainable forest management is vital for the persistence of sun bear *Helarctos malayanus* populations in Sabah, Malaysian Borneo. Forest Ecology and Management 493:119270. DOI: [10.1016/j.foreco.2021.119270](https://doi.org/10.1016/j.foreco.2021.119270).
 
-* **Hagen R**, Ortmann S, Elliger A & Arnold J (2021). Advanced roe deer (*Capreolus capreolus*) parturition date in response to climate change. Ecosphere, accepted.
-
 * Krause T & **Tilker A** (2021). Defaunation jeopardizes the SDG’s – How the loss of forest fauna undermines the achievements of the SDG’s. Ambio. DOI: [10.1007/s13280-021-01547-5](https://doi.org/10.1007/s13280-021-01547-5).
 
 * Krücken J, Czirják GÁ, Ramünke S, Maria Serocki, Heinrich SK, Melzheimer J, Costa MC, Hofer H, Aschenborn OHK, Barker NA, Capodanno S, Madeira de Carvalho L, von Samson-Himmelstjerna G, **East ML** & Wachter B (2021). Genetic diversity of vector-borne pathogens in spotted and brown hyenas from Namibia and Tanzania relates to ecological conditions rather than host taxonomy. Parasites Vectors 14:328. DOI: [10.1186/s13071-021-04835-x](https://doi.org/10.1186/s13071-021-04835-x)
@@ -52,9 +58,7 @@ Forest Ecology and Management 484:118949. DOI: [10.1016/J.foreco.2021.118949](ht
 
 * Malishev M & **Kramer-Schadt S** (2021). Movement, Models, and Metabolism: Individual-based energy budget models as next-generation extensions for predicting animal movement outcomes across scales. Ecological Modelling 441:109413. DOI: [10.1016/j.ecolmodel.2020.109413](https://doi.org/10.1016/j.ecolmodel.2020.109413).
 
-* **Marescot L**, **Franz M**, **Benhaiem S**, Hofer H, **Scherer C**, **East ML** & **Kramer-Schadt S** (2021). Keeping the kids at home can limit the persistence of contagious pathogens in social animals. Journal of Animal Ecology, in press. DOI: [10.1111/1365-2656.13555](https://doi.org/10.1111/1365-2656.13555).
-
-* **Mohamed A**, Sollmann R, **Wong ST**, **Niedballa J**, **Abrams JF**, Kissing J & **Wilting A** (2021). Counting Sunda clouded leopards with confidence: incorporating individual heterogeneity in density estimates. ORYX 55:56-65. DOI: [10.1017/S0030605318001503](https://doi.org/10.1017/S0030605318001503).
+* **Mohamed A**, Sollmann R, **Wong ST**, **Niedballa J**, **Abrams JF**, Kissing J & **Wilting A** (2021). Counting Sunda clouded leopards with confidence: incorporating individual heterogeneity in density estimates. Oryx 55:56-65. DOI: [10.1017/S0030605318001503](https://doi.org/10.1017/S0030605318001503).
 
 * **Nguyen A**, **Tilker A**, Le D, Le HV, Le SV, Luu TH, Tran BV & **Wilting A** (2021). New records and southern range extension of the Annamite striped rabbit *Nesolagus timminsi* in Vietnam. Mammalia, online first. DOI: [10.1515/mammalia-2020-0189](https://doi.org/10.1515/mammalia-2020-0189).
 
@@ -66,13 +70,11 @@ Forest Ecology and Management 484:118949. DOI: [10.1016/J.foreco.2021.118949](ht
 
 * **Planillo A**, **Kramer-Schadt S**, Buchholz S, **Gras P**, von der Lippe M & **Radchuk V** (2021). Arthropod abundance modulates bird community responses to urbanization. 27:34–49. DOI: [10.1111/ddi.13169](https://doi.org/10.1111/ddi.13169).
 
-* **Planillo A**, Fiechter L, Sturm U, Heucke-Voigt S & **Kramer-Schadt S** (2021). Citizen science data for urban planning: Comparing different sampling schemes for modelling urban bird distribution. Landscape and Urban Planning 211:104098. DOI: [10.1016/j.landurbplan.2021.104098](https://doi.org/10.1016/j.landurbplan.2021.104098).
+* **Planillo A**, Fiechter L, Sturm U, Heucke-Voigt S & **Kramer-Schadt S** (2021). Citizen science data for urban planning: comparing different sampling schemes for modelling urban bird distribution. Landscape and Urban Planning 211:104098. DOI: [10.1016/j.landurbplan.2021.104098](https://doi.org/10.1016/j.landurbplan.2021.104098).
 
 * **Premier J**, Gahbauer M, Leibl F, Heurich M (2021). In-situ feeding as a new management tool to conserve orphaned Eurasian lynx (*Lynx lynx*). Ecology and Evolution, accepted.
 
 * Pretzlaff I, **Radchuk V**, Turner JM & Dausmann KH (2021). Flexibility in thermal physiology and behaviour allows body mass maintenance in hibernating hazel dormice. Journal of Zoology, accepted.
-
-* Tran DV, Viet DP, Tien TV, **Nguyen A**, Van CP & **Tilker A** (2021). New records of the forest musk deer Moschus berezovskii in Viet Nam revealed by camera-traps. ORYX, in press.
 
 * Wikenros C, **Gicquel M**, Zimmermann B, FlagstaO, Akesson M (2021). Age at first reproduction in wolves: different patterns of density dependence for females and males. Proc. R. Soc. B. 288: 2021020. DOI: [10.1098/rspb.2021.0207](https://doi.org/10.1098/rspb.2021.0207).
 
@@ -82,7 +84,7 @@ Forest Ecology and Management 484:118949. DOI: [10.1016/J.foreco.2021.118949](ht
 
 <div class='headerbox'><hbox>Preprints</hbox></div><br>
 
-* **Drenske S**, **Radchuk V**, **Scherer C**, Esterer C, Kowarik I, Fritz J & **Kramer-Schadt S** (2021). Halfway to self-sustainability: Reintroduced migratory European Northern Bald Ibises (Geronticus eremita) still need management interventions for population viability. bioRxiv. DOI: [10.1101/2021.04.03.438331](https://doi.org/10.1101/2021.04.03.438331)
+* **Drenske S**, **Radchuk V**, **Scherer C**, Esterer C, Kowarik I, Fritz J & **Kramer-Schadt S** (2021). Halfway to self-sustainability: reintroduced migratory European Northern Bald Ibises (*Geronticus eremita*) still need management interventions for population viability. bioRxiv. DOI: [10.1101/2021.04.03.438331](https://doi.org/10.1101/2021.04.03.438331)
 
 * Hermanns K, Marklewitz M, Zirkel F, Kopp K, **Kramer-Schadt S** & Junglen S (2021). Mosquito community composition shapes virus prevalence patterns along anthropogenic disturbance gradients. bioRXiv. DOI: [10.1101/2021.02.04.429754](https://doi.org/10.1101/2021.02.04.429754)
 

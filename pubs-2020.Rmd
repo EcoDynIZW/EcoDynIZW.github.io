@@ -70,7 +70,7 @@ Science of The Total Environment 746:141115. DOI: [10.1016/j.scitotenv.2020.1411
 
 * **Tilker A**, **Abrams JF**, **Nguyen A**, **Hörig L**, **Axtner J**, **Louvrier J**, Rawson BM, Nguyen HAQ, Guegan F, **Nguyen TV**, Le M, Sollmann R & **Wilting A** (2020). Identifying conservation priorities in a defaunated tropical biodiversity hotspot. Diversity and Distributions 26:426-440. DOI: [10.1111/ddi.13029](https://doi.org/10.1111/ddi.13029).
 
-* **Tilker A**, **Nguyen A**, **Abrams JF**, Bhagwat T, Le M, **Nguyen TV**, Nguyen AT, **Niedballa J**, Sollmann R & **Wilting A** (2020). A little-known endemic caught in the South-east Asian extinction crisis: the Annamite striped rabbit *Nesolagus timminsi*. ORYX 54:178-187. DOI: [10.1017/S0030605318000534](https://doi.org/10.1017/S0030605318000534).
+* **Tilker A**, **Nguyen A**, **Abrams JF**, Bhagwat T, Le M, **Nguyen TV**, Nguyen AT, **Niedballa J**, Sollmann R & **Wilting A** (2020). A little-known endemic caught in the South-east Asian extinction crisis: the Annamite striped rabbit *Nesolagus timminsi*. Oryx 54:178-187. DOI: [10.1017/S0030605318000534](https://doi.org/10.1017/S0030605318000534).
 
 * **Tilker A**, **Nguyen A**, Timmins RJ & Gray TNE (2020). No longer Data Deficient: recategorizing the Annamite striped rabbit *Nesolagus timminsi* as Endangered. ORYX 54:151-151. DOI: [10.1017/S0030605319001078](https://doi.org/10.1017/S0030605319001078).
 

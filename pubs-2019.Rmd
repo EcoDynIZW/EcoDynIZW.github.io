@@ -72,4 +72,4 @@ Global Ecology and Conservation 20:e00791. DOI: [10.1016/j.gecco.2019.e00791](ht
 
 * Abrams RW & **Abrams JF** (2019). Why should we care so much about old world tropical rainforests? In: Reference Module in Earth Systems and Environmental Sciences. Scott A. Elias (ed), Elsevier, ISBN 9780124095489. DOI: [10.1016/B978-0-12-409548-9.11969-4](https://doi.org/10.1016/B978-0-12-409548-9.11969-4)
 
-* Courtiol A, Rousset F, **Rohwäder MS**, Soto DX, Lehnert LS, Voigt CC, Hobson KA, Wassenaar LI & **Kramer-Schadt S** (2019). Isoscape computation and inference of spatial origins with mixed models using the R package IsoriX. In: Tracking Animals with stable isotopes. Hobson KA & Wassenaar L (eds), pp. 207-236, Elsevier Academic Press, Cambridge, USA.
+* Courtiol A, Rousset F, **Rohwäder MS**, Soto DX, Lehnert LS, Voigt CC, Hobson KA, Wassenaar LI & **Kramer-Schadt S** (2019). Isoscape computation and inference of spatial origins with mixed models using the R package `IsoriX`. In: Tracking Animals with stable isotopes. Hobson KA & Wassenaar L (eds), pp. 207-236, Elsevier Academic Press, Cambridge, USA.
