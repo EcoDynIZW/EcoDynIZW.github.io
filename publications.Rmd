@@ -21,6 +21,8 @@ For older publications please check here: &ensp;[2020](pubs-2020.html)&ensp;|&en
 
 * **Marescot L**, **Franz M**, **Benhaiem S**, Hofer H, **Scherer C**, **East ML** & **Kramer-Schadt S** (in press). Keeping the kids at home can limit the persistence of contagious pathogens in social animals. Journal of Animal Ecology. DOI: [10.1111/1365-2656.13555](https://doi.org/10.1111/1365-2656.13555).
 
+* **Radchuk V**, **Kramer-Schadt S**, Berger U, **Scherer C**, Backmann P & Grimm V (2021). Individual-based models. In: Demographic Methods across the Tree of Life, Salguero-Gomez R & Gamelon M (eds.), Oxford University Press (in press).
+
 * Tran DV, Viet DP, Tien TV, **Nguyen A**, Van CP & **Tilker A** (in press). New records of the forest musk deer Moschus berezovskii in Viet Nam revealed by camera-traps. Oryx.
 
 
@@ -94,5 +96,3 @@ For older publications please check here: &ensp;[2020](pubs-2020.html)&ensp;|&en
 <div class='headerbox'><hbox>Book Chapters & Reports</hbox></div><br>
 
 * Heurich M, **Premier J**, **Schultze-Naumburg J**, Herdtfelder M, Oeser J & **Kramer-Schadt S** (2021). Erforschung der Populations- und Bewegungsökologie des Luchses als Grundlage eines Metapopulationsmanagements der kontinentaleuropäischen Luchspopulationen (*Lynx lynx*). Natur und Landschaft 96 (1). DOI: [10.17433/1.2021.50153867.1118](https://doi.org/10.17433/1.2021.50153867.1118)
-
-* **Radchuk V**, **Kramer-Schadt S**, Berger U, **Scherer C**, Backmann P & Grimm V (2021). Individual-based models. In: Demographic Methods across the Tree of Life, Salguero-Gomez R & Gamelon M (eds.), Oxford University Press (in press).
