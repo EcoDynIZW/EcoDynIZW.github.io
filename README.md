@@ -13,7 +13,7 @@
 
 ### Repositories of Published Studies
 - [Louvrier et al. 2021 *J Anim Ecol*](https://github.com/EcoDynIZW/Louvrier_2021_JAnimEcol) ([Paper](https://doi.org/10.1111/1365-2656.13635))
-- [Planillo et al. 2021 *Land Urb Plan*](https://github.com/EcoDynIZW/Planillo_2021_LandUrbPlan) ([Paper](http://doi.org/j.landurbplan.2021.104098))
+- [Planillo et al. 2021 *Land Urb Plan*](https://github.com/EcoDynIZW/Planillo_2021_LandUrbPlan) ([Paper](https://doi.org/10.1016/j.landurbplan.2021.104098))
 - [Marescot, Franz, Benhaiem et al. 2021 *J Anim Ecol*](https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol) ([Paper](https://doi.org/10.1111/1365-2656.13555))
 - [Kürschner et al. 2021 *Ecol Evol*](https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol) ([Paper](http://doi.org/10.1002/ece3.7478))
 - [Scherer et al. 2020 *OIKOS*](https://github.com/EcoDynIZW/Scherer_2020_OIKOS) ([Paper](http://doi.org/10.1111/oik.07002))
