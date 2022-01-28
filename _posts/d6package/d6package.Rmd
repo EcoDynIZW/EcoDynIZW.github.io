@@ -16,12 +16,13 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(eval = FALSE)
 
 # Learn more about creating blogs with Distill at:
 # https://rstudio.github.io/distill/blog.html
 
 ```
+
 
 The [`d6` package](https://github.com/EcoDynIZW/d6) aims to simplify workflows of our D6 research projects by providing a standardized folder structure incl. version control, Rmarkdown templates, and other utilities.
 
@@ -45,7 +46,7 @@ The package is not on CRAN and needs to be installed from GitHub. To do
 so, open Rstudio and run the following two lines in the console. In case
 the `{devtools}` package is already installed, skip that step.
 
-``` r
+```{r}
 install.packages("devtools")
 devtools::install_github("EcoDynIZW/d6")
 ```
@@ -65,7 +66,7 @@ documentation of your project.
 
 To start a new project in the current working directory, simply run:
 
-``` r
+```{r}
 d6::new_project("unicornus_wl_sdm_smith_j")
 ```
 
@@ -81,7 +82,7 @@ countries](https://www.iban.com/country-codes).
 The main folders created in the root folder (here
 `unicornus_wl_sdm_smith_j`) are the following:
 
-``` text
+```{text}
 .
 └── unicornus_wl_sdm_smith_j
     ├── data-raw
@@ -94,7 +95,7 @@ The main folders created in the root folder (here
 The full scaffolding structure including all subdirectories and
 additional files looks like this:
 
-``` text
+```{text}
 . 
 └── unicornus_wl_sdm_smith_j
     ├── .Rproj.user         —  Rproject files
@@ -128,7 +129,7 @@ You don’t need to change the working directory first—you can also
 specify a path to a custom root folder in which the new project folder
 is created:
 
-``` r
+```{r}
 ## both work:
 d6::new_project("unicornus_wl_sdm_smith_j", path = "absolute/path/to/the/root/folder")
 ## or:
@@ -145,14 +146,14 @@ The resulting final directory of your project would be
 If you want to create a GitHub repository for the project at the same
 time, use instead:
 
-``` r
+```{r}
 d6::new_project("unicornus_wl_sdm_smith_j", github = TRUE)
 ```
 
 By default, the visibility of the GitHub repository is set to “private”
 but you can also change that:
 
-``` r
+```{r}
 d6::new_project("unicornus_wl_sdm_smith_j", github = TRUE, private_repo = FALSE)
 ```
 
@@ -168,7 +169,7 @@ If your project does not (or will not) contain any spatial data, you can
 prevent the creation of the directories `geo-raw` and `geo-proc` by
 setting `geo` to `FALSE`:
 
-``` r
+```{r}
 d6::new_project("unicornus_wl_sdm_smith_j", geo = FALSE)
 ```
 
@@ -187,7 +188,7 @@ add a MIT license (if needed) and add package dependencies.
 You can install the packages that are most commonly used in our
 department via `install_d6_packages()`:
 
-``` r
+```{r}
 d6::install_d6_packages()
 ```
 
@@ -199,20 +200,20 @@ Again, there is an arguement `geo` so you can decide if you want to
 install common geodata packages as well (which is the default). If you
 are not intending to process geodata, set `geo` to `FALSE`:
 
-``` r
+```{r}
 d6::install_d6_packages(geo = FALSE)
 ```
 
 The default packages that are going to be installed are:
 
-``` text
+```{text}
 tidyverse (tibble, dplyr, tidyr, ggplot2, readr, forecats, stringr, purrr), lubridate, here, vroom, patchwork, usethis
 ```
 
 The following packages will be installed in case you specify
 `geo = TRUE`:
 
-``` text
+```{text}
 rgdal, geos, raster, sp, sf, tmap
 ```
 
@@ -245,13 +246,13 @@ in the `R` directory or any subdirectory, and will store the resulting
 You can render all .Rmd files that are placed in the `R` directory and
 subdirectories in one step:
 
-``` r
+```{r}
 d6::render_all_reports()
 ```
 
 You can also render single Rmarkdown documents via `render_report()`:
 
-``` r
+```{r}
 d6::render_report("my-report.Rmd")
 d6::render_report("notsurewhybutIhaveasubfolder/my-report.Rmd")
 ```

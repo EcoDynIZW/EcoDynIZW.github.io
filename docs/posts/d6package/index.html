@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
 <title>Ecological Dynamics: The {d6} R package: Simplify workflows of D6 research projects</title>
@@ -119,7 +120,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["d6package_files/anchor-4.2.2/anchor.min.js","d6package_files/bowser-1.9.3/bowser.min.js","d6package_files/distill-2.2.21/template.v2.js","d6package_files/header-attrs-2.9/header-attrs.js","d6package_files/jquery-1.11.3/jquery.min.js","d6package_files/popper-2.6.0/popper.min.js","d6package_files/tippy-6.2.7/tippy-bundle.umd.min.js","d6package_files/tippy-6.2.7/tippy-light-border.css","d6package_files/tippy-6.2.7/tippy.css","d6package_files/tippy-6.2.7/tippy.umd.min.js","d6package_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["d6package_files/anchor-4.2.2/anchor.min.js","d6package_files/bowser-1.9.3/bowser.min.js","d6package_files/distill-2.2.21/template.v2.js","d6package_files/header-attrs-2.11/header-attrs.js","d6package_files/header-attrs-2.9/header-attrs.js","d6package_files/jquery-1.11.3/jquery.min.js","d6package_files/jquery-3.6.0/jquery-3.6.0.js","d6package_files/jquery-3.6.0/jquery-3.6.0.min.js","d6package_files/jquery-3.6.0/jquery-3.6.0.min.map","d6package_files/popper-2.6.0/popper.min.js","d6package_files/tippy-6.2.7/tippy-bundle.umd.min.js","d6package_files/tippy-6.2.7/tippy-light-border.css","d6package_files/tippy-6.2.7/tippy.css","d6package_files/tippy-6.2.7/tippy.umd.min.js","d6package_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -465,7 +466,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1872,7 +1873,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2460,8 +2464,8 @@ d-appendix d-footnote-list a.footnote-backlink {
   color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.9/header-attrs.js"></script>
-  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2581,17 +2585,28 @@ Research
 <p><br></p>
 <h2 id="installation">Installation</h2>
 <p>The package is not on CRAN and needs to be installed from GitHub. To do so, open Rstudio and run the following two lines in the console. In case the <code>{devtools}</code> package is already installed, skip that step.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;EcoDynIZW/d6&quot;</span>)</span></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"devtools"</span><span class='op'>)</span>
+<span class='fu'>devtools</span><span class='fu'>::</span><span class='fu'><a href='https://devtools.r-lib.org/reference/remote-reexports.html'>install_github</a></span><span class='op'>(</span><span class='st'>"EcoDynIZW/d6"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <p>If you are asked if you want to update other packages either press “No” (option 3) and continue or update the packages before running the install command again.</p>
 <p><br></p>
 <h2 id="create-project-directory">Create Project Directory</h2>
 <p>Run the function <code>new_project()</code> to create a new project. This will create a standardized directory with all the scaffolding we use for all projects in our department. It also add several files needed for documentation of your project.</p>
 <p>To start a new project in the current working directory, simply run:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>d6<span class="sc">::</span><span class="fu">new_project</span>(<span class="st">&quot;unicornus_wl_sdm_smith_j&quot;</span>)</span></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>d6</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6/man/new_project.html'>new_project</a></span><span class='op'>(</span><span class='st'>"unicornus_wl_sdm_smith_j"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <p><em>Please give your project a unique and descriptive name: <strong>species_country_topic_name</strong></em></p>
 <p>For example, when John Smith is developing a species distribution models for unicorns in Wonderland, a descriptive title could be: <code>unicornus_wl_sdm_smith_j</code>. Please use underscores and the <a href="https://www.iban.com/country-codes">international Alpha-2 encoding for countries</a>.</p>
 <p>The main folders created in the root folder (here <code>unicornus_wl_sdm_smith_j</code>) are the following:</p>
+<div class="layout-chunk" data-layout="l-body">
 <pre class="text"><code>.
 └── unicornus_wl_sdm_smith_j
     ├── data-raw
@@ -2599,7 +2614,9 @@ Research
     ├── output
     ├── plots
     └── R</code></pre>
+</div>
 <p>The full scaffolding structure including all subdirectories and additional files looks like this:</p>
+<div class="layout-chunk" data-layout="l-body">
 <pre class="text"><code>. 
 └── unicornus_wl_sdm_smith_j
     ├── .Rproj.user         —  Rproject files
@@ -2623,39 +2640,74 @@ Research
     ├── DESCRIPTION         —  contains project details and package dependencies
     ├── NAMESPACE           —  contains context for R objects
     └── project.Rproj       —  Rproject file: use to start your project</code></pre>
+</div>
 <p><br></p>
 <h3 id="use-a-custom-root-directory">Use A Custom Root Directory</h3>
 <p>You don’t need to change the working directory first—you can also specify a path to a custom root folder in which the new project folder is created:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## both work:</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>d6<span class="sc">::</span><span class="fu">new_project</span>(<span class="st">&quot;unicornus_wl_sdm_smith_j&quot;</span>, <span class="at">path =</span> <span class="st">&quot;absolute/path/to/the/root/folder&quot;</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="do">## or:</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>d6<span class="sc">::</span><span class="fu">new_project</span>(<span class="st">&quot;unicornus_wl_sdm_smith_j&quot;</span>, <span class="at">path =</span> <span class="st">&quot;absolute/path/to/the/root/folder/&quot;</span>)</span></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'>## both work:</span>
+<span class='fu'>d6</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6/man/new_project.html'>new_project</a></span><span class='op'>(</span><span class='st'>"unicornus_wl_sdm_smith_j"</span>, path <span class='op'>=</span> <span class='st'>"absolute/path/to/the/root/folder"</span><span class='op'>)</span>
+<span class='co'>## or:</span>
+<span class='fu'>d6</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6/man/new_project.html'>new_project</a></span><span class='op'>(</span><span class='st'>"unicornus_wl_sdm_smith_j"</span>, path <span class='op'>=</span> <span class='st'>"absolute/path/to/the/root/folder/"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <p>The resulting final directory of your project would be <code>absolute/path/to/the/root/folder/unicornus_wl_sdm_smith_j</code>.</p>
 <p><br></p>
 <h3 id="use-version-control">Use Version Control</h3>
 <p>If you want to create a GitHub repository for the project at the same time, use instead:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>d6<span class="sc">::</span><span class="fu">new_project</span>(<span class="st">&quot;unicornus_wl_sdm_smith_j&quot;</span>, <span class="at">github =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>d6</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6/man/new_project.html'>new_project</a></span><span class='op'>(</span><span class='st'>"unicornus_wl_sdm_smith_j"</span>, github <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <p>By default, the visibility of the GitHub repository is set to “private” but you can also change that:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>d6<span class="sc">::</span><span class="fu">new_project</span>(<span class="st">&quot;unicornus_wl_sdm_smith_j&quot;</span>, <span class="at">github =</span> <span class="cn">TRUE</span>, <span class="at">private_repo =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>d6</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6/man/new_project.html'>new_project</a></span><span class='op'>(</span><span class='st'>"unicornus_wl_sdm_smith_j"</span>, github <span class='op'>=</span> <span class='cn'>TRUE</span>, private_repo <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <p>Note that to create a GitHub repo you will need to have configured your system as explained <a href="https://gist.github.com/Z3tt/3dab3535007acf108391649766409421">here</a>.</p>
 <p><br></p>
 <h3 id="setup-without-geo-directories">Setup without Geo Directories</h3>
 <p>If your project does not (or will not) contain any spatial data, you can prevent the creation of the directories <code>geo-raw</code> and <code>geo-proc</code> by setting <code>geo</code> to <code>FALSE</code>:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>d6<span class="sc">::</span><span class="fu">new_project</span>(<span class="st">&quot;unicornus_wl_sdm_smith_j&quot;</span>, <span class="at">geo =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>d6</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6/man/new_project.html'>new_project</a></span><span class='op'>(</span><span class='st'>"unicornus_wl_sdm_smith_j"</span>, geo <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <p><br></p>
 <h3 id="add-documentation-to-your-project">Add Documentation to Your Project</h3>
 <p>After you have set up your project directory, open the file <code>00_start.R</code> in the <code>R</code> folder. Add the details of your project, fill in the readme, add a MIT license (if needed) and add package dependencies.</p>
 <p><br></p>
 <h2 id="install-common-packages">Install Common Packages</h2>
 <p>You can install the packages that are most commonly used in our department via <code>install_d6_packages()</code>:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>d6<span class="sc">::</span><span class="fu">install_d6_packages</span>()</span></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>d6</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6/man/install_d6_packages.html'>install_d6_packages</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <p>Note that this function is going to check preinstalled versions and will only install packages that are not installed with your current R version.</p>
 <p>Again, there is an arguement <code>geo</code> so you can decide if you want to install common geodata packages as well (which is the default). If you are not intending to process geodata, set <code>geo</code> to <code>FALSE</code>:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>d6<span class="sc">::</span><span class="fu">install_d6_packages</span>(<span class="at">geo =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>d6</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6/man/install_d6_packages.html'>install_d6_packages</a></span><span class='op'>(</span>geo <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <p>The default packages that are going to be installed are:</p>
+<div class="layout-chunk" data-layout="l-body">
 <pre class="text"><code>tidyverse (tibble, dplyr, tidyr, ggplot2, readr, forecats, stringr, purrr), lubridate, here, vroom, patchwork, usethis</code></pre>
+</div>
 <p>The following packages will be installed in case you specify <code>geo = TRUE</code>:</p>
+<div class="layout-chunk" data-layout="l-body">
 <pre class="text"><code>rgdal, geos, raster, sp, sf, tmap</code></pre>
+</div>
 <p><br></p>
 <h2 id="use-custom-rmarkdown-templates">Use Custom Rmarkdown Templates</h2>
 <p>The package also provides several templates for your scripts. In Rstudio, navigate to <code>File &gt; New File &gt; RMarkdown... &gt; Templates</code> and choose the template you want to use. All templates come with a preformatted YAML header and chunks for the setup.</p>
@@ -2668,10 +2720,20 @@ Research
 <h2 id="render-rmarkdown-files-to-reports">Render Rmarkdown Files to Reports</h2>
 <p>The <code>render_*()</code> functions take care of knitting your Rmarkdown files into HTML reports. The functions assume that your .Rmd files are saved in the <code>R</code> directory or any subdirectory, and will store the resulting .html files in the according directory, namely <code>./docs/reports/</code>.</p>
 <p>You can render all .Rmd files that are placed in the <code>R</code> directory and subdirectories in one step:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>d6<span class="sc">::</span><span class="fu">render_all_reports</span>()</span></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>d6</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6/man/render_all_reports.html'>render_all_reports</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <p>You can also render single Rmarkdown documents via <code>render_report()</code>:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>d6<span class="sc">::</span><span class="fu">render_report</span>(<span class="st">&quot;my-report.Rmd&quot;</span>)</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>d6<span class="sc">::</span><span class="fu">render_report</span>(<span class="st">&quot;notsurewhybutIhaveasubfolder/my-report.Rmd&quot;</span>)</span></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>d6</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6/man/render_report.html'>render_report</a></span><span class='op'>(</span><span class='st'>"my-report.Rmd"</span><span class='op'>)</span>
+<span class='fu'>d6</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6/man/render_report.html'>render_report</a></span><span class='op'>(</span><span class='st'>"notsurewhybutIhaveasubfolder/my-report.Rmd"</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <p><br></p>
 <hr />
 <h2 id="acknowledgements">Acknowledgements</h2>
@@ -2685,7 +2747,7 @@ Research
 <div style="width:300px; height:200px">
 <p><img src=https://camo.githubusercontent.com/00f7814990f36f84c5ea74cba887385d8a2f36be/68747470733a2f2f646f63732e636c6f7564706f7373652e636f6d2f696d616765732f63632d62792d6e632d73612e706e67 alt="" height="42"></p>
 </div>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
