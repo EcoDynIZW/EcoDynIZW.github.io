@@ -36,5 +36,5 @@ Our study population experiences extreme and unpredictable fluctuations in prey 
 Human activities are an important source of mortality spotted hyenas in the Serengeti National Park. Illegal setting of wire snares by bushmeat hunters is extensive along the west and northwest border of the Serengeti National Park. Hyenas in our study population are killed as ‘by-catch’ in these wire snares when they ‘commute’ in areas containing large aggregations of migratory herbivores which are also profitable locations used by illegal bushmeat hunters.
 
 ```{r, layout="l-screen-inset"}
-knitr::include_graphics("img/Inf-MV-inferno-cut-a.png")
+knitr::include_graphics("img/meckpom-csf-inferno-cut.png")
 ```

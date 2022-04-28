@@ -129,5 +129,5 @@ People involved: **Dr. Julie Louvrier**, **Dr. Aimara Planillo**, **Joe Premier*
 </small>
 
 ```{r, layout="l-screen-inset"}
-knitr::include_graphics("img/Inf-MV-inferno-cut-a.png")
+knitr::include_graphics("img/meckpom-csf-inferno-cut.png")
 ```

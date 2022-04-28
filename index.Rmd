@@ -8,7 +8,7 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Welcome to D6
+# Welcome to D6!
 
 <div class='highlightbox'>
   <span class='highlight'>
@@ -16,8 +16,10 @@ knitr::opts_chunk$set(echo = FALSE)
   </span>
 </div>
 
-```{r, layout="l-screen-inset"}
-knitr::include_graphics("img/Inf-MV-inferno-cut-a.png")
+<br>
+
+```{r, layout="l-screen"}
+knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
 ```
 
 ## Our Vision
@@ -32,27 +34,12 @@ By developing and using a wide range of modern field techniques, lab analytical 
 
 We are organized in three teams spanning the different levels of organisation from the individual to the community level. Check out the three team pages for an overview over current projects, activities and people!
 
-<br><br>
+<br>
 
-```{r, layout="l-screen-inset shaded"}
-library(leaflet)
-leaflet() %>%
-  setView(lng = 13.5211, lat = 52.5062, zoom = 04) %>% 
-  addProviderTiles(providers$CartoDB.Voyager, group = "Default Map") %>%
-  addProviderTiles(providers$Stamen.Terrain, group = "Terrain Map") %>% 
-  addProviderTiles(providers$CartoDB.DarkMatter, group = "Dark Map") %>%
-  addTiles(group = "OpenStreetMap") %>% 
-  addPopups(lng = 13.521167153974313, lat = 52.506286189883994, 
-            popup = "<b>Leibniz Institute for<br>Zoo and Wildlife Research</b>",
-            options = popupOptions(closeButton = FALSE)) %>%
-  # Layers control
-  addLayersControl(
-    baseGroups = c("Default Map", "Terrain Map", "Dark Map", "OpenStreetMap"),
-    options = layersControlOptions(collapsed = TRUE)
-  )
+```{r, layout="l-screen"}
+knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
 ```
 
-<br><br>
 
 ## News
 
@@ -78,19 +65,38 @@ leaflet() %>%
 - Isorix (add)
 - camtrapR (add)
 
-
-## Contact {.appendix}
-
-Department Lead: Prof. Dr. S. Kramer-Schadt  
-Deputy Lead: Dr. Andreas Wilting  
-Coordination: Dr. Conny Landgraf  
-<a href="mailto:assist6@izw-berlin.de">assist6[at]izw-berlin.de</a>  
+<br> 
 
 ## Address {.appendix}
 
 Leibniz Institute for Zoo and Wildlife Research  
 Department of Ecological Dynamics  
 Alfred-Kowalke-Str. 17  
-D-10315 Berlin, Germany  
+D-10315 Berlin, Germany
 
-[Impressum](impressum.html)
+```{r, layout="l-screen-inset shaded"}
+library(leaflet)
+leaflet() %>%
+  setView(lng = 13.5211, lat = 52.5062, zoom = 04) %>% 
+  addProviderTiles(providers$CartoDB.Voyager, group = "Default Map") %>%
+  addProviderTiles(providers$Stamen.Terrain, group = "Terrain Map") %>% 
+  addProviderTiles(providers$CartoDB.DarkMatter, group = "Dark Map") %>%
+  addTiles(group = "OpenStreetMap") %>% 
+  addPopups(lng = 13.521167153974313, lat = 52.506286189883994, 
+            popup = "<b>Leibniz Institute for<br>Zoo and Wildlife Research</b>",
+            options = popupOptions(closeButton = FALSE)) %>%
+  # Layers control
+  addLayersControl(
+    baseGroups = c("Default Map", "Terrain Map", "Dark Map", "OpenStreetMap"),
+    options = layersControlOptions(collapsed = TRUE)
+  )
+```
+
+<br> 
+
+## Contact {.appendix}
+
+Department Lead: Prof. Dr. S. Kramer-Schadt  
+Deputy Lead: Dr. Andreas Wilting  
+Coordination: Dr. Conny Landgraf  
+<a href="mailto:assist6@izw-berlin.de">assist6[at]izw-berlin.de</a>

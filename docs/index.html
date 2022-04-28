@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>Ecological Dynamics</title>
@@ -457,7 +458,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1864,7 +1865,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2452,8 +2456,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-  <script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
   <script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
   <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
   <script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
@@ -2548,12 +2552,13 @@ Research
 
 
 <div class="d-article">
-<h1 id="welcome-to-d6">Welcome to D6</h1>
+<h1 id="welcome-to-d6">Welcome to D6!</h1>
 <div class="highlightbox">
 <p><span class="highlight"> We are scientists of the Department of Ecological Dynamics at the Leibniz Institute for Zoo and Wildlife Research in Berlin, Germany. Our research is focused on understanding ecological dynamics in space and time, at different levels of organisation, from individuals to communities, and across gradients of human altered environments. We investigate how fitness consequences of processes acting at the individual level, such as social behaviour or movements, competition, predator-prey or host-pathogen interactions, shape population and community dynamics, also at evolutionary scales. </span></p>
 </div>
-<div class="layout-chunk" data-layout="l-screen-inset">
-<p><img src="img/Inf-MV-inferno-cut-a.png" width="3071" /></p>
+<p><br></p>
+<div class="layout-chunk" data-layout="l-screen">
+<p><img src="img/meckpom-csf-inferno-cut-top.png" width="2048" /></p>
 </div>
 <h2 id="our-vision">Our Vision</h2>
 <p>Our ultimate goal is to predict the future viability of wildlife populations and species faced with accelerating environmental change in the anthropocene and to improve landscape scale planning for conservation.</p>
@@ -2561,12 +2566,10 @@ Research
 <p>By developing and using a wide range of modern field techniques, lab analytical methods and especially dynamic and simulation modelling, we aim to advance theory and concepts in ecology and evolution, and to promote the development of computational and analytical toolkits.</p>
 <h2 id="our-teams">Our Teams</h2>
 <p>We are organized in three teams spanning the different levels of organisation from the individual to the community level. Check out the three team pages for an overview over current projects, activities and people!</p>
-<p><br><br></p>
-<div class="layout-chunk" data-layout="l-screen-inset shaded">
-<div id="htmlwidget-4b350a7d94cadb8c8530" style="width:624px;height:384px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4b350a7d94cadb8c8530">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[52.5062,13.5211],4,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Voyager",null,"Default Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stamen.Terrain",null,"Terrain Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Dark Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[52.506286189884,13.5211671539743,"<b>Leibniz Institute for<br>Zoo and Wildlife Research<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]},{"method":"addLayersControl","args":[["Default Map","Terrain Map","Dark Map","OpenStreetMap"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[52.506286189884,52.506286189884],"lng":[13.5211671539743,13.5211671539743]}},"evals":[],"jsHooks":[]}</script>
+<p><br></p>
+<div class="layout-chunk" data-layout="l-screen">
+<p><img src="img/meckpom-csf-inferno-cut-bottom.png" width="2048" /></p>
 </div>
-<p><br><br></p>
 <h2 id="news">News</h2>
 <h3 id="announcements">Announcements</h3>
 <ul>
@@ -2590,17 +2593,22 @@ Research
 <li>Isorix (add)</li>
 <li>camtrapR (add)</li>
 </ul>
-<h2 class="appendix" id="contact">Contact</h2>
-<p>Department Lead: Prof. Dr. S. Kramer-Schadt<br />
-Deputy Lead: Dr. Andreas Wilting<br />
-Coordination: Dr. Conny Landgraf<br />
-<a href="mailto:assist6@izw-berlin.de">assist6[at]izw-berlin.de</a></p>
+<p><br></p>
 <h2 class="appendix" id="address">Address</h2>
 <p>Leibniz Institute for Zoo and Wildlife Research<br />
 Department of Ecological Dynamics<br />
 Alfred-Kowalke-Str. 17<br />
 D-10315 Berlin, Germany</p>
-<p><a href="impressum.html">Impressum</a></p>
+<div class="layout-chunk" data-layout="l-screen-inset shaded">
+<div id="htmlwidget-6f823266bebb6f51363e" style="width:624px;height:384px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6f823266bebb6f51363e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[52.5062,13.5211],4,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Voyager",null,"Default Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stamen.Terrain",null,"Terrain Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Dark Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[52.506286189884,13.5211671539743,"<b>Leibniz Institute for<br>Zoo and Wildlife Research<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]},{"method":"addLayersControl","args":[["Default Map","Terrain Map","Dark Map","OpenStreetMap"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[52.506286189884,52.506286189884],"lng":[13.5211671539743,13.5211671539743]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<p><br></p>
+<h2 class="appendix" id="contact">Contact</h2>
+<p>Department Lead: Prof. Dr. S. Kramer-Schadt<br />
+Deputy Lead: Dr. Andreas Wilting<br />
+Coordination: Dr. Conny Landgraf<br />
+<a href="mailto:assist6@izw-berlin.de">assist6[at]izw-berlin.de</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
@@ -2616,7 +2624,12 @@ D-10315 Berlin, Germany</p>
 <div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
+<div class="distill-site-nav distill-site-footer">
+<p>© Department of Ecological Dynamics, Leibniz Institute of Zoo- and Wildlife Research 2020—2022. All rights reserved.</p>
+<p><a href='https://ecodynizw.github.io/EcoDynIZW/impressum.html'><u>Impressum</u></a></p>
+</div>
 <!--/radix_placeholder_navigation_after_body-->
+
 
 </body>
 
