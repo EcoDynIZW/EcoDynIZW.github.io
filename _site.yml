@@ -8,7 +8,7 @@ language:
   label:
     fig.cap: ''
 favicon: img/d6_purple_round.png
-theme: "theme.css"
+theme: "d6theme.css"
 twitter:
   site: "@EcoDynIZW"
 navbar:
