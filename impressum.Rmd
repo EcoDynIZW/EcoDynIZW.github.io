@@ -50,6 +50,6 @@ Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden 
 
 <small>Quelle: <a href='https://www.e-recht24.de/'>eRecht24</a>
 
-```{r, layout="l-screen-inset"}
+```{r, layout="l-screen"}
 knitr::include_graphics("img/meckpom-csf-inferno-cut.png")
 ```
