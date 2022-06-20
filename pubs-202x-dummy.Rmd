@@ -3,10 +3,6 @@ title: "Publications 20xx"
 description: ""
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
 

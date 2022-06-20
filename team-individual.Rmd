@@ -1,5 +1,5 @@
 ---
-title: "Team 1 — Individual Dynamics"
+title: "Team 1: Individual Dynamics"
 description: |
   <b>Lead: Dr. Marion L. East & Dr. Sarah Benhaiem</b>  
   <b>Assistance: Dagmar Thierer, Karl Stephan & Dr. Sonja Metzger</b>  
@@ -16,11 +16,17 @@ knitr::include_graphics("img/team-ind-header.png")
 
 <div class='highlightbox'>
   <span class='highlight'>
-  Welcome! We study individual and social dynamics principally in African carnivores. Our key long-term research focuses on spotted hyenas in the Serengeti National Park. Research began in 1987 and currently we have detailed information on more than 2500 individually known hyenas. Our interdisciplinary research applies non-invasive and minimally invasive techniques and to further this aim we have developed and verified faecal assays for spotted hyenas.
+  Welcome! We study individual and social dynamics principally in African carnivores. Our key long-term research focuses on spotted hyenas in the Serengeti National Park. Research began in 1987 and currently we have detailed information on more than 2500 individually known hyenas. Our interdisciplinary research applies non-invasive and minimally invasive techniques and to further this aim we have developed and verified fecal assays for spotted hyenas.
   </span>
 </div>
 
-<b style='font-size16px;'Overview of our main research foci and methods:</b>
+<b style='color:red;'>
+-> decide if needs to be standardized  
+     -> shorten text? no text? text for others?  
+     -> conceptual overview for all? remove?
+</b>
+
+### Overview of our main research foci and methods:
 
 ![](img/team-ind-research.png)  
 ![](img/team-ind-methods.png)
@@ -35,6 +41,14 @@ Our study population experiences extreme and unpredictable fluctuations in prey 
 
 Human activities are an important source of mortality spotted hyenas in the Serengeti National Park. Illegal setting of wire snares by bushmeat hunters is extensive along the west and northwest border of the Serengeti National Park. Hyenas in our study population are killed as ‘by-catch’ in these wire snares when they ‘commute’ in areas containing large aggregations of migratory herbivores which are also profitable locations used by illegal bushmeat hunters.
 
-```{r, layout="l-screen-inset"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut.png")
+---
+
+## Running Projects
+
+<b style='color:red;'>
+-> add running project summaries with key literature
+</b>
+
+```{r, layout="l-screen"}
+knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
 ```

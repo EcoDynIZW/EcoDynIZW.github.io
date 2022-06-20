@@ -46,24 +46,24 @@ knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
 ### Announcements
 
 * We have a **new webpage** 🎉 
-* I mean *maybe...* 🤔
+* Field season is in full swing — we are currently capturing swallows, squirrels and more!
 
-### Recent Publications
+### Featured Publications
 
-- [Marescot, Franz, Benhaiem et al. (accepted) *J Anim Ecol*](https://doi.org/10.1111/1365-2656.13555) ([Code](https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol))
-- [Kürschner et al. 2021 *Ecol Evol*](http://doi.org/10.1002/ece3.7478) ([Code](https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol))
-- [Scherer et al. 2020 *OIKOS*](http://doi.org/10.1111/oik.07002) ([Code](https://github.com/EcoDynIZW/Scherer_2020_OIKOS))
-- [Radchuk et al. 2019 *Nat Com*](https://github.com/EcoDynIZW/Radchuk_2019_NatCom) ([Code](http://doi.org/10.1038/s41467-019-10924-4))
-- [Benhaiem et al. 2018 *Comms Biol*](http://doi.org/10.1038/s42003-018-0197-1) ([Code](https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio))
+- Marescot, Franz, Benhaiem et al. 2021 [*J Anim Ecol*](https://doi.org/10.1111/1365-2656.13555) —  [Code](https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol)
+- Kürschner et al. 2021 [*Ecol Evol*](http://doi.org/10.1002/ece3.7478) — [Code](https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol)
+- Scherer et al. 2020 [*OIKOS*](http://doi.org/10.1111/oik.07002) — [Code](https://github.com/EcoDynIZW/Scherer_2020_OIKOS)
+- Radchuk et al. 2019 [*Nat Com*](http://doi.org/10.1038/s41467-019-10924-4) — [Code](https://github.com/EcoDynIZW/Radchuk_2019_NatCom)
+- Benhaiem et al. 2018 [*Comms Biol*](http://doi.org/10.1038/s42003-018-0197-1) — [Code](https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio)
 
 ### Contributions to R Packages
 
-- [d6](https://github.com/EcoDynIZW/d6): A package for simplifying workflows at our department
-- [d6berlin](https://github.com/EcoDynIZW/d6berlin): A package with template maps for Berlin
-- d6raster: A package to automate raster access and processing
-- NLMR (add)
-- Isorix (add)
-- camtrapR (add)
+- [d6](https://github.com/EcoDynIZW/d6): Simplify workflows at our department
+- [d6berlin](https://github.com/EcoDynIZW/d6berlin): Template maps for Berlin
+- [camtrapR](https://github.com/jniedballa/camtrapR): Manage camera trap data in R
+- [NLMR](https://github.com/ropensci/NLMR): Simulate neutral landscape models
+- [Isorix](https://github.com/courtiol/IsoriX): Building isoscapes and inferring geographic origins on isotopic ratios
+- [imageseg](https://github.com/EcoDynIZW/imageseg): Deep learning image segmentation
 
 <br> 
 

@@ -1,7 +1,7 @@
 ---
-title: "Team 3 — Biodiversity Dynamics"
+title: "Team 3: Biodiversity Dynamics"
 description: |
-  <b>Lead: Dr. Andreas Wilting</b>
+  <b>Lead: Dr. Andreas Wilting</b>  
   <b> Assistance: Jan Axtner</b>
 ---
 
@@ -27,6 +27,10 @@ knitr::include_graphics("img/team-div-header.png")
 
 ## Running Projects
 
-```{r, layout="l-screen-inset"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut.png")
+<b style='color:red;'>
+-> add running project summaries with key literature
+</b>
+
+```{r, layout="l-screen"}
+knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
 ```

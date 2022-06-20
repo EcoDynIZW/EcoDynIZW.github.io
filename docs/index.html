@@ -2136,11 +2136,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   html {
     /*-- Main font sizes --*/
-    --title-size:      48px;
+    --title-size:      3rem;
     --body-size:       1.07rem;
-    --code-size:       14px;
-    --aside-size:      12px;
-    --fig-cap-size:    13px;
+    --code-size:       0.875rem;
+    --aside-size:      0.75rem;
+    --fig-cap-size:    0.875rem;
     /*-- Main font colors --*/
     --title-color:     #110a31;
     --header-color:    rgba(0, 0, 0, 0.8);
@@ -2164,15 +2164,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /*-- ARTICLE TABLE OF CONTENTS --*/
   .d-contents {
-    --heading-size:    18px;
-    --contents-size:   13px;
+    --heading-size:    1.125rem;
+    --contents-size:   0.875rem;
   }
 
   /*-- ARTICLE APPENDIX --*/
   d-appendix {
-    --heading-size:    18px;
+    --heading-size:    1.125rem;
     --heading-color:   rgba(0, 0, 0, 0.65);
-    --text-size:       0.8em;
+    --text-size:       0.8rem;
     --text-color:      rgba(0, 0, 0, 0.5);
   }
 
@@ -2180,8 +2180,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* These properties only apply to Distill sites and blogs  */
 
   .distill-site-header {
-    --title-size:       20px;
-    --text-size:        17px;
+    --title-size:       1.25rem;
+    --text-size:        1.125rem;
     --text-color:       rgba(255, 255, 255, .8);
     --hover-color:      white;
     --bkgd-color:       #110a31;
@@ -2189,16 +2189,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .distill-site-footer {
     --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        12px;
+    --text-size:        0.75rem;
     --hover-color:      white;
     --bkgd-color:       #110a31;
   }
 
   /*-- Additional custom styles --*/
-  /* Add any additional CSS rules below                      */
+  /* Add any additional CSS rules below */
 
   .nav-search {
-    font-size: 13px;
+    font-size: 0.8rem;
   }
 
   d-article h2 {
@@ -2217,40 +2217,52 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding: 10px;
     text-align: left;
     background: #110a31;
-    margin: 12px 3px 6px 0px;
+    margin: 0.75rem 0 0.375rem 0;
   }
   hbox{
     font-family: PT Sans Caption;
     color: white;
-    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: bold;
+  }
+
+  .headerbox-secondary {
+    padding: 10px;
+    text-align: left;
+    border: 5px solid #110a31;
+    margin: 0.75rem 0 0.5rem 0;
+  }
+  hbox-secondary{
+    font-family: PT Sans Caption;
+    color: #110a31;
+    font-size: 1.375rem;
     font-weight: bold;
   }
 
   .figcaption {
     font-family: PT Serif;
     color: grey;
-    font-size: 11.5px;
+    font-size: 0.75rem;
     font-style: italic;
   }
 
   .highlightbox {
-    padding: 28px;
+    padding: 1.75rem;
     text-align: left;
     background: #efefee;
-    padding-bottom: 18px;
-    margin: 10px 0px 30px 0px;
+    padding-bottom: 1.125rem;
+    margin: 0.625rem 0 1.875rem 0;
   }
   .highlight {
       font-family: PT Serif;
-      font-size:19px;
-      font-weight:600;
-      line-height:140%;
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 140%;
   }
 
   small {
-      font-family: PT Serif;
-      font-size:13px;
-      line-height:180%;
+      font-size: 0.9rem;
+      line-height: 180%;
   }
 
   .nospace {
@@ -2271,27 +2283,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   @media screen and (max-width: 768px) {
   	.distill-site-header.responsive{
-  		max-height:100vh;
-  		overflow-y:auto;
-  		position:fixed;
-  		top:0;
+  		max-height: 100vh;
+  		overflow-y: auto;
+  		position fixed;
+  		top: 0;
   	}
 
     html {
-      --title-size: 42px;
+      --title-size: 2.625rem;
       --body-size: 1.1rem;
     }
 
     .distill-site-header {
-      --title-size:       22px;
-      --text-size:        22px;
+      --title-size: 1.375rem;
+      --text-size:  1.375rem;
     }
 
     .highlight {
         font-family: PT Serif;
-        font-size:17px;
-        font-weight:600;
-        line-height:140%;
+        font-size: 1.05rem;
+        font-weight: 600;
+        line-height: 140%;
     }
   }
 
@@ -2574,24 +2586,24 @@ Research
 <h3 id="announcements">Announcements</h3>
 <ul>
 <li>We have a <strong>new webpage</strong> 🎉</li>
-<li>I mean <em>maybe…</em> 🤔</li>
+<li>Field season is in full swing — we are currently capturing swallows, squirrels and more!</li>
 </ul>
-<h3 id="recent-publications">Recent Publications</h3>
+<h3 id="featured-publications">Featured Publications</h3>
 <ul>
-<li><a href="https://doi.org/10.1111/1365-2656.13555">Marescot, Franz, Benhaiem et al. (accepted) <em>J Anim Ecol</em></a> (<a href="https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol">Code</a>)</li>
-<li><a href="http://doi.org/10.1002/ece3.7478">Kürschner et al. 2021 <em>Ecol Evol</em></a> (<a href="https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol">Code</a>)</li>
-<li><a href="http://doi.org/10.1111/oik.07002">Scherer et al. 2020 <em>OIKOS</em></a> (<a href="https://github.com/EcoDynIZW/Scherer_2020_OIKOS">Code</a>)</li>
-<li><a href="https://github.com/EcoDynIZW/Radchuk_2019_NatCom">Radchuk et al. 2019 <em>Nat Com</em></a> (<a href="http://doi.org/10.1038/s41467-019-10924-4">Code</a>)</li>
-<li><a href="http://doi.org/10.1038/s42003-018-0197-1">Benhaiem et al. 2018 <em>Comms Biol</em></a> (<a href="https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio">Code</a>)</li>
+<li>Marescot, Franz, Benhaiem et al. 2021 <a href="https://doi.org/10.1111/1365-2656.13555"><em>J Anim Ecol</em></a> — <a href="https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol">Code</a></li>
+<li>Kürschner et al. 2021 <a href="http://doi.org/10.1002/ece3.7478"><em>Ecol Evol</em></a> — <a href="https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol">Code</a></li>
+<li>Scherer et al. 2020 <a href="http://doi.org/10.1111/oik.07002"><em>OIKOS</em></a> — <a href="https://github.com/EcoDynIZW/Scherer_2020_OIKOS">Code</a></li>
+<li>Radchuk et al. 2019 <a href="http://doi.org/10.1038/s41467-019-10924-4"><em>Nat Com</em></a> — <a href="https://github.com/EcoDynIZW/Radchuk_2019_NatCom">Code</a></li>
+<li>Benhaiem et al. 2018 <a href="http://doi.org/10.1038/s42003-018-0197-1"><em>Comms Biol</em></a> — <a href="https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio">Code</a></li>
 </ul>
 <h3 id="contributions-to-r-packages">Contributions to R Packages</h3>
 <ul>
-<li><a href="https://github.com/EcoDynIZW/d6">d6</a>: A package for simplifying workflows at our department</li>
-<li><a href="https://github.com/EcoDynIZW/d6berlin">d6berlin</a>: A package with template maps for Berlin</li>
-<li>d6raster: A package to automate raster access and processing</li>
-<li>NLMR (add)</li>
-<li>Isorix (add)</li>
-<li>camtrapR (add)</li>
+<li><a href="https://github.com/EcoDynIZW/d6">d6</a>: Simplify workflows at our department</li>
+<li><a href="https://github.com/EcoDynIZW/d6berlin">d6berlin</a>: Template maps for Berlin</li>
+<li><a href="https://github.com/jniedballa/camtrapR">camtrapR</a>: Manage camera trap data in R</li>
+<li><a href="https://github.com/ropensci/NLMR">NLMR</a>: Simulate neutral landscape models</li>
+<li><a href="https://github.com/courtiol/IsoriX">Isorix</a>: Building isoscapes and inferring geographic origins on isotopic ratios</li>
+<li><a href="https://github.com/EcoDynIZW/imageseg">imageseg</a>: Deep learning image segmentation</li>
 </ul>
 <p><br></p>
 <h2 class="appendix" id="address">Address</h2>
@@ -2600,8 +2612,8 @@ Department of Ecological Dynamics<br />
 Alfred-Kowalke-Str. 17<br />
 D-10315 Berlin, Germany</p>
 <div class="layout-chunk" data-layout="l-screen-inset shaded">
-<div id="htmlwidget-6f823266bebb6f51363e" style="width:624px;height:384px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6f823266bebb6f51363e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[52.5062,13.5211],4,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Voyager",null,"Default Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stamen.Terrain",null,"Terrain Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Dark Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[52.506286189884,13.5211671539743,"<b>Leibniz Institute for<br>Zoo and Wildlife Research<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]},{"method":"addLayersControl","args":[["Default Map","Terrain Map","Dark Map","OpenStreetMap"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[52.506286189884,52.506286189884],"lng":[13.5211671539743,13.5211671539743]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8366cb78f5a57c4491ff" style="width:624px;height:384px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8366cb78f5a57c4491ff">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[52.5062,13.5211],4,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Voyager",null,"Default Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stamen.Terrain",null,"Terrain Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Dark Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[52.506286189884,13.5211671539743,"<b>Leibniz Institute for<br>Zoo and Wildlife Research<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]},{"method":"addLayersControl","args":[["Default Map","Terrain Map","Dark Map","OpenStreetMap"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[52.506286189884,52.506286189884],"lng":[13.5211671539743,13.5211671539743]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <p><br></p>
 <h2 class="appendix" id="contact">Contact</h2>

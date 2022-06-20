@@ -7,7 +7,7 @@ author:
   - name: Stephanie Kramer–Schadt
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 01-01-2019
+date: 01-01-2018
 output:
   distill::distill_article:
     self_contained: false
@@ -18,7 +18,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Learn more about creating blogs with Distill at:
 # https://rstudio.github.io/distill/blog.html
-
 ```
 
 

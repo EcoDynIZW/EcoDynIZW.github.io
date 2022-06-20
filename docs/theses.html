@@ -87,7 +87,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Ecological Dynamics: THeses</title>
+  <title>Ecological Dynamics: Theses</title>
 
   <meta property="description" itemprop="description" content=""/>
 
@@ -95,7 +95,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Ecological Dynamics: THeses"/>
+  <meta property="og:title" content="Ecological Dynamics: Theses"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content=""/>
   <meta property="og:locale" content="en_US"/>
@@ -103,7 +103,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Ecological Dynamics: THeses"/>
+  <meta property="twitter:title" content="Ecological Dynamics: Theses"/>
   <meta property="twitter:description" content=""/>
   <meta property="twitter:site" content="@EcoDynIZW"/>
 
@@ -111,7 +111,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["THeses"]},{"type":"character","attributes":{},"value":[""]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Theses"]},{"type":"character","attributes":{},"value":[""]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2136,11 +2136,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   html {
     /*-- Main font sizes --*/
-    --title-size:      48px;
+    --title-size:      3rem;
     --body-size:       1.07rem;
-    --code-size:       14px;
-    --aside-size:      12px;
-    --fig-cap-size:    13px;
+    --code-size:       0.875rem;
+    --aside-size:      0.75rem;
+    --fig-cap-size:    0.875rem;
     /*-- Main font colors --*/
     --title-color:     #110a31;
     --header-color:    rgba(0, 0, 0, 0.8);
@@ -2164,15 +2164,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /*-- ARTICLE TABLE OF CONTENTS --*/
   .d-contents {
-    --heading-size:    18px;
-    --contents-size:   13px;
+    --heading-size:    1.125rem;
+    --contents-size:   0.875rem;
   }
 
   /*-- ARTICLE APPENDIX --*/
   d-appendix {
-    --heading-size:    18px;
+    --heading-size:    1.125rem;
     --heading-color:   rgba(0, 0, 0, 0.65);
-    --text-size:       0.8em;
+    --text-size:       0.8rem;
     --text-color:      rgba(0, 0, 0, 0.5);
   }
 
@@ -2180,8 +2180,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* These properties only apply to Distill sites and blogs  */
 
   .distill-site-header {
-    --title-size:       20px;
-    --text-size:        17px;
+    --title-size:       1.25rem;
+    --text-size:        1.125rem;
     --text-color:       rgba(255, 255, 255, .8);
     --hover-color:      white;
     --bkgd-color:       #110a31;
@@ -2189,16 +2189,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .distill-site-footer {
     --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        12px;
+    --text-size:        0.75rem;
     --hover-color:      white;
     --bkgd-color:       #110a31;
   }
 
   /*-- Additional custom styles --*/
-  /* Add any additional CSS rules below                      */
+  /* Add any additional CSS rules below */
 
   .nav-search {
-    font-size: 13px;
+    font-size: 0.8rem;
   }
 
   d-article h2 {
@@ -2217,40 +2217,52 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding: 10px;
     text-align: left;
     background: #110a31;
-    margin: 12px 3px 6px 0px;
+    margin: 0.75rem 0 0.375rem 0;
   }
   hbox{
     font-family: PT Sans Caption;
     color: white;
-    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: bold;
+  }
+
+  .headerbox-secondary {
+    padding: 10px;
+    text-align: left;
+    border: 5px solid #110a31;
+    margin: 0.75rem 0 0.5rem 0;
+  }
+  hbox-secondary{
+    font-family: PT Sans Caption;
+    color: #110a31;
+    font-size: 1.375rem;
     font-weight: bold;
   }
 
   .figcaption {
     font-family: PT Serif;
     color: grey;
-    font-size: 11.5px;
+    font-size: 0.75rem;
     font-style: italic;
   }
 
   .highlightbox {
-    padding: 28px;
+    padding: 1.75rem;
     text-align: left;
     background: #efefee;
-    padding-bottom: 18px;
-    margin: 10px 0px 30px 0px;
+    padding-bottom: 1.125rem;
+    margin: 0.625rem 0 1.875rem 0;
   }
   .highlight {
       font-family: PT Serif;
-      font-size:19px;
-      font-weight:600;
-      line-height:140%;
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 140%;
   }
 
   small {
-      font-family: PT Serif;
-      font-size:13px;
-      line-height:180%;
+      font-size: 0.9rem;
+      line-height: 180%;
   }
 
   .nospace {
@@ -2271,27 +2283,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   @media screen and (max-width: 768px) {
   	.distill-site-header.responsive{
-  		max-height:100vh;
-  		overflow-y:auto;
-  		position:fixed;
-  		top:0;
+  		max-height: 100vh;
+  		overflow-y: auto;
+  		position fixed;
+  		top: 0;
   	}
 
     html {
-      --title-size: 42px;
+      --title-size: 2.625rem;
       --body-size: 1.1rem;
     }
 
     .distill-site-header {
-      --title-size:       22px;
-      --text-size:        22px;
+      --title-size: 1.375rem;
+      --text-size:  1.375rem;
     }
 
     .highlight {
         font-family: PT Serif;
-        font-size:17px;
-        font-weight:600;
-        line-height:140%;
+        font-size: 1.05rem;
+        font-weight: 600;
+        line-height: 140%;
     }
   }
 
@@ -2476,7 +2488,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"THeses","description":"","authors":[]}
+{"title":"Theses","description":"","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2533,7 +2545,7 @@ Research
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>THeses</h1>
+<h1>Theses</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2541,7 +2553,7 @@ Research
 
 
 <div class="d-article">
-<p><em>TBA</em></p>
+<p><b style='color:red;'> -&gt; to be filled </b></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

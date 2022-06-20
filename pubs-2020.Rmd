@@ -3,17 +3,13 @@ title: "Publications 2020"
 description: ""
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
 * Asad S, **Abrams JF**, **Guharajan R**, Sikui J, **Wilting A** & Rödel MO (2020). Stream amphibian detectability and habitat associations in a reduced impact logging concession in Malaysian Borneo. Journal of Herpetology 54:385-392. DOI: [10.1670/19-136](https://doi.org/10.1670/19-136).
 
 * Asad S, **Wilting A** & Rödel MO (2020): Possible spatial separation at macro-habitat scales between two congeneric *Psammodynastes* species, including observations of fishing behaviour in *Psammodynastes pictus*. Salamandra 56:411-415. ISSN 0036-3375.
 
-* Barnett G, Westbury MV, Sandoval-Velasco M, Vieira  FG, Jeon S, Zazula G, Martin MD, Ho SYW, Mather N, Gopalakrishnan S, Ramos-Madrigal J, de Manuel M, Zepeda-Mendoza ML, Antunes A, Baez AC, De Cahsan B, Larson G, O’Brien SJ, Eizirik E, Johnson WE, Koepfli KP, **Wilting A**, Fickel J, Dalén L, Lorenzen ED, Marques-Bonet T, Hansen AJ, Zhang G, Bhak J, Yamaguchi N & Gilbert MTP (2020). Genomic adaptations and evolutionary history of the extinct scimitar-toothed cat, *Homotherium latidens*. Current Biology 30:5018-5025.E5. DOI: [10.1016/j.cub.2020.09.051](https://doi.org/10.1016/j.cub.2020.09.051).
+* Barnett G, Westbury MV, Sandoval-Velasco M, Vieira FG, Jeon S, Zazula G, Martin MD, Ho SYW, Mather N, Gopalakrishnan S, Ramos-Madrigal J, de Manuel M, Zepeda-Mendoza ML, Antunes A, Baez AC, De Cahsan B, Larson G, O’Brien SJ, Eizirik E, Johnson WE, Koepfli KP, **Wilting A**, Fickel J, Dalén L, Lorenzen ED, Marques-Bonet T, Hansen AJ, Zhang G, Bhak J, Yamaguchi N & Gilbert MTP (2020). Genomic adaptations and evolutionary history of the extinct scimitar-toothed cat, *Homotherium latidens*. Current Biology 30:5018-5025.E5. DOI: [10.1016/j.cub.2020.09.051](https://doi.org/10.1016/j.cub.2020.09.051).
 
 * Berger A, Barthel LMF, Rast W, Hofer H & **Gras P** (2020). Urban hedgehog behavioural responses to temporary habitat disturbance versus permanent fragmentation. Animals 10:2109. DOI: [10.3390/ani10112109](https://doi.org/10.3390/ani10112109).
 

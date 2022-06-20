@@ -1,5 +1,5 @@
 ---
-title: "Team 2 — Population Dynamics"
+title: "Team 2: Population Dynamics"
 description: |
   <b>Lead: Dr. Stephanie Kramer-Schadt & Dr. Viktoriia Radchuk</b>  
   <b>Assistance: Conny Landgraf & Moritz Wenzler</b>
@@ -19,41 +19,36 @@ knitr::include_graphics("img/team-pop-header.png")
   </span>
 </div>
 
-**Stephanie Kramer-Schadt**, Department and Team Lead —  applied ecologist, population and disease dynamics at the landscape scale, passionate about wildlife per se, carnivores in particular, D6 and movement ecology, uses models as tools to communicate management issues.
-
-**Viktoriia Rachuk**, Team Lead —  quantitative ecologist, stability of populations and communities under global change, interested in theory, synthesis, and integration of data with models to assist conservation.
-
-**Dr.Conny Landgraf**, Coordination — organizes us, behavioral ecologist, interested in sensory and acoustic cues of animals.
-
-**Moritz Wenzler**, GIS-Lab — geodata analyst, responsible for the GIS lab, providing geodata and supporting coding.
-
----
 
 # Running Projects
 
+
 <div class='headerbox'><hbox>Theory and Synthesis</hbox></div>
 
-### Stability under global change and across levels of organization
+
+<div class='headerbox-secondary'><hbox-secondary>Stability under global change and across levels of organization</headerbox-secondary></div>
+
+**Dr. Cédric Scherer, Thibault Fronville**
 
 ![](img/team-pop-stability.png)
 
 To understand how populations and communities react to global change we study how their stability is affected by disturbances. To this end we model disturbances of different types and intensity and measure several stability metrics.
 
-* [**How do animals respond to climate change?**](proj-pop-stability-1.html)
-* [**How does environmental variation affect stability of populations and communities?**](proj-pop-stability-2.html)
-
-People involved: **Dr. Cédric Scherer**, **Guillaume Chero**, **Carys Jones**
+* **Animal responses to climate change**
+* **Environmental variation effects on stability of populations and communities**
 
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li><b>Radchuk V</b>, De Laender F, Sarmento Cabral J, Boulangeat I, Crawford M, Bohn F, De Raedt J, <b>Scherer C</b>, Svenning JC, Thonicke K, Schurr FM, Grimm V & <b>Kramer‐Schadt S</b> (2019). The dimensionality of stability depends on disturbance type. Ecology Letters 22:674–684. DOI: <a href='https://doi.org/10.1111/ele.13226'>10.1111/ele.13226</a>.</li>
-   <li><b>Radchuk V</b>, Reed T, Teplitsky C, van de Pol M, Charmantier A, Hassall C, (…), Tryjanowski P, Merilä J, Sheldon B, Pape Møller A, Matthysen E, Janzen F, Dobson FS,  Visser ME, Beissinger SR, <b>Courtiol A</b> & <b>Kramer-Schadt S</b> (2019). Adaptive responses of animals to climate change are not universal and are likely insufficient. Nature Communications 10:3109. DOI: <a href='https://doi.org/10.1038/s41467-019-10924-4'>10.1038/s41467-019-10924-4</a>.</li>  
+    <li>[Radchuk et al. (2019) Ecol. Lett. 22:674–684](https://doi.org/10.1111/ele.13226)</li>
+   <li>[Radchuk et al. (2019) Nat. Commun. 10:3109](https://doi.org/10.1038/s41467-019-10924-4'>10.1038/s41467-019-10924-4)</li>  
    </ul>
 </small>
 
 
-### Wildlife disease dynamics: Linking host and pathogen traits
+<div class='headerbox-secondary'><hbox-secondary>Wildlife disease dynamics: Linking host and pathogen traits</headerbox-secondary></div>
+
+**Dr. Cédric Scherer, Tobias Kürschner, Marius Grabow**
 
 ![](img/team-pop-disease.png)
 
@@ -61,25 +56,27 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
 
 &ensp;&rarr;&ensp;see also [BioMove Graduate School](https://www.bio-move.org/)
 
-* [**Infections on the move**](proj-pop-disease-1.html)
-* [**Pathogen evolution in dynamic landscapes**](proj-pop-disease-2.html)
-
-People involved: **Dr. Cédric Scherer**, **Tobias Kürschner**
+* **Movement effects on pathogen spread and disease persistence**
+* **Evolution of pathogenic strains in dynamic landscapes**
+* **Pathogen-induced movement strategies and fitness consequences**
 
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li><b>Kürschner T</b>, <b>Scherer C</b>, <b>Radchuk V</b>, Blaum N & <b>Kramer-Schadt S</b> (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. Ecology and Evolution 11:5728–5741. DOI: <a href='https://doi.org/10.1002/ece3.7478'>10.1002/ece3.7478</a>.</li>
-  <li><b>Scherer C</b>, <b>Radchuk V</b>, <b>Franz M</b>, Thulke HH, Lange M, Grimm V & <b>Kramer‐Schadt S</b> (2020). Moving infections: individual movement decisions drive disease persistence in spatially structured landscapes. OIKOS 129:651–667. DOI: <a href='https://doi.org/10.1111/oik.07002'>10.1111/oik.07002</a>.</li>
-  <li><b>Scherer C</b>, <b>Radchuk V</b>, Staubach C, Müller S, Blaum N, Thulke HH & <b>Kramer‐Schadt S</b> (2019). Seasonal host life‐history processes fuel disease dynamics at different spatial scales. Journal of Animal Ecology. DOI: <a href='https://doi.org/10.1111/1365-2656.13070'>10.1111/1365-2656.13070</a>.</li>
-  <li><b>Marescot L</b>, <b>Benhaiem S</b>, Gimenez O, <b>Hofer H</b>, Lebreton JD, Olarte-Castillo X A, <b>Kramer-Schadt S</b> & <b>Marion L. East</b> (2018). Social status mediates the fitness costs of infection with canine distemper virus in a social carnivore. Functional Ecology 32:1237–1250. DOI: <a href='https://doi.org/10.1111/1365-2435.13059'>10.1111/1365-2435.13059</a>.</li>
-    <li><b>Kramer-Schadt S</b>, Fernandez N, Eisinger D, Grimm V & Thulke HH (2009). Individual variation in infectiousness explains long-term disease persistence in wildlife populations. OIKOS 118:199-208.</li>
+    <li>[Kürschner et al. (2021) Ecol. Evol. 11:5728–5741](https://doi.org/10.1002/ece3.7478)</li>
+  <li>[Scherer et al. (2020) OIKOS 129:651–667](https://doi.org/10.1111/oik.07002'>10.1111/oik.07002)</li>
+  <li>[Scherer et al. (2019) J. Anim. Ecol.](https://doi.org/10.1111/1365-2656.13070)</li>
+  <li>[Marescot et al. (2018) Funct. Ecol. 32:1237–1250](https://doi.org/10.1111/1365-2435.13059)</li>
+    <li>[Kramer-Schadt et al. (2009) OIKOS 118:199-208](https://doi.org/10.1111/j.1600-0706.2008.16582.x)</li>
    </ul>
 </small>
 
-<div class='headerbox'><hbox>Applied Ecology</hbox></div>
 
-### Urban wildlife ecology: How do animals respond to novel environments?
+<div class='headerbox'><hbox>Applied Ecology</hbox></div>
+ 
+<div class='headerbox-secondary'><hbox-secondary>Urban wildlife ecology: How do animals respond to novel environments?</hbox-secondary></div>
+
+**Dr. Aimara Planillo, Dr. Julie Louvrier, Sinah Drenske, Simon Moesch**
 
 ![](img/team-pop-urban.png)
 
@@ -88,46 +85,43 @@ Urbanisation poses risks and opportunities for wildlife. We investigate how spec
 &ensp;&rarr;&ensp;see also [BIBS — rural-urban coupling](https://www.bbib.org/rural-urban-coupling.html)  
 &ensp;&rarr;&ensp;see also [WT Impact](https://www.wtimpact.de/)
 
-People involved: **Dr. Aimara Planillo**, **Dr. Julie Louvrier**, **Carolin Scholz**, **Sophia Kimmig**, **Simon Moesch**
-
-* [**Bridging spatial data in community distribution models**](proj-pop-urban-1.html)
-* [**Effects of species interactions and human disturbance on community composition in urban areas**](proj-pop-urban-2.html)
-* [**Ecology of red foxes (*Vulpes vulpes*) in anthropogenic landscapes**](proj-pop-urban-3.html)  
-* [**Human perceptions of urban wildlife**](proj-pop-urban-4.html)
+* **Bridging spatial data in community distribution models**
+* **Effects of species interactions and human disturbance on community compositions**
+* **Ecology of red foxes (*Vulpes vulpes*) in anthropogenic landscapes**
+* **Human perceptions of urban wildlife**
 
 <small>
-  <b>Key Publications:</b>
+  <b>Key Publications:</b>  
   <ul>
-    <li><b>Planillo A</b>, Fiechter L, Sturm U, Heucke-Voigt S & <b>Kramer-Schadt S</b> (2021). Citizen science data for urban planning: Comparing different sampling schemes for modelling urban bird distribution. Landscape and Urban Planning 211:104098. DOI: <a href='https://doi.org/10.1016/j.landurbplan.2021.104098'>10.1016/j.landurbplan.2021.104098</a>.</li>
-    <li><b>Planillo A</b>, <b>Kramer-Schadt S</b>, Buchholz S, <b>Gras P</b>, von der Lippe M & <b>Radchuk V</b> Arthropod abundance modulates bird community responses to urbanization (2020). Diversity and Distributions 27:34–49. DOI: <a href='https://doi.org/10.1111/ddi.13169'>10.1111/ddi.13169</a>.</li>
-    <li><b>Gras P</b>, <b>Knuth S</b>, <b>Börner K</b>, <b>Marescot L</b>, <b>Benhaiem S</b>, Aue A, Wittstatt U, Kleinschmit B & <b>Kramer-Schadt S</b> (2018). Landscape structure affects risk of canine distemper in urban wildlife. Frontiers in Ecology and Evolution 6:136. DOI: <a href='https://doi.org/10.3389/fevo.2018.00136'>10.3389/fevo.2018.00136</a></li>
-    <li><b>Stillfried M</b>, <b>Gras P</b>, <b>Börner K</b>, Göritz F, Painer J, Röllig K, <b>Wenzler M</b>, Hofer H, Ortmann S & <b>Kramer-Schadt S</b> (2017). Secrets of success in a landscape of fear: urban wild boar adjust risk perception and tolerate disturbance. Frontiers in Ecology and Evolution 5:157. DOI: <a href='https://doi.org/10.3389/fevo.2017.00157'>10.3389/fevo.2017.00157</a>.</li>
+    <li>[Planillo et al. (2021) Landsc. Urban. Pla. 211:104098](https://doi.org/10.1016/j.landurbplan.2021.104098'>10.1016/j.landurbplan.2021.104098)</li>
+    <li>[Planillo, Kramer-Schadt, et al. (2020)  Divers. Distrib. 27:34–49](https://doi.org/10.1111/ddi.13169'>10.1111/ddi.13169)</li>
+    <li>[Gras et al. (2018) Front. Ecol. Evol. 6:136](https://doi.org/10.3389/fevo.2018.00136)</li>
+    <li>[Stillfried et al. (2017) Front. Ecol. Evol. 5:157](https://doi.org/10.3389/fevo.2017.00157)</li>
    </ul>
 </small>
 
----
+<div class='headerbox-secondary'><hbox-secondary>Wildlife distributions, population dynamics, and conservation</hbox-secondary></div>
 
-### Wildlife distributions, population dynamics, and conservation
+**Dr. Julie Louvrier, Dr. Aimara Planillo, Dr. Cédric Scherer, Dr. Joe Premier, Ana Patricia Calderon, Eva Sánchez Arribas**
 
 ![](img/team-pop-wildlife.png)
 
 Wildlife faces big challenges persisting in human-dominated landscapes. We model their population dynamics, viability and connectivity using individual-based models on a spatially-explicit basis, with the aim of supporting wildlife management and conservation.
 
-People involved: **Dr. Julie Louvrier**, **Dr. Aimara Planillo**, **Joe Premier**, **Ana Patricia Calderon Quinonez**, **Moritz Wenzler**
-
-* [**Jaguar connectivity in Central America**](proj-pop-wildlife-1.html)
-* [**Modelling genetic processes to support the conservation management of Eurasian lynx**](proj-pop-wildlife-2.html)
+* **Wolf population dynamics and establishment in Germany**
+* **Jaguar connectivity and conservation prioritization in Central America**
+* **Modelling genetic processes to support the conservation management of Eurasian lynx**
 
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li><b>Premier J</b>, Fickel J, Heurich M & <b>Kramer-Schadt S</b> (2020). The boon and bane of boldness: movement syndrome as saviour and sink for population genetic diversity. Movement Ecology 8:16. DOI <a href='https://doi.org/10.1186/s40462-020-00204-y'>10.1186/s40462-020-00204-y</a>.</li>
-    <li>Heurich M, <b>Schultze-Naumburg J</b>, Piacenza N, Magg N, Červený J, Engleder T, Herdtfelder M, Sladova M & <b>Kramer-Schadt S</b> (2018). Illegal hunting as a major driver of the source-sink dynamics of a reintroduced lynx population in Central Europe. Biological Conservation 224:355-365. DOI: <a href='https://doi.org/10.1016/j.biocon.2018.05.011'>10.1016/j.biocon.2018.05.011</a>.</li>
-    <li><b>Radchuk V</b>, Ims RA & Andreassen HP (2016). From individuals to population cycles: the role of extrinsic and intrinsic factors in rodent populations. Ecology 97:720-732. <a href='https://doi.org/10.1890/15-0756.1'>10.1890/15-0756.1</a></li>
-    <li>Struebig M, Wilting A, Gaveau DLA, Meijaard E, Smith R, The Borneo Mammal Distribution Consortium, <b>Fischer M</b>, Metcalfe K & <b>Kramer-Schadt S</b> (2015). Targeted conservation safeguards a biodiversity hotspot from climate and land-cover change. Current Biology 25:372–378. DOI: <a href='https://doi.org/10.1016/j.cub.2014.11.067'>10.1016/j.cub.2014.11.067</a>.</li>
+    <li>[Premier et al. (2020) Mov. Ecol. 8:16](https://doi.org/10.1186/s40462-020-00204-y)</li>
+    <li>[Heurich, Schultze-Naumburg et al. (2018) Biol. Conserv. 224:355-365](https://doi.org/10.1016/j.biocon.2018.05.011'>10.1016/j.biocon.2018.05.011)</li>
+    <li>[Radchuk, Ims & Andreassen (2016) Ecology 97:720-732](https://doi.org/10.1890/15-0756.1'>10.1890/15-0756.1)</li>
+    <li>[Struebig et al. (2015) Curr. Biol. 25:372–378](https://doi.org/10.1016/j.cub.2014.11.067)</li>
    </ul>
 </small>
 
-```{r, layout="l-screen-inset"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut.png")
+```{r, layout="l-screen"}
+knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
 ```
