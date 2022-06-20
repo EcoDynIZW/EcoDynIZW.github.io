@@ -12,7 +12,7 @@ description: ""
 ## In Press
 
 <b style='color:red;'>
--> update details
+-> update details  
 -> incl. in peer-reviewed
 </b>
 

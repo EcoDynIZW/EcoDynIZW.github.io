@@ -33,7 +33,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * Flemming D, Cress U, **Kimmig S**, Brandt M, Kimmerle J (2018). Emotionalization in Science Communication: The Impact of Narratives and Visual Representations on Knowledge Gain and Risk Perception. FRONT COMM 3(3), 1-9. DOI: [10.3389/fcomm.2018.00003](https://doi.org/).
 
-Franz M, **Kramer‐Schadt S**, Greenwood AD & Courtiol A (2018). Sickness‐induced lethargy can increase host contact rates and pathogen spread in water‐limited landscapes. Funcitonal Ecology 32:2194–2204. DOI: [10.1111/1365-2435.13149](https://doi.org/10.1111/1365-2435.13149).
+* Franz M, **Kramer‐Schadt S**, Greenwood AD & Courtiol A (2018). Sickness‐induced lethargy can increase host contact rates and pathogen spread in water‐limited landscapes. Funcitonal Ecology 32:2194–2204. DOI: [10.1111/1365-2435.13149](https://doi.org/10.1111/1365-2435.13149).
 
 * **Gras P**, Knuth S, Börner K, **Marescot L**, **Benhaiem S**, Aue A, Wittstatt U, Kleinschmit B & **Kramer-Schadt S** (2018). Landscape structures affect risk of canine distemper in urban wildlife. Frontiers in Ecology and Evolution 6:136. DOI: [10.3389/fevo.2018.00136](https://doi.org/10.3389/fevo.2018.00136).
 
