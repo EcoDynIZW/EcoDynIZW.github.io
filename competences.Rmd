@@ -4,10 +4,7 @@ description: ""
 output: distill::distill_article
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+**R-packages and tools**
 
-<b style='color:red;'>
--> to be filled
-</b>
+![](img/hex_isorix.png){width=50%} ![](img/hex_nlmr-2.png){width=50%}
+

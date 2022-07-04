@@ -8,6 +8,10 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-<b style='color:red;'>
--> to be filled
-</b>
+**for graduate and undergraduate students**
+
+We are looking for motivated students interested in questions about **wildlife dynamics and distributions** under global change, **animal behavioral ecology** or advancing **theory in ecology and evolution**. Students should have a strong background in (or the will to learn) R, statistics and modelling. Please contact us for possible thesis subjects and state your skills and interests (e.g., CV, certificates,…) along with the name of one or two references. 
+
+**TU Berlin students**, please consider the [Reader](https://www.oekosys.tu-berlin.de/fileadmin/fg35/Lehre/Downloads/ABSOLVENTINNEN_INFOS_Reader_171023.pdf) for the steps necessary to conduct a thesis. Successful attendance of our courses ‘biodiversity dynamics I + II’ , where we teach spatial R, distribution modelling and occupancy modelling, is of advantage.
+
+Below, you will find a list of offers for Bachelor- and Master-theses, an overview over currently running theses as well as a list of completed theses for your information.

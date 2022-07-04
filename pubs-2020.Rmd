@@ -38,7 +38,7 @@ Science of The Total Environment 746:141115. DOI: [10.1016/j.scitotenv.2020.1411
 
 * Krüger L, **Stillfried M**, Prinz C, Schröder V, Neubert LK & Denner J (2020). Copy number and prevalence of porcine endogenous retroviruses (PERVs) in German wild boars. Viruses 12:419. DOI: [10.3390/v12040419](https://doi.org/10.3390/v12040419).
 
-* Kunde MN, Martins RF, **Premier J**, Fickel J & Förster D (2020). Population and landscape genetic analysis of the Malayan sun bear *Helarctos malayanus*. Conservation Genetics 21:23–135. doi:[10.1007/s10592-019-01233-w](https://doi.org/10.1007/s10592-019-01233-w).
+* Kunde MN, Martins RF, **Premier J**, Fickel J & Förster D (2020). Population and landscape genetic analysis of the Malayan sun bear *Helarctos malayanus*. Conservation Genetics 21:23–135. DOI: [10.1007/s10592-019-01233-w](https://doi.org/10.1007/s10592-019-01233-w).
 
 * Ligmann-Zielinska A, Siebers PO, Maglioccia N, Parker D, Grimm V, Jing Du E, Cenek M, **Radchuk V**, Arbab NN, Li S, Berger U, Paudel R, Robinson DT, Jankowski P, An L & Ye X (2020). One size does not fit all: a roadmap of purpose-driven mixed-method pathways for sensitivity analysis of agent-based models. JASSS 23:6. DOI: [10.18564/jasss.4201](https://doi.org/10.18564/jasss.4201).
 
