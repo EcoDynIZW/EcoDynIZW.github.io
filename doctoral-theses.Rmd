@@ -8,7 +8,7 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-<div class='headerbox'><hbox>Successfully defended doctoral theses</hbox></div><br>
+<div class='headerbox'><hbox>Successfully defended:</hbox></div><br>
 
 * **Joseph Premier**: Research for Eurasian lynx conservation. Inclusion of genetic processes in an individual-based spatially explicit population model and updating the ecological and demographic basis to support evidence-based conservation management of Eurasian lynx. 25.05.2022. Faculty of Environment and Natural Resources, Albert-Ludwigs-Universität, Freiburg im Breisgau. Heurich M, Kramer-Schadt S.
 

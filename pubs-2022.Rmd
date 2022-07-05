@@ -5,13 +5,9 @@ description: ""
 
 ## In Press
 
-* **Drenske S**, **Radchuk V**, **Scherer C**, Esterer C, Kowarik I, Fritz J, **Kramer-Schadt S** (2021). Halfway to self-sustainability: Reintroduced migratory European Northern Bald Ibises (Geronticus eremita) still need management interventions for population viability. bioRxiv. DOI: [10.1101/2021.04.03.438331](https://doi.org/10.1101/2021.04.03.438331). –> accepted in Oryx
-
 * Hermanns K, Marklewitz M, Zirkel F, Kopp K, **Kramer-Schadt S**, Junglen S (2021). Mosquito community composition shapes virus prevalence patterns along anthropogenic disturbance gradients. bioRXiv. DOI: [10.1101/2021.02.04.429754](https://doi.org/10.1101/2021.02.04.429754)
 
 * McLaughlin J.P, Schroeder J, White A.M, Culhane K, Mirts H.E, Tarbill G.L, Sire L, Page M, Baker E, Moritz M, Brashares J, Young H.S, **Sollmann R** (2022). Food webs for three burn severities after wildfire in the Eldorado National Forest, California. Nature Scientific Data
-
-* **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2022). Global disparity of research allocation and the Aichi biodiversity conservation targets. bioRxiv 2022.04.07.486958, DOI: [10.1101/2022.04.07.486958](https://doi.org/10.1101/2022.04.07.486958)
 
 ## 2022
 
@@ -56,14 +52,11 @@ description: ""
 * Ripari L & **Premier J**, …, **Kramer-Schadt S**, Heurich M (2022). Human disturbance is the most limiting factor driving habitat selection of a large carnivore throughout Continental Europe. BIOL CONS **266**, 109446. DOI: [10.1016/j.biocon.2021.109446](https://doi.org/10.1016/j.biocon.2021.109446)
 
 
-
-
-
 <div class='headerbox'><hbox>Preprints</hbox></div><br>
 
-* 
-
-
+* **Drenske S**, **Radchuk V**, **Scherer C**, Esterer C, Kowarik I, Fritz J, **Kramer-Schadt S** (2021). Halfway to self-sustainability: Reintroduced migratory European Northern Bald Ibises (Geronticus eremita) still need management interventions for population viability. bioRxiv. DOI: [10.1101/2021.04.03.438331](https://doi.org/10.1101/2021.04.03.438331). –> accepted in Oryx
+ 
+* **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2022). Global disparity of research allocation and the Aichi biodiversity conservation targets. bioRxiv 2022.04.07.486958, DOI: [10.1101/2022.04.07.486958](https://doi.org/10.1101/2022.04.07.486958)
 
 
 <div class='headerbox'><hbox>Book Chapters & Reports</hbox></div><br>
