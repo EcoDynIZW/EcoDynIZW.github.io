@@ -9,8 +9,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 **R-packages and tools**
 
-![](img/hex_isorix.png){width=20%} ![](img/hex_nlmr-2.png){width=20%} ![](img/hex_camtrapr.png){width=20%}
-![](img/hex_deepforest_v3-1.png){width=40%} ![](img/hex_vietnameseconverter.png){width=40%} 
+![](img/hex_isorix.png){width=27%} ![](img/hex_nlmr-2.png){width=25%} ![](img/hex_camtrapr.png){width=25%}
+![](img/hex_deepforest_v3-1.png){width=39%} ![](img/hex_vietnameseconverter.png){width=39%} 
 
 [IsoriX](https://cran.r-project.org/web/packages/IsoriX/index.html): Isoscape Computation and Inference of Spatial Origins using Mixed Models; learn about IsoriX [here](https://bookdown.org/content/782/.
 [camtrapR](https://cran.r-project.org/web/packages/camtrapR/index.html): Camera Trap Data Management and Preparation of Occupancy and Spatial Capture-Recapture Analyses 
