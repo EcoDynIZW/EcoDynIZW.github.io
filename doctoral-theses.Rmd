@@ -1,0 +1,23 @@
+---
+title: "Doctoral Theses"
+description: ""
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<div class='headerbox'><hbox>Successfully defended doctoral theses</hbox></div><br>
+
+* **Joseph Premier**: Research for Eurasian lynx conservation. Inclusion of genetic processes in an individual-based spatially explicit population model and updating the ecological and demographic basis to support evidence-based conservation management of Eurasian lynx. 25.05.2022. Faculty of Environment and Natural Resources, Albert-Ludwigs-Universität, Freiburg im Breisgau. Heurich M, Kramer-Schadt S.
+
+* **Carolin Scholz**: The ecology of red foxes (Vulpes vulpes) in anthropogenic landscapes. 28.01.2021. Department of Biology, Chemistry and Pharmacy Freie Universität Berlin. Hofer H, Kramer-Schadt S.
+
+* **Andrew Tilker**: Assessing defaunation in the central Annamites ecoregion of Vietnam and Laos. 19.11.2020. Biologie Freie Universität Berlin. Hofer H, Wilting A.
+
+* **Susana Carolina Martins Ferreira**: Intrinsic and extrinsic determinants of parasite infection in spotted hyenas in the Serengeti National Park. 23.09.2019. Veterinärmedizin Freie Universität Berlin. Hofer H, East ML.
+
+* **John Mathai**: Distribution and conservation of small carnivores focussing on the Bornean endemic Hose’s civet. 17.04.2019. Biologie Freie Universität Berlin. Hofer H, Wilting A.
+
+* **Phillip Cedric Scherer**: Infections on the move: Individual host movement drives disease persistence in spatially structured landscapes. 25.03.2019. Institut für Biochemie und Biologie der Universität Potsdam. Kramer-Schadt S, Jeltsch F. 
