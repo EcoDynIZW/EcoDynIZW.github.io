@@ -40,7 +40,7 @@ Below, you will find a list of offers for Bachelor- and Master-theses, an overvi
 
 * <p>**Accuracy of a new high throughput wildlife movement tracking system in comparison with GPS tracking.**  <span style='color:#FF8C00;'> Johannes Marold.</span><span style='color:#C0C0C0;'> 16.09.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Radchuk V (IZW), Kramer-Schadt S.</span></p>
 
-* <p>**Density and life-history of the Sunda clouded leopard *Neofelis diardi* in the Deramakot Forest Complex, Sabah, Malaysia.**  <span style='color:#FF8C00;'> Katharina Kasper.</span><span style='color:#C0C0C0;'> 30.08.2021. MSc. Goethe-Universität Frankfurt am Main. Supervision: Thomas Müller (SBiK-F), Andreas Wilting (IZW).</span></p>![](img/leopard_msc-theses.png){width=30%}
+* <p>**Density and life-history of the Sunda clouded leopard *Neofelis diardi* in the Deramakot Forest Complex, Sabah, Malaysia.**  <span style='color:#FF8C00;'> Katharina Kasper.</span><span style='color:#C0C0C0;'> 30.08.2021. MSc. Goethe-Universität Frankfurt am Main. Supervision: Thomas Müller (SBiK-F), Andreas Wilting (IZW).</span></p>![](img/leopard_msc-theses.jpg){width=30%}
 
 * <p>**Evaluating the habitat suitability of tiger in Bardia National Park and Buffer Zone areas, Nepal.**  <span style='color:#FF8C00;'> Kamal Ghimire.</span><span style='color:#C0C0C0;'> 18.08.2021. MSc. TU Dresden. Tropical Forestry. Supervision: Berger U (TUD), Kramer-Schadt S.</span></p>
 
@@ -54,7 +54,7 @@ Below, you will find a list of offers for Bachelor- and Master-theses, an overvi
 
 **2020**
 
-* <p>**A population viability and connectivity analysis for the alpine lynx (*Lynx lynx*) population. **  <span style='color:#FF8C00;'> Eva Sanchez Arribas.</span><span style='color:#C0C0C0;'> 19.11.2020. MSc. Uppsala University, Sweden. Supervision: Kramer-Schadt S, Planillo A, Molinari-Jobin A (KORA).</span> <span style='color:#32CD32;'> -> Manuscript in prep.</span></p>![](img/lynx_msc-theses.png){width=30%}
+* <p>**A population viability and connectivity analysis for the alpine lynx (*Lynx lynx*) population. **  <span style='color:#FF8C00;'> Eva Sanchez Arribas.</span><span style='color:#C0C0C0;'> 19.11.2020. MSc. Uppsala University, Sweden. Supervision: Kramer-Schadt S, Planillo A, Molinari-Jobin A (KORA).</span> <span style='color:#32CD32;'> -> Manuscript in prep.</span></p>![](img/lynx_msc-theses.jpg){width=30%}
 
 * <p>**Influence of roost site availability on activity of forest-dwelling bats above coniferous forests.**  <span style='color:#FF8C00;'> Franziska Röpke.</span><span style='color:#C0C0C0;'> 15.10.2020. BSc. Ökologie und Umweltplanung. TU Berlin. Supervision: Volker Kelm (K&S Umweltgutachten), Kramer-Schadt S.</span></p>
 
@@ -64,7 +64,7 @@ Below, you will find a list of offers for Bachelor- and Master-theses, an overvi
 
 **2019**
 
-* <p>**Demography and population viability of the Northern Bald Ibis (*Geronticus eremita*), a reintroduced bird species.** <span style='color:#FF8C00;'> Sinah Drenske.</span><span style='color:#C0C0C0;'> 04.02.2019. Bsc. Ökologie und Umweltplanung. Technische Universität Berlin. Supervision: Kramer-Schadt S, Radchuk V, Kowarik I (TUB). </span> <span style='color:#32CD32;'>-> Manuscript submitted to Oryx</span></p>![](img/ibis_bsc-theses.png){width=30%}
+* <p>**Demography and population viability of the Northern Bald Ibis (*Geronticus eremita*), a reintroduced bird species.** <span style='color:#FF8C00;'> Sinah Drenske.</span><span style='color:#C0C0C0;'> 04.02.2019. Bsc. Ökologie und Umweltplanung. Technische Universität Berlin. Supervision: Kramer-Schadt S, Radchuk V, Kowarik I (TUB). </span> <span style='color:#32CD32;'>-> Manuscript submitted to Oryx</span></p>![](img/ibis-bsc-theses.jpg){width=30%}
 
 * <p>**Wolfmanagement in Deutschland – Vergleich der Wolfmanagementpläne der Bundesländer.** <span style='color:#FF8C00;'> Patrick Enders.</span><span style='color:#C0C0C0;'> 26.09.2019. Bsc. Landschaftsarchitektur und Landschaftsplanung. TU Berlin. Supervision: Heiland S (TUB), Kramer-Schadt S.</span></p>
 
