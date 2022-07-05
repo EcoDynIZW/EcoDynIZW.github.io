@@ -32,8 +32,10 @@ navbar:
           href: publications.html
         - text: "Competences"
           href: competences.html
-        - text: "Theses"
-          href: theses.html
+        - text: "Doctoral Theses"
+          href: doctoral-theses.html
+        - text: "Msc/Bsc Theses"
+          href: msc-bsc-theses.html
     - text: "Guidelines"
       href: guidelines.html
     - text: "Wiki"
