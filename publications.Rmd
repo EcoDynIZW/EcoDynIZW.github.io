@@ -17,8 +17,13 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * **Drenske S**, **Radchuk V**, **Scherer C**, Esterer C, Kowarik I, Fritz J, **Kramer-Schadt S** (2021). Halfway to self-sustainability: Reintroduced migratory European Northern Bald Ibises (Geronticus eremita) still need management interventions for population viability. –> accepted in Oryx
 
+* Figueiredo L, Scherer C, Cabral J S (2022). Computational notebooks to facilitate writing and improve reproducibility of (ecological) research. PLOS Computational Biology, accepted.
+
+* Hering R, Hauptfleisch M, Jago M, Smith T, **Kramer-Schadt S**, Stiegler J, Blaum N (2022). Don’t stop me now: Managed fence gaps could allow migratory ungulates to track dynamic resources and reduce fence related energy loss. FRONT ECOL EVOL, accepted.
+
 * McLaughlin J.P, Schroeder J, White A.M, Culhane K, Mirts H.E, Tarbill G.L, Sire L, Page M, Baker E, Moritz M, Brashares J, Young H.S, **Sollmann R** (2022). Food webs for three burn severities after wildfire in the Eldorado National Forest, California. Nature Scientific Data
 
+* **Niedballa J**, **Axtner J**, Döbert TF, **Tilker A**, **Nguyen A**, **Wong ST**, Fiderer C, Heurich M, **Wilting A** (2022). imageseg: an R package for deep learning-based image segmentation. METHODS ECOL EVOL accepted.
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
@@ -32,25 +37,21 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * **Calderon Quinonez AP**, **Louvrier J**, **Planillo AP**, [….], **Kramer-Schadt S** (2022). Occupancy models reveal potential of conservation prioritization for Central American jaguars. ANIM CONS, DOI: [10.1111/acv.12772](https://doi.org/10.1111/acv.12772)
 
-* Cardador, L., Tella, J.L., **Louvrier, J.**, Anadón, J.D., Abellán, P., Carrete, M. 2022. Climate matching, anthropogenic factors, and dispersal contribute differentially to the colonisation and extinction of local populations during dynamic avian invasions. Diversity and Distribution, accepted.
+* Cardador L, Tella JL, **Louvrier J**, Anadón JD, Abellán P, Carrete M (2022). Climate matching, anthropogenic factors, and dispersal contribute differentially to the colonisation and extinction of local populations during dynamic avian invasions. Diversity and Distribution, accepted.
 
-* Culhane, K., **Sollmann, R.**, White, A.M., Tarbill, G.L., Cooper, S.D., Young, H.S. (2022). Small mammal responses to fire severity mediated by vegetation characteristics and species traits. Ecology and Evolution **12(5)**, e8918.
+* Culhane K, **Sollmann R**, White AM, Tarbill GL, Cooper SD, Young HS (2022). Small mammal responses to fire severity mediated by vegetation characteristics and species traits. Ecology and Evolution **12(5)**, e8918.
 
-* **East ML**, **Thierer D**, **Benhaiem S**, Metzger S, Hofer H (accepted). Infanticide by adult females causes sexual conflict in a female-dominated social mammal. FRONT ECOL EVOL **10**. DOI: [10.3389/fevo.2022.860854](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/abstract)
-
-* Figueiredo L, Scherer C, Cabral J S (2022). Computational notebooks to facilitate writing and improve reproducibility of (ecological) research. PLOS Computational Biology, accepted.
+* **East ML**, **Thierer D**, **Benhaiem S**, Metzger S, Hofer H (2022). Infanticide by adult females causes sexual conflict in a female-dominated social mammal. FRONT ECOL EVOL **10**. DOI: [10.3389/fevo.2022.860854](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/abstract)
 
 * **Gicquel M**, **East ML**, Hofer H, Cubaynes S, **Benhaiem S** (2022): Climate change does not decouple interactions between a central place foraging predator and its migratory prey. Ecosphere **13/4**. DOI: [10.1002/ecs2.4012](https://doi.org/10.1002/ecs2.4012)
 
-* **Hagen, R.**, Ortmann, S., Elliger, A., & Arnold, J. (2022). Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation. Ecology and Evolution, **12**, e8938. DOI: [https://doi.org/10.1002/ece3.8938](https://doi.org/10.1002/ece3.8938)
-
-* Hering R, Hauptfleisch M; Jago M; Smith T; **Kramer-Schadt S**; Stiegler J; Blaum N (2022). Don’t stop me now: Managed fence gaps could allow migratory ungulates to track dynamic resources and reduce fence related energy loss. FRONT ECOL EVOL, accepted.
+* **Hagen R**, Ortmann S, Elliger A, & Arnold J (2022). Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation. Ecology and Evolution, **12**, e8938. DOI: [https://doi.org/10.1002/ece3.8938](https://doi.org/10.1002/ece3.8938)
 
 * Kitchener A, Hoffmann M, Yamaguchi N, Breitenmoser-Würsten C, **Wilting A** (2022). A system for designating taxonomic certainty in mammals and other taxa. MAMM BIOL, early view. DOI: [10.1007/s42991-021-00205-3](https://doi.org/10.1007/s42991-021-00205-3)
 
-* Ke, A., **Sollmann, R**., Frishkoff, L., Karp, D.S. (2022). A hierarchical N-mixture model to estimate behavioral variation and a case study of Neotropical birds. Ecological Applications, e2632.
+* Ke A, **Sollmann R**, Frishkoff L, Karp DS (2022). A hierarchical N-mixture model to estimate behavioral variation and a case study of Neotropical birds. Ecological Applications, e2632.
 
-* Mirts, H.E., McLaughlin, J.P., Weller, T.J., White, A.M., Young, H.S., **Sollmann, R.** (2022). Bats in the megafire: assessing species‘ site use in a postfire landscape in the Sierra Nevada. Journal of Mammalogy **103(1)**, 111-123.
+* Mirts HE, McLaughlin JP, Weller TJ, White AM, Young HS, **Sollmann R** (2022). Bats in the megafire: assessing species‘ site use in a postfire landscape in the Sierra Nevada. Journal of Mammalogy **103(1)**, 111-123.
 
 * **Moreno-Sosa AM**, Yacelga M, Craighead K, **Kramer-Schadt S**, **Abrams JF** (2022). Can prey occupancy act as a surrogate for mesopredator occupancy? A case study of ocelot (*Leopardus pardalis*). MAMM BIOL, DOI: [10.1007/s42991-022-00232-8](https://doi.org/10.1007/s42991-022-00232-8)
 
