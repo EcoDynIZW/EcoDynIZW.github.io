@@ -27,39 +27,39 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
-* **Alexiou** I, Abrams JF, Coudrat CNZ, Nanthavong C, **Nguyen A**, **Niedballa J**, **Wilting A** , **Tilker A** (2022). Camera-trapping reveals new insights in the ecology of three sympatric muntjacs in an overhunted biodiversity hotspot. MAMM BIOL (2022). DOI: [10.1007/s42991-022-00248-0](https://rdcu.be/cMvVv)
+* **Alexiou I**, Abrams JF, Coudrat CNZ, Nanthavong C, **Nguyen A**, **Niedballa J**, **Wilting A** , **Tilker A** (2022). Camera-trapping reveals new insights in the ecology of three sympatric muntjacs in an overhunted biodiversity hotspot. MAMM BIOL (2022). doi:[10.1007/s42991-022-00248-0](https://rdcu.be/cMvVv)
 
-* Asad S, Vitalis V, **Guharajan R**, Abrams JF, Lagan P, Kissing J, Sikui J, **Wilting A**, Rödel MO (2022). Variable species but similar amphibian community responses across habitats following reduced impact logging. GLOB ECOL CONSERV **35**, e02061. DOI: [10.1016/j.gecco.2022.e02061](https://doi.org/10.1016/j.gecco.2022.e02061)
+* Asad S, Vitalis V, **Guharajan R**, Abrams JF, Lagan P, Kissing J, Sikui J, **Wilting A**, Rödel MO (2022). Variable species but similar amphibian community responses across habitats following reduced impact logging. GLOB ECOL CONSERV **35**, e02061. doi:[10.1016/j.gecco.2022.e02061](https://doi.org/10.1016/j.gecco.2022.e02061)
 
-* **Benhaiem S**, Kaidatzi S, Hofer H, **East ML** (2022): Long-term reproductive costs of snare injuries in a keystone terrestrial by-catch species. Animal Conservation. DOI: [10.1111/acv.12798](https://doi.org/10.1111/acv.12798)
+* **Benhaiem S**, Kaidatzi S, Hofer H, **East ML** (2022): Long-term reproductive costs of snare injuries in a keystone terrestrial by-catch species. Animal Conservation. doi:[10.1111/acv.12798](https://doi.org/10.1111/acv.12798)
 
-* Brieger F, Kämmerle JL, **Hagen R**, Suchant R (2022). Behavioural reactions to oncoming vehicles as a crucial aspect of wildlife-vehicle collision risk in three common wildlife species. Accident Analysis & Prevention **168**. DOI: [10.1016/j.aap.2021.106564](https://doi.org/10.1016/j.aap.2021.106564)
+* Brieger F, Kämmerle JL, **Hagen R**, Suchant R (2022). Behavioural reactions to oncoming vehicles as a crucial aspect of wildlife-vehicle collision risk in three common wildlife species. Accident Analysis & Prevention **168**. doi:[10.1016/j.aap.2021.106564](https://doi.org/10.1016/j.aap.2021.106564)
 
-* **Calderon Quinonez AP**, **Louvrier J**, **Planillo AP**, [….], **Kramer-Schadt S** (2022). Occupancy models reveal potential of conservation prioritization for Central American jaguars. ANIM CONS, DOI: [10.1111/acv.12772](https://doi.org/10.1111/acv.12772)
+* **Calderon Quinonez AP**, **Louvrier J**, **Planillo AP**, [….], **Kramer-Schadt S** (2022). Occupancy models reveal potential of conservation prioritization for Central American jaguars. ANIM CONS, doi:[10.1111/acv.12772](https://doi.org/10.1111/acv.12772)
 
 * Cardador L, Tella JL, **Louvrier J**, Anadón JD, Abellán P, Carrete M (2022). Climate matching, anthropogenic factors, and dispersal contribute differentially to the colonisation and extinction of local populations during dynamic avian invasions. Diversity and Distribution, accepted.
 
 * Culhane K, **Sollmann R**, White AM, Tarbill GL, Cooper SD, Young HS (2022). Small mammal responses to fire severity mediated by vegetation characteristics and species traits. Ecology and Evolution **12(5)**, e8918.
 
-* **East ML**, **Thierer D**, **Benhaiem S**, Metzger S, Hofer H (2022). Infanticide by adult females causes sexual conflict in a female-dominated social mammal. FRONT ECOL EVOL **10**. DOI: [10.3389/fevo.2022.860854](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/abstract)
+* **East ML**, **Thierer D**, **Benhaiem S**, Metzger S, Hofer H (2022). Infanticide by adult females causes sexual conflict in a female-dominated social mammal. FRONT ECOL EVOL **10**. doi:[10.3389/fevo.2022.860854](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/abstract)
 
-* **Gicquel M**, **East ML**, Hofer H, Cubaynes S, **Benhaiem S** (2022): Climate change does not decouple interactions between a central place foraging predator and its migratory prey. Ecosphere **13/4**. DOI: [10.1002/ecs2.4012](https://doi.org/10.1002/ecs2.4012)
+* **Gicquel M**, **East ML**, Hofer H, Cubaynes S, **Benhaiem S** (2022): Climate change does not decouple interactions between a central place foraging predator and its migratory prey. Ecosphere **13/4**. doi:[10.1002/ecs2.4012](https://doi.org/10.1002/ecs2.4012)
 
-* **Hagen R**, Ortmann S, Elliger A, & Arnold J (2022). Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation. Ecology and Evolution, **12**, e8938. DOI: [https://doi.org/10.1002/ece3.8938](https://doi.org/10.1002/ece3.8938)
+* **Hagen R**, Ortmann S, Elliger A, & Arnold J (2022). Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation. Ecology and Evolution, **12**, e8938. doi:[https://doi.org/10.1002/ece3.8938](https://doi.org/10.1002/ece3.8938)
 
-* Kitchener A, Hoffmann M, Yamaguchi N, Breitenmoser-Würsten C, **Wilting A** (2022). A system for designating taxonomic certainty in mammals and other taxa. MAMM BIOL, early view. DOI: [10.1007/s42991-021-00205-3](https://doi.org/10.1007/s42991-021-00205-3)
+* Kitchener A, Hoffmann M, Yamaguchi N, Breitenmoser-Würsten C, **Wilting A** (2022). A system for designating taxonomic certainty in mammals and other taxa. MAMM BIOL, early view. doi:[10.1007/s42991-021-00205-3](https://doi.org/10.1007/s42991-021-00205-3)
 
 * Ke A, **Sollmann R**, Frishkoff L, Karp DS (2022). A hierarchical N-mixture model to estimate behavioral variation and a case study of Neotropical birds. Ecological Applications, e2632.
 
 * Mirts HE, McLaughlin JP, Weller TJ, White AM, Young HS, **Sollmann R** (2022). Bats in the megafire: assessing species‘ site use in a postfire landscape in the Sierra Nevada. Journal of Mammalogy **103(1)**, 111-123.
 
-* **Moreno-Sosa AM**, Yacelga M, Craighead K, **Kramer-Schadt S**, **Abrams JF** (2022). Can prey occupancy act as a surrogate for mesopredator occupancy? A case study of ocelot (*Leopardus pardalis*). MAMM BIOL, DOI: [10.1007/s42991-022-00232-8](https://doi.org/10.1007/s42991-022-00232-8)
+* **Moreno-Sosa AM**, Yacelga M, Craighead K, **Kramer-Schadt S**, **Abrams JF** (2022). Can prey occupancy act as a surrogate for mesopredator occupancy? A case study of ocelot (*Leopardus pardalis*). MAMM BIOL, doi:[10.1007/s42991-022-00232-8](https://doi.org/10.1007/s42991-022-00232-8)
 
-* **Nguyen TV**, **Wilting A**, **Niedballa J**, **Nguyen A**, Rawson BM, Nguyen AQH, Cao TT, Wearn OR, Dao AC, **Tilker A** (2022). Getting the big picture: Landscape-scale occupancy patterns of two Annamite endemics among multiple protected areas. CONS SCI PRACT, e620. DOI: [10.1111/csp2.620](https://doi.org/10.1111/csp2.620)
+* **Nguyen TV**, **Wilting A**, **Niedballa J**, **Nguyen A**, Rawson BM, Nguyen AQH, Cao TT, Wearn OR, Dao AC, **Tilker A** (2022). Getting the big picture: Landscape-scale occupancy patterns of two Annamite endemics among multiple protected areas. CONS SCI PRACT, e620. doi:[10.1111/csp2.620](https://doi.org/10.1111/csp2.620)
 
-* Reusch C, Lozar M, **Kramer-Schadt S**, Voigt CC (2022). Coastal onshore wind turbines lead to habitat loss for bats in Northern Germany. J ENV MANAGE **310**. DOI: [10.1016/j.jenvman.2022.114715](https://www.sciencedirect.com/science/article/pii/S0301479722002882)
+* Reusch C, Lozar M, **Kramer-Schadt S**, Voigt CC (2022). Coastal onshore wind turbines lead to habitat loss for bats in Northern Germany. J ENV MANAGE **310**. doi:[10.1016/j.jenvman.2022.114715](https://www.sciencedirect.com/science/article/pii/S0301479722002882)
 
-* Ripari L & **Premier J**, …, **Kramer-Schadt S**, Heurich M (2022). Human disturbance is the most limiting factor driving habitat selection of a large carnivore throughout Continental Europe. BIOL CONS **266**, 109446. DOI: [10.1016/j.biocon.2021.109446](https://doi.org/10.1016/j.biocon.2021.109446)
+* Ripari L & **Premier J**, …, **Kramer-Schadt S**, Heurich M (2022). Human disturbance is the most limiting factor driving habitat selection of a large carnivore throughout Continental Europe. BIOL CONS **266**, 109446. doi:[10.1016/j.biocon.2021.109446](https://doi.org/10.1016/j.biocon.2021.109446)
 
 
 
@@ -67,7 +67,7 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Preprints</hbox></div><br>
 
-* **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2022). Global disparity of research allocation and the Aichi biodiversity conservation targets. bioRxiv 2022.04.07.486958, DOI: [10.1101/2022.04.07.486958](https://doi.org/10.1101/2022.04.07.486958) 
+* **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2022). Global disparity of research allocation and the Aichi biodiversity conservation targets. bioRxiv 2022.04.07.486958, doi:[10.1101/2022.04.07.486958](https://doi.org/10.1101/2022.04.07.486958) 
 
 
 <div class='headerbox'><hbox>Book Chapters & Reports</hbox></div><br>
