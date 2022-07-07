@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class='headerbox'><hbox>Successfully defended:</hbox></div><br>
 
-* **Thanh Van Nguyen**: Unravelling the mysteries of the Annamites: First insights in ecology, distribution, and genetic diversity of Annamite mammals. 24.06.2022. Mathematisch-Naturwissenschaftlichen Fakultät
+* **Thanh Van Nguyen**: Unravelling the mysteries of the Annamites: First insights in ecology, distribution, and genetic diversity of Annamite mammals. 24.06.2022. Mathematisch-Naturwissenschaftliche Fakultät
 Institut für Biochemie und Biologie der Universität Potsdam. Fickel J, Wilting A.
 
 * **Joseph Premier**: Research for Eurasian lynx conservation. Inclusion of genetic processes in an individual-based spatially explicit population model and updating the ecological and demographic basis to support evidence-based conservation management of Eurasian lynx. 25.05.2022. Faculty of Environment and Natural Resources, Albert-Ludwigs-Universität, Freiburg im Breisgau. Heurich M, Kramer-Schadt S.

@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](img/hex_deepforest_v3-1.png){width=39%} ![](img/hex_vietnameseconverter.png){width=39%} 
 
 [IsoriX](https://cran.r-project.org/web/packages/IsoriX/index.html): Isoscape Computation and Inference of Spatial Origins using Mixed Models; learn about IsoriX [here](https://bookdown.org/content/782/).
+
 [camtrapR](https://cran.r-project.org/web/packages/camtrapR/index.html): Camera Trap Data Management and Preparation of Occupancy and Spatial Capture-Recapture Analyses 
 
 contributing to [NLMR](https://cran.r-project.org/web/packages/NLMR/index.html): Simulating neutral landscape models 
