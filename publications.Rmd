@@ -17,7 +17,7 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * **Drenske S**, **Radchuk V**, **Scherer C**, Esterer C, Kowarik I, Fritz J, **Kramer-Schadt S** (2021). Halfway to self-sustainability: Reintroduced migratory European Northern Bald Ibises (Geronticus eremita) still need management interventions for population viability. –> accepted in Oryx
 
-* Figueiredo L, Scherer C, Cabral J S (2022). Computational notebooks to facilitate writing and improve reproducibility of (ecological) research. PLOS Computational Biology, accepted.
+* Figueiredo L, **Scherer C**, Cabral J S (2022). Computational notebooks to facilitate writing and improve reproducibility of (ecological) research. PLOS Computational Biology, accepted.
 
 * **Grabow M**, **Louvrier JLP**, **Planillo A**, Kiefer S, **Drenske S**, Börner K, Stillfried M, Hagen R, Kimmig S, Straka TM, **Kramer-Schadt S** (2022) Data-integration of opportunistic species observations into hierarchical modelling frameworks improves spatial predictions for urban red squirrels. FRONT ECOL EVOL, accepted.
 
