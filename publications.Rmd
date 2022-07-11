@@ -19,6 +19,8 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * Figueiredo L, Scherer C, Cabral J S (2022). Computational notebooks to facilitate writing and improve reproducibility of (ecological) research. PLOS Computational Biology, accepted.
 
+* **Grabow M**, **Louvrier JLP**, **Planillo A**, Kiefer S, **Drenske S**, Börner K, Stillfried M, Hagen R, Kimmig S, Straka TM, **Kramer-Schadt S** (2022) Data-integration of opportunistic species observations into hierarchical modelling frameworks improves spatial predictions for urban red squirrels. FRONT ECOL EVOL, accepted.
+
 * Hering R, Hauptfleisch M, Jago M, Smith T, **Kramer-Schadt S**, Stiegler J, Blaum N (2022). Don’t stop me now: Managed fence gaps could allow migratory ungulates to track dynamic resources and reduce fence related energy loss. FRONT ECOL EVOL, accepted.
 
 * McLaughlin J.P, Schroeder J, White A.M, Culhane K, Mirts H.E, Tarbill G.L, Sire L, Page M, Baker E, Moritz M, Brashares J, Young H.S, **Sollmann R** (2022). Food webs for three burn severities after wildfire in the Eldorado National Forest, California. Nature Scientific Data
