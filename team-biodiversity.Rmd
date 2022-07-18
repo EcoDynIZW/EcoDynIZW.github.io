@@ -1,7 +1,7 @@
 ---
 title: "Team 3: Biodiversity Dynamics"
 description: |
-  <b>Lead: Dr. Andreas Wilting</b>  
+  <b>Lead: Dr. Andreas Wilting & Dr. Rahel Sollmann</b>  
   <b> Assistance: Jan Axtner</b>
 ---
 
