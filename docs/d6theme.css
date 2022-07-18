@@ -11,7 +11,7 @@
 /* Optional: embed custom fonts here with `@import`          */
 /* This must remain at the top of this file.                 */
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,200;0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Fira+Mono:wght@400;500;700&family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
@@ -136,19 +136,24 @@ hbox-secondary{
   margin: 0.625rem 0 1.875rem 0;
 }
 .highlight {
-    font-family: PT Serif;
-    font-size: 1.125rem;
-    font-weight: 600;
-    line-height: 140%;
+  font-family: PT Serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.desaturated {
+  color: #ababab;
+  font-weight: 200;
 }
 
 small {
-    font-size: 0.9rem;
-    line-height: 180%;
+  font-size: 0.9rem;
+  line-height: 180%;
 }
 
 .nospace {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .column {
