@@ -95,6 +95,10 @@ d-article li {
     margin-bottom: 0;
 }
 
+li + li, ul + ul {
+  margin-top: 6px;
+}
+
 .headerbox {
   padding: 10px;
   text-align: left;
@@ -145,6 +149,10 @@ hbox-secondary{
 .desaturated {
   color: #ababab;
   font-weight: 200;
+}
+
+.orange {
+  color: orange;
 }
 
 small {
