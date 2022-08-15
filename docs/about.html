@@ -2320,6 +2320,68 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     }
   }
 
+  .card-column {
+    float: left;
+    position: relative;
+    width: 30%;
+    padding: 6px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    background-color: #f6f6f6;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
+    transition: 0.3s;
+    padding: 3px 18px 12px 18px;
+    border-radius: 0.5rem;
+    margin: auto;
+    place-items: center;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 1.5px 7.5px 15px 0 rgba(17, 10, 49, 0.5);
+  }
+
+  .card-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(.5ch, 32ch));
+    grid-gap: 1.5rem;
+    max-width: 80vw;
+    width: 110ch;
+    padding: 3rem 1rem 5rem 1rem;
+    overflow: hidden;
+    place-self: center;
+    justify-content: center; 
+  }
+
+  grid-item {
+    margin: auto;
+  }
+
+  li.card {
+    margin: 0;
+  }
+
+  .card-content {
+    font-size: .9em;
+    line-height: 180%;
+  }
+
+  .card h2 {
+    padding-bottom: .3rem;
+    font-size: 1.6rem;
+  }
+
   @media screen and (min-width: 769px) {
   	.nav-dropdown-content{
   		max-height:100vh;
@@ -2601,8 +2663,8 @@ Alfred-Kowalke-Str. 17<br />
 D-10315 Berlin, Germany</p>
 <p><br></p>
 <div class="layout-chunk" data-layout="l-screen-inset shaded">
-<div id="htmlwidget-53b45fb04299d1a68ffd" style="width:624px;height:384px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-53b45fb04299d1a68ffd">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[52.5062,13.5211],14,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Voyager",null,"Default Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stamen.Terrain",null,"Terrain Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Dark Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[52.506286189884,13.5211671539743,"<b>Leibniz Institute for<br>Zoo and Wildlife Research<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]},{"method":"addLayersControl","args":[["Default Map","Terrain Map","Dark Map","OpenStreetMap"],[],{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[52.506286189884,52.506286189884],"lng":[13.5211671539743,13.5211671539743]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d89d8a9386107fcecd49" style="width:624px;height:384px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d89d8a9386107fcecd49">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[52.5062,13.5211],14,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Voyager",null,"Default Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stamen.Terrain",null,"Terrain Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Dark Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[52.506286189884,13.5211671539743,"<b>Leibniz Institute for<br>Zoo and Wildlife Research<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]},{"method":"addLayersControl","args":[["Default Map","Terrain Map","Dark Map","OpenStreetMap"],[],{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[52.506286189884,52.506286189884],"lng":[13.5211671539743,13.5211671539743]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <p><br><br></p>
 <div class="sourceCode" id="cb1"><pre
