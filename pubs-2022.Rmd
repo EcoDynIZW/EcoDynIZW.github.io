@@ -5,7 +5,7 @@ description: ""
 
 ## In Press
 
-* Hermanns K, Marklewitz M, Zirkel F, Kopp K, **Kramer-Schadt S**, Junglen S (2021). Mosquito community composition shapes virus prevalence patterns along anthropogenic disturbance gradients. bioRXiv. DOI: [10.1101/2021.02.04.429754](https://doi.org/10.1101/2021.02.04.429754)
+* Hermanns K, Marklewitz M, Zirkel F, Kopp K, **Kramer-Schadt S**, Junglen S (2021). Mosquito community composition shapes virus prevalence patterns along anthropogenic disturbance gradients. bioRXiv. doi:[10.1101/2021.02.04.429754](https://doi.org/10.1101/2021.02.04.429754)
 
 * McLaughlin J.P, Schroeder J, White A.M, Culhane K, Mirts H.E, Tarbill G.L, Sire L, Page M, Baker E, Moritz M, Brashares J, Young H.S, **Sollmann R** (2022). Food webs for three burn severities after wildfire in the Eldorado National Forest, California. Nature Scientific Data
 
@@ -13,56 +13,58 @@ description: ""
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
-* **Alexiou** I, Abrams JF, Coudrat CNZ, Nanthavong C, **Nguyen A**, **Niedballa J**, **Wilting A** , **Tilker A** (2022). Camera-trapping reveals new insights in the ecology of three sympatric muntjacs in an overhunted biodiversity hotspot. MAMM BIOL (2022). DOI: [10.1007/s42991-022-00248-0](https://rdcu.be/cMvVv)
+* **Alexiou** I, Abrams JF, Coudrat CNZ, Nanthavong C, **Nguyen A**, **Niedballa J**, **Wilting A** , **Tilker A** (2022). Camera-trapping reveals new insights in the ecology of three sympatric muntjacs in an overhunted biodiversity hotspot. MAMM BIOL (2022). doi:[10.1007/s42991-022-00248-0](https://rdcu.be/cMvVv)
 
-* Asad S, Vitalis V, **Guharajan R**, Abrams JF, Lagan P, Kissing J, Sikui J, **Wilting A**, Rödel MO (2022). Variable species but similar amphibian community responses across habitats following reduced impact logging. GLOB ECOL CONSERV **35**, e02061. DOI: [10.1016/j.gecco.2022.e02061](https://doi.org/10.1016/j.gecco.2022.e02061)
+* Asad S, Vitalis V, **Guharajan R**, Abrams JF, Lagan P, Kissing J, Sikui J, **Wilting A**, Rödel MO (2022). Variable species but similar amphibian community responses across habitats following reduced impact logging. GLOB ECOL CONSERV **35**, e02061. doi:[10.1016/j.gecco.2022.e02061](https://doi.org/10.1016/j.gecco.2022.e02061)
 
-* **Benhaiem S**, Kaidatzi S, Hofer H, **East ML** (2022): Long-term reproductive costs of snare injuries in a keystone terrestrial by-catch species. Animal Conservation. DOI: [10.1111/acv.12798](https://doi.org/10.1111/acv.12798)
+* **Benhaiem S**, Kaidatzi S, Hofer H, **East ML** (2022): Long-term reproductive costs of snare injuries in a keystone terrestrial by-catch species. Animal Conservation. doi:[10.1111/acv.12798](https://doi.org/10.1111/acv.12798)
 
-* Brieger F, Kämmerle JL, **Hagen R**, Suchant R (2022). Behavioural reactions to oncoming vehicles as a crucial aspect of wildlife-vehicle collision risk in three common wildlife species. Accident Analysis & Prevention **168**. DOI: [10.1016/j.aap.2021.106564](https://doi.org/10.1016/j.aap.2021.106564)
+* Brieger F, Kämmerle JL, **Hagen R**, Suchant R (2022). Behavioural reactions to oncoming vehicles as a crucial aspect of wildlife-vehicle collision risk in three common wildlife species. Accident Analysis & Prevention **168**. doi:[10.1016/j.aap.2021.106564](https://doi.org/10.1016/j.aap.2021.106564)
 
-* **Calderon Quinonez AP**, **Louvrier J**, **Planillo AP**, [….], **Kramer-Schadt S** (2022). Occupancy models reveal potential of conservation prioritization for Central American jaguars. ANIM CONS, DOI: [10.1111/acv.12772](https://doi.org/10.1111/acv.12772)
+* **Calderon Quinonez AP**, **Louvrier J**, **Planillo AP**, [….], **Kramer-Schadt S** (2022). Occupancy models reveal potential of conservation prioritization for Central American jaguars. ANIM CONS. doi:[10.1111/acv.12772](https://doi.org/10.1111/acv.12772)
 
 * Cardador, L., Tella, J.L., **Louvrier, J.**, Anadón, J.D., Abellán, P., Carrete, M. 2022. Climate matching, anthropogenic factors, and dispersal contribute differentially to the colonisation and extinction of local populations during dynamic avian invasions. Diversity and Distribution, accepted.
 
 * Culhane, K., **Sollmann, R.**, White, A.M., Tarbill, G.L., Cooper, S.D., Young, H.S. (2022). Small mammal responses to fire severity mediated by vegetation characteristics and species traits. Ecology and Evolution **12(5)**, e8918.
 
-* **East ML**, **Thierer D**, **Benhaiem S**, Metzger S, Hofer H (accepted). Infanticide by adult females causes sexual conflict in a female-dominated social mammal. FRONT ECOL EVOL **10**. DOI: [10.3389/fevo.2022.860854](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/abstract)
+* **East ML**, **Thierer D**, **Benhaiem S**, Metzger S, Hofer H (accepted). Infanticide by adult females causes sexual conflict in a female-dominated social mammal. FRONT ECOL EVOL **10**. doi:[10.3389/fevo.2022.860854](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/abstract)
 
-* Figueiredo L, Scherer C, Cabral J S (2022). Computational notebooks to facilitate writing and improve reproducibility of (ecological) research. PLOS Computational Biology, accepted.
+* Figueiredo L, **Scherer C**, Cabral J S (2022). Computational notebooks to facilitate writing and improve reproducibility of (ecological) research. PLOS Computational Biology, accepted.
 
-* **Gicquel M**, **East ML**, Hofer H, Cubaynes S, **Benhaiem S** (2022): Climate change does not decouple interactions between a central place foraging predator and its migratory prey. Ecosphere **13/4**. DOI: [10.1002/ecs2.4012](https://doi.org/10.1002/ecs2.4012)
+* **Gicquel M**, **East ML**, Hofer H, Cubaynes S, **Benhaiem S** (2022): Climate change does not decouple interactions between a central place foraging predator and its migratory prey. Ecosphere **13/4**. doi:[10.1002/ecs2.4012](https://doi.org/10.1002/ecs2.4012)
 
-* **Hagen, R.**, Ortmann, S., Elliger, A., & Arnold, J. (2022). Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation. Ecology and Evolution, **12**, e8938. DOI: [https://doi.org/10.1002/ece3.8938](https://doi.org/10.1002/ece3.8938)
+* **Gicquel M**, **East ML**, Hofer H, **Benhaiem S** (2022): Early-life adversity predicts performance and fitness in a wild social carnivore. J ANIM ECOL, eraly view. doi:[10.1111/1365-2656.13785](https://doi.org/10.1111/1365-2656.13785) 
+
+* **Hagen, R.**, Ortmann, S., Elliger, A., & Arnold, J. (2022). Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation. Ecology and Evolution, **12**, e8938. doi:[https://doi.org/10.1002/ece3.8938](https://doi.org/10.1002/ece3.8938)
 
 * Hering R, Hauptfleisch M; Jago M; Smith T; **Kramer-Schadt S**; Stiegler J; Blaum N (2022). Don’t stop me now: Managed fence gaps could allow migratory ungulates to track dynamic resources and reduce fence related energy loss. FRONT ECOL EVOL, accepted.
 
-* Kitchener A, Hoffmann M, Yamaguchi N, Breitenmoser-Würsten C, **Wilting A** (2022). A system for designating taxonomic certainty in mammals and other taxa. MAMM BIOL, early view. DOI: [10.1007/s42991-021-00205-3](https://doi.org/10.1007/s42991-021-00205-3)
+* Kitchener A, Hoffmann M, Yamaguchi N, Breitenmoser-Würsten C, **Wilting A** (2022). A system for designating taxonomic certainty in mammals and other taxa. MAMM BIOL, early view. doi:[10.1007/s42991-021-00205-3](https://doi.org/10.1007/s42991-021-00205-3)
 
 * Ke, A., **Sollmann, R**., Frishkoff, L., Karp, D.S. (2022). A hierarchical N-mixture model to estimate behavioral variation and a case study of Neotropical birds. Ecological Applications, e2632.
 
 * Mirts, H.E., McLaughlin, J.P., Weller, T.J., White, A.M., Young, H.S., **Sollmann, R.** (2022). Bats in the megafire: assessing species‘ site use in a postfire landscape in the Sierra Nevada. Journal of Mammalogy **103(1)**, 111-123.
 
-* **Moreno-Sosa AM**, Yacelga M, Craighead K, **Kramer-Schadt S**, **Abrams JF** (2022). Can prey occupancy act as a surrogate for mesopredator occupancy? A case study of ocelot (*Leopardus pardalis*). MAMM BIOL, DOI: [10.1007/s42991-022-00232-8](https://doi.org/10.1007/s42991-022-00232-8)
+* **Moreno-Sosa AM**, Yacelga M, Craighead K, **Kramer-Schadt S**, **Abrams JF** (2022). Can prey occupancy act as a surrogate for mesopredator occupancy? A case study of ocelot (*Leopardus pardalis*). MAMM BIOL, doi:[10.1007/s42991-022-00232-8](https://doi.org/10.1007/s42991-022-00232-8)
 
-* **Nguyen TV**, **Wilting A**, **Niedballa J**, **Nguyen A**, Rawson BM, Nguyen AQH, Cao TT, Wearn OR, Dao AC, **Tilker A** (2022). Getting the big picture: Landscape-scale occupancy patterns of two Annamite endemics among multiple protected areas. CONS SCI PRACT, e620. DOI: [10.1111/csp2.620](https://doi.org/10.1111/csp2.620)
+* **Nguyen TV**, **Wilting A**, **Niedballa J**, **Nguyen A**, Rawson BM, Nguyen AQH, Cao TT, Wearn OR, Dao AC, **Tilker A** (2022). Getting the big picture: Landscape-scale occupancy patterns of two Annamite endemics among multiple protected areas. CONS SCI PRACT, e620. doi:[10.1111/csp2.620](https://doi.org/10.1111/csp2.620)
 
-* Reusch C, Lozar M, **Kramer-Schadt S**, Voigt CC (2022). Coastal onshore wind turbines lead to habitat loss for bats in Northern Germany. J ENV MANAGE **310**. DOI: [10.1016/j.jenvman.2022.114715](https://www.sciencedirect.com/science/article/pii/S0301479722002882)
+* Reusch C, Lozar M, **Kramer-Schadt S**, Voigt CC (2022). Coastal onshore wind turbines lead to habitat loss for bats in Northern Germany. J ENV MANAGE **310**. doi:[10.1016/j.jenvman.2022.114715](https://www.sciencedirect.com/science/article/pii/S0301479722002882)
 
-* Ripari L & **Premier J**, …, **Kramer-Schadt S**, Heurich M (2022). Human disturbance is the most limiting factor driving habitat selection of a large carnivore throughout Continental Europe. BIOL CONS **266**, 109446. DOI: [10.1016/j.biocon.2021.109446](https://doi.org/10.1016/j.biocon.2021.109446)
+* Ripari L & **Premier J**, …, **Kramer-Schadt S**, Heurich M (2022). Human disturbance is the most limiting factor driving habitat selection of a large carnivore throughout Continental Europe. BIOL CONS **266**, 109446. doi:[10.1016/j.biocon.2021.109446](https://doi.org/10.1016/j.biocon.2021.109446)
 
 
 <div class='headerbox'><hbox>Preprints</hbox></div><br>
 
 * **Drenske S**, **Radchuk V**, **Scherer C**, Esterer C, Kowarik I, Fritz J, **Kramer-Schadt S** (2021). Halfway to self-sustainability: Reintroduced migratory European Northern Bald Ibises (Geronticus eremita) still need management interventions for population viability. bioRxiv. DOI: [10.1101/2021.04.03.438331](https://doi.org/10.1101/2021.04.03.438331). –> accepted in Oryx
  
-* **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2022). Global disparity of research allocation and the Aichi biodiversity conservation targets. bioRxiv 2022.04.07.486958, DOI: [10.1101/2022.04.07.486958](https://doi.org/10.1101/2022.04.07.486958)
+* **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2022). Global disparity of research allocation and the Aichi biodiversity conservation targets. bioRxiv 2022.04.07.486958, doi:[10.1101/2022.04.07.486958](https://doi.org/10.1101/2022.04.07.486958)
 
 
 <div class='headerbox'><hbox>Book Chapters & Reports</hbox></div><br>
 
-* Gimenez  O, **Louvrier  J**, Lauret  V and Santostasi  N (2022). Studying Species Demography and Distribution in Natural Conditions: Hidden Markov Models. In Statistical Approaches for Hidden Variables in Ecology (eds N. Peyrard and O. Gimenez). [https://doi.org/10.1002/9781119902799.ch3](https://doi.org/10.1002/9781119902799.ch3)
+* Gimenez  O, **Louvrier  J**, Lauret  V and Santostasi  N (2022). Studying Species Demography and Distribution in Natural Conditions: Hidden Markov Models. In Statistical Approaches for Hidden Variables in Ecology (eds N. Peyrard and O. Gimenez). doi:[10.1002/9781119902799.ch3](https://doi.org/10.1002/9781119902799.ch3)
 
-* Papaïx J, Soubeyrand S, Bonnefon O, Walker E, **Louvrier J**, Klein E and Roques L (2022). Inferring Mechanistic Models in Spatial Ecology Using a Mechanistic-Statistical Approach. In Statistical Approaches for Hidden Variables in Ecology (eds N. Peyrard and O. Gimenez). [https://doi.org/10.1002/9781119902799.ch4](https://doi.org/10.1002/9781119902799.ch4)
+* Papaïx J, Soubeyrand S, Bonnefon O, Walker E, **Louvrier J**, Klein E and Roques L (2022). Inferring Mechanistic Models in Spatial Ecology Using a Mechanistic-Statistical Approach. In Statistical Approaches for Hidden Variables in Ecology (eds N. Peyrard and O. Gimenez). doi:[10.1002/9781119902799.ch4](https://doi.org/10.1002/9781119902799.ch4)
 
-* Thonicke K, Rahner E, Arneth A, Bartkowski B, Bonn A, Döhler C, Finger R, Freitag J, Grosch R, Grossart H.-P, Grützmacher K, Hartman Scholz A, Häuser C, Hickler T, Hölker F, Jähnig S C, Jeschke J, Kasen R, Kastner T, Kramer-Schadt S, Krug C, Lakner S, Loft L, Matzdorf B, Meakins F, De Meester L, Monaghan M T, Müller D, Overmann J, Quaas M, **Radchuk V**, Reyer C, Roos C, Scholz I, Schroer S, Sioen G B, Sommer S, Sommerwerk N, Tockner K, Turk Z, Warner B, Wätzold F, Wende W, Veenstra  und van der Voort H (2022). 10 Must-Knows aus der Biodiversitätsforschung | 10 Must knows from biodiversity science 2022. Zenodo. [https://doi.org/10.5281/zenodo.6257476](https://doi.org/10.5281/zenodo.6257476) | [https://zenodo.org/record/6257527](https://zenodo.org/record/6257527)
+* Thonicke K, Rahner E, Arneth A, Bartkowski B, Bonn A, Döhler C, Finger R, Freitag J, Grosch R, Grossart H.-P, Grützmacher K, Hartman Scholz A, Häuser C, Hickler T, Hölker F, Jähnig S C, Jeschke J, Kasen R, Kastner T, Kramer-Schadt S, Krug C, Lakner S, Loft L, Matzdorf B, Meakins F, De Meester L, Monaghan M T, Müller D, Overmann J, Quaas M, **Radchuk V**, Reyer C, Roos C, Scholz I, Schroer S, Sioen G B, Sommer S, Sommerwerk N, Tockner K, Turk Z, Warner B, Wätzold F, Wende W, Veenstra  und van der Voort H (2022). 10 Must-Knows aus der Biodiversitätsforschung | 10 Must knows from biodiversity science 2022. Zenodo. doi:[10.5281/zenodo.6257476](https://doi.org/10.5281/zenodo.6257476) | [https://zenodo.org/record/6257527](https://zenodo.org/record/6257527)

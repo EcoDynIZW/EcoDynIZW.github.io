@@ -1039,6 +1039,10 @@ figure img.external {
   margin-top: 1.5em;
 }
 
+.figure img {
+  width: 100%;
+}
+
 .figure .caption {
   color: rgba(0, 0, 0, 0.6);
   font-size: 12px;
@@ -1868,12 +1872,6 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-        var fn = $(this).children()[0]
-        $(this).html(fn.shadowRoot.querySelector("sup"))
-        $(this).id = fn.id
-        fn.remove()
-      }
       var refs = $(this).attr('data-cites').split(" ");
       var refHtml = refs.map(function(ref) {
         return "<p>" + $('#ref-' + ref).html() + "</p>";
@@ -1888,31 +1886,6 @@ function init_distill() {
         placement: 'bottom-start'
       });
     });
-
-    // fix footnotes in tables (#411)
-    // replacing broken distill.pub feature
-    $('table d-footnote').each(function() {
-      // we replace internal showAtNode methode which is triggered when hovering a footnote
-      this.hoverBox.showAtNode = function(node) {
-        // ported from https://github.com/distillpub/template/pull/105/files
-        calcOffset = function(elem) {
-            let x = elem.offsetLeft;
-            let y = elem.offsetTop;
-            // Traverse upwards until an `absolute` element is found or `elem`
-            // becomes null.
-            while (elem = elem.offsetParent && elem.style.position != 'absolute') {
-                x += elem.offsetLeft;
-                y += elem.offsetTop;
-            }
-
-            return { left: x, top: y };
-        }
-        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
-        const bbox = node.getBoundingClientRect();
-        const offset = calcOffset(node);
-        this.show([offset.left + bbox.width, offset.top + bbox.height]);
-      }
-    })
 
     // clear polling timer
     clearInterval(tid);
@@ -2012,8 +1985,6 @@ function init_common() {
   // mark non-body figures created by knitr chunks as 100% width
   $('.layout-chunk').each(function(i, val) {
     var figures = $(this).find('img, .html-widget');
-    // ignore leaflet img layers (#106)
-    figures = figures.filter(':not(img[class*="leaflet"])')
     if ($(this).attr('data-layout') !== "l-body") {
       figures.css('width', '100%');
     } else {
@@ -2036,7 +2007,7 @@ function init_common() {
   // get rid of index.html references in header
   if (window.location.protocol !== "file:") {
     $('.distill-site-header a[href]').each(function(i,val) {
-      $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
     });
   }
 
@@ -2249,6 +2220,10 @@ d-article li {
     margin-bottom: 0;
 }
 
+li + li, ul + ul {
+  margin-top: 6px;
+}
+
 .headerbox {
   padding: 10px;
   text-align: left;
@@ -2301,6 +2276,10 @@ hbox-secondary{
   font-weight: 200;
 }
 
+.orange {
+  color: orange;
+}
+
 small {
   font-size: 0.9rem;
   line-height: 180%;
@@ -2346,6 +2325,68 @@ small {
       font-weight: 600;
       line-height: 140%;
   }
+}
+
+.card-column {
+  float: left;
+  position: relative;
+  width: 30%;
+  padding: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  background-color: #f6f6f6;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
+  transition: 0.3s;
+  padding: 3px 18px 12px 18px;
+  border-radius: 0.5rem;
+  margin: auto;
+  place-items: center;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 1.5px 7.5px 15px 0 rgba(17, 10, 49, 0.5);
+}
+
+.card-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, minmax(.5ch, 32ch));
+  grid-gap: 1.5rem;
+  max-width: 80vw;
+  width: 110ch;
+  padding: 3rem 1rem 5rem 1rem;
+  overflow: hidden;
+  place-self: center;
+  justify-content: center; 
+}
+
+grid-item {
+  margin: auto;
+}
+
+li.card {
+  margin: 0;
+}
+
+.card-content {
+  font-size: .9em;
+  line-height: 180%;
+}
+
+.card h2 {
+  padding-bottom: .3rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -2618,8 +2659,8 @@ Research
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <!--radix_placeholder_navigation_after_body--><html><body>
 <div class="distill-site-nav distill-site-footer">
-<p>© Department of Ecological Dynamics, Leibniz Institute for Zoo- and
-Wildlife Research 2020—2022. All rights reserved.</p>
+<p>Â© Department of Ecological Dynamics, Leibniz Institute for Zoo- and
+Wildlife Research 2020â2022. All rights reserved.</p>
 <p><a href="https://ecodynizw.github.io/EcoDynIZW/impressum.html"><u>Impressum</u></a></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
