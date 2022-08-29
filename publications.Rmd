@@ -27,6 +27,7 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * **Niedballa J**, **Axtner J**, Döbert TF, **Tilker A**, **Nguyen A**, **Wong ST**, Fiderer C, Heurich M, **Wilting A** (2022). imageseg: an R package for deep learning-based image segmentation. METHODS ECOL EVOL accepted.
 
+* **Wong S**, Guharajan R, Petrus A, Jubili J, Lietz R, Abrams J, Hon J, Alen L, Ting N, Wong G, Tchin L, Bijack N, **Kramer-Schadt S**, **Wilting A**, **Sollmann R** (2022). How do terrestrial wildlife communities respond to small-scale Acacia plantations embedded in harvested tropical forest? ECOL EVOL accepted.
 
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
@@ -66,6 +67,8 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 * Reusch C, Lozar M, **Kramer-Schadt S**, Voigt CC (2022). Coastal onshore wind turbines lead to habitat loss for bats in Northern Germany. J ENV MANAGE **310**. doi:<span>[10.1016/j.jenvman.2022.114715](https://www.sciencedirect.com/science/article/pii/S0301479722002882)</span>
 
 * Ripari L & **Premier J**, …, **Kramer-Schadt S**, Heurich M (2022). Human disturbance is the most limiting factor driving habitat selection of a large carnivore throughout Continental Europe. BIOL CONS **266**, 109446. doi:<span>[10.1016/j.biocon.2021.109446](https://doi.org/10.1016/j.biocon.2021.109446)</span>
+
+* Stiegler J, Lins A, Dammhahn M, **Kramer-Schadt S**, Ortmann S, Blaum N (2022). Personality drives activity and space use in a mammalian herbivore. MOVEMENT ECOLOGY. Dec 10(1):1-2. doi:<span>[10.1016/j.biocon.2021.109446](https://www.sciencedirect.com/science/article/abs/pii/S0006320721004985?via%3Dihub)</span>
 
 
 
