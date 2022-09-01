@@ -74,7 +74,7 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * McLaughlin JP, Schroeder J, White AM, Culhane K, Mirts HE, Tarbill GL, Sire L, Page M, Baker E, Moritz M, Brashares J, Young HS, **Sollmann R** (2022): Food webs for three burn severities after wildfire in the Eldorado National Forest, California. NAT SCI DATA 9, 384. doi:<span>[10.1038/s41597-022-01220-w](https://www.nature.com/articles/s41597-022-01220-w)</span>
 
-* Mirts HE, McLaughlin JP, Weller TJ, White AM, Young HS, **Sollmann R** (2022): Bats in the megafire: assessing species‘ site use in a postfire landscape in the Sierra Nevada. Journal of Mammalogy **103(1)**, 111-123.
+* Mirts HE, McLaughlin JP, Weller TJ, White AM, Young HS, **Sollmann R** (2022): Bats in the megafire: assessing species‘ site use in a postfire landscape in the Sierra Nevada. Journal of Mammalogy **103(1)**, 111-123. doi:<span>[10.1093/jmammal/gyab129](https://academic.oup.com/jmammal/article-abstract/103/1/111/6437951?login=false)</span>
 
 * **Moreno-Sosa AM**, Yacelga M, Craighead K, **Kramer-Schadt S**, **Abrams JF** (2022): Can prey occupancy act as a surrogate for mesopredator occupancy? A case study of ocelot (*Leopardus pardalis*). MAMM BIOL, doi:<span>[10.1007/s42991-022-00232-8](https://doi.org/10.1007/s42991-022-00232-8)</span>
 
