@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -1032,10 +1033,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-top: 1.5em;
   }
 
-  .figure img {
-    width: 100%;
-  }
-
   .figure .caption {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px;
@@ -1865,6 +1862,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
           return "<p>" + $('#ref-' + ref).html() + "</p>";
@@ -1879,6 +1882,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1978,6 +2006,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -2000,7 +2030,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2543,7 +2573,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2634,8 +2664,10 @@ Research
 <li><p>Hermanns K, Marklewitz M, Zirkel F, Kopp K, <strong>Kramer-Schadt
 S</strong>, Junglen S (2021). Mosquito community composition shapes
 virus prevalence patterns along anthropogenic disturbance gradients.
-bioRXiv. DOI: <a
-href="https://doi.org/10.1101/2021.02.04.429754">10.1101/2021.02.04.429754</a></p></li>
+bioRXiv. <a href="doi:%5B10.1101/2021.02.04.429754"
+class="uri">doi:[10.1101/2021.02.04.429754</a>](<a
+href="https://doi.org/10.1101/2021.02.04.429754"
+class="uri">https://doi.org/10.1101/2021.02.04.429754</a>)</p></li>
 <li><p>McLaughlin J.P, Schroeder J, White A.M, Culhane K, Mirts H.E,
 Tarbill G.L, Sire L, Page M, Baker E, Moritz M, Brashares J, Young H.S,
 <strong>Sollmann R</strong> (2022). Food webs for three burn severities
@@ -2652,28 +2684,43 @@ Scientific Data</p></li>
 <strong>Nguyen A</strong>, <strong>Niedballa J</strong>, <strong>Wilting
 A</strong> , <strong>Tilker A</strong> (2022). Camera-trapping reveals
 new insights in the ecology of three sympatric muntjacs in an overhunted
-biodiversity hotspot. MAMM BIOL (2022). DOI: <a
-href="https://rdcu.be/cMvVv">10.1007/s42991-022-00248-0</a></p></li>
+biodiversity hotspot. MAMM BIOL (2022). <a
+href="doi:%5B10.1007/s42991-022-00248-0"
+class="uri">doi:[10.1007/s42991-022-00248-0</a>](<a
+href="https://rdcu.be/cMvVv"
+class="uri">https://rdcu.be/cMvVv</a>)</p></li>
 <li><p>Asad S, Vitalis V, <strong>Guharajan R</strong>, Abrams JF, Lagan
 P, Kissing J, Sikui J, <strong>Wilting A</strong>, Rödel MO (2022).
 Variable species but similar amphibian community responses across
 habitats following reduced impact logging. GLOB ECOL CONSERV
-<strong>35</strong>, e02061. DOI: <a
-href="https://doi.org/10.1016/j.gecco.2022.e02061">10.1016/j.gecco.2022.e02061</a></p></li>
+<strong>35</strong>, e02061. <a
+href="doi:%5B10.1016/j.gecco.2022.e02061"
+class="uri">doi:[10.1016/j.gecco.2022.e02061</a>](<a
+href="https://doi.org/10.1016/j.gecco.2022.e02061"
+class="uri">https://doi.org/10.1016/j.gecco.2022.e02061</a>)</p></li>
 <li><p><strong>Benhaiem S</strong>, Kaidatzi S, Hofer H, <strong>East
 ML</strong> (2022): Long-term reproductive costs of snare injuries in a
-keystone terrestrial by-catch species. Animal Conservation. DOI: <a
-href="https://doi.org/10.1111/acv.12798">10.1111/acv.12798</a></p></li>
+keystone terrestrial by-catch species. Animal Conservation. <a
+href="doi:%5B10.1111/acv.12798"
+class="uri">doi:[10.1111/acv.12798</a>](<a
+href="https://doi.org/10.1111/acv.12798"
+class="uri">https://doi.org/10.1111/acv.12798</a>)</p></li>
 <li><p>Brieger F, Kämmerle JL, <strong>Hagen R</strong>, Suchant R
 (2022). Behavioural reactions to oncoming vehicles as a crucial aspect
 of wildlife-vehicle collision risk in three common wildlife species.
-Accident Analysis &amp; Prevention <strong>168</strong>. DOI: <a
-href="https://doi.org/10.1016/j.aap.2021.106564">10.1016/j.aap.2021.106564</a></p></li>
+Accident Analysis &amp; Prevention <strong>168</strong>. <a
+href="doi:%5B10.1016/j.aap.2021.106564"
+class="uri">doi:[10.1016/j.aap.2021.106564</a>](<a
+href="https://doi.org/10.1016/j.aap.2021.106564"
+class="uri">https://doi.org/10.1016/j.aap.2021.106564</a>)</p></li>
 <li><p><strong>Calderon Quinonez AP</strong>, <strong>Louvrier
 J</strong>, <strong>Planillo AP</strong>, [….], <strong>Kramer-Schadt
 S</strong> (2022). Occupancy models reveal potential of conservation
-prioritization for Central American jaguars. ANIM CONS, DOI: <a
-href="https://doi.org/10.1111/acv.12772">10.1111/acv.12772</a></p></li>
+prioritization for Central American jaguars. ANIM CONS. <a
+href="doi:%5B10.1111/acv.12772"
+class="uri">doi:[10.1111/acv.12772</a>](<a
+href="https://doi.org/10.1111/acv.12772"
+class="uri">https://doi.org/10.1111/acv.12772</a>)</p></li>
 <li><p>Cardador, L., Tella, J.L., <strong>Louvrier, J.</strong>, Anadón,
 J.D., Abellán, P., Carrete, M. 2022. Climate matching, anthropogenic
 factors, and dispersal contribute differentially to the colonisation and
@@ -2686,30 +2733,49 @@ Ecology and Evolution <strong>12(5)</strong>, e8918.</p></li>
 <li><p><strong>East ML</strong>, <strong>Thierer D</strong>,
 <strong>Benhaiem S</strong>, Metzger S, Hofer H (accepted). Infanticide
 by adult females causes sexual conflict in a female-dominated social
-mammal. FRONT ECOL EVOL <strong>10</strong>. DOI: <a
-href="https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/abstract">10.3389/fevo.2022.860854</a></p></li>
-<li><p>Figueiredo L, Scherer C, Cabral J S (2022). Computational
-notebooks to facilitate writing and improve reproducibility of
-(ecological) research. PLOS Computational Biology, accepted.</p></li>
+mammal. FRONT ECOL EVOL <strong>10</strong>. <a
+href="doi:%5B10.3389/fevo.2022.860854"
+class="uri">doi:[10.3389/fevo.2022.860854</a>](<a
+href="https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/abstract"
+class="uri">https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/abstract</a>)</p></li>
+<li><p>Figueiredo L, <strong>Scherer C</strong>, Cabral J S (2022).
+Computational notebooks to facilitate writing and improve
+reproducibility of (ecological) research. PLOS Computational Biology,
+accepted.</p></li>
 <li><p><strong>Gicquel M</strong>, <strong>East ML</strong>, Hofer H,
 Cubaynes S, <strong>Benhaiem S</strong> (2022): Climate change does not
 decouple interactions between a central place foraging predator and its
-migratory prey. Ecosphere <strong>13/4</strong>. DOI: <a
-href="https://doi.org/10.1002/ecs2.4012">10.1002/ecs2.4012</a></p></li>
+migratory prey. Ecosphere <strong>13/4</strong>. <a
+href="doi:%5B10.1002/ecs2.4012"
+class="uri">doi:[10.1002/ecs2.4012</a>](<a
+href="https://doi.org/10.1002/ecs2.4012"
+class="uri">https://doi.org/10.1002/ecs2.4012</a>)</p></li>
+<li><p><strong>Gicquel M</strong>, <strong>East ML</strong>, Hofer H,
+<strong>Benhaiem S</strong> (2022): Early-life adversity predicts
+performance and fitness in a wild social carnivore. J ANIM ECOL, eraly
+view. <a href="doi:%5B10.1111/1365-2656.13785"
+class="uri">doi:[10.1111/1365-2656.13785</a>](<a
+href="https://doi.org/10.1111/1365-2656.13785"
+class="uri">https://doi.org/10.1111/1365-2656.13785</a>)</p></li>
 <li><p><strong>Hagen, R.</strong>, Ortmann, S., Elliger, A., &amp;
 Arnold, J. (2022). Evidence for a male-biased sex ratio in the offspring
 of a large herbivore: The role of environmental conditions in the sex
-ratio variation. Ecology and Evolution, <strong>12</strong>, e8938. DOI:
-<a
-href="https://doi.org/10.1002/ece3.8938">https://doi.org/10.1002/ece3.8938</a></p></li>
+ratio variation. Ecology and Evolution, <strong>12</strong>, e8938. <a
+href="doi:%5Bhttps://doi.org/10.1002/ece3.8938"
+class="uri">doi:[https://doi.org/10.1002/ece3.8938</a>](<a
+href="https://doi.org/10.1002/ece3.8938"
+class="uri">https://doi.org/10.1002/ece3.8938</a>)</p></li>
 <li><p>Hering R, Hauptfleisch M; Jago M; Smith T; <strong>Kramer-Schadt
 S</strong>; Stiegler J; Blaum N (2022). Don’t stop me now: Managed fence
 gaps could allow migratory ungulates to track dynamic resources and
 reduce fence related energy loss. FRONT ECOL EVOL, accepted.</p></li>
 <li><p>Kitchener A, Hoffmann M, Yamaguchi N, Breitenmoser-Würsten C,
 <strong>Wilting A</strong> (2022). A system for designating taxonomic
-certainty in mammals and other taxa. MAMM BIOL, early view. DOI: <a
-href="https://doi.org/10.1007/s42991-021-00205-3">10.1007/s42991-021-00205-3</a></p></li>
+certainty in mammals and other taxa. MAMM BIOL, early view. <a
+href="doi:%5B10.1007/s42991-021-00205-3"
+class="uri">doi:[10.1007/s42991-021-00205-3</a>](<a
+href="https://doi.org/10.1007/s42991-021-00205-3"
+class="uri">https://doi.org/10.1007/s42991-021-00205-3</a>)</p></li>
 <li><p>Ke, A., <strong>Sollmann, R</strong>., Frishkoff, L., Karp, D.S.
 (2022). A hierarchical N-mixture model to estimate behavioral variation
 and a case study of Neotropical birds. Ecological Applications,
@@ -2721,25 +2787,35 @@ Nevada. Journal of Mammalogy <strong>103(1)</strong>, 111-123.</p></li>
 <li><p><strong>Moreno-Sosa AM</strong>, Yacelga M, Craighead K,
 <strong>Kramer-Schadt S</strong>, <strong>Abrams JF</strong> (2022). Can
 prey occupancy act as a surrogate for mesopredator occupancy? A case
-study of ocelot (<em>Leopardus pardalis</em>). MAMM BIOL, DOI: <a
-href="https://doi.org/10.1007/s42991-022-00232-8">10.1007/s42991-022-00232-8</a></p></li>
+study of ocelot (<em>Leopardus pardalis</em>). MAMM BIOL, <a
+href="doi:%5B10.1007/s42991-022-00232-8"
+class="uri">doi:[10.1007/s42991-022-00232-8</a>](<a
+href="https://doi.org/10.1007/s42991-022-00232-8"
+class="uri">https://doi.org/10.1007/s42991-022-00232-8</a>)</p></li>
 <li><p><strong>Nguyen TV</strong>, <strong>Wilting A</strong>,
 <strong>Niedballa J</strong>, <strong>Nguyen A</strong>, Rawson BM,
 Nguyen AQH, Cao TT, Wearn OR, Dao AC, <strong>Tilker A</strong> (2022).
 Getting the big picture: Landscape-scale occupancy patterns of two
 Annamite endemics among multiple protected areas. CONS SCI PRACT, e620.
-DOI: <a
-href="https://doi.org/10.1111/csp2.620">10.1111/csp2.620</a></p></li>
+<a href="doi:%5B10.1111/csp2.620"
+class="uri">doi:[10.1111/csp2.620</a>](<a
+href="https://doi.org/10.1111/csp2.620"
+class="uri">https://doi.org/10.1111/csp2.620</a>)</p></li>
 <li><p>Reusch C, Lozar M, <strong>Kramer-Schadt S</strong>, Voigt CC
 (2022). Coastal onshore wind turbines lead to habitat loss for bats in
-Northern Germany. J ENV MANAGE <strong>310</strong>. DOI: <a
-href="https://www.sciencedirect.com/science/article/pii/S0301479722002882">10.1016/j.jenvman.2022.114715</a></p></li>
+Northern Germany. J ENV MANAGE <strong>310</strong>. <a
+href="doi:%5B10.1016/j.jenvman.2022.114715"
+class="uri">doi:[10.1016/j.jenvman.2022.114715</a>](<a
+href="https://www.sciencedirect.com/science/article/pii/S0301479722002882"
+class="uri">https://www.sciencedirect.com/science/article/pii/S0301479722002882</a>)</p></li>
 <li><p>Ripari L &amp; <strong>Premier J</strong>, …,
 <strong>Kramer-Schadt S</strong>, Heurich M (2022). Human disturbance is
 the most limiting factor driving habitat selection of a large carnivore
 throughout Continental Europe. BIOL CONS <strong>266</strong>, 109446.
-DOI: <a
-href="https://doi.org/10.1016/j.biocon.2021.109446">10.1016/j.biocon.2021.109446</a></p></li>
+<a href="doi:%5B10.1016/j.biocon.2021.109446"
+class="uri">doi:[10.1016/j.biocon.2021.109446</a>](<a
+href="https://doi.org/10.1016/j.biocon.2021.109446"
+class="uri">https://doi.org/10.1016/j.biocon.2021.109446</a>)</p></li>
 </ul>
 <div class="headerbox">
 <hbox>Preprints</hbox>
@@ -2758,8 +2834,10 @@ href="https://doi.org/10.1101/2021.04.03.438331">10.1101/2021.04.03.438331</a>.
 <strong>Planillo A</strong>, Sheil D, <strong>Kramer-Schadt S</strong>,
 <strong>Wilting A</strong> (2022). Global disparity of research
 allocation and the Aichi biodiversity conservation targets. bioRxiv
-2022.04.07.486958, DOI: <a
-href="https://doi.org/10.1101/2022.04.07.486958">10.1101/2022.04.07.486958</a></p></li>
+2022.04.07.486958, <a href="doi:%5B10.1101/2022.04.07.486958"
+class="uri">doi:[10.1101/2022.04.07.486958</a>](<a
+href="https://doi.org/10.1101/2022.04.07.486958"
+class="uri">https://doi.org/10.1101/2022.04.07.486958</a>)</p></li>
 </ul>
 <div class="headerbox">
 <hbox>Book Chapters &amp; Reports</hbox>
@@ -2770,13 +2848,18 @@ href="https://doi.org/10.1101/2022.04.07.486958">10.1101/2022.04.07.486958</a></
 (2022). Studying Species Demography and Distribution in Natural
 Conditions: Hidden Markov Models. In Statistical Approaches for Hidden
 Variables in Ecology (eds N. Peyrard and O. Gimenez). <a
-href="https://doi.org/10.1002/9781119902799.ch3">https://doi.org/10.1002/9781119902799.ch3</a></p></li>
+href="doi:%5B10.1002/9781119902799.ch3"
+class="uri">doi:[10.1002/9781119902799.ch3</a>](<a
+href="https://doi.org/10.1002/9781119902799.ch3"
+class="uri">https://doi.org/10.1002/9781119902799.ch3</a>)</p></li>
 <li><p>Papaïx J, Soubeyrand S, Bonnefon O, Walker E, <strong>Louvrier
 J</strong>, Klein E and Roques L (2022). Inferring Mechanistic Models in
 Spatial Ecology Using a Mechanistic-Statistical Approach. In Statistical
 Approaches for Hidden Variables in Ecology (eds N. Peyrard and O.
-Gimenez). <a
-href="https://doi.org/10.1002/9781119902799.ch4">https://doi.org/10.1002/9781119902799.ch4</a></p></li>
+Gimenez). <a href="doi:%5B10.1002/9781119902799.ch4"
+class="uri">doi:[10.1002/9781119902799.ch4</a>](<a
+href="https://doi.org/10.1002/9781119902799.ch4"
+class="uri">https://doi.org/10.1002/9781119902799.ch4</a>)</p></li>
 <li><p>Thonicke K, Rahner E, Arneth A, Bartkowski B, Bonn A, Döhler C,
 Finger R, Freitag J, Grosch R, Grossart H.-P, Grützmacher K, Hartman
 Scholz A, Häuser C, Hickler T, Hölker F, Jähnig S C, Jeschke J, Kasen R,
@@ -2786,9 +2869,10 @@ Meakins F, De Meester L, Monaghan M T, Müller D, Overmann J, Quaas M,
 G B, Sommer S, Sommerwerk N, Tockner K, Turk Z, Warner B, Wätzold F,
 Wende W, Veenstra und van der Voort H (2022). 10 Must-Knows aus der
 Biodiversitätsforschung | 10 Must knows from biodiversity science 2022.
-Zenodo. <a
-href="https://doi.org/10.5281/zenodo.6257476">https://doi.org/10.5281/zenodo.6257476</a>
-| <a
+Zenodo. <a href="doi:%5B10.5281/zenodo.6257476"
+class="uri">doi:[10.5281/zenodo.6257476</a>](<a
+href="https://doi.org/10.5281/zenodo.6257476"
+class="uri">https://doi.org/10.5281/zenodo.6257476</a>) | <a
 href="https://zenodo.org/record/6257527">https://zenodo.org/record/6257527</a></p></li>
 </ul>
 <div class="sourceCode" id="cb1"><pre
