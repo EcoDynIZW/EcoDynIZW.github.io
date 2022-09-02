@@ -46,7 +46,7 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * Cardador L, Tella JL, **Louvrier J**, Anadón JD, Abellán P, Carrete M (2022): Climate matching, anthropogenic factors, and dispersal contribute differentially to the colonisation and extinction of local populations during dynamic avian invasions. Diversity and Distribution, accepted.
 
-* Culhane K, **Sollmann R**, White AM, Tarbill GL, Cooper SD, Young HS (2022): Small mammal responses to fire severity mediated by vegetation characteristics and species traits. Ecology and Evolution **12(5)**, e8918.
+* Culhane K, **Sollmann R**, White AM, Tarbill GL, Cooper SD, Young HS (2022): Small mammal responses to fire severity mediated by vegetation characteristics and species traits. Ecology and Evolution **12(5)**, e8918. doi:<span>[10.1002/ece3.8918](https://onlinelibrary.wiley.com/doi/10.1002/ece3.8918)</span>
 
 * **East ML**, **Thierer D**, **Benhaiem S**, Metzger S, Hofer H (2022): Infanticide by adult females causes sexual conflict in a female-dominated social mammal. FRONT ECOL EVOL **10**. doi:<span>[10.3389/fevo.2022.860854](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/abstract)</span>
 
@@ -70,7 +70,7 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * Kitchener AC, Simo FT, **Mugerwa B**, Sanderson JG (2022): Evidence that Temminck described Felis aurata in 1825, not 1827. ARCH NAT HIST 49, 78-85. doi:<span>[10.3366/anh.2022.0759](https://www.euppublishing.com/doi/abs/10.3366/anh.2022.0759)</span>
 
-* Ke A, **Sollmann R**, Frishkoff L, Karp DS (2022): A hierarchical N-mixture model to estimate behavioral variation and a case study of Neotropical birds. Ecological Applications, e2632.
+* Ke A, **Sollmann R**, Frishkoff L, Karp DS (2022): A hierarchical N-mixture model to estimate behavioral variation and a case study of Neotropical birds. Ecological Applications, e2632. <span>doi:[doi:10.1002/eap.2632](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/eap.2632)</span>
 
 * McLaughlin JP, Schroeder J, White AM, Culhane K, Mirts HE, Tarbill GL, Sire L, Page M, Baker E, Moritz M, Brashares J, Young HS, **Sollmann R** (2022): Food webs for three burn severities after wildfire in the Eldorado National Forest, California. NAT SCI DATA 9, 384. doi:<span>[10.1038/s41597-022-01220-w](https://www.nature.com/articles/s41597-022-01220-w)</span>
 
