@@ -1,7 +1,7 @@
 ---
 title: "Department Guidelines"
-description: |
-  The guidelines for studies in the Department of Ecological Dynamics are meant to ease your start in the department and to secure high quality standards for the analysis of your data. 
+description: 
+  "The guidelines for studies in the Department of Ecological Dynamics are meant to ease your start in the department and to secure high quality standards for the analysis of your data." 
 output:
 distill::distill_article:
   toc: true
@@ -18,7 +18,7 @@ The department is composed of three teams on (1) Individual Dynamics, (2) Popula
 
 Stephanie Kramer-Schadt is the department head and leader of the Population Dynamics team. Conny Landgraf is the assistant of the department head; she can assist with administrative duties (e.g. contracts, travel sheets, etc.). Moritz Wenzler and Jan Axtner are responsible for data management, data storage and the working group’s R code collection. As each department member has a specific area of expertise, we created an expert list (see 1.3) if you need help on specific topics. PhD students and scientists are obliged to update this expert list with their own skills and responsibilities as well. 
 
-For information on the Department, check [our webpage](https://www.ecological-dynamics-izw.com) or subscribe to [our Twitter account](https://www.twitter.com/EcoDynIZW) (@EcoDynIZW) for news about papers, helpful R-code, courses or scientific positions.
+For information on the Department, check [our webpage](https://www.ecological-dynamics-izw.com) or subscribe to [our Twitter account](https://www.twitter.com/EcoDynIZW) (\@EcoDynIZW) for news about papers, helpful R-code, courses or scientific positions.
 
 
 ### Teams of the Department of Ecological Dynamics:
