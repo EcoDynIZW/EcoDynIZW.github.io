@@ -39,11 +39,6 @@ knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
 
 ## News
 
-### Announcements
-
-* We have a **new webpage** 🎉 
-* Field season is in full swing — we are currently capturing swallows, squirrels and more!
-
 ### Featured Publications
 
 - Marescot, Franz, Benhaiem et al. 2021 [*J Anim Ecol*](https://doi.org/10.1111/1365-2656.13555) —  [Code](https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol)
