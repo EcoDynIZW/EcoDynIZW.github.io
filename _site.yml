@@ -18,8 +18,6 @@ navbar:
   right:
     - text: "Teams"
       menu:
-        - text: "Overview"
-          href: teams-overview.html
         - text: "Team 1: Individual Dynamics"
           href: team-individual.html
         - text: "Team 2: Population Dynamics"
@@ -32,6 +30,8 @@ navbar:
           href: publications.html
         - text: "Competences"
           href: competences.html
+        - text: "Repositories"
+          href: Repositories.html
         - text: "Doctoral Theses"
           href: doctoral-theses.html
         - text: "Msc/Bsc Theses"

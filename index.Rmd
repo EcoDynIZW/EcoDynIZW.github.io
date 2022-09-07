@@ -36,16 +36,11 @@ We are scientists of the Department of Ecological Dynamics at the [Leibniz Insti
 knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
 ```
 
+Get an overview of our teams, field sites and research themes.
 
-## News
-
-### Featured Publications
-
-- Marescot, Franz, Benhaiem et al. 2021 [*J Anim Ecol*](https://doi.org/10.1111/1365-2656.13555) —  [Code](https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol)
-- Kürschner et al. 2021 [*Ecol Evol*](http://doi.org/10.1002/ece3.7478) — [Code](https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol)
-- Scherer et al. 2020 [*OIKOS*](http://doi.org/10.1111/oik.07002) — [Code](https://github.com/EcoDynIZW/Scherer_2020_OIKOS)
-- Radchuk et al. 2019 [*Nat Com*](http://doi.org/10.1038/s41467-019-10924-4) — [Code](https://github.com/EcoDynIZW/Radchuk_2019_NatCom)
-- Benhaiem et al. 2018 [*Comms Biol*](http://doi.org/10.1038/s42003-018-0197-1) — [Code](https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio)
+```{r, out.extra='style="background-color: #efefef; padding:5px; display: inline-block;"'}
+knitr::include_graphics("img/teams-map.png")
+```
 
 ### Contributions to R Packages
 
