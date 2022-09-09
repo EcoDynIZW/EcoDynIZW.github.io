@@ -169,11 +169,6 @@ small {
   width: 50%;
 }
 
-.rep-col {
-  column-count: 2;
-  column-gap: 20px;
-}
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -275,5 +270,3 @@ li.card {
 		overflow-y:auto;
 	}
 }
-
-
