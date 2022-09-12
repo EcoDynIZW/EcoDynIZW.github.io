@@ -17,6 +17,57 @@
     "input_file": {}
   },
   {
+    "path": "posts/imageseg/",
+    "title": "imageseg",
+    "description": "Deep learning image segmentation",
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2022-09-12",
+    "categories": [],
+    "contents": "\r\nimageseg\r\nR package for deep learning image segmentation using the U-Net model\r\narchitecture by Ronneberger (2015), implemented in Keras and TensorFlow.\r\nIt provides pre-trained models for forest structural metrics (canopy\r\ndensity and understory vegetation density) and a workflow to apply these\r\non custom images.\r\nIn addition, it provides a workflow for easily creating model input\r\nand model architectures for general-purpose image segmentation based on\r\nthe U-net architecture. Model can be trained on grayscale or color\r\nimages, and can provide binary or multi-class image segmentation as\r\noutput.\r\nThe package can be found on CRAN.\r\nThe preprint of the paper describing the package is available on bioRxiv.\r\nInstallation\r\nFirst, install the R package “R.rsp” which enables the static vignettes.\r\n\r\n\r\n\r\nInstall the imageseg package from CRAN via:\r\n\r\n\r\n\r\nAlternatively you can install from GitHub (requires remotes package\r\nand R.rsp):\r\n\r\n\r\n\r\nUsing imageseg requires Keras and TensorFlow. See the vignette for\r\ninformation about installation and initial setup:\r\nTutorial\r\nSee the vignette for an introduction and tutorial to imageseg.\r\n\r\n\r\n\r\nThe vignette covers: - Installation and setup - Sample workflow for\r\ncanopy density assessments - Training new models - Continued training of\r\nexisting models - Multi-class image segmentation models - Image\r\nsegmentation based on grayscale images\r\nForest structure model\r\ndownload\r\nThe models, example predictions, training data and R script for model\r\ntraining for both the canopy and understory model are available from\r\nDryad as a single download.\r\nSee the “Usage Notes” section for details on the dataset.\r\nThe models and script (without the training data) are also hosted on\r\nZenodo and can be downloaded individually from zenodo.\r\nThe pre-trained models for forest canopy density and understory\r\nvegetation density are available for download. The zip files contain the\r\nmodel (as .hdf5 files) and example classifications to give an impression\r\nof model performance and output:\r\nCanopy\r\nmodel\r\nUnderstory\r\nmodel\r\nPlease see the vignette for further information on how to use these\r\nmodels. Training data download\r\nTraining data for both the canopy and understory model are included\r\nin the Dryad dataset download in the zip files:\r\nimageseg_canopy_training_data.zip\r\nimageseg_understory_training_data.zip\r\nFor details, please see the Usage Notes and the info.txt files\r\ncontained in the zip files.\r\nThe training data are not required for users who only wish to use the\r\npre-trained models on their own images.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-09-12T11:51:17+02:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/isorix/",
+    "title": "Isorix",
+    "description": "Building isoscapes and inferring geographic origins on isotopic ratios",
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2022-09-12",
+    "categories": [],
+    "contents": "\r\nHow to download and install\r\nIsoriX?\r\nYou can download and install the stable version of IsoriX directly\r\nfrom within R by typing:\r\n\r\n\r\ninstall.packages(\"IsoriX\", dependencies = TRUE)\r\n\r\n\r\nNote: if you get into troubles due to gmp, magick, maps, maptools,\r\nRandomFields, rgeos, or rgl, retry using simply:\r\n\r\n\r\ninstall.packages(\"IsoriX\")\r\n\r\n\r\nThese packages offer additional functionalities but some of them are\r\nparticularly difficult to install on some systems.\r\nIf you want the development version of IsoriX, you can download and\r\ninstall it by typing:\r\n\r\n\r\nremotes::install_github(\"courtiol/IsoriX/IsoriX\")\r\n\r\n\r\nMind that you need the R package remotes to be installed for that to\r\nwork. Mind also that the development version, being under development,\r\ncan sometimes be broken. So before downloading it make sure that the\r\ncurrent build status is build passing. The current built status is\r\nprovided at the top of this readme document.\r\nAlso, if you access the network via a proxy, you may experience\r\ntroubles with install_github. In such case try something like:\r\n\r\n\r\nlibrary(httr)\r\nwith_config(use_proxy(\"192.168.2.2:3128\"), devtools::install_github(\"courtiol/IsoriX/IsoriX\"))\r\n\r\n\r\nOff course, unless you are in the same institute than some of us,\r\nreplace the numbers with your proxy settings! Where to learn about\r\nIsoriX?\r\nYou can start by reading our bookdown!\r\nThen, if may not be a bad idea to also have a look at our papers:\r\nhere and there.\r\nAnother great source of help is our mailing list. First register for\r\nfree (using your Google account) and then feel free to send us\r\nquestions.\r\nFor specific help on IsoriX functions and objects, you should also\r\ncheck the documentation embedded in the package:\r\n\r\n\r\nhelp(package = \"IsoriX\")\r\n\r\n\r\nin R after having installed and attached (= loaded) the package. How\r\ncan you contribute?\r\nThere are plenty way you can contribute! If you are fluent in R\r\nprogramming, you can improve the code and develop new functions. If you\r\nare not so fluent, you can still edit the documentation files to make\r\nthem more complete and clearer, write new vignettes, report bugs or make\r\nfeature requests. Some useful links\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-09-12T11:51:06+02:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/nlmr/",
+    "title": "NLMR",
+    "description": "NLMR is an R package for simulating neutral landscape models (NLM). Designed to be a generic framework like NLMpy, it leverages the ability to simulate the most common NLM that are described in the ecological literature. NLMR builds on the advantages of the raster package and returns all simulation as RasterLayer objects, thus ensuring a direct compatibility to common GIS tasks and a flexible and simple usage. Furthermore, it simulates NLMs within a self-contained, reproducible framework.",
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2022-09-12",
+    "categories": [],
+    "contents": "\r\nInstallation\r\nNLMR is not available\r\non CRAN at the moment (see #95). The only way to install NLMR at the\r\nmoment is:\r\n\r\n\r\n\r\nWindows users need to install RTools first. Rtools provides a\r\ncompiler and some helpers to compile code for R in Windows. Download\r\nRtools from here and\r\nselect the appropriate Rtools version (4.0 with R 4.x.x)\r\nInstall Rtools in a directory with no fancy characters in its path,\r\ne.g. C:is safe. To install, right click on the Rtools40.exe and select\r\n“Run as administrator”. During the installation make sure to select “Add\r\nRtools to PATH”. Otherwise, accept all defaults for everything else.\r\nExample\r\nEach neutral landscape models is simulated with a single function\r\n(all starting with nlm_) in NLMR, e.g.:\r\n\r\n\r\nrandom_cluster <- NLMR::nlm_randomcluster(nrow = 100,\r\n                                      ncol = 100,\r\n                                      p    = 0.5,\r\n                                      ai   = c(0.3, 0.6, 0.1),\r\n                                      rescale = FALSE)\r\n\r\nrandom_curdling <- NLMR::nlm_curds(curds = c(0.5, 0.3, 0.6),\r\n                              recursion_steps = c(32, 6, 2))\r\n\r\n\r\nmidpoint_displacememt <- NLMR::nlm_mpd(ncol = 100,\r\n                                 nrow = 100,\r\n                                 roughness = 0.61)\r\n\r\n\r\nSee also\r\nNLMR was split during its development process - to have a minimal\r\ndependency version for simulating neutral landscape models and an\r\nutility toolbox to facilitate workflows with raster data. If you are\r\ninterested in merging, visualizing or further handling neutral landscape\r\nmodels have a look at the landscapetools\r\npackage.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-09-12T11:51:26+02:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/d6package/",
     "title": "The {d6} R package: Simplify workflows of D6 research projects",
     "description": "The goal of the {d6} package is to simplify the project workflow within the department “Ecological Dynamics” at the Leibniz Institute for Zoo and Wildlife Research by providing a standardized folder structure, templates for reports and utility functions.",

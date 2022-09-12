@@ -19,6 +19,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class='headerbox'><hbox>Completed theses</hbox></div><br>
 
+![](img/bee_bsc-theses.jpg){width=30%}
+![](img/leopard_msc-theses.jpg){width=28%}
+![](img/greycrownedcrane_msc-theses.png){width=30%}
+![](img/lynx_msc-theses.jpg){width=30%}
+![](img/ibis-bsc-theses.jpg){width=30%}
+
+
 **2022**
 
 * Evaluating the effects of blackberry (*Rubus niveus*) abundance on land bird diversity on Santiago Island, Galapagos. **Mateo Reyes.** <span class='desaturated'>23.05.2022. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Kramer-Schadt S, M von der Lippe (TUB).</span>
@@ -35,7 +42,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * <p>**Urban planning for animals and humans: An empirical investigation of planning approaches and their perception by Berlin citizens.**  <span style='color:#FF8C00;'> Lisa Jäger.</span><span style='color:#C0C0C0;'>  23.02.2022. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Tanja Straka (TUB), Kramer-Schadt S. </span></p>
 
-* <p>**Einfluss einer Unterrichtseinheit über Wildbienen auf die Einstellungen, die Emotionen und das Wissen von Schülern.**  <span style='color:#FF8C00;'> Sarah Festl.</span><span style='color:#C0C0C0;'> 25.02.2022. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Tanja Straka (TUB), Kramer-Schadt S.</span></p>![](img/bee_bsc-theses.jpg){width=30%}
+* <p>**Einfluss einer Unterrichtseinheit über Wildbienen auf die Einstellungen, die Emotionen und das Wissen von Schülern.**  <span style='color:#FF8C00;'> Sarah Festl.</span><span style='color:#C0C0C0;'> 25.02.2022. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Tanja Straka (TUB), Kramer-Schadt S.</span></p>
 
 
 * <p>**Spatial use and population development of the Eurasian otter *Lutra lutra* in Sielmanns Naturlandschaft Groß Schauen and the state of Brandenburg.**  <span style='color:#FF8C00;'> Yvonne Rychlak.</span><span style='color:#C0C0C0;'> 02.02.2022. MSc. Ecology, Evolution and Nature Conservation. University of Potsdam. Supervision: Niels Blaum (UP), Kramer-Schadt S.</span></p>
@@ -46,7 +53,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * <p>**Accuracy of a new high throughput wildlife movement tracking system in comparison with GPS tracking.**  <span style='color:#FF8C00;'> Johannes Marold.</span><span style='color:#C0C0C0;'> 16.09.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Radchuk V (IZW), Kramer-Schadt S.</span></p>
 
-* <p>**Density and life-history of the Sunda clouded leopard *Neofelis diardi* in the Deramakot Forest Complex, Sabah, Malaysia.**  <span style='color:#FF8C00;'> Katharina Kasper.</span><span style='color:#C0C0C0;'> 30.08.2021. MSc. Goethe-Universität Frankfurt am Main. Supervision: Thomas Müller (SBiK-F), Andreas Wilting (IZW).</span></p>![](img/leopard_msc-theses.jpg){width=30%}
+* <p>**Density and life-history of the Sunda clouded leopard *Neofelis diardi* in the Deramakot Forest Complex, Sabah, Malaysia.**  <span style='color:#FF8C00;'> Katharina Kasper.</span><span style='color:#C0C0C0;'> 30.08.2021. MSc. Goethe-Universität Frankfurt am Main. Supervision: Thomas Müller (SBiK-F), Andreas Wilting (IZW).</span></p>
 
 * <p>**Evaluating the habitat suitability of tiger in Bardia National Park and Buffer Zone areas, Nepal.**  <span style='color:#FF8C00;'> Kamal Ghimire.</span><span style='color:#C0C0C0;'> 18.08.2021. MSc. TU Dresden. Tropical Forestry. Supervision: Berger U (TUD), Kramer-Schadt S.</span></p>
 
@@ -56,11 +63,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * <p>**What contribution can non-standardized Citizen Science data make in biodiversity monitoring?**  <span style='color:#FF8C00;'> Lena Fiechter.</span><span style='color:#C0C0C0;'> 21.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Planillo A, Kramer-Schadt S, Heucke-Voigt S (MfN).  </span> <span style='color:#32CD32;'>-> coauthor in Planillo et al. (2021) LAND URB PLAN.</span></p>
 
-* <p>**A habitat suitability model for Grey Crowned Cranes (*Balearica regulorum*) in Rwanda based on sightings.**  <span style='color:#FF8C00;'> Ann-Marie Attenberger.</span><span style='color:#C0C0C0;'> 04.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Olivier Nsengimana (RWCA), Kramer-Schadt S, vd Lippe M (TUB).</span></p>![](img/greycrownedcrane_msc-theses.png){width=30%}
+* <p>**A habitat suitability model for Grey Crowned Cranes (*Balearica regulorum*) in Rwanda based on sightings.**  <span style='color:#FF8C00;'> Ann-Marie Attenberger.</span><span style='color:#C0C0C0;'> 04.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Olivier Nsengimana (RWCA), Kramer-Schadt S, vd Lippe M (TUB).</span></p>
 
 **2020**
 
-* <p>**A population viability and connectivity analysis for the alpine lynx (*Lynx lynx*) population. **  <span style='color:#FF8C00;'> Eva Sanchez Arribas.</span><span style='color:#C0C0C0;'> 19.11.2020. MSc. Uppsala University, Sweden. Supervision: Kramer-Schadt S, Planillo A, Molinari-Jobin A (KORA).</span> <span style='color:#32CD32;'> -> Manuscript in prep.</span></p>![](img/lynx_msc-theses.jpg){width=30%}
+* <p>**A population viability and connectivity analysis for the alpine lynx (*Lynx lynx*) population. **  <span style='color:#FF8C00;'> Eva Sanchez Arribas.</span><span style='color:#C0C0C0;'> 19.11.2020. MSc. Uppsala University, Sweden. Supervision: Kramer-Schadt S, Planillo A, Molinari-Jobin A (KORA).</span> <span style='color:#32CD32;'> -> Manuscript in prep.</span></p>
 
 * <p>**Influence of roost site availability on activity of forest-dwelling bats above coniferous forests.**  <span style='color:#FF8C00;'> Franziska Röpke.</span><span style='color:#C0C0C0;'> 15.10.2020. BSc. Ökologie und Umweltplanung. TU Berlin. Supervision: Volker Kelm (K&S Umweltgutachten), Kramer-Schadt S.</span></p>
 
@@ -70,7 +77,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 **2019**
 
-* <p>**Demography and population viability of the Northern Bald Ibis (*Geronticus eremita*), a reintroduced bird species.** <span style='color:#FF8C00;'> Sinah Drenske.</span><span style='color:#C0C0C0;'> 04.02.2019. Bsc. Ökologie und Umweltplanung. Technische Universität Berlin. Supervision: Kramer-Schadt S, Radchuk V, Kowarik I (TUB). </span> <span style='color:#32CD32;'>-> Manuscript submitted to Oryx</span></p>![](img/ibis-bsc-theses.jpg){width=30%}
+* <p>**Demography and population viability of the Northern Bald Ibis (*Geronticus eremita*), a reintroduced bird species.** <span style='color:#FF8C00;'> Sinah Drenske.</span><span style='color:#C0C0C0;'> 04.02.2019. Bsc. Ökologie und Umweltplanung. Technische Universität Berlin. Supervision: Kramer-Schadt S, Radchuk V, Kowarik I (TUB). </span> <span style='color:#32CD32;'>-> Manuscript submitted to Oryx</span></p>
 
 * <p>**Wolfmanagement in Deutschland – Vergleich der Wolfmanagementpläne der Bundesländer.** <span style='color:#FF8C00;'> Patrick Enders.</span><span style='color:#C0C0C0;'> 26.09.2019. Bsc. Landschaftsarchitektur und Landschaftsplanung. TU Berlin. Supervision: Heiland S (TUB), Kramer-Schadt S.</span></p>
 
