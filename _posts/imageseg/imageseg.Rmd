@@ -30,6 +30,7 @@ The preprint of the paper describing the package is available on [bioRxiv](https
 ## Installation
 
 First, install the R package "R.rsp" which enables the static vignettes.
+
 ```{r, eval=FALSE, Echo=TRUE}
 install.packages(R.rsp)
 ```
