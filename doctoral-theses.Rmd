@@ -8,7 +8,7 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-<div class='headerbox'><hbox>Successfully defended:</hbox></div><br>
+<div class='headerbox'><hbox>Successfully Defended Theses</hbox></div><br>
 
 * **Thanh Van Nguyen**: Unravelling the mysteries of the Annamites: First insights in ecology, distribution, and genetic diversity of Annamite mammals. 24.06.2022. Mathematisch-Naturwissenschaftliche Fakultät
 Institut für Biochemie und Biologie der Universität Potsdam. Fickel J, Wilting A.
@@ -23,4 +23,4 @@ Institut für Biochemie und Biologie der Universität Potsdam. Fickel J, Wilting
 
 * **John Mathai**: Distribution and conservation of small carnivores focussing on the Bornean endemic Hose’s civet. 17.04.2019. Biologie Freie Universität Berlin. Hofer H, Wilting A.
 
-* **Phillip Cedric Scherer**: Infections on the move: Individual host movement drives disease persistence in spatially structured landscapes. 25.03.2019. Institut für Biochemie und Biologie der Universität Potsdam. Kramer-Schadt S, Jeltsch F. 
+* **Philip Cédric Scherer**: Infections on the move: Individual host movement drives disease persistence in spatially structured landscapes. 25.03.2019. Institut für Biochemie und Biologie der Universität Potsdam. Kramer-Schadt S, Jeltsch F. 
