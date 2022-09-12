@@ -4,7 +4,7 @@ description: |
   Manage camera trap data in R
 preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex_camtrapr.png
 author:
-  - name: Moritz Wenzler-Meya
+  - name: Jürgen Niedballa
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
 date: 09-12-2022

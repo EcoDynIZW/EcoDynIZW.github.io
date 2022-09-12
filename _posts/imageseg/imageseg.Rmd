@@ -2,8 +2,9 @@
 title: "imageseg"
 description: |
   Deep learning image segmentation
+preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/imageseg-hex.png
 author:
-  - name: Moritz Wenzler-Meya
+  - name: Jürgen Niedballa
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
 date: 2022-09-12
