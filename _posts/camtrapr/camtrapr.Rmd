@@ -46,7 +46,7 @@ You can also install a previous version (e.g. if a recent update broke the code 
 remotes::install_version(package = "camtrapR", version = "2.0.3")
 ```
 
-**Exiftool**
+## Exiftool
 
 Numerous important camtrapR functions read EXIF metadata from JPG images (and videos). This is done via Exiftool, a free and open-source sofware tool developed by Phil Harvey and available for Windows, MacOS and Linux.
 
@@ -65,7 +65,7 @@ Further reading
 See the Article in Methods in Ecology and Evolution for an overview of the package. The five vignettes provide examples for the entire workflow.
 Citation
 
-To cite camtrapR, please use:
+## Citation
 
 Jürgen Niedballa, Rahel Sollmann, Alexandre Courtiol, Andreas Wilting (2016). camtrapR: an R package for efficient camera trap data management. Methods in Ecology and Evolution 7(12), 1457-1462, [https://doi.org/10.1111/2041-210X.12600](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12600) 
 
