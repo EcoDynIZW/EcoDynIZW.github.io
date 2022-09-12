@@ -2,7 +2,7 @@
 title: "camtrapR"
 description: |
   Manage camera trap data in R
-preview: https://github.com/jniedballa/camtrapR
+preview: https://cran.r-project.org/web/packages/camtrapR/index.html
 author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
