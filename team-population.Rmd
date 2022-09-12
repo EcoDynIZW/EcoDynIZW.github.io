@@ -20,9 +20,13 @@ knitr::include_graphics("img/team-pop-header.png")
 </div>
 
 Lead: **Dr. Stephanie Kramer-Schadt** & **Dr. Viktoriia Radchuk**</br>
+
 **Stephanie**, Department and Team Lead, applied ecologist, population and disease dynamics at the landscape scale, passionate about wildlife per se, carnivores in particular, D6 and movement ecology, uses models as tools to communicate management issues.</br>
+
 **Viktoriia**, Team Lead, quantitative ecologist, stability of populations and communities under global change, interested in theory, synthesis, and integration of data with models to assist conservation.</br>
+
 Coordination: **Dr.Conny Landgraf**, organizes us, behavioral ecologist, interested in sensory and acoustic cues of animals.</br>
+
 GIS-Lab: **Moritz Wenzler-Meya**, geodata analyst, responsible for the GIS lab, providing geodata and supporting coding.</br>
 
 

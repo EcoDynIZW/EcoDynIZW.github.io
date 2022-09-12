@@ -49,7 +49,7 @@ Human activities are an important source of mortality spotted hyenas in the Sere
 <div class='headerbox'><hbox>Parasite Infections</hbox></div>
 
 
-<div class='headerbox-secondary'><hbox-secondary>Stability under global change and across levels of organization</headerbox-secondary></div>
+<div class='headerbox-secondary'><hbox-secondary>under construction</headerbox-secondary></div>
 
 
 
