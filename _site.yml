@@ -28,10 +28,10 @@ navbar:
       menu:
         - text: "Publications"
           href: publications.html
-        - text: "Competences"
-          href: competences.html
         - text: "Repositories"
           href: repositories.html
+        - text: "Competences"
+          href: competences.html
         - text: "Doctoral Theses"
           href: doctoral-theses.html
         - text: "Msc/Bsc Theses"
