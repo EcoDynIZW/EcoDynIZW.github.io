@@ -9,11 +9,11 @@
         "url": {}
       }
     ],
-    "date": "2020-12-09",
+    "date": "2022-09-12",
     "categories": [],
     "contents": "\r\n\r\nContents\r\nInstallation\r\nExiftool\r\nCitation\r\n\r\ncamtrapR: Manage\r\ncamera trap data in R\r\ncamtrapR is a package for camera trap data management in R.\r\nInstallation\r\nYou can install the release version of camtrapR from CRAN:\r\n\r\n\r\ninstall.packages(\"camtrapR\")\r\n\r\n\r\nor the latest GitHub version (containing recent changes and new\r\nfeatures) via:\r\n\r\n\r\n# install.packages(\"remotes\")\r\n# install.packages(\"R.rsp\")\r\nremotes::install_github(\"jniedballa/camtrapR\", build_vignettes = TRUE)\r\n\r\n\r\nFor installation from GitHub make sure package R.rsp is available.\r\nbuild_vignettes = TRUE is necessary since v 2.1.1. due to the new static\r\nvignettes.\r\nYou can also install a previous version (e.g. if a recent update\r\nbroke the code you need to run urgently) via:\r\n\r\n\r\nremotes::install_version(package = \"camtrapR\", version = \"2.0.3\")\r\n\r\n\r\nExiftool\r\nNumerous important camtrapR functions read EXIF metadata from JPG\r\nimages (and videos). This is done via Exiftool, a free and open-source\r\nsofware tool developed by Phil Harvey and available for Windows, MacOS\r\nand Linux.\r\nTo make full use of camtrapR, you will need Exiftool on your system.\r\nYou can download it from the Exiftool homepage. Please follow the\r\ninstallation instruction in vignette 1 and the Exiftool website.\r\nYou may not need Exiftool if you do not work with image files, but\r\nonly use camtrapR to create input for occupancy or spatial\r\ncapture-recapture models from existing record tables. Help and Support\r\nGoogle Group\r\nThere is a Google Group for all questions and problems regarding\r\ncamtrapR. Please feel free to join the discussion there. GitHub\r\nissues\r\nAlternatively, you can report bugs and problems as issues on GitHub\r\n(here). Further reading\r\nSee the Article in Methods in Ecology and Evolution for an overview\r\nof the package. The five vignettes provide examples for the entire\r\nworkflow. Citation\r\nCitation\r\nJürgen Niedballa, Rahel Sollmann, Alexandre Courtiol, Andreas Wilting\r\n(2016). camtrapR: an R package for efficient camera trap data\r\nmanagement. Methods in Ecology and Evolution 7(12), 1457-1462, https://doi.org/10.1111/2041-210X.12600\r\nor see\r\n\r\n\r\ncitation(\"camtrapR\")\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-09-12T10:40:54+02:00",
+    "last_modified": "2022-09-12T10:44:14+02:00",
     "input_file": {}
   },
   {
