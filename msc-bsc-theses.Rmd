@@ -22,80 +22,80 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](img/bee_bsc-theses.jpg){width=30%}
 ![](img/leopard_msc-theses.jpg){width=28%}
 ![](img/greycrownedcrane_msc-theses.png){width=30%}
-![](img/lynx_msc-theses.jpg){width=30%}
 ![](img/ibis-bsc-theses.jpg){width=30%}
-
+![](img/vulpes_vulpes.png){width=30%}
+![](img/squirrel.png){width=30%}
 
 **2022**
 
 * Evaluating the effects of blackberry (*Rubus niveus*) abundance on land bird diversity on Santiago Island, Galapagos. **Mateo Reyes.** <span class='desaturated'>23.05.2022. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Kramer-Schadt S, M von der Lippe (TUB).</span>
 
-* <p>**Zur Verbreitung des Rotfuchses (Vulpes vulpes) in deutschen Nationalparken auf Grundlage von Kamerafallendaten.** <span style='color:#FF8C00;'>Clara Heinrich.</span> <span style='color:#C0C0C0;'> 20.05.2022. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Kramer-Schadt S, C Fiderer (ALUF).</span></p> 
+* Zur Verbreitung des Rotfuchses (Vulpes vulpes) in deutschen Nationalparken auf Grundlage von Kamerafallendaten. **Clara Heinrich.** <span class='desaturated'>20.05.2022. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Kramer-Schadt S, C Fiderer (ALUF).</span>
 
-* <p>**Wildtiere in deutschen Großstädten: ein Vergleich zwischen Medienpräsenz und Wahrnehmung von Stadtbewohnern.** <span style='color:#FF8C00;'>Henry Karsch.</span> <span style='color:#C0C0C0;'> 15.05.2022. MSc. FU Berlin. Fachbereich Biologie/Chemie/Pharmazie. Supervision: Jonathan Jeschke (FU), Tanja Straka (TUB), S Kramer-Schadt</span></p>
+* Wildtiere in deutschen Großstädten: ein Vergleich zwischen Medienpräsenz und Wahrnehmung von Stadtbewohnern. **Henry Karsch.** <span class='desaturated'>15.05.2022. MSc. FU Berlin. Fachbereich Biologie/Chemie/Pharmazie. Supervision: Jonathan Jeschke (FU), Tanja Straka (TUB), S Kramer-Schadt</span>
 
-* <p>**Social status driven epigenetic differences in female spotted hyenas in the Serengeti National Park.** <span style='color:#FF8C00;'>Nick Mewes.</span> <span style='color:#C0C0C0;'>14.06.2022. MSc. Universität Potsdam. Ecology, Evolution and Conservation. Supervision: Alexandra Weyrich (Dept 2, IZW), Sarah Benhaiem (Dept 6, IZW)</span> <span style='color:#32CD32;'>->manuscript in prep.</span></p>
+* Social status driven epigenetic differences in female spotted hyenas in the Serengeti National Park. **Nick Mewes.** <span class='desaturated'>14.06.2022. MSc. Universität Potsdam. Ecology, Evolution and Conservation. Supervision: Alexandra Weyrich (Dept 2, IZW), Sarah Benhaiem (Dept 6, IZW)</span> **->manuscript in prep.**
 
-* <p>**Birds in the city: understanding direct and indirect effects of human disturbance and vegetation structure on functional diversity in Berlin.** <span style='color:#FF8C00;'>Estelle Solem.</span><span style='color:#C0C0C0;'> 06.04.2022. BSc. Humboldt Universität zu Berlin. Geographie. Supervision: Tobias Kümmerle (HU), Aimara Planillo, S Kramer-Schadt </span> <span style='color:#32CD32;'>-> manuscript in prep.</span></p>
+* Birds in the city: understanding direct and indirect effects of human disturbance and vegetation structure on functional diversity in Berlin. **Estelle Solem.** <span class='desaturated'>06.04.2022. BSc. Humboldt Universität zu Berlin. Geographie. Supervision: Tobias Kümmerle (HU), Aimara Planillo, S Kramer-Schadt</span> -> **manuscript in prep.**
 
-* <p>**Differential DNA methylation between dominant and subordinate spotted hyena twins.** <span style='color:#FF8C00;'> Lena Ruf.</span><span style='color:#C0C0C0;'>  05.04.2022. MSc. University of Potsdam. Ecology, Evolution and Conservation. Supervision: Alexandra Weyrich, Sarah Benhaiem, Jörns Fickel (UP)  </span> <span style='color:#32CD32;'>-> manuscript in prep.</span></p>
+* Differential DNA methylation between dominant and subordinate spotted hyena twins. **Lena Ruf.** <span class='desaturated'>05.04.2022. MSc. University of Potsdam. Ecology, Evolution and Conservation. Supervision: Alexandra Weyrich, Sarah Benhaiem, Jörns Fickel (UP)  </span> **-> manuscript in prep.**
 
-* <p>**Urban planning for animals and humans: An empirical investigation of planning approaches and their perception by Berlin citizens.**  <span style='color:#FF8C00;'> Lisa Jäger.</span><span style='color:#C0C0C0;'>  23.02.2022. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Tanja Straka (TUB), Kramer-Schadt S. </span></p>
+* Urban planning for animals and humans: An empirical investigation of planning approaches and their perception by Berlin citizens. **Lisa Jäger.** <span class='desaturated'>23.02.2022. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Tanja Straka (TUB), Kramer-Schadt S. </span>
 
-* <p>**Einfluss einer Unterrichtseinheit über Wildbienen auf die Einstellungen, die Emotionen und das Wissen von Schülern.**  <span style='color:#FF8C00;'> Sarah Festl.</span><span style='color:#C0C0C0;'> 25.02.2022. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Tanja Straka (TUB), Kramer-Schadt S.</span></p>
+* Einfluss einer Unterrichtseinheit über Wildbienen auf die Einstellungen, die Emotionen und das Wissen von Schülern. **Sarah Festl.** <span class='desaturated'>25.02.2022. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Tanja Straka (TUB), Kramer-Schadt S.</span>
 
 
-* <p>**Spatial use and population development of the Eurasian otter *Lutra lutra* in Sielmanns Naturlandschaft Groß Schauen and the state of Brandenburg.**  <span style='color:#FF8C00;'> Yvonne Rychlak.</span><span style='color:#C0C0C0;'> 02.02.2022. MSc. Ecology, Evolution and Nature Conservation. University of Potsdam. Supervision: Niels Blaum (UP), Kramer-Schadt S.</span></p>
+* Spatial use and population development of the Eurasian otter *Lutra lutra* in Sielmanns Naturlandschaft Groß Schauen and the state of Brandenburg. **Yvonne Rychlak.** <span class='desaturated'>02.02.2022. MSc. Ecology, Evolution and Nature Conservation. University of Potsdam. Supervision: Niels Blaum (UP), Kramer-Schadt S.</span>
 
 **2021**
 
-* <p>**Modelling Eurasian red squirrel (*Sciurus vulgaris*) occurrence along urban gradients in Berlin.**  <span style='color:#FF8C00;'>  Marius Grabow.</span><span style='color:#C0C0C0;'> 29.09.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Louvrier J (IZW), Kramer-Schadt S. </span> <span style='color:#32CD32;'> -> Manuscript submitted to Front Evol Ecol. </span> <span style='color:#9400D3;'>-> Prize for best Master thesis!</span></p>
+* Modelling Eurasian red squirrel (*Sciurus vulgaris*) occurrence along urban gradients in Berlin. **Marius Grabow.** <span class='desaturated'>29.09.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Louvrier J (IZW), Kramer-Schadt S. </span> **-> Manuscript submitted to Front Evol Ecol.** **-> Prize for best Master thesis!**
 
-* <p>**Accuracy of a new high throughput wildlife movement tracking system in comparison with GPS tracking.**  <span style='color:#FF8C00;'> Johannes Marold.</span><span style='color:#C0C0C0;'> 16.09.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Radchuk V (IZW), Kramer-Schadt S.</span></p>
+* Accuracy of a new high throughput wildlife movement tracking system in comparison with GPS tracking. **Johannes Marold.** <span class='desaturated'>16.09.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Radchuk V (IZW), Kramer-Schadt S.</span>
 
-* <p>**Density and life-history of the Sunda clouded leopard *Neofelis diardi* in the Deramakot Forest Complex, Sabah, Malaysia.**  <span style='color:#FF8C00;'> Katharina Kasper.</span><span style='color:#C0C0C0;'> 30.08.2021. MSc. Goethe-Universität Frankfurt am Main. Supervision: Thomas Müller (SBiK-F), Andreas Wilting (IZW).</span></p>
+* Density and life-history of the Sunda clouded leopard *Neofelis diardi* in the Deramakot Forest Complex, Sabah, Malaysia. **Katharina Kasper.** <span class='desaturated'>30.08.2021. MSc. Goethe-Universität Frankfurt am Main. Supervision: Thomas Müller (SBiK-F), Andreas Wilting (IZW).</span>
 
-* <p>**Evaluating the habitat suitability of tiger in Bardia National Park and Buffer Zone areas, Nepal.**  <span style='color:#FF8C00;'> Kamal Ghimire.</span><span style='color:#C0C0C0;'> 18.08.2021. MSc. TU Dresden. Tropical Forestry. Supervision: Berger U (TUD), Kramer-Schadt S.</span></p>
+* Evaluating the habitat suitability of tiger in Bardia National Park and Buffer Zone areas, Nepal. **Kamal Ghimire.** <span class='desaturated'>18.08.2021. MSc. TU Dresden. Tropical Forestry. Supervision: Berger U (TUD), Kramer-Schadt S.</span>
 
-* <p>**Small-Scale Habitat Selection of the European Wildcat *Felis silvestris silvestris* in the Bernese Seeland, Switzerland.**  <span style='color:#FF8C00;'> Johanna Bellack.</span><span style='color:#C0C0C0;'> 26.06.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Maronde L (KORA), Kramer-Schadt S.</span></p>
+* Small-Scale Habitat Selection of the European Wildcat *Felis silvestris silvestris* in the Bernese Seeland, Switzerland. **Johanna Bellack.** <span class='desaturated'>26.06.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Maronde L (KORA), Kramer-Schadt S.</span>
 
-* <p>**Effect of artificial light at night (ALAN) on behaviour of the European hedgehog (*Erinaceus europaeus Linnaeus*, 1758) in the urban area of Berlin.**  <span style='color:#FF8C00;'> Briseida Lozano Granados.</span><span style='color:#C0C0C0;'> 15.05.2021. MSc. TU Berlin. Urban Ecology. Supervision: Berger A, Kramer-Schadt S. </span> <span style='color:#32CD32;'> -> coauthor in Berger et al. (2020) ANIMALS.</span></p>
+* Effect of artificial light at night (ALAN) on behaviour of the European hedgehog (*Erinaceus europaeus Linnaeus*, 1758) in the urban area of Berlin. Briseida Lozano Granados. <span class='desaturated'>15.05.2021. MSc. TU Berlin. Urban Ecology. Supervision: Berger A, Kramer-Schadt S. </span> **-> coauthor in Berger et al. (2020) ANIMALS.**
 
-* <p>**What contribution can non-standardized Citizen Science data make in biodiversity monitoring?**  <span style='color:#FF8C00;'> Lena Fiechter.</span><span style='color:#C0C0C0;'> 21.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Planillo A, Kramer-Schadt S, Heucke-Voigt S (MfN).  </span> <span style='color:#32CD32;'>-> coauthor in Planillo et al. (2021) LAND URB PLAN.</span></p>
+* What contribution can non-standardized Citizen Science data make in biodiversity monitoring? **Lena Fiechter.** <span class='desaturated'>21.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Planillo A, Kramer-Schadt S, Heucke-Voigt S (MfN).  </span> **-> coauthor in Planillo et al. (2021) LAND URB PLAN.**
 
-* <p>**A habitat suitability model for Grey Crowned Cranes (*Balearica regulorum*) in Rwanda based on sightings.**  <span style='color:#FF8C00;'> Ann-Marie Attenberger.</span><span style='color:#C0C0C0;'> 04.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Olivier Nsengimana (RWCA), Kramer-Schadt S, vd Lippe M (TUB).</span></p>
+* A habitat suitability model for Grey Crowned Cranes (*Balearica regulorum*) in Rwanda based on sightings. **Ann-Marie Attenberger.**<span class='desaturated'>04.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Olivier Nsengimana (RWCA), Kramer-Schadt S, vd Lippe M (TUB).</span>
 
 **2020**
 
-* <p>**A population viability and connectivity analysis for the alpine lynx (*Lynx lynx*) population. **  <span style='color:#FF8C00;'> Eva Sanchez Arribas.</span><span style='color:#C0C0C0;'> 19.11.2020. MSc. Uppsala University, Sweden. Supervision: Kramer-Schadt S, Planillo A, Molinari-Jobin A (KORA).</span> <span style='color:#32CD32;'> -> Manuscript in prep.</span></p>
+* A population viability and connectivity analysis for the alpine lynx (*Lynx lynx*) population. **Eva Sanchez Arribas.** <span class='desaturated'>19.11.2020. MSc. Uppsala University, Sweden. Supervision: Kramer-Schadt S, Planillo A, Molinari-Jobin A (KORA).</span> **-> Manuscript in prep.**
 
-* <p>**Influence of roost site availability on activity of forest-dwelling bats above coniferous forests.**  <span style='color:#FF8C00;'> Franziska Röpke.</span><span style='color:#C0C0C0;'> 15.10.2020. BSc. Ökologie und Umweltplanung. TU Berlin. Supervision: Volker Kelm (K&S Umweltgutachten), Kramer-Schadt S.</span></p>
+* Influence of roost site availability on activity of forest-dwelling bats above coniferous forests. **Franziska Röpke.** <span class='desaturated'>15.10.2020. BSc. Ökologie und Umweltplanung. TU Berlin. Supervision: Volker Kelm (K&S Umweltgutachten), Kramer-Schadt S.</span>
 
-* <p>**Spatial, temporal and interindividual determinants of wildlife-vehicle collision mortality in spotted hyenas in the Serengeti National Park between 1989 and 2020.** <span style='color:#FF8C00;'>Marwan Naciri.</span><span style='color:#C0C0C0;'>  25.06.2020. Msc. Master Biosciences École Normale Supérieure (ENS) Lyon, Frankreich. Supervision: Benhaiem S, Gicquel M, Planillo A, East M, Hofer H. </span> <span style='color:#32CD32;'>-> Manuscript in prep.</span></p>
+* Spatial, temporal and interindividual determinants of wildlife-vehicle collision mortality in spotted hyenas in the Serengeti National Park between 1989 and 2020. **Marwan Naciri.** <span class='desaturated'>25.06.2020. Msc. Master Biosciences École Normale Supérieure (ENS) Lyon, Frankreich. Supervision: Benhaiem S, Gicquel M, Planillo A, East M, Hofer H. </span> **-> Manuscript in prep.**
 
-* <p>**Using social network analysis on a population of reintroduced Northern Bald Ibis (*Geronticus eremita*) to understand decisions of migratory association.** <span style='color:#FF8C00;'> Sinah Drenske.</span><span style='color:#C0C0C0;'> 03.08.2020. Msc. Ökologie und Umweltplanung. Technische Universität Berlin. Supervision: Kramer-Schadt S, Radchuk V, Benhaiem S, Landgraf C.  </span> <span style='color:#9400D3;'>-> Prize for best Master thesis!</span></p>
+* Using social network analysis on a population of reintroduced Northern Bald Ibis (*Geronticus eremita*) to understand decisions of migratory association. **Sinah Drenske.** <span class='desaturated'>03.08.2020. Msc. Ökologie und Umweltplanung. Technische Universität Berlin. Supervision: Kramer-Schadt S, Radchuk V, Benhaiem S, Landgraf C.  </span> **-> Prize for best Master thesis!**
 
 **2019**
 
-* <p>**Demography and population viability of the Northern Bald Ibis (*Geronticus eremita*), a reintroduced bird species.** <span style='color:#FF8C00;'> Sinah Drenske.</span><span style='color:#C0C0C0;'> 04.02.2019. Bsc. Ökologie und Umweltplanung. Technische Universität Berlin. Supervision: Kramer-Schadt S, Radchuk V, Kowarik I (TUB). </span> <span style='color:#32CD32;'>-> Manuscript submitted to Oryx</span></p>
+* Demography and population viability of the Northern Bald Ibis (*Geronticus eremita*), a reintroduced bird species. **Sinah Drenske.** <span class='desaturated'>04.02.2019. Bsc. Ökologie und Umweltplanung. Technische Universität Berlin. Supervision: Kramer-Schadt S, Radchuk V, Kowarik I (TUB). </span> **-> Manuscript submitted to Oryx**
 
-* <p>**Wolfmanagement in Deutschland – Vergleich der Wolfmanagementpläne der Bundesländer.** <span style='color:#FF8C00;'> Patrick Enders.</span><span style='color:#C0C0C0;'> 26.09.2019. Bsc. Landschaftsarchitektur und Landschaftsplanung. TU Berlin. Supervision: Heiland S (TUB), Kramer-Schadt S.</span></p>
+* Wolfmanagement in Deutschland – Vergleich der Wolfmanagementpläne der Bundesländer. **Patrick Enders.** <span class='desaturated'>26.09.2019. Bsc. Landschaftsarchitektur und Landschaftsplanung. TU Berlin. Supervision: Heiland S (TUB), Kramer-Schadt S.</span>
 
-* <p>**Inwiefern beeinflussen anthropogene Faktoren die Streifgebietsgrößen sowie täglichen Distanzen von Wildschweinen (*Sus scrofa*)?** <span style='color:#FF8C00;'> Elena Wernitz.</span><span style='color:#C0C0C0;'> 08.08.2019. Bsc. Ökologie und Umweltplanung. TUB. Supervision: Stillfried M, Kramer-Schadt S.</span></p>
+* Inwiefern beeinflussen anthropogene Faktoren die Streifgebietsgrößen sowie täglichen Distanzen von Wildschweinen (*Sus scrofa*)? **Elena Wernitz.** <span class='desaturated'>08.08.2019. Bsc. Ökologie und Umweltplanung. TUB. Supervision: Stillfried M, Kramer-Schadt S.</span>
 
-* <p>**Predicting community structure in a changing world – a new dynamic agent-based model to simulate multi-species home range behavior.** <span style='color:#FF8C00;'> Marie-Sophie Rohwäder.</span><span style='color:#C0C0C0;'> 26.02.2019. Msc. Ökologie, Evolution und Naturschutz. Universität Potsdam. Supervision: Kramer-Schadt S, Jeltsch F (UP).</span></p>
+* Predicting community structure in a changing world – a new dynamic agent-based model to simulate multi-species home range behavior. **Marie-Sophie Rohwäder.** <span class='desaturated'>26.02.2019. Msc. Ökologie, Evolution und Naturschutz. Universität Potsdam. Supervision: Kramer-Schadt S, Jeltsch F (UP).</span>
 
-* <p>**Assessing patterns of livestock attacks caused by wolf (*Canis lupus*) using sightings and habitat predictions.** <span style='color:#FF8C00;'> Moritz Wenzler.</span><span style='color:#C0C0C0;'> 26.11.2019. Msc. Global Change Geography. Humboldt-Universität zu Berlin. Kramer-Schadt S, Planillo A, Kümmerle T (HU). </span> <span style='color:#32CD32;'>-> coauthored manuscript in prep.</span></p>
+* Assessing patterns of livestock attacks caused by wolf (*Canis lupus*) using sightings and habitat predictions. **Moritz Wenzler.** <span class='desaturated'>26.11.2019. Msc. Global Change Geography. Humboldt-Universität zu Berlin. Kramer-Schadt S, Planillo A, Kümmerle T (HU). </span> **-> coauthored manuscript in prep.**
 
 **2018**
 
-* <p>**Life-history consequences of snare injuries in female spotted hyenas: A long term study in the Serengeti National Park, Tanzania.** <span style='color:#FF8C00;'> Sara Kaidatzi.</span><span style='color:#C0C0C0;'> 02.05.2018. Diploma thesis. Biologie. Freie Universität Berlin. Benhaiem S, East ML, Hofer H.</span></p>
+* Life-history consequences of snare injuries in female spotted hyenas: A long term study in the Serengeti National Park, Tanzania. **Sara Kaidatzi.** <span class='desaturated'>02.05.2018. Diploma thesis. Biologie. Freie Universität Berlin. Benhaiem S, East ML, Hofer H.</span>
 
-* <p>**Usage of landscape metrics to predict spatial distribution of mammals in urban areas.** <span style='color:#FF8C00;'> Jessica Thimian. </span><span style='color:#C0C0C0;'> 04.08.2018. BSc. Biologie. Freie Universität Berlin. Supervision: Gras P, Kramer-Schadt S, Hofer H.</span></p>
+* Usage of landscape metrics to predict spatial distribution of mammals in urban areas. **Jessica Thimian.* *<span class='desaturated'>04.08.2018. BSc. Biologie. Freie Universität Berlin. Supervision: Gras P, Kramer-Schadt S, Hofer H.</span>
 
-* <p>**Monthly home ranges and habitat preferences of raccoons (*Procyon lotor*) in the Uckermark, Germany – a estimation method comparison.** <span style='color:#FF8C00;'> Pedro Mello Rose. </span><span style='color:#C0C0C0;'> 2018. BSc. Biologie. Freie Universität Berlin. Supervision: Scholz C, Hofer H.</span></p>
+* Monthly home ranges and habitat preferences of raccoons (*Procyon lotor*) in the Uckermark, Germany – a estimation method comparison. **Pedro Mello Rose.** <span class='desaturated'>2018. BSc. Biologie. Freie Universität Berlin. Supervision: Scholz C, Hofer H.</span>
 
-* <p>**An occupancy analysis of the ocelot (*Leopardus pardalis*) and its potential preys in Eastern Panama. ** <span style='color:#FF8C00;'> Angelica Maria Moreno Sosa.</span><span style='color:#C0C0C0;'> 09.10.2018. MSc. Universität Bremen. Supervision: Abrams J, Kramer-Schadt S, Marko Rohlfs (U Bremen). </span> <span style='color:#32CD32;'>-> Moreno Sosa et al. (2022) Mammal Biology.</span></p>
+* An occupancy analysis of the ocelot (*Leopardus pardalis*) and its potential preys in Eastern Panama. **Angelica Maria Moreno Sosa.** <span class='desaturated'>09.10.2018. MSc. Universität Bremen. Supervision: Abrams J, Kramer-Schadt S, Marko Rohlfs (U Bremen). </span> **-> Moreno Sosa et al. (2022) Mammal Biology.**
 
 
 

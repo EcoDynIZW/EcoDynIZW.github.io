@@ -1,9 +1,9 @@
 ---
 title: "Team 1: Individual Dynamics"
 description: |
-  <b>Lead: Dr. Marion L. East & Dr. Sarah Benhaiem</b>  
+  <b>Lead: Dr. Sarah Benhaiem</b>  
   <b>Assistance: Dagmar Thierer, Karl Stephan & Dr. Sonja Metzger</b>  
-  In collaboration with Prof. Heribert Hofer
+  In collaboration with Prof. Heribert Hofer and Dr. Marion L. East
 ---
 
 ```{r setup, include=FALSE}
@@ -43,11 +43,15 @@ Human activities are an important source of mortality spotted hyenas in the Sere
 
 ---
 
-## Running Projects
+# Running Projects
 
-<b style='color:red;'>
--> add running project summaries with key literature
-</b>
+
+<div class='headerbox'><hbox>Parasite Infections</hbox></div>
+
+
+<div class='headerbox-secondary'><hbox-secondary>Stability under global change and across levels of organization</headerbox-secondary></div>
+
+
 
 ```{r, layout="l-screen"}
 knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")

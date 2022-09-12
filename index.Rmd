@@ -42,15 +42,9 @@ Get an overview of our teams, field sites and research themes.
 knitr::include_graphics("img/teams-map.png")
 ```
 
-We follow the FAIR Principles for publications and repositories
+We follow the FAIR Principles for science...   
 
-**from Wikipedia**
 
-FAIR data are data which meet principles of findability, accessibility, interoperability, and reusability. The acronym and principles were defined in a March 2016 paper in the journal Scientific Data by a consortium of scientists and organizations.
-
-The FAIR principles emphasize machine-actionability (i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention) because humans increasingly rely on computational support to deal with data as a result of the increase in volume, complexity, and creation speed of data.
-
-The abbreviation FAIR/O data is sometimes used to indicate that the dataset or database in question complies with the FAIR principles and also carries an explicit data‑capable open license
 
 <br> 
 

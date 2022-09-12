@@ -30,8 +30,6 @@ navbar:
           href: publications.html
         - text: "Repositories"
           href: repositories2.html
-        - text: "Competences"
-          href: competences.html
         - text: "Doctoral Theses"
           href: doctoral-theses.html
         - text: "Msc/Bsc Theses"
