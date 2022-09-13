@@ -29,7 +29,7 @@ navbar:
         - text: "Publications"
           href: publications.html
         - text: "Repositories"
-          href: repositories2.html
+          href: Repositories.html
         - text: "Doctoral Theses"
           href: doctoral-theses.html
         - text: "Msc/Bsc Theses"
