@@ -1,0 +1,12 @@
+---
+title: "Effects of beavers on amphibian communities along the anthropogenic gradient"
+description: ""
+---
+
+**Effects of beavers on amphibian communities along the anthropogenic gradient.**
+
+Due to their dam-building activity, beavers affect other species in diverse ways, ranging from positive to negative effects. Although effects of beaver activity on several taxa were studied, our understanding of their effects on amphibian assemblages is still incomplete. Especially little is understood how effects of beaver activity on amphibians may be moderated by the gradient of anthropogenic disturbance (represented by human population density). However, such knowledge is important in our human-dominated world. In this study we will sample amphibian diversity (both compositional and functional) along the gradient of human population density, in ponds with and without beavers. The study will take place in North Rhine-Westfalia, in Eifel region, where beaver presence is monitored along the gradient of human population density over several decades.
+
+Profile: interest in community and functional ecology, previous field work experience is an advantage, driver’s license, basic knowledge of R
+
+Supervisors: Viktoriia Radchuk radchuk@izw-berlin.de, Lutz Dalbeck, Stephanie Kramer-Schadt

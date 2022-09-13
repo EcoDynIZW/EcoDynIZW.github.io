@@ -1,0 +1,16 @@
+---
+title: "The chicken or the egg: Population cycles of rodents"
+description: ""
+---
+
+**The chicken or the egg: Population cycles of rodents**
+
+(contact <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>)
+
+Although population cycles received much research interest, we still poorly understand how the demographic structure of the population, i.e. sex ratio and age structure, are changing along the cycle. This is partly because in rodents, which became models for studying population cycles, the field data are typically collected at the coarse yearly resolution. Another question that remains unanswered is whether the dynamics of demographic structure contributes to the emergence of population cycles, or, the other way around, demographic structure is changing because of the population cycling. To address these research gaps we are using a previously developed agent-based model that depicts the mechanisms of predator-prey population dynamics at fine weekly temporal resolution. This model allows obtaining both population abundance and demographic data (sex, age, reproductive state) at a weekly resolution. We will analyse these data with the advanced methods in time series analyses to answer our research questions.
+
+Profile: interest in population ecology, good command of R
+
+Supervisors: Viktoriia Radchuk radchuk@izw-berlin.de, Stephanie Kramer-Schadt
+
+
