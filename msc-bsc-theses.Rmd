@@ -9,14 +9,16 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 <div class='highlightbox'>
-  We are looking for motivated students interested in questions about **wildlife dynamics and distributions** under global change, **animal behavioral ecology** or advancing **theory in ecology and evolution**. Students should have a strong background in (or the will to learn) R, statistics and modelling. Please contact us for possible thesis subjects and state your skills and interests (e.g., CV, certificates,…) along with the name of one or two references.  
+  We are looking for motivated students interested in questions about **wildlife dynamics and distributions** under global change, **animal behavioral ecology** or advancing **theory in ecology and evolution**. Students should have a strong background in (or the will to learn) R, statistics and modelling. Please contact us for possible thesis subjects and state your skills and interests (e.g., CV, certificates,…) along with the name of one or two references.
+  
+**Here you'll find a list of [offers](msc-bsc-theses-offers.html)&ensp;for Bachelor- and Master-theses.**
     
   **For TU Berlin students:** Please consider the [Reader](https://www.oekosys.tu-berlin.de/fileadmin/fg35/Lehre/Downloads/ABSOLVENTINNEN_INFOS_Reader_171023.pdf) for the steps necessary to conduct a thesis. Successful attendance of our courses ‘biodiversity dynamics I + II’ , where we teach spatial R, distribution modelling and occupancy modelling, is of advantage.  
     
-  Below, you will find an overview over currently running theses as well as a list of completed theses for your information and a list of [offers](msc-bsc-theses-offers.html)&ensp;for Bachelor- and Master-theses 
+  Below, you will find an overview over currently running theses as well as a list of completed theses for your information.
 </div>
 
-For older Bachelor- and Master-theses please check here:<br> [2020](msc-bsc-theses-2020.html)&ensp;[2019](msc-bsc-theses-2019.html)&ensp;[2018](msc-bsc-theses-2018.html)
+For older Bachelor- and Master-theses please check here:<br> [2021](msc-bsc-theses-2021.html)&ensp;[2020](msc-bsc-theses-2020.html)&ensp;[2019](msc-bsc-theses-2019.html)&ensp;[2018](msc-bsc-theses-2018.html)
 
 <div class='headerbox'><hbox>Completed Theses</hbox></div><br>
 

@@ -37,7 +37,7 @@ Unfortunately, commuting hyenas in the Serengeti can get killed by wire snares s
 <div class='headerbox'><hbox>Behavioural Ecology, Ecology, and Demography</hbox></div>
 
 
-<div class='headerbox-secondary'><hbox-secondary>Ecological, social and maternal effects on individual performance, population dynamics and resilience></div>
+<div class='headerbox-secondary'><hbox-secondary>Ecological, social and maternal effects on individual performance, population dynamics and resilience</div>
 
 **Current team & collaborators: Morgane Gicquel (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Viktoriia Radchuk (Dept. 6, IZW), Oliver Höner (Dept. 1, IZW), Adam Clark (University of Graz), Stephanie Kramer-Schadt (Dept. 6, IZW)**
 
@@ -63,7 +63,7 @@ We investigate how ecological and social conditions (e.g. rainfall, maternal ran
 <div class='headerbox'><hbox>Disease ecology</hbox></div>
 
 
-<div class='headerbox-secondary'><hbox-secondary>Disease ecology: consequences of infections on allostatic load and fitness></div>
+<div class='headerbox-secondary'><hbox-secondary>Disease ecology: consequences of infections on allostatic load and fitness</div>
 
 **Current team & collaborators: Miguel Veiga (PhD candidate), Susana Soares (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Joshua Dalijono (student helper), Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 3, IZW), Sarah Benhaiem, Jella Wauters (Dept. 4, IZW)**
 
@@ -89,7 +89,7 @@ We investigate the interactions between spotted hyenas and their pathogens, incl
 <div class='headerbox'><hbox>Conservation</hbox></div>
 
 
-<div class='headerbox-secondary'><hbox-secondary>Human-wildlife conflicts & climate change in the Serengeti></div>
+<div class='headerbox-secondary'><hbox-secondary>Human-wildlife conflicts & climate change in the Serengeti</div>
 
 **Current team & collaborators: Marwan Naciri (former MSc student), Montan Kalyahe (PhD candidate), Morgane Gicquel (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Aimara Planillo (Dept. 6, IZW), Sarah Cubaynes (CEFE, Montpellier)**
 
@@ -106,7 +106,6 @@ We are interested in assessing the effects of illegal bushmeat hunting (snaring)
     <li>[Benhaiem et al. (2022). ANIM CONSERV.](https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/acv.12798)</li>
     <li>[Gicquel et al. (2022). ECOSPHERE 13, e4012.](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.4012)</li>
     <li>[Kalyahe et al. (2022). ENVIRON CONSERV 49, 105-113.](https://www.cambridge.org/core/journals/environmental-conservation/article/do-anthropogenic-sources-of-food-increase-livestock-predation-in-the-area-surrounding-ruaha-national-park/A8A65281F07BF90B84300A7C74AE58DE)</li>
-    <li>[Naciri et al. Under review.]()</li>
    </ul>
 </small>
 
@@ -114,7 +113,7 @@ We are interested in assessing the effects of illegal bushmeat hunting (snaring)
 <div class='headerbox'><hbox>Social Epigenetics</hbox></div>
 
 
-<div class='headerbox-secondary'><hbox-secondary>Epigenetic stability and plasticity of social environmental effects></div>
+<div class='headerbox-secondary'><hbox-secondary>Epigenetic stability and plasticity of social environmental effects</div>
 
 **Current team & collaborators: Alexandra Weyrich (Dept. 2, IZW, PI), Colin Vullioud (Dept. 2, IZW), Jörns Fickel (Dept. 2, IZW), Lena Ruf (Dept. 2, IZW), Nick Mewes (Dept. 2, IZW), Sarah Benhaiem, Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 2, IZW), Emmanuel Heitlinger (Humboldt University), Jerzy Adamski (Helmholtz-Center Munich), Alexander Cecil (Helmholtz-Center Munich), Moshe Szyf (McGill University), Yoav Soen (Weizmann Institute of Science)**
 
