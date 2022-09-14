@@ -16,7 +16,7 @@ knitr::include_graphics("img/team-ind-header.png")
 
 <div class='highlightbox'>
   <span class='highlight'>
-  Welcome! We study the behaviour, ecology and health of three clans of spotted hyenas (Crocuta crocuta) in the Serengeti National Park in Tanzania since 1987. We are currently interested in the impact of early life conditions, infections and human activities on individual performance and fitness at all life stages. With our collaborators we also study the role of epigenetic mechanisms in mediating the effects of the social environment on life history trade-offs, hormones and immunity, and the demographic consequences of disturbances. Our interdisciplinary research applies non-invasive or minimally invasive methods and to further this aim we have developed and verified several faecal assays for spotted hyenas. 
+  Welcome! We study the behaviour, ecology and health of three clans of spotted hyenas (*Crocuta crocuta*) in the Serengeti National Park in Tanzania since 1987. We are currently interested in the impact of early life conditions, infections and human activities on individual performance and fitness at all life stages. With our collaborators we also study the role of epigenetic mechanisms in mediating the effects of the social environment on life history trade-offs, hormones and immunity, and the demographic consequences of disturbances. Our interdisciplinary research applies non-invasive or minimally invasive methods and to further this aim we have developed and verified several faecal assays for spotted hyenas. 
   </span>
 </div>
 
@@ -41,21 +41,23 @@ Unfortunately, commuting hyenas in the Serengeti can get killed by wire snares s
 
 **Current team & collaborators: Morgane Gicquel (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Viktoriia Radchuk (Dept. 6, IZW), Oliver Höner (Dept. 1, IZW), Adam Clark (University of Graz), Stephanie Kramer-Schadt (Dept. 6, IZW)**
 
-![](img/hyenas_metzger_1.png){width=50%}
+![](img/hyenas_metzger_1.png){width=32.5%}
 <small>
 <ul>*Picture: Sonja Metzger*</ul>
 </small>
+![](img/gicquel_2022_2.png){width=32.5%}
+
 
 We investigate how ecological and social conditions (e.g. rainfall, maternal rank, litter size), behaviours (e.g. infanticides), and disturbances (e.g. epidemics, droughts) influence the reproductive performance and survival prospects of spotted hyenas at different life stages, and their demographic resilience.
 
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Benhaiem et al. Commun Biol 1, 201 (2018)](https://www.nature.com/articles/s42003-018-0197-1)</li>
+    <li>[Benhaiem et al. (2018) Commun Biol 1, 201 ](https://www.nature.com/articles/s42003-018-0197-1)</li>
     <li>[Benhaiem et al. (2018) Front. Vet. Sci. 5:197.](https://www.frontiersin.org/articles/10.3389/fvets.2018.00197/full)</li>
     <li>[East et al. (2022). Front. Ecol. Evol. 10:860854.](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/full)</li>
-    <li>[Gicquel et al. (2022). Journal of Animal Ecology, 00, 1– 13.](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13785)</li>
-     <li>[Marescot et al. (2018). FUNC ECOL 32, 1237-1250.](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2435.13059)</li>
+    <li>[Gicquel et al. (2022). J ANIM ECOL, 00, 1– 13.](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13785)</li>
+     <li>[Marescot et al. (2018). FUNCT ECOL 32, 1237-1250.](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2435.13059)</li>
    </ul>
 </small>
 
@@ -67,10 +69,11 @@ We investigate how ecological and social conditions (e.g. rainfall, maternal ran
 
 **Current team & collaborators: Miguel Veiga (PhD candidate), Susana Soares (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Joshua Dalijono (student helper), Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 3, IZW), Sarah Benhaiem, Jella Wauters (Dept. 4, IZW)**
 
-![](img/hyenas_metzger_2.png){width=50%}
+![](img/hyenas_metzger_2.png){width=32.5%}
 <small>
 <ul>*Picture: Sonja Metzger*</ul>
 </small>
+![](img/ferreira_2021.png){width=32.5%}
 
 We investigate the interactions between spotted hyenas and their pathogens, including their gastrointestinal parasitic community and viruses. We are particularly interested in the causes and consequences of infections in individuals, immunosenescence and the interactions between allostatic load (“stress”), immunity and infections.
 
@@ -78,7 +81,7 @@ We investigate the interactions between spotted hyenas and their pathogens, incl
   <b>Key Publications:</b>
   <ul>
     <li>[Davidian et al. (2015). METHODS ECOL EVOL 6, 576-583.](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12338)</li>
-    <li>[Ferreira et al. (2019). ECOL EVOL 9, 8783-8799.](https://onlinelibrary.wiley.com/doi/pdf/10.1002/ece3.5431)</li>
+    <li>[Ferreira et al. (2019). ECOL EVOL 9, 8783-8799.](https://onlinelibrary.wiley.com/doi/10.1002/ece3.5431)</li>
     <li>[Ferreira et al. (2021). ECOL EVOL 11, 7685-7699.](https://onlinelibrary.wiley.com/doi/10.1002/ece3.7602)</li>
     <li>[Marescot et al. (2021). J ANIM ECOL 9,2523-2535.](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13555)</li>
      <li>[Olarte‐Castillo et al. (2021). MOL ECOL.](https://onlinelibrary.wiley.com/doi/10.1111/mec.15910)</li>
@@ -89,14 +92,15 @@ We investigate the interactions between spotted hyenas and their pathogens, incl
 <div class='headerbox'><hbox>Conservation</hbox></div>
 
 
-<div class='headerbox-secondary'><hbox-secondary>Human-wildlife conflicts & climate change in the Serengeti</div>
+<div class='headerbox-secondary'><hbox-secondary>Human-wildlife conflicts and climate change in the Serengeti</div>
 
 **Current team & collaborators: Marwan Naciri (former MSc student), Montan Kalyahe (PhD candidate), Morgane Gicquel (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Aimara Planillo (Dept. 6, IZW), Sarah Cubaynes (CEFE, Montpellier)**
 
-![](img/hyenas_metzger_3.png){width=50%}
+![](img/hyenas_metzger_3.png){width=32.5%}
 <small>
 <ul>*Picture: Sonja Metzger*</ul>
 </small>
+![](img/gicquel_2022_3.png){width=32.5%}
 
 We are interested in assessing the effects of illegal bushmeat hunting (snaring), roadkills, changes in rainfall patterns driven by global warming on spotted hyenas. We also investigate the factors that influence the likelihood of predation on livestock and consumption of discarded livestock ‘waste’. 
 
@@ -117,10 +121,11 @@ We are interested in assessing the effects of illegal bushmeat hunting (snaring)
 
 **Current team & collaborators: Alexandra Weyrich (Dept. 2, IZW, PI), Colin Vullioud (Dept. 2, IZW), Jörns Fickel (Dept. 2, IZW), Lena Ruf (Dept. 2, IZW), Nick Mewes (Dept. 2, IZW), Sarah Benhaiem, Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 2, IZW), Emmanuel Heitlinger (Humboldt University), Jerzy Adamski (Helmholtz-Center Munich), Alexander Cecil (Helmholtz-Center Munich), Moshe Szyf (McGill University), Yoav Soen (Weizmann Institute of Science)**
 
-![](img/hyenas_metzger_4.png){width=50%}
+![](img/hyenas_metzger_4.png){width=32.5%}
 <small>
 <ul>*Picture: Sonja Metzger*</ul>
 </small>
+![](img/guerrero_2021.png){width=32.5%}
 
 We investigate if DNA methylation is a main mechanism through which an individual’s social environment regulates gene expression and physiological responses. We hypothesize that changes in social status will led to changes in epigenetic patterns. To test our hypotheses, we study the DNA methylation patterns in the spotted hyena.
 
