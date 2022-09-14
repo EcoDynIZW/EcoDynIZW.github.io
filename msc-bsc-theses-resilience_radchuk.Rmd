@@ -3,8 +3,6 @@ title: "Quantifying demographic resilience across animals"
 description: ""
 ---
 
-**Quantifying demographic resilience across animals**
-
 (contact <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>)
 
 Assessing demographic resilience is crucial to assist the conservation of populations and species. A recently proposed method to quantify demographic resilience is based on using average population matrices over time to calculate a single demographic resilience metric. This neglects the fact that the resilience of a population may change over time and is driven by population responses to disturbances, which may also change over time. We will use the COMADRE database to assess demographic resilience of many animal species by considering time explicitly and compare this measure to a single demographic resilience metric calculated over the whole period. The results will be of high importance for revealing the factors affecting demographic resilience and, in turn, for designing appropriate management measures.
