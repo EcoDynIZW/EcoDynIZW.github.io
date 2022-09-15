@@ -28,7 +28,7 @@ knitr::include_graphics("img/team-ind-header.png")
 **Why are spotted hyenas so interesting to study?**</br>
 This highly social mammal has several unusual traits: female social dominance, an erectile ‘pseudopenis’ in females (similar to that of the male penis), an exceptionally long lactation period and intense sibling competing. It is a keystone carnivore in the ecosystem, which both hunts and scavenges. All these aspects make hyenas an interesting model species to study social behaviour, sexual conflict, maternal effects, host-pathogen interactions, immunology or endocrinology. 
 Our study population experiences extreme and unpredictable fluctuations in prey abundance throughout the year, because of the migratory movements of its main prey (wildebeest, zebras and Thompson’s gazelles) and the low abundance of resident herbivores. We discovered that Serengeti hyenas solve this problem by commuting long distances to forage throughout the year. Individuals leave their clan territory and travel to areas up to 70 km to locate areas with large aggregations of migratory herbivores where they feed before returning to their clan territory. In the context of global change, the commuting system of Serengeti hyenas is particularly valuable to study how animals cope with a variable and uncertain resource. 
-Unfortunately, commuting hyenas in the Serengeti can get killed by wire snares set illegally by  bushmeat hunters along some borders of the Park or victims of road accidents.These anthropogenic threats are likely to intensify with the expected increases in local human populations and traffic volume associated with tourism. Changes in rainfall patterns driven by global warming may also have cascading effects on this large slow-reproducing mammal.
+Unfortunately, commuting hyenas in the Serengeti can get killed by wire snares set illegally by bushmeat hunters along some borders of the Park or become victims of road accidents. These anthropogenic threats are likely to intensify with the expected increases in local human populations and traffic volume associated with tourism. Changes in rainfall patterns driven by global warming may also have cascading effects on this large slow-reproducing mammal.
 
 
 
@@ -53,11 +53,11 @@ We investigate how ecological and social conditions (e.g. rainfall, maternal ran
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Benhaiem et al. (2018) Commun Biol 1, 201 ](https://www.nature.com/articles/s42003-018-0197-1)</li>
-    <li>[Benhaiem et al. (2018) Front. Vet. Sci. 5:197.](https://www.frontiersin.org/articles/10.3389/fvets.2018.00197/full)</li>
-    <li>[East et al. (2022). Front. Ecol. Evol. 10:860854.](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/full)</li>
-    <li>[Gicquel et al. (2022). J ANIM ECOL, 00, 1– 13.](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13785)</li>
-     <li>[Marescot et al. (2018). FUNCT ECOL 32, 1237-1250.](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2435.13059)</li>
+    <li>[Benhaiem et al. (2018) Commun Biol](https://www.nature.com/articles/s42003-018-0197-1)</li>
+    <li>[Benhaiem et al. (2018) Front. Vet. Sci](https://www.frontiersin.org/articles/10.3389/fvets.2018.00197/full)</li>
+    <li>[East et al. (2022). Front. Ecol. Evol](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/full)</li>
+    <li>[Gicquel et al. (2022). J ANIM ECOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13785)</li>
+     <li>[Marescot et al. (2018). FUNCT ECOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2435.13059)</li>
    </ul>
 </small>
 
@@ -80,11 +80,11 @@ We investigate the interactions between spotted hyenas and their pathogens, incl
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Davidian et al. (2015). METHODS ECOL EVOL 6, 576-583.](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12338)</li>
-    <li>[Ferreira et al. (2019). ECOL EVOL 9, 8783-8799.](https://onlinelibrary.wiley.com/doi/10.1002/ece3.5431)</li>
-    <li>[Ferreira et al. (2021). ECOL EVOL 11, 7685-7699.](https://onlinelibrary.wiley.com/doi/10.1002/ece3.7602)</li>
-    <li>[Marescot et al. (2021). J ANIM ECOL 9,2523-2535.](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13555)</li>
-     <li>[Olarte‐Castillo et al. (2021). MOL ECOL.](https://onlinelibrary.wiley.com/doi/10.1111/mec.15910)</li>
+    <li>[Davidian et al. (2015). METHODS ECOL EVOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12338)</li>
+    <li>[Ferreira et al. (2019). ECOL EVOL](https://onlinelibrary.wiley.com/doi/10.1002/ece3.5431)</li>
+    <li>[Ferreira et al. (2021). ECOL EVOL](https://onlinelibrary.wiley.com/doi/10.1002/ece3.7602)</li>
+    <li>[Marescot et al. (2021). J ANIM ECOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13555)</li>
+     <li>[Olarte‐Castillo et al. (2021). MOL ECOL](https://onlinelibrary.wiley.com/doi/10.1111/mec.15910)</li>
    </ul>
 </small>
 
@@ -102,14 +102,14 @@ We investigate the interactions between spotted hyenas and their pathogens, incl
 </small>
 ![](img/gicquel_2022_3.png){width=32.5%}
 
-We are interested in assessing the effects of illegal bushmeat hunting (snaring), roadkills, changes in rainfall patterns driven by global warming on spotted hyenas. We also investigate the factors that influence the likelihood of predation on livestock and consumption of discarded livestock ‘waste’. 
+We are interested in assessing the effects of illegal bushmeat hunting (snaring), roadkills and changes in rainfall patterns driven by global warming on spotted hyenas. We also investigate the factors that influence the likelihood of predation on livestock and consumption of discarded livestock ‘waste’. 
 
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Benhaiem et al. (2022). ANIM CONSERV.](https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/acv.12798)</li>
-    <li>[Gicquel et al. (2022). ECOSPHERE 13, e4012.](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.4012)</li>
-    <li>[Kalyahe et al. (2022). ENVIRON CONSERV 49, 105-113.](https://www.cambridge.org/core/journals/environmental-conservation/article/do-anthropogenic-sources-of-food-increase-livestock-predation-in-the-area-surrounding-ruaha-national-park/A8A65281F07BF90B84300A7C74AE58DE)</li>
+    <li>[Benhaiem et al. (2022). ANIM CONSERV](https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/acv.12798)</li>
+    <li>[Gicquel et al. (2022). ECOSPHERE](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.4012)</li>
+    <li>[Kalyahe et al. (2022). ENVIRON CONSERV](https://www.cambridge.org/core/journals/environmental-conservation/article/do-anthropogenic-sources-of-food-increase-livestock-predation-in-the-area-surrounding-ruaha-national-park/A8A65281F07BF90B84300A7C74AE58DE)</li>
    </ul>
 </small>
 
@@ -132,8 +132,8 @@ We investigate if DNA methylation is a main mechanism through which an individua
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Guerrero et al. (2020). CURR  ZOOL, zoaa005.](https://pubmed.ncbi.nlm.nih.gov/32440291/)</li>
-    <li>[Heitlinger et al. (2017). FRONT. CELL. INFECT. MICROBIOL. 7, 262.](https://www.frontiersin.org/articles/10.3389/fcimb.2017.00262/full)</li>
+    <li>[Guerrero et al. (2020). CURR  ZOOL](https://pubmed.ncbi.nlm.nih.gov/32440291/)</li>
+    <li>[Heitlinger et al. (2017). FRONT. CELL. INFECT. MICROBIOL](https://www.frontiersin.org/articles/10.3389/fcimb.2017.00262/full)</li>
    </ul>
 </small>
 

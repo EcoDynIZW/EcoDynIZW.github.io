@@ -42,7 +42,7 @@ Get an overview of our teams, field sites and research themes.
 knitr::include_graphics("img/teams-map.png")
 ```
 
-We follow the [FAIR principles](https://www.nature.com/articles/sdata201618) and provide code and data of published papers in our github [repositories](https://github.com/orgs/EcoDynIZW/repositoriess).   
+We follow the [FAIR principles](https://www.nature.com/articles/sdata201618) and provide code and data of published papers in our github [repositories](https://github.com/orgs/EcoDynIZW/repositories.html).   
 
 
 

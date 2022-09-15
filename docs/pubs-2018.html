@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2671,46 +2664,197 @@ Research
 </div>
 <p><br></p>
 <ul>
-<li><p><strong>Abrams JF</strong>, Hohn S, Rixen T &amp; Merico A (2018). Sundaland peat carbon dynamics and its contribution to the Holocene atmospheric CO2 concentration. Global Biogeochemical Cycles 32:704-719. DOI: <a href="https://doi.org/10.1002/2017GB005763">10.1002/2017GB005763</a>.</p></li>
-<li><p>Asad S, Siku J, Shabrani A, <strong>Wilting A</strong> &amp; Rödel MO (2018). <em>Naja sumatrana</em> (Sumatran spitting cobra) diet. Herpetological Review 49:134-135.</p></li>
-<li><p>Asad S, Siku J, Guharajan R, <strong>Wilting A</strong> &amp; Rödel MO (2018). <em>Alcalus baluensis</em> (Dwarf Mountain Frog); Predation. Herpetological Review 49:727.</p></li>
-<li><p>Asad S, Siku J, Loader C, Gordon M, Siku J, <strong>Wilting A</strong> &amp; Rödel MO (2018). <em>Rhacophorus nigropalmatus</em> (Wallace’s Flying Frog) and <em>Polypedates leucomystax</em> (Four-lined Treefrog); Interspecific amplexus. Herpetological Review 49:728-729.</p></li>
-<li><p><strong>Benhaiem S</strong>, <strong>Marescot L</strong>, Hofer H, <strong>East ML</strong>, Lebreton J-D, <strong>Kramer-Schadt S</strong> &amp; Gimenez O (2018). Robustness of eco-epidemiological capture-recapture parameter estimates to variation in infection state uncertainty. Frontiers in Veterinary Science 5:197. DOI: <a href="https://doi.org/10.3389/fvets.2018.00197">10.3389/fvets.2018.00197</a>.</p></li>
-<li><p><strong>Benhaiem S</strong>, <strong>Marescot L</strong>, <strong>East ML</strong>, <strong>Kramer-Schadt S</strong>, Gimenez O, Lebreton JD &amp; Hofer H (2018). Slow recovery from a disease epidemic in the spotted hyena, a keystone social carnivore. Communications Biology 1:201. DOI: <a href="https://doi.org/10.1038/s42003-018-0197-1">10.1038/s42003-018-0197-1</a>.</p></li>
-<li><p>Brozovic R, <strong>Abrams JF</strong>, <strong>Mohamed A</strong>, <strong>Wong ST</strong>, <strong>Niedballa J</strong>, Bhagwat T, Sollmann R, Mannan S, Kissing J &amp; <strong>Wilting A</strong> (2018). Effects of forest degradation on the moonrat <em>Echinosorex gymnura</em> in Sabah, Malaysian Borneo. Mammalan Biology 93:135-143. DOI: <a href="https://doi.org/10.1016/j.mambio.2018.10.003">10.1016/j.mambio.2018.10.003</a>.</p></li>
-<li><p>Budiharta S, Meijaard E, Gaveau DLA, Struebig MJ, <strong>Wilting A</strong>, <strong>Kramer-Schadt S</strong>, <strong>Niedballa J</strong>, Raes N, Maron M &amp; Wilson KA (2018). Restoration to offset the impacts of developments at a landscape scale reveals opportunities, challenges and tough choices. Global Environmental Change 52:152-161. DOI: <a href="https://doi.org/10.1016/j.gloenvcha.2018.07.008">10.1016/j.gloenvcha.2018.07.008</a>.</p></li>
-<li><p>Costantini D, Seeber PA, Soilemetzidou SE, Azab W, Bohner J, Buuveibaatar B, Czirják GA, <strong>East ML</strong>, Greunz EM, Kaczensky P, Lamglait B, Melzheimer J, Uiseb K, Ortega A, Osterrieder N, Sandgreen DM, Simon M, Walzer C &amp; Greenwood AD (2018). Physiological costs of infection: herpesvirus replication is linked to blood oxidative stress in equids. Global Environmental Change 8:10347. DOI: <a href="https://doi.org/10.1016/j.gloenvcha.2018.07.008">10.1016/j.gloenvcha.2018.07.008</a>.</p></li>
-<li><p>Egli L, Weise H, <strong>Radchuk V</strong>, Seppelt R, Grimm V (2018). Exploring resilience with agent-based models: State of the art, knowledge gaps and recommendations for coping with multidimensionality. Ecological Complexity 40. DOI: <a href="https://doi.org/10.1016/j.ecocom.2018.06.008">10.1016/j.ecocom.2018.06.008</a>.</p></li>
-<li><p>Frigerio D, Pipek P, <strong>Kimmig S</strong>, Winter S, Melzheimer J, Diblikova L, Wachter B &amp; Richter A (2018). Citizen science and wildlife biology: synergies and challenges. Ethology 124:365-377. DOI: <a href="https://doi.org/10.1111/eth.12746">10.1111/eth.12746</a>.</p></li>
-<li><p>Flemming D, Cress U, <strong>Kimmig S</strong>, Brandt M, Kimmerle J (2018). Emotionalization in Science Communication: The Impact of Narratives and Visual Representations on Knowledge Gain and Risk Perception. FRONT COMM 3(3), 1-9. DOI: <a href="https://doi.org/">10.3389/fcomm.2018.00003</a>.</p></li>
-<li><p>Franz M, <strong>Kramer‐Schadt S</strong>, Greenwood AD &amp; Courtiol A (2018). Sickness‐induced lethargy can increase host contact rates and pathogen spread in water‐limited landscapes. Funcitonal Ecology 32:2194–2204. DOI: <a href="https://doi.org/10.1111/1365-2435.13149">10.1111/1365-2435.13149</a>.</p></li>
-<li><p><strong>Gras P</strong>, Knuth S, Börner K, <strong>Marescot L</strong>, <strong>Benhaiem S</strong>, Aue A, Wittstatt U, Kleinschmit B &amp; <strong>Kramer-Schadt S</strong> (2018). Landscape structures affect risk of canine distemper in urban wildlife. Frontiers in Ecology and Evolution 6:136. DOI: <a href="https://doi.org/10.3389/fevo.2018.00136">10.3389/fevo.2018.00136</a>.</p></li>
-<li><p>Heim O, Lenski J, Schulz J, Jung K, <strong>Kramer-Schadt S</strong>, Eccard JA &amp; Voigt CC (2018). The relevance of vegetation structure and smaller water bodies for bats foraging above farmland. Basic and Applied Ecology 27:9-19. DOI: <a href="https://doi.org/10.1016/j.baae.2017.12.001">10.1016/j.baae.2017.12.001</a>.</p></li>
-<li><p>Hernández MC, Navarro-Castilla A, <strong>Planillo A</strong>, Sánchez-González B &amp; Barja I (2018). The landscape of fear: why some free-ranging rodents choose repeated live-trapping over predation risk and how it is associated with the physiological stress response. Behavioural Processes 157:125–132. DOI: <a href="https://doi.org/10.1016/j.beproc.2018.09.007">10.1016/j.beproc.2018.09.007</a>.</p></li>
-<li><p>Heurich M, <strong>Schultze-Naumburg J</strong>, Piacenza N, Magg N, Cerveny J, Engleder T, Herdtfelder M, Sladova M &amp; <strong>Kramer-Schadt S</strong> (2018). Illegal hunting as a major driver of the source-sink dynamics of a reintroduced lynx population in Central Europe. Biological Conservation 224:355-365. DOI: <a href="https://doi.org/10.1016/j.biocon.2018.05.011">10.1016/j.biocon.2018.05.011</a>.</p></li>
-<li><p>Jerosch S, <strong>Kramer-Schadt S</strong>, Götz M &amp; Roth M (2018). The importance of small-scale structures in an agriculturally dominated landscape for the European wildcat (<em>Felis silvestris silvestris</em>) in central Europe and implications for its conservation. Journal for Nature Conservation 41:88-96. DOI: <a href="https://doi.org/10.1016/j.jnc.2017.11.008">10.1016/j.jnc.2017.11.008</a>.</p></li>
-<li><p>Karakoc C, <strong>Radchuk V</strong>, Hauke H &amp; Chatzinotas A (2018). Interactions between predation and disturbances shape prey communities. Scientific Reports:2968. DOI: <a href="https://doi.org/10.1038/s41598-018-21219-x">10.1038/s41598-018-21219-x</a>.</p></li>
-<li><p>Kuemmerle T, Levers C, Bleyhl B, Olech W, Perzanowski K, Reusch C &amp; <strong>Kramer-Schadt S</strong> (2018). One size does not fit all: European bison habitat selection across herds and spatial scales. Landscape Ecology 33:1559-1572. DOI: <a href="https://doi.org/10.1007/s10980-018-0684-2">10.1007/s10980-018-0684-2</a>.</p></li>
-<li><p>Lehnert LS, <strong>Kramer-Schadt S</strong>, Teige T, Hoffmeister U, Popa-Lisseanu A, Bontadina F, Ciechanowski M, Dechmann DKN, Kravchenko K, Presetnik P, Starrach M, Straube M, Zöphel U &amp; Voigt CC (2018). Variability and repeatability of noctule bat migration in Central Europe: evidence for partial and differential migration. Proc R Soc B 285:-20182174. DOI: <a href="https://doi.org/10.1098/rspb.2018.2174">10.1098/rspb.2018.2174</a>.</p></li>
-<li><p><strong>Marescot L</strong>, <strong>Benhaiem S</strong>, Gimenez O, Hofer H, Lebreton JD, Olarte-Castillo XA, <strong>Kramer-Schadt S</strong> &amp; <strong>East ML</strong> (2018). Social status mediates the fitness costs of infection with canine distemper virus in a social carnivore. Functional Ecology 32:1237-1250. DOI: <a href="https://doi.org/10.1111/1365-2435.13059">10.1111/1365-2435.13059</a>.</p></li>
-<li><p>Martins RF, Schmidt A, Lenz D, <strong>Wilting A</strong>, Fickel J (2018). Human- mediated introduction of introgressed deer across Wallace’s line: Historical biogeography of <em>Rusa unicolor</em> and <em>R. timorensis</em>. Ecology and Evolution 8:1465-1479. DOI: <a href="https://doi.org/10.1111/2041-210X.13076">10.1111/2041-210X.13076</a>.</p></li>
-<li><p>Schnell IB, Bohmann K, Sebastian E, Schultze SE, Richter SR, Murray DC, Sinding MHS, Bass D, Cadle JE, Campbell MJ, Dolch R, Edwards DP, Gray TNE, Hansen T, Hoa ANQ, Lehmkuhl Noer C, Heise-Pavlov S, Pedersen AFS, Ramamonjisoa JC, Siddall ME, <strong>Tilker A</strong>, Traeholt C, Wilkinson N, Paul Woodcock P, Yu DW, Bertelsen MF, Bunce M &amp; Gilbert MTP (2018). Debugging diversity – a pan-continental exploration of the potential of terrestrial blood-feeding leeches as a vertebrate monitoring tool. Molecular Ecology Resources 2018:1-17. DOI: <a href="https://doi.org/10.1111/1755-0998.12912">10.1111/1755-0998.12912</a>.</p></li>
-<li><p>Sciaini M, Fritsch M, <strong>Scherer C</strong> &amp; Simpkins CE (2018). <code>NLMR</code> and <code>landscapetools</code>: An integrated environment for simulating and modifying neutral landscape models in R. Methods in Ecology and Evolution 9:2240-2248. DOI: <a href="https://doi.org/10.1111/2041‐210X.13076">10.1111/2041‐210X.13076</a>.</p></li>
-<li><p>Seeber PA, Franz M, Dehnhard M, Ganswindt A, Greenwood AD &amp; <strong>East ML</strong> (2018). Plains zebra (<em>Equus quagga</em>) adrenocortical activity increases during times of large aggregations in the Serengeti ecosystem. Hormones and Behavior 102:1-9. DOI: <a href="https://doi.org/10.1016/j.yhbeh.2018.04.005">10.1016/j.yhbeh.2018.04.005</a>. Data DOI: <a href="https://doi.org/10.17632/zpt32w3k39.1">10.17632/zpt32w3k39.1</a>.</p></li>
-<li><p>Teckentrup L, Grimm V, <strong>Kramer-Schadt S</strong> &amp; Jeltsch F (2018). Community consequences of foraging under fear. Ecological Modelling 383:80-90. DOI: <a href="https://doi.org/10.1016/j.ecolmodel.2018.05.015">10.1016/j.ecolmodel.2018.05.015</a>.</p></li>
-<li><p><strong>Tilker A</strong>, Nguyen A, <strong>Abrams JF</strong>, Bhagwat T, Le M, <strong>Nguyen TV</strong>, Nguyen AT, <strong>Niedballa J</strong>, Solllmann R &amp; <strong>Wilting A</strong> (2020). A little-known endemic caught in the South-east Asian extinction crisis: the Annamite striped rabbit <em>Nesolagus timminsi</em>. Oryx 54:178-187. DOI: <a href="https://doi.org/10.1017/S0030605318000534">10.1017/S0030605318000534</a>.</p></li>
-<li><p>Ullmann W, Fischer C, Pirhofer-Walzl K, <strong>Kramer-Schadt S</strong> &amp; Blaum N (2018). Spatiotemporal variability in resources affects herbivore home range formation in structurally contrasting and unpredictable agricultural landscapes. Landscape Ecology volume 33:1505-1517. DOI: <a href="https://doi.org/10.1007/s10980-018-0676-2">10.1007/s10980-018-0676-2</a>.</p></li>
-<li><p>Wietzkea A, Westphal C, <strong>Gras P</strong>, Kraft M, Pfohl K, Karlovsky P, Pawelzik E, Tscharntke T &amp; Smit I (2018). Insect pollination as a key factor for strawberry physiology and marketable fruit quality. Agriculture, Ecosystems &amp; Environment 258:197-204. DOI: <a href="https://doi.org/10.1016/j.agee.2018.01.036">10.1016/j.agee.2018.01.036</a>.</p></li>
-<li><p><strong>Wong ST</strong>, Belant JL, Sollmann R, <strong>Mohamed A</strong>, <strong>Niedballa J</strong>, <strong>Mathai J</strong>, Meijaard E, Street GM, Kissing J, Mannan S &amp; <strong>Wilting A</strong> (2018). Habitat associations of the Sunda stink-badger <em>Mydaus javanensis</em> in three forest reserves in Sabah, Malaysian Borneo. Mammalian Biology 88:75-80. DOI: <a href="https://doi.org/10.1016/j.mambio.2017.11.010">10.1016/j.mambio.2017.11.010</a>.</p></li>
+<li><p><strong>Abrams JF</strong>, Hohn S, Rixen T &amp; Merico A
+(2018). Sundaland peat carbon dynamics and its contribution to the
+Holocene atmospheric CO2 concentration. Global Biogeochemical Cycles
+32:704-719. DOI: <a
+href="https://doi.org/10.1002/2017GB005763">10.1002/2017GB005763</a>.</p></li>
+<li><p>Asad S, Siku J, Shabrani A, <strong>Wilting A</strong> &amp;
+Rödel MO (2018). <em>Naja sumatrana</em> (Sumatran spitting cobra) diet.
+Herpetological Review 49:134-135.</p></li>
+<li><p>Asad S, Siku J, Guharajan R, <strong>Wilting A</strong> &amp;
+Rödel MO (2018). <em>Alcalus baluensis</em> (Dwarf Mountain Frog);
+Predation. Herpetological Review 49:727.</p></li>
+<li><p>Asad S, Siku J, Loader C, Gordon M, Siku J, <strong>Wilting
+A</strong> &amp; Rödel MO (2018). <em>Rhacophorus nigropalmatus</em>
+(Wallace’s Flying Frog) and <em>Polypedates leucomystax</em> (Four-lined
+Treefrog); Interspecific amplexus. Herpetological Review
+49:728-729.</p></li>
+<li><p><strong>Benhaiem S</strong>, <strong>Marescot L</strong>, Hofer
+H, <strong>East ML</strong>, Lebreton J-D, <strong>Kramer-Schadt
+S</strong> &amp; Gimenez O (2018). Robustness of eco-epidemiological
+capture-recapture parameter estimates to variation in infection state
+uncertainty. Frontiers in Veterinary Science 5:197. DOI: <a
+href="https://doi.org/10.3389/fvets.2018.00197">10.3389/fvets.2018.00197</a>.</p></li>
+<li><p><strong>Benhaiem S</strong>, <strong>Marescot L</strong>,
+<strong>East ML</strong>, <strong>Kramer-Schadt S</strong>, Gimenez O,
+Lebreton JD &amp; Hofer H (2018). Slow recovery from a disease epidemic
+in the spotted hyena, a keystone social carnivore. Communications
+Biology 1:201. DOI: <a
+href="https://doi.org/10.1038/s42003-018-0197-1">10.1038/s42003-018-0197-1</a>.</p></li>
+<li><p>Brozovic R, <strong>Abrams JF</strong>, <strong>Mohamed
+A</strong>, <strong>Wong ST</strong>, <strong>Niedballa J</strong>,
+Bhagwat T, Sollmann R, Mannan S, Kissing J &amp; <strong>Wilting
+A</strong> (2018). Effects of forest degradation on the moonrat
+<em>Echinosorex gymnura</em> in Sabah, Malaysian Borneo. Mammalan
+Biology 93:135-143. DOI: <a
+href="https://doi.org/10.1016/j.mambio.2018.10.003">10.1016/j.mambio.2018.10.003</a>.</p></li>
+<li><p>Budiharta S, Meijaard E, Gaveau DLA, Struebig MJ, <strong>Wilting
+A</strong>, <strong>Kramer-Schadt S</strong>, <strong>Niedballa
+J</strong>, Raes N, Maron M &amp; Wilson KA (2018). Restoration to
+offset the impacts of developments at a landscape scale reveals
+opportunities, challenges and tough choices. Global Environmental Change
+52:152-161. DOI: <a
+href="https://doi.org/10.1016/j.gloenvcha.2018.07.008">10.1016/j.gloenvcha.2018.07.008</a>.</p></li>
+<li><p>Costantini D, Seeber PA, Soilemetzidou SE, Azab W, Bohner J,
+Buuveibaatar B, Czirják GA, <strong>East ML</strong>, Greunz EM,
+Kaczensky P, Lamglait B, Melzheimer J, Uiseb K, Ortega A, Osterrieder N,
+Sandgreen DM, Simon M, Walzer C &amp; Greenwood AD (2018). Physiological
+costs of infection: herpesvirus replication is linked to blood oxidative
+stress in equids. Global Environmental Change 8:10347. DOI: <a
+href="https://doi.org/10.1016/j.gloenvcha.2018.07.008">10.1016/j.gloenvcha.2018.07.008</a>.</p></li>
+<li><p>Egli L, Weise H, <strong>Radchuk V</strong>, Seppelt R, Grimm V
+(2018). Exploring resilience with agent-based models: State of the art,
+knowledge gaps and recommendations for coping with multidimensionality.
+Ecological Complexity 40. DOI: <a
+href="https://doi.org/10.1016/j.ecocom.2018.06.008">10.1016/j.ecocom.2018.06.008</a>.</p></li>
+<li><p>Frigerio D, Pipek P, <strong>Kimmig S</strong>, Winter S,
+Melzheimer J, Diblikova L, Wachter B &amp; Richter A (2018). Citizen
+science and wildlife biology: synergies and challenges. Ethology
+124:365-377. DOI: <a
+href="https://doi.org/10.1111/eth.12746">10.1111/eth.12746</a>.</p></li>
+<li><p>Flemming D, Cress U, <strong>Kimmig S</strong>, Brandt M,
+Kimmerle J (2018). Emotionalization in Science Communication: The Impact
+of Narratives and Visual Representations on Knowledge Gain and Risk
+Perception. FRONT COMM 3(3), 1-9. DOI: <a
+href="https://doi.org/">10.3389/fcomm.2018.00003</a>.</p></li>
+<li><p>Franz M, <strong>Kramer‐Schadt S</strong>, Greenwood AD &amp;
+Courtiol A (2018). Sickness‐induced lethargy can increase host contact
+rates and pathogen spread in water‐limited landscapes. Funcitonal
+Ecology 32:2194–2204. DOI: <a
+href="https://doi.org/10.1111/1365-2435.13149">10.1111/1365-2435.13149</a>.</p></li>
+<li><p><strong>Gras P</strong>, Knuth S, Börner K, <strong>Marescot
+L</strong>, <strong>Benhaiem S</strong>, Aue A, Wittstatt U, Kleinschmit
+B &amp; <strong>Kramer-Schadt S</strong> (2018). Landscape structures
+affect risk of canine distemper in urban wildlife. Frontiers in Ecology
+and Evolution 6:136. DOI: <a
+href="https://doi.org/10.3389/fevo.2018.00136">10.3389/fevo.2018.00136</a>.</p></li>
+<li><p>Heim O, Lenski J, Schulz J, Jung K, <strong>Kramer-Schadt
+S</strong>, Eccard JA &amp; Voigt CC (2018). The relevance of vegetation
+structure and smaller water bodies for bats foraging above farmland.
+Basic and Applied Ecology 27:9-19. DOI: <a
+href="https://doi.org/10.1016/j.baae.2017.12.001">10.1016/j.baae.2017.12.001</a>.</p></li>
+<li><p>Hernández MC, Navarro-Castilla A, <strong>Planillo A</strong>,
+Sánchez-González B &amp; Barja I (2018). The landscape of fear: why some
+free-ranging rodents choose repeated live-trapping over predation risk
+and how it is associated with the physiological stress response.
+Behavioural Processes 157:125–132. DOI: <a
+href="https://doi.org/10.1016/j.beproc.2018.09.007">10.1016/j.beproc.2018.09.007</a>.</p></li>
+<li><p>Heurich M, <strong>Schultze-Naumburg J</strong>, Piacenza N, Magg
+N, Cerveny J, Engleder T, Herdtfelder M, Sladova M &amp;
+<strong>Kramer-Schadt S</strong> (2018). Illegal hunting as a major
+driver of the source-sink dynamics of a reintroduced lynx population in
+Central Europe. Biological Conservation 224:355-365. DOI: <a
+href="https://doi.org/10.1016/j.biocon.2018.05.011">10.1016/j.biocon.2018.05.011</a>.</p></li>
+<li><p>Jerosch S, <strong>Kramer-Schadt S</strong>, Götz M &amp; Roth M
+(2018). The importance of small-scale structures in an agriculturally
+dominated landscape for the European wildcat (<em>Felis silvestris
+silvestris</em>) in central Europe and implications for its
+conservation. Journal for Nature Conservation 41:88-96. DOI: <a
+href="https://doi.org/10.1016/j.jnc.2017.11.008">10.1016/j.jnc.2017.11.008</a>.</p></li>
+<li><p>Karakoc C, <strong>Radchuk V</strong>, Hauke H &amp; Chatzinotas
+A (2018). Interactions between predation and disturbances shape prey
+communities. Scientific Reports:2968. DOI: <a
+href="https://doi.org/10.1038/s41598-018-21219-x">10.1038/s41598-018-21219-x</a>.</p></li>
+<li><p>Kuemmerle T, Levers C, Bleyhl B, Olech W, Perzanowski K, Reusch C
+&amp; <strong>Kramer-Schadt S</strong> (2018). One size does not fit
+all: European bison habitat selection across herds and spatial scales.
+Landscape Ecology 33:1559-1572. DOI: <a
+href="https://doi.org/10.1007/s10980-018-0684-2">10.1007/s10980-018-0684-2</a>.</p></li>
+<li><p>Lehnert LS, <strong>Kramer-Schadt S</strong>, Teige T,
+Hoffmeister U, Popa-Lisseanu A, Bontadina F, Ciechanowski M, Dechmann
+DKN, Kravchenko K, Presetnik P, Starrach M, Straube M, Zöphel U &amp;
+Voigt CC (2018). Variability and repeatability of noctule bat migration
+in Central Europe: evidence for partial and differential migration. Proc
+R Soc B 285:-20182174. DOI: <a
+href="https://doi.org/10.1098/rspb.2018.2174">10.1098/rspb.2018.2174</a>.</p></li>
+<li><p><strong>Marescot L</strong>, <strong>Benhaiem S</strong>, Gimenez
+O, Hofer H, Lebreton JD, Olarte-Castillo XA, <strong>Kramer-Schadt
+S</strong> &amp; <strong>East ML</strong> (2018). Social status mediates
+the fitness costs of infection with canine distemper virus in a social
+carnivore. Functional Ecology 32:1237-1250. DOI: <a
+href="https://doi.org/10.1111/1365-2435.13059">10.1111/1365-2435.13059</a>.</p></li>
+<li><p>Martins RF, Schmidt A, Lenz D, <strong>Wilting A</strong>, Fickel
+J (2018). Human- mediated introduction of introgressed deer across
+Wallace’s line: Historical biogeography of <em>Rusa unicolor</em> and
+<em>R. timorensis</em>. Ecology and Evolution 8:1465-1479. DOI: <a
+href="https://doi.org/10.1111/2041-210X.13076">10.1111/2041-210X.13076</a>.</p></li>
+<li><p>Schnell IB, Bohmann K, Sebastian E, Schultze SE, Richter SR,
+Murray DC, Sinding MHS, Bass D, Cadle JE, Campbell MJ, Dolch R, Edwards
+DP, Gray TNE, Hansen T, Hoa ANQ, Lehmkuhl Noer C, Heise-Pavlov S,
+Pedersen AFS, Ramamonjisoa JC, Siddall ME, <strong>Tilker A</strong>,
+Traeholt C, Wilkinson N, Paul Woodcock P, Yu DW, Bertelsen MF, Bunce M
+&amp; Gilbert MTP (2018). Debugging diversity – a pan-continental
+exploration of the potential of terrestrial blood-feeding leeches as a
+vertebrate monitoring tool. Molecular Ecology Resources 2018:1-17. DOI:
+<a
+href="https://doi.org/10.1111/1755-0998.12912">10.1111/1755-0998.12912</a>.</p></li>
+<li><p>Sciaini M, Fritsch M, <strong>Scherer C</strong> &amp; Simpkins
+CE (2018). <code>NLMR</code> and <code>landscapetools</code>: An
+integrated environment for simulating and modifying neutral landscape
+models in R. Methods in Ecology and Evolution 9:2240-2248. DOI: <a
+href="https://doi.org/10.1111/2041‐210X.13076">10.1111/2041‐210X.13076</a>.</p></li>
+<li><p>Seeber PA, Franz M, Dehnhard M, Ganswindt A, Greenwood AD &amp;
+<strong>East ML</strong> (2018). Plains zebra (<em>Equus quagga</em>)
+adrenocortical activity increases during times of large aggregations in
+the Serengeti ecosystem. Hormones and Behavior 102:1-9. DOI: <a
+href="https://doi.org/10.1016/j.yhbeh.2018.04.005">10.1016/j.yhbeh.2018.04.005</a>.
+Data DOI: <a
+href="https://doi.org/10.17632/zpt32w3k39.1">10.17632/zpt32w3k39.1</a>.</p></li>
+<li><p>Teckentrup L, Grimm V, <strong>Kramer-Schadt S</strong> &amp;
+Jeltsch F (2018). Community consequences of foraging under fear.
+Ecological Modelling 383:80-90. DOI: <a
+href="https://doi.org/10.1016/j.ecolmodel.2018.05.015">10.1016/j.ecolmodel.2018.05.015</a>.</p></li>
+<li><p><strong>Tilker A</strong>, Nguyen A, <strong>Abrams JF</strong>,
+Bhagwat T, Le M, <strong>Nguyen TV</strong>, Nguyen AT,
+<strong>Niedballa J</strong>, Solllmann R &amp; <strong>Wilting
+A</strong> (2020). A little-known endemic caught in the South-east Asian
+extinction crisis: the Annamite striped rabbit <em>Nesolagus
+timminsi</em>. Oryx 54:178-187. DOI: <a
+href="https://doi.org/10.1017/S0030605318000534">10.1017/S0030605318000534</a>.</p></li>
+<li><p>Ullmann W, Fischer C, Pirhofer-Walzl K, <strong>Kramer-Schadt
+S</strong> &amp; Blaum N (2018). Spatiotemporal variability in resources
+affects herbivore home range formation in structurally contrasting and
+unpredictable agricultural landscapes. Landscape Ecology volume
+33:1505-1517. DOI: <a
+href="https://doi.org/10.1007/s10980-018-0676-2">10.1007/s10980-018-0676-2</a>.</p></li>
+<li><p>Wietzkea A, Westphal C, <strong>Gras P</strong>, Kraft M, Pfohl
+K, Karlovsky P, Pawelzik E, Tscharntke T &amp; Smit I (2018). Insect
+pollination as a key factor for strawberry physiology and marketable
+fruit quality. Agriculture, Ecosystems &amp; Environment 258:197-204.
+DOI: <a
+href="https://doi.org/10.1016/j.agee.2018.01.036">10.1016/j.agee.2018.01.036</a>.</p></li>
+<li><p><strong>Wong ST</strong>, Belant JL, Sollmann R, <strong>Mohamed
+A</strong>, <strong>Niedballa J</strong>, <strong>Mathai J</strong>,
+Meijaard E, Street GM, Kissing J, Mannan S &amp; <strong>Wilting
+A</strong> (2018). Habitat associations of the Sunda stink-badger
+<em>Mydaus javanensis</em> in three forest reserves in Sabah, Malaysian
+Borneo. Mammalian Biology 88:75-80. DOI: <a
+href="https://doi.org/10.1016/j.mambio.2017.11.010">10.1016/j.mambio.2017.11.010</a>.</p></li>
 </ul>
 <div class="headerbox">
 <hbox>Book Chapters &amp; Reports</hbox>
 </div>
 <p><br></p>
 <ul>
-<li><strong>East ML</strong> (2018). Reproductive behavior in the Hyaenidae. In: Encyclopedia of Animal Behavior (2nd ed.). Choe JC (ed), Vol. 4, pp. 539–546, Elsevier, Academic Press. ISBN: 9780128132517. DOI: <a href="https://doi.org/10.1016/B978-0-12-809633-8.90127-4">10.1016/B978-0-12-809633-8.90127-4</a>.</li>
+<li><strong>East ML</strong> (2018). Reproductive behavior in the
+Hyaenidae. In: Encyclopedia of Animal Behavior (2nd ed.). Choe JC (ed),
+Vol. 4, pp. 539–546, Elsevier, Academic Press. ISBN: 9780128132517. DOI:
+<a
+href="https://doi.org/10.1016/B978-0-12-809633-8.90127-4">10.1016/B978-0-12-809633-8.90127-4</a>.</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

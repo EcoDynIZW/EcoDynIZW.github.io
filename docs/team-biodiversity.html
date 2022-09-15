@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2671,22 +2664,42 @@ Research
 <p><img src="img/team-div-header.png" width="1001" /></p>
 </div>
 <div class="highlightbox">
-<p><span class="highlight">
-Globally mammalian biodiversity is declining at an alarming rate as a result of widespread habitat loss and degradation, and unsustainable hunting. We study how these anthropogenic drivers impact the distribution and abundance of ground dwelling mammals. In our field projects we use camera-traps and iDNA (invertebrate derived DNA) metabarcoding to assess species occurrences and we employ statistical models that investigate how anthropogenic drivers affect species distribution. We develop standardized methods and strategies for rigorous biodiversity assessments in order to provide robust scientific baseline data that allow monitoring species-specific and community-wide trends over time. In our work we regularly collaborate closely with local stakeholders and decision makers in order to integrate our data and results directly into wildlife and conservation management policy.
-</span></p>
+<p><span class="highlight"> Globally mammalian biodiversity is declining
+at an alarming rate as a result of widespread habitat loss and
+degradation, and unsustainable hunting. We study how these anthropogenic
+drivers impact the distribution and abundance of ground dwelling
+mammals. In our field projects we use camera-traps and iDNA
+(invertebrate derived DNA) metabarcoding to assess species occurrences
+and we employ statistical models that investigate how anthropogenic
+drivers affect species distribution. We develop standardized methods and
+strategies for rigorous biodiversity assessments in order to provide
+robust scientific baseline data that allow monitoring species-specific
+and community-wide trends over time. In our work we regularly
+collaborate closely with local stakeholders and decision makers in order
+to integrate our data and results directly into wildlife and
+conservation management policy. </span></p>
 </div>
-<p><strong>Andreas Wilting</strong>, Deputy Department and Team Lead — ecologist and evolutionary biologist with strong interest in species conservation, interested in methods and tools to study species distributions and to use these biodiversity data to target conservation efforts.</p>
-<p><strong>Rahel Sollmann</strong>, Team Lead, ecologist and quantitative biologist has specialised in the analysis of camera trap data with Bayesian methods for wildlife conservation.</p>
-<p><strong>Dr. Jan Axtner</strong>, Data Management — data manager, ecologist and evolutionary geneticist, finds ways how to produce, store and handle large amounts of data of modern high-throughput biodiversity assessments.</p>
+<p><strong>Andreas Wilting</strong>, Deputy Department and Team Lead —
+ecologist and evolutionary biologist with strong interest in species
+conservation, interested in methods and tools to study species
+distributions and to use these biodiversity data to target conservation
+efforts.</p>
+<p><strong>Rahel Sollmann</strong>, Team Lead, ecologist and
+quantitative biologist has specialised in the analysis of camera trap
+data with Bayesian methods for wildlife conservation.</p>
+<p><strong>Dr. Jan Axtner</strong>, Data Management — data manager,
+ecologist and evolutionary geneticist, finds ways how to produce, store
+and handle large amounts of data of modern high-throughput biodiversity
+assessments.</p>
 <hr />
 <h2 id="running-projects">Running Projects</h2>
-<p><b style='color:red;'>
--&gt; add running project summaries with key literature
-</b></p>
+<p><b style='color:red;'> -&gt; add running project summaries with key
+literature </b></p>
 <div class="layout-chunk" data-layout="l-screen">
 <p><img src="img/meckpom-csf-inferno-cut-bottom.png" width="2048" /></p>
 </div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

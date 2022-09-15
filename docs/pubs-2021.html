@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2671,58 +2664,248 @@ Research
 </div>
 <p><br></p>
 <ul>
-<li><p><strong>Abrams JF</strong>, Sollmann R, Mitchel SL, Struebig MJ, <strong>Wilting A</strong> (2021). Occupancy-based diversity profiles: capturing biodiversity complexities while accounting for imperfect detection. ECOGRAPHY 44(7), 975-986. DOI: <a href="https://doi.org/10.1111/ecog.05577">10.1111/ecog.05577</a></p></li>
-<li><p><strong>Alfano N</strong>, Dayaram A, <strong>Axtner J</strong>, Tsangaras K, <strong>Kampmann ML</strong>, <strong>Mohamed A</strong>, <strong>Wong ST</strong>, Gilbert MTP, <strong>Wilting A</strong> &amp; Greenwood AD (2021). Non-invasive surveys of mammalian viruses using environmental DNA. Methods in Ecology and Evolution. DOI: <a href="https://doi.org/10.1111/2041-210X.13661">10.1111/2041-210X.13661</a></p></li>
-<li><p>Asad S, <strong>Abrams JF</strong>, <strong>Guharajan R</strong>, Lagan P, Kissing J, Sikui J, <strong>Wilting A</strong>, Rödel MO (2021). Amphibian responses to conventional and reduced impact logging. FOR ECOL MANAG 484, 118949. DOI: <a href="https://doi.org/10.1016/j.foreco.2021.118949">10.1016/J.foreco.2021.118949</a></p></li>
-<li><p>Ayllón D, Augusiak J, Baveco H, Berger U, Charles S, Martin R, Focks A, Galic N, Gallagher C, Liu C, van Loon EE, Nabe-Nielsen J, Piou C, Polhill JG, Preuss TG, <strong>Radchuk V</strong>, Schmolke A, Stadnicka-Michalak J, Thorbek P, Railsback SF &amp; Grimm V (2021). Keeping modelling notebooks with TRACE: good for you and good for environmental research and management support. Environmental Modelling &amp; Software 136:104932. DOI: <a href="https://doi.org/10.1016/j.envsoft.2020.104932">10.1016/j.envsoft.2020.104932</a></p></li>
-<li><p>Bastianelli ML, <strong>Premier J</strong>, Herrmann M, Anile S, Monterroso P, Kuemmerle T, …, &amp; Heurich M (2021). Survival and cause-specific mortality of European wildcat (<em>Felis silvestris</em>) across Europe. Biological Conservation 261:109239. DOI: <a href="https://doi.org/10.1016/j.biocon.2021.109239">j.biocon.2021.109239</a></p></li>
-<li><p>Bueno de Mesquita CP, Nichols LM, Gebert MJ, Vanderburgh C, Bocksberger G, Lester JD, Kalan AK, Dieguez P, McCarthy MS, Agbor A, Álvarez Varona P, Ayimisin AE, Bessone M, Chancellor R, Cohen H, Coupland C, Deschner T, Egbe VE, Goedmakers A, Granjon A-C, Grueter CC, Head J, R. Hernandez-Aguilar A, Jeffery KJ, Jones S, Kadam P, Kaiser M, Lapuente J, Larson B, Marrocoli S, Morgan D, <strong>Mugerwa B</strong>, Mulindahabi F, Neil E, Niyigaba P, Pacheco L, Piel AK, Robbins MM, Rundus A, Sanz CM, Sciaky L, Sheil D, Sommer V, Stewart FA, Ton E, van Schijndel J, Vergnes V, Wessling EG, Wittig RM, Yuh YG, Yurkiw K, Zuberbühler K, Gogarten JF, Heintz-Buschart A, Muellner-Riehl AN, Boesch C, Kühl HS, Fierer N, Arandjelovic M, Dunn RR. 2021. Structure of Chimpanzee Gut Microbiomes across Tropical Africa. MSYSTEMS 6(3), e01269-20. DOI: <a href="https://doi.org/10.1128/mSystems.01269-20">10.1128/mSystems.01269-20</a></p></li>
-<li><p>Bruckermann T, Greving H, Schumann A, <strong>Stillfried M</strong>, <strong>Börner K</strong>, <strong>Kimmig SE</strong>, <strong>Hagen R</strong>, Brandt M, Harms U. (2021). To know about science is to love it? Unraveling cause–effect relationships between knowledge and attitudes toward science in citizen science on urban wildlife ecology. Journal of Research in Science Teaching 58, 1179-1202. DOI: <a href="https://doi.org/10.1002/tea.21697">10.1002/tea.21697</a></p></li>
-<li><p>Chakravarty, R., Mohan, R., Voigt, C.C. , Krishnan, A., <strong>Radchuk, V</strong>. (2021). Functional diversity of Himalayan bat communities declines at high elevation without the loss of phylogenetic diversity. Sci Rep 11, 22556. DOI: <a href="https://doi.org/10.1038/s41598-021-01939-3">10.1038/s41598-021-01939-3</a></p></li>
-<li><p>Clark AT, Arnoldi J‐F, Zelnik YR, Barabas G, Hodapp D, Karakoç C, König S, <strong>Radchuk V</strong>, Donohue I, Huth A, Jacquet C, de Mazancourt C, Mentges A, Nothaaß D, Shoemaker LG, Taubert F, Wiegand T, Wang S, Chase JM, Loreau M, Harpole S (2021). General statistical scaling laws for stability in ecological systems. ECOL LETT. DOI: <a href="https://doi.org/10.1111/ele.13760">10.1111/ele.13760</a></p></li>
-<li><p>Dayaram AS, Seeber P, Courtiol A, Soilemetzidou S, Tsangaras K, <strong>Franz M</strong>, McEwen G, Azab W, Kaczensky P, Melzheimer J, <strong>East ML</strong>, Ganbaatar O, Walzer C, Osterrieder N, Greenwood AD (2021). Seasonal host and ecological drivers may promote restricted water as a viral vector. SCI TOTAL ENVIRON 773, 145446. DOI: <a href="https://doi.org/10.1016/j.scitotenv.2021.145446">10.1016/j.scitotenv.2021.145446</a></p></li>
-<li><p><strong>Ferreira SCM</strong>, <strong>Veiga MM</strong>, Hofer H, <strong>East ML</strong>, Czirják GÁ (2021). Noninvasively measured immune responses reflect current parasite infections in a wild carnivore and are linked to longevity. ECOL EVOL, early view 11(12), 7685-7699. DOI: <a href="https://doi.org/10.1002/ece3.7602">10.1002/ece3.7602</a></p></li>
-<li><p>Fischer L, Möller Palau-Ribes F, Kipper S, Weiss M, <strong>Landgraf C</strong>, Lierz M (accepted). Absence of Mycoplasma spp. in nightingales (<em>Luscinia megarhynchos</em>) and blue (<em>Cyanistes caeruleus</em>) and great tits (<em>Parus major</em>) in Germany and its potential implication for evolutionary studies in birds. EUR J WILDL RES 68, 2. DOI: <a href="https://doi.org/10.1007/s10344-021-01554-7">10.1007/s10344-021-01554-7</a></p></li>
-<li><p>Fischer M, Sutherland D, Coulson G, <strong>Stillfried M</strong>, <strong>Kramer-Schadt S</strong>, di Stefano J (2021). Spatial and temporal responses of swamp wallabies to roads in a human-modified landscape. WILDL BIOL 2021(2), wlb.00691. DOI: <a href="https://doi.org/10.2981/wlb.00691">10.2981/wlb.00691</a></p></li>
-<li><p>Gray TNE, Belecks M, O’Kelly HJ, Rao M, Roberts O, <strong>Tilker A</strong>, Signs M, Yoganand K (2021). Understanding and solving the South-East Asian snaring crisis. THE ECOLOGICAL CITIZEN 4(2), 129-141. <a href="https://www.ecologicalcitizen.net">https://www.ecologicalcitizen.net</a></p></li>
-<li><p><strong>Guharajan R</strong>, <strong>Mohamed A</strong>, <strong>Wong ST</strong>, <strong>Niedballa J</strong>, <strong>Petrus A</strong>, <strong>Jubili J</strong>, <strong>Lietz R</strong>, Clements GR, Wong WM, Kissing J, Lagan P, <strong>Wilting A</strong> (2021). Sustainable forest management is vital for the persistence of sun bear Helarctos malayanus populations in Sabah, Malaysian Borneo. FOR ECOL MANAG 493, 119270. DOI: <a href="https://doi.org/10.1016/j.foreco.2021.119270">10.1016/j.foreco.2021.119270</a></p></li>
-<li><p><strong>Hagen R</strong>, Ortmann S, Elliger A &amp; Arnold J (2021). Advanced roe deer (<em>Capreolus capreolus</em>) parturition date in response to climate change. Ecosphere 12(11), e03819. DOI: <a href="https://doi.org/10.1002/ecs2.3819">10.1002/ecs2.3819</a></p></li>
-<li><p>Krause T, <strong>Tilker A</strong> (2021). Defaunation jeopardizes the SDG’s – How the loss of forest fauna undermines the achievements of the SDG’s. AMBIO. DOI: <a href="https://doi.org/10.1007/s13280-021-01547-5">10.1007/s13280-021-01547-5</a></p></li>
-<li><p>Krücken J, Czirják GÁ, Ramünke S, Maria Serocki, Heinrich SK, Melzheimer J, Costa MC, Hofer H, Aschenborn OHK, Barker NA, Capodanno S, Madeira de Carvalho L, von Samson-Himmelstjerna G, <strong>East ML</strong> &amp; Wachter B (2021). Genetic diversity of vector-borne pathogens in spotted and brown hyenas from Namibia and Tanzania relates to ecological conditions rather than host taxonomy. PARASITES VECTORS 14, 328. DOI: <a href="https://doi.org/10.1186/s13071-021-04835-x">10.1186/s13071-021-04835-x</a></p></li>
-<li><p><strong>Kürschner T</strong>, <strong>Scherer C</strong>, <strong>Radchuk V</strong>, Blaum N, <strong>Kramer-Schadt S</strong>. (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. ECOL EVOL 11(10), 5728-41. DOI: <a href="https://doi.org/10.1002/ece3.7478">10.1002/ece3.7478</a></p></li>
-<li><p><strong>Louvrier J</strong>; <strong>Planillo A</strong>; <strong>Stillfried M</strong>; <strong>Hagen R</strong>; <strong>Boerner K</strong>; <strong>Kimmig S</strong>; Ortmann S; Schumann A; Brandt M; <strong>Kramer-Schadt S</strong> (2021). Spatiotemporal interactions of a novel mesocarnivore community in an urban environment before and during SARS-CoV-2 lockdown. J ANIM ECOL, 00, 1– 14. DOI: <a href="https://doi.org/10.1111/1365-2656.13635">10.1111/1365-2656.13635</a></p></li>
-<li><p>Malishev M and <strong>Kramer-Schadt S</strong> (2021). Movement, Models, and Metabolism: Individual-based energy budget models as next-generation extensions for predicting animal movement outcomes across scales. ECOL MODELL 441, 109413. DOI: <a href="https://doi.org/10.1016/j.ecolmodel.2020.109413">10.1016/j.ecolmodel.2020.109413</a></p></li>
-<li><p><strong>Marescot L</strong>, <strong>Franz M</strong>, <strong>Benhaiem S</strong>, Hofer H, <strong>Scherer C</strong>, <strong>East ML</strong> &amp; <strong>Kramer-Schadt S</strong> (2021). Keeping the kids at home can limit the persistence of contagious pathogens in social animals. Journal of Animal Ecology. DOI: <a href="https://doi.org/10.1111/1365-2656.13555">10.1111/1365-2656.13555</a>.</p></li>
-<li><p><strong>Mohamed A</strong>, Sollmann R, <strong>Wong ST</strong>, <strong>Niedballa J</strong>, <strong>Abrams JF</strong>, Kissing J, <strong>Wilting A</strong> (2021): Counting Sunda clouded leopards with confidence: incorporating individual heterogeneity in density estimates. ORYX 55(1), 56-65. DOI: <a href="https://doi.org/10.1017/S0030605318001503">10.1017/S0030605318001503</a></p></li>
-<li><p><strong>Nguyen A</strong>, <strong>Tilker A</strong>, Le D, Le HV, Le SV, Luu TH, Tran BV, <strong>Wilting A</strong> (2021). New records and southern range extension of the Annamite striped rabbit <em>Nesolagus timminsi</em> in Vietnam. MAMMALIA, online first. DOI: <a href="https://doi.org/10.1515/mammalia-2020-0189">10.1515/mammalia-2020-0189</a></p></li>
-<li><p>Nguyen AT, <strong>Tilker A</strong>, <strong>Nguyen TV</strong> &amp; Le M (2021). Camera-trap records of muntjac in the lowlands of Hue Saola Nature Reserve, central Vietnam. DSG Newsletter 32.</p></li>
-<li><p><strong>Nguyen TV</strong>, <strong>Tilker A</strong>, <strong>Nguyen A</strong>, <strong>Hörig L</strong>, <strong>Axtner J</strong>, Schmidt A, Le M, Nguyen AHQ, Rawson BM, <strong>Wilting A</strong>, Fickel J (2021). Using terrestrial leeches to assess the genetic diversity of an elusive species: the Annamite striped rabbit <em>Nesolagus timminsi</em>. ENVIRONMENTAL DNA 3, 780-791. DOI: <a href="https://doi.org/10.1002/edn3.182">10.1002/edn3.182</a></p></li>
-<li><p><strong>Olarte-Castillo XA</strong>, Dos Remédios JF, Heeger F, Hofer H, <strong>Karl S</strong>, Greenwood AD, <strong>East ML</strong> (2021). The virus-host interface: Molecular interactions of Alphacoronavirus-1 variants from wild and domestic hosts with mammalian aminopeptidase N. MOL ECOL. 2021;30(11):2607-2625. DOI: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.15910">10.1111/mec.15910</a></p></li>
-<li><p><strong>Planillo A</strong>, <strong>Kramer-Schadt S</strong>, Buchholz S, <strong>Gras P</strong>, von der Lippe M, <strong>Radchuk V</strong>. (2021) Arthropod abundance modulates bird community responses to urbanization. DIV DISTRIB 27(1), 34-49. DOI: <a href="https://onlinelibrary.wiley.com/doi/10.1111/ddi.13169">10.1111/ddi.13169</a></p></li>
-<li><p><strong>Planillo A</strong>, Fiechter L, Sturm U, Heucke-Voigt S, <strong>Kramer-Schadt S</strong> (2021) Citizen science data for urban planning: Comparing different sampling schemes for modelling urban bird distribution. LAND URB PLAN 211. DOI: <a href="https://doi.org/10.1016/j.landurbplan.2021.104098">10.1016/j.landurbplan.2021.104098</a></p></li>
-<li><p><strong>Premier J</strong>, Gahbauer M, Leibl F, Heurich M (2021). In-situ feeding as a new management tool to conserve orphaned Eurasian lynx (<em>Lynx lynx</em>). ECOL EVOL, accepted. DOI: <a href="https://doi.org/10.1002/ece3.7261">10.1002/ece3.7261</a></p></li>
-<li><p>Pretzlaff I, <strong>Radchuk V</strong>, Turner JM, Dausmann KH (2021) Flexibility in thermal physiology and behaviour allows body mass maintenance in hibernating hazel dormice. J ZOOL, 314(1), 1-11. DOI: <a href="https://doi.org/10.1111/jzo.12862">10.1111/jzo.12862</a></p></li>
-<li><p>Tran DV, Viet DP, Tien TV, <strong>Nguyen A</strong>, Van CP &amp; <strong>Tilker A</strong> (2021). New records of the forest musk deer <em>Moschus berezovskii</em> in Viet Nam revealed by camera-traps. ORYX 55(4) , 494-495. DOI: <a href="https://doi.org/10.1017/S0030605321000569">10.1017/S0030605321000569</a></p></li>
-<li><p>Wikenros C, <strong>Gicquel M</strong>, Zimmermann B, FlagstaO, Akesson M (2021). Age at first reproduction in wolves: different patterns of density dependence for females and males. PRoc R SOC B 288, 2021020. DOI: <a href="https://doi.org/10.1098/rspb.2021.0207">10.1098/rspb.2021.0207</a></p></li>
-<li><p><strong>Wilting A</strong>, <strong>Nguyen TV</strong>, <strong>Axtner J</strong>, <strong>Nguyen A</strong>, Schmidt A, Le M, Nguyen AHQ, Rawson BM, <strong>Tilker A</strong>, Fickel J (2021). Creating genetic reference datasets: Indirect sampling of target species using terrestrial leeches as sample “collectors”. ENVIRONMENTAL DNA, 4(2), 311-325. DOI: <a href="https://doi.org/10.1002/edn3.256">10.1002/edn3.256</a></p></li>
+<li><p><strong>Abrams JF</strong>, Sollmann R, Mitchel SL, Struebig MJ,
+<strong>Wilting A</strong> (2021). Occupancy-based diversity profiles:
+capturing biodiversity complexities while accounting for imperfect
+detection. ECOGRAPHY 44(7), 975-986. DOI: <a
+href="https://doi.org/10.1111/ecog.05577">10.1111/ecog.05577</a></p></li>
+<li><p><strong>Alfano N</strong>, Dayaram A, <strong>Axtner J</strong>,
+Tsangaras K, <strong>Kampmann ML</strong>, <strong>Mohamed A</strong>,
+<strong>Wong ST</strong>, Gilbert MTP, <strong>Wilting A</strong> &amp;
+Greenwood AD (2021). Non-invasive surveys of mammalian viruses using
+environmental DNA. Methods in Ecology and Evolution. DOI: <a
+href="https://doi.org/10.1111/2041-210X.13661">10.1111/2041-210X.13661</a></p></li>
+<li><p>Asad S, <strong>Abrams JF</strong>, <strong>Guharajan R</strong>,
+Lagan P, Kissing J, Sikui J, <strong>Wilting A</strong>, Rödel MO
+(2021). Amphibian responses to conventional and reduced impact logging.
+FOR ECOL MANAG 484, 118949. DOI: <a
+href="https://doi.org/10.1016/j.foreco.2021.118949">10.1016/J.foreco.2021.118949</a></p></li>
+<li><p>Ayllón D, Augusiak J, Baveco H, Berger U, Charles S, Martin R,
+Focks A, Galic N, Gallagher C, Liu C, van Loon EE, Nabe-Nielsen J, Piou
+C, Polhill JG, Preuss TG, <strong>Radchuk V</strong>, Schmolke A,
+Stadnicka-Michalak J, Thorbek P, Railsback SF &amp; Grimm V (2021).
+Keeping modelling notebooks with TRACE: good for you and good for
+environmental research and management support. Environmental Modelling
+&amp; Software 136:104932. DOI: <a
+href="https://doi.org/10.1016/j.envsoft.2020.104932">10.1016/j.envsoft.2020.104932</a></p></li>
+<li><p>Bastianelli ML, <strong>Premier J</strong>, Herrmann M, Anile S,
+Monterroso P, Kuemmerle T, …, &amp; Heurich M (2021). Survival and
+cause-specific mortality of European wildcat (<em>Felis silvestris</em>)
+across Europe. Biological Conservation 261:109239. DOI: <a
+href="https://doi.org/10.1016/j.biocon.2021.109239">j.biocon.2021.109239</a></p></li>
+<li><p>Bueno de Mesquita CP, Nichols LM, Gebert MJ, Vanderburgh C,
+Bocksberger G, Lester JD, Kalan AK, Dieguez P, McCarthy MS, Agbor A,
+Álvarez Varona P, Ayimisin AE, Bessone M, Chancellor R, Cohen H,
+Coupland C, Deschner T, Egbe VE, Goedmakers A, Granjon A-C, Grueter CC,
+Head J, R. Hernandez-Aguilar A, Jeffery KJ, Jones S, Kadam P, Kaiser M,
+Lapuente J, Larson B, Marrocoli S, Morgan D, <strong>Mugerwa B</strong>,
+Mulindahabi F, Neil E, Niyigaba P, Pacheco L, Piel AK, Robbins MM,
+Rundus A, Sanz CM, Sciaky L, Sheil D, Sommer V, Stewart FA, Ton E, van
+Schijndel J, Vergnes V, Wessling EG, Wittig RM, Yuh YG, Yurkiw K,
+Zuberbühler K, Gogarten JF, Heintz-Buschart A, Muellner-Riehl AN, Boesch
+C, Kühl HS, Fierer N, Arandjelovic M, Dunn RR. 2021. Structure of
+Chimpanzee Gut Microbiomes across Tropical Africa. MSYSTEMS 6(3),
+e01269-20. DOI: <a
+href="https://doi.org/10.1128/mSystems.01269-20">10.1128/mSystems.01269-20</a></p></li>
+<li><p>Bruckermann T, Greving H, Schumann A, <strong>Stillfried
+M</strong>, <strong>Börner K</strong>, <strong>Kimmig SE</strong>,
+<strong>Hagen R</strong>, Brandt M, Harms U. (2021). To know about
+science is to love it? Unraveling cause–effect relationships between
+knowledge and attitudes toward science in citizen science on urban
+wildlife ecology. Journal of Research in Science Teaching 58, 1179-1202.
+DOI: <a
+href="https://doi.org/10.1002/tea.21697">10.1002/tea.21697</a></p></li>
+<li><p>Chakravarty, R., Mohan, R., Voigt, C.C. , Krishnan, A.,
+<strong>Radchuk, V</strong>. (2021). Functional diversity of Himalayan
+bat communities declines at high elevation without the loss of
+phylogenetic diversity. Sci Rep 11, 22556. DOI: <a
+href="https://doi.org/10.1038/s41598-021-01939-3">10.1038/s41598-021-01939-3</a></p></li>
+<li><p>Clark AT, Arnoldi J‐F, Zelnik YR, Barabas G, Hodapp D, Karakoç C,
+König S, <strong>Radchuk V</strong>, Donohue I, Huth A, Jacquet C, de
+Mazancourt C, Mentges A, Nothaaß D, Shoemaker LG, Taubert F, Wiegand T,
+Wang S, Chase JM, Loreau M, Harpole S (2021). General statistical
+scaling laws for stability in ecological systems. ECOL LETT. DOI: <a
+href="https://doi.org/10.1111/ele.13760">10.1111/ele.13760</a></p></li>
+<li><p>Dayaram AS, Seeber P, Courtiol A, Soilemetzidou S, Tsangaras K,
+<strong>Franz M</strong>, McEwen G, Azab W, Kaczensky P, Melzheimer J,
+<strong>East ML</strong>, Ganbaatar O, Walzer C, Osterrieder N,
+Greenwood AD (2021). Seasonal host and ecological drivers may promote
+restricted water as a viral vector. SCI TOTAL ENVIRON 773, 145446. DOI:
+<a
+href="https://doi.org/10.1016/j.scitotenv.2021.145446">10.1016/j.scitotenv.2021.145446</a></p></li>
+<li><p><strong>Ferreira SCM</strong>, <strong>Veiga MM</strong>, Hofer
+H, <strong>East ML</strong>, Czirják GÁ (2021). Noninvasively measured
+immune responses reflect current parasite infections in a wild carnivore
+and are linked to longevity. ECOL EVOL, early view 11(12), 7685-7699.
+DOI: <a
+href="https://doi.org/10.1002/ece3.7602">10.1002/ece3.7602</a></p></li>
+<li><p>Fischer L, Möller Palau-Ribes F, Kipper S, Weiss M,
+<strong>Landgraf C</strong>, Lierz M (accepted). Absence of Mycoplasma
+spp. in nightingales (<em>Luscinia megarhynchos</em>) and blue
+(<em>Cyanistes caeruleus</em>) and great tits (<em>Parus major</em>) in
+Germany and its potential implication for evolutionary studies in birds.
+EUR J WILDL RES 68, 2. DOI: <a
+href="https://doi.org/10.1007/s10344-021-01554-7">10.1007/s10344-021-01554-7</a></p></li>
+<li><p>Fischer M, Sutherland D, Coulson G, <strong>Stillfried
+M</strong>, <strong>Kramer-Schadt S</strong>, di Stefano J (2021).
+Spatial and temporal responses of swamp wallabies to roads in a
+human-modified landscape. WILDL BIOL 2021(2), wlb.00691. DOI: <a
+href="https://doi.org/10.2981/wlb.00691">10.2981/wlb.00691</a></p></li>
+<li><p>Gray TNE, Belecks M, O’Kelly HJ, Rao M, Roberts O, <strong>Tilker
+A</strong>, Signs M, Yoganand K (2021). Understanding and solving the
+South-East Asian snaring crisis. THE ECOLOGICAL CITIZEN 4(2), 129-141.
+<a
+href="https://www.ecologicalcitizen.net">https://www.ecologicalcitizen.net</a></p></li>
+<li><p><strong>Guharajan R</strong>, <strong>Mohamed A</strong>,
+<strong>Wong ST</strong>, <strong>Niedballa J</strong>, <strong>Petrus
+A</strong>, <strong>Jubili J</strong>, <strong>Lietz R</strong>,
+Clements GR, Wong WM, Kissing J, Lagan P, <strong>Wilting A</strong>
+(2021). Sustainable forest management is vital for the persistence of
+sun bear Helarctos malayanus populations in Sabah, Malaysian Borneo. FOR
+ECOL MANAG 493, 119270. DOI: <a
+href="https://doi.org/10.1016/j.foreco.2021.119270">10.1016/j.foreco.2021.119270</a></p></li>
+<li><p><strong>Hagen R</strong>, Ortmann S, Elliger A &amp; Arnold J
+(2021). Advanced roe deer (<em>Capreolus capreolus</em>) parturition
+date in response to climate change. Ecosphere 12(11), e03819. DOI: <a
+href="https://doi.org/10.1002/ecs2.3819">10.1002/ecs2.3819</a></p></li>
+<li><p>Krause T, <strong>Tilker A</strong> (2021). Defaunation
+jeopardizes the SDG’s – How the loss of forest fauna undermines the
+achievements of the SDG’s. AMBIO. DOI: <a
+href="https://doi.org/10.1007/s13280-021-01547-5">10.1007/s13280-021-01547-5</a></p></li>
+<li><p>Krücken J, Czirják GÁ, Ramünke S, Maria Serocki, Heinrich SK,
+Melzheimer J, Costa MC, Hofer H, Aschenborn OHK, Barker NA, Capodanno S,
+Madeira de Carvalho L, von Samson-Himmelstjerna G, <strong>East
+ML</strong> &amp; Wachter B (2021). Genetic diversity of vector-borne
+pathogens in spotted and brown hyenas from Namibia and Tanzania relates
+to ecological conditions rather than host taxonomy. PARASITES VECTORS
+14, 328. DOI: <a
+href="https://doi.org/10.1186/s13071-021-04835-x">10.1186/s13071-021-04835-x</a></p></li>
+<li><p><strong>Kürschner T</strong>, <strong>Scherer C</strong>,
+<strong>Radchuk V</strong>, Blaum N, <strong>Kramer-Schadt S</strong>.
+(2021) Movement can mediate temporal mismatches between resource
+availability and biological events in host-pathogen interactions. ECOL
+EVOL 11(10), 5728-41. DOI: <a
+href="https://doi.org/10.1002/ece3.7478">10.1002/ece3.7478</a></p></li>
+<li><p><strong>Louvrier J</strong>; <strong>Planillo A</strong>;
+<strong>Stillfried M</strong>; <strong>Hagen R</strong>; <strong>Boerner
+K</strong>; <strong>Kimmig S</strong>; Ortmann S; Schumann A; Brandt M;
+<strong>Kramer-Schadt S</strong> (2021). Spatiotemporal interactions of
+a novel mesocarnivore community in an urban environment before and
+during SARS-CoV-2 lockdown. J ANIM ECOL, 00, 1– 14. DOI: <a
+href="https://doi.org/10.1111/1365-2656.13635">10.1111/1365-2656.13635</a></p></li>
+<li><p>Malishev M and <strong>Kramer-Schadt S</strong> (2021). Movement,
+Models, and Metabolism: Individual-based energy budget models as
+next-generation extensions for predicting animal movement outcomes
+across scales. ECOL MODELL 441, 109413. DOI: <a
+href="https://doi.org/10.1016/j.ecolmodel.2020.109413">10.1016/j.ecolmodel.2020.109413</a></p></li>
+<li><p><strong>Marescot L</strong>, <strong>Franz M</strong>,
+<strong>Benhaiem S</strong>, Hofer H, <strong>Scherer C</strong>,
+<strong>East ML</strong> &amp; <strong>Kramer-Schadt S</strong> (2021).
+Keeping the kids at home can limit the persistence of contagious
+pathogens in social animals. Journal of Animal Ecology. DOI: <a
+href="https://doi.org/10.1111/1365-2656.13555">10.1111/1365-2656.13555</a>.</p></li>
+<li><p><strong>Mohamed A</strong>, Sollmann R, <strong>Wong ST</strong>,
+<strong>Niedballa J</strong>, <strong>Abrams JF</strong>, Kissing J,
+<strong>Wilting A</strong> (2021): Counting Sunda clouded leopards with
+confidence: incorporating individual heterogeneity in density estimates.
+ORYX 55(1), 56-65. DOI: <a
+href="https://doi.org/10.1017/S0030605318001503">10.1017/S0030605318001503</a></p></li>
+<li><p><strong>Nguyen A</strong>, <strong>Tilker A</strong>, Le D, Le
+HV, Le SV, Luu TH, Tran BV, <strong>Wilting A</strong> (2021). New
+records and southern range extension of the Annamite striped rabbit
+<em>Nesolagus timminsi</em> in Vietnam. MAMMALIA, online first. DOI: <a
+href="https://doi.org/10.1515/mammalia-2020-0189">10.1515/mammalia-2020-0189</a></p></li>
+<li><p>Nguyen AT, <strong>Tilker A</strong>, <strong>Nguyen TV</strong>
+&amp; Le M (2021). Camera-trap records of muntjac in the lowlands of Hue
+Saola Nature Reserve, central Vietnam. DSG Newsletter 32.</p></li>
+<li><p><strong>Nguyen TV</strong>, <strong>Tilker A</strong>,
+<strong>Nguyen A</strong>, <strong>Hörig L</strong>, <strong>Axtner
+J</strong>, Schmidt A, Le M, Nguyen AHQ, Rawson BM, <strong>Wilting
+A</strong>, Fickel J (2021). Using terrestrial leeches to assess the
+genetic diversity of an elusive species: the Annamite striped rabbit
+<em>Nesolagus timminsi</em>. ENVIRONMENTAL DNA 3, 780-791. DOI: <a
+href="https://doi.org/10.1002/edn3.182">10.1002/edn3.182</a></p></li>
+<li><p><strong>Olarte-Castillo XA</strong>, Dos Remédios JF, Heeger F,
+Hofer H, <strong>Karl S</strong>, Greenwood AD, <strong>East ML</strong>
+(2021). The virus-host interface: Molecular interactions of
+Alphacoronavirus-1 variants from wild and domestic hosts with mammalian
+aminopeptidase N. MOL ECOL. 2021;30(11):2607-2625. DOI: <a
+href="https://onlinelibrary.wiley.com/doi/abs/10.1111/mec.15910">10.1111/mec.15910</a></p></li>
+<li><p><strong>Planillo A</strong>, <strong>Kramer-Schadt S</strong>,
+Buchholz S, <strong>Gras P</strong>, von der Lippe M, <strong>Radchuk
+V</strong>. (2021) Arthropod abundance modulates bird community
+responses to urbanization. DIV DISTRIB 27(1), 34-49. DOI: <a
+href="https://onlinelibrary.wiley.com/doi/10.1111/ddi.13169">10.1111/ddi.13169</a></p></li>
+<li><p><strong>Planillo A</strong>, Fiechter L, Sturm U, Heucke-Voigt S,
+<strong>Kramer-Schadt S</strong> (2021) Citizen science data for urban
+planning: Comparing different sampling schemes for modelling urban bird
+distribution. LAND URB PLAN 211. DOI: <a
+href="https://doi.org/10.1016/j.landurbplan.2021.104098">10.1016/j.landurbplan.2021.104098</a></p></li>
+<li><p><strong>Premier J</strong>, Gahbauer M, Leibl F, Heurich M
+(2021). In-situ feeding as a new management tool to conserve orphaned
+Eurasian lynx (<em>Lynx lynx</em>). ECOL EVOL, accepted. DOI: <a
+href="https://doi.org/10.1002/ece3.7261">10.1002/ece3.7261</a></p></li>
+<li><p>Pretzlaff I, <strong>Radchuk V</strong>, Turner JM, Dausmann KH
+(2021) Flexibility in thermal physiology and behaviour allows body mass
+maintenance in hibernating hazel dormice. J ZOOL, 314(1), 1-11. DOI: <a
+href="https://doi.org/10.1111/jzo.12862">10.1111/jzo.12862</a></p></li>
+<li><p>Tran DV, Viet DP, Tien TV, <strong>Nguyen A</strong>, Van CP
+&amp; <strong>Tilker A</strong> (2021). New records of the forest musk
+deer <em>Moschus berezovskii</em> in Viet Nam revealed by camera-traps.
+ORYX 55(4) , 494-495. DOI: <a
+href="https://doi.org/10.1017/S0030605321000569">10.1017/S0030605321000569</a></p></li>
+<li><p>Wikenros C, <strong>Gicquel M</strong>, Zimmermann B, FlagstaO,
+Akesson M (2021). Age at first reproduction in wolves: different
+patterns of density dependence for females and males. PRoc R SOC B 288,
+2021020. DOI: <a
+href="https://doi.org/10.1098/rspb.2021.0207">10.1098/rspb.2021.0207</a></p></li>
+<li><p><strong>Wilting A</strong>, <strong>Nguyen TV</strong>,
+<strong>Axtner J</strong>, <strong>Nguyen A</strong>, Schmidt A, Le M,
+Nguyen AHQ, Rawson BM, <strong>Tilker A</strong>, Fickel J (2021).
+Creating genetic reference datasets: Indirect sampling of target species
+using terrestrial leeches as sample “collectors”. ENVIRONMENTAL DNA,
+4(2), 311-325. DOI: <a
+href="https://doi.org/10.1002/edn3.256">10.1002/edn3.256</a></p></li>
 </ul>
 <div class="headerbox">
 <hbox>Preprints</hbox>
 </div>
 <p><br></p>
 <ul>
-<li><p><strong>Drenske S</strong>, <strong>Radchuk V</strong>, <strong>Scherer C</strong>, Esterer C, Kowarik I, Fritz J &amp; <strong>Kramer-Schadt S</strong> (2021). Halfway to self-sustainability: reintroduced migratory European Northern Bald Ibises (<em>Geronticus eremita</em>) still need management interventions for population viability. bioRxiv. DOI: <a href="https://doi.org/10.1101/2021.04.03.438331">10.1101/2021.04.03.438331</a></p></li>
-<li><p>Hermanns K, Marklewitz M, Zirkel F, Kopp K, <strong>Kramer-Schadt S</strong> &amp; Junglen S (2021). Mosquito community composition shapes virus prevalence patterns along anthropogenic disturbance gradients. bioRXiv. DOI: <a href="https://doi.org/10.1101/2021.02.04.429754">10.1101/2021.02.04.429754</a></p></li>
+<li><p><strong>Drenske S</strong>, <strong>Radchuk V</strong>,
+<strong>Scherer C</strong>, Esterer C, Kowarik I, Fritz J &amp;
+<strong>Kramer-Schadt S</strong> (2021). Halfway to self-sustainability:
+reintroduced migratory European Northern Bald Ibises (<em>Geronticus
+eremita</em>) still need management interventions for population
+viability. bioRxiv. DOI: <a
+href="https://doi.org/10.1101/2021.04.03.438331">10.1101/2021.04.03.438331</a></p></li>
+<li><p>Hermanns K, Marklewitz M, Zirkel F, Kopp K, <strong>Kramer-Schadt
+S</strong> &amp; Junglen S (2021). Mosquito community composition shapes
+virus prevalence patterns along anthropogenic disturbance gradients.
+bioRXiv. DOI: <a
+href="https://doi.org/10.1101/2021.02.04.429754">10.1101/2021.02.04.429754</a></p></li>
 </ul>
 <div class="headerbox">
 <hbox>Book Chapters &amp; Reports</hbox>
 </div>
 <p><br></p>
 <ul>
-<li><p>Heurich M, <strong>Premier J</strong>, <strong>Schultze-Naumburg J</strong>, Herdtfelder M, Oeser J &amp; <strong>Kramer-Schadt S</strong> (2021). Erforschung der Populations- und Bewegungsökologie des Luchses als Grundlage eines Metapopulationsmanagements der kontinentaleuropäischen Luchspopulationen (<em>Lynx lynx</em>). Natur und Landschaft 96 (1). DOI: <a href="https://doi.org/10.17433/1.2021.50153867.1118">10.17433/1.2021.50153867.1118</a></p></li>
-<li><p><strong>Radchuk V</strong>, <strong>Kramer-Schadt S</strong>, Berger U, <strong>Scherer C</strong>, Backmann P &amp; Grimm V (2021). Individual-based models. In: Demographic Methods across the Tree of Life, Salguero-Gomez R &amp; Gamelon M (eds.), Oxford University Press <a href="https://global.oup.com/academic/product/demographic-methods-across-the-tree-of-life-9780198838609?cc=de&amp;lang=en&amp;">https://global.oup.com/academic/product/demographic-methods-across-the-tree-of-life-9780198838609?cc=de&amp;lang=en&amp;</a>.</p></li>
+<li><p>Heurich M, <strong>Premier J</strong>, <strong>Schultze-Naumburg
+J</strong>, Herdtfelder M, Oeser J &amp; <strong>Kramer-Schadt
+S</strong> (2021). Erforschung der Populations- und Bewegungsökologie
+des Luchses als Grundlage eines Metapopulationsmanagements der
+kontinentaleuropäischen Luchspopulationen (<em>Lynx lynx</em>). Natur
+und Landschaft 96 (1). DOI: <a
+href="https://doi.org/10.17433/1.2021.50153867.1118">10.17433/1.2021.50153867.1118</a></p></li>
+<li><p><strong>Radchuk V</strong>, <strong>Kramer-Schadt S</strong>,
+Berger U, <strong>Scherer C</strong>, Backmann P &amp; Grimm V (2021).
+Individual-based models. In: Demographic Methods across the Tree of
+Life, Salguero-Gomez R &amp; Gamelon M (eds.), Oxford University Press
+<a
+href="https://global.oup.com/academic/product/demographic-methods-across-the-tree-of-life-9780198838609?cc=de&amp;lang=en&amp;">https://global.oup.com/academic/product/demographic-methods-across-the-tree-of-life-9780198838609?cc=de&amp;lang=en&amp;</a>.</p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
