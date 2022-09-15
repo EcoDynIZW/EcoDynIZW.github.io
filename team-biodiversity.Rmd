@@ -29,9 +29,82 @@ knitr::include_graphics("img/team-div-header.png")
 
 ## Running Projects
 
-<b style='color:red;'>
--> add running project summaries with key literature
-</b>
+<div class='headerbox'><hbox>Field Projects</hbox></div>
+
+
+<div class='headerbox-secondary'><hbox-secondary>Malaysia; Borneo</div>
+
+**Current team & collaborators: Marwan Naciri (former MSc student), Montan Kalyahe (PhD candidate), Morgane GicPeople involved: Alzlan bin Mohamed, Roshan Guharajan, Jürgen Niedballa, Seth T Wong**
+
+**Local partners: Sabah Forestry Department, Ta Ann Holdings Berhad, WWF Malaysia (Sarawak)**
+
+In Malaysian Borneo we study how different anthropogenic drivers affect the occurrence and abundance of ground-dwelling mammal and bird communities. Since 2008, we have monitored mammalian communities over time in forest sites in various stages of recovering from severe logging impacts and under different forest management strategies. We compare the impacts of these strategies (i.e. mixed land-uses with industrial tree plantation and natural forest management, conventionally selective logging and reduced impact logging) at different spatial and temporal scales.
+
+Financial support: Federal Ministry of Education and Research (BMBF), Panthera, Point Defiance Zoo and Aquarium, Point Defiance Zoo Society, Mohamed bin Zayed Species Conservation Fund, International Association for Bear Research and Management
+
+<small>
+  <b>Key Publications:</b>
+  <ul>
+    <li>[Guharajan et al. (2021).  FOR ECOL MANAG](https://www.semanticscholar.org/paper/Sustainable-forest-management-is-vital-for-the-of-Guharajan-Mohamed/23023a67dcd41eb1c1baa29a51da0966bed806ec)</li>
+    <li>[Mathai et al. (2019). GLOB ECOL EVOL](https://www.sciencedirect.com/science/article/pii/S2351989418302981)</li>
+    <li>[Brozovic et al. (2018). Mammalian Biology](https://www.sciencedirect.com/science/article/abs/pii/S1616504718301320?via%3Dihub)</li>
+    <li>[Wong et al. (2018). Mammalian Biology](https://www.sciencedirect.com/science/article/abs/pii/S161650471730157X?via%3Dihub)</li>
+    <li>[Mathai et al. (2017). Mammalian Biology](https://www.sciencedirect.com/science/article/abs/pii/S1616504717301453?via%3Dihub)</li>
+    <li>[Sollmann et al. (2017). Diversity and Distributions](https://onlinelibrary.wiley.com/doi/10.1111/ddi.12530)</li>
+   </ul>
+</small>
+
+
+<div class='headerbox-secondary'><hbox-secondary>Viet Nam, Laos; Annamite region</div>
+
+**People involved: Andrew Tilker, An The Troung Nguyen, Than Van Nguyen, Jürgen Niedballa**
+
+**Local partners Viet Nam: WWF Vietnam, Save Vietnam’s Wildlife, Fauna & Flora International, Global Willife Conservation GWC, Re:wild, Southern Institute of Ecology SIE, Central Institute for Natural Resources and Environmental Studies, Vinh University**
+
+**Local partners Laos: WWF Laos, Project Anoulak**
+
+We want to learn more about the ecology of the little known Annamite endemics and understand what anthropogenic predictors drive the current distribution of these threatened species. In addition to habitat loss, unsustainable hunting is emerging as an increasingly important threat to tropical wildlife biodiversity. Due to pervasive hunting even many protected areas face massive species losses today. This widespread defaunation has been particularly severe in Indochina, where ‘industrial’ snaring has decimated wildlife populations drastically and driven many species to local extinction. Since 2014 we have implemented systematic camera-trapping and iDNA surveys across protected and non-protected areas within the Annamite ecoregion, an Indochinese biodiversity hotspot with an exceptionally high concentration of endemic mammals that, at the same time, face exposure to the highest hunting pressures. Using modern species distribution models we aim to identify and predict areas of particular conservation concern in order to support better conservation efforts by our partners.
+
+Financial support: Federal Ministry of Education and Research (BMBF), Point Defiance Zoo & Aquaria, National Geographic, Ocean Park Conservation Foundation, Manfred-Hermsen-Stiftung, Mohamed bin Zayed Species Conservation Fund, Eva Mayr-Stihl Stiftung
+
+<small>
+  <b>Key Publications:</b>
+  <ul>
+    <li>[Tilker et al. (2020). DIVERS DISTRIB](https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13029)</li>
+    <li>[Nguyen et al. (2019). NAT ECOL EVOL](https://www.nature.com/articles/s41559-019-1027-7)</li>
+    <li>[Tilker et al. (2019). COMMS BIOL](https://www.nature.com/articles/s42003-019-0640-y)</li>
+    <li>[Tilker et al. (2017). Science](https://www.science.org/doi/10.1126/science.aap9591)</li>
+   </ul>
+</small>
+
+
+<div class='headerbox'><hbox>Concepts & Methodology</hbox></div>
+
+
+<div class='headerbox-secondary'><hbox-secondary>Developing standardized and reliable survey tools to monitor mammals in tropical rainforests.</div>
+
+**People involved: Jan Axtner, Roshan Guharajan, Than Van Nguyen, Jürgen Niedballa, Azlan bin Mohamed, Badru Mugerwa, Andrew Tilker, Seth T Wong, Andreas Wilting**
+
+**Collaborators: Prof. Dr. Rahel Sollmann (University California, Davis, USA), Prof. Dr. Douglas Yu (University of East Anglia, Norwich, UK & Kunming University, Kunming, China), Dr. Jesse F Abrams (University of Exeter, Exeter, UK), Dr. Anirban Mukhopadhyay (Technische Universität Darmstadt, Darmstadt, Germany)**
+
+Studying biodiversity on a larger scale is essential to support political and conservation decisions. However, combining and integrating different biodiversity datasets into larger scale analyses is often challenging and associated with a loss of data accuracy and detail. We improve, develop and establish standardized methods and protocols to study and monitor biodiversity. Hereby we focus mainly on high-throughput methods that are applicable in tropical rainforests.
+ScreenForBio user guide
+
+<small>
+  <b>Key Publications:</b>
+  <ul>
+    <li>[Abrams et al. (2021). ECOGRAPHY](https://onlinelibrary.wiley.com/doi/10.1111/ecog.05577)</li>
+    <li>[Nguyen et al. (2021). ENVIRONMENTAL DNA](https://onlinelibrary.wiley.com/doi/10.1002/edn3.182)</li>
+    <li>[Wong et al. (2019). GLOBAL ECOL AND EVOL](https://www.sciencedirect.com/science/article/pii/S2351989419303099)</li>
+    <li>[Abrams et al. (2019). Journal of Applied Ecology](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.13411)</li>
+    <li>[Axtner et al. (2019). GigaScience](https://academic.oup.com/gigascience/article/8/4/giz029/5450733)</li>
+    <li>[Niedballa et al. (2019). Remote Sensing in Ecology and Conservation](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.107)</li>
+    <li>[Abrams et al. (2019). Ecological Informatics](https://www.sciencedirect.com/science/article/abs/pii/S1574954118302759?via%3Dihub)</li>
+    <li>[Bush et al. (2017). Nature Ecology & Evolution](https://www.nature.com/articles/s41559-017-0176)</li>
+    <li>[Mohd Salleh et al. (2017). Gigascience](https://academic.oup.com/gigascience/article/6/8/gix053/3958782)</li>
+    <li>[Niedballa et al. (2016). Niedballa](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12600)</li>
+   </ul>
+</small>
 
 ```{r, layout="l-screen"}
 knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
