@@ -25,7 +25,11 @@ knitr::opts_chunk$set(echo = FALSE)
   overflow: hidden;
   place-self: center;
   justify-content: center;
-  width: 100%;
+  -webkit-columns: 40px 2;
+  /* Chrome, Safari, Opera */
+  -moz-columns: 60px 2;
+  /* Firefox */
+  columns: 200px 2;
 }
 
 .card-wide {
@@ -36,12 +40,6 @@ knitr::opts_chunk$set(echo = FALSE)
   border-radius: 0.5rem;
   margin: auto;
   place-items: center;
-  -webkit-columns: 40px 2;
-  /* Chrome, Safari, Opera */
-  -moz-columns: 60px 2;
-  /* Firefox */
-  columns: 60px 2;
-  width: 100%;
   }
 
 </style>
