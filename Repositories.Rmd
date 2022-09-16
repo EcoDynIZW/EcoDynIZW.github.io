@@ -37,7 +37,7 @@ knitr::opts_chunk$set(echo = FALSE)
   place-items: center;
   -webkit-columns: 40px 2;
   /* Chrome, Safari, Opera */
-  -moz-columns: 60px 2;
+  -moz-columns: 100px 2;
   /* Firefox */
   columns: 400px 2;
   }
