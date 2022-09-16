@@ -19,8 +19,8 @@ knitr::opts_chunk$set(echo = FALSE)
   display: inline-grid;
   grid-template-columns: repeat(auto-fit, minmax(.5ch, 32ch));
   grid-gap: 1.5rem;
-  max-width: 80vw;
-  width: 110ch;
+  max-width: 20vw;
+  width: 210ch;
   padding: 3rem 1rem 5rem 1rem;
   overflow: hidden;
   place-self: center;
@@ -35,7 +35,7 @@ knitr::opts_chunk$set(echo = FALSE)
   border-radius: 0.5rem;
   margin: auto;
   place-items: center;
-  -webkit-columns: 40px 2;
+  -webkit-columns: 100px 2;
   /* Chrome, Safari, Opera */
   -moz-columns: 100px 2;
   /* Firefox */
