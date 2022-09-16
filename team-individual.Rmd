@@ -41,10 +41,8 @@ Unfortunately, commuting hyenas in the Serengeti can get killed by wire snares s
 
 **Current team & collaborators: Morgane Gicquel (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Viktoriia Radchuk (Dept. 6, IZW), Oliver Höner (Dept. 1, IZW), Adam Clark (University of Graz), Stephanie Kramer-Schadt (Dept. 6, IZW)**
 
+
 ![](img/hyenas_metzger_1.png){width=32.5%}
-<small>
-<ul>*Picture: Sonja Metzger*</ul>
-</small>
 ![](img/gicquel_2022_2.png){width=32.5%}
 
 
@@ -70,9 +68,6 @@ We investigate how ecological and social conditions (e.g. rainfall, maternal ran
 **Current team & collaborators: Miguel Veiga (PhD candidate), Susana Soares (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Joshua Dalijono (student helper), Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 3, IZW), Sarah Benhaiem, Jella Wauters (Dept. 4, IZW)**
 
 ![](img/hyenas_metzger_2.png){width=32.5%}
-<small>
-<ul>*Picture: Sonja Metzger*</ul>
-</small>
 ![](img/ferreira_2021.png){width=32.5%}
 
 We investigate the interactions between spotted hyenas and their pathogens, including their gastrointestinal parasitic community and viruses. We are particularly interested in the causes and consequences of infections in individuals, immunosenescence and the interactions between allostatic load (“stress”), immunity and infections.
@@ -97,9 +92,6 @@ We investigate the interactions between spotted hyenas and their pathogens, incl
 **Current team & collaborators: Marwan Naciri (former MSc student), Montan Kalyahe (PhD candidate), Morgane Gicquel (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Aimara Planillo (Dept. 6, IZW), Sarah Cubaynes (CEFE, Montpellier)**
 
 ![](img/hyenas_metzger_3.png){width=32.5%}
-<small>
-<ul>*Picture: Sonja Metzger*</ul>
-</small>
 ![](img/gicquel_2022_3.png){width=32.5%}
 
 We are interested in assessing the effects of illegal bushmeat hunting (snaring), roadkills and changes in rainfall patterns driven by global warming on spotted hyenas. We also investigate the factors that influence the likelihood of predation on livestock and consumption of discarded livestock ‘waste’. 
@@ -122,9 +114,6 @@ We are interested in assessing the effects of illegal bushmeat hunting (snaring)
 **Current team & collaborators: Alexandra Weyrich (Dept. 2, IZW, PI), Colin Vullioud (Dept. 2, IZW), Jörns Fickel (Dept. 2, IZW), Lena Ruf (Dept. 2, IZW), Nick Mewes (Dept. 2, IZW), Sarah Benhaiem, Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 2, IZW), Emmanuel Heitlinger (Humboldt University), Jerzy Adamski (Helmholtz-Center Munich), Alexander Cecil (Helmholtz-Center Munich), Moshe Szyf (McGill University), Yoav Soen (Weizmann Institute of Science)**
 
 ![](img/hyenas_metzger_4.png){width=32.5%}
-<small>
-<ul>*Picture: Sonja Metzger*</ul>
-</small>
 ![](img/guerrero_2021.png){width=32.5%}
 
 We investigate if DNA methylation is a main mechanism through which an individual’s social environment regulates gene expression and physiological responses. We hypothesize that changes in social status will led to changes in epigenetic patterns. To test our hypotheses, we study the DNA methylation patterns in the spotted hyena.
