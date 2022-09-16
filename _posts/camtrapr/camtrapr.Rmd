@@ -2,7 +2,7 @@
 title: "camtrapR"
 description: |
   Manage camera trap data in R
-preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex_camtrapr_small.png
+preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex_camtrapr.png
 author:
   - name: Jürgen Niedballa
     affiliation: IZW Berlin
