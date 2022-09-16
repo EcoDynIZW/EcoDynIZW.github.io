@@ -44,7 +44,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](img/Marescot_Franz_Benhaiem_2021.png){width=100%}</div>
 
 <div class="card-content">The purpose of our conceptual model was to assess whether and how an age-dependent pattern of between-group interactions, which increases social network modularity, consistently increased the probability of epidemic fade-out across a large range of host and pathogen life history traits.</div>
-    </li>
+
   
 </ul>
 
