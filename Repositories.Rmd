@@ -20,16 +20,11 @@ knitr::opts_chunk$set(echo = FALSE)
   grid-template-columns: repeat(auto-fit, minmax(.5ch, 32ch));
   grid-gap: 1.5rem;
   max-width: 20vw;
-  width: 210ch;
+  width: 100%;
   padding: 3rem 1rem 5rem 1rem;
   overflow: hidden;
   place-self: center;
-  justify-content: center;
-  -webkit-columns: 40px 2;
-  /* Chrome, Safari, Opera */
-  -moz-columns: 60px 2;
-  /* Firefox */
-  columns: 200px 2;
+  
 }
 
 .card-wide {
@@ -40,20 +35,26 @@ knitr::opts_chunk$set(echo = FALSE)
   border-radius: 0.5rem;
   margin: auto;
   place-items: center;
+  justify-content: center;
+  -webkit-columns: 40px 2;
+  /* Chrome, Safari, Opera */
+  -moz-columns: 60px 2;
+  /* Firefox */
+  columns: 200px 2;
   }
 
 </style>
 
 
 <ul class="card-wrapper-wide">
-   <liw class="card-wide">
+   <li class="card-wide">
 <div class="card-content">Marescot, Franz, Benhaiem et al. 2021 [*J Anim Ecol*](https://doi.org/10.1111/1365-2656.13555)   [Code](https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol) 
 
 
 ![](img/Marescot_Franz_Benhaiem_2021.png){width=100%}</div>
 
 <div class="card-content">The purpose of our conceptual model was to assess whether and how an age-dependent pattern of between-group interactions, which increases social network modularity, consistently increased the probability of epidemic fade-out across a large range of host and pathogen life history traits.</div>
-  </div>
+    </li>
   
 </ul>
 

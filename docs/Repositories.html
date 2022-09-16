@@ -2668,16 +2668,11 @@ Research
   grid-template-columns: repeat(auto-fit, minmax(.5ch, 32ch));
   grid-gap: 1.5rem;
   max-width: 20vw;
-  width: 210ch;
+  width: 100%;
   padding: 3rem 1rem 5rem 1rem;
   overflow: hidden;
   place-self: center;
-  justify-content: center;
-  -webkit-columns: 40px 2;
-  /* Chrome, Safari, Opera */
-  -moz-columns: 60px 2;
-  /* Firefox */
-  columns: 200px 2;
+  
 }
 
 .card-wide {
@@ -2688,11 +2683,17 @@ Research
   border-radius: 0.5rem;
   margin: auto;
   place-items: center;
+  justify-content: center;
+  -webkit-columns: 40px 2;
+  /* Chrome, Safari, Opera */
+  -moz-columns: 60px 2;
+  /* Firefox */
+  columns: 200px 2;
   }
 
 </style>
 <ul class="card-wrapper-wide">
-<liw class="card-wide">
+<li class="card-wide">
 <div class="card-content">
 <p>Marescot, Franz, Benhaiem et al. 2021 <a
 href="https://doi.org/10.1111/1365-2656.13555"><em>J Anim Ecol</em></a>
@@ -2707,7 +2708,7 @@ social network modularity, consistently increased the probability of
 epidemic fade-out across a large range of host and pathogen life history
 traits.
 </div>
-</div>
+<pre><code>&lt;/li&gt;</code></pre>
 </ul>
 <ul class="card-wrapper-wide">
 <li class="card-wide">
@@ -2774,7 +2775,7 @@ recovery time for the population following the epidemic.
 </div>
 </li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
+<div class="sourceCode" id="cb2"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
