@@ -1,5 +1,5 @@
 ---
-title: "Bacteriological analysis to quantify the total and feather-degrading bacterial loads on feather samples of swallows and starlings"
+title: "Feather analysis of swallows and starlings"
 description: ""
 ---
 Dipl. Biol Marius Grabow/ Dr. Conny Landgraf

@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Isorix"]},{"type":"character","attributes":{},"value":["Building isoscapes and inferring geographic origins on isotopic ratios"]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex_isorix.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Alexandre Courtiol"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-09-12"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Isorix"]},{"type":"character","attributes":{},"value":["Building isoscapes and inferring geographic origins on isotopic ratios"]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-isorix.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Alexandre Courtiol"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-09-12"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2678,82 +2678,60 @@ Research
 <h1>Isorix</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Building isoscapes and inferring geographic origins on isotopic
-ratios</p></p>
+<p><p>Building isoscapes and inferring geographic origins on isotopic ratios</p></p>
 </div>
 
 <div class="d-byline">
-  Alexandre Courtiol  (IZW Berlin)<a
-href="https://ecodynizw.github.io/EcoDynIZW"
-class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
+  Alexandre Courtiol  (IZW Berlin)<a href="https://ecodynizw.github.io/EcoDynIZW" class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
   
 <br/>2022-09-12
 </div>
 
 <div class="d-article">
-<h2 id="how-to-download-and-install-isorix">How to download and install
-<a href="https://github.com/courtiol/IsoriX">IsoriX</a>?</h2>
-<p>You can download and install the stable version of IsoriX directly
-from within R by typing:</p>
+<h2 id="how-to-download-and-install-isorix">How to download and install <a href="https://github.com/courtiol/IsoriX">IsoriX</a>?</h2>
+<p>You can download and install the stable version of IsoriX directly from within R by typing:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"IsoriX"</span>, dependencies <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<p>Note: if you get into troubles due to gmp, magick, maps, maptools,
-RandomFields, rgeos, or rgl, retry using simply:</p>
+<p>Note: if you get into troubles due to gmp, magick, maps, maptools, RandomFields, rgeos, or rgl, retry using simply:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"IsoriX"</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<p>These packages offer additional functionalities but some of them are
-particularly difficult to install on some systems.</p>
-<p>If you want the development version of IsoriX, you can download and
-install it by typing:</p>
+<p>These packages offer additional functionalities but some of them are particularly difficult to install on some systems.</p>
+<p>If you want the development version of IsoriX, you can download and install it by typing:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>remotes</span><span class='fu'>::</span><span class='fu'><a href='https://remotes.r-lib.org/reference/install_github.html'>install_github</a></span><span class='op'>(</span><span class='st'>"courtiol/IsoriX/IsoriX"</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<p>Mind that you need the R package remotes to be installed for that to
-work. Mind also that the development version, being under development,
-can sometimes be broken. So before downloading it make sure that the
-current build status is build passing. The current built status is
-provided at the top of this readme document.</p>
-<p>Also, if you access the network via a proxy, you may experience
-troubles with install_github. In such case try something like:</p>
+<p>Mind that you need the R package remotes to be installed for that to work. Mind also that the development version, being under development, can sometimes be broken. So before downloading it make sure that the current build status is build passing. The current built status is provided at the top of this readme document.</p>
+<p>Also, if you access the network via a proxy, you may experience troubles with install_github. In such case try something like:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://httr.r-lib.org/'>httr</a></span><span class='op'>)</span></span>
 <span><span class='fu'><a href='https://httr.r-lib.org/reference/with_config.html'>with_config</a></span><span class='op'>(</span><span class='fu'><a href='https://httr.r-lib.org/reference/use_proxy.html'>use_proxy</a></span><span class='op'>(</span><span class='st'>"192.168.2.2:3128"</span><span class='op'>)</span>, <span class='fu'>devtools</span><span class='fu'>::</span><span class='fu'><a href='https://remotes.r-lib.org/reference/install_github.html'>install_github</a></span><span class='op'>(</span><span class='st'>"courtiol/IsoriX/IsoriX"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<p>Off course, unless you are in the same institute than some of us,
-replace the numbers with your proxy settings! Where to learn about
-IsoriX?</p>
+<p>Off course, unless you are in the same institute than some of us, replace the numbers with your proxy settings!
+Where to learn about IsoriX?</p>
 <p>You can start by reading our bookdown!</p>
-<p>Then, if may not be a bad idea to also have a look at our papers:
-here and there.</p>
-<p>Another great source of help is our mailing list. First register for
-free (using your Google account) and then feel free to send us
-questions.</p>
-<p>For specific help on IsoriX functions and objects, you should also
-check the documentation embedded in the package:</p>
+<p>Then, if may not be a bad idea to also have a look at our papers: here and there.</p>
+<p>Another great source of help is our mailing list. First register for free (using your Google account) and then feel free to send us questions.</p>
+<p>For specific help on IsoriX functions and objects, you should also check the documentation embedded in the package:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/help.html'>help</a></span><span class='op'>(</span>package <span class='op'>=</span> <span class='st'>"IsoriX"</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<p>in R after having installed and attached (= loaded) the package. How
-can you contribute?</p>
-<p>There are plenty way you can contribute! If you are fluent in R
-programming, you can improve the code and develop new functions. If you
-are not so fluent, you can still edit the documentation files to make
-them more complete and clearer, write new vignettes, report bugs or make
-feature requests. Some useful links</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>in R after having installed and attached (= loaded) the package.
+How can you contribute?</p>
+<p>There are plenty way you can contribute! If you are fluent in R programming, you can improve the code and develop new functions. If you are not so fluent, you can still edit the documentation files to make them more complete and clearer, write new vignettes, report bugs or make feature requests.
+Some useful links</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

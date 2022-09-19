@@ -113,7 +113,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["imageseg"]},{"type":"character","attributes":{},"value":["Deep learning image segmentation\n"]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/imageseg-hex.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Jürgen Niedballa"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-09-12"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["imageseg"]},{"type":"character","attributes":{},"value":["Deep learning image segmentation\n"]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-imageseg.png"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Jürgen Niedballa"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-09-12"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -189,6 +189,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1261,15 +1262,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1506,33 +1513,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-byline">
-  Jürgen Niedballa  (IZW Berlin)<a
-href="https://ecodynizw.github.io/EcoDynIZW"
-class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
+  Jürgen Niedballa  (IZW Berlin)<a href="https://ecodynizw.github.io/EcoDynIZW" class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
   
 <br/>2022-09-12
 </div>
 
 <div class="d-article">
-<h2 id="imageseg"><a
-href="https://github.com/EcoDynIZW/imageseg">imageseg</a></h2>
-<p>R package for deep learning image segmentation using the U-Net model
-architecture by Ronneberger (2015), implemented in Keras and TensorFlow.
-It provides pre-trained models for forest structural metrics (canopy
-density and understory vegetation density) and a workflow to apply these
-on custom images.</p>
-<p>In addition, it provides a workflow for easily creating model input
-and model architectures for general-purpose image segmentation based on
-the U-net architecture. Model can be trained on grayscale or color
-images, and can provide binary or multi-class image segmentation as
-output.</p>
-<p>The package can be found on <a
-href="https://cran.r-project.org/web/packages/imageseg/index.html">CRAN</a>.</p>
-<p>The preprint of the paper describing the package is available on <a
-href="https://doi.org/10.1101/2021.12.16.469125">bioRxiv</a>.</p>
+<h2 id="imageseg"><a href="https://github.com/EcoDynIZW/imageseg">imageseg</a></h2>
+<p>R package for deep learning image segmentation using the U-Net model architecture by Ronneberger (2015), implemented in Keras and TensorFlow. It provides pre-trained models for forest structural metrics (canopy density and understory vegetation density) and a workflow to apply these on custom images.</p>
+<p>In addition, it provides a workflow for easily creating model input and model architectures for general-purpose image segmentation based on the U-net architecture. Model can be trained on grayscale or color images, and can provide binary or multi-class image segmentation as output.</p>
+<p>The package can be found on <a href="https://cran.r-project.org/web/packages/imageseg/index.html">CRAN</a>.</p>
+<p>The preprint of the paper describing the package is available on <a href="https://doi.org/10.1101/2021.12.16.469125">bioRxiv</a>.</p>
 <h2 id="installation">Installation</h2>
-<p>First, install the R package “R.rsp” which enables the static
-vignettes.</p>
+<p>First, install the R package “R.rsp” which enables the static vignettes.</p>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
@@ -1540,54 +1533,38 @@ vignettes.</p>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
-<p>Alternatively you can install from GitHub (requires remotes package
-and R.rsp):</p>
+<p>Alternatively you can install from GitHub (requires remotes package and R.rsp):</p>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
-<p>Using imageseg requires Keras and TensorFlow. See the vignette for
-information about installation and initial setup:</p>
+<p>Using imageseg requires Keras and TensorFlow. See the vignette for information about installation and initial setup:</p>
 <h2 id="tutorial">Tutorial</h2>
 <p>See the vignette for an introduction and tutorial to imageseg.</p>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
-<p>The vignette covers: - Installation and setup - Sample workflow for
-canopy density assessments - Training new models - Continued training of
-existing models - Multi-class image segmentation models - Image
-segmentation based on grayscale images</p>
-<h2 id="forest-structure-model-download">Forest structure model
-download</h2>
-<p>The models, example predictions, training data and R script for model
-training for both the canopy and understory model are available from
-Dryad as a single <a
-href="https://doi.org/10.5061/dryad.x0k6djhnj">download</a>.</p>
+<p>The vignette covers:
+- Installation and setup
+- Sample workflow for canopy density assessments
+- Training new models
+- Continued training of existing models
+- Multi-class image segmentation models
+- Image segmentation based on grayscale images</p>
+<h2 id="forest-structure-model-download">Forest structure model download</h2>
+<p>The models, example predictions, training data and R script for model training for both the canopy and understory model are available from Dryad as a single <a href="https://doi.org/10.5061/dryad.x0k6djhnj">download</a>.</p>
 <p>See the “Usage Notes” section for details on the dataset.</p>
-<p>The models and script (without the training data) are also hosted on
-Zenodo and can be downloaded individually from <a
-href="https://doi.org/10.5281/zenodo.6861157">zenodo</a>.</p>
-<p>The pre-trained models for forest canopy density and understory
-vegetation density are available for download. The zip files contain the
-model (as .hdf5 files) and example classifications to give an impression
-of model performance and output:</p>
-<p><a
-href="https://zenodo.org/record/6861157/files/imageseg_canopy_model.zip?download=1">Canopy
-model</a></p>
-<p><a
-href="https://zenodo.org/record/6861157/files/imageseg_understory_model.zip?download=1">Understory
-model</a></p>
-<p>Please see the vignette for further information on how to use these
-models. Training data download</p>
-<p>Training data for both the canopy and understory model are included
-in the Dryad dataset download in the zip files:</p>
+<p>The models and script (without the training data) are also hosted on Zenodo and can be downloaded individually from <a href="https://doi.org/10.5281/zenodo.6861157">zenodo</a>.</p>
+<p>The pre-trained models for forest canopy density and understory vegetation density are available for download. The zip files contain the model (as .hdf5 files) and example classifications to give an impression of model performance and output:</p>
+<p><a href="https://zenodo.org/record/6861157/files/imageseg_canopy_model.zip?download=1">Canopy model</a></p>
+<p><a href="https://zenodo.org/record/6861157/files/imageseg_understory_model.zip?download=1">Understory model</a></p>
+<p>Please see the vignette for further information on how to use these models.
+Training data download</p>
+<p>Training data for both the canopy and understory model are included in the Dryad dataset download in the zip files:</p>
 <p><em>imageseg_canopy_training_data.zip</em>
 <em>imageseg_understory_training_data.zip</em></p>
-<p>For details, please see the Usage Notes and the info.txt files
-contained in the zip files.</p>
-<p>The training data are not required for users who only wish to use the
-pre-trained models on their own images.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>For details, please see the Usage Notes and the info.txt files contained in the zip files.</p>
+<p>The training data are not required for users who only wish to use the pre-trained models on their own images.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
