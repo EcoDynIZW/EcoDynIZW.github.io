@@ -35,6 +35,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 </style>
 
+<ul class="card-wrapper-wide">
+   <li class="card-wide">
+<div class="card-content">![](img/Marescot_Franz_Benhaiem_2021.png){width=100%}</div>
+
+<div class="card-content"> Marescot L, Franz M, Benhaiem S, Hofer H, Scherer C, East ML & Kramer-Schadt S (2021). ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. Journal of Animal Ecology, 90, 2523– 2535. doi:<span>[10.1111/1365-2656.13555](https://doi.org/10.1111/1365-2656.13555)</span></br>
+[*J Anim Ecol*](https://doi.org/10.1111/1365-2656.13555)</br>
+[Code](https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol)</div>
+
+
+</ul>
+
 
 <ul class="card-wrapper-wide">
    <li class="card-wide">
