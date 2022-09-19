@@ -1,0 +1,23 @@
+---
+title: "Msc/Bsc Theses 2021"
+description: ""
+---
+
+**2021**
+
+* Modelling Eurasian red squirrel (*Sciurus vulgaris*) occurrence along urban gradients in Berlin. **Marius Grabow.** <span class='desaturated'>29.09.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Louvrier J (IZW), Kramer-Schadt S.</span> **&rarr; Prize for best Master thesis!**
+
+* Accuracy of a new high throughput wildlife movement tracking system in comparison with GPS tracking. **Johannes Marold.** <span class='desaturated'>16.09.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Radchuk V (IZW), Kramer-Schadt S.</span>
+
+* Density and life-history of the Sunda clouded leopard *Neofelis diardi* in the Deramakot Forest Complex, Sabah, Malaysia. **Katharina Kasper.** <span class='desaturated'>30.08.2021. MSc. Goethe-Universität Frankfurt am Main. Supervision: Thomas Müller (SBiK-F), Andreas Wilting (IZW).</span>
+
+* Evaluating the habitat suitability of tiger in Bardia National Park and Buffer Zone areas, Nepal. **Kamal Ghimire.** <span class='desaturated'>18.08.2021. MSc. TU Dresden. Tropical Forestry. Supervision: Berger U (TUD), Kramer-Schadt S.</span>
+
+* Small-Scale Habitat Selection of the European Wildcat *Felis silvestris silvestris* in the Bernese Seeland, Switzerland. **Johanna Bellack.** <span class='desaturated'>26.06.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Maronde L (KORA), Kramer-Schadt S.</span>
+
+* Effect of artificial light at night (ALAN) on behaviour of the European hedgehog (*Erinaceus europaeus Linnaeus*, 1758) in the urban area of Berlin. **Briseida Lozano Granados.** <span class='desaturated'>15.05.2021. MSc. TU Berlin. Urban Ecology. Supervision: Berger A, Kramer-Schadt S.</span>
+
+* What contribution can non-standardized Citizen Science data make in biodiversity monitoring? **Lena Fiechter.** <span class='desaturated'>21.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Planillo A, Kramer-Schadt S, Heucke-Voigt S (MfN).</span>
+
+* A habitat suitability model for Grey Crowned Cranes (*Balearica regulorum*) in Rwanda based on sightings. **Ann-Marie Attenberger.** <span class='desaturated'>04.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Olivier Nsengimana (RWCA), Kramer-Schadt S, vd Lippe M (TUB).</span>
+

@@ -147,7 +147,7 @@ hbox-secondary{
 }
 
 .desaturated {
-  color: #ababab;
+  color: #8c8c8c;
   font-weight: 200;
 }
 
@@ -262,6 +262,14 @@ li.card {
 .card h2 {
   padding-bottom: .3rem;
   font-size: 1.6rem;
+}
+
+.posts-list .post-preview .thumbnail {
+  max-width: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 769px) {

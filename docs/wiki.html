@@ -787,6 +787,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1859,15 +1860,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2292,7 +2299,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   .desaturated {
-    color: #ababab;
+    color: #8c8c8c;
     font-weight: 200;
   }
 
@@ -2407,6 +2414,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .card h2 {
     padding-bottom: .3rem;
     font-size: 1.6rem;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    max-width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   @media screen and (min-width: 769px) {
@@ -2612,7 +2627,6 @@ Teams
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="teams-overview.html">Overview</a>
 <a href="team-individual.html">Team 1: Individual Dynamics</a>
 <a href="team-population.html">Team 2: Population Dynamics</a>
 <a href="team-biodiversity.html">Team 3: Biodiversity Dynamics</a>
@@ -2626,12 +2640,13 @@ Research
 </button>
 <div class="nav-dropdown-content">
 <a href="publications.html">Publications</a>
-<a href="competences.html">Competences</a>
+<a href="Repositories.html">Repositories</a>
 <a href="doctoral-theses.html">Doctoral Theses</a>
 <a href="msc-bsc-theses.html">Msc/Bsc Theses</a>
 </div>
 </div>
 <a href="guidelines.html">Guidelines</a>
+<a href="teaching.html">Teaching</a>
 <a href="wiki.html">Wiki</a>
 <a href="https://twitter.com/EcoDynIZW">
 <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -2782,6 +2797,74 @@ function init_posts_list() {
 <div class="posts-container posts-apply-limit l-page">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Wiki">Wiki</h1>
+<a href="posts/camtrapr/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Sept. 12, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Jürgen Niedballa</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex_camtrapr_small.png"/>
+</div>
+<div class="description">
+<h2>camtrapR</h2>
+<div class="dt-tags"></div>
+<p>Manage camera trap data in R</p>
+</div>
+</a>
+<a href="posts/imageseg/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Sept. 12, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Jürgen Niedballa</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/imageseg-hex.png"/>
+</div>
+<div class="description">
+<h2>imageseg</h2>
+<div class="dt-tags"></div>
+<p>Deep learning image segmentation</p>
+</div>
+</a>
+<a href="posts/isorix/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Sept. 12, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Alexandre Courtiol</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex_isorix.png"/>
+</div>
+<div class="description">
+<h2>Isorix</h2>
+<div class="dt-tags"></div>
+<p>Building isoscapes and inferring geographic origins on isotopic ratios</p>
+</div>
+</a>
+<a href="posts/nlmr/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Sept. 12, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">ropensci</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex_nlmr-2.png"/>
+</div>
+<div class="description">
+<h2>NLMR</h2>
+<div class="dt-tags"></div>
+<p>NLMR is an R package for simulating neutral landscape models (NLM). Designed to be a generic framework like NLMpy, it leverages the ability to simulate the most common NLM that are described in the ecological literature. NLMR builds on the advantages of the raster package and returns all simulation as RasterLayer objects, thus ensuring a direct compatibility to common GIS tasks and a flexible and simple usage. Furthermore, it simulates NLMs within a self-contained, reproducible framework.</p>
+</div>
+</a>
 <a href="posts/d6package/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
@@ -2833,8 +2916,7 @@ reading what we have to say and share!</p>
 
 
 <div class="d-article">
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2852,7 +2934,7 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <div class="distill-site-nav distill-site-footer">
 <p>© Department of Ecological Dynamics, Leibniz Institute for Zoo- and
 Wildlife Research 2020—2022. All rights reserved.</p>
-<p><a href='https://ecodynizw.github.io/EcoDynIZW/impressum.html'><u>Impressum</u></a></p>
+<p><a href='https://ecodynizw.github.io/EcoDynIZW/Impressum.html'><u>Impressum</u></a></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 

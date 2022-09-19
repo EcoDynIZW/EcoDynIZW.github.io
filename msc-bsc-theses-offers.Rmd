@@ -1,0 +1,42 @@
+---
+title: "Msc/Bsc Theses Offers"
+description: ""
+---
+
+### Bacteriological analysis to quantify the total and feather-degrading bacterial loads on feather samples of swallows and starlings
+
+(contact <a href="mailto:grabow@izw-berlin.de">grabow[at]izw-berlin.de</a> or <a href="mailtolLandgraf@izw-berlin.de">landgraf[at]izw-berlin.de</a>)
+
+**General background**
+
+Parasites are ubiquitous, shaping host traits and behaviours such as movement. While parasite dynamics and host movements are often studied at large scales, e.g. migratory behaviour, our knowledge of the implications at fine scales, e.g. local movements during breeding, remains scarce. We hypothesize that parasites are proximate drivers of individual movement decisions, altering the way hosts allocate their energy, and ultimately influencing foraging, competition and fitness. 
+The overarching project aims to understand how fitness consequences of parasites are reflected by individual movement decisions and the surrounding environment. By accounting for a broad range of parasites, high resolution animal movement data and individual trait measures of passerines (swallows and starlings) we follow an integrative approach to model effects of host–parasite interactions in agricultural landscapes. [read more](msc-bsc-theses-bactiria_starlings_swallows_grabow.html)&ensp;
+
+
+### Assessing resource-mediated movement strategies of breeding starlings
+
+(contact <a href="mailto:grabow@izw-berlin.de">grabow[at]izw-berlin.de</a>)
+
+Reproduction and survival are key elements in the life-history of individuals and have significant impact on fitness of populations. Among other species, the Common Starling (Sturnus vulgaris) is declining in Europe mainly due to agricultural intensification and associated loss of biodiversity, which is decreased habitat quality in the face of foraging quality (Heldbjerg et al., 2017). During breeding season of birds, foraging movements of parents play a substantial role regarding reproduction success and survival of nestlings. [read more](msc-bsc-theses-starlings_grabow.html)&ensp;
+
+
+### Effects of beavers on amphibian communities along the anthropogenic gradient
+
+(contact <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>)
+
+Due to their dam-building activity, beavers affect other species in diverse ways, ranging from positive to negative effects. Although effects of beaver activity on several taxa were studied, our understanding of their effects on amphibian assemblages is still incomplete. Especially little is understood how effects of beaver activity on amphibians may be moderated by the gradient of anthropogenic disturbance (represented by human population density). [read more](msc-bsc-theses-amphibian_radchuk.html)&ensp;
+
+
+### Quantifying demographic resilience across animals
+
+(contact <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>)
+
+Assessing demographic resilience is crucial to assist the conservation of populations and species. A recently proposed method to quantify demographic resilience is based on using average population matrices over time to calculate a single demographic resilience metric. This neglects the fact that the resilience of a population may change over time and is driven by population responses to disturbances, which may also change over time. [read more](msc-bsc-theses-resilience_radchuk.html)&ensp;
+
+
+### The chicken or the egg: Population cycles of rodents
+
+(contact <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>)
+
+Although population cycles received much research interest, we still poorly understand how the demographic structure of the population, i.e. sex ratio and age structure, are changing along the cycle. This is partly because in rodents, which became models for studying population cycles, the field data are typically collected at the coarse yearly resolution.  [read more](msc-bsc-theses-rodents_radchuk.html)&ensp;
+

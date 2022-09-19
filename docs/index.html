@@ -790,6 +790,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1862,15 +1863,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2295,7 +2302,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
 
   .desaturated {
-    color: #ababab;
+    color: #8c8c8c;
     font-weight: 200;
   }
 
@@ -2410,6 +2417,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .card h2 {
     padding-bottom: .3rem;
     font-size: 1.6rem;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    max-width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   @media screen and (min-width: 769px) {
@@ -2626,7 +2641,6 @@ Teams
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="teams-overview.html">Overview</a>
 <a href="team-individual.html">Team 1: Individual Dynamics</a>
 <a href="team-population.html">Team 2: Population Dynamics</a>
 <a href="team-biodiversity.html">Team 3: Biodiversity Dynamics</a>
@@ -2640,12 +2654,13 @@ Research
 </button>
 <div class="nav-dropdown-content">
 <a href="publications.html">Publications</a>
-<a href="competences.html">Competences</a>
+<a href="Repositories.html">Repositories</a>
 <a href="doctoral-theses.html">Doctoral Theses</a>
 <a href="msc-bsc-theses.html">Msc/Bsc Theses</a>
 </div>
 </div>
 <a href="guidelines.html">Guidelines</a>
+<a href="teaching.html">Teaching</a>
 <a href="wiki.html">Wiki</a>
 <a href="https://twitter.com/EcoDynIZW">
 <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -2665,97 +2680,44 @@ Research
 <h1>Ecological Dynamics</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>Department 6 at Leibniz Institute for Zoo and Wildlife Research
-(IZW)</p>
+<p>Department 6 at Leibniz Institute for Zoo and Wildlife Research (IZW)</p>
 </div>
 
 
 <div class="d-article">
 <h1 id="welcome-to-d6">Welcome to D6!</h1>
-<p>We are scientists of the Department of Ecological Dynamics at the <a
-href="https://www.izw-berlin.de/en/home.html">Leibniz Institute for Zoo
-and Wildlife Research in Berlin</a>, Germany. Our research is focused on
-understanding ecological dynamics in space and time, at different levels
-of organisation, from individuals to communities, and across gradients
-of human altered environments. We investigate how fitness consequences
-of processes acting at the individual level, such as social behaviour or
-movements, competition, predator-prey or host-pathogen interactions,
-shape population and community dynamics, also at evolutionary
-scales.</p>
+<p>We are scientists of the Department of Ecological Dynamics at the <a href="https://www.izw-berlin.de/en/home.html">Leibniz Institute for Zoo and Wildlife Research in Berlin</a>, Germany. Our research is focused on understanding ecological dynamics in space and time, at different levels of organisation, from individuals to communities, and across gradients of human altered environments. We investigate how fitness consequences of processes acting at the individual level, such as social behaviour or movements, competition, predator-prey or host-pathogen interactions, shape population and community dynamics, also at evolutionary scales. <strong>Follow us on <a href="https://twitter.com/EcoDynIZW">Twitter</a> and <a href="https://github.com/EcoDynIZW">GitHub</a>.</strong></p>
 <ul class="card-wrapper">
 <li class="card">
 <h2 id="our-vision">Our Vision</h2>
 <div class="card-content">
-Our ultimate goal is to predict the <strong>future viability of wildlife
-populations, species, and communities</strong> faced with accelerating
-environmental change in the anthropocene and to improve landscape scale
-planning for conservation.
+Our ultimate goal is to predict the <strong>future viability of wildlife populations, species, and communities</strong> faced with accelerating environmental change in the anthropocene and to improve landscape scale planning for conservation.
 </div>
 </li>
 <li class="card">
 <h2 id="our-mission">Our Mission</h2>
 <div class="card-content">
-We advance theory and concepts in ecology and evolution as well as the
-use of computational toolkits by developing and using a wide range of
-modern field and lab techniques and dynamic and simulation modeling.
+We advance theory and concepts in ecology and evolution as well as the use of computational toolkits by developing and using a wide range of modern field and lab techniques and dynamic and simulation modeling.
 </div>
 </li>
 <li class="card">
 <h2 id="our-teams">Our Teams</h2>
 <div class="card-content">
-We are organized in three teams spanning all levels from <a
-href="https://ecodynizw.github.io/team-individual.html">individuals</a>
-to <a
-href="https://ecodynizw.github.io/team-population.html">populations</a>
-to <a
-href="https://ecodynizw.github.io/team-biodiversity.html">communities</a>.
-Check out the three team pages for an overview of our current projects,
-group activities, and our latest publications!
+We are organized in three teams spanning all levels from <a href="https://ecodynizw.github.io/team-individual.html">individuals</a> to <a href="https://ecodynizw.github.io/team-population.html">populations</a> to <a href="https://ecodynizw.github.io/team-biodiversity.html">communities</a>. Check out the three team pages for an overview of our current projects, group activities, and our latest publications!
 </div>
 </li>
 </ul>
 <div class="layout-chunk" data-layout="l-screen">
-<p><img src="img/meckpom-csf-inferno-cut-top.png" width="2048" /></p>
+<p><img src="img/meckpom-csf-inferno-cut-top.png" width="1966" /></p>
 </div>
-<h2 id="news">News</h2>
-<h3 id="featured-publications">Featured Publications</h3>
-<ul>
-<li>Marescot, Franz, Benhaiem et al. 2021 <a
-href="https://doi.org/10.1111/1365-2656.13555"><em>J Anim Ecol</em></a>
-— <a
-href="https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol">Code</a></li>
-<li>Kürschner et al. 2021 <a
-href="http://doi.org/10.1002/ece3.7478"><em>Ecol Evol</em></a> — <a
-href="https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol">Code</a></li>
-<li>Scherer et al. 2020 <a
-href="http://doi.org/10.1111/oik.07002"><em>OIKOS</em></a> — <a
-href="https://github.com/EcoDynIZW/Scherer_2020_OIKOS">Code</a></li>
-<li>Radchuk et al. 2019 <a
-href="http://doi.org/10.1038/s41467-019-10924-4"><em>Nat Com</em></a> —
-<a href="https://github.com/EcoDynIZW/Radchuk_2019_NatCom">Code</a></li>
-<li>Benhaiem et al. 2018 <a
-href="http://doi.org/10.1038/s42003-018-0197-1"><em>Comms Biol</em></a>
-— <a
-href="https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio">Code</a></li>
-</ul>
-<h3 id="contributions-to-r-packages">Contributions to R Packages</h3>
-<ul>
-<li><a href="https://github.com/EcoDynIZW/d6">d6</a>: Simplify workflows
-at our department</li>
-<li><a href="https://github.com/EcoDynIZW/d6berlin">d6berlin</a>:
-Template maps for Berlin</li>
-<li><a href="https://github.com/jniedballa/camtrapR">camtrapR</a>:
-Manage camera trap data in R</li>
-<li><a href="https://github.com/ropensci/NLMR">NLMR</a>: Simulate
-neutral landscape models</li>
-<li><a href="https://github.com/courtiol/IsoriX">Isorix</a>: Building
-isoscapes and inferring geographic origins on isotopic ratios</li>
-<li><a href="https://github.com/EcoDynIZW/imageseg">imageseg</a>: Deep
-learning image segmentation</li>
-</ul>
+<p>Get an overview of our teams, field sites and research themes.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/teams-map.png" width="1475" style="background-color: #efefef; padding:5px; display: inline-block;" /></p>
+</div>
+<p>We follow the <a href="https://www.nature.com/articles/sdata201618">FAIR principles</a> and provide code and data of published papers in our github <a href="https://github.com/orgs/EcoDynIZW/repositories.html">repositories</a>.</p>
 <p><br></p>
 <div class="layout-chunk" data-layout="l-screen">
-<p><img src="img/meckpom-csf-inferno-cut-bottom.png" width="2048" /></p>
+<p><img src="img/meckpom-csf-inferno-cut-bottom.png" width="1966" /></p>
 </div>
 <h2 class="appendix" id="address">Address</h2>
 <p>Leibniz Institute for Zoo and Wildlife Research<br />
@@ -2763,8 +2725,8 @@ Department of Ecological Dynamics<br />
 Alfred-Kowalke-Str. 17<br />
 D-10315 Berlin, Germany</p>
 <div class="layout-chunk" data-layout="l-screen-inset shaded">
-<div id="htmlwidget-1b19a15b37715e9ab2e0" style="width:624px;height:384px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1b19a15b37715e9ab2e0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[52.5062,13.5211],4,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Voyager",null,"Default Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stamen.Terrain",null,"Terrain Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Dark Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[52.506286189884,13.5211671539743,"<b>Leibniz Institute for<br>Zoo and Wildlife Research<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]},{"method":"addLayersControl","args":[["Default Map","Terrain Map","Dark Map","OpenStreetMap"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[52.506286189884,52.506286189884],"lng":[13.5211671539743,13.5211671539743]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-37d936f0aa5dca408f5a" style="width:650px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-37d936f0aa5dca408f5a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[52.5062,13.5211],4,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Voyager",null,"Default Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stamen.Terrain",null,"Terrain Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Dark Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[52.506286189884,13.5211671539743,"<b>Leibniz Institute for<br>Zoo and Wildlife Research<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]},{"method":"addLayersControl","args":[["Default Map","Terrain Map","Dark Map","OpenStreetMap"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[52.506286189884,52.506286189884],"lng":[13.5211671539743,13.5211671539743]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <p><br></p>
 <h2 class="appendix" id="contact">Contact</h2>
@@ -2772,8 +2734,7 @@ D-10315 Berlin, Germany</p>
 Deputy Lead: Dr. Andreas Wilting<br />
 Coordination: Dr. Conny Landgraf<br />
 <a href="mailto:assist6@izw-berlin.de">assist6[at]izw-berlin.de</a></p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2791,7 +2752,7 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <div class="distill-site-nav distill-site-footer">
 <p>© Department of Ecological Dynamics, Leibniz Institute for Zoo- and
 Wildlife Research 2020—2022. All rights reserved.</p>
-<p><a href='https://ecodynizw.github.io/EcoDynIZW/impressum.html'><u>Impressum</u></a></p>
+<p><a href='https://ecodynizw.github.io/EcoDynIZW/Impressum.html'><u>Impressum</u></a></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
