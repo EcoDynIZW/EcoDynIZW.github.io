@@ -1,0 +1,125 @@
+---
+title: "Repositories"
+description: ""
+output:
+distill::distill_article:
+  toc: true
+  toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+.card-wrapper-wide {
+  list-style: none;
+  
+}
+
+.card-wide {
+  background-color: #f6f6f6;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
+  transition: 0.3s;
+  padding: 28px 28px 28px 28px;
+  border-radius: 0.5rem;
+  margin: auto;
+  place-items: center;
+  justify-content: center;
+  -webkit-columns: 40px 2;
+            /* Chrome, Safari, Opera */
+            -moz-columns: 60px 2;
+            /* Firefox */
+            columns: 60px 2;
+  }
+
+</style>
+
+<ul class="card-wrapper-wide">
+   <li class="card-wide">
+<div class="card-content">![](img/benhaiem_2018.png){width=100%}</div><br>
+
+<div class="card-content">Benhaiem S, Marescot L, East ML et al. Slow recovery from a disease epidemic in the spotted hyena, a keystone social carnivore. Commun Biol 1, 201 (2018).<br>
+[*Comms Biol*](http://doi.org/10.1038/s42003-018-0197-1)<br> [Code](https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio)</div>
+  </li>
+
+</ul>
+
+<ul class="card-wrapper-wide">
+   <li class="card-wide">
+<div class="card-content">![](img/calderon_2022.png){width=100%}</div><br>
+
+<div class="card-content">Calderón AP, Louvrier J, Planillo A, Araya-Gamboa D, Arroyo-Arce S, Barrantes-Núñez M, Carazo-Salazar J, Corrales-Gutiérrez D, Doncaster CP, Foster R, García MJ, Garcia-Anleu R, Harmsen B, Hernández-Potosme S, Leonardo R, Trigueros DM, McNab R, Meyer N, Moreno R, Salom-Pérez R, Sauma Rossi A, Thomson I, Thornton D, Urbina Y, Grimm V and Kramer-Schadt S, Occupancy models reveal potential of conservation prioritization for Central American jaguars. Anim. Conserv.  (2022).<br>
+[*Anim Conserv*](https://doi.org/10.1111/acv.12772)<br> [Code](https://github.com/EcoDynIZW/Calderon_2022_AnimCons)</div>
+  </li>
+
+</ul>
+
+<ul class="card-wrapper-wide">
+   <li class="card-wide">
+<div class="card-content">![](img/drenske_2022.png){width=100%}</div>
+
+<div class="card-content">Drenske S, Radchuk V, Scherer C, Esterer C, Kowarik I, Fritz J, Kramer-Schadt S. On the road to self-sustainability: Reintroduced migratory European Northern Bald Ibises (Geronticus eremita) still need management interventions for population viability, Oryx (2022).<br>
+[*Oryx*]()<br> 
+[Code](https://github.com/EcoDynIZW/Drenske_2020_Oryx)</div>
+  </li>
+
+</ul>
+
+<ul class="card-wrapper-wide">
+   <li class="card-wide">
+<div class="card-content">![](img/grabow_2022.jpg){width=100%}</div>
+
+<div class="card-content">Grabow M, Louvrier JLP, Planillo A, Kiefer S, Drenske S, Börner K, Stillfried M, Hagen R, Kimmig S, Straka TM and Kramer-Schadt S. Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels,Front. Ecol. Evol (2022).<br>
+[*Front Ecol Evol*](https://dx.doi.org/10.3389/fevo.2022.881247)<br> [Code](https://github.com/EcoDynIZW/Grabow_2022_FrontEcolEvol)</div>
+  </li>
+
+</ul>
+
+<ul class="card-wrapper-wide">
+   <li class="card-wide">
+<div class="card-content">![](img/kuerschner_2021.png){width=100%}</div><br>
+
+<div class="card-content">Kürschner T, Scherer C, Radchuk V, Blaum N, Kramer-Schadt S. Movement can mediate temporal mismatches between resource availability and biological events in host–pathogen interactions. Ecol Evol. 2021; 11: 5728– 5741.<br>
+[*Ecol Evol*](http://doi.org/10.1002/ece3.7478)<br> [Code](https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol)</div>
+  </li>
+
+</ul>
+
+<ul class="card-wrapper-wide">
+   <li class="card-wide">
+<div class="card-content">![](img/Marescot_Franz_Benhaiem_2021.png){width=100%}</div><br>
+
+<div class="card-content">Marescot L, Franz M, Benhaiem S, Hofer H, Scherer C, East ML & Kramer-Schadt S (2021). ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. J Anim Ecol, 90, 2523– 2535. <br>
+[*J Anim Ecol*](https://doi.org/10.1111/1365-2656.13555)<br>
+[Code](https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol)</div>
+  </li>
+
+</ul>
+
+<ul class="card-wrapper-wide">
+   <li class="card-wide">
+<div class="card-content">![](img/radchuk_2019.png){width=100%}</div>
+
+<div class="card-content">Radchuk V, Reed T, Teplitsky C et al. Adaptive responses of animals to climate change are most likely insufficient. Nat Com 10, 3109 (2019).<br>
+[*Nat Com*](http://doi.org/10.1038/s41467-019-10924-4)<br> [Code](https://github.com/EcoDynIZW/Radchuk_2019_NatCom)</div>
+  </li>
+
+</ul>
+
+<ul class="card-wrapper-wide">
+   <li class="card-wide">
+<div class="card-content">![](img/scherer_2020.png){width=100%}</div><br>
+
+<div class="card-content">Scherer C, Radchuk V, Franz M, Thulke HH, Lange M, Grimm V and Kramer-Schadt S. (2020), Moving infections: individual movement decisions drive disease persistence in spatially structured landscapes. Oikos, 129: 651-667.<br>
+[*OIKOS*](http://doi.org/10.1111/oik.07002)<br>
+[Code](https://github.com/EcoDynIZW/Scherer_2020_OIKOS)</div>
+  </li>
+
+</ul>
+
+
+
+
+
+
