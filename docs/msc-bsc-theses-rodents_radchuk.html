@@ -790,6 +790,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1862,15 +1863,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2659,28 +2666,11 @@ Research
 
 
 <div class="d-article">
-<p>(contact
-<a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>)</p>
-<p>Although population cycles received much research interest, we still
-poorly understand how the demographic structure of the population,
-i.e. sex ratio and age structure, are changing along the cycle. This is
-partly because in rodents, which became models for studying population
-cycles, the field data are typically collected at the coarse yearly
-resolution. Another question that remains unanswered is whether the
-dynamics of demographic structure contributes to the emergence of
-population cycles, or, the other way around, demographic structure is
-changing because of the population cycling. To address these research
-gaps we are using a previously developed agent-based model that depicts
-the mechanisms of predator-prey population dynamics at fine weekly
-temporal resolution. This model allows obtaining both population
-abundance and demographic data (sex, age, reproductive state) at a
-weekly resolution. We will analyse these data with the advanced methods
-in time series analyses to answer our research questions.</p>
+<p>(contact <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>)</p>
+<p>Although population cycles received much research interest, we still poorly understand how the demographic structure of the population, i.e. sex ratio and age structure, are changing along the cycle. This is partly because in rodents, which became models for studying population cycles, the field data are typically collected at the coarse yearly resolution. Another question that remains unanswered is whether the dynamics of demographic structure contributes to the emergence of population cycles, or, the other way around, demographic structure is changing because of the population cycling. To address these research gaps we are using a previously developed agent-based model that depicts the mechanisms of predator-prey population dynamics at fine weekly temporal resolution. This model allows obtaining both population abundance and demographic data (sex, age, reproductive state) at a weekly resolution. We will analyse these data with the advanced methods in time series analyses to answer our research questions.</p>
 <p>Profile: interest in population ecology, good command of R</p>
-<p>Supervisors: Viktoriia Radchuk <a href="mailto:radchuk@izw-berlin.de"
-class="email">radchuk@izw-berlin.de</a>, Stephanie Kramer-Schadt</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Supervisors: Viktoriia Radchuk <a href="mailto:radchuk@izw-berlin.de" class="email">radchuk@izw-berlin.de</a>, Stephanie Kramer-Schadt</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

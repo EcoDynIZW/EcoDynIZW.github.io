@@ -2,7 +2,7 @@
 title: "Team 1: Individual Dynamics"
 description: |
   <b>Lead: Dr. Sarah Benhaiem & Dr. Sonja Metzger (field coordination)</b>  
-  <b>Assistance: Dagmar Thierer & Karl Stephan</b>  
+  <b>Assistance: Dagmar Thierer & Stephan Karl</b>  
   In collaboration with Dr. Marion L. East & Prof. Heribert Hofer (co-founders of the Serengeti Hyena Project)
 ---
 
