@@ -2,7 +2,7 @@
 title: "NLMR"
 description: |
   NLMR is an R package for simulating neutral landscape models (NLM). Designed to be a generic framework like NLMpy, it leverages the ability to simulate the most common NLM that are described in the ecological literature. NLMR builds on the advantages of the raster package and returns all simulation as RasterLayer objects, thus ensuring a direct compatibility to common GIS tasks and a flexible and simple usage. Furthermore, it simulates NLMs within a self-contained, reproducible framework.
-preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex_nlmr-2.png
+preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-nlmr.png
 author:
   - name: ropensci
     affiliation: IZW Berlin

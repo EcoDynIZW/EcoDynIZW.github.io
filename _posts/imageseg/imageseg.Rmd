@@ -2,7 +2,7 @@
 title: "imageseg"
 description: |
   Deep learning image segmentation
-preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/imageseg-hex.png
+preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-imageseg.png
 author:
   - name: Jürgen Niedballa
     affiliation: IZW Berlin

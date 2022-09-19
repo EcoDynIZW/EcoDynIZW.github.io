@@ -10,12 +10,12 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### R Packages and Tools
 
-[![](img/hex_isorix.png){width=25%}](https://cran.r-project.org/web/packages/IsoriX/index.html)
-[![](img/hex_vietnameseconverter.png){width=25%}](https://cran.r-project.org/web/packages/vietnameseConverter/index.html) 
-[![](img/hex_camtrapr.png){width=25%}](https://cran.r-project.org/web/packages/camtrapR/index.html)
+[![](img/hex-isorix.png){width=25%}](https://cran.r-project.org/web/packages/IsoriX/index.html)
+[![](img/hex-vietnameseconverter.png){width=25%}](https://cran.r-project.org/web/packages/vietnameseConverter/index.html) 
+[![](img/hex-camtrapr.png){width=25%}](https://cran.r-project.org/web/packages/camtrapR/index.html)
   
-[![](img/imageseg-hex.png){width=39%}](https://cran.r-project.org/web/packages/imageseg/index.html)
-[![](img/hex_nlmr-2.png){width=39%}](https://ropensci.github.io/NLMR/)
+[![](img/hex-imageseg.png){width=39%}](https://cran.r-project.org/web/packages/imageseg/index.html)
+[![](img/hex-nlmr.png){width=39%}](https://ropensci.github.io/NLMR/)
 
 - [IsoriX](https://cran.r-project.org/web/packages/IsoriX/index.html): Isoscape Computation and Inference of Spatial Origins using Mixed Models; learn about IsoriX [here](https://bookdown.org/content/782/)
 - [camtrapR](https://cran.r-project.org/web/packages/camtrapR/index.html): Camera Trap Data Management and Preparation of Occupancy and Spatial Capture-Recapture Analyses

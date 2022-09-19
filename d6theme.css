@@ -264,6 +264,14 @@ li.card {
   font-size: 1.6rem;
 }
 
+.posts-list .post-preview .thumbnail {
+  max-width: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 @media screen and (min-width: 769px) {
 	.nav-dropdown-content{
 		max-height:100vh;
