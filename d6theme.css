@@ -264,6 +264,78 @@ li.card {
   font-size: 1.6rem;
 }
 
+.card-wrapper-wide {
+  list-style: none;
+  
+}
+
+.card-wide {
+  background-color: #f6f6f6;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
+  transition: 0.3s;
+  padding: 28px 28px 28px 28px;
+  border-radius: 0.5rem;
+  margin: auto;
+  place-items: center;
+  justify-content: center;
+  -webkit-columns: 40px 2;
+            /* Chrome, Safari, Opera */
+            -moz-columns: 60px 2;
+            /* Firefox */
+            columns: 60px 2;
+  }
+
+
+
+
+
+
+
+.card-repo {
+  background-color: #f6f6f6;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
+  transition: 0.3s;
+  padding: 12px 12px 12px 12px;
+  border-radius: 0.5rem;
+  margin: auto;
+  place-items: center;
+  overflow: hidden;
+
+  img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    // height: max(10rem, 25vh);
+    max-height: max(10rem, 30vh);
+    aspect-ratio: 4/3;
+    
+    ~ * {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus-within {
+    --card-gradient: #24a9d5 max(8.5rem, 20vh);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .posts-list .post-preview .thumbnail {
   max-width: 300px;
   padding-left: 50px;

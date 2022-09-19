@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2419,6 +2412,78 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-size: 1.6rem;
   }
 
+  .card-wrapper-wide {
+    list-style: none;
+    
+  }
+
+  .card-wide {
+    background-color: #f6f6f6;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
+    transition: 0.3s;
+    padding: 28px 28px 28px 28px;
+    border-radius: 0.5rem;
+    margin: auto;
+    place-items: center;
+    justify-content: center;
+    -webkit-columns: 40px 2;
+              /* Chrome, Safari, Opera */
+              -moz-columns: 60px 2;
+              /* Firefox */
+              columns: 60px 2;
+    }
+
+
+
+
+
+
+
+  .card-repo {
+    background-color: #f6f6f6;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
+    transition: 0.3s;
+    padding: 12px 12px 12px 12px;
+    border-radius: 0.5rem;
+    margin: auto;
+    place-items: center;
+    overflow: hidden;
+
+    img {
+      border-radius: 0.5rem 0.5rem 0 0;
+      width: 100%;
+      object-fit: cover;
+      // height: max(10rem, 25vh);
+      max-height: max(10rem, 30vh);
+      aspect-ratio: 4/3;
+      
+      ~ * {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus-within {
+      --card-gradient: #24a9d5 max(8.5rem, 20vh);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
   .posts-list .post-preview .thumbnail {
     max-width: 300px;
     padding-left: 50px;
@@ -2588,7 +2653,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2643,7 +2708,7 @@ Research
 </button>
 <div class="nav-dropdown-content">
 <a href="publications.html">Publications</a>
-<a href="Repositories.html">Repositories</a>
+<a href="repositories.html">Repositories</a>
 <a href="doctoral-theses.html">Doctoral Theses</a>
 <a href="msc-bsc-theses.html">Msc/Bsc Theses</a>
 </div>
@@ -2674,41 +2739,29 @@ Research
 
 
 <div class="d-article">
-<style>
-.card-wrapper-wide {
-  list-style: none;
-  
-}
-
-.card-wide {
-  background-color: #f6f6f6;
-  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
-  transition: 0.3s;
-  padding: 28px 28px 28px 28px;
-  border-radius: 0.5rem;
-  margin: auto;
-  place-items: center;
-  justify-content: center;
-  -webkit-columns: 40px 2;
-            /* Chrome, Safari, Opera */
-            -moz-columns: 60px 2;
-            /* Firefox */
-            columns: 60px 2;
-  }
-
-</style>
-<ul class="card-wrapper-wide">
-<li class="card-wide">
-<div class="card-content">
-<img src="img/benhaiem_2018.png" style="width:100.0%" />
-</div>
-<p><br></p>
-<div class="card-content">
-Benhaiem S, Marescot L, East ML et al. Slow recovery from a disease epidemic in the spotted hyena, a keystone social carnivore. Commun Biol 1, 201 (2018).<br>
-<a href="http://doi.org/10.1038/s42003-018-0197-1"><em>Comms Biol</em></a><br> <a href="https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio">Code</a>
-</div>
+<ul class="card-wrapper">
+<li class="card-repo">
+<img src='https://ecodynizw.github.io/img/benhaiem_2018.png' width="300">
+<h3>
+Benhaiem et al. 2018
+</h3>
+<p>
+Slow recovery from a disease epidemic in the spotted hyena, a keystone
+social carnivore. <em>Commun. Biol.</em> 1:201.
+</p>
+<p>
+<a href='http://doi.org/10.1038/s42003-018-0197-1'><img
+src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio'><img
+src="img/icon-github.png" style="width:12.0%" /></a>
+</p>
 </li>
 </ul>
+<p>TODO: redo new card style for all other repositories below</p>
+<p>-&gt; nur Erstautor mit et al als h3, inkl. Jahreszahl ohne Klammern
+-&gt; Journals einheitlich formatieren (überall Punkte, Doppelpunkt vor
+Seitenzahl etc - meist schon done) -&gt; Zenodo links hinzufügen (wie
+bei Paper + Github mit icon-zenodo.img)</p>
 <ul class="card-wrapper-wide">
 <li class="card-wide">
 <div class="card-content">
@@ -2716,8 +2769,17 @@ Benhaiem S, Marescot L, East ML et al. Slow recovery from a disease epidemic in
 </div>
 <p><br></p>
 <div class="card-content">
-Calderón AP, Louvrier J, Planillo A, Araya-Gamboa D, Arroyo-Arce S, Barrantes-Núñez M, Carazo-Salazar J, Corrales-Gutiérrez D, Doncaster CP, Foster R, García MJ, Garcia-Anleu R, Harmsen B, Hernández-Potosme S, Leonardo R, Trigueros DM, McNab R, Meyer N, Moreno R, Salom-Pérez R, Sauma Rossi A, Thomson I, Thornton D, Urbina Y, Grimm V and Kramer-Schadt S, Occupancy models reveal potential of conservation prioritization for Central American jaguars. Anim. Conserv. (2022).<br>
-<a href="https://doi.org/10.1111/acv.12772"><em>Anim Conserv</em></a><br> <a href="https://github.com/EcoDynIZW/Calderon_2022_AnimCons">Code</a>
+Calderón AP, Louvrier J, Planillo A, Araya-Gamboa D, Arroyo-Arce S,
+Barrantes-Núñez M, Carazo-Salazar J, Corrales-Gutiérrez D, Doncaster CP,
+Foster R, García MJ, Garcia-Anleu R, Harmsen B, Hernández-Potosme S,
+Leonardo R, Trigueros DM, McNab R, Meyer N, Moreno R, Salom-Pérez R,
+Sauma Rossi A, Thomson I, Thornton D, Urbina Y, Grimm V and
+Kramer-Schadt S, Occupancy models reveal potential of conservation
+prioritization for Central American jaguars. <em>Anim. Conserv.</em>
+(2022).<br> <a href='https://doi.org/10.1111/acv.12772'><img
+src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Calderon_2022_AnimCons'><img
+src="img/icon-github.png" style="width:12.0%" /></a>
 </div>
 </li>
 </ul>
@@ -2727,9 +2789,13 @@ Calderón AP, Louvrier J, Planillo A, Araya-Gamboa D, Arroyo-Arce S, Barrantes-N
 <img src="img/drenske_2022.png" style="width:100.0%" />
 </div>
 <div class="card-content">
-Drenske S, Radchuk V, Scherer C, Esterer C, Kowarik I, Fritz J, Kramer-Schadt S. On the road to self-sustainability: Reintroduced migratory European Northern Bald Ibises (Geronticus eremita) still need management interventions for population viability, Oryx (2022).<br>
-<a href=""><em>Oryx</em></a><br>
-<a href="https://github.com/EcoDynIZW/Drenske_2020_Oryx">Code</a>
+Drenske S, Radchuk V, Scherer C, Esterer C, Kowarik I, Fritz J,
+Kramer-Schadt S. On the road to self-sustainability: Reintroduced
+migratory European Northern Bald Ibises (<em>Geronticus eremita</em>)
+still need management interventions for population viability.
+<em>Oryx</em> (2022).<br>
+<a href='https://github.com/EcoDynIZW/Drenske_2020_Oryx'><img
+src="img/icon-github.png" style="width:12.0%" /></a>
 </div>
 </li>
 </ul>
@@ -2739,8 +2805,15 @@ Drenske S, Radchuk V, Scherer C, Esterer C, Kowarik I, Fritz J, Kramer-Schadt S.
 <img src="img/grabow_2022.jpg" style="width:100.0%" />
 </div>
 <div class="card-content">
-Grabow M, Louvrier JLP, Planillo A, Kiefer S, Drenske S, Börner K, Stillfried M, Hagen R, Kimmig S, Straka TM and Kramer-Schadt S. Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels,Front. Ecol. Evol (2022).<br>
-<a href="https://dx.doi.org/10.3389/fevo.2022.881247"><em>Front Ecol Evol</em></a><br> <a href="https://github.com/EcoDynIZW/Grabow_2022_FrontEcolEvol">Code</a>
+Grabow M, Louvrier JLP, Planillo A, Kiefer S, Drenske S, Börner K,
+Stillfried M, Hagen R, Kimmig S, Straka TM and Kramer-Schadt S.
+Data-integration of opportunistic species observations into hierarchical
+modeling frameworks improves spatial predictions for urban red
+squirrels. <em>Front. Ecol. Evol.</em> (2022).<br>
+<a href='https://dx.doi.org/10.3389/fevo.2022.881247'><img
+src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Grabow_2022_FrontEcolEvol'><img
+src="img/icon-github.png" style="width:12.0%" /></a>
 </div>
 </li>
 </ul>
@@ -2751,8 +2824,13 @@ Grabow M, Louvrier JLP, Planillo A, Kiefer S, Drenske S, Börner K, Stillfried M
 </div>
 <p><br></p>
 <div class="card-content">
-Kürschner T, Scherer C, Radchuk V, Blaum N, Kramer-Schadt S. Movement can mediate temporal mismatches between resource availability and biological events in host–pathogen interactions. Ecol Evol. 2021; 11: 5728– 5741.<br>
-<a href="http://doi.org/10.1002/ece3.7478"><em>Ecol Evol</em></a><br> <a href="https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol">Code</a>
+Kürschner T, Scherer C, Radchuk V, Blaum N, Kramer-Schadt S. Movement
+can mediate temporal mismatches between resource availability and
+biological events in host–pathogen interactions. <em>Ecol. Evol.</em>
+(2021) 11:5728–5741.<br> <a href='http://doi.org/10.1002/ece3.7478'><img
+src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol'><img
+src="img/icon-github.png" style="width:12.0%" /></a>
 </div>
 </li>
 </ul>
@@ -2763,9 +2841,14 @@ Kürschner T, Scherer C, Radchuk V, Blaum N, Kramer-Schadt S. Movement can media
 </div>
 <p><br></p>
 <div class="card-content">
-Marescot L, Franz M, Benhaiem S, Hofer H, Scherer C, East ML &amp; Kramer-Schadt S (2021). ‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. J Anim Ecol, 90, 2523– 2535. <br>
-<a href="https://doi.org/10.1111/1365-2656.13555"><em>J Anim Ecol</em></a><br>
-<a href="https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol">Code</a>
+Marescot L, Franz M, Benhaiem S, Hofer H, Scherer C, East ML &amp;
+Kramer-Schadt S (2021). ‘Keeping the kids at home’ can limit the
+persistence of contagious pathogens in social animals. <em>J. Anim.
+Ecol.</em> (2021) 90:2523–2535.<br>
+<a href='https://doi.org/10.1111/1365-2656.13555'><img
+src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol'><img
+src="img/icon-github.png" style="width:12.0%" /></a>
 </div>
 </li>
 </ul>
@@ -2775,8 +2858,12 @@ Marescot L, Franz M, Benhaiem S, Hofer H, Scherer C, East ML &amp; Kramer-Schadt
 <img src="img/radchuk_2019.png" style="width:100.0%" />
 </div>
 <div class="card-content">
-Radchuk V, Reed T, Teplitsky C et al. Adaptive responses of animals to climate change are most likely insufficient. Nat Com 10, 3109 (2019).<br>
-<a href="http://doi.org/10.1038/s41467-019-10924-4"><em>Nat Com</em></a><br> <a href="https://github.com/EcoDynIZW/Radchuk_2019_NatCom">Code</a>
+Radchuk V, Reed T, Teplitsky C et al. Adaptive responses of animals to
+climate change are most likely insufficient. <em>Nat. Com.</em> (2019)
+10:3109.<br> <a href='http://doi.org/10.1038/s41467-019-10924-4'><img
+src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Radchuk_2019_NatCom'><img
+src="img/icon-github.png" style="width:12.0%" /></a>
 </div>
 </li>
 </ul>
@@ -2787,13 +2874,19 @@ Radchuk V, Reed T, Teplitsky C et al. Adaptive responses of animals to climate 
 </div>
 <p><br></p>
 <div class="card-content">
-Scherer C, Radchuk V, Franz M, Thulke HH, Lange M, Grimm V and Kramer-Schadt S. (2020), Moving infections: individual movement decisions drive disease persistence in spatially structured landscapes. Oikos, 129: 651-667.<br>
-<a href="http://doi.org/10.1111/oik.07002"><em>OIKOS</em></a><br>
-<a href="https://github.com/EcoDynIZW/Scherer_2020_OIKOS">Code</a>
+Scherer C, Radchuk V, Franz M, Thulke HH, Lange M, Grimm V and
+Kramer-Schadt S. (2020), Moving infections: individual movement
+decisions drive disease persistence in spatially structured landscapes.
+<em>Oikos</em> (2020) 129:651–667.<br>
+<a href='http://doi.org/10.1111/oik.07002'><img src="img/icon-paper.png"
+style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Scherer_2020_OIKOS'><img
+src="img/icon-github.png" style="width:12.0%" /></a>
 </div>
 </li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
