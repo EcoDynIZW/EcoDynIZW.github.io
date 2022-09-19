@@ -127,6 +127,11 @@ We investigate if DNA methylation is a main mechanism through which an individua
 </small>
 
 
+**Here is an overview of our research interests, methods and partners since the establishment of the project in 1987:**
+
+![](img/team-ind-research.png)
+![](img/team-ind-methods.png)
+
 ```{r, layout="l-screen"}
 knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
 ```
