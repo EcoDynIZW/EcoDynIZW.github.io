@@ -5,7 +5,7 @@ site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, cache = TRUE, dpi = 100)
 ```
 
 # Welcome to D6!
@@ -59,7 +59,7 @@ Department of Ecological Dynamics
 Alfred-Kowalke-Str. 17  
 D-10315 Berlin, Germany
 
-```{r, layout="l-screen-inset shaded"}
+```{r, layout="l-screen-inset shaded", cache=FALSE}
 library(leaflet)
 leaflet() %>%
   setView(lng = 13.5211, lat = 52.5062, zoom = 04) %>% 
