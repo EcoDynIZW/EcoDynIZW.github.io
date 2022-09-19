@@ -1,7 +1,6 @@
 ---
-title: "Msc/Bsc Theses 20xx"
+title: "Msc/Bsc offers 20xx"
 description: ""
 ---
 
-**202x**
-
+**20xx**

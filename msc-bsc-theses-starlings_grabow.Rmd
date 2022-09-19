@@ -12,7 +12,7 @@ However, the impacts of foraging in lower quality habitat might be mitigated by 
 
 In this Master thesis, we will capture adult Starlings in two habitat types of different foraging quality and equip them with VHF-tags of the ATLAS system to derive high resolution information about their movements during nestling period. By applying statistical methods, such as Step-Selection Functions (Fortin et al., 2005), we will estimate spatiotemporal resource selection of animals moving through the landscape (Thurfjell et al., 2014). Simultaneous control of deployed nest boxes gives us supporting information about reproduction success so that we can characterize and assess foraging decisions in the different habitat types and their feedback to reproduction.
 
-Profile:
+**Profile:**
 
 - Own research focus and interests are a real enrichment, we are happy to hear your ideas (e.g. assessing habitat quality based on invertebrate abundance or grazing type)
 - Interest in scientific work (reviewing literature, conducting field work, statistical experiments and publishing results)

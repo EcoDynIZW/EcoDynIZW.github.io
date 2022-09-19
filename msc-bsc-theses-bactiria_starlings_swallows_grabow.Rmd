@@ -1,0 +1,29 @@
+---
+title: "Bacteriological analysis to quantify the total and feather-degrading bacterial loads on feather samples of swallows and starlings"
+description: ""
+---
+Dipl. Biol Marius Grabow/ Dr. Conny Landgraf
+
+(contact <a href="mailto:grabow@izw-berlin.de">grabow[at]izw-berlin.de</a> or <a href="mailtolLandgraf@izw-berlin.de">landgraf[at]izw-berlin.de</a>)
+
+**General background**
+
+Parasites are ubiquitous, shaping host traits and behaviours such as movement. While parasite dynamics and host movements are often studied at large scales, e.g. migratory behaviour, our knowledge of the implications at fine scales, e.g. local movements during breeding, remains scarce. We hypothesize that parasites are proximate drivers of individual movement decisions, altering the way hosts allocate their energy, and ultimately influencing foraging, competition and fitness. 
+The overarching project aims to understand how fitness consequences of parasites are reflected by individual movement decisions and the surrounding environment. By accounting for a broad range of parasites, high resolution animal movement data and individual trait measures of passerines (swallows and starlings) we follow an integrative approach to model effects of host–parasite interactions in agricultural landscapes.
+
+**Feather degrading bacteria (FDB)**
+
+FDB are a group of bacteria with the ability to to degrade β-keratin, the principal building block of feathers, imposing substantial selection pressures on host plumage. These bacterial species colonize the plumage of most wild birds with ground-foraging and water birds having a higher prevalence. Although there is no experimental evidence about a direct link between FDB and changes in feather condition in free-living birds, we hypothesize that reduced feather quality associated with higher FDB load might affect flight performance and thus, movement behaviours in temperate breeding birds. To investigate this we collected feather samples from different passerine species including common starling (Sturnus vulgaris), barn swallow (Hirundo rustica) and house martin (Delichon urbica) at their breeding colonies, which will used to quantify the FDB loads. Additionally, for each bird we have information on individual bird condition (body measures and infection status), breeding behaviour and reproductive success as well as movement data which can be analysed using GLM/ GLMM (optional depending on candidate).
+
+**Job description**
+
+The successful applicant will perform classic bacteriological analysis to quantify the total and feather-degrading bacterial loads on feather samples collected from each bird. This involves work under sterile conditions, from handling the samples, extract both free-living and attached microorganisms, dilute the obtained bacterial solutions, prepare bacteriological growth media, weigh the quantity of feather used, to count the visible colony-forming units on each plate. If the candidate is motivated statistical analyses (GLM/ GLMM) can be performed after lab work. 
+
+
+**Profile:**
+
+-	Enrolled student (Bachelor / Master) in Biology, Ecology, Veterinary Medicine, etc.
+-	Previous general/ basic laboratory experience (e.g. pipetting, dilution) and skills in bacteriology (work under sterile conditions, preparing growth media) is advantageous
+-	High motivation & sense of responsibility to work in an academic environment
+-	Good knowledge of English
+-	Date/ duration: starting time November 2022 (but flexible), minimum duration 3 month (internship), preferably longer (e.g. Master thesis)
