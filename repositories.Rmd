@@ -59,6 +59,21 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <ul class="card-wrapper">
   <li class="card-repo">
+    <img src='https://ecodynizw.github.io/img/dalleau_2019.png' width="300">
+    <h3>Dalleau et al. 2019</h3>
+    <p>Modeling the emergence of migratory corridors and foraging hot spots of the green sea turtle. *Ecol Evol.* 9:10317–1034</p><p>
+    <a href='https://onlinelibrary.wiley.com/doi/epdf/10.1002/ece3.5552'>![](img/icon-paper.png){width=12%}</a> 
+    <a href='https://www.comses.net/codebases/69863caa-2f8e-4412-a564-a2826d9d38d3/releases/1.0.0/'>![](img/icon-zenodo.png){width=12%}</a></p>
+  </li>
+</ul>
+
+
+
+
+
+
+<ul class="card-wrapper">
+  <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/drenske_2022.png' width="300">
     <h3>Drenske et al. 2022</h3>
     <p>On the road to self-sustainability: Reintroduced migratory European Northern Bald Ibises (*Geronticus eremita*) still need management interventions for population viability. *Oryx*</p><p>
@@ -151,6 +166,20 @@ knitr::opts_chunk$set(echo = FALSE)
     <p>Citizen science data for urban planning: Comparing different sampling schemes for modelling urban bird distribution. *LandUrbPlan* 211:104098</p><p>
     <a href='https://doi.org/10.1016/j.landurbplan.2021.104098'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Planillo_2021_LandUrbPlan'>![](img/icon-github.png){width=12%}</a></p>
+  </li>
+</ul>
+
+
+
+
+
+<ul class="card-wrapper">
+  <li class="card-repo">
+    <img src='' width="300">
+    <h3>Radchuk et al. 2016</h3>
+    <p>Vole-Mustelid model.</p><p>
+    <a href=''>![](img/icon-paper.png){width=12%}</a> 
+    <a href='https://www.comses.net/codebases/4b484186-d8fb-4307-a710-fc05daa36afa/releases/1.0.0/'>![](img/icon-zenodo.png){width=12%}</a></p>
   </li>
 </ul>
 
