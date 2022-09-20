@@ -14,6 +14,21 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <ul class="card-wrapper">
   <li class="card-repo">
+    <img src='https://ecodynizw.github.io/img/axtner_2019.png' width="300">
+    <h3>Axtner et al. 2019</h3>
+    <p>An efficient and robust laboratory workflow and tetrapod database for larger scale environmental DNA studies. *GigaScience.* 8(4):giz029.</p><p>
+    <a href='https://doi.org/10.1093/gigascience/giz029'>![](img/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Axtner_2019_GigaScience'>![](img/icon-github.png){width=12%}</a></p>
+  </li>
+</ul>
+
+
+
+
+
+
+<ul class="card-wrapper">
+  <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/benhaiem_2018.png' width="300">
     <h3>Benhaiem et al. 2018</h3>
     <p>Slow recovery from a disease epidemic in the spotted hyena, a keystone social carnivore. *Commun. Biol.* 1:201.</p><p>
@@ -44,11 +59,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <ul class="card-wrapper">
   <li class="card-repo">
-    <img src='https://ecodynizw.github.io/img/drenske_2020.png' width="300">
-    <h3>Drenske et al. 2020</h3>
+    <img src='https://ecodynizw.github.io/img/drenske_2022.png' width="300">
+    <h3>Drenske et al. 2022</h3>
     <p>On the road to self-sustainability: Reintroduced migratory European Northern Bald Ibises (*Geronticus eremita*) still need management interventions for population viability. *Oryx*</p><p>
     <a href=''>![](img/icon-paper.png){width=12%}</a> 
-    <a href='https://github.com/EcoDynIZW/Drenske_2020_Oryx'>![](img/icon-github.png){width=12%}</a></p>
+    <a href=''>![](img/icon-github.png){width=12%}</a></p>
   </li>
 </ul>
 
@@ -58,7 +73,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <ul class="card-wrapper">
   <li class="card-repo">
-    <img src='https://ecodynizw.github.io/img/grabow_2022.png' width="300">
+    <img src='https://ecodynizw.github.io/img/grabow_2022.jpg' width="300">
     <h3>Grabow et al. 2022</h3>
     <p>Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels.  *Front. Ecol. Evol.* 10:881247.</p><p>
     <a href='https://dx.doi.org/10.3389/fevo.2022.881247'>![](img/icon-paper.png){width=12%}</a> 
@@ -76,7 +91,9 @@ knitr::opts_chunk$set(echo = FALSE)
     <h3>Kürschner et al. 2021</h3>
     <p>Movement can mediate temporal mismatches between resource availability and biological events in host–pathogen interactions. *Ecol. Evol.* 11:5728–5741.</p><p>
     <a href='http://doi.org/10.1002/ece3.7478'>![](img/icon-paper.png){width=12%}</a> 
-    <a href='https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol'>![](img/icon-github.png){width=12%}</a></p>
+    <a href='https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol'>![](img/icon-github.png){width=12%}</a>
+    <a href='https://zenodo.org/badge/latestdoi/177115379'>![](img/icon-zenodo.png){width=12%}</a>
+</p>
   </li>
 </ul>
 
@@ -86,11 +103,54 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <ul class="card-wrapper">
   <li class="card-repo">
-    <img src='https://ecodynizw.github.io/img/Marescot_Franz_Benhaiem_2021.png' width="300">
-    <h3>Marescot et al. 2021</h3>
+    <img src='https://ecodynizw.github.io/img/louvrier_2021.png' width="300">
+    <h3>Louvrier et al. 2021</h3>
+    <p>Spatiotemporal interactions of a novel mesocarnivore community in an urban environment before and during SARS-CoV-2 lockdown. *J. Anim. Ecol.* 91(2):367–380.</p><p>
+    <a href='https://doi.org/10.1111/1365-2656.13635'>![](img/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Louvrier_2021_JAnimEcol'>![](img/icon-github.png){width=12%}</a>
+</p>
+  </li>
+</ul>
+
+
+
+
+
+<ul class="card-wrapper">
+  <li class="card-repo">
+    <img src='https://ecodynizw.github.io/img/marescot_2020.png' width="300">
+    <h3>Marescot et al. 2020</h3>
     <p>‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. *J. Anim. Ecol.* 90:2523–2535.</p><p>
     <a href='https://doi.org/10.1111/1365-2656.13555'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol'>![](img/icon-github.png){width=12%}</a></p>
+  </li>
+</ul>
+
+
+
+
+
+<ul class="card-wrapper">
+  <li class="card-repo">
+    <img src='https://ecodynizw.github.io/img/nguyen_2021.png' width="300">
+    <h3>Nguyen et al. 2021</h3>
+    <p>Getting the big picture: Landscape-scale occupancy patterns of two Annamite endemics among multiple protected areas. *Conbio* e620</p><p>
+    <a href='https://doi.org/10.1111/csp2.620'>![](img/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Nguyen_2021_CSP'>![](img/icon-github.png){width=12%}</a></p>
+  </li>
+</ul>
+
+
+
+
+
+<ul class="card-wrapper">
+  <li class="card-repo">
+    <img src='https://ecodynizw.github.io/img/planillo_2021.png' width="300">
+    <h3>Planillo et al. 2021</h3>
+    <p>Citizen science data for urban planning: Comparing different sampling schemes for modelling urban bird distribution. *LandUrbPlan* 211:104098</p><p>
+    <a href='https://doi.org/10.1016/j.landurbplan.2021.104098'>![](img/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Planillo_2021_LandUrbPlan'>![](img/icon-github.png){width=12%}</a></p>
   </li>
 </ul>
 
@@ -118,6 +178,7 @@ knitr::opts_chunk$set(echo = FALSE)
     <h3>Scherer et al. 2020</h3>
     <p>Moving infections: individual movement decisions drive disease persistence in spatially structured landscapes. *Oikos* 129:651–667.</p><p>
     <a href='http://doi.org/10.1111/oik.07002'>![](img/icon-paper.png){width=12%}</a> 
-    <a href='https://github.com/EcoDynIZW/Scherer_2020_OIKOS'>![](img/icon-github.png){width=12%}</a></p>
+    <a href='https://github.com/EcoDynIZW/Scherer_2020_OIKOS'>![](img/icon-github.png){width=12%}</a>
+    <a href='https://zenodo.org/badge/latestdoi/177115379'>![](img/icon-zenodo.png){width=12%}</a></p>
   </li>
 </ul>
