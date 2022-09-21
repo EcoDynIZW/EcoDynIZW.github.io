@@ -1,7 +1,7 @@
 ---
 title: "camtrapR"
 description: |
-  Manage camera trap data in R
+  camtrapR allows for streamlined and flexible camera trap data management and should be most useful to researchers and practitioners who regularly handle large amounts of camera trapping data
 preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-camtrapr.png
 author:
   - name: Jürgen Niedballa
@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 [camtrapR](https://github.com/jniedballa/camtrapR): Manage camera trap data in R
 
-camtrapR is a package for camera trap data management in R.
+camtrapR is a package for camera trap data management in R. 
 
 ## Installation
 

@@ -1,7 +1,7 @@
 ---
 title: "imageseg"
 description: |
-  Deep learning image segmentation
+  R package for deep learning image segmentation using the U-Net model architecture by Ronneberger (2015), implemented in Keras and TensorFlow. It provides pre-trained models for forest structural metrics (canopy density and understory vegetation density) and a workflow to apply these on custom images
 preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-imageseg.png
 author:
   - name: Jürgen Niedballa
