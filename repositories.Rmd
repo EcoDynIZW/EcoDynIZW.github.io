@@ -62,8 +62,8 @@ knitr::opts_chunk$set(echo = FALSE)
     <img src='https://ecodynizw.github.io/img/dalleau_2019.png' width="300">
     <h3>Dalleau et al. 2019</h3>
     <p>Modeling the emergence of migratory corridors and foraging hot spots of the green sea turtle. *Ecol Evol.* 9:10317–1034</p><p>
-    <a href='https://onlinelibrary.wiley.com/doi/epdf/10.1002/ece3.5552'>![](img/icon-paper.png){width=12%}</a> 
-    <a href='https://www.comses.net/codebases/69863caa-2f8e-4412-a564-a2826d9d38d3/releases/1.0.0/'>![](img/icon-zenodo.png){width=12%}</a></p>
+    <a href='https://doi.org/10.1002/ece3.5552'>![](img/icon-paper.png){width=12%}</a> 
+    <a href='https://www.comses.net/codebases/69863caa-2f8e-4412-a564-a2826d9d38d3/releases/1.0.0/'>![](img/icon-comses.png){width=12%}</a></p>
   </li>
 </ul>
 
@@ -179,7 +179,7 @@ knitr::opts_chunk$set(echo = FALSE)
     <h3>Radchuk et al. 2016</h3>
     <p>From individuals to population cycles: the role of extrinsic and intrinsic factors in rodent populations. *Ecology,* 97:720-732.</p><p>
     <a href='https://doi.org/10.1890/15-0756.1'>![](img/icon-paper.png){width=12%}</a> 
-    <a href='https://www.comses.net/codebases/4b484186-d8fb-4307-a710-fc05daa36afa/releases/1.0.0/'>![](img/icon-zenodo.png){width=12%}</a></p>
+    <a href='https://www.comses.net/codebases/4b484186-d8fb-4307-a710-fc05daa36afa/releases/1.0.0/'>![](img/icon-comses.png){width=12%}</a></p>
   </li>
 </ul>
 
