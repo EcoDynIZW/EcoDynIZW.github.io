@@ -15,7 +15,7 @@ knitr::include_graphics("img/team-div-header.png")
 
 <div class='highlightbox'>
   <span class='highlight'>
-  Globally mammalian biodiversity is declining at an alarming rate as a result of widespread habitat loss and degradation, and unsustainable hunting. We study how these anthropogenic drivers impact the distribution and abundance of ground dwelling mammals. In our field projects we use camera-traps and iDNA (invertebrate derived DNA) metabarcoding to assess species occurrences and we employ statistical models that investigate how anthropogenic drivers affect species distribution. We develop standardized methods and strategies for rigorous biodiversity assessments in order to provide robust scientific baseline data that allow monitoring species-specific and community-wide trends over time. In our work we regularly collaborate closely with local stakeholders and decision makers in order to integrate our data and results directly into wildlife and conservation management policy.
+  Globally mammalian biodiversity is declining at an alarming rate as a result of widespread habitat loss and degradation, and unsustainable hunting. We study how these anthropogenic drivers impact the distribution and abundance of ground dwelling mammals. In our field projects we use camera-traps and environmental DNA (eDNA) and invertebrate-derived DNA (iDNA) metabarcoding to assess species occurrences and we employ statistical models that investigate how anthropogenic drivers affect species distribution. We develop standardized methods and strategies for rigorous biodiversity assessments in order to provide robust scientific baseline data that allow monitoring species-specific and community-wide trends over time. In our work we regularly collaborate closely with local stakeholders and decision makers in order to integrate our data and results directly into wildlife and conservation management policy.
   </span>
 </div>
 
@@ -38,7 +38,7 @@ knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
 
 <div class='headerbox-secondary'><hbox-secondary>Malaysia; Borneo</div>
 
-**People involved: Alzlan bin Mohamed, Roshan Guharajan, Jürgen Niedballa, Seth T Wong**
+**People involved: Roshan Guharajan, Jürgen Niedballa, Seth T Wong**
 
 **Local partners: Sabah Forestry Department, Ta Ann Holdings Berhad, WWF Malaysia (Sarawak)**
 
@@ -61,13 +61,13 @@ Financial support: Federal Ministry of Education and Research (BMBF), Panthera, 
 
 <div class='headerbox-secondary'><hbox-secondary>Viet Nam, Laos; Annamite region</div>
 
-**People involved: Andrew Tilker, An The Troung Nguyen, Than Van Nguyen, Jürgen Niedballa**
+**People involved: Andrew Tilker, An The Troung Nguyen, Thanh Van Nguyen, Jürgen Niedballa**
 
-**Local partners Viet Nam: WWF Vietnam, Save Vietnam’s Wildlife, Fauna & Flora International, Global Willife Conservation GWC, Re:wild, Southern Institute of Ecology SIE, Central Institute for Natural Resources and Environmental Studies, Vinh University**
+**Local partners Viet Nam: WWF Vietnam, Save Vietnam’s Wildlife, Fauna & Flora International, Re:wild, Southern Institute of Ecology SIE, Central Institute for Natural Resources and Environmental Studies, GreenViet**
 
-**Local partners Laos: WWF Laos, Project Anoulak**
+**Local partners Laos: WWF Laos, Association Anoulak**
 
-We want to learn more about the ecology of the little known Annamite endemics and understand what anthropogenic predictors drive the current distribution of these threatened species. In addition to habitat loss, unsustainable hunting is emerging as an increasingly important threat to tropical wildlife biodiversity. Due to pervasive hunting even many protected areas face massive species losses today. This widespread defaunation has been particularly severe in Indochina, where ‘industrial’ snaring has decimated wildlife populations drastically and driven many species to local extinction. Since 2014 we have implemented systematic camera-trapping and iDNA surveys across protected and non-protected areas within the Annamite ecoregion, an Indochinese biodiversity hotspot with an exceptionally high concentration of endemic mammals that, at the same time, face exposure to the highest hunting pressures. Using modern species distribution models we aim to identify and predict areas of particular conservation concern in order to support better conservation efforts by our partners.
+We want to learn more about the ecology of the little known Annamite endemics and understand what anthropogenic predictors drive the current distribution of these threatened species. In addition to habitat loss, unsustainable hunting is emerging as an increasingly important threat to tropical wildlife biodiversity. Due to pervasive hunting even many protected areas face massive species losses today. This widespread defaunation has been particularly severe in Indochina, where ‘industrial’ snaring has decimated wildlife populations drastically and driven many species to local extinction. Since 2014 we have implemented systematic camera-trapping and iDNA surveys across protected and non-protected areas within the Annamite ecoregion. Using modern species distribution models we aim to identify and predict areas of particular conservation concern in order to support better conservation efforts by our partners.
 
 Financial support: Federal Ministry of Education and Research (BMBF), Point Defiance Zoo & Aquaria, National Geographic, Ocean Park Conservation Foundation, Manfred-Hermsen-Stiftung, Mohamed bin Zayed Species Conservation Fund, Eva Mayr-Stihl Stiftung
 
@@ -87,9 +87,13 @@ Financial support: Federal Ministry of Education and Research (BMBF), Point Defi
 
 <div class='headerbox-secondary'><hbox-secondary>Developing standardized and reliable survey tools to monitor mammals in tropical rainforests.</div>
 
+<<<<<<< Updated upstream
 ![](img/team-biodiv-monitoring.png)
 
 **People involved: Jan Axtner, Roshan Guharajan, Than Van Nguyen, Jürgen Niedballa, Azlan bin Mohamed, Badru Mugerwa, Andrew Tilker, Seth T Wong, Andreas Wilting**
+=======
+**People involved: Jan Axtner, Roshan Guharajan, Thanh Van Nguyen, Jürgen Niedballa, Rahel Sollmann, Badru Mugerwa, Andrew Tilker, Seth T Wong, Andreas Wilting**
+>>>>>>> Stashed changes
 
 **Collaborators: Prof. Dr. Douglas Yu (University of East Anglia, Norwich, UK & Kunming University, Kunming, China), Dr. Jesse F Abrams (University of Exeter, Exeter, UK)**
 
