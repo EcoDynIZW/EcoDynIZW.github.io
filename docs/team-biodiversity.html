@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2392,7 +2385,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin: 0;
     display: inline-grid;
     grid-template-columns: repeat(auto-fit, minmax(.5ch, 32ch));
-    grid-gap: 1.5rem;
+    grid-gap: 2.5rem;
     max-width: 80vw;
     width: 110ch;
     padding: 3rem 1rem 5rem 1rem;
@@ -2419,56 +2412,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-size: 1.6rem;
   }
 
-  .card-wrapper-wide {
-    list-style: none;
-    
-  }
-
-  .card-wide {
-    background-color: #f6f6f6;
-    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
-    transition: 0.3s;
-    padding: 28px 28px 28px 28px;
-    border-radius: 0.5rem;
-    margin: auto;
-    place-items: center;
-    justify-content: center;
-    -webkit-columns: 40px 2;
-              /* Chrome, Safari, Opera */
-              -moz-columns: 60px 2;
-              /* Firefox */
-              columns: 60px 2;
-    }
-
-
-
-
-
-
-
   .card-repo {
     background-color: #f6f6f6;
     box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
     transition: 0.3s;
     padding: 12px 12px 12px 12px;
     border-radius: 0.5rem;
-    margin: auto;
+    margin: 12px;
     place-items: center;
     overflow: hidden;
-
-    img {
-      border-radius: 0.5rem 0.5rem 0 0;
-      width: 100%;
-      object-fit: cover;
-      // height: max(10rem, 25vh);
-      max-height: max(10rem, 30vh);
-      aspect-ratio: 4/3;
-      
-      ~ * {
-        margin-left: 1rem;
-        margin-right: 1rem;
-      }
-    }
+    width: 300px;
+    height: 100%;
 
     > :last-child {
       margin-bottom: 0;
@@ -2483,6 +2437,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 
+
+  .card-repo-img {
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /*border: 1px solid #110a31;*/
+    
+    ~ * {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
 
 
 
@@ -2751,13 +2718,33 @@ Research
 <p><img src="img/team-div-header.png" width="1001" /></p>
 </div>
 <div class="highlightbox">
-<p><span class="highlight">
-Globally mammalian biodiversity is declining at an alarming rate as a result of widespread habitat loss and degradation, and unsustainable hunting. We study how these anthropogenic drivers impact the distribution and abundance of ground dwelling mammals. In our field projects we use camera-traps and iDNA (invertebrate derived DNA) metabarcoding to assess species occurrences and we employ statistical models that investigate how anthropogenic drivers affect species distribution. We develop standardized methods and strategies for rigorous biodiversity assessments in order to provide robust scientific baseline data that allow monitoring species-specific and community-wide trends over time. In our work we regularly collaborate closely with local stakeholders and decision makers in order to integrate our data and results directly into wildlife and conservation management policy.
-</span></p>
+<p><span class="highlight"> Globally mammalian biodiversity is declining
+at an alarming rate as a result of widespread habitat loss and
+degradation, and unsustainable hunting. We study how these anthropogenic
+drivers impact the distribution and abundance of ground dwelling
+mammals. In our field projects we use camera-traps and iDNA
+(invertebrate derived DNA) metabarcoding to assess species occurrences
+and we employ statistical models that investigate how anthropogenic
+drivers affect species distribution. We develop standardized methods and
+strategies for rigorous biodiversity assessments in order to provide
+robust scientific baseline data that allow monitoring species-specific
+and community-wide trends over time. In our work we regularly
+collaborate closely with local stakeholders and decision makers in order
+to integrate our data and results directly into wildlife and
+conservation management policy. </span></p>
 </div>
-<p><strong>Dr. Andreas Wilting</strong>, Deputy Department and Team Lead — ecologist and evolutionary biologist with strong interest in species conservation, interested in methods and tools to study species distributions and to use these biodiversity data to target conservation efforts.</p>
-<p><strong>Dr. Rahel Sollmann</strong>, Team Lead, ecologist and quantitative biologist has specialised in the analysis of camera trap data with Bayesian methods for wildlife conservation.</p>
-<p><strong>Dr. Jan Axtner</strong>, Data Management — data manager, ecologist and evolutionary geneticist, finds ways how to produce, store and handle large amounts of data of modern high-throughput biodiversity assessments.</p>
+<p><strong>Dr. Andreas Wilting</strong>, Deputy Department and Team Lead
+— ecologist and evolutionary biologist with strong interest in species
+conservation, interested in methods and tools to study species
+distributions and to use these biodiversity data to target conservation
+efforts.</p>
+<p><strong>Dr. Rahel Sollmann</strong>, Team Lead, ecologist and
+quantitative biologist has specialised in the analysis of camera trap
+data with Bayesian methods for wildlife conservation.</p>
+<p><strong>Dr. Jan Axtner</strong>, Data Management — data manager,
+ecologist and evolutionary geneticist, finds ways how to produce, store
+and handle large amounts of data of modern high-throughput biodiversity
+assessments.</p>
 <hr />
 <h2 id="running-projects">Running Projects</h2>
 <div class="headerbox">
@@ -2766,55 +2753,105 @@ Globally mammalian biodiversity is declining at an alarming rate as a result of 
 <div class="headerbox-secondary">
 <hbox-secondary>Malaysia; Borneo
 </div>
-<p><strong>People involved: Alzlan bin Mohamed, Roshan Guharajan, Jürgen Niedballa, Seth T Wong</strong></p>
-<p><strong>Local partners: Sabah Forestry Department, Ta Ann Holdings Berhad, WWF Malaysia (Sarawak)</strong></p>
-<p>In Malaysian Borneo we study how different anthropogenic drivers affect the occurrence and abundance of ground-dwelling mammal and bird communities. Since 2008, we have monitored mammalian communities over time in forest sites in various stages of recovering from severe logging impacts and under different forest management strategies. We compare the impacts of these strategies (i.e. mixed land-uses with industrial tree plantation and natural forest management, conventionally selective logging and reduced impact logging) at different spatial and temporal scales.</p>
-<p>Financial support: Federal Ministry of Education and Research (BMBF), Panthera, Point Defiance Zoo and Aquarium, Point Defiance Zoo Society, Mohamed bin Zayed Species Conservation Fund, International Association for Bear Research and Management</p>
-<small>
-<b>Key Publications:</b>
+<p><strong>People involved: Alzlan bin Mohamed, Roshan Guharajan, Jürgen
+Niedballa, Seth T Wong</strong></p>
+<p><strong>Local partners: Sabah Forestry Department, Ta Ann Holdings
+Berhad, WWF Malaysia (Sarawak)</strong></p>
+<p>In Malaysian Borneo we study how different anthropogenic drivers
+affect the occurrence and abundance of ground-dwelling mammal and bird
+communities. Since 2008, we have monitored mammalian communities over
+time in forest sites in various stages of recovering from severe logging
+impacts and under different forest management strategies. We compare the
+impacts of these strategies (i.e. mixed land-uses with industrial tree
+plantation and natural forest management, conventionally selective
+logging and reduced impact logging) at different spatial and temporal
+scales.</p>
+<p>Financial support: Federal Ministry of Education and Research (BMBF),
+Panthera, Point Defiance Zoo and Aquarium, Point Defiance Zoo Society,
+Mohamed bin Zayed Species Conservation Fund, International Association
+for Bear Research and Management</p>
+<small> <b>Key Publications:</b>
 <ul>
 <li>
-<a href="https://www.semanticscholar.org/paper/Sustainable-forest-management-is-vital-for-the-of-Guharajan-Mohamed/23023a67dcd41eb1c1baa29a51da0966bed806ec">Guharajan et al. (2021). FOR ECOL MANAG</a>
+<a
+href="https://www.semanticscholar.org/paper/Sustainable-forest-management-is-vital-for-the-of-Guharajan-Mohamed/23023a67dcd41eb1c1baa29a51da0966bed806ec">Guharajan
+et al. (2021). FOR ECOL MANAG</a>
 </li>
 <li>
-<a href="https://www.sciencedirect.com/science/article/pii/S2351989418302981">Mathai et al. (2019). GLOB ECOL EVOL</a>
+<a
+href="https://www.sciencedirect.com/science/article/pii/S2351989418302981">Mathai
+et al. (2019). GLOB ECOL EVOL</a>
 </li>
 <li>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1616504718301320?via%3Dihub">Brozovic et al. (2018). Mammalian Biology</a>
+<a
+href="https://www.sciencedirect.com/science/article/abs/pii/S1616504718301320?via%3Dihub">Brozovic
+et al. (2018). Mammalian Biology</a>
 </li>
 <li>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S161650471730157X?via%3Dihub">Wong et al. (2018). Mammalian Biology</a>
+<a
+href="https://www.sciencedirect.com/science/article/abs/pii/S161650471730157X?via%3Dihub">Wong
+et al. (2018). Mammalian Biology</a>
 </li>
 <li>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1616504717301453?via%3Dihub">Mathai et al. (2017). Mammalian Biology</a>
+<a
+href="https://www.sciencedirect.com/science/article/abs/pii/S1616504717301453?via%3Dihub">Mathai
+et al. (2017). Mammalian Biology</a>
 </li>
 <li>
-<a href="https://onlinelibrary.wiley.com/doi/10.1111/ddi.12530">Sollmann et al. (2017). Diversity and Distributions</a>
+<a href="https://onlinelibrary.wiley.com/doi/10.1111/ddi.12530">Sollmann
+et al. (2017). Diversity and Distributions</a>
 </li>
 </ul>
 <p></small></p>
 <div class="headerbox-secondary">
 <hbox-secondary>Viet Nam, Laos; Annamite region
 </div>
-<p><strong>People involved: Andrew Tilker, An The Troung Nguyen, Than Van Nguyen, Jürgen Niedballa</strong></p>
-<p><strong>Local partners Viet Nam: WWF Vietnam, Save Vietnam’s Wildlife, Fauna &amp; Flora International, Global Willife Conservation GWC, Re:wild, Southern Institute of Ecology SIE, Central Institute for Natural Resources and Environmental Studies, Vinh University</strong></p>
+<p><strong>People involved: Andrew Tilker, An The Troung Nguyen, Than
+Van Nguyen, Jürgen Niedballa</strong></p>
+<p><strong>Local partners Viet Nam: WWF Vietnam, Save Vietnam’s
+Wildlife, Fauna &amp; Flora International, Global Willife Conservation
+GWC, Re:wild, Southern Institute of Ecology SIE, Central Institute for
+Natural Resources and Environmental Studies, Vinh
+University</strong></p>
 <p><strong>Local partners Laos: WWF Laos, Project Anoulak</strong></p>
-<p>We want to learn more about the ecology of the little known Annamite endemics and understand what anthropogenic predictors drive the current distribution of these threatened species. In addition to habitat loss, unsustainable hunting is emerging as an increasingly important threat to tropical wildlife biodiversity. Due to pervasive hunting even many protected areas face massive species losses today. This widespread defaunation has been particularly severe in Indochina, where ‘industrial’ snaring has decimated wildlife populations drastically and driven many species to local extinction. Since 2014 we have implemented systematic camera-trapping and iDNA surveys across protected and non-protected areas within the Annamite ecoregion, an Indochinese biodiversity hotspot with an exceptionally high concentration of endemic mammals that, at the same time, face exposure to the highest hunting pressures. Using modern species distribution models we aim to identify and predict areas of particular conservation concern in order to support better conservation efforts by our partners.</p>
-<p>Financial support: Federal Ministry of Education and Research (BMBF), Point Defiance Zoo &amp; Aquaria, National Geographic, Ocean Park Conservation Foundation, Manfred-Hermsen-Stiftung, Mohamed bin Zayed Species Conservation Fund, Eva Mayr-Stihl Stiftung</p>
-<small>
-<b>Key Publications:</b>
+<p>We want to learn more about the ecology of the little known Annamite
+endemics and understand what anthropogenic predictors drive the current
+distribution of these threatened species. In addition to habitat loss,
+unsustainable hunting is emerging as an increasingly important threat to
+tropical wildlife biodiversity. Due to pervasive hunting even many
+protected areas face massive species losses today. This widespread
+defaunation has been particularly severe in Indochina, where
+‘industrial’ snaring has decimated wildlife populations drastically and
+driven many species to local extinction. Since 2014 we have implemented
+systematic camera-trapping and iDNA surveys across protected and
+non-protected areas within the Annamite ecoregion, an Indochinese
+biodiversity hotspot with an exceptionally high concentration of endemic
+mammals that, at the same time, face exposure to the highest hunting
+pressures. Using modern species distribution models we aim to identify
+and predict areas of particular conservation concern in order to support
+better conservation efforts by our partners.</p>
+<p>Financial support: Federal Ministry of Education and Research (BMBF),
+Point Defiance Zoo &amp; Aquaria, National Geographic, Ocean Park
+Conservation Foundation, Manfred-Hermsen-Stiftung, Mohamed bin Zayed
+Species Conservation Fund, Eva Mayr-Stihl Stiftung</p>
+<small> <b>Key Publications:</b>
 <ul>
 <li>
-<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13029">Tilker et al. (2020). DIVERS DISTRIB</a>
+<a
+href="https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13029">Tilker
+et al. (2020). DIVERS DISTRIB</a>
 </li>
 <li>
-<a href="https://www.nature.com/articles/s41559-019-1027-7">Nguyen et al. (2019). NAT ECOL EVOL</a>
+<a href="https://www.nature.com/articles/s41559-019-1027-7">Nguyen et
+al. (2019). NAT ECOL EVOL</a>
 </li>
 <li>
-<a href="https://www.nature.com/articles/s42003-019-0640-y">Tilker et al. (2019). COMMS BIOL</a>
+<a href="https://www.nature.com/articles/s42003-019-0640-y">Tilker et
+al. (2019). COMMS BIOL</a>
 </li>
 <li>
-<a href="https://www.science.org/doi/10.1126/science.aap9591">Tilker et al. (2017). Science</a>
+<a href="https://www.science.org/doi/10.1126/science.aap9591">Tilker et
+al. (2017). Science</a>
 </li>
 </ul>
 <p></small></p>
@@ -2822,54 +2859,82 @@ Globally mammalian biodiversity is declining at an alarming rate as a result of 
 <hbox>Concepts &amp; Methodology</hbox>
 </div>
 <div class="headerbox-secondary">
-<hbox-secondary>Developing standardized and reliable survey tools to monitor mammals in tropical rainforests.
+<hbox-secondary>Developing standardized and reliable survey tools to
+monitor mammals in tropical rainforests.
 </div>
-<p><strong>People involved: Jan Axtner, Roshan Guharajan, Than Van Nguyen, Jürgen Niedballa, Azlan bin Mohamed, Badru Mugerwa, Andrew Tilker, Seth T Wong, Andreas Wilting</strong></p>
-<p><strong>Collaborators: Prof. Dr. Douglas Yu (University of East Anglia, Norwich, UK &amp; Kunming University, Kunming, China), Dr. Jesse F Abrams (University of Exeter, Exeter, UK)</strong></p>
-<p><img src="img/camara_trapping_team3.png" style="width:30.0%" />
-<img src="img/invertebrate_dna_team3.png" style="width:20.0%" />
-<img src="img/env_data_team3.png" style="width:45.0%" /></p>
-<p>Studying biodiversity on a larger scale is essential to support political and conservation decisions. However, combining and integrating different biodiversity datasets into larger scale analyses is often challenging and associated with a loss of data accuracy and detail. We improve, develop and establish standardized methods and protocols to study and monitor biodiversity. Hereby we focus mainly on high-throughput methods that are applicable in tropical rainforests.
+<p><strong>People involved: Jan Axtner, Roshan Guharajan, Than Van
+Nguyen, Jürgen Niedballa, Azlan bin Mohamed, Badru Mugerwa, Andrew
+Tilker, Seth T Wong, Andreas Wilting</strong></p>
+<p><strong>Collaborators: Prof. Dr. Douglas Yu (University of East
+Anglia, Norwich, UK &amp; Kunming University, Kunming, China), Dr. Jesse
+F Abrams (University of Exeter, Exeter, UK)</strong></p>
+<p><img src="img/camara_trapping_team3.png" style="width:30.0%" /> <img
+src="img/invertebrate_dna_team3.png" style="width:20.0%" /> <img
+src="img/env_data_team3.png" style="width:45.0%" /></p>
+<p>Studying biodiversity on a larger scale is essential to support
+political and conservation decisions. However, combining and integrating
+different biodiversity datasets into larger scale analyses is often
+challenging and associated with a loss of data accuracy and detail. We
+improve, develop and establish standardized methods and protocols to
+study and monitor biodiversity. Hereby we focus mainly on
+high-throughput methods that are applicable in tropical rainforests.
 ScreenForBio user guide</p>
-<small>
-<b>Key Publications:</b>
+<small> <b>Key Publications:</b>
 <ul>
 <li>
-<a href="https://onlinelibrary.wiley.com/doi/10.1111/ecog.05577">Abrams et al. (2021). ECOGRAPHY</a>
+<a href="https://onlinelibrary.wiley.com/doi/10.1111/ecog.05577">Abrams
+et al. (2021). ECOGRAPHY</a>
 </li>
 <li>
-<a href="https://onlinelibrary.wiley.com/doi/10.1002/edn3.182">Nguyen et al. (2021). ENVIRONMENTAL DNA</a>
+<a href="https://onlinelibrary.wiley.com/doi/10.1002/edn3.182">Nguyen et
+al. (2021). ENVIRONMENTAL DNA</a>
 </li>
 <li>
-<a href="https://www.sciencedirect.com/science/article/pii/S2351989419303099">Wong et al. (2019). GLOBAL ECOL AND EVOL</a>
+<a
+href="https://www.sciencedirect.com/science/article/pii/S2351989419303099">Wong
+et al. (2019). GLOBAL ECOL AND EVOL</a>
 </li>
 <li>
-<a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.13411">Abrams et al. (2019). Journal of Applied Ecology</a>
+<a
+href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.13411">Abrams
+et al. (2019). Journal of Applied Ecology</a>
 </li>
 <li>
-<a href="https://academic.oup.com/gigascience/article/8/4/giz029/5450733">Axtner et al. (2019). GigaScience</a>
+<a
+href="https://academic.oup.com/gigascience/article/8/4/giz029/5450733">Axtner
+et al. (2019). GigaScience</a>
 </li>
 <li>
-<a href="https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.107">Niedballa et al. (2019). Remote Sensing in Ecology and Conservation</a>
+<a
+href="https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.107">Niedballa
+et al. (2019). Remote Sensing in Ecology and Conservation</a>
 </li>
 <li>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S1574954118302759?via%3Dihub">Abrams et al. (2019). Ecological Informatics</a>
+<a
+href="https://www.sciencedirect.com/science/article/abs/pii/S1574954118302759?via%3Dihub">Abrams
+et al. (2019). Ecological Informatics</a>
 </li>
 <li>
-<a href="https://www.nature.com/articles/s41559-017-0176">Bush et al. (2017). Nature Ecology &amp; Evolution</a>
+<a href="https://www.nature.com/articles/s41559-017-0176">Bush et
+al. (2017). Nature Ecology &amp; Evolution</a>
 </li>
 <li>
-<a href="https://academic.oup.com/gigascience/article/6/8/gix053/3958782">Mohd Salleh et al. (2017). Gigascience</a>
+<a
+href="https://academic.oup.com/gigascience/article/6/8/gix053/3958782">Mohd
+Salleh et al. (2017). Gigascience</a>
 </li>
 <li>
-<a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12600">Niedballa et al. (2016). Niedballa</a>
+<a
+href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12600">Niedballa
+et al. (2016). Niedballa</a>
 </li>
 </ul>
 <p></small></p>
 <div class="layout-chunk" data-layout="l-screen">
 <p><img src="img/meckpom-csf-inferno-cut-bottom.png" width="2048" /></p>
 </div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

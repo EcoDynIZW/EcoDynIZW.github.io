@@ -796,7 +796,6 @@ d-title .dt-tags {
 d-article table.gt_table td,
 d-article table.gt_table th {
   border-bottom: none;
-  font-size: 100%;
 }
 
 .html-widget {
@@ -1869,21 +1868,15 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      const citeChild = $(this).children()[0]
-      // Do not process if @xyz has been used without escaping and without bibliography activated
-      // https://github.com/rstudio/distill/issues/466
-      if (citeChild === undefined) return true
-
-      if (citeChild.nodeName == "D-FOOTNOTE") {
-        var fn = citeChild
+      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+        var fn = $(this).children()[0]
         $(this).html(fn.shadowRoot.querySelector("sup"))
         $(this).id = fn.id
         fn.remove()
       }
       var refs = $(this).attr('data-cites').split(" ");
       var refHtml = refs.map(function(ref) {
-        // Could use CSS.escape too here, we insure backward compatibility in navigator
-        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
       }).join("\n");
       window.tippy(this, {
         allowHTML: true,
@@ -2398,7 +2391,7 @@ small {
   margin: 0;
   display: inline-grid;
   grid-template-columns: repeat(auto-fit, minmax(.5ch, 32ch));
-  grid-gap: 1.5rem;
+  grid-gap: 2.5rem;
   max-width: 80vw;
   width: 110ch;
   padding: 3rem 1rem 5rem 1rem;
@@ -2425,56 +2418,17 @@ li.card {
   font-size: 1.6rem;
 }
 
-.card-wrapper-wide {
-  list-style: none;
-  
-}
-
-.card-wide {
-  background-color: #f6f6f6;
-  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
-  transition: 0.3s;
-  padding: 28px 28px 28px 28px;
-  border-radius: 0.5rem;
-  margin: auto;
-  place-items: center;
-  justify-content: center;
-  -webkit-columns: 40px 2;
-            /* Chrome, Safari, Opera */
-            -moz-columns: 60px 2;
-            /* Firefox */
-            columns: 60px 2;
-  }
-
-
-
-
-
-
-
 .card-repo {
   background-color: #f6f6f6;
   box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
   transition: 0.3s;
   padding: 12px 12px 12px 12px;
   border-radius: 0.5rem;
-  margin: auto;
+  margin: 12px;
   place-items: center;
   overflow: hidden;
-
-  img {
-    border-radius: 0.5rem 0.5rem 0 0;
-    width: 100%;
-    object-fit: cover;
-    // height: max(10rem, 25vh);
-    max-height: max(10rem, 30vh);
-    aspect-ratio: 4/3;
-    
-    ~ * {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-  }
+  width: 300px;
+  height: 100%;
 
   > :last-child {
     margin-bottom: 0;
@@ -2489,6 +2443,19 @@ li.card {
 
 
 
+
+.card-repo-img {
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  /*border: 1px solid #110a31;*/
+  
+  ~ * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 
 
 

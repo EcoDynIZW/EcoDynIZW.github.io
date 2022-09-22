@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2392,7 +2385,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin: 0;
     display: inline-grid;
     grid-template-columns: repeat(auto-fit, minmax(.5ch, 32ch));
-    grid-gap: 1.5rem;
+    grid-gap: 2.5rem;
     max-width: 80vw;
     width: 110ch;
     padding: 3rem 1rem 5rem 1rem;
@@ -2419,56 +2412,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-size: 1.6rem;
   }
 
-  .card-wrapper-wide {
-    list-style: none;
-    
-  }
-
-  .card-wide {
-    background-color: #f6f6f6;
-    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
-    transition: 0.3s;
-    padding: 28px 28px 28px 28px;
-    border-radius: 0.5rem;
-    margin: auto;
-    place-items: center;
-    justify-content: center;
-    -webkit-columns: 40px 2;
-              /* Chrome, Safari, Opera */
-              -moz-columns: 60px 2;
-              /* Firefox */
-              columns: 60px 2;
-    }
-
-
-
-
-
-
-
   .card-repo {
     background-color: #f6f6f6;
     box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
     transition: 0.3s;
     padding: 12px 12px 12px 12px;
     border-radius: 0.5rem;
-    margin: auto;
+    margin: 12px;
     place-items: center;
     overflow: hidden;
-
-    img {
-      border-radius: 0.5rem 0.5rem 0 0;
-      width: 100%;
-      object-fit: cover;
-      // height: max(10rem, 25vh);
-      max-height: max(10rem, 30vh);
-      aspect-ratio: 4/3;
-      
-      ~ * {
-        margin-left: 1rem;
-        margin-right: 1rem;
-      }
-    }
+    width: 300px;
+    height: 100%;
 
     > :last-child {
       margin-bottom: 0;
@@ -2483,6 +2437,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 
+
+  .card-repo-img {
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /*border: 1px solid #110a31;*/
+    
+    ~ * {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
 
 
 
@@ -2748,12 +2715,28 @@ Research
 <div class="d-article">
 <p><strong>2018</strong></p>
 <ul>
-<li><p>Life-history consequences of snare injuries in female spotted hyenas: A long term study in the Serengeti National Park, Tanzania. <strong>Sara Kaidatzi.</strong> <span class="desaturated">02.05.2018. Diploma thesis. Biologie. Freie Universität Berlin. Benhaiem S, East ML, Hofer H.</span></p></li>
-<li><p>Usage of landscape metrics to predict spatial distribution of mammals in urban areas. <strong>Jessica Thimian.</strong> <span class="desaturated">04.08.2018. BSc. Biologie. Freie Universität Berlin. Supervision: Gras P, Kramer-Schadt S, Hofer H.</span></p></li>
-<li><p>Monthly home ranges and habitat preferences of raccoons (<em>Procyon lotor</em>) in the Uckermark, Germany – a estimation method comparison. <strong>Pedro Mello Rose.</strong> <span class="desaturated">2018. BSc. Biologie. Freie Universität Berlin. Supervision: Scholz C, Hofer H.</span></p></li>
-<li><p>An occupancy analysis of the ocelot (<em>Leopardus pardalis</em>) and its potential preys in Eastern Panama. <strong>Angelica Maria Moreno Sosa.</strong> <span class="desaturated">09.10.2018. MSc. Universität Bremen. Supervision: Abrams J, Kramer-Schadt S, Marko Rohlfs (U Bremen).</span></p></li>
+<li><p>Life-history consequences of snare injuries in female spotted
+hyenas: A long term study in the Serengeti National Park, Tanzania.
+<strong>Sara Kaidatzi.</strong> <span class="desaturated">02.05.2018.
+Diploma thesis. Biologie. Freie Universität Berlin. Benhaiem S, East ML,
+Hofer H.</span></p></li>
+<li><p>Usage of landscape metrics to predict spatial distribution of
+mammals in urban areas. <strong>Jessica Thimian.</strong> <span
+class="desaturated">04.08.2018. BSc. Biologie. Freie Universität Berlin.
+Supervision: Gras P, Kramer-Schadt S, Hofer H.</span></p></li>
+<li><p>Monthly home ranges and habitat preferences of raccoons
+(<em>Procyon lotor</em>) in the Uckermark, Germany – a estimation method
+comparison. <strong>Pedro Mello Rose.</strong> <span
+class="desaturated">2018. BSc. Biologie. Freie Universität Berlin.
+Supervision: Scholz C, Hofer H.</span></p></li>
+<li><p>An occupancy analysis of the ocelot (<em>Leopardus pardalis</em>)
+and its potential preys in Eastern Panama. <strong>Angelica Maria Moreno
+Sosa.</strong> <span class="desaturated">09.10.2018. MSc. Universität
+Bremen. Supervision: Abrams J, Kramer-Schadt S, Marko Rohlfs (U
+Bremen).</span></p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

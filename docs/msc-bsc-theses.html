@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2392,7 +2385,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin: 0;
     display: inline-grid;
     grid-template-columns: repeat(auto-fit, minmax(.5ch, 32ch));
-    grid-gap: 1.5rem;
+    grid-gap: 2.5rem;
     max-width: 80vw;
     width: 110ch;
     padding: 3rem 1rem 5rem 1rem;
@@ -2419,56 +2412,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-size: 1.6rem;
   }
 
-  .card-wrapper-wide {
-    list-style: none;
-    
-  }
-
-  .card-wide {
-    background-color: #f6f6f6;
-    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
-    transition: 0.3s;
-    padding: 28px 28px 28px 28px;
-    border-radius: 0.5rem;
-    margin: auto;
-    place-items: center;
-    justify-content: center;
-    -webkit-columns: 40px 2;
-              /* Chrome, Safari, Opera */
-              -moz-columns: 60px 2;
-              /* Firefox */
-              columns: 60px 2;
-    }
-
-
-
-
-
-
-
   .card-repo {
     background-color: #f6f6f6;
     box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
     transition: 0.3s;
     padding: 12px 12px 12px 12px;
     border-radius: 0.5rem;
-    margin: auto;
+    margin: 12px;
     place-items: center;
     overflow: hidden;
-
-    img {
-      border-radius: 0.5rem 0.5rem 0 0;
-      width: 100%;
-      object-fit: cover;
-      // height: max(10rem, 25vh);
-      max-height: max(10rem, 30vh);
-      aspect-ratio: 4/3;
-      
-      ~ * {
-        margin-left: 1rem;
-        margin-right: 1rem;
-      }
-    }
+    width: 300px;
+    height: 100%;
 
     > :last-child {
       margin-bottom: 0;
@@ -2483,6 +2437,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 
+
+  .card-repo-img {
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /*border: 1px solid #110a31;*/
+    
+    ~ * {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
 
 
 
@@ -2747,35 +2714,92 @@ Research
 
 <div class="d-article">
 <div class="highlightbox">
-<p>We are looking for motivated students interested in questions about <strong>wildlife dynamics and distributions</strong> under global change, <strong>animal behavioral ecology</strong> or advancing <strong>theory in ecology and evolution</strong>. Students should have a strong background in (or the will to learn) R, statistics and modelling. Please contact us for possible thesis subjects and state your skills and interests (e.g., CV, certificates,…) along with the name of one or two references.</p>
-<p><strong>Here you’ll find a list of <a href="msc-bsc-theses-offers.html">offers</a> for Bachelor- and Master-theses.</strong></p>
-<p><strong>For TU Berlin students:</strong> Please consider the <a href="https://www.oekosys.tu-berlin.de/fileadmin/fg35/Lehre/Downloads/ABSOLVENTINNEN_INFOS_Reader_171023.pdf">Reader</a> for the steps necessary to conduct a thesis. Successful attendance of our courses ‘biodiversity dynamics I + II’ , where we teach spatial R, distribution modelling and occupancy modelling, is of advantage.</p>
-<p>Below, you will find an overview over currently running theses as well as a list of completed theses for your information.</p>
+<p>We are looking for motivated students interested in questions about
+<strong>wildlife dynamics and distributions</strong> under global
+change, <strong>animal behavioral ecology</strong> or advancing
+<strong>theory in ecology and evolution</strong>. Students should have a
+strong background in (or the will to learn) R, statistics and modelling.
+Please contact us for possible thesis subjects and state your skills and
+interests (e.g., CV, certificates,…) along with the name of one or two
+references.</p>
+<p><strong>Here you’ll find a list of <a
+href="msc-bsc-theses-offers.html">offers</a> for Bachelor- and
+Master-theses.</strong></p>
+<p><strong>For TU Berlin students:</strong> Please consider the <a
+href="https://www.oekosys.tu-berlin.de/fileadmin/fg35/Lehre/Downloads/ABSOLVENTINNEN_INFOS_Reader_171023.pdf">Reader</a>
+for the steps necessary to conduct a thesis. Successful attendance of
+our courses ‘biodiversity dynamics I + II’ , where we teach spatial R,
+distribution modelling and occupancy modelling, is of advantage.</p>
+<p>Below, you will find an overview over currently running theses as
+well as a list of completed theses for your information.</p>
 </div>
-<p>For older Bachelor- and Master-theses please check here:<br> <a href="msc-bsc-theses-2021.html">2021</a> <a href="msc-bsc-theses-2020.html">2020</a> <a href="msc-bsc-theses-2019.html">2019</a> <a href="msc-bsc-theses-2018.html">2018</a></p>
+<p>For older Bachelor- and Master-theses please check here:<br> <a
+href="msc-bsc-theses-2021.html">2021</a> <a
+href="msc-bsc-theses-2020.html">2020</a> <a
+href="msc-bsc-theses-2019.html">2019</a> <a
+href="msc-bsc-theses-2018.html">2018</a></p>
 <div class="headerbox">
 <hbox>Completed Theses</hbox>
 </div>
 <p><br></p>
-<p><img src="img/bee_bsc-theses.png" style="width:32.5%" />
-<img src="img/leopard_msc-theses.png" style="width:32.5%" />
-<img src="img/greycrownedcrane_msc-theses.png" style="width:32.5%" />
-<img src="img/ibis-bsc-theses.png" style="width:32.5%" />
-<img src="img/vulpes_vulpes.png" style="width:32.5%" />
-<img src="img/squirrel.png" style="width:32.5%" /></p>
+<p><img src="img/bee_bsc-theses.png" style="width:32.5%" /> <img
+src="img/leopard_msc-theses.png" style="width:32.5%" /> <img
+src="img/greycrownedcrane_msc-theses.png" style="width:32.5%" /> <img
+src="img/ibis-bsc-theses.png" style="width:32.5%" /> <img
+src="img/vulpes_vulpes.png" style="width:32.5%" /> <img
+src="img/squirrel.png" style="width:32.5%" /></p>
 <p><strong>2022</strong></p>
 <ul>
-<li><p>Evaluating the effects of blackberry (<em>Rubus niveus</em>) abundance on land bird diversity on Santiago Island, Galapagos. <strong>Mateo Reyes.</strong> <span class="desaturated">23.05.2022. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Kramer-Schadt S, M von der Lippe (TUB).</span></p></li>
-<li><p>Zur Verbreitung des Rotfuchses (Vulpes vulpes) in deutschen Nationalparken auf Grundlage von Kamerafallendaten. <strong>Clara Heinrich.</strong> <span class="desaturated">20.05.2022. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Kramer-Schadt S, C Fiderer (ALUF).</span></p></li>
-<li><p>Wildtiere in deutschen Großstädten: ein Vergleich zwischen Medienpräsenz und Wahrnehmung von Stadtbewohnern. <strong>Henry Karsch.</strong> <span class="desaturated">15.05.2022. MSc. FU Berlin. Fachbereich Biologie/Chemie/Pharmazie. Supervision: Jonathan Jeschke (FU), Tanja Straka (TUB), S Kramer-Schadt</span></p></li>
-<li><p>Social status driven epigenetic differences in female spotted hyenas in the Serengeti National Park. <strong>Nick Mewes.</strong> <span class="desaturated">14.06.2022. MSc. Universität Potsdam. Ecology, Evolution and Conservation. Supervision: Alexandra Weyrich (Dept 2, IZW), Sarah Benhaiem (Dept 6, IZW)</span></p></li>
-<li><p>Birds in the city: understanding direct and indirect effects of human disturbance and vegetation structure on functional diversity in Berlin. <strong>Estelle Solem.</strong> <span class="desaturated">06.04.2022. BSc. Humboldt Universität zu Berlin. Geographie. Supervision: Tobias Kümmerle (HU), Aimara Planillo, S Kramer-Schadt</span></p></li>
-<li><p>Differential DNA methylation between dominant and subordinate spotted hyena twins. <strong>Lena Ruf.</strong> <span class="desaturated">05.04.2022. MSc. University of Potsdam. Ecology, Evolution and Conservation. Supervision: Alexandra Weyrich, Sarah Benhaiem, Jörns Fickel (UP)</span></p></li>
-<li><p>Urban planning for animals and humans: An empirical investigation of planning approaches and their perception by Berlin citizens. <strong>Lisa Jäger.</strong> <span class="desaturated">23.02.2022. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Tanja Straka (TUB), Kramer-Schadt S.</span></p></li>
-<li><p>Einfluss einer Unterrichtseinheit über Wildbienen auf die Einstellungen, die Emotionen und das Wissen von Schülern. <strong>Sarah Festl.</strong> <span class="desaturated">25.02.2022. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Tanja Straka (TUB), Kramer-Schadt S.</span></p></li>
-<li><p>Spatial use and population development of the Eurasian otter <em>Lutra lutra</em> in Sielmanns Naturlandschaft Groß Schauen and the state of Brandenburg. <strong>Yvonne Rychlak.</strong> <span class="desaturated">02.02.2022. MSc. Ecology, Evolution and Nature Conservation. University of Potsdam. Supervision: Niels Blaum (UP), Kramer-Schadt S.</span></p></li>
+<li><p>Evaluating the effects of blackberry (<em>Rubus niveus</em>)
+abundance on land bird diversity on Santiago Island, Galapagos.
+<strong>Mateo Reyes.</strong> <span class="desaturated">23.05.2022. BSc.
+TU Berlin. Ecology and Environmental Planning. Supervision:
+Kramer-Schadt S, M von der Lippe (TUB).</span></p></li>
+<li><p>Zur Verbreitung des Rotfuchses (Vulpes vulpes) in deutschen
+Nationalparken auf Grundlage von Kamerafallendaten. <strong>Clara
+Heinrich.</strong> <span class="desaturated">20.05.2022. BSc. TU Berlin.
+Ecology and Environmental Planning. Supervision: Kramer-Schadt S, C
+Fiderer (ALUF).</span></p></li>
+<li><p>Wildtiere in deutschen Großstädten: ein Vergleich zwischen
+Medienpräsenz und Wahrnehmung von Stadtbewohnern. <strong>Henry
+Karsch.</strong> <span class="desaturated">15.05.2022. MSc. FU Berlin.
+Fachbereich Biologie/Chemie/Pharmazie. Supervision: Jonathan Jeschke
+(FU), Tanja Straka (TUB), S Kramer-Schadt</span></p></li>
+<li><p>Social status driven epigenetic differences in female spotted
+hyenas in the Serengeti National Park. <strong>Nick Mewes.</strong>
+<span class="desaturated">14.06.2022. MSc. Universität Potsdam. Ecology,
+Evolution and Conservation. Supervision: Alexandra Weyrich (Dept 2,
+IZW), Sarah Benhaiem (Dept 6, IZW)</span></p></li>
+<li><p>Birds in the city: understanding direct and indirect effects of
+human disturbance and vegetation structure on functional diversity in
+Berlin. <strong>Estelle Solem.</strong> <span
+class="desaturated">06.04.2022. BSc. Humboldt Universität zu Berlin.
+Geographie. Supervision: Tobias Kümmerle (HU), Aimara Planillo, S
+Kramer-Schadt</span></p></li>
+<li><p>Differential DNA methylation between dominant and subordinate
+spotted hyena twins. <strong>Lena Ruf.</strong> <span
+class="desaturated">05.04.2022. MSc. University of Potsdam. Ecology,
+Evolution and Conservation. Supervision: Alexandra Weyrich, Sarah
+Benhaiem, Jörns Fickel (UP)</span></p></li>
+<li><p>Urban planning for animals and humans: An empirical investigation
+of planning approaches and their perception by Berlin citizens.
+<strong>Lisa Jäger.</strong> <span class="desaturated">23.02.2022. MSc.
+TU Berlin. Ecology and Environmental Planning. Supervision: Tanja Straka
+(TUB), Kramer-Schadt S.</span></p></li>
+<li><p>Einfluss einer Unterrichtseinheit über Wildbienen auf die
+Einstellungen, die Emotionen und das Wissen von Schülern. <strong>Sarah
+Festl.</strong> <span class="desaturated">25.02.2022. BSc. TU Berlin.
+Ecology and Environmental Planning. Supervision: Tanja Straka (TUB),
+Kramer-Schadt S.</span></p></li>
+<li><p>Spatial use and population development of the Eurasian otter
+<em>Lutra lutra</em> in Sielmanns Naturlandschaft Groß Schauen and the
+state of Brandenburg. <strong>Yvonne Rychlak.</strong> <span
+class="desaturated">02.02.2022. MSc. Ecology, Evolution and Nature
+Conservation. University of Potsdam. Supervision: Niels Blaum (UP),
+Kramer-Schadt S.</span></p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
