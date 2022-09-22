@@ -2385,7 +2385,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin: 0;
     display: inline-grid;
     grid-template-columns: repeat(auto-fit, minmax(.5ch, 32ch));
-    grid-gap: 1.5rem;
+    grid-gap: 2.5rem;
     max-width: 80vw;
     width: 110ch;
     padding: 3rem 1rem 5rem 1rem;
@@ -2412,56 +2412,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-size: 1.6rem;
   }
 
-  .card-wrapper-wide {
-    list-style: none;
-    
-  }
-
-  .card-wide {
-    background-color: #f6f6f6;
-    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
-    transition: 0.3s;
-    padding: 28px 28px 28px 28px;
-    border-radius: 0.5rem;
-    margin: auto;
-    place-items: center;
-    justify-content: center;
-    -webkit-columns: 40px 2;
-              /* Chrome, Safari, Opera */
-              -moz-columns: 60px 2;
-              /* Firefox */
-              columns: 60px 2;
-    }
-
-
-
-
-
-
-
   .card-repo {
     background-color: #f6f6f6;
     box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
     transition: 0.3s;
     padding: 12px 12px 12px 12px;
     border-radius: 0.5rem;
-    margin: auto;
+    margin: 12px;
     place-items: center;
     overflow: hidden;
-
-    img {
-      border-radius: 0.5rem 0.5rem 0 0;
-      width: 100%;
-      object-fit: cover;
-      // height: max(10rem, 25vh);
-      max-height: max(10rem, 30vh);
-      aspect-ratio: 4/3;
-      
-      ~ * {
-        margin-left: 1rem;
-        margin-right: 1rem;
-      }
-    }
+    width: 300px;
+    height: 100%;
 
     > :last-child {
       margin-bottom: 0;
@@ -2476,6 +2437,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 
+
+  .card-repo-img {
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /*border: 1px solid #110a31;*/
+    
+    ~ * {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
 
 
 
@@ -2741,7 +2715,7 @@ Research
 <div class="d-article">
 <ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/axtner_2019.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/axtner_2019.png'>
 <h3>
 Axtner et al. 2019
 </h3>
@@ -2757,10 +2731,8 @@ src="img/icon-paper.png" style="width:12.0%" /></a>
 src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/benhaiem_2018.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/benhaiem_2018.png'>
 <h3>
 Benhaiem et al. 2018
 </h3>
@@ -2775,10 +2747,8 @@ src="img/icon-paper.png" style="width:12.0%" /></a>
 src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/calderon_2022.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/calderon_2022.png'>
 <h3>
 Calderon et al. 2022
 </h3>
@@ -2793,10 +2763,8 @@ src="img/icon-paper.png" style="width:12.0%" /></a>
 src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/dalleau_2019.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/dalleau_2019.png'>
 <h3>
 Dalleau et al. 2019
 </h3>
@@ -2811,10 +2779,8 @@ src="img/icon-paper.png" style="width:12.0%" /></a>
 src="img/icon-comses.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/drenske_2022.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/drenske_2022.png'>
 <h3>
 Drenske et al. 2022
 </h3>
@@ -2828,8 +2794,6 @@ interventions for population viability. <em>ORYX</em>
 <a href=''><img src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
 <img src='https://ecodynizw.github.io/img/grabow_2022.png' width="300">
 <h3>
@@ -2847,10 +2811,8 @@ src="img/icon-paper.png" style="width:12.0%" /></a>
 src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/kuerschner_2021.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/kuerschner_2021.png'>
 <h3>
 Kürschner et al. 2021
 </h3>
@@ -2868,10 +2830,8 @@ src="img/icon-github.png" style="width:12.0%" /></a>
 src="img/icon-zenodo.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/louvrier_2021.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/louvrier_2021.png'>
 <h3>
 Louvrier et al. 2021
 </h3>
@@ -2887,10 +2847,8 @@ src="img/icon-paper.png" style="width:12.0%" /></a>
 src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/marescot_2020.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/marescot_2020.png'>
 <h3>
 Marescot et al. 2020
 </h3>
@@ -2905,10 +2863,8 @@ src="img/icon-paper.png" style="width:12.0%" /></a>
 src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/nguyen_2021.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/nguyen_2021.png'>
 <h3>
 Nguyen et al. 2021
 </h3>
@@ -2924,10 +2880,8 @@ style="width:12.0%" /></a>
 src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/planillo_2021.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/planillo_2021.png'>
 <h3>
 Planillo et al. 2021
 </h3>
@@ -2943,10 +2897,8 @@ src="img/icon-paper.png" style="width:12.0%" /></a>
 src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/radchuk_2016.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/radchuk_2016.png'>
 <h3>
 Radchuk et al. 2016
 </h3>
@@ -2961,10 +2913,8 @@ src="img/icon-paper.png" style="width:12.0%" /></a>
 src="img/icon-comses.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/radchuk_2019.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/radchuk_2019.png'>
 <h3>
 Radchuk et al. 2019
 </h3>
@@ -2979,10 +2929,8 @@ src="img/icon-paper.png" style="width:12.0%" /></a>
 src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
-</ul>
-<ul class="card-wrapper">
 <li class="card-repo">
-<img src='https://ecodynizw.github.io/img/scherer_2020.png' width="300">
+<img class="card-repo-img" src='https://ecodynizw.github.io/img/scherer_2020.png'>
 <h3>
 Scherer et al. 2020
 </h3>
