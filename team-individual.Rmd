@@ -31,6 +31,9 @@ Our study population experiences extreme and unpredictable fluctuations in prey 
 Unfortunately, commuting hyenas in the Serengeti can get killed by wire snares set illegally by bushmeat hunters along some borders of the Park or become victims of road accidents. These anthropogenic threats are likely to intensify with the expected increases in local human populations and traffic volume associated with tourism. Changes in rainfall patterns driven by global warming may also have cascading effects on this large slow-reproducing mammal.
 
 
+```{r, layout="l-screen"}
+knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
+```
 
 # Running Projects
 
@@ -39,12 +42,11 @@ Unfortunately, commuting hyenas in the Serengeti can get killed by wire snares s
 
 <div class='headerbox-secondary'><hbox-secondary>Ecological, social and maternal effects on individual performance, population dynamics and resilience</div>
 
-**Current team & collaborators: Morgane Gicquel (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Viktoriia Radchuk (Dept. 6, IZW), Oliver Höner (Dept. 1, IZW), Adam Clark (University of Graz), Stephanie Kramer-Schadt (Dept. 6, IZW)**
-
 
 ![](img/hyenas_metzger_1.png){width=32.5%}
 ![](img/gicquel_2022_2.png){width=32.5%}
 
+**Current team & collaborators: Morgane Gicquel, Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Viktoriia Radchuk (Dept. 6, IZW), Oliver Höner (Dept. 1, IZW), Adam Clark (University of Graz), Stephanie Kramer-Schadt (Dept. 6, IZW)**
 
 We investigate how ecological and social conditions (e.g. rainfall, maternal rank, litter size), behaviours (e.g. infanticides), and disturbances (e.g. epidemics, droughts) influence the reproductive performance and survival prospects of spotted hyenas at different life stages, and their demographic resilience.
 
@@ -62,13 +64,12 @@ We investigate how ecological and social conditions (e.g. rainfall, maternal ran
 
 <div class='headerbox'><hbox>Disease ecology</hbox></div>
 
-
 <div class='headerbox-secondary'><hbox-secondary>Disease ecology: consequences of infections on allostatic load and fitness</div>
-
-**Current team & collaborators: Miguel Veiga (PhD candidate), Susana Soares (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Joshua Dalijono (student helper), Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 3, IZW), Sarah Benhaiem, Jella Wauters (Dept. 4, IZW)**
 
 ![](img/hyenas_metzger_2.png){width=32.5%}
 ![](img/ferreira_2021.png){width=32.5%}
+
+**Current team & collaborators: Miguel Veiga, Susana Soares, Dagmar Thierer, Stephan Karl, Sonja Metzger, Joshua Dalijono (student helper), Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 3, IZW), Sarah Benhaiem, Jella Wauters (Dept. 4, IZW)**
 
 We investigate the interactions between spotted hyenas and their pathogens, including their gastrointestinal parasitic community and viruses. We are particularly interested in the causes and consequences of infections in individuals, immunosenescence and the interactions between allostatic load (“stress”), immunity and infections.
 
@@ -89,10 +90,10 @@ We investigate the interactions between spotted hyenas and their pathogens, incl
 
 <div class='headerbox-secondary'><hbox-secondary>Human-wildlife conflicts and climate change in the Serengeti</div>
 
-**Current team & collaborators: Marwan Naciri (former MSc student), Montan Kalyahe (PhD candidate), Morgane Gicquel (PhD candidate), Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Aimara Planillo (Dept. 6, IZW), Sarah Cubaynes (CEFE, Montpellier)**
-
 ![](img/hyenas_metzger_3.png){width=32.5%}
 ![](img/gicquel_2022_3.png){width=32.5%}
+
+**Current team & collaborators: Marwan Naciri (former MSc student), Montan Kalyahe, Morgane Gicquel, Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Aimara Planillo (Dept. 6, IZW), Sarah Cubaynes (CEFE, Montpellier)**
 
 We are interested in assessing the effects of illegal bushmeat hunting (snaring), roadkills and changes in rainfall patterns driven by global warming on spotted hyenas. We also investigate the factors that influence the likelihood of predation on livestock and consumption of discarded livestock ‘waste’. 
 
@@ -111,10 +112,10 @@ We are interested in assessing the effects of illegal bushmeat hunting (snaring)
 
 <div class='headerbox-secondary'><hbox-secondary>Epigenetic stability and plasticity of social environmental effects</div>
 
-**Current team & collaborators: Alexandra Weyrich (Dept. 2, IZW, PI), Colin Vullioud (Dept. 2, IZW), Jörns Fickel (Dept. 2, IZW), Lena Ruf (Dept. 2, IZW), Nick Mewes (Dept. 2, IZW), Sarah Benhaiem, Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 2, IZW), Emmanuel Heitlinger (Humboldt University), Jerzy Adamski (Helmholtz-Center Munich), Alexander Cecil (Helmholtz-Center Munich), Moshe Szyf (McGill University), Yoav Soen (Weizmann Institute of Science)**
-
 ![](img/hyenas_metzger_4.png){width=32.5%}
 ![](img/guerrero_2021.png){width=32.5%}
+
+**Current team & collaborators: Alexandra Weyrich (Dept. 2, IZW, PI), Colin Vullioud (Dept. 2, IZW), Jörns Fickel (Dept. 2, IZW), Lena Ruf (Dept. 2, IZW), Nick Mewes (Dept. 2, IZW), Sarah Benhaiem, Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 2, IZW), Emmanuel Heitlinger (Humboldt University), Jerzy Adamski (Helmholtz-Center Munich), Alexander Cecil (Helmholtz-Center Munich), Moshe Szyf (McGill University), Yoav Soen (Weizmann Institute of Science)**
 
 We investigate if DNA methylation is a main mechanism through which an individual’s social environment regulates gene expression and physiological responses. We hypothesize that changes in social status will led to changes in epigenetic patterns. To test our hypotheses, we study the DNA methylation patterns in the spotted hyena.
 

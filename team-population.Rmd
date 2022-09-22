@@ -27,6 +27,9 @@ knitr::include_graphics("img/team-pop-header.png")
 
 **Moritz Wenzler-Meya**, GIS-Lab—  geodata analyst, responsible for the GIS lab, providing geodata and supporting coding.</br>
 
+```{r, layout="l-screen"}
+knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
+```
 
 # Running Projects
 
@@ -112,9 +115,9 @@ Urbanisation poses risks and opportunities for wildlife. We investigate how spec
 
 ![](img/team-pop-wildlife.png)
 
-Wildlife faces big challenges persisting in human-dominated landscapes. We model their population dynamics, viability and connectivity using individual-based models on a spatially-explicit basis, with the aim of supporting wildlife management and conservation.
-
 **Dr. Julie Louvrier, Dr. Aimara Planillo, Dr. Cédric Scherer, Dr. Joe Premier, Ana Patricia Calderon, Eva Sánchez Arribas**
+
+Wildlife faces big challenges persisting in human-dominated landscapes. We model their population dynamics, viability and connectivity using individual-based models on a spatially-explicit basis, with the aim of supporting wildlife management and conservation.
 
 * **Wolf population dynamics and establishment in Germany**
 * **Jaguar connectivity and conservation prioritization in Central America**

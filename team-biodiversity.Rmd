@@ -25,7 +25,9 @@ knitr::include_graphics("img/team-div-header.png")
 
 **Dr. Jan Axtner**, Data Management — data manager, ecologist and evolutionary geneticist, finds ways how to produce, store and handle large amounts of data of modern high-throughput biodiversity assessments.
 
----
+```{r, layout="l-screen"}
+knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
+```
 
 ## Running Projects
 

@@ -83,6 +83,14 @@ d-appendix {
   font-size: 0.8rem;
 }
 
+.nav-dropdown-content a:hover {
+  background-color: #110a31;
+}
+
+p {
+  text-align: justify;
+}
+
 d-article h2 {
     margin: 1rem 0 1rem 0;
 }
@@ -116,7 +124,7 @@ hbox{
   padding: 10px;
   text-align: left;
   border: 5px solid #110a31;
-  margin: 0.75rem 0 0.5rem 0;
+  margin: 0.75rem 0 1.0rem 0;
 }
 hbox-secondary{
   font-family: PT Sans Caption;
@@ -137,7 +145,7 @@ hbox-secondary{
   text-align: left;
   background: #efefee;
   padding-bottom: 1.125rem;
-  margin: 0.625rem 0 1.875rem 0;
+  margin: 0.625rem 0 1.0rem 0;
 }
 .highlight {
   font-family: PT Serif;

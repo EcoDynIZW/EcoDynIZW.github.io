@@ -83,22 +83,5 @@
     "preview": "https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-d6.png",
     "last_modified": "2022-09-22T15:52:32+02:00",
     "input_file": {}
-  },
-  {
-    "path": "posts/welcome/",
-    "title": "Welcome to Ecological Dynamics",
-    "description": "Welcome! This is our page for the newly founded IZW department Ecological Dynamics. We hope you enjoy \nreading what we have to say and share!",
-    "author": [
-      {
-        "name": "Stephanie Kramer–Schadt",
-        "url": {}
-      }
-    ],
-    "date": "2019-01-01",
-    "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2022-09-22T15:52:32+02:00",
-    "input_file": {}
   }
 ]

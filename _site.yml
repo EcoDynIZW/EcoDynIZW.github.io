@@ -18,11 +18,11 @@ navbar:
   right:
     - text: "Teams"
       menu:
-        - text: "Team 1: Individual Dynamics"
+        - text: "Individual Dynamics"
           href: team-individual.html
-        - text: "Team 2: Population Dynamics"
+        - text: "Population Dynamics"
           href: team-population.html
-        - text: "Team 3: Biodiversity Dynamics"
+        - text: "Biodiversity Dynamics"
           href: team-biodiversity.html
     - text: "Research"
       menu:

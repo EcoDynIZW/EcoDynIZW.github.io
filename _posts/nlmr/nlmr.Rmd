@@ -1,7 +1,7 @@
 ---
 title: "NLMR"
 description: |
-  NLMR is an R package for simulating neutral landscape models (NLM). Designed to be a generic framework like NLMpy, it leverages the ability to simulate the most common NLM that are described in the ecological literature. NLMR builds on the advantages of the raster package and returns all simulation as RasterLayer objects, thus ensuring a direct compatibility to common GIS tasks and a flexible and simple usage. Furthermore, it simulates NLMs within a self-contained, reproducible framework.
+  NLMR is an R package for simulating neutral landscape models (NLM). Designed to be a generic framework like NLMpy, it leverages the ability to simulate the most common NLM that are described in the ecological literature.
 preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-nlmr.png
 author:
   - name: ropensci
@@ -18,45 +18,26 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Installation
+[NLMR package](https://github.com/ropensci/NLMR) builds on the advantages of the raster package and returns all simulation as RasterLayer objects, thus ensuring a direct compatibility to common GIS tasks and a flexible and simple usage. Furthermore, it simulates NLMs within a self-contained, reproducible framework.
 
-[NLMR](https://github.com/ropensci/NLMR) is not available on CRAN at the moment (see #95). The only way to install NLMR at the moment is:
-
-```{r, eval=FALSE, Echo=TRUE}
-# install.packages("remotes")
-remotes::install_github("cran/RandomFieldsUtils")
-remotes::install_github("cran/RandomFields")
-remotes::install_github("ropensci/NLMR")
-```
-
-Windows users need to install RTools first. Rtools provides a compiler and some helpers to compile code for R in Windows. Download Rtools from [here](https://cran.r-project.org/bin/windows/Rtools/) and select the appropriate Rtools version (4.0 with R 4.x.x)
-
-Install Rtools in a directory with no fancy characters in its path, e.g. C:\R\Rtools is safe. To install, right click on the Rtools40.exe and select “Run as administrator”. During the installation make sure to select “Add Rtools to PATH”. Otherwise, accept all defaults for everything else.
-Example
-
-Each neutral landscape models is simulated with a single function (all starting with nlm_) in NLMR, e.g.:
+Each neutral landscape models is simulated with a single function (all starting with `nlm_`) in NLMR, e.g.:
 
 
 ```{r, eval=FALSE, echo=TRUE}
-
 random_cluster <- NLMR::nlm_randomcluster(nrow = 100,
-                                      ncol = 100,
-                                      p    = 0.5,
-                                      ai   = c(0.3, 0.6, 0.1),
-                                      rescale = FALSE)
+                                          ncol = 100,
+                                          p    = 0.5,
+                                          ai   = c(0.3, 0.6, 0.1),
+                                          rescale = FALSE)
 
 random_curdling <- NLMR::nlm_curds(curds = c(0.5, 0.3, 0.6),
-                              recursion_steps = c(32, 6, 2))
+                                   recursion_steps = c(32, 6, 2))
 
 
 midpoint_displacememt <- NLMR::nlm_mpd(ncol = 100,
-                                 nrow = 100,
-                                 roughness = 0.61)
+                                       nrow = 100,
+                                       roughness = 0.61)
 ```
 
-## See also
-
-NLMR was split during its development process - to have a minimal dependency version for simulating neutral landscape models and an utility toolbox to facilitate workflows with raster data. If you are interested in merging, visualizing or further handling neutral landscape models have a look at the [landscapetools](https://github.com/ropensci/landscapetools/) package.
-
-
+NLMR supplies 15 NLM algorithms, with several options to simulate derivatives of them. The algorithms differ from each other in spatial auto-correlation, from no auto-correlation (random NLM) to a constant gradient (planar gradients).
 

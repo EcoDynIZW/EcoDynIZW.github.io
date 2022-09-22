@@ -51,25 +51,25 @@ Who does what in the department? Tasks and expertise as well as meeting dates an
 
 ## Conducting BSc/MSc/PhD Projects
 
-For PhD students: please read the IZW PhD guidelines (`\\izw-daten-8\Alle\GUEST\Doktorand(inn)en\IZW-PhD-rules`) carefully and follow the instructions (e.g. when you have to give an introduction talk). For any question about these guidelines, contact the PhD coordinators (currently: Gábor Czirják (czirjak[at]izw-berlin.de) and Sarah Benhaiem (benhaiem[at]izw-berlin.de)).
+For PhD students: please read the IZW PhD guidelines (`\\izw-daten-8\Alle\GUEST\Doktorand(inn)en\IZW-PhD-rules`) carefully and follow the instructions (e.g. when you have to give an introduction talk). For any question about these guidelines, contact the PhD coordinators Gábor Czirják (<a href="mailto:czirjak@izw-berlin.de">czirjak[at]izw-berlin.de</a>) and Sarah Benhaiem (<a href="mailto:benhaiem@izw-berlin.de">benhaiem[at]izw-berlin.de).
 
 
 ### Meetings
 
-*	Regular meetings with your supervisor often help to avoid a waste of time (see also Appendix C). It is in the responsibility of the student to organize and schedule regular meeting with his/ her supervisor or the team.
+*	**Regular meetings with your supervisor** often help to avoid a waste of time (see also Appendix C). It is in the responsibility of the student to organize and schedule regular meeting with his/ her supervisor or the team.
 *	You can either arrange a fixed date with your supervisor (e.g. first Monday of every month) or schedule them on demand. Please find an agreement with your supervisor how to handle this best. Please keep in mind that any non-regular meeting should be planned at least two weeks ahead.
-*	Use the IZW outlook calendar to schedule meetings with supervisors and colleagues (if you have an IZW Email address). That is: create the entry in the calendar and ‘invite’ the others, so that the date/ location appears in each calendar, with sufficient notice time for the automated reminder (i.e. 1 day/ 1 hr).
-*	Prepare the meetings: Think carefully about your problems/questions and write your agenda (what you want to discuss) before the meeting, make suggestions for your solution(s) and ask the supervisors/collaborators to comment on your solution(s).
-*	Write the minutes of the meeting and save it in the project folder (we give instructions about this project folder below 3.1.). Minimum information needed: (1) date of meeting, (2) name of participants, (3) questions or problems discussed, (4) main solutions suggested and (5) aims or results to prepare for the next meeting. Write down agreements of the responsibilities of all collaborators.
-*	Present your project progress regularly in the department meetings, also to get feedback and discuss problems you ran into.
+*	Use the **IZW outlook calendar to schedule meetings** with supervisors and colleagues (if you have an IZW Email address). That is: create the entry in the calendar and ‘invite’ the others, so that the date/ location appears in each calendar, with sufficient notice time for the automated reminder (i.e. 1 day/ 1 hr).
+*	**Prepare the meetings**: Think carefully about your problems/questions and write your agenda (what you want to discuss) before the meeting, make suggestions for your solution(s) and ask the supervisors/collaborators to comment on your solution(s).
+*	Write the **minutes of the meeting** and save it in the project folder (we give instructions about this project folder below 3.1.). Minimum information needed: (1) date of meeting, (2) name of participants, (3) questions or problems discussed, (4) main solutions suggested and (5) aims or results to prepare for the next meeting. Write down agreements of the responsibilities of all collaborators.
+*	**Present your project progress** regularly in the department meetings, also to get feedback and discuss problems you ran into.
 
 
 ### Thesis writing
 
-* Start writing the thesis early enough. Write simple and concise sentences based on what is known in the literature. Join a ‘pub club’ (i.e. retreats for writing), e.g. Team 2 has regular meetings on jointly discussing drafts of each other. Please also read the instructions (Under construction) for how to write good scientific papers.
-*	Arrange with your supervisor how and in what form you report progress. Getting regular feedback for chapters or even just paragraphs might keep you from running into dead ends. When asking for revisions plan in sufficient time for the reviewers to read and respond (1-3 weeks, depending on the amount of text).
+* **Start writing the thesis early** enough. Write simple and concise sentences based on what is known in the literature. Join a ‘pub club’ (i.e. retreats for writing), e.g. Team 2 has regular meetings on jointly discussing drafts of each other. Please also read the instructions (Under construction) for how to write good scientific papers.
+*	Arrange with your supervisor how and in what form you report progress. **Getting regular feedback** for chapters or even just paragraphs might keep you from running into dead ends. When asking for revisions plan in sufficient time for the reviewers to read and respond (1-3 weeks, depending on the amount of text).
 *	For PhD students: A first complete manuscript draft should be ready after ~ 1 year after starting time.
-*	Send the final version of your manuscript/thesis to all supervisors/colleagues at least 4 weeks before the submission date and keep in mind that you might have to revise it.
+*	Send the **final version of your manuscript/thesis** to all supervisors/colleagues **at least 4 weeks before the submission date** and keep in mind that you might have to revise it.
 
 
 ## Organizing Workflows 
@@ -79,11 +79,11 @@ To store data and results, the IZW follows the DFG-guidelines for good scientifi
 
 ### Project workflow 
 
-Contact the Data Managers (Jan or Moritz) of the respective teams to organize your project ID, get server access and how to arrange your workspace best. To setup a project folder, we ask you to follow the setup:
+Contact the Data Managers (Jan Axtner or Moritz Wenzler-Meya) of the respective teams to organize your project ID, get server access and how to arrange your workspace best. To setup a project folder, we ask you to follow the setup:
 
-* The standardized project folder outline! (see Appendix A) cf. `d6` R package and GitHub)
-*	Make an outline of the structure separately in your electronic lab-book (see 3.3.1), to indicate what to find in each folder and keep it updated.
-*	Please hand over the raw data to the data manager before starting your project analysis, to avoid accidental data losses.
+* **Use the standardized project folder** structure! (see Appendix A, cf. [`d6` R package](https://github.com/EcoDynIZW/d6) and [GitHub](https://github.com/))
+*	Make an outline of the structure separately in your **electronic lab-book** (see 3.3.1), to indicate what to find in each folder and keep it updated.
+*	Please **hand over the raw data to the data manager <u>before</u> starting your project analysis**, to avoid accidental data losses.
 *	Store the raw data, e.g. data from field work, in the folder named `data-raw`. Use a folder named `output` to store data created from the raw data (e.g. after data cleaning or editing). This should also be the place where the `master table` is located, i.e. the dataset of all subsequent analyses. If needed you can have a temporary subfolder in the “output” folder for everyday work and analysis trials. Empty the temporary folder regularly. Plots and figures should be stored in the `plots` folder. Scripts should be stored in the `R` folder. Documents like manuscripts, proposals, etc. should be stored in the `docs` folder. Save important, computational or labour intensive interim results or final results. Use appropriate subfolders such as `interim-results_<date>` or `final-results_<date>`.
 
 
