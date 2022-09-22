@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/axtner_2019.png' width="300">
     <h3>Axtner et al. 2019</h3>
-    <p>An efficient and robust laboratory workflow and tetrapod database for larger scale environmental DNA studies. *GigaScience.* 8(4):giz029.</p><p>
+    <p>An efficient and robust laboratory workflow and tetrapod database for larger scale environmental DNA studies. *GIGASCIENCE.* 8(4):giz029.</p><p>
     <a href='https://doi.org/10.1093/gigascience/giz029'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Axtner_2019_GigaScience'>![](img/icon-github.png){width=12%}</a></p>
   </li>
@@ -31,7 +31,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/benhaiem_2018.png' width="300">
     <h3>Benhaiem et al. 2018</h3>
-    <p>Slow recovery from a disease epidemic in the spotted hyena, a keystone social carnivore. *Commun. Biol.* 1:201.</p><p>
+    <p>Slow recovery from a disease epidemic in the spotted hyena, a keystone social carnivore. *COMMUN BIOL.* 1:201.</p><p>
     <a href='http://doi.org/10.1038/s42003-018-0197-1'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio'>![](img/icon-github.png){width=12%}</a></p>
   </li>
@@ -46,7 +46,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/calderon_2022.png' width="300">
     <h3>Calderon et al. 2022</h3>
-    <p>Occupancy models reveal potential of conservation prioritization for Central American jaguars. *Anim. Conserv.*</p><p>
+    <p>Occupancy models reveal potential of conservation prioritization for Central American jaguars. *ANIM CONSERV.*</p><p>
     <a href='https://doi.org/10.1111/acv.12772'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Calderon_2022_AnimCons'>![](img/icon-github.png){width=12%}</a></p>
   </li>
@@ -61,7 +61,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/dalleau_2019.png' width="300">
     <h3>Dalleau et al. 2019</h3>
-    <p>Modeling the emergence of migratory corridors and foraging hot spots of the green sea turtle. *Ecol Evol.* 9:10317–1034</p><p>
+    <p>Modeling the emergence of migratory corridors and foraging hot spots of the green sea turtle. *ECOL EVOL.* 9:10317–1034</p><p>
     <a href='https://doi.org/10.1002/ece3.5552'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://www.comses.net/codebases/69863caa-2f8e-4412-a564-a2826d9d38d3/releases/1.0.0/'>![](img/icon-comses.png){width=12%}</a></p>
   </li>
@@ -76,7 +76,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/drenske_2022.png' width="300">
     <h3>Drenske et al. 2022</h3>
-    <p>On the road to self-sustainability: Reintroduced migratory European Northern Bald Ibises (*Geronticus eremita*) still need management interventions for population viability. *Oryx*</p><p>
+    <p>On the road to self-sustainability: Reintroduced migratory European Northern Bald Ibises (*Geronticus eremita*) still need management interventions for population viability. *ORYX*</p><p>
     <a href=''>![](img/icon-paper.png){width=12%}</a> 
     <a href=''>![](img/icon-github.png){width=12%}</a></p>
   </li>
@@ -90,7 +90,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/grabow_2022.jpg' width="300">
     <h3>Grabow et al. 2022</h3>
-    <p>Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels.  *Front. Ecol. Evol.* 10:881247.</p><p>
+    <p>Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels.  *FRONT ECOL EVOL.* 10:881247.</p><p>
     <a href='https://dx.doi.org/10.3389/fevo.2022.881247'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Grabow_2022_FrontEcolEvol'>![](img/icon-github.png){width=12%}</a></p>
   </li>
@@ -104,7 +104,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/kuerschner_2021.png' width="300">
     <h3>Kürschner et al. 2021</h3>
-    <p>Movement can mediate temporal mismatches between resource availability and biological events in host–pathogen interactions. *Ecol. Evol.* 11:5728–5741.</p><p>
+    <p>Movement can mediate temporal mismatches between resource availability and biological events in host–pathogen interactions. *ECOL EVOL.* 11:5728–5741.</p><p>
     <a href='http://doi.org/10.1002/ece3.7478'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol'>![](img/icon-github.png){width=12%}</a>
     <a href='https://zenodo.org/badge/latestdoi/177115379'>![](img/icon-zenodo.png){width=12%}</a>
@@ -120,7 +120,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/louvrier_2021.png' width="300">
     <h3>Louvrier et al. 2021</h3>
-    <p>Spatiotemporal interactions of a novel mesocarnivore community in an urban environment before and during SARS-CoV-2 lockdown. *J. Anim. Ecol.* 91(2):367–380.</p><p>
+    <p>Spatiotemporal interactions of a novel mesocarnivore community in an urban environment before and during SARS-CoV-2 lockdown. *J ANIM ECOL.* 91(2):367–380.</p><p>
     <a href='https://doi.org/10.1111/1365-2656.13635'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Louvrier_2021_JAnimEcol'>![](img/icon-github.png){width=12%}</a>
 </p>
@@ -135,7 +135,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/marescot_2020.png' width="300">
     <h3>Marescot et al. 2020</h3>
-    <p>‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. *J. Anim. Ecol.* 90:2523–2535.</p><p>
+    <p>‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. *J ANIM ECOL.* 90:2523–2535.</p><p>
     <a href='https://doi.org/10.1111/1365-2656.13555'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol'>![](img/icon-github.png){width=12%}</a></p>
   </li>
@@ -163,7 +163,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/planillo_2021.png' width="300">
     <h3>Planillo et al. 2021</h3>
-    <p>Citizen science data for urban planning: Comparing different sampling schemes for modelling urban bird distribution. *LandUrbPlan* 211:104098</p><p>
+    <p>Citizen science data for urban planning: Comparing different sampling schemes for modelling urban bird distribution. *LANDURBPLAN* 211:104098</p><p>
     <a href='https://doi.org/10.1016/j.landurbplan.2021.104098'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Planillo_2021_LandUrbPlan'>![](img/icon-github.png){width=12%}</a></p>
   </li>
@@ -177,7 +177,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/radchuk_2016.png' width="300">
     <h3>Radchuk et al. 2016</h3>
-    <p>From individuals to population cycles: the role of extrinsic and intrinsic factors in rodent populations. *Ecology,* 97:720-732.</p><p>
+    <p>From individuals to population cycles: the role of extrinsic and intrinsic factors in rodent populations. *ECOLOGY,* 97:720-732.</p><p>
     <a href='https://doi.org/10.1890/15-0756.1'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://www.comses.net/codebases/4b484186-d8fb-4307-a710-fc05daa36afa/releases/1.0.0/'>![](img/icon-comses.png){width=12%}</a></p>
   </li>
@@ -191,7 +191,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img src='https://ecodynizw.github.io/img/radchuk_2019.png' width="300">
     <h3>Radchuk et al. 2019</h3>
-    <p>Adaptive responses of animals to climate change are most likely insufficient. *Nat. Com.* 10:3109.</p><p>
+    <p>Adaptive responses of animals to climate change are most likely insufficient. *NAT COM.* 10:3109.</p><p>
     <a href='http://doi.org/10.1038/s41467-019-10924-4'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Radchuk_2019_NatCom'>![](img/icon-github.png){width=12%}</a></p>
   </li>
