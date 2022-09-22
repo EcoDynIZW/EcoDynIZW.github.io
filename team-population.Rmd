@@ -26,6 +26,8 @@ knitr::include_graphics("img/team-pop-header.png")
 **Dr. Conny Landgraf**, Coordination — organizes us, behavioral ecologist, interested in sensory and acoustic cues of animals.</br>
 
 **Moritz Wenzler-Meya**, GIS-Lab—  geodata analyst, responsible for the GIS lab, providing geodata and supporting coding.</br>
+  
+<br>
 
 ```{r, layout="l-screen"}
 knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")

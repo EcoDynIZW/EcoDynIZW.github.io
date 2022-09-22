@@ -29,7 +29,8 @@ knitr::include_graphics("img/team-ind-header.png")
 This highly social mammal has several unusual traits: female social dominance, an erectile ‘pseudopenis’ in females (similar to that of the male penis), an exceptionally long lactation period and intense sibling competing. It is a keystone carnivore in the ecosystem, which both hunts and scavenges. All these aspects make hyenas an interesting model species to study social behaviour, sexual conflict, maternal effects, host-pathogen interactions, immunology or endocrinology. 
 Our study population experiences extreme and unpredictable fluctuations in prey abundance throughout the year, because of the migratory movements of its main prey (wildebeest, zebras and Thompson’s gazelles) and the low abundance of resident herbivores. We discovered that Serengeti hyenas solve this problem by commuting long distances to forage throughout the year. Individuals leave their clan territory and travel to areas up to 70 km to locate areas with large aggregations of migratory herbivores where they feed before returning to their clan territory. In the context of global change, the commuting system of Serengeti hyenas is particularly valuable to study how animals cope with a variable and uncertain resource. 
 Unfortunately, commuting hyenas in the Serengeti can get killed by wire snares set illegally by bushmeat hunters along some borders of the Park or become victims of road accidents. These anthropogenic threats are likely to intensify with the expected increases in local human populations and traffic volume associated with tourism. Changes in rainfall patterns driven by global warming may also have cascading effects on this large slow-reproducing mammal.
-
+  
+<br>
 
 ```{r, layout="l-screen"}
 knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")

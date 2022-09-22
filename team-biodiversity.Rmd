@@ -24,6 +24,8 @@ knitr::include_graphics("img/team-div-header.png")
 **Dr. Rahel Sollmann**, Team Lead — ecologist and quantitative biologist has specialised in the analysis of camera trap data with Bayesian methods for wildlife conservation. 
 
 **Dr. Jan Axtner**, Data Management — data manager, ecologist and evolutionary geneticist, finds ways how to produce, store and handle large amounts of data of modern high-throughput biodiversity assessments.
+  
+<br>
 
 ```{r, layout="l-screen"}
 knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
@@ -47,13 +49,13 @@ Financial support: Federal Ministry of Education and Research (BMBF), Panthera, 
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Guharajan et al. (2021).  FOR ECOL MANAG](https://www.semanticscholar.org/paper/Sustainable-forest-management-is-vital-for-the-of-Guharajan-Mohamed/23023a67dcd41eb1c1baa29a51da0966bed806ec)</li>
+    <li>[Guharajan et al. (2021). FOR ECOL MANAG](https://www.semanticscholar.org/paper/Sustainable-forest-management-is-vital-for-the-of-Guharajan-Mohamed/23023a67dcd41eb1c1baa29a51da0966bed806ec)</li>
     <li>[Mathai et al. (2019). GLOB ECOL EVOL](https://www.sciencedirect.com/science/article/pii/S2351989418302981)</li>
     <li>[Brozovic et al. (2018). Mammalian Biology](https://www.sciencedirect.com/science/article/abs/pii/S1616504718301320?via%3Dihub)</li>
     <li>[Wong et al. (2018). Mammalian Biology](https://www.sciencedirect.com/science/article/abs/pii/S161650471730157X?via%3Dihub)</li>
     <li>[Mathai et al. (2017). Mammalian Biology](https://www.sciencedirect.com/science/article/abs/pii/S1616504717301453?via%3Dihub)</li>
     <li>[Sollmann et al. (2017). Diversity and Distributions](https://onlinelibrary.wiley.com/doi/10.1111/ddi.12530)</li>
-   </ul>
+  </ul>
 </small>
 
 
@@ -76,7 +78,7 @@ Financial support: Federal Ministry of Education and Research (BMBF), Point Defi
     <li>[Nguyen et al. (2019). NAT ECOL EVOL](https://www.nature.com/articles/s41559-019-1027-7)</li>
     <li>[Tilker et al. (2019). COMMS BIOL](https://www.nature.com/articles/s42003-019-0640-y)</li>
     <li>[Tilker et al. (2017). Science](https://www.science.org/doi/10.1126/science.aap9591)</li>
-   </ul>
+  </ul>
 </small>
 
 
@@ -107,7 +109,7 @@ ScreenForBio user guide
     <li>[Bush et al. (2017). Nature Ecology & Evolution](https://www.nature.com/articles/s41559-017-0176)</li>
     <li>[Mohd Salleh et al. (2017). Gigascience](https://academic.oup.com/gigascience/article/6/8/gix053/3958782)</li>
     <li>[Niedballa et al. (2016). Niedballa](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12600)</li>
-   </ul>
+  </ul>
 </small>
 
 ```{r, layout="l-screen"}
