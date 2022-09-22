@@ -20,10 +20,7 @@ knitr::include_graphics("img/team-ind-header.png")
   </span>
 </div>
 
-![](img/gicquel_2022.png)
-<small>
-<ul>*Figure: M. Gicquel (from Gicquel et al. 2022 Ecosphere, https://doi.org/10.1002/ecs2.4012)*</ul>
-</small>
+![Figure: M. Gicquel (from [Gicquel et al. 2022 Ecosphere](https://doi.org/10.1002/ecs2.4012))](img/gicquel_2022.png)
 
 **Why are spotted hyenas so interesting to study?**</br>
 This highly social mammal has several unusual traits: female social dominance, an erectile ‘pseudopenis’ in females (similar to that of the male penis), an exceptionally long lactation period and intense sibling competing. It is a keystone carnivore in the ecosystem, which both hunts and scavenges. All these aspects make hyenas an interesting model species to study social behaviour, sexual conflict, maternal effects, host-pathogen interactions, immunology or endocrinology. 
@@ -129,7 +126,7 @@ We investigate if DNA methylation is a main mechanism through which an individua
 </small>
 
 
-**Here is an overview of our research interests, methods and partners since the establishment of the project in 1987:**
+Here is an overview of our research interests, methods and partners since the establishment of the project in 1987:
 
 ![](img/team-ind-research.png)
 ![](img/team-ind-methods.png)
