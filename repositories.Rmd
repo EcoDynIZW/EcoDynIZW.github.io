@@ -59,7 +59,7 @@ knitr::opts_chunk$set(echo = FALSE)
   
   
   <li class="card-repo">
-    <img src='https://ecodynizw.github.io/img/grabow_2022.png' width="300">
+    <img class="card-repo-img" src='https://ecodynizw.github.io/img/grabow_2022.png' width="300">
     <h3>Grabow et al. 2022</h3>
     <p>Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels.  *FRONT ECOL EVOL*, 10:881247.</p><p>
     <a href='https://dx.doi.org/10.3389/fevo.2022.881247'>![](img/icon-paper.png){width=12%}</a> 
