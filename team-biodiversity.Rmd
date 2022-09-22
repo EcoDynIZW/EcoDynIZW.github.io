@@ -21,7 +21,7 @@ knitr::include_graphics("img/team-div-header.png")
 
 **Dr. Andreas Wilting**, Deputy Department and Team Lead —  ecologist and evolutionary biologist with strong interest in species conservation, interested in methods and tools to study species distributions and to use these biodiversity data to target conservation efforts.
 
-**Dr. Rahel Sollmann**, Team Lead, ecologist and quantitative biologist has specialised in the analysis of camera trap data with Bayesian methods for wildlife conservation. 
+**Dr. Rahel Sollmann**, Team Lead — ecologist and quantitative biologist has specialised in the analysis of camera trap data with Bayesian methods for wildlife conservation. 
 
 **Dr. Jan Axtner**, Data Management — data manager, ecologist and evolutionary geneticist, finds ways how to produce, store and handle large amounts of data of modern high-throughput biodiversity assessments.
 
