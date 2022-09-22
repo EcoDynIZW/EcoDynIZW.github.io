@@ -36,9 +36,9 @@ GIS-Lab: **Moritz Wenzler-Meya**, geodata analyst, responsible for the GIS lab, 
 
 <div class='headerbox-secondary'><hbox-secondary>Stability under global change and across levels of organization</headerbox-secondary></div>
 
-**Dr. Cédric Scherer, Thibault Fronville**
-
 ![](img/team-pop-stability.png)
+
+**Dr. Cédric Scherer, Thibault Fronville**
 
 To understand how populations and communities react to global change we study how their stability is affected by disturbances. To this end we model disturbances of different types and intensity and measure several stability metrics.
 
@@ -56,9 +56,9 @@ To understand how populations and communities react to global change we study ho
 
 <div class='headerbox-secondary'><hbox-secondary>Wildlife disease dynamics: Linking host and pathogen traits</headerbox-secondary></div>
 
-**Dr. Cédric Scherer, Tobias Kürschner, Marius Grabow**
-
 ![](img/team-pop-disease.png)
+
+**Dr. Cédric Scherer, Tobias Kürschner, Marius Grabow**
 
 Pathogens are an integral part of biodiversity, influencing population dynamics of their hosts and playing an important functional role in shaping community structure. Here, our aim is to understand the effect that species as ‘mobile pathogen links’ with their different movement types and life-history strategies have on disease distribution, spread, persistence and evolution. 
 
@@ -84,9 +84,9 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
  
 <div class='headerbox-secondary'><hbox-secondary>Urban wildlife ecology: How do animals respond to novel environments?</hbox-secondary></div>
 
-**Dr. Aimara Planillo, Dr. Julie Louvrier, Sinah Drenske, Simon Moesch**
-
 ![](img/team-pop-urban.png)
+
+**Dr. Aimara Planillo, Dr. Julie Louvrier, Sinah Drenske, Simon Moesch**
 
 Urbanisation poses risks and opportunities for wildlife. We investigate how species cope with these everyday challenges by analysing the spatial factors and species interactions that underlie their distributions along a rural to urban gradient and by making inference on their behavioral plasticity. 
 
@@ -110,11 +110,11 @@ Urbanisation poses risks and opportunities for wildlife. We investigate how spec
 
 <div class='headerbox-secondary'><hbox-secondary>Wildlife distributions, population dynamics, and conservation</hbox-secondary></div>
 
-**Dr. Julie Louvrier, Dr. Aimara Planillo, Dr. Cédric Scherer, Dr. Joe Premier, Ana Patricia Calderon, Eva Sánchez Arribas**
-
 ![](img/team-pop-wildlife.png)
 
 Wildlife faces big challenges persisting in human-dominated landscapes. We model their population dynamics, viability and connectivity using individual-based models on a spatially-explicit basis, with the aim of supporting wildlife management and conservation.
+
+**Dr. Julie Louvrier, Dr. Aimara Planillo, Dr. Cédric Scherer, Dr. Joe Premier, Ana Patricia Calderon, Eva Sánchez Arribas**
 
 * **Wolf population dynamics and establishment in Germany**
 * **Jaguar connectivity and conservation prioritization in Central America**

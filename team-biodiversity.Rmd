@@ -83,13 +83,11 @@ Financial support: Federal Ministry of Education and Research (BMBF), Point Defi
 
 <div class='headerbox-secondary'><hbox-secondary>Developing standardized and reliable survey tools to monitor mammals in tropical rainforests.</div>
 
+![](img/team-biodiv-monitoring.png)
+
 **People involved: Jan Axtner, Roshan Guharajan, Than Van Nguyen, Jürgen Niedballa, Azlan bin Mohamed, Badru Mugerwa, Andrew Tilker, Seth T Wong, Andreas Wilting**
 
 **Collaborators: Prof. Dr. Douglas Yu (University of East Anglia, Norwich, UK & Kunming University, Kunming, China), Dr. Jesse F Abrams (University of Exeter, Exeter, UK)**
-
-![](img/camara_trapping_team3.png){width=30%}
-![](img/invertebrate_dna_team3.png){width=20%}
-![](img/env_data_team3.png){width=45%}
 
 Studying biodiversity on a larger scale is essential to support political and conservation decisions. However, combining and integrating different biodiversity datasets into larger scale analyses is often challenging and associated with a loss of data accuracy and detail. We improve, develop and establish standardized methods and protocols to study and monitor biodiversity. Hereby we focus mainly on high-throughput methods that are applicable in tropical rainforests.
 ScreenForBio user guide
