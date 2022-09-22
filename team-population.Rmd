@@ -2,7 +2,7 @@
 title: "Team 2: Population Dynamics"
 description: |
   <b>Lead: Dr. Stephanie Kramer-Schadt & Dr. Viktoriia Radchuk</b>  
-  <b>Assistance: Conny Landgraf & Moritz Wenzler</b>
+  <b>Assistance: Dr. Conny Landgraf & Moritz Wenzler</b>
 ---
 
 ```{r setup, include=FALSE}
@@ -23,7 +23,7 @@ knitr::include_graphics("img/team-pop-header.png")
 
 **Dr. Viktoriia Radchuk**, Team Lead, quantitative ecologist, stability of populations and communities under global change, interested in theory, synthesis, and integration of data with models to assist conservation.</br>
 
-Coordination: **Dr.Conny Landgraf**, organizes us, behavioral ecologist, interested in sensory and acoustic cues of animals.</br>
+Coordination: **Dr. Conny Landgraf**, organizes us, behavioral ecologist, interested in sensory and acoustic cues of animals.</br>
 
 GIS-Lab: **Moritz Wenzler-Meya**, geodata analyst, responsible for the GIS lab, providing geodata and supporting coding.</br>
 
