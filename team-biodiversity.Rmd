@@ -87,13 +87,10 @@ Financial support: Federal Ministry of Education and Research (BMBF), Point Defi
 
 <div class='headerbox-secondary'><hbox-secondary>Developing standardized and reliable survey tools to monitor mammals in tropical rainforests.</div>
 
-<<<<<<< Updated upstream
+
 ![](img/team-biodiv-monitoring.png)
 
-**People involved: Jan Axtner, Roshan Guharajan, Than Van Nguyen, Jürgen Niedballa, Azlan bin Mohamed, Badru Mugerwa, Andrew Tilker, Seth T Wong, Andreas Wilting**
-=======
 **People involved: Jan Axtner, Roshan Guharajan, Thanh Van Nguyen, Jürgen Niedballa, Rahel Sollmann, Badru Mugerwa, Andrew Tilker, Seth T Wong, Andreas Wilting**
->>>>>>> Stashed changes
 
 **Collaborators: Prof. Dr. Douglas Yu (University of East Anglia, Norwich, UK & Kunming University, Kunming, China), Dr. Jesse F Abrams (University of Exeter, Exeter, UK)**
 
