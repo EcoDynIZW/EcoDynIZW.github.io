@@ -2,7 +2,7 @@
 title: "Feather analysis of swallows and starlings"
 description: ""
 ---
-Dipl. Biol Marius Grabow/ Dr. Conny Landgraf
+M.Sc. Marius Grabow/ Dr. Conny Landgraf
 
 (contact <a href="mailto:grabow@izw-berlin.de">grabow[at]izw-berlin.de</a> or <a href="mailtolLandgraf@izw-berlin.de">landgraf[at]izw-berlin.de</a>)
 
