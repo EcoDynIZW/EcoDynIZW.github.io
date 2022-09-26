@@ -790,6 +790,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1862,15 +1863,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2635,7 +2642,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2716,9 +2723,7 @@ Research
 <h1>Department Guidelines</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>The guidelines for studies in the Department of Ecological Dynamics
-are meant to ease your start in the department and to secure high
-quality standards for the analysis of your data.</p>
+<p>The guidelines for studies in the Department of Ecological Dynamics are meant to ease your start in the department and to secure high quality standards for the analysis of your data.</p>
 </div>
 
 
@@ -2740,373 +2745,149 @@ quality standards for the analysis of your data.</p>
 </div>
 <p><br></p>
 <h2 id="general">General Information</h2>
-<p>The department is composed of three teams on (1) Individual Dynamics,
-(2) Population Dynamics and (3) Biodiversity Dynamics.</p>
-<p>Stephanie Kramer-Schadt is the department head and leader of the
-Population Dynamics team. Conny Landgraf is the assistant of the
-department head; she can assist with administrative duties
-(e.g. contracts, travel sheets, etc.). Moritz Wenzler and Jan Axtner are
-responsible for data management, data storage and the working group’s R
-code collection. As each department member has a specific area of
-expertise, we created an expert list (see 1.3) if you need help on
-specific topics. PhD students and scientists are obliged to update this
-expert list with their own skills and responsibilities as well.</p>
-<p>For information on the Department, check <a
-href="https://www.ecological-dynamics-izw.com">our webpage</a> or
-subscribe to <a href="https://www.twitter.com/EcoDynIZW">our Twitter
-account</a> (@EcoDynIZW) for news about papers, helpful R-code, courses
-or scientific positions.</p>
-<h3 id="teams-of-the-department-of-ecological-dynamics">Teams of the
-Department of Ecological Dynamics:</h3>
+<p>The department is composed of three teams on (1) Individual Dynamics, (2) Population Dynamics and (3) Biodiversity Dynamics.</p>
+<p>Stephanie Kramer-Schadt is the department head and leader of the Population Dynamics team. Conny Landgraf is the assistant of the department head; she can assist with administrative duties (e.g. contracts, travel sheets, etc.). Moritz Wenzler and Jan Axtner are responsible for data management, data storage and the working group’s R code collection. As each department member has a specific area of expertise, we created an expert list (see 1.3) if you need help on specific topics. PhD students and scientists are obliged to update this expert list with their own skills and responsibilities as well.</p>
+<p>For information on the Department, check <a href="https://www.ecological-dynamics-izw.com">our webpage</a> or subscribe to <a href="https://www.twitter.com/EcoDynIZW">our Twitter account</a> (@EcoDynIZW) for news about papers, helpful R-code, courses or scientific positions.</p>
+<h3 id="teams-of-the-department-of-ecological-dynamics">Teams of the Department of Ecological Dynamics:</h3>
 <ol type="1">
-<li><a href="team-individual.html">Individual Dynamics</a> – PI: Sarah
-Benhaiem &amp; Sonja Metzger (field coordination)</li>
-<li><a href="team-population.html">Population Dynamics</a> – PI:
-Stephanie Kramer-Schadt &amp; Viktoriia Radchuk</li>
-<li><a href="team-biodiversity.html">Biodiversity Dynamics</a> – PI:
-Andreas Wilting &amp; Rahel Sollmann</li>
+<li><a href="team-individual.html">Individual Dynamics</a> – PI: Sarah Benhaiem &amp; Sonja Metzger (field coordination)</li>
+<li><a href="team-population.html">Population Dynamics</a> – PI: Stephanie Kramer-Schadt &amp; Viktoriia Radchuk</li>
+<li><a href="team-biodiversity.html">Biodiversity Dynamics</a> – PI: Andreas Wilting &amp; Rahel Sollmann</li>
 </ol>
 <h3 id="administrative-support">Administrative support</h3>
 <p>Conny Landgraf<br />
 Tel: -466<br />
-Email:
-<a href="mailto:assist6@izw-berlin.de">assist6[at]izw-berlin.de</a> or
-<a href="mailto:landgraf@izw-berlin.de">landgraf[at]izw-berlin.de</a></p>
+Email: <a href="mailto:assist6@izw-berlin.de">assist6[at]izw-berlin.de</a> or <a href="mailto:landgraf@izw-berlin.de">landgraf[at]izw-berlin.de</a></p>
 <h3 id="data-managers">Data Managers</h3>
 <p>Dr. Jan Axtner<br />
 Tel: -339<br />
-Email:
-<a href="mailto:axtner@izw-berlin.de">axtner[at]izw-berlin.de</a></p>
+Email: <a href="mailto:axtner@izw-berlin.de">axtner[at]izw-berlin.de</a></p>
 <p>Moritz Wenzler-Meya<br />
 Tel: -722<br />
-Email:
-<a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a></p>
-<h3 id="in-house-experts-scientists-responsibilities">In-house experts /
-scientists / responsibilities</h3>
-<p>Who does what in the department? Tasks and expertise as well as
-meeting dates and protocols can be found in the <a
-href="https://wolke.izw-berlin.de/index.php/apps/files/?dir=/allgemeine%20Informationen-General%20Information&amp;fileid=4008">IZW
-Wolke</a>.</p>
+Email: <a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a></p>
+<h3 id="in-house-experts-scientists-responsibilities">In-house experts / scientists / responsibilities</h3>
+<p>Who does what in the department? Tasks and expertise as well as meeting dates and protocols can be found in the <a href="https://wolke.izw-berlin.de/index.php/apps/files/?dir=/allgemeine%20Informationen-General%20Information&amp;fileid=4008">IZW Wolke</a>.</p>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <h2 id="theses">Conducting BSc/MSc/PhD Projects</h2>
-<p>For PhD students: please read the IZW PhD guidelines
-(<code>\\izw-daten-8\Alle\GUEST\Doktorand(inn)en\IZW-PhD-rules</code>)
-carefully and follow the instructions (e.g. when you have to give an
-introduction talk). For any question about these guidelines, contact the
-PhD coordinators Gábor Czirják
-(<a href="mailto:czirjak@izw-berlin.de">czirjak[at]izw-berlin.de</a>)
-and Sarah Benhaiem
-(<a href="mailto:benhaiem@izw-berlin.de">benhaiem[at]izw-berlin.de</a>).</p>
+<p>For PhD students: please read the IZW PhD guidelines (<code>\\izw-daten-8\Alle\GUEST\Doktorand(inn)en\IZW-PhD-rules</code>) carefully and follow the instructions (e.g. when you have to give an introduction talk). For any question about these guidelines, contact the PhD coordinators Gábor Czirják (<a href="mailto:czirjak@izw-berlin.de">czirjak[at]izw-berlin.de</a>) and Sarah Benhaiem (<a href="mailto:benhaiem@izw-berlin.de">benhaiem[at]izw-berlin.de</a>).</p>
 <h3 id="meetings">Meetings</h3>
 <ul>
-<li><strong>Regular meetings with your supervisor</strong> often help to
-avoid a waste of time (see also <a href="#appendixC">Appendix C</a>). It
-is in the responsibility of the student to organize and schedule regular
-meeting with his/ her supervisor or the team.</li>
-<li>You can either arrange a fixed date with your supervisor (e.g. first
-Monday of every month) or schedule them on demand. Please find an
-agreement with your supervisor how to handle this best. Please keep in
-mind that any non-regular meeting should be planned at least two weeks
-ahead.</li>
-<li>Use the <strong>IZW outlook calendar to schedule meetings</strong>
-with supervisors and colleagues (if you have an IZW Email address). That
-is: create the entry in the calendar and ‘invite’ the others, so that
-the date/ location appears in each calendar, with sufficient notice time
-for the automated reminder (i.e. 1 day/ 1 hr).</li>
-<li><strong>Prepare the meetings</strong>: Think carefully about your
-problems/questions and write your agenda (what you want to discuss)
-before the meeting, make suggestions for your solution(s) and ask the
-supervisors/collaborators to comment on your solution(s).</li>
-<li>Write the <strong>minutes of the meeting</strong> and save it in the
-project folder (we give instructions about this project folder below
-3.1.). Minimum information needed: (1) date of meeting, (2) name of
-participants, (3) questions or problems discussed, (4) main solutions
-suggested and (5) aims or results to prepare for the next meeting. Write
-down agreements of the responsibilities of all collaborators.</li>
-<li><strong>Present your project progress</strong> regularly in the
-department meetings, also to get feedback and discuss problems you ran
-into.</li>
+<li><strong>Regular meetings with your supervisor</strong> often help to avoid a waste of time (see also <a href="#appendixC">Appendix C</a>). It is in the responsibility of the student to organize and schedule regular meeting with his/ her supervisor or the team.</li>
+<li>You can either arrange a fixed date with your supervisor (e.g. first Monday of every month) or schedule them on demand. Please find an agreement with your supervisor how to handle this best. Please keep in mind that any non-regular meeting should be planned at least two weeks ahead.</li>
+<li>Use the <strong>IZW outlook calendar to schedule meetings</strong> with supervisors and colleagues (if you have an IZW Email address). That is: create the entry in the calendar and ‘invite’ the others, so that the date/ location appears in each calendar, with sufficient notice time for the automated reminder (i.e. 1 day/ 1 hr).</li>
+<li><strong>Prepare the meetings</strong>: Think carefully about your problems/questions and write your agenda (what you want to discuss) before the meeting, make suggestions for your solution(s) and ask the supervisors/collaborators to comment on your solution(s).</li>
+<li>Write the <strong>minutes of the meeting</strong> and save it in the project folder (we give instructions about this project folder below 3.1.). Minimum information needed: (1) date of meeting, (2) name of participants, (3) questions or problems discussed, (4) main solutions suggested and (5) aims or results to prepare for the next meeting. Write down agreements of the responsibilities of all collaborators.</li>
+<li><strong>Present your project progress</strong> regularly in the department meetings, also to get feedback and discuss problems you ran into.</li>
 </ul>
 <h3 id="thesis-writing">Thesis writing</h3>
 <ul>
-<li><strong>Start writing the thesis early</strong> enough. Write simple
-and concise sentences based on what is known in the literature. Join a
-‘pub club’ (i.e. retreats for writing), e.g. Team 2 has regular meetings
-on jointly discussing drafts of each other. Please also read the
-instructions (Under construction) for how to write good scientific
-papers.</li>
-<li>Arrange with your supervisor how and in what form you report
-progress. <strong>Getting regular feedback</strong> for chapters or even
-just paragraphs might keep you from running into dead ends. When asking
-for revisions plan in sufficient time for the reviewers to read and
-respond (1-3 weeks, depending on the amount of text).</li>
-<li>For PhD students: A first complete manuscript draft should be ready
-after ~ 1 year after starting time.</li>
-<li>Send the <strong>final version of your manuscript/thesis</strong> to
-all supervisors/colleagues <strong>at least 4 weeks before the
-submission date</strong> and keep in mind that you might have to revise
-it.</li>
+<li><strong>Start writing the thesis early</strong> enough. Write simple and concise sentences based on what is known in the literature. Join a ‘pub club’ (i.e. retreats for writing), e.g. Team 2 has regular meetings on jointly discussing drafts of each other. Please also read the instructions (Under construction) for how to write good scientific papers.</li>
+<li>Arrange with your supervisor how and in what form you report progress. <strong>Getting regular feedback</strong> for chapters or even just paragraphs might keep you from running into dead ends. When asking for revisions plan in sufficient time for the reviewers to read and respond (1-3 weeks, depending on the amount of text).</li>
+<li>For PhD students: A first complete manuscript draft should be ready after ~ 1 year after starting time.</li>
+<li>Send the <strong>final version of your manuscript/thesis</strong> to all supervisors/colleagues <strong>at least 4 weeks before the submission date</strong> and keep in mind that you might have to revise it.</li>
 </ul>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <h2 id="workflows">Organizing Workflows</h2>
-<p>To store data and results, the IZW follows the DFG-guidelines for
-good scientific practice. In our department, we often use “scripting”
-(written code of different programming languages) to process and analyze
-data, and make results reproducible. Work is structured and organized in
-projects and each project will get a project ID from the data
-administrators of the department. We consider a project to be a
-self-contained topic, e.g. analyses for a manuscript, thesis chapter,
-etc. For each project a separate folder is created and all relevant
-scripts, results, the lab-book, documents, literature, minutes of
-meetings etc. related to this project are to be kept in that main
-folder. For documents (not for scripts!) use your surname, type of
-document, project name and in the end the date (<code>YYYYMMDD</code>)
-as version numbers for file names
-(<code>kramer_manuscript_lynxibm_20201231.docx</code>) and do not use
-names like <code>doc_final.docx</code>,
-<code>doc_finalfinal.docx</code>, <code>doc_lastversion.docx</code> etc.
-It should contain all information needed to repeat the study and conduct
-follow-up studies. Whenever possible use the standardized project/folder
-structure shown in section 3.1. Each project or subproject should have a
-concise but meaningfully electronic lab-book (see section X.Z) that
-allows to follow the workflow and the decisions made in it.</p>
+<p>To store data and results, the IZW follows the DFG-guidelines for good scientific practice. In our department, we often use “scripting” (written code of different programming languages) to process and analyze data, and make results reproducible. Work is structured and organized in projects and each project will get a project ID from the data administrators of the department. We consider a project to be a self-contained topic, e.g. analyses for a manuscript, thesis chapter, etc. For each project a separate folder is created and all relevant scripts, results, the lab-book, documents, literature, minutes of meetings etc. related to this project are to be kept in that main folder. For documents (not for scripts!) use your surname, type of document, project name and in the end the date (<code>YYYYMMDD</code>) as version numbers for file names (<code>kramer_manuscript_lynxibm_20201231.docx</code>) and do not use names like <code>doc_final.docx</code>, <code>doc_finalfinal.docx</code>, <code>doc_lastversion.docx</code> etc. It should contain all information needed to repeat the study and conduct follow-up studies. Whenever possible use the standardized project/folder structure shown in section 3.1. Each project or subproject should have a concise but meaningfully electronic lab-book (see section X.Z) that allows to follow the workflow and the decisions made in it.</p>
 <h3 id="project-workflow">Project workflow</h3>
-<p>Contact the Data Managers (Jan Axtner or Moritz Wenzler-Meya) of the
-respective teams to organize your project ID, get server access and how
-to arrange your workspace best. To setup a project folder, we ask you to
-follow the setup:</p>
+<p>Contact the Data Managers (Jan Axtner or Moritz Wenzler-Meya) of the respective teams to organize your project ID, get server access and how to arrange your workspace best. To setup a project folder, we ask you to follow the setup:</p>
 <ul>
-<li><strong>Use the standardized project folder</strong> structure! (see
-<a href="#appendixA">Appendix A</a>, cf. <a
-href="https://github.com/EcoDynIZW/d6"><code>d6</code> R package</a> and
-<a href="https://github.com/">GitHub</a>)</li>
-<li>Make an outline of the structure separately in your
-<strong>electronic lab-book</strong> (see 3.3.1), to indicate what to
-find in each folder and keep it updated.</li>
-<li>Please <strong>hand over the raw data to the data manager
-<u>before</u> starting your project analysis</strong>, to avoid
-accidental data losses.</li>
-<li>Store the raw data, e.g. data from field work, in the folder named
-<code>data-raw</code>. Use a folder named <code>output</code> to store
-data created from the raw data (e.g. after data cleaning or editing).
-This should also be the place where the <code>master table</code> is
-located, i.e. the data set of all subsequent analyses. If needed you can
-have a temporary subfolder in the “output” folder for everyday work and
-analysis trials. Empty the temporary folder regularly. Plots and figures
-should be stored in the <code>plots</code> folder. Scripts should be
-stored in the <code>R</code> folder. Documents like manuscripts,
-proposals, etc. should be stored in the <code>docs</code> folder. Save
-important, computational or labour intensive interim results or final
-results. Use appropriate subfolders such as
-<code>interim-results_&lt;date&gt;</code> or
-<code>final-results_&lt;date&gt;</code>.</li>
+<li><strong>Use the standardized project folder</strong> structure! (see <a href="#appendixA">Appendix A</a>, cf. <a href="https://github.com/EcoDynIZW/d6"><code>d6</code> R package</a> and <a href="https://github.com/">GitHub</a>)</li>
+<li>Make an outline of the structure separately in your <strong>electronic lab-book</strong> (see 3.3.1), to indicate what to find in each folder and keep it updated.</li>
+<li>Please <strong>hand over the raw data to the data manager <u>before</u> starting your project analysis</strong>, to avoid accidental data losses.</li>
+<li>Store the raw data, e.g. data from field work, in the folder named <code>data-raw</code>. Use a folder named <code>output</code> to store data created from the raw data (e.g. after data cleaning or editing). This should also be the place where the <code>master table</code> is located, i.e. the data set of all subsequent analyses. If needed you can have a temporary subfolder in the “output” folder for everyday work and analysis trials. Empty the temporary folder regularly. Plots and figures should be stored in the <code>plots</code> folder. Scripts should be stored in the <code>R</code> folder. Documents like manuscripts, proposals, etc. should be stored in the <code>docs</code> folder. Save important, computational or labour intensive interim results or final results. Use appropriate subfolders such as <code>interim-results_&lt;date&gt;</code> or <code>final-results_&lt;date&gt;</code>.</li>
 </ul>
 <h3 id="reproducibility">Reproducibility</h3>
-<p>To ensure reproducibility and for your own sake always try to script
-your work! If possible use R, Python, SQL, etc. for analyses and avoid
-manual / mouse commands (e.g. ‘clicking’ in ArcGIS, QGIS etc.). If you
-cannot use scripts, use tools such as the model-builder in ArcGIS or
-QGIS and save the drag &amp; drop model builder scripts.</p>
+<p>To ensure reproducibility and for your own sake always try to script your work! If possible use R, Python, SQL, etc. for analyses and avoid manual / mouse commands (e.g. ‘clicking’ in ArcGIS, QGIS etc.). If you cannot use scripts, use tools such as the model-builder in ArcGIS or QGIS and save the drag &amp; drop model builder scripts.</p>
 <h3 id="documentation">Documentation</h3>
-<p>Project documentation is not a final task, but an ongoing process
-starting from day one. DFG guidelines for Safeguarding and Storing of
-Primary Data states ‘Primary data as the basis for publications shall be
-securely stored for ten years in a durable form in the institution of
-their origin.’ Hence, at the end of a research project, you have to hand
-over a single well-documented folder per project (usually a paper on the
-respective subject, or the BSc thesis) along with all original data. The
-project folder should contain all project related documents and data
-(e.g. simulation model codes, simulation results, scripts for
-statistical analysis, scripts for tables and figures, manuscripts,
-important work documents, applications, permits, reports, etc.) as well
-as a the final version of a thesis or paper. Unfinished work (data from
-conducted experiments that were not analyzed or published) should
-contain the above documents as far as possible, including a very
-detailed method description. For the ease of documentation effort please
-follow the section (3.3.1).</p>
+<p>Project documentation is not a final task, but an ongoing process starting from day one. DFG guidelines for Safeguarding and Storing of Primary Data states ‘Primary data as the basis for publications shall be securely stored for ten years in a durable form in the institution of their origin.’ Hence, at the end of a research project, you have to hand over a single well-documented folder per project (usually a paper on the respective subject, or the BSc thesis) along with all original data. The project folder should contain all project related documents and data (e.g. simulation model codes, simulation results, scripts for statistical analysis, scripts for tables and figures, manuscripts, important work documents, applications, permits, reports, etc.) as well as a the final version of a thesis or paper. Unfinished work (data from conducted experiments that were not analyzed or published) should contain the above documents as far as possible, including a very detailed method description. For the ease of documentation effort please follow the section (3.3.1).</p>
 <h4 id="electronic-lab-book">Electronic lab-book</h4>
-<p>At the start of each new project, create an electronic lab-book to
-document your workflow and decisions therein. It is of major importance
-that you keep this lab-book updated. For the ease of use we recommend
-simple .doc files (MS Word, Libre Office etc.) to keep record of our
-work. Write down important thoughts, things you have tried, also failed
-experiments. Try to use clear and comprehensible notes. Although this
-generates some additional effort you will realize soon that it will help
-you and others to track your work and make it reproducible. We highly
-recommend to use GitHub as version control of your project. You have to
-connect your GitHub account to the EcoDynIZW organization on <a
-href="https://github.com/EcoDynIZW/">GitHub</a> to share code with
-colleagues. Please create repositories on the EcoDynIZW account and not
-on your private account! It is mandatory to hand over the electronic
-lab-book to the institute as part of the ‘Safeguarding and Storing of
-Primary Data’ regulation of the German Research Council DFG after
-finishing your project. To document scripting we recommend to use R
-Markdown (<code>.rmd</code>) files if possible. Between your code chunks
-you should annotate the script with everything that is necessary to
-understand and follow the code. Additionally, if you push new code to
-GitHub for version control, you have to comment on your committed code
-as well. It may be necessary to have an additional word document.</p>
+<p>At the start of each new project, create an electronic lab-book to document your workflow and decisions therein. It is of major importance that you keep this lab-book updated. For the ease of use we recommend simple .doc files (MS Word, Libre Office etc.) to keep record of our work. Write down important thoughts, things you have tried, also failed experiments. Try to use clear and comprehensible notes. Although this generates some additional effort you will realize soon that it will help you and others to track your work and make it reproducible. We highly recommend to use GitHub as version control of your project. You have to connect your GitHub account to the EcoDynIZW organization on <a href="https://github.com/EcoDynIZW/">GitHub</a> to share code with colleagues. Please create repositories on the EcoDynIZW account and not on your private account! It is mandatory to hand over the electronic lab-book to the institute as part of the ‘Safeguarding and Storing of Primary Data’ regulation of the German Research Council DFG after finishing your project.
+To document scripting we recommend to use R Markdown (<code>.rmd</code>) files if possible. Between your code chunks you should annotate the script with everything that is necessary to understand and follow the code. Additionally, if you push new code to GitHub for version control, you have to comment on your committed code as well. It may be necessary to have an additional word document.</p>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <h2 id="scripting">Scripting</h2>
 <h3 id="general-recommendations">General recommendations</h3>
 <ul>
-<li>Write the author, name and date in a header (you can use the d6
-package templates for this as well).</li>
+<li>Write the author, name and date in a header (you can use the d6 package templates for this as well).</li>
 <li>Keep code in scripts as concise as possible.</li>
-<li>Use in-line comments to explain your code that others can follow
-your code.</li>
-<li>If possible, use dynamic paths (i.e. see R-package <a
-href="https://here.r-lib.org/"><code>here</code></a>.</li>
-<li>Always set variables/ parameters at the top of your script; do not
-set values somewhere inside the code as this is error prone, because
-these values tend to be forgotten to get changed when updating a script.
-The same applies to loading packages. Please also make sure to only load
-packages that are really needed and remove those that you are not using
-for the final analysis.</li>
-<li>Save the output of a script as .rds file to smoothly load it in the
-next script. Additionally, save the output in a file format usable
-beyond R, e.g. use .csv or .txt if you want to save tabular data or
-GeoTiff if you want to save a raster map.</li>
-<li>Use separate scripts to create figures of publishable quality (700
-dpi) from the results. Use a vector graphics format like pdf.</li>
-<li>For simulation studies: Include all scripts, e.g. additional model
-code, batch files with simulated parameters, simulated landscapes and
-simulation results, and files used for the analyses.</li>
+<li>Use in-line comments to explain your code that others can follow your code.</li>
+<li>If possible, use dynamic paths (i.e. see R-package <a href="https://here.r-lib.org/"><code>here</code></a>.</li>
+<li>Always set variables/ parameters at the top of your script; do not set values somewhere inside the code as this is error prone, because these values tend to be forgotten to get changed when updating a script. The same applies to loading packages. Please also make sure to only load packages that are really needed and remove those that you are not using for the final analysis.</li>
+<li>Save the output of a script as .rds file to smoothly load it in the next script. Additionally, save the output in a file format usable beyond R, e.g. use .csv or .txt if you want to save tabular data or GeoTiff if you want to save a raster map.</li>
+<li>Use separate scripts to create figures of publishable quality (700 dpi) from the results. Use a vector graphics format like pdf.</li>
+<li>For simulation studies: Include all scripts, e.g. additional model code, batch files with simulated parameters, simulated landscapes and simulation results, and files used for the analyses.</li>
 </ul>
 <h3 id="r">R</h3>
 <ul>
-<li>Stick to the <a
-href="https://style.tidyverse.org/index.html">Rstudio style guide</a> to
-ensure readability of code.</li>
-<li>We recommend using R-Studio projects and R Markdown documents when
-scripting in R. If you use another “integrated development environment”
-(IDE) make sure you can provide versioned plain R scripts using a
-relative path to the used data files.</li>
-<li>Implement version control by using GitHub. If you install packages
-or use scripts and code chunks from GitHub provided by others, be aware
-to acknowledge the code developer prior to publication of scripts.</li>
-<li>Do not save the R history or the R environment. Always start a fresh
-and an empty R session to avoid artifacts by using objects of functions
-that were not defined in your script. More details here: <a
-href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/"
-class="uri">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/</a>.</li>
+<li>Stick to the <a href="https://style.tidyverse.org/index.html">Rstudio style guide</a> to ensure readability of code.</li>
+<li>We recommend using R-Studio projects and R Markdown documents when scripting in R. If you use another “integrated development environment” (IDE) make sure you can provide versioned plain R scripts using a relative path to the used data files.</li>
+<li>Implement version control by using GitHub. If you install packages or use scripts and code chunks from GitHub provided by others, be aware to acknowledge the code developer prior to publication of scripts.</li>
+<li>Do not save the R history or the R environment. Always start a fresh and an empty R session to avoid artifacts by using objects of functions that were not defined in your script. More details here: <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/" class="uri">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/</a>.</li>
 <li>If possible use log files to document messages and errors.</li>
 </ul>
 <h3 id="python">Python</h3>
-<p>In general we recommend using Jupyter notebooks. [under
-construction]</p>
+<p>In general we recommend using Jupyter notebooks.
+[under construction]</p>
 <h3 id="netlogo">Netlogo</h3>
 <p>[under construction]</p>
 <h3 id="qgis">QGIS</h3>
-<p>In general we recommend doing GIS analyses in R. If you have to use
-QGIS use Python as scripting language. However, the RQGIS package
-provides a great opportunity to script complete workflows in QGIS by
-using R. Moreover, you can include R scripts in the QGIS toolbox.</p>
+<p>In general we recommend doing GIS analyses in R. If you have to use QGIS use Python as scripting language. However, the RQGIS package provides a great opportunity to script complete workflows in QGIS by using R. Moreover, you can include R scripts in the QGIS toolbox.</p>
 <p>[under construction]</p>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <h2 id="spatial">Spatial Data</h2>
-<p>If you are working with spatial data please have the following in
-mind:</p>
+<p>If you are working with spatial data please have the following in mind:</p>
 <ul>
-<li>Always check the projection (cartographic reference system (CRS)) of
-your data. Depending on what you want to do it could be necessary to
-change the CRS system, i.e. from an angular unit (like GPS data) to a
-projected unit in meters. BUT sometimes you cannot easily change it or
-it will drastically change your data.</li>
-<li>If you want to save you spatial data, please save it as Geopackage
-(<code>.gpkg</code>) or raster data GeoTiff (<code>.tif</code>). Please
-give a clear name, document the filename in your lab book and add the
-EPSG code of your CRS to the file name. Always use <code>utf-8</code> as
-file encoding.</li>
-<li>If you are not sure how to handle your spatial data please contact
-Moritz Wenzler, the GIS manager, for help.</li>
+<li>Always check the projection (cartographic reference system (CRS)) of your data. Depending on what you want to do it could be necessary to change the CRS system, i.e. from an angular unit (like GPS data) to a projected unit in meters. BUT sometimes you cannot easily change it or it will drastically change your data.</li>
+<li>If you want to save you spatial data, please save it as Geopackage (<code>.gpkg</code>) or raster data GeoTiff (<code>.tif</code>). Please give a clear name, document the filename in your lab book and add the EPSG code of your CRS to the file name. Always use <code>utf-8</code> as file encoding.</li>
+<li>If you are not sure how to handle your spatial data please contact Moritz Wenzler, the GIS manager, for help.</li>
 </ul>
-<p>For detailed information about Spatial data go to <a
-href="#appendixB">Appendix B</a>).</p>
+<p>For detailed information about Spatial data go to <a href="#appendixB">Appendix B</a>).</p>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <h2 id="backup">Data Backup</h2>
-<p><strong>Important:</strong> backup your work! Make copies of raw
-data/files and scripts and save it in another location if you work on
-private computers. PhD students should work on the M-drive or the
-U-drive, never directly on the C-drive of the computer.</p>
+<p><strong>Important:</strong> backup your work! Make copies of raw data/files and scripts and save it in another location if you work on private computers. PhD students should work on the M-drive or the U-drive, never directly on the C-drive of the computer.</p>
 <h2 id="manuscripts">Manuscript Submissions/Revisions</h2>
-<p>When you are submitting a manuscript create a copy of the related
-subproject folder and add a suffix
-<code>submission_1_&lt;JournalAbbreviation&gt;</code>. This copy shall
-be stored and never changed—we recommend to zip this folder! When
-conducting a revisions or resubmission, copy the folder to
-<code>submission_2_&lt;JournalAbbreviation&gt;</code> and revise the
-paper.</p>
-<p>Please find additional information on ‘how to write a scientific
-paper’, how to avoid statistical pitfalls or how to organize workflows
-<a
-href="https://wolke.izw-berlin.de/index.php/apps/files/?dir=/Abteilung-Department%206/LabGuidelines&amp;fileid=346243">here</a>.</p>
+<p>When you are submitting a manuscript create a copy of the related subproject folder and add a suffix <code>submission_1_&lt;JournalAbbreviation&gt;</code>. This copy shall be stored and never changed—we recommend to zip this folder! When conducting a revisions or resubmission, copy the folder to <code>submission_2_&lt;JournalAbbreviation&gt;</code> and revise the paper.</p>
+<p>Please find additional information on ‘how to write a scientific paper’, how to avoid statistical pitfalls or how to organize workflows <a href="https://wolke.izw-berlin.de/index.php/apps/files/?dir=/Abteilung-Department%206/LabGuidelines&amp;fileid=346243">here</a>.</p>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <hr />
 <h2 id="appendices">Appendices</h2>
 <h2 id="appendixA">Appendix A) Folder Structure for Project Folders</h2>
-<p>A new project can be started by installing the <a
-href="https://github.com/EcoDynIZW/d6">d6 R-package</a>. Running
-<code>new_project()</code> with a unique and descriptive name for your
-project (see below) will create a full scaffolding structure for all
-your future analysis steps. If you like, you can also specify a path and
-the project will be created there.</p>
-<p>Please create repositories on the EcoDynIZW account and not on your
-private account!</p>
+<p>A new project can be started by installing the <a href="https://github.com/EcoDynIZW/d6">d6 R-package</a>. Running <code>new_project()</code> with a unique and descriptive name for your project (see below) will create a full scaffolding structure for all your future analysis steps. If you like, you can also specify a path and the project will be created there.</p>
+<p>Please create repositories on the EcoDynIZW account and not on your private
+account!</p>
 <h3 id="root-project-folder">Root project folder</h3>
 <p>Name it like:</p>
 <p><strong><em>species|topic_country|simu_method|approach_surname_firstletterofgivenname</em></strong></p>
-<p>e.g. <em>unicornus_wl_sdm_smith_j</em> (unicornus project in
-wonderland, species distribution model from John Smith) or
-<em>stability_simu_rpackage_smith_j</em></p>
+<p>e.g. <em>unicornus_wl_sdm_smith_j</em> (unicornus project in wonderland, species distribution model from John Smith) or <em>stability_simu_rpackage_smith_j</em></p>
 <ul>
 <li>Everything should be written in small letters.</li>
 <li>Avoid spaces or hyphen in the path to the file.</li>
-<li>Species name should be in latin and please use your surname and the
-first letter of your given name at the end.</li>
+<li>Species name should be in latin and please use your surname and the first letter of your given name at the end.</li>
 <li>Country should be the international abbreviation.</li>
 </ul>
 <p>The root project folder should hold:</p>
 <ul>
-<li><strong>R_Project_file</strong>: your main file for your R project
-(if used) — do not confuse this with R-scripts!
+<li><strong>R_Project_file</strong>: your main file for your R project (if used) — do not confuse this with R-scripts!
 <ul>
-<li>We highly recommend to use R, but if it is necessary to use another
-programming language and/or program please use the same structure as
-described in the following:</li>
+<li>We highly recommend to use R, but if it is necessary to use another programming language and/or program please use the same structure as described in the following:</li>
 </ul></li>
-<li><strong>data-raw</strong>: A folder that contains the complete raw
-data set (e.g. telemetry data, experiment results, electrophoresis
-images, vegetation survey plots, species lists, etc.).
+<li><strong>data-raw</strong>: A folder that contains the complete raw data set (e.g. telemetry data, experiment results, electrophoresis images, vegetation survey plots, species lists, etc.).
 <ul>
-<li>Do not use MS Excel files use .csv or .txt files to store/ save
-data.</li>
-<li>Metadata belonging to the raw data should be provided in a separate
-file but it should be given the same name with an additional suffix as
-the raw data file, e.g. <em>area1_specieslist.txt</em> or
-<em>area1_specieslist_metadata.txt</em></li>
+<li>Do not use MS Excel files use .csv or .txt files to store/ save data.</li>
+<li>Metadata belonging to the raw data should be provided in a separate file but it should be given the same name with an additional suffix as the raw data file, e.g. <em>area1_specieslist.txt</em> or <em>area1_specieslist_metadata.txt</em></li>
 </ul></li>
-<li><strong>docs</strong>: A folder that contains anything related with
-project administration e.g. applications, permits, grants, timeline,
-research proposal, the electronic lab-book.</li>
+<li><strong>docs</strong>: A folder that contains anything related with project administration e.g. applications, permits, grants, timeline, research proposal, the electronic lab-book.</li>
 <li><strong>output</strong>: A folder that contains processed raw data
 <ul>
 <li>Results of data preparation and wrangling</li>
-<li>Results of spatial data processing and spatial analysis,
-e.g. rasterizing, extracting, calculating on the basic layer and the
-resulting map used for analyses.</li>
+<li>Results of spatial data processing and spatial analysis, e.g. rasterizing, extracting, calculating on the basic layer and the resulting map used for analyses.</li>
 <li>Final results from analyses</li>
 </ul></li>
-<li><strong>plots</strong>: A folder that contains all produced images
-for the data exploration, presentations, and publications.</li>
-<li><strong>R</strong>: A folder that contains all scripts that are used
-within the project.</li>
-<li>If you need additional subfolders add them. Please use also
-second-level subfolders inside the subfolders to keep a clear and tidy
-structure.</li>
+<li><strong>plots</strong>: A folder that contains all produced images for the data exploration, presentations, and publications.</li>
+<li><strong>R</strong>: A folder that contains all scripts that are used within the project.</li>
+<li>If you need additional subfolders add them. Please use also second-level subfolders inside the subfolders to keep a clear and tidy structure.</li>
 </ul>
-<p>The main folder structure created in the root directory should look
-like this:</p>
+<p>The main folder structure created in the root directory should look like this:</p>
 <pre class="text"><code>.
 └── my_project
     ├── data-raw
@@ -3143,58 +2924,27 @@ additional files looks like this:</p>
 <hr />
 <h2 id="appendixB">Appendix B) Detailed Spatial Data Information</h2>
 <ul>
-<li>When using spatial data give clear names for maps ≤ 13 characters
-without special characters or spaces.</li>
-<li>Write down the cartographic reference system (CRS) at the end of the
-file name, e.g. <code>filename_4326</code>.</li>
-<li>Always use <code>utf-8</code> encoding, <strong>NEVER</strong> use
-the system setting. If you have to use different character encoding
-settings, then name the used encoding in the filename.</li>
-<li>Save the data as geopackage (<code>.gpkg</code>, recommended but
-cannot be used via ArcGis) or shapefile. Geopackages should be the first
-choice as the format is much quicker in every task (loading, saving,
-changing and computing), less limited and OGC-Standard (Open Geospatial
-Consortium). Be aware, that shapefiles have many limitations e.g. max 7
-characters for column names. Further information is listed in Appendix
-B.</li>
-<li>Crosscheck your scripts and results. If you have calculated
-data/processed maps, make a plot and check for consistency. E.g. there
-should be no data outliers, terrestrial species should not occur in the
-sea etc. If results are valid, mark it as a milestone in your project
-documentation.</li>
-<li>Be aware: if you want to change the coordinate reference system
-(CRS) you have to transform / project the data. Never just specify a new
-one, because this doesn’t change the CRS!</li>
-<li>Always include the Coordinate Reference System as EPSG code
-(e.g. 4326 for log/lat WGS84 Coordinates) at the end of a file name,
-e.g. <code>my_env_variable_4326.gpkg</code>.</li>
-<li>Please save all your geo data into geopackage files
-(<code>.gpkg</code>) format to save and process your data. In general,
-if you export data from R please save it as an R Studio file
-(<code>.rds</code>). It will be saved without any losses.</li>
+<li>When using spatial data give clear names for maps ≤ 13 characters without special characters or spaces.</li>
+<li>Write down the cartographic reference system (CRS) at the end of the file name, e.g. <code>filename_4326</code>.</li>
+<li>Always use <code>utf-8</code> encoding, <strong>NEVER</strong> use the system setting. If you have to use different character encoding settings, then name the used encoding in the filename.</li>
+<li>Save the data as geopackage (<code>.gpkg</code>, recommended but cannot be used via ArcGis) or shapefile. Geopackages should be the first choice as the format is much quicker in every task (loading, saving, changing and computing), less limited and OGC-Standard (Open Geospatial Consortium). Be aware, that shapefiles have many limitations e.g. max 7 characters for column names. Further information is listed in Appendix B.</li>
+<li>Crosscheck your scripts and results. If you have calculated data/processed maps, make a plot and check for consistency. E.g. there should be no data outliers, terrestrial species should not occur in the sea etc. If results are valid, mark it as a milestone in your project documentation.</li>
+<li>Be aware: if you want to change the coordinate reference system (CRS) you have to transform / project the data. Never just specify a new one, because this doesn’t change the CRS!</li>
+<li>Always include the Coordinate Reference System as EPSG code (e.g. 4326 for log/lat WGS84 Coordinates) at the end of a file name, e.g. <code>my_env_variable_4326.gpkg</code>.</li>
+<li>Please save all your geo data into geopackage files (<code>.gpkg</code>) format to save and process your data. In general, if you export data from R please save it as an R Studio file (<code>.rds</code>). It will be saved without any losses.</li>
 <li>Store all point/line/polygon data as WGS84 (EPSG 4326).</li>
-<li>If you do not understand this paragraph, contact the geodata-manager
-(Moritz Wenzler) before doing anything involving geodata.</li>
+<li>If you do not understand this paragraph, contact the geodata-manager (Moritz Wenzler) before doing anything involving geodata.</li>
 </ul>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <hr />
 <h2 id="appendixC">Appendix C) What Nature Says…</h2>
 <p><em>Nature <strong>561</strong>, 277 (2018)</em></p>
-<p><strong>Why you need an agenda for meetings with your principal
-investigator</strong></p>
-<p>A list of talking points can help with navigating potentially
-difficult topics and sticky negotiations. As PhD students, we often find
-ourselves discussing our interactions with our principal investigators
-(PIs) and swapping advice for improving our mentoring meetings. We have
-found three practices to be consistently helpful: asking our PIs about
-all aspects of their job; preparing an agenda for each meeting; and
-negotiating new experiments without explicitly saying ‘no’.</p>
-<p><em>Read the full text: <a
-href="https://doi.org/10.1038/d41586-018-06619-3"
-class="uri">https://doi.org/10.1038/d41586-018-06619-3</a></em></p>
+<p><strong>Why you need an agenda for meetings with your principal investigator</strong></p>
+<p>A list of talking points can help with navigating potentially difficult topics and sticky negotiations.
+As PhD students, we often find ourselves discussing our interactions with our principal investigators (PIs) and swapping advice for improving our mentoring meetings. We have found three practices to be consistently helpful: asking our PIs about all aspects of their job; preparing an agenda for each meeting; and negotiating new experiments without explicitly saying ‘no’.</p>
+<p><em>Read the full text: <a href="https://doi.org/10.1038/d41586-018-06619-3" class="uri">https://doi.org/10.1038/d41586-018-06619-3</a></em></p>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

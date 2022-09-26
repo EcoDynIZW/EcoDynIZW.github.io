@@ -23,8 +23,6 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * **Niedballa J**, **Axtner J**, Döbert TF, **Tilker A**, **Nguyen A**, **Wong ST**, Fiderer C, Heurich M, **Wilting A** (2022): imageseg: an R package for deep learning-based image segmentation. METHODS ECOL EVOL, accepted.
 
-* **Wong S**, Guharajan R, Petrus A, Jubili J, Lietz R, Abrams J, Hon J, Alen L, Ting N, Wong G, Tchin L, Bijack N, **Kramer-Schadt S**, **Wilting A**, **Sollmann R** (2022): How do terrestrial wildlife communities respond to small-scale Acacia plantations embedded in harvested tropical forest? ECOL EVOL, accepted.
-
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
@@ -88,6 +86,7 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * Stiegler J, Lins A, Dammhahn M, **Kramer-Schadt S**, Ortmann S, Blaum N (2022): Personality drives activity and space use in a mammalian herbivore. MOV ECOL, **10**, 33. doi:<span>[10.1016/j.biocon.2021.109446](https://doi.org/10.1016/j.biocon.2021.109446)</span>
 
+* **Wong S**, Guharajan R, Petrus A, Jubili J, Lietz R, Abrams J, Hon J, Alen L, Ting N, Wong G, Tchin L, Bijack N, **Kramer-Schadt S**, **Wilting A**, **Sollmann R** (2022): How do terrestrial wildlife communities respond to small-scale Acacia plantations embedded in harvested tropical forest? ECOL EVOL,**12**, e9337. doi:<span>[10.1002/ece3.9337](https://doi.org/10.1002/ece3.9337)</span>
 
 
 

@@ -121,7 +121,7 @@ We investigate if DNA methylation is a main mechanism through which an individua
   <b>Key Publications:</b>
   <ul>
     <li>[Guerrero et al. (2020) CURR  ZOOL](https://pubmed.ncbi.nlm.nih.gov/32440291/)</li>
-    <li>[Heitlinger et al. (2017) FRONT. CELL. INFECT. MICROBIOL](https://www.frontiersin.org/articles/10.3389/fcimb.2017.00262/full)</li>
+    <li>[Heitlinger et al. (2017) FRONT CELL INFECT MICROBIOL](https://www.frontiersin.org/articles/10.3389/fcimb.2017.00262/full)</li>
    </ul>
 </small>
 

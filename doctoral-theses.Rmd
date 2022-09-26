@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class='headerbox'><hbox>Successfully Defended Theses</hbox></div><br>
 
+* **Tobias Kürschner**: Disease transmission and persistence in dynamic landscapes. 23.09.2022. Institut für Biochemie und Biologie der Universität Potsdam. Kramer-Schadt S, Grimm V, Berger U.
+
 * **Thanh Van Nguyen**: Unravelling the mysteries of the Annamites: First insights in ecology, distribution, and genetic diversity of Annamite mammals. 24.06.2022. Mathematisch-Naturwissenschaftliche Fakultät
 Institut für Biochemie und Biologie der Universität Potsdam. Fickel J, Wilting A.
 
