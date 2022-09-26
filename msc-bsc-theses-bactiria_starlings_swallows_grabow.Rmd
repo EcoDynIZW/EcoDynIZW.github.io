@@ -8,7 +8,7 @@ M.Sc. Marius Grabow/ Dr. Conny Landgraf
 
 **General background**
 
-Parasites are ubiquitous, shaping host traits and behaviours such as movement. While parasite dynamics and host movements are often studied at large scales, e.g. migratory behaviour, our knowledge of the implications at fine scales, e.g. local movements during breeding, remains scarce. We hypothesize that parasites are proximate drivers of individual movement decisions, altering the way hosts allocate their energy, and ultimately influencing foraging, competition and fitness. 
+Parasites are ubiquitous, shaping host traits and behaviours such as movement. While parasite dynamics and host movements are often studied at large scales, e.g. migratory behaviour, our knowledge of the implications at fine scales, e.g. local movements during breeding, remains scarce. We hypothesize that parasites are proximate drivers of individual movement decisions, altering the way hosts allocate their energy, and ultimately influencing foraging, competition and fitness.
 The overarching project aims to understand how fitness consequences of parasites are reflected by individual movement decisions and the surrounding environment. By accounting for a broad range of parasites, high resolution animal movement data and individual trait measures of passerines (swallows and starlings) we follow an integrative approach to model effects of host–parasite interactions in agricultural landscapes.
 
 **Feather degrading bacteria (FDB)**
@@ -27,3 +27,17 @@ The successful applicant will perform classic bacteriological analysis to quanti
 -	High motivation & sense of responsibility to work in an academic environment
 -	Good knowledge of English
 -	Date/ duration: starting time November 2022 (but flexible), minimum duration 3 month (internship), preferably longer (e.g. Master thesis)
+
+
+**Applications and working environment:**
+
+The position preferably starts on **14. November 2022** and will last for **at least 3 months**. The place of employment is the IZW Berlin. Enquiries or questions should be directed to <a href="mailto:grabow@izw-berlin.de">Dr. Conny Landgraf</a> / <a href="mailtolGrabow@izw-berlin.de">M.Sc. Marius Grabow</a>.
+
+Please upload complete application documents including a letter of motivation, CV, proof of university enrolment and contact details (email address and telephone). Submit your application **as soon as possible but no later than 21st October, 2022** via the [Leibniz-IZW’s online-job-market](https://leibniz-institutfuerzoo-undwildtierforschung.softgarden.io/applications/a1a0cfb6-f790-4fcd-8731-496235090efe?1&isEditMode=false&isNew=true&l=de).
+
+Interviews will take place 7.-11. November 2022.
+
+We are looking forward to your application!
+
+
+

@@ -9,7 +9,7 @@ description: ""
 
 **General background**
 
-Parasites are ubiquitous, shaping host traits and behaviours such as movement. While parasite dynamics and host movements are often studied at large scales, e.g. migratory behaviour, our knowledge of the implications at fine scales, e.g. local movements during breeding, remains scarce. We hypothesize that parasites are proximate drivers of individual movement decisions, altering the way hosts allocate their energy, and ultimately influencing foraging, competition and fitness. 
+Parasites are ubiquitous, shaping host traits and behaviours such as movement. While parasite dynamics and host movements are often studied at large scales, e.g. migratory behaviour, our knowledge of the implications at fine scales, e.g. local movements during breeding, remains scarce. We hypothesize that parasites are proximate drivers of individual movement decisions, altering the way hosts allocate their energy, and ultimately influencing foraging, competition and fitness.
 The overarching project aims to understand how fitness consequences of parasites are reflected by individual movement decisions and the surrounding environment. By accounting for a broad range of parasites, high resolution animal movement data and individual trait measures of passerines (swallows and starlings) we follow an integrative approach to model effects of host–parasite interactions in agricultural landscapes. [read more](msc-bsc-theses-bactiria_starlings_swallows_grabow.html)&ensp;
 
 
