@@ -23,7 +23,7 @@ For information on the Department, check [our webpage](https://www.ecological-dy
 
 ### Teams of the Department of Ecological Dynamics:
 
-(1) [Individual Dynamics](team-individual.html) – PI: Sarah Benhaiem
+(1) [Individual Dynamics](team-individual.html) – PI: Sarah Benhaiem & Sonja Metzger (field coordination)
 (2) [Population Dynamics](team-population.html) – PI: Stephanie Kramer-Schadt & Viktoriia Radchuk
 (3) [Biodiversity Dynamics](team-biodiversity.html) – PI: Andreas Wilting & Rahel Sollmann
 

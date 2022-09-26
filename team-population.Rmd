@@ -53,8 +53,8 @@ To understand how populations and communities react to global change we study ho
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Radchuk et al. (2019) Ecol. Lett. 22:674–684](https://doi.org/10.1111/ele.13226)</li>
-   <li>[Radchuk et al. (2019) Nat. Commun. 10:3109](https://doi.org/10.1038/s41467-019-10924-4'>10.1038/s41467-019-10924-4)</li>  
+    <li>[Radchuk et al. (2019) ECOL LETT](https://doi.org/10.1111/ele.13226)</li>
+   <li>[Radchuk et al. (2019) NAT COMMUN](https://doi.org/10.1038/s41467-019-10924-4'>10.1038/s41467-019-10924-4)</li>  
    </ul>
 </small>
 
@@ -76,11 +76,11 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Kürschner et al. (2021) Ecol. Evol. 11:5728–5741](https://doi.org/10.1002/ece3.7478)</li>
-  <li>[Scherer et al. (2020) OIKOS 129:651–667](https://doi.org/10.1111/oik.07002'>10.1111/oik.07002)</li>
-  <li>[Scherer et al. (2019) J. Anim. Ecol.](https://doi.org/10.1111/1365-2656.13070)</li>
-  <li>[Marescot et al. (2018) Funct. Ecol. 32:1237–1250](https://doi.org/10.1111/1365-2435.13059)</li>
-    <li>[Kramer-Schadt et al. (2009) OIKOS 118:199-208](https://doi.org/10.1111/j.1600-0706.2008.16582.x)</li>
+    <li>[Kürschner et al. (2021) ECOL EVOL](https://doi.org/10.1002/ece3.7478)</li>
+  <li>[Scherer et al. (2020) OIKOS](https://doi.org/10.1111/oik.07002'>10.1111/oik.07002)</li>
+  <li>[Scherer et al. (2019) J ANIM ECOL](https://doi.org/10.1111/1365-2656.13070)</li>
+  <li>[Marescot et al. (2018) FUNCT ECOL](https://doi.org/10.1111/1365-2435.13059)</li>
+    <li>[Kramer-Schadt et al. (2009) OIKOS](https://doi.org/10.1111/j.1600-0706.2008.16582.x)</li>
    </ul>
 </small>
 
@@ -106,10 +106,10 @@ Urbanisation poses risks and opportunities for wildlife. We investigate how spec
 <small>
   <b>Key Publications:</b>  
   <ul>
-    <li>[Planillo et al. (2021) Landsc. Urban. Pla. 211:104098](https://doi.org/10.1016/j.landurbplan.2021.104098'>10.1016/j.landurbplan.2021.104098)</li>
-    <li>[Planillo, Kramer-Schadt, et al. (2020)  Divers. Distrib. 27:34–49](https://doi.org/10.1111/ddi.13169'>10.1111/ddi.13169)</li>
-    <li>[Gras et al. (2018) Front. Ecol. Evol. 6:136](https://doi.org/10.3389/fevo.2018.00136)</li>
-    <li>[Stillfried et al. (2017) Front. Ecol. Evol. 5:157](https://doi.org/10.3389/fevo.2017.00157)</li>
+    <li>[Planillo et al. (2021) LANDSC URBAN PLA](https://doi.org/10.1016/j.landurbplan.2021.104098'>10.1016/j.landurbplan.2021.104098)</li>
+    <li>[Planillo, Kramer-Schadt, et al. (2020)  DIVERS DISTRIB](https://doi.org/10.1111/ddi.13169'>10.1111/ddi.13169)</li>
+    <li>[Gras et al. (2018) FRONT ECOL EVOL](https://doi.org/10.3389/fevo.2018.00136)</li>
+    <li>[Stillfried et al. (2017) FRONT ECOL EVOL](https://doi.org/10.3389/fevo.2017.00157)</li>
    </ul>
 </small>
 
@@ -128,10 +128,10 @@ Wildlife faces big challenges persisting in human-dominated landscapes. We model
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Premier et al. (2020) Mov. Ecol. 8:16](https://doi.org/10.1186/s40462-020-00204-y)</li>
-    <li>[Heurich, Schultze-Naumburg et al. (2018) Biol. Conserv. 224:355-365](https://doi.org/10.1016/j.biocon.2018.05.011'>10.1016/j.biocon.2018.05.011)</li>
-    <li>[Radchuk, Ims & Andreassen (2016) Ecology 97:720-732](https://doi.org/10.1890/15-0756.1'>10.1890/15-0756.1)</li>
-    <li>[Struebig et al. (2015) Curr. Biol. 25:372–378](https://doi.org/10.1016/j.cub.2014.11.067)</li>
+    <li>[Premier et al. (2020) MOV ECOL](https://doi.org/10.1186/s40462-020-00204-y)</li>
+    <li>[Heurich, Schultze-Naumburg et al. (2018) BIOL CONSERV](https://doi.org/10.1016/j.biocon.2018.05.011'>10.1016/j.biocon.2018.05.011)</li>
+    <li>[Radchuk, Ims & Andreassen (2016) ECOLOGY ](https://doi.org/10.1890/15-0756.1'>10.1890/15-0756.1)</li>
+    <li>[Struebig et al. (2015) CURR BIOL](https://doi.org/10.1016/j.cub.2014.11.067)</li>
    </ul>
 </small>
 

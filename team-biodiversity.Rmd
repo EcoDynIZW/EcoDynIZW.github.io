@@ -49,12 +49,12 @@ Financial support: Federal Ministry of Education and Research (BMBF), Panthera, 
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Guharajan et al. (2021). FOR ECOL MANAG](https://www.semanticscholar.org/paper/Sustainable-forest-management-is-vital-for-the-of-Guharajan-Mohamed/23023a67dcd41eb1c1baa29a51da0966bed806ec)</li>
-    <li>[Mathai et al. (2019). GLOB ECOL EVOL](https://www.sciencedirect.com/science/article/pii/S2351989418302981)</li>
-    <li>[Brozovic et al. (2018). Mammalian Biology](https://www.sciencedirect.com/science/article/abs/pii/S1616504718301320?via%3Dihub)</li>
-    <li>[Wong et al. (2018). Mammalian Biology](https://www.sciencedirect.com/science/article/abs/pii/S161650471730157X?via%3Dihub)</li>
-    <li>[Mathai et al. (2017). Mammalian Biology](https://www.sciencedirect.com/science/article/abs/pii/S1616504717301453?via%3Dihub)</li>
-    <li>[Sollmann et al. (2017). Diversity and Distributions](https://onlinelibrary.wiley.com/doi/10.1111/ddi.12530)</li>
+    <li>[Guharajan et al. (2021) FOR ECOL MANAG](https://www.semanticscholar.org/paper/Sustainable-forest-management-is-vital-for-the-of-Guharajan-Mohamed/23023a67dcd41eb1c1baa29a51da0966bed806ec)</li>
+    <li>[Mathai et al. (2019) GLOB ECOL EVOL](https://www.sciencedirect.com/science/article/pii/S2351989418302981)</li>
+    <li>[Brozovic et al. (2018) MAMMALIAN BIOLOGY](https://www.sciencedirect.com/science/article/abs/pii/S1616504718301320?via%3Dihub)</li>
+    <li>[Wong et al. (2018) MAMMALIAN BIOLOGY](https://www.sciencedirect.com/science/article/abs/pii/S161650471730157X?via%3Dihub)</li>
+    <li>[Mathai et al. (2017) MAMMALIAN BIOLOGY](https://www.sciencedirect.com/science/article/abs/pii/S1616504717301453?via%3Dihub)</li>
+    <li>[Sollmann et al. (2017) DIVERS DISTRIB](https://onlinelibrary.wiley.com/doi/10.1111/ddi.12530)</li>
   </ul>
 </small>
 
@@ -74,15 +74,35 @@ Financial support: Federal Ministry of Education and Research (BMBF), Point Defi
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Tilker et al. (2020). DIVERS DISTRIB](https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13029)</li>
-    <li>[Nguyen et al. (2019). NAT ECOL EVOL](https://www.nature.com/articles/s41559-019-1027-7)</li>
-    <li>[Tilker et al. (2019). COMMS BIOL](https://www.nature.com/articles/s42003-019-0640-y)</li>
-    <li>[Tilker et al. (2017). Science](https://www.science.org/doi/10.1126/science.aap9591)</li>
+    <li>[Tilker et al. (2020) DIVERS DISTRIB](https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13029)</li>
+    <li>[Nguyen et al. (2019) NAT ECOL EVOL](https://www.nature.com/articles/s41559-019-1027-7)</li>
+    <li>[Tilker et al. (2019) COMMS BIOL](https://www.nature.com/articles/s42003-019-0640-y)</li>
+    <li>[Tilker et al. (2017) Science](https://www.science.org/doi/10.1126/science.aap9591)</li>
   </ul>
 </small>
 
 
 <div class='headerbox'><hbox>Concepts & Methodology</hbox></div>
+
+
+<div class='headerbox-secondary'><hbox-secondary>Hierarchical statistical modeling for wildlife research.</div>
+
+**People involved: Ana Sanz, Jürgen Niedballa**
+
+**Collaborators: Prof. Dr. Beth Gardner and many others, depending on specific projects**
+
+Wildlife survey data are fraught with challenges: often sparse, spatially and/or temporally limited or biased due to logistic constraints, and imperfectly reflecting ecological states and processes due to imperfect detection (i.e., failing to observe species or individuals even though they are present). Hierarchical statistical modeling has emerged as the prime tool to deal with these challenges, by describing separate sub-models for the underlying ecological and the detection process. We employ such models throughout our research projects. But we also modify existing and develop new hierarchical models, and make these more accessible to end users, to improve our ability to study, monitor, and ultimately, protect wildlife. Modeling approaches we work with range from occupancy models for species occurrence to N-mixture, distance sampling and other count-based models for species abundance and population dynamics, to traditional and spatial capture-recapture models for abundance, density and demographics. 
+
+<small>
+  <b>Key Publications:</b>
+  <ul>
+    <li>[Ke et al. (2022) ECOL APPL](https://doi.org/10.1002/eap.2632)</li>
+    <li>[Sollmann et al. (2021) ECOL APPL](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2249)</li>
+    <li>[Gardner et al. (2018) ECOL EVOL](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.4509)</li>
+    <li>[Sollmann et al. (2016) MEE](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12518)</li>
+    <li>[Royle et al. 2014. Spatial Capture Recapture. Academic Press, Waltham, MA.]()</li>
+  </ul>
+</small>
 
 
 <div class='headerbox-secondary'><hbox-secondary>Developing standardized and reliable survey tools to monitor mammals in tropical rainforests.</div>
@@ -100,16 +120,16 @@ ScreenForBio user guide
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Abrams et al. (2021). ECOGRAPHY](https://onlinelibrary.wiley.com/doi/10.1111/ecog.05577)</li>
-    <li>[Nguyen et al. (2021). ENVIRONMENTAL DNA](https://onlinelibrary.wiley.com/doi/10.1002/edn3.182)</li>
-    <li>[Wong et al. (2019). GLOBAL ECOL AND EVOL](https://www.sciencedirect.com/science/article/pii/S2351989419303099)</li>
-    <li>[Abrams et al. (2019). Journal of Applied Ecology](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.13411)</li>
-    <li>[Axtner et al. (2019). GigaScience](https://academic.oup.com/gigascience/article/8/4/giz029/5450733)</li>
-    <li>[Niedballa et al. (2019). Remote Sensing in Ecology and Conservation](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.107)</li>
-    <li>[Abrams et al. (2019). Ecological Informatics](https://www.sciencedirect.com/science/article/abs/pii/S1574954118302759?via%3Dihub)</li>
-    <li>[Bush et al. (2017). Nature Ecology & Evolution](https://www.nature.com/articles/s41559-017-0176)</li>
-    <li>[Mohd Salleh et al. (2017). Gigascience](https://academic.oup.com/gigascience/article/6/8/gix053/3958782)</li>
-    <li>[Niedballa et al. (2016). Niedballa](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12600)</li>
+    <li>[Abrams et al. (2021) ECOGRAPHY](https://onlinelibrary.wiley.com/doi/10.1111/ecog.05577)</li>
+    <li>[Nguyen et al. (2021) ENVIRONMENTAL DNA](https://onlinelibrary.wiley.com/doi/10.1002/edn3.182)</li>
+    <li>[Wong et al. (2019) GLOBAL ECOL AND EVOL](https://www.sciencedirect.com/science/article/pii/S2351989419303099)</li>
+    <li>[Abrams et al. (2019) J APPL ECOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.13411)</li>
+    <li>[Axtner et al. (2019) GIGASCIENSE](https://academic.oup.com/gigascience/article/8/4/giz029/5450733)</li>
+    <li>[Niedballa et al. (2019) REMOTE SENS ECOL CONSERV](https://zslpublications.onlinelibrary.wiley.com/doi/10.1002/rse2.107)</li>
+    <li>[Abrams et al. (2019) ECOL INFORM](https://www.sciencedirect.com/science/article/abs/pii/S1574954118302759?via%3Dihub)</li>
+    <li>[Bush et al. (2017) NAT ECOL EVOL](https://www.nature.com/articles/s41559-017-0176)</li>
+    <li>[Mohd Salleh et al. (2017) GIGASCIENSE](https://academic.oup.com/gigascience/article/6/8/gix053/3958782)</li>
+    <li>[Niedballa et al. (2016) METHODS ECOL EVOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12600)</li>
   </ul>
 </small>
 

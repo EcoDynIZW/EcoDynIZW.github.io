@@ -790,6 +790,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1862,15 +1863,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2728,15 +2735,11 @@ Research
 Axtner et al. 2019
 </h3>
 <p>
-An efficient and robust laboratory workflow and tetrapod database for
-larger scale environmental DNA studies. <em>GIGASCIENCE</em>,
-8(4):giz029.
+An efficient and robust laboratory workflow and tetrapod database for larger scale environmental DNA studies. <em>GIGASCIENCE</em>, 8(4):giz029.
 </p>
 <p>
-<a href='https://doi.org/10.1093/gigascience/giz029'><img
-src="img/icon-paper.png" style="width:12.0%" /></a>
-<a href='https://github.com/EcoDynIZW/Axtner_2019_GigaScience'><img
-src="img/icon-github.png" style="width:12.0%" /></a>
+<a href='https://doi.org/10.1093/gigascience/giz029'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Axtner_2019_GigaScience'><img src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2745,14 +2748,11 @@ src="img/icon-github.png" style="width:12.0%" /></a>
 Benhaiem et al. 2018
 </h3>
 <p>
-Slow recovery from a disease epidemic in the spotted hyena, a keystone
-social carnivore. <em>COMMUN BIOL</em>, 1:201.
+Slow recovery from a disease epidemic in the spotted hyena, a keystone social carnivore. <em>COMMUN BIOL</em>, 1:201.
 </p>
 <p>
-<a href='http://doi.org/10.1038/s42003-018-0197-1'><img
-src="img/icon-paper.png" style="width:12.0%" /></a>
-<a href='https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio'><img
-src="img/icon-github.png" style="width:12.0%" /></a>
+<a href='http://doi.org/10.1038/s42003-018-0197-1'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Benhaiem_2018_CommsBio'><img src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2761,14 +2761,11 @@ src="img/icon-github.png" style="width:12.0%" /></a>
 Calderon et al. 2022
 </h3>
 <p>
-Occupancy models reveal potential of conservation prioritization for
-Central American jaguars. <em>ANIM CONSERV</em>
+Occupancy models reveal potential of conservation prioritization for Central American jaguars. <em>ANIM CONSERV</em>
 </p>
 <p>
-<a href='https://doi.org/10.1111/acv.12772'><img
-src="img/icon-paper.png" style="width:12.0%" /></a>
-<a href='https://github.com/EcoDynIZW/Calderon_2022_AnimCons'><img
-src="img/icon-github.png" style="width:12.0%" /></a>
+<a href='https://doi.org/10.1111/acv.12772'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Calderon_2022_AnimCons'><img src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2777,14 +2774,11 @@ src="img/icon-github.png" style="width:12.0%" /></a>
 Dalleau et al. 2019
 </h3>
 <p>
-Modeling the emergence of migratory corridors and foraging hot spots of
-the green sea turtle. <em>ECOL EVOL</em>, 9:10317–1034
+Modeling the emergence of migratory corridors and foraging hot spots of the green sea turtle. <em>ECOL EVOL</em>, 9:10317–1034
 </p>
 <p>
-<a href='https://doi.org/10.1002/ece3.5552'><img
-src="img/icon-paper.png" style="width:12.0%" /></a>
-<a href='https://www.comses.net/codebases/69863caa-2f8e-4412-a564-a2826d9d38d3/releases/1.0.0/'><img
-src="img/icon-comses.png" style="width:12.0%" /></a>
+<a href='https://doi.org/10.1002/ece3.5552'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://www.comses.net/codebases/69863caa-2f8e-4412-a564-a2826d9d38d3/releases/1.0.0/'><img src="img/icon-comses.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2793,9 +2787,7 @@ src="img/icon-comses.png" style="width:12.0%" /></a>
 Drenske et al. 2022
 </h3>
 <p>
-On the road to self-sustainability: Reintroduced migratory European
-Northern Bald Ibises (<em>Geronticus eremita</em>) still need management
-interventions for population viability. <em>ORYX</em>
+On the road to self-sustainability: Reintroduced migratory European Northern Bald Ibises (<em>Geronticus eremita</em>) still need management interventions for population viability. <em>ORYX</em>
 </p>
 <p>
 <a href=''><img src="img/icon-paper.png" style="width:12.0%" /></a>
@@ -2808,15 +2800,11 @@ interventions for population viability. <em>ORYX</em>
 Grabow et al. 2022
 </h3>
 <p>
-Data-integration of opportunistic species observations into hierarchical
-modeling frameworks improves spatial predictions for urban red
-squirrels. <em>FRONT ECOL EVOL</em>, 10:881247.
+Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels. <em>FRONT ECOL EVOL</em>, 10:881247.
 </p>
 <p>
-<a href='https://dx.doi.org/10.3389/fevo.2022.881247'><img
-src="img/icon-paper.png" style="width:12.0%" /></a>
-<a href='https://github.com/EcoDynIZW/Grabow_2022_FrontEcolEvol'><img
-src="img/icon-github.png" style="width:12.0%" /></a>
+<a href='https://dx.doi.org/10.3389/fevo.2022.881247'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Grabow_2022_FrontEcolEvol'><img src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2825,17 +2813,12 @@ src="img/icon-github.png" style="width:12.0%" /></a>
 Kürschner et al. 2021
 </h3>
 <p>
-Movement can mediate temporal mismatches between resource availability
-and biological events in host–pathogen interactions. <em>ECOL EVOL</em>,
-11:5728–5741.
+Movement can mediate temporal mismatches between resource availability and biological events in host–pathogen interactions. <em>ECOL EVOL</em>, 11:5728–5741.
 </p>
 <p>
-<a href='http://doi.org/10.1002/ece3.7478'><img src="img/icon-paper.png"
-style="width:12.0%" /></a>
-<a href='https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol'><img
-src="img/icon-github.png" style="width:12.0%" /></a>
-<a href='https://zenodo.org/badge/latestdoi/177115379'><img
-src="img/icon-zenodo.png" style="width:12.0%" /></a>
+<a href='http://doi.org/10.1002/ece3.7478'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Kuerschner_2021_EcolEvol'><img src="img/icon-github.png" style="width:12.0%" /></a>
+<a href='https://zenodo.org/badge/latestdoi/177115379'><img src="img/icon-zenodo.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2844,15 +2827,11 @@ src="img/icon-zenodo.png" style="width:12.0%" /></a>
 Louvrier et al. 2021
 </h3>
 <p>
-Spatiotemporal interactions of a novel mesocarnivore community in an
-urban environment before and during SARS-CoV-2 lockdown. <em>J ANIM
-ECOL</em>, 91(2):367–380.
+Spatiotemporal interactions of a novel mesocarnivore community in an urban environment before and during SARS-CoV-2 lockdown. <em>J ANIM ECOL</em>, 91(2):367–380.
 </p>
 <p>
-<a href='https://doi.org/10.1111/1365-2656.13635'><img
-src="img/icon-paper.png" style="width:12.0%" /></a>
-<a href='https://github.com/EcoDynIZW/Louvrier_2021_JAnimEcol'><img
-src="img/icon-github.png" style="width:12.0%" /></a>
+<a href='https://doi.org/10.1111/1365-2656.13635'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Louvrier_2021_JAnimEcol'><img src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2861,14 +2840,11 @@ src="img/icon-github.png" style="width:12.0%" /></a>
 Marescot et al. 2020
 </h3>
 <p>
-‘Keeping the kids at home’ can limit the persistence of contagious
-pathogens in social animals. <em>J ANIM ECOL</em>, 90:2523–2535.
+‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. <em>J ANIM ECOL</em>, 90:2523–2535.
 </p>
 <p>
-<a href='https://doi.org/10.1111/1365-2656.13555'><img
-src="img/icon-paper.png" style="width:12.0%" /></a>
-<a href='https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol'><img
-src="img/icon-github.png" style="width:12.0%" /></a>
+<a href='https://doi.org/10.1111/1365-2656.13555'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol'><img src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2877,15 +2853,11 @@ src="img/icon-github.png" style="width:12.0%" /></a>
 Nguyen et al. 2021
 </h3>
 <p>
-Getting the big picture: Landscape-scale occupancy patterns of two
-Annamite endemics among multiple protected areas. <em>CONS SCI
-PRACT</em>, e620
+Getting the big picture: Landscape-scale occupancy patterns of two Annamite endemics among multiple protected areas. <em>CONS SCI PRACT</em>, e620
 </p>
 <p>
-<a href='https://doi.org/10.1111/csp2.620'><img src="img/icon-paper.png"
-style="width:12.0%" /></a>
-<a href='https://github.com/EcoDynIZW/Nguyen_2021_CSP'><img
-src="img/icon-github.png" style="width:12.0%" /></a>
+<a href='https://doi.org/10.1111/csp2.620'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Nguyen_2021_CSP'><img src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2894,15 +2866,11 @@ src="img/icon-github.png" style="width:12.0%" /></a>
 Planillo et al. 2021
 </h3>
 <p>
-Citizen science data for urban planning: Comparing different sampling
-schemes for modelling urban bird distribution. <em>LANDURBPLAN</em>,
-211:104098
+Citizen science data for urban planning: Comparing different sampling schemes for modelling urban bird distribution. <em>LANDURBPLAN</em>, 211:104098
 </p>
 <p>
-<a href='https://doi.org/10.1016/j.landurbplan.2021.104098'><img
-src="img/icon-paper.png" style="width:12.0%" /></a>
-<a href='https://github.com/EcoDynIZW/Planillo_2021_LandUrbPlan'><img
-src="img/icon-github.png" style="width:12.0%" /></a>
+<a href='https://doi.org/10.1016/j.landurbplan.2021.104098'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Planillo_2021_LandUrbPlan'><img src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2911,14 +2879,11 @@ src="img/icon-github.png" style="width:12.0%" /></a>
 Radchuk et al. 2016
 </h3>
 <p>
-From individuals to population cycles: the role of extrinsic and
-intrinsic factors in rodent populations. <em>ECOLOGY</em>, 97:720-732.
+From individuals to population cycles: the role of extrinsic and intrinsic factors in rodent populations. <em>ECOLOGY</em>, 97:720-732.
 </p>
 <p>
-<a href='https://doi.org/10.1890/15-0756.1'><img
-src="img/icon-paper.png" style="width:12.0%" /></a>
-<a href='https://www.comses.net/codebases/4b484186-d8fb-4307-a710-fc05daa36afa/releases/1.0.0/'><img
-src="img/icon-comses.png" style="width:12.0%" /></a>
+<a href='https://doi.org/10.1890/15-0756.1'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://www.comses.net/codebases/4b484186-d8fb-4307-a710-fc05daa36afa/releases/1.0.0/'><img src="img/icon-comses.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2927,14 +2892,11 @@ src="img/icon-comses.png" style="width:12.0%" /></a>
 Radchuk et al. 2019
 </h3>
 <p>
-Adaptive responses of animals to climate change are most likely
-insufficient. <em>NAT COM</em>, 10:3109.
+Adaptive responses of animals to climate change are most likely insufficient. <em>NAT COM</em>, 10:3109.
 </p>
 <p>
-<a href='http://doi.org/10.1038/s41467-019-10924-4'><img
-src="img/icon-paper.png" style="width:12.0%" /></a>
-<a href='https://github.com/EcoDynIZW/Radchuk_2019_NatCom'><img
-src="img/icon-github.png" style="width:12.0%" /></a>
+<a href='http://doi.org/10.1038/s41467-019-10924-4'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Radchuk_2019_NatCom'><img src="img/icon-github.png" style="width:12.0%" /></a>
 </p>
 </li>
 <li class="card-repo">
@@ -2943,22 +2905,16 @@ src="img/icon-github.png" style="width:12.0%" /></a>
 Scherer et al. 2020
 </h3>
 <p>
-Moving infections: individual movement decisions drive disease
-persistence in spatially structured landscapes. <em>OIKOS</em>,
-129:651–667.
+Moving infections: individual movement decisions drive disease persistence in spatially structured landscapes. <em>OIKOS</em>, 129:651–667.
 </p>
 <p>
-<a href='http://doi.org/10.1111/oik.07002'><img src="img/icon-paper.png"
-style="width:12.0%" /></a>
-<a href='https://github.com/EcoDynIZW/Scherer_2020_OIKOS'><img
-src="img/icon-github.png" style="width:12.0%" /></a>
-<a href='https://zenodo.org/badge/latestdoi/177115379'><img
-src="img/icon-zenodo.png" style="width:12.0%" /></a>
+<a href='http://doi.org/10.1111/oik.07002'><img src="img/icon-paper.png" style="width:12.0%" /></a>
+<a href='https://github.com/EcoDynIZW/Scherer_2020_OIKOS'><img src="img/icon-github.png" style="width:12.0%" /></a>
+<a href='https://zenodo.org/badge/latestdoi/177115379'><img src="img/icon-zenodo.png" style="width:12.0%" /></a>
 </p>
 </li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
