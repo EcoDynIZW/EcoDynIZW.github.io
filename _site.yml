@@ -30,12 +30,12 @@ navbar:
           href: publications.html
         - text: "Repositories"
           href: repositories.html
+        - text: "Guidelines"
+          href: guidelines.html
         - text: "Doctoral Theses"
           href: doctoral-theses.html
         - text: "Msc/Bsc Theses"
           href: msc-bsc-theses.html
-    - text: "Guidelines"
-      href: guidelines.html
     - text: "Teaching"
       href: teaching.html
     - text: "Wiki"
