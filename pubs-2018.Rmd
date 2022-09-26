@@ -7,6 +7,8 @@ description: ""
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+[2022](publications.html)&ensp;|&ensp;[2021](pubs-2021.html)&ensp;|&ensp;[2020](pubs-2020.html)&ensp;|&ensp;[2019](pubs-2019.html)
+
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
 * **Abrams JF**, Hohn S, Rixen T & Merico A (2018). Sundaland peat carbon dynamics and its contribution to the Holocene atmospheric CO2 concentration. Global Biogeochemical Cycles 32:704-719. DOI: [10.1002/2017GB005763](https://doi.org/10.1002/2017GB005763).

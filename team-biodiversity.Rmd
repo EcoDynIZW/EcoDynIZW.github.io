@@ -46,6 +46,17 @@ In Malaysian Borneo we study how different anthropogenic drivers affect the occu
 
 Financial support: Federal Ministry of Education and Research (BMBF), Panthera, Point Defiance Zoo and Aquarium, Point Defiance Zoo Society, Mohamed bin Zayed Species Conservation Fund, International Association for Bear Research and Management
 
+<ul class="card-wrapper">
+  <li class="card">
+### [Understand how species distributions shift in response to landcover change and poaching](team-biodiversity-roshan.html)&ensp;
+  </li>
+
+
+  <li class="card">
+### [Wildlife communities in mixed land-use landscapes](team-biodiversity-seth.html)&ensp;
+  </li>
+</ul>
+
 <small>
   <b>Key Publications:</b>
   <ul>
@@ -71,6 +82,12 @@ We want to learn more about the ecology of the little known Annamite endemics an
 
 Financial support: Federal Ministry of Education and Research (BMBF), Point Defiance Zoo & Aquaria, National Geographic, Ocean Park Conservation Foundation, Manfred-Hermsen-Stiftung, Mohamed bin Zayed Species Conservation Fund, Eva Mayr-Stihl Stiftung
 
+<ul class="card-wrapper">
+  <li class="card">
+### [Community structure and landscape-scale distribution of ground-dwelling mammals and birds in the Annamites: setting conservation priorities in a biodiversity hotspot](team-biodiversity-an.html)&ensp;
+  </li>
+</ul>
+
 <small>
   <b>Key Publications:</b>
   <ul>
@@ -92,6 +109,7 @@ Financial support: Federal Ministry of Education and Research (BMBF), Point Defi
 **Collaborators: Prof. Dr. Beth Gardner and many others, depending on specific projects**
 
 Wildlife survey data are fraught with challenges: often sparse, spatially and/or temporally limited or biased due to logistic constraints, and imperfectly reflecting ecological states and processes due to imperfect detection (i.e., failing to observe species or individuals even though they are present). Hierarchical statistical modeling has emerged as the prime tool to deal with these challenges, by describing separate sub-models for the underlying ecological and the detection process. We employ such models throughout our research projects. But we also modify existing and develop new hierarchical models, and make these more accessible to end users, to improve our ability to study, monitor, and ultimately, protect wildlife. Modeling approaches we work with range from occupancy models for species occurrence to N-mixture, distance sampling and other count-based models for species abundance and population dynamics, to traditional and spatial capture-recapture models for abundance, density and demographics. 
+
 
 <small>
   <b>Key Publications:</b>
@@ -116,6 +134,12 @@ Wildlife survey data are fraught with challenges: often sparse, spatially and/or
 
 Studying biodiversity on a larger scale is essential to support political and conservation decisions. However, combining and integrating different biodiversity datasets into larger scale analyses is often challenging and associated with a loss of data accuracy and detail. We improve, develop and establish standardized methods and protocols to study and monitor biodiversity. Hereby we focus mainly on high-throughput methods that are applicable in tropical rainforests.
 ScreenForBio user guide
+
+<ul class="card-wrapper">
+  <li class="card">
+### [Pantropical assessment of tropical forest mammal biodiversity](team-biodiversity-badru.html)&ensp;
+  </li>
+</ul>
 
 <small>
   <b>Key Publications:</b>

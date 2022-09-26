@@ -7,6 +7,8 @@ description: ""
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+[2022](publications.html)&ensp;|&ensp;[2021](pubs-2021.html)&ensp;|&ensp;[2020](pubs-2020.html)&ensp;|&ensp;[2018](pubs-2018.html)
+
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
 * **Abrams JF**, Vashishtha A, **Wong ST**, **Nguyen A**, **Mohamed A**, **Wieser S**, Kuijper A, **Wilting A** & Mukhopadhyay A (2019). Habitat-Net: segmentation of habitat images using deep learning. Ecological Informatics 51:121-128. DOI: [10.1016/j.ecoinf.2019.01.009](https://doi.org/10.1016/j.ecoinf.2019.01.009).

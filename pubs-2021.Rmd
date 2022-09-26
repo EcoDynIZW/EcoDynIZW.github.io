@@ -3,6 +3,8 @@ title: "Publications 2021"
 description: ""
 ---
 
+[2022](publications.html)&ensp;|&ensp;[2020](pubs-2020.html)&ensp;|&ensp;[2019](pubs-2019.html)&ensp;|&ensp;[2018](pubs-2018.html)
+
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
 * **Abrams JF**, Sollmann R, Mitchel SL, Struebig MJ, **Wilting A** (2021). Occupancy-based diversity profiles: capturing biodiversity complexities while accounting for imperfect detection. ECOGRAPHY 44(7), 975-986. DOI: [10.1111/ecog.05577](https://doi.org/10.1111/ecog.05577)
