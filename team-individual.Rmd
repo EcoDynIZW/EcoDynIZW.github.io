@@ -53,7 +53,7 @@ We investigate how ecological and social conditions (e.g. rainfall, maternal ran
   <ul>
     <li>[Benhaiem et al. (2018) COMMUN BIOL](https://www.nature.com/articles/s42003-018-0197-1)</li>
     <li>[Benhaiem et al. (2018) FRONT VET SCI](https://www.frontiersin.org/articles/10.3389/fvets.2018.00197/full)</li>
-    <li>[East et al. (2022) FRONT ECOL Evol](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/full)</li>
+    <li>[East et al. (2022) FRONT ECOL EVOL](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/full)</li>
     <li>[Gicquel et al. (2022) J ANIM ECOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13785)</li>
      <li>[Marescot et al. (2018) FUNCT ECOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2435.13059)</li>
    </ul>

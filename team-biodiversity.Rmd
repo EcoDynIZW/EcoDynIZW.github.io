@@ -77,7 +77,7 @@ Financial support: Federal Ministry of Education and Research (BMBF), Point Defi
     <li>[Tilker et al. (2020) DIVERS DISTRIB](https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13029)</li>
     <li>[Nguyen et al. (2019) NAT ECOL EVOL](https://www.nature.com/articles/s41559-019-1027-7)</li>
     <li>[Tilker et al. (2019) COMMS BIOL](https://www.nature.com/articles/s42003-019-0640-y)</li>
-    <li>[Tilker et al. (2017) Science](https://www.science.org/doi/10.1126/science.aap9591)</li>
+    <li>[Tilker et al. (2017) SCIENCE](https://www.science.org/doi/10.1126/science.aap9591)</li>
   </ul>
 </small>
 
