@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2242,9 +2235,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     background-color: #110a31;
   }
 
-  p {
+  /*p {
     text-align: justify;
-  }
+  }*/
 
   d-article h2 {
       margin: 1rem 0 1rem 0;
@@ -2642,7 +2635,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2733,61 +2726,256 @@ Research
 </div>
 <p><br></p>
 <ul>
-<li><p>Asad S, <strong>Abrams JF</strong>, <strong>Guharajan R</strong>, Sikui J, <strong>Wilting A</strong> &amp; Rödel MO (2020). Stream amphibian detectability and habitat associations in a reduced impact logging concession in Malaysian Borneo. Journal of Herpetology 54:385-392. DOI: <a href="https://doi.org/10.1670/19-136">10.1670/19-136</a>.</p></li>
-<li><p>Asad S, <strong>Wilting A</strong> &amp; Rödel MO (2020): Possible spatial separation at macro-habitat scales between two congeneric <em>Psammodynastes</em> species, including observations of fishing behaviour in <em>Psammodynastes pictus</em>. Salamandra 56:411-415. ISSN 0036-3375.</p></li>
-<li><p>Barnett G, Westbury MV, Sandoval-Velasco M, Vieira FG, Jeon S, Zazula G, Martin MD, Ho SYW, Mather N, Gopalakrishnan S, Ramos-Madrigal J, de Manuel M, Zepeda-Mendoza ML, Antunes A, Baez AC, De Cahsan B, Larson G, O’Brien SJ, Eizirik E, Johnson WE, Koepfli KP, <strong>Wilting A</strong>, Fickel J, Dalén L, Lorenzen ED, Marques-Bonet T, Hansen AJ, Zhang G, Bhak J, Yamaguchi N &amp; Gilbert MTP (2020). Genomic adaptations and evolutionary history of the extinct scimitar-toothed cat, <em>Homotherium latidens</em>. Current Biology 30:5018-5025.E5. DOI: <a href="https://doi.org/10.1016/j.cub.2020.09.051">10.1016/j.cub.2020.09.051</a>.</p></li>
-<li><p>Berger A, Barthel LMF, Rast W, Hofer H &amp; <strong>Gras P</strong> (2020). Urban hedgehog behavioural responses to temporary habitat disturbance versus permanent fragmentation. Animals 10:2109. DOI: <a href="https://doi.org/10.3390/ani10112109">10.3390/ani10112109</a>.</p></li>
-<li><p><strong>Chero G</strong>, Pradel R, Derville S, Bonneville C, Gimenez O &amp; Garrigue C (2020). Reproductive capacity of an endangered and recovering population of humpback whales in the Southern Hemisphere. Marine Ecology Progress Series 643:219-227. DOI: <a href="https://doi.org/10.3354/meps13329">10.3354/meps13329</a>.</p></li>
-<li><p><strong>Gicquel M</strong>, Sand H, Månsson J, Wallgren M &amp; Wikenros C (2020): Does recolonization of wolves affect moose browsing damage on young Scots pine? Forest Ecology and Management 473:118298. DOI: <a href="https://doi.org/10.1016/j.foreco.2020.118298">10.1016/j.foreco.2020.118298</a>.</p></li>
-<li><p>Guerrero TP, Fickel J, <strong>Benhaiem S</strong> &amp; Weyrich A (2020). Epigenomics and gene regulation in mammalian social systems. Current Zoology 66:307–319. DOI: <a href="https://doi.org/10.1093/cz/zoaa005">10.1093/cz/zoaa005</a>.</p></li>
-<li><p>Grimm V, Railsback SF, Vincenot CE, Berger U, Gallagher C, DeAngelis DL, Edmonds B, Ge J, Giske J, Groeneveld J, Johnston ASA, Milles A, Nabe-Nielsen J, Polhill JG, <strong>Radchuk V</strong>, <strong>Rohwäder M-S</strong>, Stillman RA, Thiele JC, and D Ayllón (2020). The ODD protocol for describing agent-based and other simulation models: a second update to improve clarity, replication, and structural realism. JASSS 23:7. DOI: <a href="https://doi.org/10.18564/jasss.4259">10.18564/jasss.4259</a>.</p></li>
-<li><p><strong>Hagen R</strong> &amp; Suchant R (2020). Evidence of a spatial auto-correlation in the browsing level of four major European tree species. Ecology and Evolution 10:8517-8527. DOI: <a href="https://doi.org/10.1002/ece3.6577">10.1002/ece3.6577</a>.</p></li>
-<li><p>Heger T, Aguilar-Trigueros AG, Bartram I, Braga RR, Dietl GP, Enders M, Gibson DJ, Gomez Aparicio L, <strong>Gras P</strong>, Jax K, Lokatis S, Lortie CJ, Mupepele AC, Schindler S, Starrfelt J, Synodinos AD &amp; Jeschke JM (2020). The hierarchy-of-hypotheses approach: a synthesis method for enhancing theory development in ecology and evolution. BioScience 71:337–349. DOI: <a href="https://doi.org/10.1093/biosci/biaa130">10.1093/biosci/biaa130</a>.</p></li>
-<li><p>Hohn S, Acevedos-Trejos E, <strong>Abrams JF</strong>, Fulgencio de Moura J, Spranz R &amp; Merico A (2020). The long term legacy of plastic mass production.
-Science of The Total Environment 746:141115. DOI: <a href="https://doi.org/10.1016/j.scitotenv.2020.141115">10.1016/j.scitotenv.2020.141115</a>.</p></li>
-<li><p>Horn J, Becher MA, Johst K, Kennedy P, Osborne JL, <strong>Radchuk V</strong> &amp; Grimm V (2021). Honeybee colony performance affected by crop diversity and farmland structure: a modelling framework. Ecological Applications 31:e02216. DOI: <a href="https://doi.org/10.1002/eap.2216">10.1002/eap.2216</a>.</p></li>
-<li><p><strong>Kimmig SE</strong>, Beninde J, Brandt, M, Schleimer A, <strong>Kramer-Schadt S</strong>, Hofer H, <strong>Boerner K</strong>, Schulze C, Wittstatt U, Heddergott M, Halczok T, Staubach C &amp; Frantz A (2020). Beyond the landscape: resistance modelling infers physical and behavioural gene flow barriers to a mobile carnivore across a metropolitan area. Molecular Ecology 29:466-484. DOI: <a href="https://doi.org/10.1111/mec.15345">10.1111/mec.15345</a>.</p></li>
-<li><p><strong>Kimmig SE</strong>, Flemming D, Kimmerle J, Cress U &amp; Brandt M (2020). Elucidating the socio-demographics of wildlife tolerance using the example of the red fox (<em>Vulpes vulpes</em>) in Germany. Conservation Science and Practice 2:e212. DOi: <a href="https://doi.org/10.1111/csp2.212">10.1111/csp2.212</a>.</p></li>
-<li><p>Koenig H, Kiffner C, <strong>Kramer-Schadt S</strong>, Fuerst C, Keuling O &amp; Ford A (2020). Human-wildlife coexistence in a changing world. Conservation Biology 34:786-794. DOI: <a href="https://doi.org/10.1111/cobi.13513">10.1111/cobi.13513</a>.</p></li>
-<li><p>Krüger L, <strong>Stillfried M</strong>, Prinz C, Schröder V, Neubert LK &amp; Denner J (2020). Copy number and prevalence of porcine endogenous retroviruses (PERVs) in German wild boars. Viruses 12:419. DOI: <a href="https://doi.org/10.3390/v12040419">10.3390/v12040419</a>.</p></li>
-<li><p>Kunde MN, Martins RF, <strong>Premier J</strong>, Fickel J &amp; Förster D (2020). Population and landscape genetic analysis of the Malayan sun bear <em>Helarctos malayanus</em>. Conservation Genetics 21:23–135. DOI: <a href="https://doi.org/10.1007/s10592-019-01233-w">10.1007/s10592-019-01233-w</a>.</p></li>
-<li><p>Ligmann-Zielinska A, Siebers PO, Maglioccia N, Parker D, Grimm V, Jing Du E, Cenek M, <strong>Radchuk V</strong>, Arbab NN, Li S, Berger U, Paudel R, Robinson DT, Jankowski P, An L &amp; Ye X (2020). One size does not fit all: a roadmap of purpose-driven mixed-method pathways for sensitivity analysis of agent-based models. JASSS 23:6. DOI: <a href="https://doi.org/10.18564/jasss.4201">10.18564/jasss.4201</a>.</p></li>
-<li><p>Meijaard E, <strong>Abrams J</strong>, Juffe-Bignoli D, Voigt M &amp; Sheil D (2020). Coconut Oil, Conservation and the Conscientious Consumer. Current Biology 30:2419-2650. DOI: <a href="https://doi.org/10.1016/j.cub.2020.05.059">10.1016/j.cub.2020.05.059</a>.</p></li>
-<li><p>Meijaard E, Brooks TM, Carlson KM, Slade EM, Garcia-Ulloa J, Gaveau DLA, Lee JSH, Santika T, Juffe-Bignoli D, Struebig MJ, Wich SA, Ancrenaz M, Koh LP, Zamira N, <strong>Abrams JF</strong>, Prins HHT, Sendashonga CN, Murdiyarso D, Furumo PR, Macfarlane N, Hoffmann R, Persio M, Descaks A, Szantoi Z &amp; Sheil D (2020). The environmental impacts of palm oil in context. Nature Plants 6:1418-1426. DOI: <a href="https//doi.org/10.1038/s41477-020-00813-w">10.1038/s41477-020-00813-w</a>.</p></li>
-<li><p>Nguyen AT, <strong>Nguyen TV</strong>, Timmins R, Mcgowan P, Van Hoang T &amp; Le MD (2020) Efficacy of camera traps in detecting primates in Hue Saola Nature Reserve. Primates 61:697–705. DOI: <a href="https://doi.org/10.1007/s10329-020-00823-4">10.1007/s10329-020-00823-4</a>.</p></li>
-<li><p>Pecoraro C, Zudaire I, Galiberti G, Romeo M, Murua H, Fruciano C, <strong>Scherer C</strong>, Tinti F, Diaha NC, Bodin N &amp; Chassot E (2020). When size matters: the gonads of larger female yellowfin tuna (<em>Thunnus albacares</em>) have different fatty acid profiles compared to smaller individuals. Fisheries Research 232:105726. DOI: <a href="https://doi.org/10.1016/j.fishres.2020.105726">10.1016/j.fishres.2020.105726</a></p></li>
-<li><p>Pietzsch B, Fiedler S, Mertens KG, Richter M, <strong>Scherer C</strong>, Widyastuti K, Wimmler MC, Zakharova L &amp; Berger U (2020). Metamodels for evaluating, valibrating and applying agent-based models: a review. JASSS 23:9. DOI: <a href="https://doi.org/10.18564/jasss.4274">10.18564/jasss.4274</a>.</p></li>
-<li><p><strong>Premier J</strong>, Fickel J, Heurich M &amp; <strong>Kramer-Schadt S</strong> (2020). The boon and bane of boldness: movement syndrome as saviour and sink for population genetic diversity. Movement Ecology 8:16. DOI: <a href="https://doi.org/10.1186/s40462-020-00204-y">10.1186/s40462-020-00204-y</a>.</p></li>
-<li><p>Rast W, <strong>Kimmig SE</strong>, Giese L &amp; Berger A (2020). Machine learning goes wild: Using data from captive individuals to infer wildlife behaviours. PLoS ONE 15:e0227317. DOI: <a href="https://doi.org/10.1371/journal.pone.0227317">10.1371/journal.pone.0227317</a>.</p></li>
-<li><p><strong>Scherer C</strong>, <strong>Radchuk V</strong>, <strong>Franz M</strong>, Thulke H, Lange M, Grimm V &amp; <strong>Kramer–Schadt S</strong> (2020). Moving infections: individual movement decisions drive disease persistence in spatially structured landscapes. OIKOS 129:651-667. DOI: <a href="https://doi.org/10.1111/oik.07002">10.1111/oik.07002</a>.</p></li>
-<li><p>Schlägel UE, Grimm V, Blaum N, Colangeli P, Dammhahn M, Eccard J, Hausmann SL, Herde A, Hofer H, Joshi J, <strong>Kramer-Schadt S</strong>, Litwin M, Lozada Gobilard SD, Müller MEH, Müller T, Nathan R, Petermann JS, Pirhofer-Walzl K, <strong>Radchuk V</strong>, Rillig MC, Roeleke M, Schäfer M, <strong>Scherer C</strong>, Schiro G, <strong>Scholz C</strong>, Teckentrup L, Tiedemann R, Ullmann W, Voigt C, Weithoff G &amp; Jeltsch F (2020). Movement-mediated community assembly and coexistence. Biological Reviews 94:1073-1096. DOI: <a href="https://doi.org/10.1111/brv.12600">10.1111/brv.12600</a>.</p></li>
-<li><p>Seeber AP, Morrison T, Ortega A, <strong>East ML</strong>, Greenwood AD &amp; Czirják GA (2020). Immune differences in captive and free-ranging zebras (<em>Equus zebra</em> and <em>E. quagga</em>). Mammalian Biology 100:155–164. DOI: <a href="https://doi.org/10.1007/s42991-020-00006-0">10.1007/s42991-020-00006-0</a>.</p></li>
-<li><p><strong>Scholz C</strong>, Firozpoor J, <strong>Kramer‐Schadt S</strong>, <strong>Gras P</strong>, Schulze C, <strong>Kimmig SE</strong>, Voigt CC &amp; Ortmann S (2020). Individual dietary specialization in a generalistic predator: a stable isotope analysis of urban and rural red foxes. Ecolofy and Evolution 10:8855-8870. DOI: <a href="https://doi.org/10.1002/ece3.6584">10.1002/ece3.6584</a>.</p></li>
-<li><p><strong>Tilker A</strong>, <strong>Abrams JF</strong>, <strong>Nguyen A</strong>, <strong>Hörig L</strong>, <strong>Axtner J</strong>, <strong>Louvrier J</strong>, Rawson BM, Nguyen HAQ, Guegan F, <strong>Nguyen TV</strong>, Le M, Sollmann R &amp; <strong>Wilting A</strong> (2020). Identifying conservation priorities in a defaunated tropical biodiversity hotspot. Diversity and Distributions 26:426-440. DOI: <a href="https://doi.org/10.1111/ddi.13029">10.1111/ddi.13029</a>.</p></li>
-<li><p><strong>Tilker A</strong>, <strong>Nguyen A</strong>, <strong>Abrams JF</strong>, Bhagwat T, Le M, <strong>Nguyen TV</strong>, Nguyen AT, <strong>Niedballa J</strong>, Sollmann R &amp; <strong>Wilting A</strong> (2020). A little-known endemic caught in the South-east Asian extinction crisis: the Annamite striped rabbit <em>Nesolagus timminsi</em>. Oryx 54:178-187. DOI: <a href="https://doi.org/10.1017/S0030605318000534">10.1017/S0030605318000534</a>.</p></li>
-<li><p><strong>Tilker A</strong>, <strong>Nguyen A</strong>, Timmins RJ &amp; Gray TNE (2020). No longer Data Deficient: recategorizing the Annamite striped rabbit <em>Nesolagus timminsi</em> as Endangered. ORYX 54:151-151. DOI: <a href="https://doi.org/10.1017/S0030605319001078">10.1017/S0030605319001078</a>.</p></li>
-<li><p>Ullmann W, Fischer C, <strong>Kramer-Schadt S</strong>, Pirhofer-Walzl K, Glemnitz M &amp; Blaum N (2020). How do agricultural practices affect the movement behaviour of European brown hares (<em>Lepus europaeus</em>)? Agriculture, Ecosystems &amp; Environment 292:106819. DOI: <a href="https://doi.org/10.1016/j.agee.2020.106819">10.1016/j.agee.2020.106819</a>.</p></li>
-<li><p>Voigt CC, Scholl JM, Bauer J, Teige T, Yovel Y, <strong>Kramer-Schadt S</strong> &amp; <strong>Gras P</strong> (2020). Movement responses of common noctule bats to the illuminated urban landscape. Landscape Ecology 35:189–201. DOI: <a href="https://doi.org/10.1007/s10980-019-00942-4">10.1007/s10980-019-00942-4</a>.</p></li>
-<li><p>Weise H, Auge H, Baessler C, Bärlund I, Bennett EM, Berger U, Bohn F, Bonn A, Borchardt D, Brand F, Chatzinotas A, Corstanje R, Laender FD, Dietrich P, Dunker S, Durka W, Fazey I, Groeneveld J, Guilbaud CSE, Harms H, Harpole S, Harris J, Jax K, Jeltsch F, Johst K, Joshi J, Klotz S, Kühn I, Kuhlicke C, Müller B, <strong>Radchuk V</strong>, Reuter H, Rinke K, Schmitt–Jansen M, Seppelt R, Singer A, Standish RJ, Thulke HH, Tietjen B, Weitere M, Wirth C, Wolf C &amp; Grimm V (2020). Resilience trinity: safeguarding ecosystem functioning and services across three different time horizons and decision contexts. OIKOS 129:445-456. DOI: <a href="htps://doi.org/10.1111/oik.07213">10.1111/oik.07213</a>.</p></li>
+<li><p>Asad S, <strong>Abrams JF</strong>, <strong>Guharajan R</strong>,
+Sikui J, <strong>Wilting A</strong> &amp; Rödel MO (2020). Stream
+amphibian detectability and habitat associations in a reduced impact
+logging concession in Malaysian Borneo. Journal of Herpetology
+54:385-392. DOI: <a
+href="https://doi.org/10.1670/19-136">10.1670/19-136</a>.</p></li>
+<li><p>Asad S, <strong>Wilting A</strong> &amp; Rödel MO (2020):
+Possible spatial separation at macro-habitat scales between two
+congeneric <em>Psammodynastes</em> species, including observations of
+fishing behaviour in <em>Psammodynastes pictus</em>. Salamandra
+56:411-415. ISSN 0036-3375.</p></li>
+<li><p>Barnett G, Westbury MV, Sandoval-Velasco M, Vieira FG, Jeon S,
+Zazula G, Martin MD, Ho SYW, Mather N, Gopalakrishnan S, Ramos-Madrigal
+J, de Manuel M, Zepeda-Mendoza ML, Antunes A, Baez AC, De Cahsan B,
+Larson G, O’Brien SJ, Eizirik E, Johnson WE, Koepfli KP, <strong>Wilting
+A</strong>, Fickel J, Dalén L, Lorenzen ED, Marques-Bonet T, Hansen AJ,
+Zhang G, Bhak J, Yamaguchi N &amp; Gilbert MTP (2020). Genomic
+adaptations and evolutionary history of the extinct scimitar-toothed
+cat, <em>Homotherium latidens</em>. Current Biology 30:5018-5025.E5.
+DOI: <a
+href="https://doi.org/10.1016/j.cub.2020.09.051">10.1016/j.cub.2020.09.051</a>.</p></li>
+<li><p>Berger A, Barthel LMF, Rast W, Hofer H &amp; <strong>Gras
+P</strong> (2020). Urban hedgehog behavioural responses to temporary
+habitat disturbance versus permanent fragmentation. Animals 10:2109.
+DOI: <a
+href="https://doi.org/10.3390/ani10112109">10.3390/ani10112109</a>.</p></li>
+<li><p><strong>Chero G</strong>, Pradel R, Derville S, Bonneville C,
+Gimenez O &amp; Garrigue C (2020). Reproductive capacity of an
+endangered and recovering population of humpback whales in the Southern
+Hemisphere. Marine Ecology Progress Series 643:219-227. DOI: <a
+href="https://doi.org/10.3354/meps13329">10.3354/meps13329</a>.</p></li>
+<li><p><strong>Gicquel M</strong>, Sand H, Månsson J, Wallgren M &amp;
+Wikenros C (2020): Does recolonization of wolves affect moose browsing
+damage on young Scots pine? Forest Ecology and Management 473:118298.
+DOI: <a
+href="https://doi.org/10.1016/j.foreco.2020.118298">10.1016/j.foreco.2020.118298</a>.</p></li>
+<li><p>Guerrero TP, Fickel J, <strong>Benhaiem S</strong> &amp; Weyrich
+A (2020). Epigenomics and gene regulation in mammalian social systems.
+Current Zoology 66:307–319. DOI: <a
+href="https://doi.org/10.1093/cz/zoaa005">10.1093/cz/zoaa005</a>.</p></li>
+<li><p>Grimm V, Railsback SF, Vincenot CE, Berger U, Gallagher C,
+DeAngelis DL, Edmonds B, Ge J, Giske J, Groeneveld J, Johnston ASA,
+Milles A, Nabe-Nielsen J, Polhill JG, <strong>Radchuk V</strong>,
+<strong>Rohwäder M-S</strong>, Stillman RA, Thiele JC, and D Ayllón
+(2020). The ODD protocol for describing agent-based and other simulation
+models: a second update to improve clarity, replication, and structural
+realism. JASSS 23:7. DOI: <a
+href="https://doi.org/10.18564/jasss.4259">10.18564/jasss.4259</a>.</p></li>
+<li><p><strong>Hagen R</strong> &amp; Suchant R (2020). Evidence of a
+spatial auto-correlation in the browsing level of four major European
+tree species. Ecology and Evolution 10:8517-8527. DOI: <a
+href="https://doi.org/10.1002/ece3.6577">10.1002/ece3.6577</a>.</p></li>
+<li><p>Heger T, Aguilar-Trigueros AG, Bartram I, Braga RR, Dietl GP,
+Enders M, Gibson DJ, Gomez Aparicio L, <strong>Gras P</strong>, Jax K,
+Lokatis S, Lortie CJ, Mupepele AC, Schindler S, Starrfelt J, Synodinos
+AD &amp; Jeschke JM (2020). The hierarchy-of-hypotheses approach: a
+synthesis method for enhancing theory development in ecology and
+evolution. BioScience 71:337–349. DOI: <a
+href="https://doi.org/10.1093/biosci/biaa130">10.1093/biosci/biaa130</a>.</p></li>
+<li><p>Hohn S, Acevedos-Trejos E, <strong>Abrams JF</strong>, Fulgencio
+de Moura J, Spranz R &amp; Merico A (2020). The long term legacy of
+plastic mass production. Science of The Total Environment 746:141115.
+DOI: <a
+href="https://doi.org/10.1016/j.scitotenv.2020.141115">10.1016/j.scitotenv.2020.141115</a>.</p></li>
+<li><p>Horn J, Becher MA, Johst K, Kennedy P, Osborne JL,
+<strong>Radchuk V</strong> &amp; Grimm V (2021). Honeybee colony
+performance affected by crop diversity and farmland structure: a
+modelling framework. Ecological Applications 31:e02216. DOI: <a
+href="https://doi.org/10.1002/eap.2216">10.1002/eap.2216</a>.</p></li>
+<li><p><strong>Kimmig SE</strong>, Beninde J, Brandt, M, Schleimer A,
+<strong>Kramer-Schadt S</strong>, Hofer H, <strong>Boerner K</strong>,
+Schulze C, Wittstatt U, Heddergott M, Halczok T, Staubach C &amp; Frantz
+A (2020). Beyond the landscape: resistance modelling infers physical and
+behavioural gene flow barriers to a mobile carnivore across a
+metropolitan area. Molecular Ecology 29:466-484. DOI: <a
+href="https://doi.org/10.1111/mec.15345">10.1111/mec.15345</a>.</p></li>
+<li><p><strong>Kimmig SE</strong>, Flemming D, Kimmerle J, Cress U &amp;
+Brandt M (2020). Elucidating the socio-demographics of wildlife
+tolerance using the example of the red fox (<em>Vulpes vulpes</em>) in
+Germany. Conservation Science and Practice 2:e212. DOi: <a
+href="https://doi.org/10.1111/csp2.212">10.1111/csp2.212</a>.</p></li>
+<li><p>Koenig H, Kiffner C, <strong>Kramer-Schadt S</strong>, Fuerst C,
+Keuling O &amp; Ford A (2020). Human-wildlife coexistence in a changing
+world. Conservation Biology 34:786-794. DOI: <a
+href="https://doi.org/10.1111/cobi.13513">10.1111/cobi.13513</a>.</p></li>
+<li><p>Krüger L, <strong>Stillfried M</strong>, Prinz C, Schröder V,
+Neubert LK &amp; Denner J (2020). Copy number and prevalence of porcine
+endogenous retroviruses (PERVs) in German wild boars. Viruses 12:419.
+DOI: <a
+href="https://doi.org/10.3390/v12040419">10.3390/v12040419</a>.</p></li>
+<li><p>Kunde MN, Martins RF, <strong>Premier J</strong>, Fickel J &amp;
+Förster D (2020). Population and landscape genetic analysis of the
+Malayan sun bear <em>Helarctos malayanus</em>. Conservation Genetics
+21:23–135. DOI: <a
+href="https://doi.org/10.1007/s10592-019-01233-w">10.1007/s10592-019-01233-w</a>.</p></li>
+<li><p>Ligmann-Zielinska A, Siebers PO, Maglioccia N, Parker D, Grimm V,
+Jing Du E, Cenek M, <strong>Radchuk V</strong>, Arbab NN, Li S, Berger
+U, Paudel R, Robinson DT, Jankowski P, An L &amp; Ye X (2020). One size
+does not fit all: a roadmap of purpose-driven mixed-method pathways for
+sensitivity analysis of agent-based models. JASSS 23:6. DOI: <a
+href="https://doi.org/10.18564/jasss.4201">10.18564/jasss.4201</a>.</p></li>
+<li><p>Meijaard E, <strong>Abrams J</strong>, Juffe-Bignoli D, Voigt M
+&amp; Sheil D (2020). Coconut Oil, Conservation and the Conscientious
+Consumer. Current Biology 30:2419-2650. DOI: <a
+href="https://doi.org/10.1016/j.cub.2020.05.059">10.1016/j.cub.2020.05.059</a>.</p></li>
+<li><p>Meijaard E, Brooks TM, Carlson KM, Slade EM, Garcia-Ulloa J,
+Gaveau DLA, Lee JSH, Santika T, Juffe-Bignoli D, Struebig MJ, Wich SA,
+Ancrenaz M, Koh LP, Zamira N, <strong>Abrams JF</strong>, Prins HHT,
+Sendashonga CN, Murdiyarso D, Furumo PR, Macfarlane N, Hoffmann R,
+Persio M, Descaks A, Szantoi Z &amp; Sheil D (2020). The environmental
+impacts of palm oil in context. Nature Plants 6:1418-1426. DOI: <a
+href="https//doi.org/10.1038/s41477-020-00813-w">10.1038/s41477-020-00813-w</a>.</p></li>
+<li><p>Nguyen AT, <strong>Nguyen TV</strong>, Timmins R, Mcgowan P, Van
+Hoang T &amp; Le MD (2020) Efficacy of camera traps in detecting
+primates in Hue Saola Nature Reserve. Primates 61:697–705. DOI: <a
+href="https://doi.org/10.1007/s10329-020-00823-4">10.1007/s10329-020-00823-4</a>.</p></li>
+<li><p>Pecoraro C, Zudaire I, Galiberti G, Romeo M, Murua H, Fruciano C,
+<strong>Scherer C</strong>, Tinti F, Diaha NC, Bodin N &amp; Chassot E
+(2020). When size matters: the gonads of larger female yellowfin tuna
+(<em>Thunnus albacares</em>) have different fatty acid profiles compared
+to smaller individuals. Fisheries Research 232:105726. DOI: <a
+href="https://doi.org/10.1016/j.fishres.2020.105726">10.1016/j.fishres.2020.105726</a></p></li>
+<li><p>Pietzsch B, Fiedler S, Mertens KG, Richter M, <strong>Scherer
+C</strong>, Widyastuti K, Wimmler MC, Zakharova L &amp; Berger U (2020).
+Metamodels for evaluating, valibrating and applying agent-based models:
+a review. JASSS 23:9. DOI: <a
+href="https://doi.org/10.18564/jasss.4274">10.18564/jasss.4274</a>.</p></li>
+<li><p><strong>Premier J</strong>, Fickel J, Heurich M &amp;
+<strong>Kramer-Schadt S</strong> (2020). The boon and bane of boldness:
+movement syndrome as saviour and sink for population genetic diversity.
+Movement Ecology 8:16. DOI: <a
+href="https://doi.org/10.1186/s40462-020-00204-y">10.1186/s40462-020-00204-y</a>.</p></li>
+<li><p>Rast W, <strong>Kimmig SE</strong>, Giese L &amp; Berger A
+(2020). Machine learning goes wild: Using data from captive individuals
+to infer wildlife behaviours. PLoS ONE 15:e0227317. DOI: <a
+href="https://doi.org/10.1371/journal.pone.0227317">10.1371/journal.pone.0227317</a>.</p></li>
+<li><p><strong>Scherer C</strong>, <strong>Radchuk V</strong>,
+<strong>Franz M</strong>, Thulke H, Lange M, Grimm V &amp;
+<strong>Kramer–Schadt S</strong> (2020). Moving infections: individual
+movement decisions drive disease persistence in spatially structured
+landscapes. OIKOS 129:651-667. DOI: <a
+href="https://doi.org/10.1111/oik.07002">10.1111/oik.07002</a>.</p></li>
+<li><p>Schlägel UE, Grimm V, Blaum N, Colangeli P, Dammhahn M, Eccard J,
+Hausmann SL, Herde A, Hofer H, Joshi J, <strong>Kramer-Schadt
+S</strong>, Litwin M, Lozada Gobilard SD, Müller MEH, Müller T, Nathan
+R, Petermann JS, Pirhofer-Walzl K, <strong>Radchuk V</strong>, Rillig
+MC, Roeleke M, Schäfer M, <strong>Scherer C</strong>, Schiro G,
+<strong>Scholz C</strong>, Teckentrup L, Tiedemann R, Ullmann W, Voigt
+C, Weithoff G &amp; Jeltsch F (2020). Movement-mediated community
+assembly and coexistence. Biological Reviews 94:1073-1096. DOI: <a
+href="https://doi.org/10.1111/brv.12600">10.1111/brv.12600</a>.</p></li>
+<li><p>Seeber AP, Morrison T, Ortega A, <strong>East ML</strong>,
+Greenwood AD &amp; Czirják GA (2020). Immune differences in captive and
+free-ranging zebras (<em>Equus zebra</em> and <em>E. quagga</em>).
+Mammalian Biology 100:155–164. DOI: <a
+href="https://doi.org/10.1007/s42991-020-00006-0">10.1007/s42991-020-00006-0</a>.</p></li>
+<li><p><strong>Scholz C</strong>, Firozpoor J, <strong>Kramer‐Schadt
+S</strong>, <strong>Gras P</strong>, Schulze C, <strong>Kimmig
+SE</strong>, Voigt CC &amp; Ortmann S (2020). Individual dietary
+specialization in a generalistic predator: a stable isotope analysis of
+urban and rural red foxes. Ecolofy and Evolution 10:8855-8870. DOI: <a
+href="https://doi.org/10.1002/ece3.6584">10.1002/ece3.6584</a>.</p></li>
+<li><p><strong>Tilker A</strong>, <strong>Abrams JF</strong>,
+<strong>Nguyen A</strong>, <strong>Hörig L</strong>, <strong>Axtner
+J</strong>, <strong>Louvrier J</strong>, Rawson BM, Nguyen HAQ, Guegan
+F, <strong>Nguyen TV</strong>, Le M, Sollmann R &amp; <strong>Wilting
+A</strong> (2020). Identifying conservation priorities in a defaunated
+tropical biodiversity hotspot. Diversity and Distributions 26:426-440.
+DOI: <a
+href="https://doi.org/10.1111/ddi.13029">10.1111/ddi.13029</a>.</p></li>
+<li><p><strong>Tilker A</strong>, <strong>Nguyen A</strong>,
+<strong>Abrams JF</strong>, Bhagwat T, Le M, <strong>Nguyen TV</strong>,
+Nguyen AT, <strong>Niedballa J</strong>, Sollmann R &amp;
+<strong>Wilting A</strong> (2020). A little-known endemic caught in the
+South-east Asian extinction crisis: the Annamite striped rabbit
+<em>Nesolagus timminsi</em>. Oryx 54:178-187. DOI: <a
+href="https://doi.org/10.1017/S0030605318000534">10.1017/S0030605318000534</a>.</p></li>
+<li><p><strong>Tilker A</strong>, <strong>Nguyen A</strong>, Timmins RJ
+&amp; Gray TNE (2020). No longer Data Deficient: recategorizing the
+Annamite striped rabbit <em>Nesolagus timminsi</em> as Endangered. ORYX
+54:151-151. DOI: <a
+href="https://doi.org/10.1017/S0030605319001078">10.1017/S0030605319001078</a>.</p></li>
+<li><p>Ullmann W, Fischer C, <strong>Kramer-Schadt S</strong>,
+Pirhofer-Walzl K, Glemnitz M &amp; Blaum N (2020). How do agricultural
+practices affect the movement behaviour of European brown hares
+(<em>Lepus europaeus</em>)? Agriculture, Ecosystems &amp; Environment
+292:106819. DOI: <a
+href="https://doi.org/10.1016/j.agee.2020.106819">10.1016/j.agee.2020.106819</a>.</p></li>
+<li><p>Voigt CC, Scholl JM, Bauer J, Teige T, Yovel Y,
+<strong>Kramer-Schadt S</strong> &amp; <strong>Gras P</strong> (2020).
+Movement responses of common noctule bats to the illuminated urban
+landscape. Landscape Ecology 35:189–201. DOI: <a
+href="https://doi.org/10.1007/s10980-019-00942-4">10.1007/s10980-019-00942-4</a>.</p></li>
+<li><p>Weise H, Auge H, Baessler C, Bärlund I, Bennett EM, Berger U,
+Bohn F, Bonn A, Borchardt D, Brand F, Chatzinotas A, Corstanje R,
+Laender FD, Dietrich P, Dunker S, Durka W, Fazey I, Groeneveld J,
+Guilbaud CSE, Harms H, Harpole S, Harris J, Jax K, Jeltsch F, Johst K,
+Joshi J, Klotz S, Kühn I, Kuhlicke C, Müller B, <strong>Radchuk
+V</strong>, Reuter H, Rinke K, Schmitt–Jansen M, Seppelt R, Singer A,
+Standish RJ, Thulke HH, Tietjen B, Weitere M, Wirth C, Wolf C &amp;
+Grimm V (2020). Resilience trinity: safeguarding ecosystem functioning
+and services across three different time horizons and decision contexts.
+OIKOS 129:445-456. DOI: <a
+href="htps://doi.org/10.1111/oik.07213">10.1111/oik.07213</a>.</p></li>
 </ul>
 <div class="headerbox">
 <hbox>Preprints</hbox>
 </div>
 <p><br></p>
 <ul>
-<li><p><strong>Abrams JF</strong>, Sollmann R, Mitchell SL, Struebig MJ &amp; <strong>Wilting A</strong> (2020). Capturing biodiversity complexities while accounting for imperfect detection: the application of occupancy-based diversity profiles. bioRxiv DOI: <a href="https://doi.org/10.1101/2020.09.07.285510">10.1101/2020.09.07.285510</a> → see <a href="https://doi.org/10.1111/ecog.0557">Abrams et al. (2021) Ecography</a>.</p></li>
-<li><p>Alfano N, Dayaram A, <strong>Axtner J</strong>, Tsangaras K, Kampmann ML, Mohamed A, Wong ST, Gilbert MTP, <strong>Wilting A</strong> &amp; Greenwood AD (2020). Non-invasive surveys of mammalian viruses using environmental DNA. bioRxiv. DOI: <a href="https://doi.org/10.1101/2020.03.26.009993">10.1101/2020.03.26.009993</a> → see <a href="https://doi.org/10.1111/2041-210X.13661">Alfano et al. (2021) Methods in Ecology and Evolution</a>.</p></li>
-<li><p><strong>Marescot L</strong>, <strong>Franz M</strong>, <strong>Benhaiem S</strong>, Hofer H, <strong>East ML</strong> &amp; <strong>Kramer-Schadt S</strong> (2020). Keeping the kids at home can limit the persistence of contagious pathogens in social animals. bioRXiv. DOI: <a href="https://doi.org/10.1101/2020.04.11.036806">10.1101/2020.04.11.036806</a> → see <a href="https://doi.org/10.1111/1365-2656.13555">Marescot, Franz, Benhaiem et al. (2021) Journal of Animal Ecology</a>.</p></li>
+<li><p><strong>Abrams JF</strong>, Sollmann R, Mitchell SL, Struebig MJ
+&amp; <strong>Wilting A</strong> (2020). Capturing biodiversity
+complexities while accounting for imperfect detection: the application
+of occupancy-based diversity profiles. bioRxiv DOI: <a
+href="https://doi.org/10.1101/2020.09.07.285510">10.1101/2020.09.07.285510</a>
+→ see <a href="https://doi.org/10.1111/ecog.0557">Abrams et al. (2021)
+Ecography</a>.</p></li>
+<li><p>Alfano N, Dayaram A, <strong>Axtner J</strong>, Tsangaras K,
+Kampmann ML, Mohamed A, Wong ST, Gilbert MTP, <strong>Wilting A</strong>
+&amp; Greenwood AD (2020). Non-invasive surveys of mammalian viruses
+using environmental DNA. bioRxiv. DOI: <a
+href="https://doi.org/10.1101/2020.03.26.009993">10.1101/2020.03.26.009993</a>
+→ see <a href="https://doi.org/10.1111/2041-210X.13661">Alfano et
+al. (2021) Methods in Ecology and Evolution</a>.</p></li>
+<li><p><strong>Marescot L</strong>, <strong>Franz M</strong>,
+<strong>Benhaiem S</strong>, Hofer H, <strong>East ML</strong> &amp;
+<strong>Kramer-Schadt S</strong> (2020). Keeping the kids at home can
+limit the persistence of contagious pathogens in social animals.
+bioRXiv. DOI: <a
+href="https://doi.org/10.1101/2020.04.11.036806">10.1101/2020.04.11.036806</a>
+→ see <a href="https://doi.org/10.1111/1365-2656.13555">Marescot, Franz,
+Benhaiem et al. (2021) Journal of Animal Ecology</a>.</p></li>
 </ul>
 <div class="headerbox">
 <hbox>Book Chapters &amp; Reports</hbox>
 </div>
 <p><br></p>
 <ul>
-<li><p><strong>Hagen R</strong>, Kühl N, Kröschel M &amp; Suchant R (2020). Verbiss an Tanne und Eiche in Baden-Württemberg: Ein Vergleich zwischen nadelbaum- und laubbaumdominierten Waldbeständen. Allgemeine Forst- und Jagdzeitung, Heft 7-8 der AFJZ Band 190.</p></li>
-<li><p><strong>Kramer-Schadt S</strong>, <strong>Wenzler M</strong>, <strong>Gras P</strong> &amp; Knauer F (2020). Habitatmodellierung und Abschätzung der potenziellen Anzahl von Wolfsterritorien in Deutschland. BfN Skripten 556:7-30. DOI: <a href="https://doi.org/10.19217/skr556">10.19217/skr556</a>.</p></li>
+<li><p><strong>Hagen R</strong>, Kühl N, Kröschel M &amp; Suchant R
+(2020). Verbiss an Tanne und Eiche in Baden-Württemberg: Ein Vergleich
+zwischen nadelbaum- und laubbaumdominierten Waldbeständen. Allgemeine
+Forst- und Jagdzeitung, Heft 7-8 der AFJZ Band 190.</p></li>
+<li><p><strong>Kramer-Schadt S</strong>, <strong>Wenzler M</strong>,
+<strong>Gras P</strong> &amp; Knauer F (2020). Habitatmodellierung und
+Abschätzung der potenziellen Anzahl von Wolfsterritorien in Deutschland.
+BfN Skripten 556:7-30. DOI: <a
+href="https://doi.org/10.19217/skr556">10.19217/skr556</a>.</p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
