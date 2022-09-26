@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2642,7 +2635,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2730,16 +2723,51 @@ Research
 <div class="d-article">
 <p><strong>2021</strong></p>
 <ul>
-<li><p>Modelling Eurasian red squirrel (<em>Sciurus vulgaris</em>) occurrence along urban gradients in Berlin. <strong>Marius Grabow.</strong> <span class="desaturated">29.09.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Louvrier J (IZW), Kramer-Schadt S.</span> <strong>→ Prize for best Master thesis!</strong></p></li>
-<li><p>Accuracy of a new high throughput wildlife movement tracking system in comparison with GPS tracking. <strong>Johannes Marold.</strong> <span class="desaturated">16.09.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Radchuk V (IZW), Kramer-Schadt S.</span></p></li>
-<li><p>Density and life-history of the Sunda clouded leopard <em>Neofelis diardi</em> in the Deramakot Forest Complex, Sabah, Malaysia. <strong>Katharina Kasper.</strong> <span class="desaturated">30.08.2021. MSc. Goethe-Universität Frankfurt am Main. Supervision: Thomas Müller (SBiK-F), Andreas Wilting (IZW).</span></p></li>
-<li><p>Evaluating the habitat suitability of tiger in Bardia National Park and Buffer Zone areas, Nepal. <strong>Kamal Ghimire.</strong> <span class="desaturated">18.08.2021. MSc. TU Dresden. Tropical Forestry. Supervision: Berger U (TUD), Kramer-Schadt S.</span></p></li>
-<li><p>Small-Scale Habitat Selection of the European Wildcat <em>Felis silvestris silvestris</em> in the Bernese Seeland, Switzerland. <strong>Johanna Bellack.</strong> <span class="desaturated">26.06.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Maronde L (KORA), Kramer-Schadt S.</span></p></li>
-<li><p>Effect of artificial light at night (ALAN) on behaviour of the European hedgehog (<em>Erinaceus europaeus Linnaeus</em>, 1758) in the urban area of Berlin. <strong>Briseida Lozano Granados.</strong> <span class="desaturated">15.05.2021. MSc. TU Berlin. Urban Ecology. Supervision: Berger A, Kramer-Schadt S.</span></p></li>
-<li><p>What contribution can non-standardized Citizen Science data make in biodiversity monitoring? <strong>Lena Fiechter.</strong> <span class="desaturated">21.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Planillo A, Kramer-Schadt S, Heucke-Voigt S (MfN).</span></p></li>
-<li><p>A habitat suitability model for Grey Crowned Cranes (<em>Balearica regulorum</em>) in Rwanda based on sightings. <strong>Ann-Marie Attenberger.</strong> <span class="desaturated">04.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Olivier Nsengimana (RWCA), Kramer-Schadt S, vd Lippe M (TUB).</span></p></li>
+<li><p>Modelling Eurasian red squirrel (<em>Sciurus vulgaris</em>)
+occurrence along urban gradients in Berlin. <strong>Marius
+Grabow.</strong> <span class="desaturated">29.09.2021. MSc. TU Berlin.
+Ecology and Environmental Planning. Supervision: Louvrier J (IZW),
+Kramer-Schadt S.</span> <strong>→ Prize for best Master
+thesis!</strong></p></li>
+<li><p>Accuracy of a new high throughput wildlife movement tracking
+system in comparison with GPS tracking. <strong>Johannes
+Marold.</strong> <span class="desaturated">16.09.2021. BSc. TU Berlin.
+Ecology and Environmental Planning. Supervision: Radchuk V (IZW),
+Kramer-Schadt S.</span></p></li>
+<li><p>Density and life-history of the Sunda clouded leopard
+<em>Neofelis diardi</em> in the Deramakot Forest Complex, Sabah,
+Malaysia. <strong>Katharina Kasper.</strong> <span
+class="desaturated">30.08.2021. MSc. Goethe-Universität Frankfurt am
+Main. Supervision: Thomas Müller (SBiK-F), Andreas Wilting
+(IZW).</span></p></li>
+<li><p>Evaluating the habitat suitability of tiger in Bardia National
+Park and Buffer Zone areas, Nepal. <strong>Kamal Ghimire.</strong> <span
+class="desaturated">18.08.2021. MSc. TU Dresden. Tropical Forestry.
+Supervision: Berger U (TUD), Kramer-Schadt S.</span></p></li>
+<li><p>Small-Scale Habitat Selection of the European Wildcat <em>Felis
+silvestris silvestris</em> in the Bernese Seeland, Switzerland.
+<strong>Johanna Bellack.</strong> <span class="desaturated">26.06.2021.
+BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Maronde
+L (KORA), Kramer-Schadt S.</span></p></li>
+<li><p>Effect of artificial light at night (ALAN) on behaviour of the
+European hedgehog (<em>Erinaceus europaeus Linnaeus</em>, 1758) in the
+urban area of Berlin. <strong>Briseida Lozano Granados.</strong> <span
+class="desaturated">15.05.2021. MSc. TU Berlin. Urban Ecology.
+Supervision: Berger A, Kramer-Schadt S.</span></p></li>
+<li><p>What contribution can non-standardized Citizen Science data make
+in biodiversity monitoring? <strong>Lena Fiechter.</strong> <span
+class="desaturated">21.01.2021. MSc. TU Berlin. Ecology and
+Environmental Planning. Supervision: Planillo A, Kramer-Schadt S,
+Heucke-Voigt S (MfN).</span></p></li>
+<li><p>A habitat suitability model for Grey Crowned Cranes
+(<em>Balearica regulorum</em>) in Rwanda based on sightings.
+<strong>Ann-Marie Attenberger.</strong> <span
+class="desaturated">04.01.2021. MSc. TU Berlin. Ecology and
+Environmental Planning. Supervision: Olivier Nsengimana (RWCA),
+Kramer-Schadt S, vd Lippe M (TUB).</span></p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
