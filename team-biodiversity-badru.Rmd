@@ -5,6 +5,6 @@ description: ""
 
 No place on Earth is our understanding of the impacts of habitat degradation on biodiversity so limited like in the tropical rain forest regions. In my PhD I am conducting a pantropical assessment of the impacts of habitat degradation on tropical forest terrestrial mammals. This is possible through combining novel statistical and modelling approaches which link freely available habitat remote satellite sensing data and systematic pantropical camera trap data from multiple tropical forest sites on three continents.
 
-![](team-biodiv-badru.png)
+![](team-biodiv-badru.png){width=30%} 
 
 Badru Mugerwa
