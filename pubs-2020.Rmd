@@ -3,6 +3,12 @@ title: "Publications 2020"
 description: ""
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[2022](publications.html)&ensp;|&ensp;[2021](pubs-2021.html)&ensp;|&ensp;[2019](pubs-2019.html)&ensp;|&ensp;[2018](pubs-2018.html)
+
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
 * Asad S, **Abrams JF**, **Guharajan R**, Sikui J, **Wilting A** & Rödel MO (2020). Stream amphibian detectability and habitat associations in a reduced impact logging concession in Malaysian Borneo. Journal of Herpetology 54:385-392. DOI: [10.1670/19-136](https://doi.org/10.1670/19-136).
