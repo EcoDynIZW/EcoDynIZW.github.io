@@ -87,6 +87,8 @@ Financial support: Federal Ministry of Education and Research (BMBF), Point Defi
 
 <div class='headerbox-secondary'><hbox-secondary>Hierarchical statistical modeling for wildlife research.</div>
 
+![](img/team-biodiv-concepts.png){width=70%}
+
 **People involved: Ana Sanz, Jürgen Niedballa**
 
 **Collaborators: Prof. Dr. Beth Gardner and many others, depending on specific projects**
