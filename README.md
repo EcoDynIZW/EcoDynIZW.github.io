@@ -1,7 +1,7 @@
 # EcoDynIZW
 ### We are the Department of Ecological Dynamics at the Leibniz Institute for Zoo and Wildlife Research (IZW).
 
-https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/teams-map.png
+![](https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/teams-map.png)
 
 #
 
