@@ -1,14 +1,20 @@
 ---
-title: "The {d6berlin} R package: Simplify workflows of D6 research projects"
+title: "Spatial Datasets and Template Maps for Berlin Studies"
 description: |
-  The goal of the {d6} package is to provide template maps for Berlin with carefully chosen and aesthetically pleasing defaults. Template maps include green spaces, imperviousness levels, water bodies, district borders, and roads plus the utility to add a globe with locator pin, a scalebar, and a caption to include the data sources.
+  learn how to use the {d6} R package that provides spatial data sets and template maps for Berlin with carefully chosen and aesthetically pleasing defaults. The template maps include Berlin districts, green spaces, imperviousness levels, water bodies, district borders, roads, metro stations, and railways. Templates maps are created with a {ggplot2} wrapper function with the utility to add an inset globe with a locator pin, a scalebar, and a caption stating the data sources.
 preview: https://raw.githubusercontent.com/EcoDynIZW/d6berlin/main/man/figures/hexlogo.png
+categories:
+  - tutorial
+  - rstats
+  - spatial
+  - Berlin
+  - ggplot2
 author:
   - name: Cédric Scherer
     url: htttps://cedricscherer.com
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 018-03-2021
+date: 2021-03-18
 output:
   distill::distill_article:
     self_contained: false
@@ -29,7 +35,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-The [`d6berlin` package](https://github.com/EcoDynIZW/d6) aims provide template maps for Berlin with carefully chosen and aesthetically pleasing defaults. Template maps include green spaces, imperviousness levels, water bodies, district borders, roads, and railways, plus the utility to add a globe with locator pin, a scalebar, and a caption to include the data sources. 
+The [`{d6berlin}` package](https://github.com/EcoDynIZW/d6) aims provide template maps for Berlin with carefully chosen and aesthetically pleasing defaults. Template maps include green spaces, imperviousness levels, water bodies, district borders, roads, and railways, plus the utility to add a globe with locator pin, a scalebar, and a caption to include the data sources. 
 
 There are three main functionalities:
 
@@ -41,11 +47,12 @@ There are three main functionalities:
 
 ## Installation
 
-You can install the `d6berlin` package from GitHub:
+You can install the `{d6berlin}` package from GitHub:
 
-```{r install, eval=FALSE}
+```{r install, eval=3}
 install.packages("devtools")
 devtools::install_github("EcoDynIZW/d6berlin")
+library(d6berlin)
 ```
 
 (Note: If you are asked if you want to update other packages either press "No" (option 3) and continue or update the packages before running the install command again.)
@@ -62,10 +69,8 @@ The basic template map shows levels of imperviousness and green areas in Berlin.
 
 The map is projected in **EPSG 4326 (WGS84)**.
 
-```{r example-basic}
-library(d6berlin)
-
-base_map_imp()
+```{r example-basic, message=TRUE}
+d6berlin::base_map_imp()
 ```
 
 You can also customize the arguments, e.g. change the color intensity, add a globe with a locator pin, change the resolution of the raster, and move the legend to a custom position:
@@ -94,7 +99,7 @@ ggplot(d6berlin::sf_berlin) + geom_sf() + ggtitle("d6berlin::sf_berlin") + theme
 ggplot(d6berlin::sf_districts) + geom_sf() + ggtitle("d6berlin::sf_districts") + theme_map
 ggplot(d6berlin::sf_green) + geom_sf(color = "transparent", fill = "grey60") + ggtitle("d6berlin::sf_green") + theme_map
 ggplot(d6berlin::sf_metro) + geom_sf() + ggtitle("d6berlin::sf_metro") + theme_map
-ggplot(d6berlin::sf_raleways) + geom_sf() + ggtitle("d6berlin::sf_raleways") + theme_map
+ggplot(d6berlin::sf_railways) + geom_sf() + ggtitle("d6berlin::sf_railways") + theme_map
 ggplot(d6berlin::sf_roads) + geom_sf() + ggtitle("d6berlin::sf_roads") + theme_map
 ggplot(d6berlin::sf_water) + geom_sf(color = "transparent", fill = "grey60") + ggtitle("d6berlin::sf_water") + theme_map
 ```
@@ -110,12 +115,12 @@ Let's assume you have recorded some animal locations or you want to plot another
 library(ggplot2)
 library(sf)
 
-map <- base_map_imp(color_intensity = .3, resolution = 250, legend = "top")
+map <- base_map_imp(color_intensity = .3, resolution = 500, legend = "top")
 
-map + geom_sf(data = sf_metro) ## sf_metro is contained in the d6berlin package
+map + geom_sf(data = sf_metro) ## sf_metro is contained in the {d6berlin} package
 ```
 
-**Note:** Since the template map contains many filled areas, we recommend to add geometries with variables mapped to `color|xolour|col` to the template maps.
+**Note:** Since the template map contains many filled areas, we recommend to add geometries with variables mapped to `color|colour|col` to the template maps.
 
 You can, of course, style the appearance of the points as usual:
 
@@ -189,29 +194,5 @@ Unfortunately, the size of the text elements is fixed. The best aspect ratio to 
 ggsave("metro_map.pdf", width = 12, height = 9, device = cairo_pdf)
 ```
 
-<br>
-
----
-
-## Acknowledgements
-
-This package would not exist without the work of many great people!
-
--   The code to create the project folder is based on the [template
-    package by Francisco
-    Rodriguez-Sanchez](https://github.com/Pakillo/template) (and
-    references therein)
--   The 00\_start script is inspired by the [`{golem}`
-    package](https://thinkr-open.github.io/golem/)
--   Rstudio for the development of Rmarkdown and all the great things
-    that come with it (knitting, templates, themes, …)
-
-#### Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-
-<div style="width:300px; height:200px">
-
-<img src=https://camo.githubusercontent.com/00f7814990f36f84c5ea74cba887385d8a2f36be/68747470733a2f2f646f63732e636c6f7564706f7373652e636f6d2f696d616765732f63632d62792d6e632d73612e706e67 alt="" height="42">
-
-</div>
 
 

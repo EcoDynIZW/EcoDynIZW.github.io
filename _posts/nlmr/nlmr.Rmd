@@ -1,13 +1,19 @@
 ---
-title: "NLMR"
+title: "Simulate Neutral Landscape Models"
 description: |
-  NLMR is an R package for simulating neutral landscape models (NLM). Designed to be a generic framework like NLMpy, it leverages the ability to simulate the most common NLM that are described in the ecological literature.
+  Learn how to use the {NLMR} R package to simulate neutral landscape models (NLM), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models.
 preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-nlmr.png
+categories:
+  - tutorial
+  - rstats
+  - spatial
+  - modelling
 author:
-  - name: ropensci
+  - name: Cédric Scherer
+    url: htttps://cedricscherer.com
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 2022-09-12
+date: 2021-08-06
 output:
   distill::distill_article:
     self_contained: false
@@ -18,26 +24,71 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[NLMR package](https://github.com/ropensci/NLMR) builds on the advantages of the raster package and returns all simulation as RasterLayer objects, thus ensuring a direct compatibility to common GIS tasks and a flexible and simple usage. Furthermore, it simulates NLMs within a self-contained, reproducible framework.
+The [`{NLMR}` R package](https://ropensci.github.io/NLMR/index.html) to simulate neutral landscape models (NLM). Designed to be a generic framework like [NLMpy](https://pypi.org/project/nlmpy/), it leverages the ability to simulate the most common NLM that are described in the ecological literature.
+
+If you want to learn more about the `{NLMR}` package and the accompanying `{landscapetools}` package, check the publication [Sciaini, Fritsch, Scherer 6 Simpkins (2019) Methods in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076).
+
+## Installation
+
+The `{NLMR}` is not available on CRAN at the moment (see [issue #95](https://github.com/ropensci/NLMR/issues)). The only way to install the package at the moment is:
+
+```{r install, eval=FALSE}
+# install.packages("remotes")
+remotes::install_github("cran/RandomFieldsUtils")
+remotes::install_github("cran/RandomFields")
+remotes::install_github("ropen
+```
+
+## Usage
 
 Each neutral landscape models is simulated with a single function (all starting with `nlm_`) in NLMR, e.g.:
 
+```{r simulation}
+random_cluster <- NLMR::nlm_randomcluster(
+  nrow = 100,
+  ncol = 100,
+  p    = 0.5,
+  ai   = c(0.3, 0.6, 0.1),
+  rescale = FALSE
+)
 
-```{r, eval=FALSE, echo=TRUE}
-random_cluster <- NLMR::nlm_randomcluster(nrow = 100,
-                                          ncol = 100,
-                                          p    = 0.5,
-                                          ai   = c(0.3, 0.6, 0.1),
-                                          rescale = FALSE)
+random_curdling <- NLMR::nlm_curds(
+  curds = c(0.5, 0.3, 0.6),
+  recursion_steps = c(32, 6, 2)
+)
 
-random_curdling <- NLMR::nlm_curds(curds = c(0.5, 0.3, 0.6),
-                                   recursion_steps = c(32, 6, 2))
-
-
-midpoint_displacememt <- NLMR::nlm_mpd(ncol = 100,
-                                       nrow = 100,
-                                       roughness = 0.61)
+midpoint_displacement <- NLMR::nlm_mpd(
+  ncol = 100,
+  nrow = 100,
+  roughness = 0.61
+)
 ```
 
-NLMR supplies 15 NLM algorithms, with several options to simulate derivatives of them. The algorithms differ from each other in spatial auto-correlation, from no auto-correlation (random NLM) to a constant gradient (planar gradients).
+`{NLMR}` supplies 15 NLM algorithms, with several options to simulate derivatives of them. The algorithms differ from each other in spatial auto-correlation, from no auto-correlation (random NLM) to a constant gradient (planar gradients).
 
+The package builds on the advantages of the raster package and returns all simulation as `RasterLayer` objects, thus ensuring a direct compatibility to common GIS tasks and a flexible and simple usage:
+
+```{r raster-objects}
+class(random_cluster)
+
+random_cluster
+```
+
+
+## Visualization
+
+The [`{landscapetools}` package](https://docs.ropensci.org/landscapetools) provides a function `show_landscape` that was developed to plot raster objects and help users to adhere to some standards concerning color scales and typography. This means for example that by default the viridis color scale is applied (and you can pick others from the `{viridis}` package, too).
+
+
+```{r visualization}
+#install.packages("landscapetools")
+
+## plotting continuous values
+landscapetools::show_landscape(random_cluster)
+
+## plotting discrete values
+landscapetools::show_landscape(random_curdling, discrete = TRUE)
+
+## using another viridis palette
+landscapetools::show_landscape(midpoint_displacement, viridis_scale = "magma")
+```
