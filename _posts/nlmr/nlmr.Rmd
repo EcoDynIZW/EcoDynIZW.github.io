@@ -19,10 +19,10 @@ output:
     self_contained: false
 ---
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r, include=FALSE}
+set.seed(1)
 ```
+
 
 The [`{NLMR}` R package](https://ropensci.github.io/NLMR/index.html) to simulate neutral landscape models (NLM). Designed to be a generic framework like [NLMpy](https://pypi.org/project/nlmpy/), it leverages the ability to simulate the most common NLM that are described in the ecological literature.
 

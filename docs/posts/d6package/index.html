@@ -2795,7 +2795,6 @@ templates via
 documents to ./docs/report with <code>render_all_reports()</code> or
 <code>render_report()</code></a></li>
 </ol>
-<p><br></p>
 <h2 id="installation">Installation</h2>
 <p>The package is not on CRAN and needs to be installed from GitHub. To
 do so, open Rstudio and run the following two lines in the console. In
@@ -2811,7 +2810,6 @@ step.</p>
 <p>(Note: If you are asked if you want to update other packages either
 press “No” (option 3) and continue or update the packages before running
 the install command again.)</p>
-<p><br></p>
 <h2 id="create-project-directory">Create Project Directory</h2>
 <p>Run the function <code>new_project()</code> to create a new project.
 This will create a standardized directory with all the scaffolding we
@@ -2859,7 +2857,6 @@ for countries</a>.</p>
     ├── NAMESPACE           —  contains context for R objects
     └── project.Rproj       —  Rproject file: use to start your project</code></pre>
 </div>
-<p><br></p>
 <h3 id="use-a-custom-root-directory">Use A Custom Root Directory</h3>
 <p>You don’t need to change the working directory first—you can also
 specify a path to a custom root folder in which the new project folder
@@ -2875,7 +2872,6 @@ is created:</p>
 </div>
 <p>The resulting final directory of your project would be
 <code>absolute/path/to/the/root/folder/unicornus_wl_sdm_smith_j</code>.</p>
-<p><br></p>
 <h3 id="use-version-control">Use Version Control</h3>
 <p>If you want to create a GitHub repository for the project at the same
 time, use instead:</p>
@@ -2896,7 +2892,6 @@ time, use instead:</p>
 <p>Note that to create a GitHub repo you will need to have configured
 your system as explained <a
 href="https://gist.github.com/Z3tt/3dab3535007acf108391649766409421">here</a>.</p>
-<p><br></p>
 <h3 id="setup-without-geo-directories">Setup without Geo
 Directories</h3>
 <p>If your project does not (or will not) contain any spatial data, you
@@ -2909,14 +2904,12 @@ can prevent the creation of the directories <code>geo-raw</code> and
 </code></pre>
 </div>
 </div>
-<p><br></p>
 <h3 id="add-documentation-to-your-project">Add Documentation to Your
 Project</h3>
 <p>After you have set up your project directory, open the file
 <code>00_start.R</code> in the <code>R</code> folder. Add the details of
 your project, fill in the readme, add a MIT license (if needed) and add
 package dependencies.</p>
-<p><br></p>
 <h2 id="install-common-packages">Install Common Packages</h2>
 <p>You can install the packages that are most commonly used in our
 department via <code>install_d6_packages()</code>:</p>
@@ -2948,7 +2941,6 @@ default). If you are not intending to process geodata, set
 <div class="layout-chunk" data-layout="l-body">
 <pre class="text"><code>rgdal, geos, raster, sp, sf, tmap</code></pre>
 </div>
-<p><br></p>
 <h2 id="use-custom-rmarkdown-templates">Use Custom Rmarkdown
 Templates</h2>
 <p>The package also provides several templates for your scripts. In
@@ -2963,7 +2955,6 @@ report including bits of codes and comments to get started</li>
 <li><em>EcoDynIZW Minimal</em>: Template for an Rmarkdown research
 report (almost empty)</li>
 </ul>
-<p><br></p>
 <h2 id="render-rmarkdown-files-to-reports">Render Rmarkdown Files to
 Reports</h2>
 <p>The <code>render_*()</code> functions take care of knitting your

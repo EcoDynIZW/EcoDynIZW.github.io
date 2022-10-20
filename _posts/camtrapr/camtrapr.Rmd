@@ -19,10 +19,6 @@ output:
     toc: true
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 The [`{camtrapR}` R package](https://github.com/jniedballa/camtrapR) simplifies camera trap data management in R. 
 
 ## Installation

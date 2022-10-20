@@ -1,7 +1,7 @@
 ---
-title: "Spatial Datasets and Template Maps for Berlin Studies"
+title: "Spatial Datasets and Template Maps for Berlin"
 description: |
-  learn how to use the {d6} R package that provides spatial data sets and template maps for Berlin with carefully chosen and aesthetically pleasing defaults. The template maps include Berlin districts, green spaces, imperviousness levels, water bodies, district borders, roads, metro stations, and railways. Templates maps are created with a {ggplot2} wrapper function with the utility to add an inset globe with a locator pin, a scalebar, and a caption stating the data sources.
+  Learn how to use the {d6berlin} R package that provides spatial data sets and template maps for Berlin with carefully chosen and aesthetically pleasing defaults. The template maps include Berlin districts, green spaces, imperviousness levels, water bodies, district borders, roads, metro stations, and railways. Templates maps are created with a {ggplot2} wrapper function with the utility to add an inset globe with a locator pin, a scalebar, and a caption stating the data sources.
 preview: https://raw.githubusercontent.com/EcoDynIZW/d6berlin/main/man/figures/hexlogo.png
 categories:
   - tutorial
@@ -37,13 +37,12 @@ knitr::opts_chunk$set(
 
 The [`{d6berlin}` package](https://github.com/EcoDynIZW/d6) aims provide template maps for Berlin with carefully chosen and aesthetically pleasing defaults. Template maps include green spaces, imperviousness levels, water bodies, district borders, roads, and railways, plus the utility to add a globe with locator pin, a scalebar, and a caption to include the data sources. 
 
-There are three main functionalities:
+There are two main functionalities:
 
-1.  [Create a template map with imperviousness and green spaces with `base_map_imp()`](#a-basic-template-map-of-imperviousness)
-2.  [Provide utility to add a globe with locator pin, a scalebar, and a caption to include the data sources](#a-basic-template-map-of-imperviousness)
-3.  [Provide various ready-to-use Berlin data sets with `sf_*`](#berlin-data-sets)
+1.  [Create a template map with imperviousness and green spaces with `base_map_imp()`](#basics)
+2.  [Provide various ready-to-use Berlin data sets with `sf_*`](#datasets)
 
-<br>
+Furthermore, the package provides utility to add a globe with locator pin, a scalebar, and a caption to include the data sources.
 
 ## Installation
 
@@ -57,13 +56,8 @@ library(d6berlin)
 
 (Note: If you are asked if you want to update other packages either press "No" (option 3) and continue or update the packages before running the install command again.)
 
-<br>
 
-#
-
-<br>
-
-## A Basic Template Map of Imperviousness
+## A Basic Template Map of Imperviousness {#basics}
 
 The basic template map shows levels of imperviousness and green areas in Berlin. The imperviousness raster data was derived from [Geoportal Berlin (FIS-Broker)]() with a resolution of 10m. The vector data on green spaces was collected from data provided by the [OpenStreetMap Contributors](https://www.openstreetmap.org/). The green spaces consist of a mixture of land use and natural categories (namely "forest", "grass", "meadow", "nature_reserve", "scrub", "heath", "beach", "cliff").
 
@@ -80,11 +74,10 @@ base_map_imp(color_intensity = 1, globe = TRUE, resolution = 500,
              legend_x = .17, legend_y = .12)
 ```
 
-If you think the legend is absolute, there is also an option called `"none"`. (The default is `"bottom"`. You can also use of the predefined setting `"top"` as illustrated below or a custom position as shown in the previous example.)
+If you think the legend is not need, there is also an option called `"none"`. (The default is `"bottom"`. You can also use of the predefined setting `"top"` as illustrated below or a custom position as shown in the previous example.)
 
-<br>
 
-## Berlin Data Sets
+## Berlin Data Sets {datasets}
 
 The package contains several data sets for Berlin. All of them start with `sf_`, e.g. `d6berlin::sf_roads`. Here is a full overview of the data sets that are available:
 
@@ -95,16 +88,14 @@ theme_map <- theme_void() +
   theme(plot.title = element_text(size = 45, hjust = .5, face = "bold", family = "Roboto Mono"),
         plot.margin = margin(b = 12))
 
-ggplot(d6berlin::sf_berlin) + geom_sf() + ggtitle("d6berlin::sf_berlin") + theme_map
-ggplot(d6berlin::sf_districts) + geom_sf() + ggtitle("d6berlin::sf_districts") + theme_map
-ggplot(d6berlin::sf_green) + geom_sf(color = "transparent", fill = "grey60") + ggtitle("d6berlin::sf_green") + theme_map
-ggplot(d6berlin::sf_metro) + geom_sf() + ggtitle("d6berlin::sf_metro") + theme_map
-ggplot(d6berlin::sf_railways) + geom_sf() + ggtitle("d6berlin::sf_railways") + theme_map
-ggplot(d6berlin::sf_roads) + geom_sf() + ggtitle("d6berlin::sf_roads") + theme_map
-ggplot(d6berlin::sf_water) + geom_sf(color = "transparent", fill = "grey60") + ggtitle("d6berlin::sf_water") + theme_map
+ggplot(sf_berlin) + geom_sf() + ggtitle("sf_berlin") + theme_map
+ggplot(sf_districts) + geom_sf() + ggtitle("sf_districts") + theme_map
+ggplot(sf_green) + geom_sf(color = "transparent", fill = "grey60") + ggtitle("sf_green") + theme_map
+ggplot(sf_metro) + geom_sf() + ggtitle("sf_metro") + theme_map
+ggplot(sf_railways) + geom_sf() + ggtitle("sf_railways") + theme_map
+ggplot(sf_roads) + geom_sf() + ggtitle("sf_roads") + theme_map
+ggplot(sf_water) + geom_sf(color = "transparent", fill = "grey60") + ggtitle("sf_water") + theme_map
 ```
-
-<br>
 
 
 ## Adding Locations to the Map
@@ -155,11 +146,6 @@ map +
 
 (It looks better if you style the legend in the same horizontal layout.)
 
-<br>
-
-#
-
-<br>
 
 ## Custom Styling
 
@@ -180,11 +166,6 @@ base_map_imp(color_intensity = 1, resolution = 250, globe = TRUE,
         plot.margin = margin(rep(20, 4)))
 ```
 
-<br>
-
-#
-
-<br>
 
 ## Save Map
 
@@ -193,6 +174,3 @@ Unfortunately, the size of the text elements is fixed. The best aspect ratio to 
 ```{r, eval=FALSE}
 ggsave("metro_map.pdf", width = 12, height = 9, device = cairo_pdf)
 ```
-
-
-

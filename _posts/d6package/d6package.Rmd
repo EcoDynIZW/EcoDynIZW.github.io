@@ -39,8 +39,6 @@ There are four main functionalities:
     `render_all_reports()` or
     `render_report()`](#render-rmarkdown-files-to-reports)
 
-<br>
-
 ## Installation
 
 The package is not on CRAN and needs to be installed from GitHub. To do
@@ -54,9 +52,9 @@ devtools::install_github("EcoDynIZW/d6")
 
 (Note: If you are asked if you want to update other packages either press "No" (option 3) and continue or update the packages before running the install command again.)
 
-<br>
 
-## Create Project Directory
+
+## Create Project Directory {#create-project-directory}
 
 Run the function `new_project()` to create a new project. This will
 create a standardized directory with all the scaffolding we use for all
@@ -107,8 +105,6 @@ The full scaffolding structure created in the root folder (here
     └── project.Rproj       —  Rproject file: use to start your project
 ```
 
-<br>
-
 ### Use A Custom Root Directory
 
 You don’t need to change the working directory first—you can also
@@ -124,8 +120,6 @@ d6::new_project("unicornus_wl_sdm_smith_j", path = "absolute/path/to/the/root/fo
 
 The resulting final directory of your project would be
 `absolute/path/to/the/root/folder/unicornus_wl_sdm_smith_j`.
-
-<br> 
 
 ### Use Version Control
 
@@ -144,10 +138,8 @@ d6::new_project("unicornus_wl_sdm_smith_j", github = TRUE, private_repo = FALSE)
 ```
 
 Note that to create a GitHub repo you will need to have configured your
-system as explained
-[here](https://gist.github.com/Z3tt/3dab3535007acf108391649766409421).
+system as explained [here](https://gist.github.com/Z3tt/3dab3535007acf108391649766409421).
 
-<br>
 
 ### Setup without Geo Directories
 
@@ -159,17 +151,15 @@ setting `geo` to `FALSE`:
 d6::new_project("unicornus_wl_sdm_smith_j", geo = FALSE)
 ```
 
-<br>
-
 ### Add Documentation to Your Project
 
 After you have set up your project directory, open the file `00_start.R`
 in the `R` folder. Add the details of your project, fill in the readme,
 add a MIT license (if needed) and add package dependencies.
 
-<br>
 
-## Install Common Packages
+
+## Install Common Packages {#install-common-packages}
 
 You can install the packages that are most commonly used in our
 department via `install_d6_packages()`:
@@ -203,10 +193,8 @@ The following packages will be installed in case you specify
 rgdal, geos, raster, sp, sf, tmap
 ```
 
-<br>
 
-
-## Use Custom Rmarkdown Templates
+## Use Custom Rmarkdown Templates {#use-custom-rmarkdown-templates}
 
 The package also provides several templates for your scripts. In
 Rstudio, navigate to `File > New File > RMarkdown... > Templates` and
@@ -220,9 +208,9 @@ The following templates are available for now:
 -   *EcoDynIZW Minimal*: Template for an Rmarkdown research report
     (almost empty)
 
-<br>
 
-## Render Rmarkdown Files to Reports
+
+## Render Rmarkdown Files to Reports {#render-rmarkdown-files-to-reports}
 
 The `render_*()` functions take care of knitting your Rmarkdown files
 into HTML reports. The functions assume that your .Rmd files are saved
