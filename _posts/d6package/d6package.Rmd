@@ -1,8 +1,13 @@
 ---
-title: "The {d6} R package: Simplify workflows of D6 research projects"
+title: "Simplify Workflows of D6 Research Projects"
 description: |
-  The goal of the {d6} package is to simplify the project workflow within the department “Ecological Dynamics” at the Leibniz Institute for Zoo and Wildlife Research by providing a standardized folder structure, templates for reports and utility functions.
+  Learn how to use the {d6} package to follow the project workflow within the department “Ecological Dynamics” at the Leibniz Institute for Zoo and Wildlife Research. The package functionality allows you to set up a standardized folder structure, to use templates for standardized reports and provides some helpful utility functions.
 preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-d6.png 
+categories:
+  - tutorial
+  - rstats
+  - workflow
+  - data management
 author:
   - name: Cédric Scherer
     url: htttps://cedricscherer.com
@@ -20,7 +25,7 @@ knitr::opts_chunk$set(eval = FALSE)
 ```
 
 
-The [`d6` package](https://github.com/EcoDynIZW/d6) aims to simplify workflows of our D6 research projects by providing a standardized folder structure incl. version control, Rmarkdown templates, and other utilities.
+The [`{d6}` package](https://github.com/EcoDynIZW/d6) aims to simplify workflows of our D6 research projects by providing a standardized folder structure incl. version control, Rmarkdown templates, and other utilities.
 
 There are four main functionalities:
 
@@ -34,8 +39,6 @@ There are four main functionalities:
     `render_all_reports()` or
     `render_report()`](#render-rmarkdown-files-to-reports)
 
-<br>
-
 ## Installation
 
 The package is not on CRAN and needs to be installed from GitHub. To do
@@ -47,13 +50,11 @@ install.packages("devtools")
 devtools::install_github("EcoDynIZW/d6")
 ```
 
-If you are asked if you want to update other packages either
-press “No” (option 3) and continue or update the packages before running
-the install command again.
+(Note: If you are asked if you want to update other packages either press "No" (option 3) and continue or update the packages before running the install command again.)
 
-<br>
 
-## Create Project Directory
+
+## Create Project Directory {#create-project-directory}
 
 Run the function `new_project()` to create a new project. This will
 create a standardized directory with all the scaffolding we use for all
@@ -75,21 +76,8 @@ for unicorns in Wonderland, a descriptive title could be:
 [international Alpha-2 encoding for
 countries](https://www.iban.com/country-codes).
 
-The main folders created in the root folder (here
-`unicornus_wl_sdm_smith_j`) are the following:
-
-```{text}
-.
-└── unicornus_wl_sdm_smith_j
-    ├── data-raw
-    ├── docs
-    ├── output
-    ├── plots
-    └── R
-```
-
-The full scaffolding structure including all subdirectories and
-additional files looks like this:
+The full scaffolding structure created in the root folder (here
+`unicornus_wl_sdm_smith_j`) is the following:
 
 ```{text}
 . 
@@ -117,8 +105,6 @@ additional files looks like this:
     └── project.Rproj       —  Rproject file: use to start your project
 ```
 
-<br>
-
 ### Use A Custom Root Directory
 
 You don’t need to change the working directory first—you can also
@@ -134,8 +120,6 @@ d6::new_project("unicornus_wl_sdm_smith_j", path = "absolute/path/to/the/root/fo
 
 The resulting final directory of your project would be
 `absolute/path/to/the/root/folder/unicornus_wl_sdm_smith_j`.
-
-<br> 
 
 ### Use Version Control
 
@@ -154,10 +138,8 @@ d6::new_project("unicornus_wl_sdm_smith_j", github = TRUE, private_repo = FALSE)
 ```
 
 Note that to create a GitHub repo you will need to have configured your
-system as explained
-[here](https://gist.github.com/Z3tt/3dab3535007acf108391649766409421).
+system as explained [here](https://gist.github.com/Z3tt/3dab3535007acf108391649766409421).
 
-<br>
 
 ### Setup without Geo Directories
 
@@ -169,17 +151,15 @@ setting `geo` to `FALSE`:
 d6::new_project("unicornus_wl_sdm_smith_j", geo = FALSE)
 ```
 
-<br>
-
 ### Add Documentation to Your Project
 
 After you have set up your project directory, open the file `00_start.R`
 in the `R` folder. Add the details of your project, fill in the readme,
 add a MIT license (if needed) and add package dependencies.
 
-<br>
 
-## Install Common Packages
+
+## Install Common Packages {#install-common-packages}
 
 You can install the packages that are most commonly used in our
 department via `install_d6_packages()`:
@@ -213,10 +193,8 @@ The following packages will be installed in case you specify
 rgdal, geos, raster, sp, sf, tmap
 ```
 
-<br>
 
-
-## Use Custom Rmarkdown Templates
+## Use Custom Rmarkdown Templates {#use-custom-rmarkdown-templates}
 
 The package also provides several templates for your scripts. In
 Rstudio, navigate to `File > New File > RMarkdown... > Templates` and
@@ -230,9 +208,9 @@ The following templates are available for now:
 -   *EcoDynIZW Minimal*: Template for an Rmarkdown research report
     (almost empty)
 
-<br>
 
-## Render Rmarkdown Files to Reports
+
+## Render Rmarkdown Files to Reports {#render-rmarkdown-files-to-reports}
 
 The `render_*()` functions take care of knitting your Rmarkdown files
 into HTML reports. The functions assume that your .Rmd files are saved
@@ -252,30 +230,5 @@ You can also render single Rmarkdown documents via `render_report()`:
 d6::render_report("my-report.Rmd")
 d6::render_report("notsurewhybutIhaveasubfolder/my-report.Rmd")
 ```
-
-<br>
-
----
-
-## Acknowledgements
-
-This package would not exist without the work of many great people!
-
--   The code to create the project folder is based on the [template
-    package by Francisco
-    Rodriguez-Sanchez](https://github.com/Pakillo/template) (and
-    references therein)
--   The 00\_start script is inspired by the [`{golem}`
-    package](https://thinkr-open.github.io/golem/)
--   Rstudio for the development of Rmarkdown and all the great things
-    that come with it (knitting, templates, themes, …)
-
-#### Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
-
-<div style="width:300px; height:200px">
-
-<img src=https://camo.githubusercontent.com/00f7814990f36f84c5ea74cba887385d8a2f36be/68747470733a2f2f646f63732e636c6f7564706f7373652e636f6d2f696d616765732f63632d62792d6e632d73612e706e67 alt="" height="42">
-
-</div>
 
 
