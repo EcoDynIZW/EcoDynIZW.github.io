@@ -30,6 +30,8 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * Antunes AC, Montanarin A, Gräbin DM, ..., **Sollmann R**, ...,Ribeiro MC (2022): AMAZONIA CAMTRAP: A dataset of mammal, bird, and reptile species recorded with camera traps in the Amazon forest. ECOLOGY, **103(9)**, e3738. doi:<span>[10.1002/ecy.3738](https://doi.org/10.1002/ecy.3738)</span>
 
+* Appleton MR, Courtiol A, Emerton L, …, **Tilker A**, et al. (2022): Protected area personnel and ranger numbers are insufficient to deliver global expectations. NAT SUSTAIN, accepted. doi:<span>[10.1038/s41893-022-00970-0](https://doi.org/10.1038/s41893-022-00970-0)</span>
+
 * Asad S, Vitalis V, **Guharajan R**, Abrams JF, Lagan P, Kissing J, Sikui J, **Wilting A**, Rödel MO (2022): Variable species but similar amphibian community responses across habitats following reduced impact logging. GLOB ECOL CONSERV, **35**, e02061. doi:<span>[10.1016/j.gecco.2022.e02061](https://doi.org/10.1016/j.gecco.2022.e02061)</span>
 
 * Bolas EC, **Sollmann R**, Crooks KR, Boydston EE, Shaskey L, Boser CL, Dillon A, Van Vuren DH (2022): Role of microhabitat and temporal activity in facilitating coexistence of endemic carnivores on the California Channel Islands. J MAMMAL, **103**, 18-28. doi:<span>[10.1093/jmammal/gyab125](https://doi.org/10.1093/jmammal/gyab125)</span>
@@ -77,6 +79,8 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 * **Moreno-Sosa AM**, Yacelga M, Craighead K, **Kramer-Schadt S**, **Abrams JF** (2022): Can prey occupancy act as a surrogate for mesopredator occupancy? A case study of ocelot (*Leopardus pardalis*). MAMM BIOL, **102**, 163-175, doi:<span>[10.1007/s42991-022-00232-8](https://doi.org/10.1007/s42991-022-00232-8)</span>
 
 * **Nguyen TV**, **Wilting A**, **Niedballa J**, **Nguyen A**, Rawson BM, Nguyen AQH, Cao TT, Wearn OR, Dao AC, **Tilker A** (2022): Getting the big picture: Landscape-scale occupancy patterns of two Annamite endemics among multiple protected areas. CONS SCI PRACT, e620. doi:<span>[10.1111/csp2.620](https://doi.org/10.1111/csp2.620)</span>
+
+* **Niedballa J**, **Axtner J**, Döbert TF, **Tilker A**, **Nguyen A**, **Wong ST**, Fiderer C, Heurich M, & **Wilting A** (2022): imageseg: An R package for deep learning-based image segmentation. METHODS ECOL EVO, **00**, 1– 9, doi:<span>[10.1111/2041-210X.13984](https://doi.org/10.1111/2041-210X.13984 )</span> 
 
 * Reusch C, Lozar M, **Kramer-Schadt S**, Voigt CC (2022): Coastal onshore wind turbines lead to habitat loss for bats in Northern Germany. J ENV MANAGE **310**. doi:<span>[10.1016/j.jenvman.2022.114715](https://doi.org/10.1016/j.jenvman.2022.114715)</span>
 
