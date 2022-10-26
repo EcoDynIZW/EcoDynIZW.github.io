@@ -790,6 +790,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1862,15 +1863,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2727,59 +2734,32 @@ Research
 <h1>Ecological Dynamics</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>Department 6 at Leibniz Institute for Zoo and Wildlife Research
-(IZW)</p>
+<p>Department 6 at Leibniz Institute for Zoo and Wildlife Research (IZW)</p>
 </div>
 
 
 <div class="d-article">
 <h1 id="welcome-to-d6">Welcome to D6!</h1>
-<p>We are scientists of the Department of Ecological Dynamics at the <a
-href="https://www.izw-berlin.de/en/home.html">Leibniz Institute for Zoo
-and Wildlife Research in Berlin</a>, Germany. Our research is focused on
-understanding ecological dynamics in space and time, at different levels
-of organisation, from individuals to communities, and across gradients
-of human altered environments.</p>
-<p>We investigate how fitness consequences of processes acting at the
-individual level, such as social behaviour or movements, competition,
-predator-prey or host-pathogen interactions, shape population and
-community dynamics, also at evolutionary scales. To ensure transparency
-and reproducibility, we follow the <a
-href="https://www.nature.com/articles/sdata201618">FAIR principles</a>
-and provide code and data of published papers in our GitHub <a
-href="https://github.com/orgs/EcoDynIZW/repositories.html">repositories</a>.</p>
-<p><strong>→ Follow us on <a
-href="https://twitter.com/EcoDynIZW">Twitter</a> and <a
-href="https://github.com/EcoDynIZW">GitHub</a>.</strong></p>
+<p>We are scientists of the Department of Ecological Dynamics at the <a href="https://www.izw-berlin.de/en/home.html">Leibniz Institute for Zoo and Wildlife Research in Berlin</a>, Germany. Our research is focused on understanding ecological dynamics in space and time, at different levels of organisation, from individuals to communities, and across gradients of human altered environments.</p>
+<p>We investigate how fitness consequences of processes acting at the individual level, such as social behaviour or movements, competition, predator-prey or host-pathogen interactions, shape population and community dynamics, also at evolutionary scales. To ensure transparency and reproducibility, we follow the <a href="https://www.nature.com/articles/sdata201618">FAIR principles</a> and provide code and data of published papers in our GitHub <a href="https://github.com/orgs/EcoDynIZW/repositories.html">repositories</a>.</p>
+<p><strong>→ Follow us on <a href="https://twitter.com/EcoDynIZW">Twitter</a> and <a href="https://github.com/EcoDynIZW">GitHub</a>.</strong></p>
 <ul class="card-wrapper">
 <li class="card">
 <h2 id="our-vision">Our Vision</h2>
 <div class="card-content">
-Our ultimate goal is to predict the <strong>future viability of wildlife
-populations, species, and communities</strong> faced with accelerating
-environmental change in the anthropocene and to improve landscape scale
-planning for conservation.
+Our ultimate goal is to predict the <strong>future viability of wildlife populations, species, and communities</strong> faced with accelerating environmental change in the anthropocene and to improve landscape scale planning for conservation.
 </div>
 </li>
 <li class="card">
 <h2 id="our-mission">Our Mission</h2>
 <div class="card-content">
-We advance theory and concepts in ecology and evolution as well as the
-use of computational toolkits by developing and using a wide range of
-modern field and lab techniques and dynamic and simulation modeling.
+We advance theory and concepts in ecology and evolution as well as the use of computational toolkits by developing and using a wide range of modern field and lab techniques and dynamic and simulation modeling.
 </div>
 </li>
 <li class="card">
 <h2 id="our-teams">Our Teams</h2>
 <div class="card-content">
-We are organized in three teams spanning all levels from <a
-href="https://ecodynizw.github.io/team-individual.html">individuals</a>
-to <a
-href="https://ecodynizw.github.io/team-population.html">populations</a>
-to <a
-href="https://ecodynizw.github.io/team-biodiversity.html">communities</a>.
-Check out the three team pages for an overview of our current projects,
-group activities, and our latest publications!
+We are organized in three teams spanning all levels from <a href="https://ecodynizw.github.io/team-individual.html">individuals</a> to <a href="https://ecodynizw.github.io/team-population.html">populations</a> to <a href="https://ecodynizw.github.io/team-biodiversity.html">communities</a>. Check out the three team pages for an overview of our current projects, group activities, and our latest publications!
 </div>
 </li>
 </ul>
@@ -2798,16 +2778,15 @@ Deputy Lead: Dr. Andreas Wilting<br />
 Coordination: Dr. Conny Landgraf<br />
 <a href="mailto:assist6@izw-berlin.de">assist6[at]izw-berlin.de</a></p>
 <div class="layout-chunk" data-layout="l-screen-inset shaded">
-<div id="htmlwidget-55a23c711693f622db5a" style="width:650px;height:400px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-55a23c711693f622db5a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[52.5062,13.5211],4,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Voyager",null,"Default Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stamen.Terrain",null,"Terrain Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Dark Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[52.506286189884,13.5211671539743,"<b>Leibniz Institute for<br>Zoo and Wildlife Research<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]},{"method":"addLayersControl","args":[["Default Map","Terrain Map","Dark Map","OpenStreetMap"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[52.506286189884,52.506286189884],"lng":[13.5211671539743,13.5211671539743]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-810afd941cb34ced3be8" style="width:650px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-810afd941cb34ced3be8">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[52.5062,13.5211],4,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Voyager",null,"Default Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stamen.Terrain",null,"Terrain Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Dark Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPopups","args":[52.506286189884,13.5211671539743,"<b>Leibniz Institute for<br>Zoo and Wildlife Research<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]},{"method":"addLayersControl","args":[["Default Map","Terrain Map","Dark Map","OpenStreetMap"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[52.506286189884,52.506286189884],"lng":[13.5211671539743,13.5211671539743]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <h2 class="appendix" id="address">Address</h2>
 <p>Leibniz Institute for Zoo and Wildlife Research<br />
 Department of Ecological Dynamics<br />
 Alfred-Kowalke-Str. 17<br />
 D-10315 Berlin, Germany</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
