@@ -56,7 +56,7 @@ description: ""
 
 <div class='headerbox'><hbox>Preprints</hbox></div><br>
 
-* **Drenske S**, **Radchuk V**, **Scherer C**, Esterer C, Kowarik I, Fritz J, **Kramer-Schadt S** (2021). Halfway to self-sustainability: Reintroduced migratory European Northern Bald Ibises (Geronticus eremita) still need management interventions for population viability. bioRxiv. DOI: [10.1101/2021.04.03.438331](https://doi.org/10.1101/2021.04.03.438331). –> accepted in Oryx
+* **Drenske S**, **Radchuk V**, **Scherer C**, Esterer C, Kowarik I, Fritz J, **Kramer-Schadt S** (2021). Halfway to self-sustainability: Reintroduced migratory European Northern Bald Ibises (*Geronticus eremita*) still need management interventions for population viability. bioRxiv. DOI: [10.1101/2021.04.03.438331](https://doi.org/10.1101/2021.04.03.438331). –> accepted in Oryx
  
 * **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2022). Global disparity of research allocation and the Aichi biodiversity conservation targets. bioRxiv 2022.04.07.486958, doi:[10.1101/2022.04.07.486958](https://doi.org/10.1101/2022.04.07.486958)
 
