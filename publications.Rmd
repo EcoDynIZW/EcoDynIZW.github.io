@@ -63,6 +63,8 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * **Kalyahe MM**, Hofer H, **East ML** (2022): Do anthropogenic sources of food increase livestock predation in the area surrounding Ruaha National Park? ENVIRON CONSERV **49**, 105-113. doi:<span>[10.1017/S037689292200008X](https://doi.org/10.1017/S037689292200008X)</span>
 
+* Kappeler PM, **Benhaiem S**, Fichtel C, Fromhage L, Höner OP, Jennions MD, Kaiser S, Krüger O, Schneider JM, Tuni C, van Schaik J, Goymann W (2022): Sex roles and sex ratios in animals. BIOL REV. doi:<span>[10.1111/brv.12915](https://doi.org/10.1111/brv.12915)</span>
+
 * Kitchener A, Hoffmann M, Yamaguchi N, Breitenmoser-Würsten C, **Wilting A** (2022): A system for designating taxonomic certainty in mammals and other taxa. MAMM BIOL, **102**, 251-261.  doi:<span>[10.1007/s42991-021-00205-3](https://doi.org/10.1007/s42991-021-00205-3)</span>
 
 * Kitchener AC, Simo FT, **Mugerwa B**, Sanderson JG (2022): Evidence that Temminck described Felis aurata in 1825, not 1827. ARCH NAT HIST, **49**, 78-85. doi:<span>[10.3366/anh.2022.0759](https://doi.org/10.3366/anh.2022.0759)</span>
@@ -77,7 +79,7 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * **Nguyen TV**, **Wilting A**, **Niedballa J**, **Nguyen A**, Rawson BM, Nguyen AQH, Cao TT, Wearn OR, Dao AC, **Tilker A** (2022): Getting the big picture: Landscape-scale occupancy patterns of two Annamite endemics among multiple protected areas. CONS SCI PRACT, e620. doi:<span>[10.1111/csp2.620](https://doi.org/10.1111/csp2.620)</span>
 
-* **Niedballa J**, **Axtner J**, Döbert TF, **Tilker A**, **Nguyen A**, **Wong ST**, Fiderer C, Heurich M, & **Wilting A** (2022): imageseg: An R package for deep learning-based image segmentation. METHODS ECOL EVO, **00**, 1– 9, doi:<span>[10.1111/2041-210X.13984](https://doi.org/10.1111/2041-210X.13984 )</span> 
+* **Niedballa J**, **Axtner J**, Döbert TF, **Tilker A**, **Nguyen A**, **Wong ST**, Fiderer C, Heurich M, & **Wilting A** (2022): imageseg: An R package for deep learning-based image segmentation. METHODS ECOL EVO,  **13**, 2363– 2371, doi:<span>[10.1111/2041-210X.13984](https://doi.org/10.1111/2041-210X.13984 )</span> 
 
 * Reusch C, Lozar M, **Kramer-Schadt S**, Voigt CC (2022): Coastal onshore wind turbines lead to habitat loss for bats in Northern Germany. J ENV MANAGE **310**. doi:<span>[10.1016/j.jenvman.2022.114715](https://doi.org/10.1016/j.jenvman.2022.114715)</span>
 
