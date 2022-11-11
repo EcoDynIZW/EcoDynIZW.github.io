@@ -55,11 +55,16 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * **Gicquel M**, **East ML**, Hofer H, Cubaynes S, **Benhaiem S** (2022): Climate change does not decouple interactions between a central place foraging predator and its migratory prey. ECOSPHERE, **13**, e4012. doi:<span>[10.1002/ecs2.4012](https://doi.org/10.1002/ecs2.4012)</span>
 
-* **Grabow M**, **Louvrier JLP**, **Planillo A**, Kiefer S, **Drenske S**, **Börner K**, Stillfried M, Hagen R, Kimmig S, Straka TM and **Kramer-Schadt S** (2022) Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels. FRONT ECOL EVOL, **10**, 881247. doi:<span>[10.3389/fevo.2022.881247](https://doi.org/10.3389/fevo.2022.881247)</span>
+* **Grabow M**, **Louvrier JLP**, **Planillo A**, Kiefer S, **Drenske S**, **Börner K**, Stillfried M, Hagen R, Kimmig S, Straka TM and **Kramer-Schadt S** (2022): Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels. FRONT ECOL EVOL, **10**, 881247. doi:<span>[10.3389/fevo.2022.881247](https://doi.org/10.3389/fevo.2022.881247)</span>
+
+* Günther T, **Kramer-Schadt S**, Fuhrmann M and Belik V (2022): Environmental factors associated with the prevalence of ESBL/AmpC-producing Escherichia coli in wild boar (Sus scrofa).
+FRONT VET SCI, **9**, 980554. doi:<span>[10.3389/fvets.2022.980554](https://doi.org/10.3389/fvets.2022.980554)</span> 
 
 * **Hagen R**, Ortmann S, Elliger A, & Arnold J (2022): Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation. ECOL EVOL, **12**, e8938. doi:<span>[10.1002/ece3.8938](https://doi.org/10.1002/ece3.8938)</span>
 
 * Hering R, Hauptfleisch M, Jago M, Smith T, **Kramer-Schadt S**, Stiegler J, Blaum N (2022): Don’t stop me now: Managed fence gaps could allow migratory ungulates to track dynamic resources and reduce fence related energy loss. FRONT ECOL EVOL, **10**, 907079. doi:<span>[10.3389/fevo.2022.907079](https://doi.org/10.3389/fevo.2022.907079)</span>
+
+* Hering R, Hauptfleisch M, **Kramer-Schadt S**, Stiegler J and Blaum N (2022): Effects of fences and fence gaps on the movement behavior of three southern African antelope species. FRONT CONSERV SCI, **3**, 959423. doi:<span>[10.3389/fcosc.2022.959423](https://doi.org/10.3389/fcosc.2022.959423)</span> 
 
 * **Kalyahe MM**, Hofer H, **East ML** (2022): Do anthropogenic sources of food increase livestock predation in the area surrounding Ruaha National Park? ENVIRON CONSERV **49**, 105-113. doi:<span>[10.1017/S037689292200008X](https://doi.org/10.1017/S037689292200008X)</span>
 
@@ -88,6 +93,8 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 * Semper-Pascual A, Bischof R, Milleret C, Beaudrot L, Vallejo-Vargas AF, Ahumada JA, Bitariho R, Jansen PA, Moreira Lima MG, **Mugerwa B**, Rovero F, Santos F, Sheil D (2022): Occupancy winners in tropical protected forests: a pantropical analysis. PROC R SOC B, **289**. doi:<span>[10.1098/rspb.2022.0457](https://doi.org/10.1098/rspb.2022.0457)</span>
 
 * Stiegler J, Lins A, Dammhahn M, **Kramer-Schadt S**, Ortmann S, Blaum N (2022): Personality drives activity and space use in a mammalian herbivore. MOV ECOL, **10**, 33. doi:<span>[10.1016/j.biocon.2021.109446](https://doi.org/10.1016/j.biocon.2021.109446)</span>
+
+* Vlaschenko A, Kravchenko K, Yatsiuk Y, Hukov V, **Kramer-Schadt S**, **Radchuk V** (2022): Bat assemblages are shaped by land cover types and forest age: A case study from eastern Ukraine. FORESTS, **13**, 1732. doi:<span>[10.3390/f13101732](https://doi.org/10.3390/f13101732)</span>
 
 * **Wong S**, Guharajan R, Petrus A, Jubili J, Lietz R, Abrams J, Hon J, Alen L, Ting N, Wong G, Tchin L, Bijack N, **Kramer-Schadt S**, **Wilting A**, **Sollmann R** (2022): How do terrestrial wildlife communities respond to small-scale Acacia plantations embedded in harvested tropical forest? ECOL EVOL,**12**, e9337. doi:<span>[10.1002/ece3.9337](https://doi.org/10.1002/ece3.9337)</span>
 

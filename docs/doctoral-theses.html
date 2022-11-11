@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2735,17 +2728,44 @@ Research
 </div>
 <p><br></p>
 <ul>
-<li><p><strong>Tobias Kürschner</strong>: Disease transmission and persistence in dynamic landscapes. 23.09.2022. Institut für Biochemie und Biologie der Universität Potsdam. Kramer-Schadt S, Grimm V, Berger U.</p></li>
-<li><p><strong>Thanh Van Nguyen</strong>: Unravelling the mysteries of the Annamites: First insights in ecology, distribution, and genetic diversity of Annamite mammals. 24.06.2022. Mathematisch-Naturwissenschaftliche Fakultät
-Institut für Biochemie und Biologie der Universität Potsdam. Fickel J, Wilting A.</p></li>
-<li><p><strong>Joseph Premier</strong>: Research for Eurasian lynx conservation. Inclusion of genetic processes in an individual-based spatially explicit population model and updating the ecological and demographic basis to support evidence-based conservation management of Eurasian lynx. 25.05.2022. Faculty of Environment and Natural Resources, Albert-Ludwigs-Universität, Freiburg im Breisgau. Heurich M, Kramer-Schadt S.</p></li>
-<li><p><strong>Carolin Scholz</strong>: The ecology of red foxes (Vulpes vulpes) in anthropogenic landscapes. 28.01.2021. Department of Biology, Chemistry and Pharmacy Freie Universität Berlin. Hofer H, Kramer-Schadt S.</p></li>
-<li><p><strong>Andrew Tilker</strong>: Assessing defaunation in the central Annamites ecoregion of Vietnam and Laos. 19.11.2020. Biologie Freie Universität Berlin. Hofer H, Wilting A.</p></li>
-<li><p><strong>Susana Carolina Martins Ferreira</strong>: Intrinsic and extrinsic determinants of parasite infection in spotted hyenas in the Serengeti National Park. 23.09.2019. Veterinärmedizin Freie Universität Berlin. Hofer H, East ML.</p></li>
-<li><p><strong>John Mathai</strong>: Distribution and conservation of small carnivores focussing on the Bornean endemic Hose’s civet. 17.04.2019. Biologie Freie Universität Berlin. Hofer H, Wilting A.</p></li>
-<li><p><strong>Philipp Cédric Scherer</strong>: Infections on the move: Individual host movement drives disease persistence in spatially structured landscapes. 25.03.2019. Institut für Biochemie und Biologie der Universität Potsdam. Kramer-Schadt S, Jeltsch F.</p></li>
+<li><p><strong>Tobias Kürschner</strong>: Disease transmission and
+persistence in dynamic landscapes. 23.09.2022. Institut für Biochemie
+und Biologie der Universität Potsdam. Kramer-Schadt S, Grimm V, Berger
+U.</p></li>
+<li><p><strong>Thanh Van Nguyen</strong>: Unravelling the mysteries of
+the Annamites: First insights in ecology, distribution, and genetic
+diversity of Annamite mammals. 24.06.2022.
+Mathematisch-Naturwissenschaftliche Fakultät Institut für Biochemie und
+Biologie der Universität Potsdam. Fickel J, Wilting A.</p></li>
+<li><p><strong>Joseph Premier</strong>: Research for Eurasian lynx
+conservation. Inclusion of genetic processes in an individual-based
+spatially explicit population model and updating the ecological and
+demographic basis to support evidence-based conservation management of
+Eurasian lynx. 25.05.2022. Faculty of Environment and Natural Resources,
+Albert-Ludwigs-Universität, Freiburg im Breisgau. Heurich M,
+Kramer-Schadt S.</p></li>
+<li><p><strong>Carolin Scholz</strong>: The ecology of red foxes (Vulpes
+vulpes) in anthropogenic landscapes. 28.01.2021. Department of Biology,
+Chemistry and Pharmacy Freie Universität Berlin. Hofer H, Kramer-Schadt
+S.</p></li>
+<li><p><strong>Andrew Tilker</strong>: Assessing defaunation in the
+central Annamites ecoregion of Vietnam and Laos. 19.11.2020. Biologie
+Freie Universität Berlin. Hofer H, Wilting A.</p></li>
+<li><p><strong>Susana Carolina Martins Ferreira</strong>: Intrinsic and
+extrinsic determinants of parasite infection in spotted hyenas in the
+Serengeti National Park. 23.09.2019. Veterinärmedizin Freie Universität
+Berlin. Hofer H, East ML.</p></li>
+<li><p><strong>John Mathai</strong>: Distribution and conservation of
+small carnivores focussing on the Bornean endemic Hose’s civet.
+17.04.2019. Biologie Freie Universität Berlin. Hofer H, Wilting
+A.</p></li>
+<li><p><strong>Philipp Cédric Scherer</strong>: Infections on the move:
+Individual host movement drives disease persistence in spatially
+structured landscapes. 25.03.2019. Institut für Biochemie und Biologie
+der Universität Potsdam. Kramer-Schadt S, Jeltsch F.</p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

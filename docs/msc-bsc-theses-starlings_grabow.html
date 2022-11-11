@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2730,26 +2723,85 @@ Research
 
 
 <div class="d-article">
-<p>(contact <a href="mailto:grabow@izw-berlin.de">grabow[at]izw-berlin.de</a>)</p>
-<p><strong>Short Abstract:</strong>
-Reproduction and survival are key elements in the life-history of individuals and have significant impact on fitness of populations. Among other species, the Common Starling (Sturnus vulgaris) is declining in Europe mainly due to agricultural intensification and associated loss of biodiversity, which is decreased habitat quality in the face of foraging quality (Heldbjerg et al., 2017). During breeding season of birds, foraging movements of parents play a substantial role regarding reproduction success and survival of nestlings.</p>
-<p>However, the impacts of foraging in lower quality habitat might be mitigated by increased effort in parental care, for example by increased foraging movements (Tremblay et al., 2005) or altered patterns of bi-parental care (Cockburn, 2006). Theoretical frameworks, such as Life-history theory, predict individuals to allocate resources in favour of single traits, while neglecting others (Stearns, 1992). These trade-offs allow individuals to cope with extensive changes of resource availability, e.g. increased paternal care allows to persist in lower quality habitat without decreasing reproduction rates.</p>
-<p>In this Master thesis, we will capture adult Starlings in two habitat types of different foraging quality and equip them with VHF-tags of the ATLAS system to derive high resolution information about their movements during nestling period. By applying statistical methods, such as Step-Selection Functions (Fortin et al., 2005), we will estimate spatiotemporal resource selection of animals moving through the landscape (Thurfjell et al., 2014). Simultaneous control of deployed nest boxes gives us supporting information about reproduction success so that we can characterize and assess foraging decisions in the different habitat types and their feedback to reproduction.</p>
+<p>(contact
+<a href="mailto:grabow@izw-berlin.de">grabow[at]izw-berlin.de</a>)</p>
+<p><strong>Short Abstract:</strong> Reproduction and survival are key
+elements in the life-history of individuals and have significant impact
+on fitness of populations. Among other species, the Common Starling
+(Sturnus vulgaris) is declining in Europe mainly due to agricultural
+intensification and associated loss of biodiversity, which is decreased
+habitat quality in the face of foraging quality (Heldbjerg et al.,
+2017). During breeding season of birds, foraging movements of parents
+play a substantial role regarding reproduction success and survival of
+nestlings.</p>
+<p>However, the impacts of foraging in lower quality habitat might be
+mitigated by increased effort in parental care, for example by increased
+foraging movements (Tremblay et al., 2005) or altered patterns of
+bi-parental care (Cockburn, 2006). Theoretical frameworks, such as
+Life-history theory, predict individuals to allocate resources in favour
+of single traits, while neglecting others (Stearns, 1992). These
+trade-offs allow individuals to cope with extensive changes of resource
+availability, e.g. increased paternal care allows to persist in lower
+quality habitat without decreasing reproduction rates.</p>
+<p>In this Master thesis, we will capture adult Starlings in two habitat
+types of different foraging quality and equip them with VHF-tags of the
+ATLAS system to derive high resolution information about their movements
+during nestling period. By applying statistical methods, such as
+Step-Selection Functions (Fortin et al., 2005), we will estimate
+spatiotemporal resource selection of animals moving through the
+landscape (Thurfjell et al., 2014). Simultaneous control of deployed
+nest boxes gives us supporting information about reproduction success so
+that we can characterize and assess foraging decisions in the different
+habitat types and their feedback to reproduction.</p>
 <p><strong>Profile:</strong></p>
 <ul>
-<li>Own research focus and interests are a real enrichment, we are happy to hear your ideas (e.g. assessing habitat quality based on invertebrate abundance or grazing type)</li>
-<li>Interest in scientific work (reviewing literature, conducting field work, statistical experiments and publishing results)</li>
-<li>Profound knowledge of spatial R and interest in working with high resolution movement data; candidates should feel comfortable in applying advanced statistical methods in coding environments</li>
-<li>High flexibility for the field work season (April-July) in Uckermark (around 2h car ride from Berlin). Field work days will cover 1-3 full days of work each week in agreement to other participants of the project, are physically demanding and (sometimes) require overnight stays at our field work station. Accommodation and travel costs will be covered</li>
+<li>Own research focus and interests are a real enrichment, we are happy
+to hear your ideas (e.g. assessing habitat quality based on invertebrate
+abundance or grazing type)</li>
+<li>Interest in scientific work (reviewing literature, conducting field
+work, statistical experiments and publishing results)</li>
+<li>Profound knowledge of spatial R and interest in working with high
+resolution movement data; candidates should feel comfortable in applying
+advanced statistical methods in coding environments</li>
+<li>High flexibility for the field work season (April-July) in Uckermark
+(around 2h car ride from Berlin). Field work days will cover 1-3 full
+days of work each week in agreement to other participants of the
+project, are physically demanding and (sometimes) require overnight
+stays at our field work station. Accommodation and travel costs will be
+covered</li>
 </ul>
-<p>Cockburn, A. (2006). Prevalence of different modes of parental care in birds. Proceedings of the Royal Society B: Biological Sciences, 273(1592), 1375–1383. <a href="https://doi.org/10.1098/rspb.2005.3458">https://doi.org/10.1098/rspb.2005.3458</a></p>
-<p>Fortin, D., Beyer, H. L., Boyce, M. S., Smith, D. W., Duchesne, T., &amp; Mao, J. S. (2005). Wolves influence elk movements: Behavior shapes a trophic cascade in Yellowstone National Park. Ecology, 86(5), 1320–1330. <a href="https://doi.org/10.1890/04-0953">https://doi.org/10.1890/04-0953</a></p>
-<p>Heldbjerg, H., Fox, A. D., Thellesen, P. V., Dalby, L., &amp; Sunde, P. (2017). Common Starlings (Sturnus vulgaris) increasingly select for grazed areas with increasing distance-to-nest. PLoS ONE, 12(8), 1–17. <a href="https://doi.org/10.1371/journal.pone.0182504">https://doi.org/10.1371/journal.pone.0182504</a></p>
-<p>Roselli, M. A., Cady, S. M., Lao, S., Noden, B. H., &amp; Loss, S. R. (2020). Variation in Tick Load among Bird Body Parts: Implications for Studying the Role of Birds in the Ecology and Epidemiology of Tick-Borne Diseases. Journal of Medical Entomology, 57(3), 845–851. <a href="https://doi.org/10.1093/jme/tjz228">https://doi.org/10.1093/jme/tjz228</a></p>
-<p>Stearns, S. C. (1992). The evolution of life histories. Oxford University Press. <a href="https://doi.org/10.1046/j.1420-9101.1993.6020304.x">https://doi.org/10.1046/j.1420-9101.1993.6020304.x</a></p>
-<p>Thurfjell, H., Ciuti, S., &amp; Boyce, M. S. (2014). Applications of step-selection functions in ecology and conservation. Movement Ecology, 2(1), 1–12. <a href="https://doi.org/10.1186/2051-3933-2-4">https://doi.org/10.1186/2051-3933-2-4</a></p>
-<p>Tremblay, I., Thomas, D., Blondel, J., Perret, P., &amp; Lambrechts, M. M. (2005). The effect of habitat quality on foraging patterns, provisioning rate and nestling growth in Corsican Blue Tits Parus caeruleus. Ibis, 147(1), 17–24. <a href="https://doi.org/10.1111/j.1474-919x.2004.00312">https://doi.org/10.1111/j.1474-919x.2004.00312</a></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Cockburn, A. (2006). Prevalence of different modes of parental care
+in birds. Proceedings of the Royal Society B: Biological Sciences,
+273(1592), 1375–1383. <a
+href="https://doi.org/10.1098/rspb.2005.3458">https://doi.org/10.1098/rspb.2005.3458</a></p>
+<p>Fortin, D., Beyer, H. L., Boyce, M. S., Smith, D. W., Duchesne, T.,
+&amp; Mao, J. S. (2005). Wolves influence elk movements: Behavior shapes
+a trophic cascade in Yellowstone National Park. Ecology, 86(5),
+1320–1330. <a
+href="https://doi.org/10.1890/04-0953">https://doi.org/10.1890/04-0953</a></p>
+<p>Heldbjerg, H., Fox, A. D., Thellesen, P. V., Dalby, L., &amp; Sunde,
+P. (2017). Common Starlings (Sturnus vulgaris) increasingly select for
+grazed areas with increasing distance-to-nest. PLoS ONE, 12(8), 1–17. <a
+href="https://doi.org/10.1371/journal.pone.0182504">https://doi.org/10.1371/journal.pone.0182504</a></p>
+<p>Roselli, M. A., Cady, S. M., Lao, S., Noden, B. H., &amp; Loss, S. R.
+(2020). Variation in Tick Load among Bird Body Parts: Implications for
+Studying the Role of Birds in the Ecology and Epidemiology of Tick-Borne
+Diseases. Journal of Medical Entomology, 57(3), 845–851. <a
+href="https://doi.org/10.1093/jme/tjz228">https://doi.org/10.1093/jme/tjz228</a></p>
+<p>Stearns, S. C. (1992). The evolution of life histories. Oxford
+University Press. <a
+href="https://doi.org/10.1046/j.1420-9101.1993.6020304.x">https://doi.org/10.1046/j.1420-9101.1993.6020304.x</a></p>
+<p>Thurfjell, H., Ciuti, S., &amp; Boyce, M. S. (2014). Applications of
+step-selection functions in ecology and conservation. Movement Ecology,
+2(1), 1–12. <a
+href="https://doi.org/10.1186/2051-3933-2-4">https://doi.org/10.1186/2051-3933-2-4</a></p>
+<p>Tremblay, I., Thomas, D., Blondel, J., Perret, P., &amp; Lambrechts,
+M. M. (2005). The effect of habitat quality on foraging patterns,
+provisioning rate and nestling growth in Corsican Blue Tits Parus
+caeruleus. Ibis, 147(1), 17–24. <a
+href="https://doi.org/10.1111/j.1474-919x.2004.00312">https://doi.org/10.1111/j.1474-919x.2004.00312</a></p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
