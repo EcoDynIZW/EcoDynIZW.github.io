@@ -116,12 +116,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["A function to load data from the fisbroker database"]},{"type":"character","attributes":{},"value":["In the d6raster package is a function called download_fisbroker that downloads wfs data from the fisbroker database from the Berlin Senat."]},{"type":"character","attributes":{},"value":["tutorial","spatial","Berlin"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["A function to load data from the fisbroker database"]},{"type":"character","attributes":{},"value":["In the d6raster package is a function called download_fisbroker that downloads wfs data from the fisbroker database from the Berlin Senat."]},{"type":"character","attributes":{},"value":["tutorial","spatial","Berlin"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["download_fisbroker_files/anchor-4.2.2/anchor.min.js","download_fisbroker_files/bowser-1.9.3/bowser.min.js","download_fisbroker_files/distill-2.2.21/template.v2.js","download_fisbroker_files/header-attrs-2.16/header-attrs.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.min.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.min.map","download_fisbroker_files/popper-2.6.0/popper.min.js","download_fisbroker_files/tippy-6.2.7/tippy-bundle.umd.min.js","download_fisbroker_files/tippy-6.2.7/tippy-light-border.css","download_fisbroker_files/tippy-6.2.7/tippy.css","download_fisbroker_files/tippy-6.2.7/tippy.umd.min.js","download_fisbroker_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["download_fisbroker_files/anchor-4.2.2/anchor.min.js","download_fisbroker_files/bowser-1.9.3/bowser.min.js","download_fisbroker_files/distill-2.2.21/template.v2.js","download_fisbroker_files/header-attrs-2.16/header-attrs.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.min.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.min.map","download_fisbroker_files/popper-2.6.0/popper.min.js","download_fisbroker_files/tippy-6.2.7/tippy-bundle.umd.min.js","download_fisbroker_files/tippy-6.2.7/tippy-light-border.css","download_fisbroker_files/tippy-6.2.7/tippy.css","download_fisbroker_files/tippy-6.2.7/tippy.umd.min.js","download_fisbroker_files/webcomponents-2.0.0/webcomponents.js","man/download-fisbroker-1.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2746,15 +2746,6 @@ class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
 </div>
 
 <div class="d-article">
-<div class="d-contents d-contents-float">
-<nav class="l-text toc figcaption" id="TOC">
-<h3>Contents</h3>
-<ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#get-a-download-link">get a download link</a></li>
-</ul>
-</nav>
-</div>
 <p>The <a
 href="https://github.com/EcoDynIZW/d6raster"><code>{d6raster}</code>
 package</a> provides a function called download_fisbroker. The aim is to
@@ -2764,11 +2755,7 @@ store them in a list.</p>
 <h2 id="installation">Installation</h2>
 <p>You can install the <code>{d6raster}</code> package from GitHub:</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>## install.packages("devtools")</span></span>
-<span><span class='co'>## devtools::install_github("EcoDynIZW/d6raster")</span></span>
-<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/wenzmo/d6raster'>d6raster</a></span><span class='op'>)</span></span></code></pre>
-</div>
+
 </div>
 <p>(Note: If you are asked if you want to update other packages either
 press “No” (option 3) and continue or update the packages before running
@@ -2777,89 +2764,75 @@ the install command again.)</p>
 <p>Go the <a
 href="https://fbinter.stadt-berlin.de/fb/index.jsp">Geoportal Berlin
 (FIS-Broker)</a> website and select one of the wfs layers you want to
-download. Click on the WFS hyperlink and a popup-window will open. The
-“Rechneradresse” is the download link we are looking for.</p>
-<p><img src="img/download_fisbroker_1.png" style="width:70.0%" /></p>
+download. Click on the WFS hyperlink (1) and a popup-window will open.
+The “Rechneradresse” (2) is the download link we are looking for.</p>
+<p><img src="man/download-fisbroker-1.png" /></p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>data_sf</span> <span class='op'>&lt;-</span> <span class='fu'>d6raster</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6raster/man/download_fisbroker.html'>download_fisbroker</a></span><span class='op'>(</span><span class='st'>"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort"</span><span class='op'>)</span></span></code></pre>
+<pre><code>Loading ISO 19139 XML schemas...</code></pre>
+<pre><code>Loading ISO 19115 codelists...</code></pre>
+<pre><code>Reading layer `s_wind_standort&#39; from data source 
+  `https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort?service=wfs&amp;version=2.0.0&amp;request=GetFeature&amp;typenames=s_wind_standort&amp;srsName=EPSG%3A25833&#39; 
+  using driver `GML&#39;
+Simple feature collection with 10 features and 4 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: 382427.3 ymin: 5817892 xmax: 404145.6 ymax: 5833464
+Projected CRS: ETRS89 / UTM zone 33N</code></pre>
 </div>
-<pre><code>#&gt; Loading ISO 19139 XML schemas...
-#&gt; Loading ISO 19115 codelists...
-#&gt; Reading layer `s_wind_standort&#39; from data source 
-#&gt;   `https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort?service=wfs&amp;version=2.0.0&amp;request=GetFeature&amp;typenames=s_wind_standort&amp;srsName=EPSG%3A25833&#39; 
-#&gt;   using driver `GML&#39;
-#&gt; Simple feature collection with 10 features and 4 fields
-#&gt; Geometry type: POINT
-#&gt; Dimension:     XY
-#&gt; Bounding box:  xmin: 382427.3 ymin: 5817892 xmax: 404145.6 ymax: 5833464
-#&gt; Projected CRS: ETRS89 / UTM zone 33N</code></pre>
-</div>
+<h2 id="useage-with-lapply">useage with lapply</h2>
 <p>After that you can just run “data”.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>data_sf</span></span></code></pre>
-</div>
-<pre><code>#&gt; Simple feature collection with 10 features and 4 fields
-#&gt; Geometry type: POINT
-#&gt; Dimension:     XY
-#&gt; Bounding box:  xmin: 382427.3 ymin: 5817892 xmax: 404145.6 ymax: 5833464
-#&gt; Projected CRS: ETRS89 / UTM zone 33N
-#&gt;                gml_id                      adresse inst_leistung
-#&gt; 1   s_wind_standort.1                 13127 Berlin        3370.0
-#&gt; 2   s_wind_standort.2                 13127 Berlin        2000.0
-#&gt; 3   s_wind_standort.3                 13127 Berlin        2350.0
-#&gt; 4   s_wind_standort.4                 13127 Berlin        2350.0
-#&gt; 5   s_wind_standort.5 (Darstellung nicht lagetreu)           1.2
-#&gt; 6   s_wind_standort.6 (Darstellung nicht lagetreu)           1.2
-#&gt; 7   s_wind_standort.7                 13051 Berlin        4200.0
-#&gt; 8   s_wind_standort.8                 13125 Berlin        2300.0
-#&gt; 9   s_wind_standort.9 (Darstellung nicht lagetreu)           1.0
-#&gt; 10 s_wind_standort.10 (Darstellung nicht lagetreu)           1.8
-#&gt;    quelle                     geom
-#&gt; 1   mastr POINT (394111.8 5833464)
-#&gt; 2   mastr POINT (393742.2 5832948)
-#&gt; 3   mastr POINT (394967.2 5832421)
-#&gt; 4   mastr POINT (394668.5 5832227)
-#&gt; 5   mastr POINT (388697.7 5820511)
-#&gt; 6   mastr POINT (388697.7 5820511)
-#&gt; 7   mastr   POINT (398081 5828164)
-#&gt; 8   mastr POINT (398501.5 5828482)
-#&gt; 9   mastr POINT (382427.3 5822757)
-#&gt; 10  mastr POINT (404145.6 5817892)</code></pre>
+<pre><code>Simple feature collection with 10 features and 4 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: 382427.3 ymin: 5817892 xmax: 404145.6 ymax: 5833464
+Projected CRS: ETRS89 / UTM zone 33N
+               gml_id                      adresse inst_leistung
+1   s_wind_standort.1                 13127 Berlin        3370.0
+2   s_wind_standort.2                 13127 Berlin        2000.0
+3   s_wind_standort.3                 13127 Berlin        2350.0
+4   s_wind_standort.4                 13127 Berlin        2350.0
+5   s_wind_standort.5 (Darstellung nicht lagetreu)           1.2
+6   s_wind_standort.6 (Darstellung nicht lagetreu)           1.2
+7   s_wind_standort.7                 13051 Berlin        4200.0
+8   s_wind_standort.8                 13125 Berlin        2300.0
+9   s_wind_standort.9 (Darstellung nicht lagetreu)           1.0
+10 s_wind_standort.10 (Darstellung nicht lagetreu)           1.8
+   quelle                     geom
+1   mastr POINT (394111.8 5833464)
+2   mastr POINT (393742.2 5832948)
+3   mastr POINT (394967.2 5832421)
+4   mastr POINT (394668.5 5832227)
+5   mastr POINT (388697.7 5820511)
+6   mastr POINT (388697.7 5820511)
+7   mastr   POINT (398081 5828164)
+8   mastr POINT (398501.5 5828482)
+9   mastr POINT (382427.3 5822757)
+10  mastr POINT (404145.6 5817892)</code></pre>
 </div>
 <p>If you want to download several datasets at one time you can just use
 lapply and a list of download links.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>data_list</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='st'>"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort"</span>,</span>
-<span>                  <span class='st'>"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/sach_kleing"</span><span class='op'>)</span> </span>
-<span>  </span>
-<span><span class='va'>data_sf_list</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/lapply.html'>lapply</a></span><span class='op'>(</span><span class='va'>data_list</span>, <span class='fu'>d6raster</span><span class='fu'>::</span><span class='va'><a href='https://rdrr.io/pkg/d6raster/man/download_fisbroker.html'>download_fisbroker</a></span><span class='op'>)</span></span></code></pre>
-</div>
-<pre><code>#&gt; Reading layer `s_wind_standort&#39; from data source 
-#&gt;   `https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort?service=wfs&amp;version=2.0.0&amp;request=GetFeature&amp;typenames=s_wind_standort&amp;srsName=EPSG%3A25833&#39; 
-#&gt;   using driver `GML&#39;
-#&gt; Simple feature collection with 10 features and 4 fields
-#&gt; Geometry type: POINT
-#&gt; Dimension:     XY
-#&gt; Bounding box:  xmin: 382427.3 ymin: 5817892 xmax: 404145.6 ymax: 5833464
-#&gt; Projected CRS: ETRS89 / UTM zone 33N
-#&gt; Reading layer `sach_kleing&#39; from data source 
-#&gt;   `https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/sach_kleing?service=wfs&amp;version=2.0.0&amp;request=GetFeature&amp;typenames=sach_kleing&amp;srsName=EPSG%3A25833&#39; 
-#&gt;   using driver `GML&#39;
-#&gt; Simple feature collection with 1055 features and 8 fields
-#&gt; Geometry type: MULTIPOLYGON
-#&gt; Dimension:     XY
-#&gt; Bounding box:  xmin: 373326.7 ymin: 5802844 xmax: 413185.1 ymax: 5834381
-#&gt; Projected CRS: ETRS89 / UTM zone 33N</code></pre>
+<pre><code>Reading layer `s_wind_standort&#39; from data source 
+  `https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort?service=wfs&amp;version=2.0.0&amp;request=GetFeature&amp;typenames=s_wind_standort&amp;srsName=EPSG%3A25833&#39; 
+  using driver `GML&#39;
+Simple feature collection with 10 features and 4 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: 382427.3 ymin: 5817892 xmax: 404145.6 ymax: 5833464
+Projected CRS: ETRS89 / UTM zone 33N
+Reading layer `sach_kleing&#39; from data source 
+  `https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/sach_kleing?service=wfs&amp;version=2.0.0&amp;request=GetFeature&amp;typenames=sach_kleing&amp;srsName=EPSG%3A25833&#39; 
+  using driver `GML&#39;
+Simple feature collection with 1055 features and 8 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: 373326.7 ymin: 5802844 xmax: 413185.1 ymax: 5834381
+Projected CRS: ETRS89 / UTM zone 33N</code></pre>
 </div>
 <p>After that you can save them to disk or use them just within our
 script!</p>
-<div class="layout-chunk" data-layout="l-body">
-
-</div>
-<div class="sourceCode" id="cb4"><pre
+<div class="sourceCode" id="cb6"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
