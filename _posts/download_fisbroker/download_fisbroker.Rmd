@@ -15,10 +15,11 @@ date: 2022-11-14
 output:
   distill::distill_article:
     self_contained: false
+    toc: true
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 The [`{d6raster}` package](https://github.com/EcoDynIZW/d6raster) provides a function called download_fisbroker. The aim is to easily get the data from the fisbroker database by just copying the link for the download. If you have several links you can use an lapply and store them in a list.
@@ -42,13 +43,13 @@ Go the [Geoportal Berlin (FIS-Broker)](https://fbinter.stadt-berlin.de/fb/index.
 
 ![](man/download-fisbroker-1.png)
 
-```{r example, message=TRUE}
+```{r example}
 data_sf <- d6raster::download_fisbroker("https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort")
 ```
 
 ## useage with lapply
 
-After that you can just run "data".
+After that you can just run "data_sf".
 
 ```{r example-data}
 data_sf

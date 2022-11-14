@@ -113,7 +113,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["A function to load data from the fisbroker database"]},{"type":"character","attributes":{},"value":["In the d6raster package is a function called download_fisbroker that downloads wfs data from the fisbroker database from the Berlin Senat. \n"]},{"type":"character","attributes":{},"value":["tutorial","spatial","Berlin"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["A function to load data from the fisbroker database"]},{"type":"character","attributes":{},"value":["In the d6raster package is a function called download_fisbroker that downloads wfs data from the fisbroker database from the Berlin Senat. \n"]},{"type":"character","attributes":{},"value":["tutorial","spatial","Berlin"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1521,6 +1521,16 @@ class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
 </div>
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#get-a-download-link">get a download link</a></li>
+<li><a href="#useage-with-lapply">useage with lapply</a></li>
+</ul>
+</nav>
+</div>
 <p>The <a
 href="https://github.com/EcoDynIZW/d6raster"><code>{d6raster}</code>
 package</a> provides a function called download_fisbroker. The aim is to
@@ -1530,7 +1540,11 @@ store them in a list.</p>
 <h2 id="installation">Installation</h2>
 <p>You can install the <code>{d6raster}</code> package from GitHub:</p>
 <div class="layout-chunk" data-layout="l-body">
-
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>## install.packages("devtools")</span></span>
+<span><span class='co'>## devtools::install_github("EcoDynIZW/d6raster")</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/wenzmo/d6raster'>d6raster</a></span><span class='op'>)</span></span></code></pre>
+</div>
 </div>
 <p>(Note: If you are asked if you want to update other packages either
 press “No” (option 3) and continue or update the packages before running
@@ -1543,8 +1557,9 @@ download. Click on the WFS hyperlink (1) and a popup-window will open.
 The “Rechneradresse” (2) is the download link we are looking for.</p>
 <p><img src="man/download-fisbroker-1.png" /></p>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code>Loading ISO 19139 XML schemas...</code></pre>
-<pre><code>Loading ISO 19115 codelists...</code></pre>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>data_sf</span> <span class='op'>&lt;-</span> <span class='fu'>d6raster</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6raster/man/download_fisbroker.html'>download_fisbroker</a></span><span class='op'>(</span><span class='st'>"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort"</span><span class='op'>)</span></span></code></pre>
+</div>
 <pre><code>Reading layer `s_wind_standort&#39; from data source 
   `https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort?service=wfs&amp;version=2.0.0&amp;request=GetFeature&amp;typenames=s_wind_standort&amp;srsName=EPSG%3A25833&#39; 
   using driver `GML&#39;
@@ -1555,8 +1570,11 @@ Bounding box:  xmin: 382427.3 ymin: 5817892 xmax: 404145.6 ymax: 5833464
 Projected CRS: ETRS89 / UTM zone 33N</code></pre>
 </div>
 <h2 id="useage-with-lapply">useage with lapply</h2>
-<p>After that you can just run “data”.</p>
+<p>After that you can just run “data_sf”.</p>
 <div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>data_sf</span></span></code></pre>
+</div>
 <pre><code>Simple feature collection with 10 features and 4 fields
 Geometry type: POINT
 Dimension:     XY
@@ -1588,6 +1606,12 @@ Projected CRS: ETRS89 / UTM zone 33N
 <p>If you want to download several datasets at one time you can just use
 lapply and a list of download links.</p>
 <div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>data_list</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='st'>"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort"</span>,</span>
+<span>                  <span class='st'>"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/sach_kleing"</span><span class='op'>)</span> </span>
+<span>  </span>
+<span><span class='va'>data_sf_list</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/lapply.html'>lapply</a></span><span class='op'>(</span><span class='va'>data_list</span>, <span class='fu'>d6raster</span><span class='fu'>::</span><span class='va'><a href='https://rdrr.io/pkg/d6raster/man/download_fisbroker.html'>download_fisbroker</a></span><span class='op'>)</span></span></code></pre>
+</div>
 <pre><code>Reading layer `s_wind_standort&#39; from data source 
   `https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort?service=wfs&amp;version=2.0.0&amp;request=GetFeature&amp;typenames=s_wind_standort&amp;srsName=EPSG%3A25833&#39; 
   using driver `GML&#39;
@@ -1607,7 +1631,7 @@ Projected CRS: ETRS89 / UTM zone 33N</code></pre>
 </div>
 <p>After that you can save them to disk or use them just within our
 script!</p>
-<div class="sourceCode" id="cb6"><pre
+<div class="sourceCode" id="cb4"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
