@@ -1,5 +1,5 @@
 ---
-title: "Turning equations into functions in NetLogo"
+title: "Turning Equations into Functions in NetLogo"
 description: |
   While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function & associated cumulative density distribution function—both not yet implemented in NetLogo or NetLogo extensions.
 categories:
@@ -45,7 +45,7 @@ In R, this is already implemented:
 scale <- 3
 shape <- 1
 
-dweibull(scale,shape=shape)
+dweibull(scale, shape = shape)
 ```
 
 ### NetLogo
@@ -83,12 +83,12 @@ scale <- 3
 shape <- 1
 x <- 5
 
-pweibull(q=x, scale = scale, shape = shape)
+pweibull(q = x, scale = scale, shape = shape)
 ```
 
 ### NetLogo
 
-In Netlogo we can simply translate the mathematical equation into a function:
+In NetLogo we can simply translate the mathematical equation into a function:
 
 ``` {.netlogo}
 to-report weibull_cumulative [a_scale a_shape x]
