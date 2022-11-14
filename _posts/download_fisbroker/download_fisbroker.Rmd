@@ -1,0 +1,81 @@
+---
+title: "A function to load data from the fisbroker database"
+description: |
+ In the d6raster package is a function called download_fisbroker that downloads wfs data from the fisbroker database from the Berlin Senat. 
+categories:
+  - tutorial
+  - spatial
+  - Berlin
+author:
+  - name: Moritz Wenzler-Meya
+
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: 2022-11-14
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  fig.width = 12, 
+  fig.height = 9,
+  dev = "ragg_png"
+)
+```
+
+The [`{d6raster}` package](https://github.com/EcoDynIZW/d6raster) provides a function called download_fisbroker. The aim is to easily get the data from the fisbroker database by just copying the link for the download. If you have several links you can use an lapply and store them in a list.
+
+## Installation
+
+You can install the `{d6raster}` package from GitHub:
+
+```{r install, eval=3}
+install.packages("devtools")
+devtools::install_github("EcoDynIZW/d6raster")
+library(d6raster)
+```
+
+(Note: If you are asked if you want to update other packages either press "No" (option 3) and continue or update the packages before running the install command again.)
+
+
+## get a download link
+
+Go the [Geoportal Berlin (FIS-Broker)](https://fbinter.stadt-berlin.de/fb/index.jsp) website and select one of the wfs layers you want to download. Click on the WFS hyperlink and a popup-window will open. The "Rechneradresse" is the download link we are looking for.
+
+![](img/download_fisbroker_1.png){width=70%}
+
+```{r example, message=TRUE}
+data_sf <- d6raster::download_fisbroker("https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort")
+```
+
+After that you can just run "data".
+
+```{r example-data}
+data_sf
+```
+
+If you want to download several datasets at one time you can just use lapply and a list of download links.
+
+```{r example-lapply}
+data_list <- list("https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort",
+                  "https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/sach_kleing") 
+  
+data_sf_list <- lapply(data_list, d6raster::download_fisbroker)
+```
+
+After that you can save them to disk or use them just within our script!
+
+```{r}
+
+```
+
+
