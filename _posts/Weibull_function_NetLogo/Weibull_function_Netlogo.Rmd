@@ -1,0 +1,96 @@
+---
+title: "Turning equations into functions in NetLogo"
+author:
+  - name: Marius Grabow
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: 11/11/2022
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+# Turning equations into functions:
+
+While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function & assocaited cumulative density distribution function - both not yet implemented in NetLogo or NetLogo extensions.
+
+# **Density distribution function**
+
+**Let's first take a look at the Weibull density distribution function:**
+
+```{=tex}
+\begin{equation}
+
+f(x) = \frac{\gamma} {\alpha} (\frac{x-\mu}
+{\alpha})^{(\gamma - 1)}\exp{(-((x-\mu)/\alpha)^{\gamma})}
+\hspace{.3in}  x \ge \mu; \gamma, \alpha > 0
+
+\end{equation}
+```
+## R
+
+In R, this is already implemented:
+
+```{r}
+scale <- 3
+shape <- 1
+
+dweibull(scale,shape=shape)
+```
+
+## NetLogo
+
+In Netlogo we can simply translate the mathematical equation into a function:
+
+``` {.netlogo}
+to-report weibull [a_scale a_shape x]
+
+  let Wei (a_shape / a_scale ) * ((x / a_scale)^(a_shape - 1)) * exp( - ((x / a_scale)^ a_shape))
+
+  report Wei
+
+end
+```
+
+# **Cumulative density function**
+
+**Let's also take a look at the Weibull cumulative density function:**
+
+```{=tex}
+\begin{equation}
+
+F(x) = 1 - e^{-(x^{\gamma})} \hspace{.3in}  x \ge 0; \gamma > 0
+
+\end{equation}
+```
+## R
+
+Again, fully implemented in R already:
+
+```{r}
+scale <- 3
+shape <- 1
+x <- 5
+
+pweibull(q=x, scale = scale, shape = shape)
+```
+
+## NetLogo
+
+In Netlogo we can simply translate the mathematical equation into a function:
+
+``` {.netlogo}
+to-report weibull_cumulative [a_scale a_shape x]
+
+  let Wei_cumu 1 - exp( - ((x / a_scale)^ a_shape))
+
+  report Wei_cumu
+
+end
+```
