@@ -1,5 +1,11 @@
 ---
 title: "Turning equations into functions in NetLogo"
+description: |
+  While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function & associated cumulative density distribution function—both not yet implemented in NetLogo or NetLogo extensions.
+categories:
+  - NetLogo
+  - rstats
+  - distributions
 author:
   - name: Marius Grabow
     affiliation: IZW Berlin
@@ -16,11 +22,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-# Turning equations into functions:
 
-While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function & assocaited cumulative density distribution function - both not yet implemented in NetLogo or NetLogo extensions.
-
-# **Density distribution function**
+## Density distribution function
 
 **Let's first take a look at the Weibull density distribution function:**
 
@@ -33,7 +36,8 @@ f(x) = \frac{\gamma} {\alpha} (\frac{x-\mu}
 
 \end{equation}
 ```
-## R
+
+### R
 
 In R, this is already implemented:
 
@@ -44,7 +48,7 @@ shape <- 1
 dweibull(scale,shape=shape)
 ```
 
-## NetLogo
+### NetLogo
 
 In Netlogo we can simply translate the mathematical equation into a function:
 
@@ -58,7 +62,7 @@ to-report weibull [a_scale a_shape x]
 end
 ```
 
-# **Cumulative density function**
+## Cumulative density function
 
 **Let's also take a look at the Weibull cumulative density function:**
 
@@ -69,7 +73,8 @@ F(x) = 1 - e^{-(x^{\gamma})} \hspace{.3in}  x \ge 0; \gamma > 0
 
 \end{equation}
 ```
-## R
+
+### R
 
 Again, fully implemented in R already:
 
@@ -81,7 +86,7 @@ x <- 5
 pweibull(q=x, scale = scale, shape = shape)
 ```
 
-## NetLogo
+### NetLogo
 
 In Netlogo we can simply translate the mathematical equation into a function:
 
