@@ -40,6 +40,8 @@ navbar:
       href: teaching.html
     - text: "Wiki"
       href: wiki.html
+    - text: "Geodata"
+      href: geodata.html
     #- text: "Ressources"
     #  menu:
     #    - text: "Guidelines"

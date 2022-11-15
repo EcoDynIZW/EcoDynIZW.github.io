@@ -22,8 +22,8 @@
   },
   {
     "path": "posts/Weibull_function_NetLogo/",
-    "title": "Turning equations into functions in NetLogo",
-    "description": {},
+    "title": "Turning Equations into Functions in NetLogo",
+    "description": "While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function & associated cumulative density distribution function—both not yet implemented in NetLogo or NetLogo extensions.",
     "author": [
       {
         "name": "Marius Grabow",
@@ -31,10 +31,14 @@
       }
     ],
     "date": "2022-11-11",
-    "categories": [],
-    "contents": "\r\n\r\nContents\r\nTurning equations into functions:\r\nDensity distribution function\r\nR\r\nNetLogo\r\n\r\nCumulative density function\r\nR\r\nNetLogo\r\n\r\n\r\nTurning equations into functions:\r\nWhile some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function & assocaited cumulative density distribution function - both not yet implemented in NetLogo or NetLogo extensions.\r\nDensity distribution function\r\nLet’s first take a look at the Weibull density distribution function:\r\n\\[\\begin{equation}\r\n\r\nf(x) = \\frac{\\gamma} {\\alpha} (\\frac{x-\\mu}\r\n{\\alpha})^{(\\gamma - 1)}\\exp{(-((x-\\mu)/\\alpha)^{\\gamma})}\r\n\\hspace{.3in}  x \\ge \\mu; \\gamma, \\alpha > 0\r\n\r\n\\end{equation}\\]\r\nR\r\nIn R, this is already implemented:\r\n\r\n\r\nscale <- 3\r\nshape <- 1\r\n\r\ndweibull(scale,shape=shape)\r\n\r\n[1] 0.04978707\r\n\r\nNetLogo\r\nIn Netlogo we can simply translate the mathematical equation into a function:\r\nto-report weibull [a_scale a_shape x]\r\n\r\n  let Wei (a_shape / a_scale ) * ((x / a_scale)^(a_shape - 1)) * exp( - ((x / a_scale)^ a_shape))\r\n\r\n  report Wei\r\n\r\nend\r\nCumulative density function\r\nLet’s also take a look at the Weibull cumulative density function:\r\n\\[\\begin{equation}\r\n\r\nF(x) = 1 - e^{-(x^{\\gamma})} \\hspace{.3in}  x \\ge 0; \\gamma > 0\r\n\r\n\\end{equation}\\]\r\nR\r\nAgain, fully implemented in R already:\r\n\r\n\r\nscale <- 3\r\nshape <- 1\r\nx <- 5\r\n\r\npweibull(q=x, scale = scale, shape = shape)\r\n\r\n[1] 0.8111244\r\n\r\nNetLogo\r\nIn Netlogo we can simply translate the mathematical equation into a function:\r\nto-report weibull_cumulative [a_scale a_shape x]\r\n\r\n  let Wei_cumu 1 - exp( - ((x / a_scale)^ a_shape))\r\n\r\n  report Wei_cumu\r\n\r\nend\r\n\r\n\r\n\r\n",
+    "categories": [
+      "NetLogo",
+      "rstats",
+      "distributions"
+    ],
+    "contents": "\r\n\r\nContents\r\nDensity distribution function\r\nR\r\nNetLogo\r\n\r\nCumulative density function\r\nR\r\nNetLogo\r\n\r\n\r\nDensity distribution\r\nfunction\r\nLet’s first take a look at the Weibull density distribution\r\nfunction:\r\n\\[\\begin{equation}\r\n\r\nf(x) = \\frac{\\gamma} {\\alpha} (\\frac{x-\\mu}\r\n{\\alpha})^{(\\gamma - 1)}\\exp{(-((x-\\mu)/\\alpha)^{\\gamma})}\r\n\\hspace{.3in}  x \\ge \\mu; \\gamma, \\alpha > 0\r\n\r\n\\end{equation}\\]\r\nR\r\nIn R, this is already implemented:\r\n\r\n\r\nscale <- 3\r\nshape <- 1\r\n\r\ndweibull(scale, shape = shape)\r\n\r\n\r\n[1] 0.04978707\r\n\r\nNetLogo\r\nIn Netlogo we can simply translate the mathematical equation into a\r\nfunction:\r\nto-report weibull [a_scale a_shape x]\r\n\r\n  let Wei (a_shape / a_scale ) * ((x / a_scale)^(a_shape - 1)) * exp( - ((x / a_scale)^ a_shape))\r\n\r\n  report Wei\r\n\r\nend\r\nCumulative density function\r\nLet’s also take a look at the Weibull cumulative density\r\nfunction:\r\n\\[\\begin{equation}\r\n\r\nF(x) = 1 - e^{-(x^{\\gamma})} \\hspace{.3in}  x \\ge 0; \\gamma > 0\r\n\r\n\\end{equation}\\]\r\nR\r\nAgain, fully implemented in R already:\r\n\r\n\r\nscale <- 3\r\nshape <- 1\r\nx <- 5\r\n\r\npweibull(q = x, scale = scale, shape = shape)\r\n\r\n\r\n[1] 0.8111244\r\n\r\nNetLogo\r\nIn NetLogo we can simply translate the mathematical equation into a\r\nfunction:\r\nto-report weibull_cumulative [a_scale a_shape x]\r\n\r\n  let Wei_cumu 1 - exp( - ((x / a_scale)^ a_shape))\r\n\r\n  report Wei_cumu\r\n\r\nend\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-11-14T10:22:29+01:00",
+    "last_modified": "2022-11-15T13:59:28+01:00",
     "input_file": {}
   },
   {
