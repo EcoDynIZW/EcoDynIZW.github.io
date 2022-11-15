@@ -88,8 +88,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Turning equations into functions in NetLogo</title>
+  <title>Turning Equations into Functions in NetLogo</title>
 
+  <meta property="description" itemprop="description" content="While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function &amp; associated cumulative density distribution function—both not yet implemented in NetLogo or NetLogo extensions."/>
 
 
   <!--  https://schema.org/Article -->
@@ -98,24 +99,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <meta name="article:author" content="Marius Grabow"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Turning equations into functions in NetLogo"/>
+  <meta property="og:title" content="Turning Equations into Functions in NetLogo"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function &amp; associated cumulative density distribution function—both not yet implemented in NetLogo or NetLogo extensions."/>
   <meta property="og:locale" content="en_US"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Turning equations into functions in NetLogo"/>
+  <meta property="twitter:title" content="Turning Equations into Functions in NetLogo"/>
+  <meta property="twitter:description" content="While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function &amp; associated cumulative density distribution function—both not yet implemented in NetLogo or NetLogo extensions."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Turning equations into functions in NetLogo"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Marius Grabow"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["11/11/2022"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Turning Equations into Functions in NetLogo"]},{"type":"character","attributes":{},"value":["While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function & associated cumulative density distribution function—both not yet implemented in NetLogo or NetLogo extensions.\n"]},{"type":"character","attributes":{},"value":["NetLogo","rstats","distributions"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Marius Grabow"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["11/11/2022"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["Weibull_function_Netlogo_files/anchor-4.2.2/anchor.min.js","Weibull_function_Netlogo_files/bowser-1.9.3/bowser.min.js","Weibull_function_Netlogo_files/distill-2.2.21/template.v2.js","Weibull_function_Netlogo_files/header-attrs-2.16/header-attrs.js","Weibull_function_Netlogo_files/jquery-3.6.0/jquery-3.6.0.js","Weibull_function_Netlogo_files/jquery-3.6.0/jquery-3.6.0.min.js","Weibull_function_Netlogo_files/jquery-3.6.0/jquery-3.6.0.min.map","Weibull_function_Netlogo_files/popper-2.6.0/popper.min.js","Weibull_function_Netlogo_files/tippy-6.2.7/tippy-bundle.umd.min.js","Weibull_function_Netlogo_files/tippy-6.2.7/tippy-light-border.css","Weibull_function_Netlogo_files/tippy-6.2.7/tippy.css","Weibull_function_Netlogo_files/tippy-6.2.7/tippy.umd.min.js","Weibull_function_Netlogo_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -186,7 +189,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1259,21 +1261,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1493,7 +1489,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Turning equations into functions in NetLogo","authors":[{"author":"Marius Grabow","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2022-11-11T00:00:00.000+01:00","citationText":"Grabow, 2022"}
+{"title":"Turning Equations into Functions in NetLogo","description":"While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function & associated cumulative density distribution function—both not yet implemented in NetLogo or NetLogo extensions.","authors":[{"author":"Marius Grabow","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2022-11-11T00:00:00.000+01:00","citationText":"Grabow, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1503,14 +1499,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Turning equations into functions in NetLogo</h1>
+<h1>Turning Equations into Functions in NetLogo</h1>
 <!--radix_placeholder_categories-->
+<div class="dt-tags">
+<div class="dt-tag">NetLogo</div>
+<div class="dt-tag">rstats</div>
+<div class="dt-tag">distributions</div>
+</div>
 <!--/radix_placeholder_categories-->
-
+<p><p>While some programming languages, such as R, offer many native
+functions, others (e.g., NetLogo) offer fewer built-in options. However,
+users can create their own functions easily. Here, we will show the
+example of a Weibull density distribution function &amp; associated
+cumulative density distribution function—both not yet implemented in
+NetLogo or NetLogo extensions.</p></p>
 </div>
 
 <div class="d-byline">
-  Marius Grabow  (IZW Berlin)<a href="https://ecodynizw.github.io/EcoDynIZW" class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
+  Marius Grabow  (IZW Berlin)<a
+href="https://ecodynizw.github.io/EcoDynIZW"
+class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
   
 <br/>11/11/2022
 </div>
@@ -1520,24 +1528,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#turning-equations-into-functions">Turning equations into functions:</a></li>
-<li><a href="#density-distribution-function"><strong>Density distribution function</strong></a>
+<li><a href="#density-distribution-function"
+id="toc-density-distribution-function">Density distribution function</a>
 <ul>
-<li><a href="#r">R</a></li>
-<li><a href="#netlogo">NetLogo</a></li>
+<li><a href="#r" id="toc-r">R</a></li>
+<li><a href="#netlogo" id="toc-netlogo">NetLogo</a></li>
 </ul></li>
-<li><a href="#cumulative-density-function"><strong>Cumulative density function</strong></a>
+<li><a href="#cumulative-density-function"
+id="toc-cumulative-density-function">Cumulative density function</a>
 <ul>
-<li><a href="#r-1">R</a></li>
-<li><a href="#netlogo-1">NetLogo</a></li>
+<li><a href="#r-1" id="toc-r-1">R</a></li>
+<li><a href="#netlogo-1" id="toc-netlogo-1">NetLogo</a></li>
 </ul></li>
 </ul>
 </nav>
 </div>
-<h1 id="turning-equations-into-functions">Turning equations into functions:</h1>
-<p>While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function &amp; assocaited cumulative density distribution function - both not yet implemented in NetLogo or NetLogo extensions.</p>
-<h1 id="density-distribution-function"><strong>Density distribution function</strong></h1>
-<p><strong>Let’s first take a look at the Weibull density distribution function:</strong></p>
+<h2 id="density-distribution-function">Density distribution
+function</h2>
+<p><strong>Let’s first take a look at the Weibull density distribution
+function:</strong></p>
 <span class="math display">\[\begin{equation}
 
 f(x) = \frac{\gamma} {\alpha} (\frac{x-\mu}
@@ -1545,19 +1554,21 @@ f(x) = \frac{\gamma} {\alpha} (\frac{x-\mu}
 \hspace{.3in}  x \ge \mu; \gamma, \alpha &gt; 0
 
 \end{equation}\]</span>
-<h2 id="r">R</h2>
+<h3 id="r">R</h3>
 <p>In R, this is already implemented:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>scale</span> <span class='op'>&lt;-</span> <span class='fl'>3</span></span>
-<span><span class='va'>shape</span> <span class='op'>&lt;-</span> <span class='fl'>1</span></span>
-<span></span>
-<span><span class='fu'><a href='https://rdrr.io/r/stats/Weibull.html'>dweibull</a></span><span class='op'>(</span><span class='va'>scale</span>,shape<span class='op'>=</span><span class='va'>shape</span><span class='op'>)</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>scale</span> <span class='op'>&lt;-</span> <span class='fl'>3</span>
+<span class='va'>shape</span> <span class='op'>&lt;-</span> <span class='fl'>1</span>
+
+<span class='fu'><a href='https://rdrr.io/r/stats/Weibull.html'>dweibull</a></span><span class='op'>(</span><span class='va'>scale</span>, shape <span class='op'>=</span> <span class='va'>shape</span><span class='op'>)</span>
+</code></pre>
 </div>
 <pre><code>[1] 0.04978707</code></pre>
 </div>
-<h2 id="netlogo">NetLogo</h2>
-<p>In Netlogo we can simply translate the mathematical equation into a function:</p>
+<h3 id="netlogo">NetLogo</h3>
+<p>In Netlogo we can simply translate the mathematical equation into a
+function:</p>
 <pre class="netlogo"><code>to-report weibull [a_scale a_shape x]
 
   let Wei (a_shape / a_scale ) * ((x / a_scale)^(a_shape - 1)) * exp( - ((x / a_scale)^ a_shape))
@@ -1565,27 +1576,30 @@ f(x) = \frac{\gamma} {\alpha} (\frac{x-\mu}
   report Wei
 
 end</code></pre>
-<h1 id="cumulative-density-function"><strong>Cumulative density function</strong></h1>
-<p><strong>Let’s also take a look at the Weibull cumulative density function:</strong></p>
+<h2 id="cumulative-density-function">Cumulative density function</h2>
+<p><strong>Let’s also take a look at the Weibull cumulative density
+function:</strong></p>
 <span class="math display">\[\begin{equation}
 
 F(x) = 1 - e^{-(x^{\gamma})} \hspace{.3in}  x \ge 0; \gamma &gt; 0
 
 \end{equation}\]</span>
-<h2 id="r-1">R</h2>
+<h3 id="r-1">R</h3>
 <p>Again, fully implemented in R already:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>scale</span> <span class='op'>&lt;-</span> <span class='fl'>3</span></span>
-<span><span class='va'>shape</span> <span class='op'>&lt;-</span> <span class='fl'>1</span></span>
-<span><span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fl'>5</span></span>
-<span></span>
-<span><span class='fu'><a href='https://rdrr.io/r/stats/Weibull.html'>pweibull</a></span><span class='op'>(</span>q<span class='op'>=</span><span class='va'>x</span>, scale <span class='op'>=</span> <span class='va'>scale</span>, shape <span class='op'>=</span> <span class='va'>shape</span><span class='op'>)</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>scale</span> <span class='op'>&lt;-</span> <span class='fl'>3</span>
+<span class='va'>shape</span> <span class='op'>&lt;-</span> <span class='fl'>1</span>
+<span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fl'>5</span>
+
+<span class='fu'><a href='https://rdrr.io/r/stats/Weibull.html'>pweibull</a></span><span class='op'>(</span>q <span class='op'>=</span> <span class='va'>x</span>, scale <span class='op'>=</span> <span class='va'>scale</span>, shape <span class='op'>=</span> <span class='va'>shape</span><span class='op'>)</span>
+</code></pre>
 </div>
 <pre><code>[1] 0.8111244</code></pre>
 </div>
-<h2 id="netlogo-1">NetLogo</h2>
-<p>In Netlogo we can simply translate the mathematical equation into a function:</p>
+<h3 id="netlogo-1">NetLogo</h3>
+<p>In NetLogo we can simply translate the mathematical equation into a
+function:</p>
 <pre class="netlogo"><code>to-report weibull_cumulative [a_scale a_shape x]
 
   let Wei_cumu 1 - exp( - ((x / a_scale)^ a_shape))
@@ -1593,7 +1607,8 @@ F(x) = 1 - e^{-(x^{\gamma})} \hspace{.3in}  x \ge 0; \gamma &gt; 0
   report Wei_cumu
 
 end</code></pre>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
