@@ -113,12 +113,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Download data from the fisbroker database of the Berlin Senate"]},{"type":"character","attributes":{},"value":["In the d6raster package is a function called download_fisbroker that downloads wfs data from the fisbroker database from the Berlin Senate. \n"]},{"type":"character","attributes":{},"value":["tutorial","spatial","Berlin"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Download data from the fisbroker database of the Berlin Senate"]},{"type":"character","attributes":{},"value":["In the d6raster package is a function called download_fisbroker that downloads wfs data from the fisbroker database from the Berlin Senate. \n"]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/EcoDynIZW/d6raster/main/man/figures/d6_raster_icon.png"]},{"type":"character","attributes":{},"value":["tutorial","spatial","Berlin"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["download_fisbroker_files/anchor-4.2.2/anchor.min.js","download_fisbroker_files/bowser-1.9.3/bowser.min.js","download_fisbroker_files/distill-2.2.21/template.v2.js","download_fisbroker_files/figure-html5/unnamed-chunk-1-1.png","download_fisbroker_files/figure-html5/unnamed-chunk-2-1.png","download_fisbroker_files/header-attrs-2.16/header-attrs.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.min.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.min.map","download_fisbroker_files/popper-2.6.0/popper.min.js","download_fisbroker_files/tippy-6.2.7/tippy-bundle.umd.min.js","download_fisbroker_files/tippy-6.2.7/tippy-light-border.css","download_fisbroker_files/tippy-6.2.7/tippy.css","download_fisbroker_files/tippy-6.2.7/tippy.umd.min.js","download_fisbroker_files/webcomponents-2.0.0/webcomponents.js","man/download-fisbroker-1.png","man/fis_broker_wfs_links.csv"]}
+  {"type":"character","attributes":{},"value":["download_fisbroker_files/anchor-4.2.2/anchor.min.js","download_fisbroker_files/bowser-1.9.3/bowser.min.js","download_fisbroker_files/distill-2.2.21/template.v2.js","download_fisbroker_files/figure-html5/unnamed-chunk-1-1.png","download_fisbroker_files/figure-html5/unnamed-chunk-2-1.png","download_fisbroker_files/header-attrs-2.16/header-attrs.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.min.js","download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.min.map","download_fisbroker_files/popper-2.6.0/popper.min.js","download_fisbroker_files/tippy-6.2.7/tippy-bundle.umd.min.js","download_fisbroker_files/tippy-6.2.7/tippy-light-border.css","download_fisbroker_files/tippy-6.2.7/tippy.css","download_fisbroker_files/tippy-6.2.7/tippy.umd.min.js","download_fisbroker_files/webcomponents-2.0.0/webcomponents.js","man/d6_raster_icon.png","man/download-fisbroker-1.png","man/fis_broker_wfs_links.csv"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -189,6 +189,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1261,15 +1262,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1468,7 +1475,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="download_fisbroker_files/header-attrs-2.16/header-attrs.js"></script>
+  <script src="download_fisbroker_files/header-attrs-2.17/header-attrs.js"></script>
   <script src="download_fisbroker_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="download_fisbroker_files/popper-2.6.0/popper.min.js"></script>
   <link href="download_fisbroker_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1507,15 +1514,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="dt-tag">Berlin</div>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>In the d6raster package is a function called download_fisbroker
-that downloads wfs data from the fisbroker database from the Berlin
-Senate.</p></p>
+<p><p>In the d6raster package is a function called download_fisbroker that downloads wfs data from the fisbroker database from the Berlin Senate.</p></p>
 </div>
 
 <div class="d-byline">
-  Moritz Wenzler-Meya  (IZW Berlin)<a
-href="https://ecodynizw.github.io/EcoDynIZW"
-class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
+  Moritz Wenzler-Meya  (IZW Berlin)<a href="https://ecodynizw.github.io/EcoDynIZW" class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
   
 <br/>2022-11-14
 </div>
@@ -1525,31 +1528,17 @@ class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#the-fisbroker-database">The fisbroker database</a></li>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#get-a-download-link">get a download link</a></li>
-<li><a href="#useage-with-lapply">useage with lapply</a></li>
-<li><a
-href="#a-list-of-download-links-from-the-fisbroker-that-we-probably-used-in-the-d6-department">a
-list of download links from the fisbroker that we probably used in the
-d6 Department</a></li>
+<li><a href="#the-fisbroker-database" id="toc-the-fisbroker-database">The fisbroker database</a></li>
+<li><a href="#installation" id="toc-installation">Installation</a></li>
+<li><a href="#get-a-download-link" id="toc-get-a-download-link">get a download link</a></li>
+<li><a href="#useage-with-lapply" id="toc-useage-with-lapply">useage with lapply</a></li>
+<li><a href="#a-list-of-download-links-from-the-fisbroker-that-we-probably-used-in-the-d6-department" id="toc-a-list-of-download-links-from-the-fisbroker-that-we-probably-used-in-the-d6-department">a list of download links from the fisbroker that we probably used in the d6 Department</a></li>
 </ul>
 </nav>
 </div>
-<p>The <a
-href="https://github.com/EcoDynIZW/d6raster"><code>{d6raster}</code>
-package</a> provides a function called download_fisbroker. The aim is to
-easily get the data from the fisbroker database by just copying the link
-for the download. If you have several links you can use an lapply and
-store them in a list.</p>
+<p>The <a href="https://github.com/EcoDynIZW/d6raster"><code>{d6raster}</code> package</a> provides a function called download_fisbroker. The aim is to easily get the data from the fisbroker database by just copying the link for the download. If you have several links you can use an lapply and store them in a list.</p>
 <h2 id="the-fisbroker-database">The fisbroker database</h2>
-<p>The fisbroker database is a hosted by the Berlin Senate and provides
-several geodatasets. The file formats differ and some datasets have just
-one of the file formats to offer. The file formats are WMS (Web Media
-Service: Just like a png or jpg), WFS (Web Feature Service: Shapefiles)
-and ATOM (xml format: Raster layers data). This function is only looking
-for WFS files (Shapefiles), because these are the polygons, lines or
-points that we are looking for.</p>
+<p>The fisbroker database is a hosted by the Berlin Senate and provides several geodatasets. The file formats differ and some datasets have just one of the file formats to offer. The file formats are WMS (Web Media Service: Just like a png or jpg), WFS (Web Feature Service: Shapefiles) and ATOM (xml format: Raster layers data). This function is only looking for WFS files (Shapefiles), because these are the polygons, lines or points that we are looking for.</p>
 <h2 id="installation">Installation</h2>
 <p>You can install the <code>{d6raster}</code> package from GitHub:</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1559,15 +1548,9 @@ points that we are looking for.</p>
 <span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/wenzmo/d6raster'>d6raster</a></span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<p>(Note: If you are asked if you want to update other packages either
-press “No” (option 3) and continue or update the packages before running
-the install command again.)</p>
+<p>(Note: If you are asked if you want to update other packages either press “No” (option 3) and continue or update the packages before running the install command again.)</p>
 <h2 id="get-a-download-link">get a download link</h2>
-<p>Go the <a
-href="https://fbinter.stadt-berlin.de/fb/index.jsp">Geoportal Berlin
-(FIS-Broker)</a> website and select one of the wfs layers you want to
-download. Click on the WFS hyperlink (1) and a popup-window will open.
-The “Rechneradresse” (2) is the download link we are looking for.</p>
+<p>Go the <a href="https://fbinter.stadt-berlin.de/fb/index.jsp">Geoportal Berlin (FIS-Broker)</a> website and select one of the wfs layers you want to download. Click on the WFS hyperlink (1) and a popup-window will open. The “Rechneradresse” (2) is the download link we are looking for.</p>
 <p><img src="man/download-fisbroker-1.png" /></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -1622,8 +1605,7 @@ Projected CRS: ETRS89 / UTM zone 33N
 9   mastr POINT (382427.3 5822757)
 10  mastr POINT (404145.6 5817892)</code></pre>
 </div>
-<p>If you want to download several datasets at one time you can just use
-lapply and a list of download links.</p>
+<p>If you want to download several datasets at one time you can just use lapply and a list of download links.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>data_list</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='st'>"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort"</span>,</span>
@@ -1648,24 +1630,19 @@ Dimension:     XY
 Bounding box:  xmin: 373326.7 ymin: 5802844 xmax: 413185.1 ymax: 5834381
 Projected CRS: ETRS89 / UTM zone 33N</code></pre>
 </div>
-<p>After that you can save them to disk or use them just within our
-script!</p>
-<h2
-id="a-list-of-download-links-from-the-fisbroker-that-we-probably-used-in-the-d6-department">a
-list of download links from the fisbroker that we probably used in the
-d6 Department</h2>
-<p>Note that some of the links may not work in the future because links
-can be changed or data gets outdated.</p>
+<p>After that you can save them to disk or use them just within our script!</p>
+<h2 id="a-list-of-download-links-from-the-fisbroker-that-we-probably-used-in-the-d6-department">a list of download links from the fisbroker that we probably used in the d6 Department</h2>
+<p>Note that some of the links may not work in the future because links can be changed or data gets outdated.</p>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<div id="fdkhniannm" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="jpqytghljj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#fdkhniannm .gt_table {
+#jpqytghljj .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1690,7 +1667,7 @@ can be changed or data gets outdated.</p>
   border-left-color: #D3D3D3;
 }
 
-#fdkhniannm .gt_heading {
+#jpqytghljj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1702,7 +1679,7 @@ can be changed or data gets outdated.</p>
   border-right-color: #D3D3D3;
 }
 
-#fdkhniannm .gt_title {
+#jpqytghljj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1714,7 +1691,7 @@ can be changed or data gets outdated.</p>
   border-bottom-width: 0;
 }
 
-#fdkhniannm .gt_subtitle {
+#jpqytghljj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1726,13 +1703,13 @@ can be changed or data gets outdated.</p>
   border-top-width: 0;
 }
 
-#fdkhniannm .gt_bottom_border {
+#jpqytghljj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fdkhniannm .gt_col_headings {
+#jpqytghljj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1747,7 +1724,7 @@ can be changed or data gets outdated.</p>
   border-right-color: #D3D3D3;
 }
 
-#fdkhniannm .gt_col_heading {
+#jpqytghljj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1767,7 +1744,7 @@ can be changed or data gets outdated.</p>
   overflow-x: hidden;
 }
 
-#fdkhniannm .gt_column_spanner_outer {
+#jpqytghljj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1779,15 +1756,15 @@ can be changed or data gets outdated.</p>
   padding-right: 4px;
 }
 
-#fdkhniannm .gt_column_spanner_outer:first-child {
+#jpqytghljj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fdkhniannm .gt_column_spanner_outer:last-child {
+#jpqytghljj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fdkhniannm .gt_column_spanner {
+#jpqytghljj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1799,7 +1776,7 @@ can be changed or data gets outdated.</p>
   width: 100%;
 }
 
-#fdkhniannm .gt_group_heading {
+#jpqytghljj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1824,7 +1801,7 @@ can be changed or data gets outdated.</p>
   vertical-align: middle;
 }
 
-#fdkhniannm .gt_empty_group_heading {
+#jpqytghljj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1839,15 +1816,15 @@ can be changed or data gets outdated.</p>
   vertical-align: middle;
 }
 
-#fdkhniannm .gt_from_md > :first-child {
+#jpqytghljj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fdkhniannm .gt_from_md > :last-child {
+#jpqytghljj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fdkhniannm .gt_row {
+#jpqytghljj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1866,7 +1843,7 @@ can be changed or data gets outdated.</p>
   overflow-x: hidden;
 }
 
-#fdkhniannm .gt_stub {
+#jpqytghljj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1879,7 +1856,7 @@ can be changed or data gets outdated.</p>
   padding-right: 5px;
 }
 
-#fdkhniannm .gt_stub_row_group {
+#jpqytghljj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1893,11 +1870,11 @@ can be changed or data gets outdated.</p>
   vertical-align: top;
 }
 
-#fdkhniannm .gt_row_group_first td {
+#jpqytghljj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fdkhniannm .gt_summary_row {
+#jpqytghljj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1907,16 +1884,16 @@ can be changed or data gets outdated.</p>
   padding-right: 5px;
 }
 
-#fdkhniannm .gt_first_summary_row {
+#jpqytghljj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fdkhniannm .gt_first_summary_row.thick {
+#jpqytghljj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fdkhniannm .gt_last_summary_row {
+#jpqytghljj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1926,7 +1903,7 @@ can be changed or data gets outdated.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#fdkhniannm .gt_grand_summary_row {
+#jpqytghljj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1936,7 +1913,7 @@ can be changed or data gets outdated.</p>
   padding-right: 5px;
 }
 
-#fdkhniannm .gt_first_grand_summary_row {
+#jpqytghljj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1946,11 +1923,11 @@ can be changed or data gets outdated.</p>
   border-top-color: #D3D3D3;
 }
 
-#fdkhniannm .gt_striped {
+#jpqytghljj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fdkhniannm .gt_table_body {
+#jpqytghljj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1959,7 +1936,7 @@ can be changed or data gets outdated.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#fdkhniannm .gt_footnotes {
+#jpqytghljj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1973,7 +1950,7 @@ can be changed or data gets outdated.</p>
   border-right-color: #D3D3D3;
 }
 
-#fdkhniannm .gt_footnote {
+#jpqytghljj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1982,7 +1959,7 @@ can be changed or data gets outdated.</p>
   padding-right: 5px;
 }
 
-#fdkhniannm .gt_sourcenotes {
+#jpqytghljj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1996,7 +1973,7 @@ can be changed or data gets outdated.</p>
   border-right-color: #D3D3D3;
 }
 
-#fdkhniannm .gt_sourcenote {
+#jpqytghljj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2004,64 +1981,64 @@ can be changed or data gets outdated.</p>
   padding-right: 5px;
 }
 
-#fdkhniannm .gt_left {
+#jpqytghljj .gt_left {
   text-align: left;
 }
 
-#fdkhniannm .gt_center {
+#jpqytghljj .gt_center {
   text-align: center;
 }
 
-#fdkhniannm .gt_right {
+#jpqytghljj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fdkhniannm .gt_font_normal {
+#jpqytghljj .gt_font_normal {
   font-weight: normal;
 }
 
-#fdkhniannm .gt_font_bold {
+#jpqytghljj .gt_font_bold {
   font-weight: bold;
 }
 
-#fdkhniannm .gt_font_italic {
+#jpqytghljj .gt_font_italic {
   font-style: italic;
 }
 
-#fdkhniannm .gt_super {
+#jpqytghljj .gt_super {
   font-size: 65%;
 }
 
-#fdkhniannm .gt_footnote_marks {
+#jpqytghljj .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#fdkhniannm .gt_asterisk {
+#jpqytghljj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fdkhniannm .gt_indent_1 {
+#jpqytghljj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fdkhniannm .gt_indent_2 {
+#jpqytghljj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fdkhniannm .gt_indent_3 {
+#jpqytghljj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fdkhniannm .gt_indent_4 {
+#jpqytghljj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fdkhniannm .gt_indent_5 {
+#jpqytghljj .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -2246,8 +2223,7 @@ can be changed or data gets outdated.</p>
 </table>
 </div>
 </div>
-<div class="sourceCode" id="cb4"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
