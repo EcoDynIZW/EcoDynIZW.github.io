@@ -787,6 +787,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1859,15 +1860,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2634,7 +2641,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2851,9 +2858,6 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":["tutorial","spatial","Berlin"]}</script>
 <div class="metadata">
 <div class="publishedDate">Nov. 14, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Moritz Wenzler-Meya</div>
-</div>
 </div>
 <div class="thumbnail">
 <img src="posts/download_fisbroker/download_fisbroker_files/figure-html5/unnamed-chunk-2-1.png"/>
@@ -2868,36 +2872,10 @@ function init_posts_list() {
 <p>In the d6raster package is a function called download_fisbroker that downloads wfs data from the fisbroker database from the Berlin Senate.</p>
 </div>
 </a>
-<a href="posts/motorways_berlin_2022_100m_03035_tif/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","spatial","Berlin","ggplot2"]}</script>
-<div class="metadata">
-<div class="publishedDate">Nov. 13, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Moritz Wenzler-Meya</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/motorways_berlin_2022_100m_03035_tif/motorways_berlin_2022_100m_03035_tif_files/figure-html5/plot-1.png"/>
-</div>
-<div class="description">
-<h2>motorways berlin 2022</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">Berlin</div>
-<div class="dt-tag">ggplot2</div>
-</div>
-<p></p>
-</div>
-</a>
 <a href="posts/Weibull_function_NetLogo/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["NetLogo","rstats","distributions"]}</script>
 <div class="metadata">
 <div class="publishedDate">Nov. 11, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Marius Grabow</div>
-</div>
 </div>
 <div class="thumbnail">
 <img/>
@@ -2916,9 +2894,6 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
 <div class="publishedDate">Sept. 12, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Jürgen Niedballa</div>
-</div>
 </div>
 <div class="thumbnail">
 <img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-imageseg.png"/>
@@ -2933,9 +2908,6 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
 <div class="publishedDate">Sept. 12, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Alexandre Courtiol</div>
-</div>
 </div>
 <div class="thumbnail">
 <img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-isorix.png"/>
@@ -2950,12 +2922,9 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","camera traping","data management"]}</script>
 <div class="metadata">
 <div class="publishedDate">May 23, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Jürgen Niedballa</div>
-</div>
 </div>
 <div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-camtrapr.png"/>
+<img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-camtrapr.png"/>
 </div>
 <div class="description">
 <h2>Manage Camera Trap Data in R</h2>
@@ -2972,9 +2941,6 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","spatial","modelling"]}</script>
 <div class="metadata">
 <div class="publishedDate">Aug. 6, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Cédric Scherer</div>
-</div>
 </div>
 <div class="thumbnail">
 <img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-nlmr.png"/>
@@ -2994,9 +2960,6 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","spatial","Berlin","ggplot2"]}</script>
 <div class="metadata">
 <div class="publishedDate">March 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Cédric Scherer</div>
-</div>
 </div>
 <div class="thumbnail">
 <img data-src="https://raw.githubusercontent.com/EcoDynIZW/d6berlin/main/man/figures/hexlogo.png"/>
@@ -3017,9 +2980,6 @@ function init_posts_list() {
 <script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","workflow","data management"]}</script>
 <div class="metadata">
 <div class="publishedDate">Sept. 12, 2020</div>
-<div class="dt-authors">
-<div class="dt-author">Cédric Scherer</div>
-</div>
 </div>
 <div class="thumbnail">
 <img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-d6.png"/>
@@ -3042,11 +3002,11 @@ function init_posts_list() {
 <ul>
 <li>
 <a href="#category:Articles">Articles</a>
-<span class="category-count">(9)</span>
+<span class="category-count">(8)</span>
 </li>
 <li>
 <a href="#category:Berlin">Berlin</a>
-<span class="category-count">(3)</span>
+<span class="category-count">(2)</span>
 </li>
 <li>
 <a href="#category:camera_traping">camera traping</a>
@@ -3062,7 +3022,7 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#category:ggplot2">ggplot2</a>
-<span class="category-count">(2)</span>
+<span class="category-count">(1)</span>
 </li>
 <li>
 <a href="#category:modelling">modelling</a>
@@ -3074,15 +3034,15 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#category:rstats">rstats</a>
-<span class="category-count">(6)</span>
+<span class="category-count">(5)</span>
 </li>
 <li>
 <a href="#category:spatial">spatial</a>
-<span class="category-count">(4)</span>
+<span class="category-count">(3)</span>
 </li>
 <li>
 <a href="#category:tutorial">tutorial</a>
-<span class="category-count">(6)</span>
+<span class="category-count">(5)</span>
 </li>
 <li>
 <a href="#category:workflow">workflow</a>
@@ -3095,7 +3055,7 @@ function init_posts_list() {
 <a href="#">More articles &raquo;</a>
 </div>
 </div>
-<!--/radix_placeholder_article_listing-->
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
 <h1>Wiki</h1>
@@ -3106,8 +3066,7 @@ function init_posts_list() {
 
 
 <div class="d-article">
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -3130,4 +3089,6 @@ Wildlife Research 2020—2022. All rights reserved.</p>
 <!--/radix_placeholder_navigation_after_body-->
 
 
-</body
+</body>
+
+</html>

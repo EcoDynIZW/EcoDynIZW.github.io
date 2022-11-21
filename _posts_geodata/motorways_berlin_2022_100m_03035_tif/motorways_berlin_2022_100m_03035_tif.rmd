@@ -1,11 +1,9 @@
 ---
 title: 'motorways berlin 2022'
 categories:
-  - tutorial
-  - rstats
-  - spatial
   - Berlin
-  - ggplot2
+  - Binary
+  - '2022'
 author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
