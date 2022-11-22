@@ -1,7 +1,7 @@
 [
   {
-    "path": "posts_geodata/distance-to-roads_germany_2022_100m_03035_tif/",
-    "title": "distance-to-roads germany 2022",
+    "path": "posts_geodata/corine_berlin_2015_20m_03035_tif/",
+    "title": "corine berlin 2015",
     "description": {},
     "author": [
       {
@@ -9,56 +9,15 @@
         "url": {}
       }
     ],
-    "date": "2022-11-14",
+    "date": "2022-11-22",
     "categories": [
-      "Germany",
-      "2022",
-      "distance"
+      "Corine",
+      "2015",
+      "Berlin"
     ],
-    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\ndistance-to-roads_germany_2022_100m_03035_tifname\r\ndistance-to-roads_germany_2022_100m_03035.tifcrs\r\n+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defsepsg\r\n3035year_of_data\r\n2022units_of_data\r\nmresolution\r\n100mtype_of_data\r\ncontinual_numerictype_of_file\r\n.tifsource\r\nbkglink_of_source\r\nhttps://gdz.bkg.bund.dedate_of_compile\r\n2022-05-13short_description\r\ncreated from roads_germany_2022_100m_03035modified\r\nNA\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2022-11-21 08:51:36 CET\"\r\nR version 4.1.3 (2022-03-10)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 17763)\r\n\r\nMatrix products: default\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.1.2\r\n\r\nloaded via a namespace (and not attached):\r\n [1] Rcpp_1.0.9         tidyr_1.2.1        class_7.3-20      \r\n [4] assertthat_0.2.1   digest_0.6.29      utf8_1.2.2        \r\n [7] R6_2.5.1           evaluate_0.18      e1071_1.7-11      \r\n[10] highr_0.9          ggplot2_3.3.6      pillar_1.8.1      \r\n[13] rlang_1.0.6        rstudioapi_0.14    jquerylib_0.1.4   \r\n[16] rmarkdown_2.17     textshaping_0.3.6  labeling_0.4.2    \r\n[19] stringr_1.4.1      munsell_0.5.0      proxy_0.4-27      \r\n[22] compiler_4.1.3     xfun_0.32          pkgconfig_2.0.3   \r\n[25] systemfonts_1.0.4  htmltools_0.5.3    downlit_0.4.2     \r\n[28] tidyselect_1.2.0   tibble_3.1.8       codetools_0.2-18  \r\n[31] fansi_1.0.3        dplyr_1.0.10       withr_2.5.0       \r\n[34] sf_1.0-8           wk_0.6.0           grid_4.1.3        \r\n[37] jsonlite_1.8.3     lwgeom_0.2-8       gtable_0.3.1      \r\n[40] lifecycle_1.0.3    DBI_1.1.3          magrittr_2.0.3    \r\n[43] units_0.8-0        scales_1.2.1       KernSmooth_2.23-20\r\n[46] cli_3.4.0          stringi_1.7.6      cachem_1.0.6      \r\n[49] farver_2.1.1       bslib_0.4.1        ellipsis_0.3.2    \r\n[52] ragg_1.2.4         generics_0.1.3     vctrs_0.4.1       \r\n[55] distill_1.5        s2_1.1.0           tools_4.1.3       \r\n[58] glue_1.6.2         purrr_0.3.4        abind_1.4-5       \r\n[61] parallel_4.1.3     fastmap_1.1.0      yaml_2.3.5        \r\n[64] colorspace_2.0-3   terra_1.6-17       stars_0.5-6       \r\n[67] gt_0.7.0           classInt_0.4-7     memoise_2.0.1     \r\n[70] knitr_1.40         sass_0.4.2        \r\n\r\n\r\n\r\n\r\n",
-    "preview": "posts_geodata/distance-to-roads_germany_2022_100m_03035_tif/distance-to-roads_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png",
-    "last_modified": "2022-11-21T08:51:38+01:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts_geodata/landuse_atlas_2009_1m_03035_tif/",
-    "title": "landuse atlas 2009",
-    "description": {},
-    "author": [
-      {
-        "name": "Moritz Wenzler-Meya",
-        "url": {}
-      }
-    ],
-    "date": "2022-11-14",
-    "categories": [
-      "Atlas",
-      "2019"
-    ],
-    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\nlanduse_atlas_2009_1m_03035_tifname\r\nlanduse_atlas_2009_1m_03035.tifcrs\r\n+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defsepsg\r\n3035year_of_data\r\n2009units_of_data\r\nmresolution\r\n1mtype_of_data\r\nordered_categoricaltype_of_file\r\n.tifsource\r\nmetaverlink_of_source\r\nNAdate_of_compile\r\n2022-09-05short_description\r\ncreated from landuse_brandenburg_2009_polygons_25833_gpkg and landuse_brandenburg_2009_lines_25833_gpkgmodified\r\nNA\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2022-11-21 16:57:36 CET\"\r\nR version 4.1.3 (2022-03-10)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 17763)\r\n\r\nMatrix products: default\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.1.2\r\n\r\nloaded via a namespace (and not attached):\r\n [1] Rcpp_1.0.9         tidyr_1.2.1        class_7.3-20      \r\n [4] assertthat_0.2.1   digest_0.6.29      utf8_1.2.2        \r\n [7] R6_2.5.1           evaluate_0.18      e1071_1.7-11      \r\n[10] ggplot2_3.3.6      highr_0.9          pillar_1.8.1      \r\n[13] rlang_1.0.6        rstudioapi_0.14    jquerylib_0.1.4   \r\n[16] rmarkdown_2.17     textshaping_0.3.6  stringr_1.4.1     \r\n[19] munsell_0.5.0      proxy_0.4-27       compiler_4.1.3    \r\n[22] xfun_0.32          pkgconfig_2.0.3    systemfonts_1.0.4 \r\n[25] htmltools_0.5.3    downlit_0.4.2      tidyselect_1.2.0  \r\n[28] tibble_3.1.8       codetools_0.2-18   fansi_1.0.3       \r\n[31] dplyr_1.0.10       withr_2.5.0        sf_1.0-8          \r\n[34] wk_0.6.0           grid_4.1.3         jsonlite_1.8.3    \r\n[37] lwgeom_0.2-8       gtable_0.3.1       lifecycle_1.0.3   \r\n[40] DBI_1.1.3          magrittr_2.0.3     units_0.8-0       \r\n[43] scales_1.2.1       KernSmooth_2.23-20 cli_3.4.0         \r\n[46] stringi_1.7.6      cachem_1.0.6       farver_2.1.1      \r\n[49] bslib_0.4.1        ellipsis_0.3.2     ragg_1.2.4        \r\n[52] generics_0.1.3     vctrs_0.4.1        distill_1.5       \r\n[55] s2_1.1.0           tools_4.1.3        glue_1.6.2        \r\n[58] purrr_0.3.4        abind_1.4-5        parallel_4.1.3    \r\n[61] fastmap_1.1.0      yaml_2.3.5         colorspace_2.0-3  \r\n[64] terra_1.6-17       stars_0.5-6        gt_0.7.0          \r\n[67] classInt_0.4-7     memoise_2.0.1      knitr_1.40        \r\n[70] sass_0.4.2        \r\n\r\n\r\n\r\n\r\n",
-    "preview": "posts_geodata/landuse_atlas_2009_1m_03035_tif/landuse_atlas_2009_1m_03035_tif_files/figure-html5/plot-1.png",
-    "last_modified": "2022-11-21T16:57:40+01:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts_geodata/motorways_berlin_2022_100m_03035_tif/",
-    "title": "motorways berlin 2022",
-    "description": {},
-    "author": [
-      {
-        "name": "Moritz Wenzler-Meya",
-        "url": {}
-      }
-    ],
-    "date": "2022-11-14",
-    "categories": [
-      "Berlin",
-      "Binary",
-      "2022"
-    ],
-    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\nmotorways_berlin_2022_100m_03035_tifname\r\nmotorways_berlin_2022_100m_03035.tifcrs\r\n+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defsepsg\r\n3035year_of_data\r\n2022units_of_data\r\nNAresolution\r\n100mtype_of_data\r\nbinary_categoricaltype_of_file\r\n.tifsource\r\ngeofabriklink_of_source\r\nhttps://download.geofabrik.de/europe.htmldate_of_compile\r\n2022-05-16short_description\r\ncreated from osm_germany_2022_4326.gpkgmodified\r\nNA\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2022-11-21 11:29:20 CET\"\r\nR version 4.1.3 (2022-03-10)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 17763)\r\n\r\nMatrix products: default\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.1.2\r\n\r\nloaded via a namespace (and not attached):\r\n [1] Rcpp_1.0.9         tidyr_1.2.1        class_7.3-20      \r\n [4] assertthat_0.2.1   digest_0.6.29      utf8_1.2.2        \r\n [7] R6_2.5.1           evaluate_0.18      e1071_1.7-11      \r\n[10] ggplot2_3.3.6      highr_0.9          pillar_1.8.1      \r\n[13] rlang_1.0.6        rstudioapi_0.14    jquerylib_0.1.4   \r\n[16] rmarkdown_2.17     textshaping_0.3.6  stringr_1.4.1     \r\n[19] munsell_0.5.0      proxy_0.4-27       compiler_4.1.3    \r\n[22] xfun_0.32          pkgconfig_2.0.3    systemfonts_1.0.4 \r\n[25] htmltools_0.5.3    downlit_0.4.2      tidyselect_1.2.0  \r\n[28] tibble_3.1.8       codetools_0.2-18   fansi_1.0.3       \r\n[31] dplyr_1.0.10       withr_2.5.0        sf_1.0-8          \r\n[34] wk_0.6.0           grid_4.1.3         jsonlite_1.8.3    \r\n[37] lwgeom_0.2-8       gtable_0.3.1       lifecycle_1.0.3   \r\n[40] DBI_1.1.3          magrittr_2.0.3     units_0.8-0       \r\n[43] scales_1.2.1       KernSmooth_2.23-20 cli_3.4.0         \r\n[46] stringi_1.7.6      cachem_1.0.6       farver_2.1.1      \r\n[49] bslib_0.4.1        ellipsis_0.3.2     ragg_1.2.4        \r\n[52] generics_0.1.3     vctrs_0.4.1        distill_1.5       \r\n[55] s2_1.1.0           tools_4.1.3        glue_1.6.2        \r\n[58] purrr_0.3.4        abind_1.4-5        parallel_4.1.3    \r\n[61] fastmap_1.1.0      yaml_2.3.5         colorspace_2.0-3  \r\n[64] terra_1.6-17       stars_0.5-6        gt_0.7.0          \r\n[67] classInt_0.4-7     memoise_2.0.1      knitr_1.40        \r\n[70] sass_0.4.2        \r\n\r\n\r\n\r\n\r\n",
-    "preview": "posts_geodata/motorways_berlin_2022_100m_03035_tif/motorways_berlin_2022_100m_03035_tif_files/figure-html5/plot-1.png",
-    "last_modified": "2022-11-21T11:29:22+01:00",
+    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\ncorine_berlin_2015_20m_03035_tifname\r\ncorine_berlin_2015_20m_03035.tifcrs\r\n+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defsepsg\r\n3035year_of_data\r\n2015units_of_data\r\nmresolution\r\n20type_of_data\r\nunordered_categoricaltype_of_file\r\n.tifsource\r\nbkglink_of_source\r\nNAdate_of_compile\r\n2022-11-22short_description\r\ncreated from Corine_Landcover_germany_2018_25832_shpmodified\r\nNA\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2022-11-22 13:37:22 CET\"\r\nR version 4.1.3 (2022-03-10)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 17763)\r\n\r\nMatrix products: default\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.1.2\r\n\r\nloaded via a namespace (and not attached):\r\n [1] Rcpp_1.0.9         tidyr_1.2.1        class_7.3-20      \r\n [4] assertthat_0.2.1   digest_0.6.29      utf8_1.2.2        \r\n [7] R6_2.5.1           evaluate_0.18      e1071_1.7-11      \r\n[10] ggplot2_3.3.6      highr_0.9          pillar_1.8.1      \r\n[13] rlang_1.0.6        rstudioapi_0.14    jquerylib_0.1.4   \r\n[16] rmarkdown_2.17     textshaping_0.3.6  stringr_1.4.1     \r\n[19] munsell_0.5.0      proxy_0.4-27       compiler_4.1.3    \r\n[22] xfun_0.32          pkgconfig_2.0.3    systemfonts_1.0.4 \r\n[25] htmltools_0.5.3    downlit_0.4.2      tidyselect_1.2.0  \r\n[28] tibble_3.1.8       codetools_0.2-18   fansi_1.0.3       \r\n[31] dplyr_1.0.10       withr_2.5.0        sf_1.0-8          \r\n[34] wk_0.6.0           grid_4.1.3         jsonlite_1.8.3    \r\n[37] lwgeom_0.2-8       gtable_0.3.1       lifecycle_1.0.3   \r\n[40] DBI_1.1.3          magrittr_2.0.3     units_0.8-0       \r\n[43] scales_1.2.1       KernSmooth_2.23-20 cli_3.4.0         \r\n[46] stringi_1.7.6      cachem_1.0.6       farver_2.1.1      \r\n[49] bslib_0.4.1        ellipsis_0.3.2     ragg_1.2.4        \r\n[52] generics_0.1.3     vctrs_0.4.1        distill_1.5       \r\n[55] s2_1.1.0           tools_4.1.3        glue_1.6.2        \r\n[58] purrr_0.3.4        abind_1.4-5        parallel_4.1.3    \r\n[61] fastmap_1.1.0      yaml_2.3.5         colorspace_2.0-3  \r\n[64] terra_1.6-17       stars_0.5-6        gt_0.7.0          \r\n[67] classInt_0.4-7     memoise_2.0.1      knitr_1.40        \r\n[70] sass_0.4.2        \r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts_geodata/corine_berlin_2015_20m_03035_tif/corine_berlin_2015_20m_03035_tif_files/figure-html5/plot-1.png",
+    "last_modified": "2022-11-22T13:37:23+01:00",
     "input_file": {}
   },
   {
@@ -79,7 +38,69 @@
     ],
     "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\ndistance-to-motorways_germany_2022_100m_03035_tifname\r\ndistance-to-motorways_germany_2022_100m_03035.tifcrs\r\n+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defsepsg\r\n3035year_of_data\r\n2022units_of_data\r\nmresolution\r\n100mtype_of_data\r\ncontinuous_numerictype_of_file\r\n.tifsource\r\nosmlink_of_source\r\nNAdate_of_compile\r\n2022-07-29short_description\r\nbuild from motorways_germany_2022_100m_03035_tifmodified\r\nNA\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2022-11-21 17:02:52 CET\"\r\nR version 4.1.3 (2022-03-10)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 17763)\r\n\r\nMatrix products: default\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.1.2\r\n\r\nloaded via a namespace (and not attached):\r\n [1] Rcpp_1.0.9         tidyr_1.2.1        class_7.3-20      \r\n [4] assertthat_0.2.1   digest_0.6.29      utf8_1.2.2        \r\n [7] R6_2.5.1           evaluate_0.18      e1071_1.7-11      \r\n[10] highr_0.9          ggplot2_3.3.6      pillar_1.8.1      \r\n[13] rlang_1.0.6        rstudioapi_0.14    jquerylib_0.1.4   \r\n[16] rmarkdown_2.17     textshaping_0.3.6  labeling_0.4.2    \r\n[19] stringr_1.4.1      munsell_0.5.0      proxy_0.4-27      \r\n[22] compiler_4.1.3     xfun_0.32          pkgconfig_2.0.3   \r\n[25] systemfonts_1.0.4  htmltools_0.5.3    downlit_0.4.2     \r\n[28] tidyselect_1.2.0   tibble_3.1.8       codetools_0.2-18  \r\n[31] fansi_1.0.3        dplyr_1.0.10       withr_2.5.0       \r\n[34] sf_1.0-8           wk_0.6.0           grid_4.1.3        \r\n[37] jsonlite_1.8.3     lwgeom_0.2-8       gtable_0.3.1      \r\n[40] lifecycle_1.0.3    DBI_1.1.3          magrittr_2.0.3    \r\n[43] units_0.8-0        scales_1.2.1       KernSmooth_2.23-20\r\n[46] cli_3.4.0          stringi_1.7.6      cachem_1.0.6      \r\n[49] farver_2.1.1       bslib_0.4.1        ellipsis_0.3.2    \r\n[52] ragg_1.2.4         generics_0.1.3     vctrs_0.4.1       \r\n[55] distill_1.5        s2_1.1.0           tools_4.1.3       \r\n[58] glue_1.6.2         purrr_0.3.4        abind_1.4-5       \r\n[61] parallel_4.1.3     fastmap_1.1.0      yaml_2.3.5        \r\n[64] colorspace_2.0-3   terra_1.6-17       stars_0.5-6       \r\n[67] gt_0.7.0           classInt_0.4-7     memoise_2.0.1     \r\n[70] knitr_1.40         sass_0.4.2        \r\n\r\n\r\n\r\n\r\n",
     "preview": "posts_geodata/distance-to-motorways_germany_2022_100m_03035_tif/distance-to-motorways_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png",
-    "last_modified": "2022-11-21T17:02:53+01:00",
-    "input_file": "distance-to-motorways_germany_2022_100m_03035_tif.knit.md"
+    "last_modified": "2022-11-22T13:24:01+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts_geodata/distance-to-roads_germany_2022_100m_03035_tif/",
+    "title": "distance-to-roads germany 2022",
+    "description": {},
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2022-11-14",
+    "categories": [
+      "Germany",
+      "2022",
+      "distance"
+    ],
+    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\ndistance-to-roads_germany_2022_100m_03035_tifname\r\ndistance-to-roads_germany_2022_100m_03035.tifcrs\r\n+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defsepsg\r\n3035year_of_data\r\n2022units_of_data\r\nmresolution\r\n100mtype_of_data\r\ncontinual_numerictype_of_file\r\n.tifsource\r\nbkglink_of_source\r\nhttps://gdz.bkg.bund.dedate_of_compile\r\n2022-05-13short_description\r\ncreated from roads_germany_2022_100m_03035modified\r\nNA\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2022-11-21 08:51:36 CET\"\r\nR version 4.1.3 (2022-03-10)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 17763)\r\n\r\nMatrix products: default\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.1.2\r\n\r\nloaded via a namespace (and not attached):\r\n [1] Rcpp_1.0.9         tidyr_1.2.1        class_7.3-20      \r\n [4] assertthat_0.2.1   digest_0.6.29      utf8_1.2.2        \r\n [7] R6_2.5.1           evaluate_0.18      e1071_1.7-11      \r\n[10] highr_0.9          ggplot2_3.3.6      pillar_1.8.1      \r\n[13] rlang_1.0.6        rstudioapi_0.14    jquerylib_0.1.4   \r\n[16] rmarkdown_2.17     textshaping_0.3.6  labeling_0.4.2    \r\n[19] stringr_1.4.1      munsell_0.5.0      proxy_0.4-27      \r\n[22] compiler_4.1.3     xfun_0.32          pkgconfig_2.0.3   \r\n[25] systemfonts_1.0.4  htmltools_0.5.3    downlit_0.4.2     \r\n[28] tidyselect_1.2.0   tibble_3.1.8       codetools_0.2-18  \r\n[31] fansi_1.0.3        dplyr_1.0.10       withr_2.5.0       \r\n[34] sf_1.0-8           wk_0.6.0           grid_4.1.3        \r\n[37] jsonlite_1.8.3     lwgeom_0.2-8       gtable_0.3.1      \r\n[40] lifecycle_1.0.3    DBI_1.1.3          magrittr_2.0.3    \r\n[43] units_0.8-0        scales_1.2.1       KernSmooth_2.23-20\r\n[46] cli_3.4.0          stringi_1.7.6      cachem_1.0.6      \r\n[49] farver_2.1.1       bslib_0.4.1        ellipsis_0.3.2    \r\n[52] ragg_1.2.4         generics_0.1.3     vctrs_0.4.1       \r\n[55] distill_1.5        s2_1.1.0           tools_4.1.3       \r\n[58] glue_1.6.2         purrr_0.3.4        abind_1.4-5       \r\n[61] parallel_4.1.3     fastmap_1.1.0      yaml_2.3.5        \r\n[64] colorspace_2.0-3   terra_1.6-17       stars_0.5-6       \r\n[67] gt_0.7.0           classInt_0.4-7     memoise_2.0.1     \r\n[70] knitr_1.40         sass_0.4.2        \r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts_geodata/distance-to-roads_germany_2022_100m_03035_tif/distance-to-roads_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png",
+    "last_modified": "2022-11-22T13:24:01+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts_geodata/landuse_atlas_2009_1m_03035_tif/",
+    "title": "landuse atlas 2009",
+    "description": {},
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2022-11-14",
+    "categories": [
+      "Atlas",
+      "2019"
+    ],
+    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\nlanduse_atlas_2009_1m_03035_tifname\r\nlanduse_atlas_2009_1m_03035.tifcrs\r\n+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defsepsg\r\n3035year_of_data\r\n2009units_of_data\r\nmresolution\r\n1mtype_of_data\r\nordered_categoricaltype_of_file\r\n.tifsource\r\nmetaverlink_of_source\r\nNAdate_of_compile\r\n2022-09-05short_description\r\ncreated from landuse_brandenburg_2009_polygons_25833_gpkg and landuse_brandenburg_2009_lines_25833_gpkgmodified\r\nNA\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2022-11-21 16:57:36 CET\"\r\nR version 4.1.3 (2022-03-10)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 17763)\r\n\r\nMatrix products: default\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.1.2\r\n\r\nloaded via a namespace (and not attached):\r\n [1] Rcpp_1.0.9         tidyr_1.2.1        class_7.3-20      \r\n [4] assertthat_0.2.1   digest_0.6.29      utf8_1.2.2        \r\n [7] R6_2.5.1           evaluate_0.18      e1071_1.7-11      \r\n[10] ggplot2_3.3.6      highr_0.9          pillar_1.8.1      \r\n[13] rlang_1.0.6        rstudioapi_0.14    jquerylib_0.1.4   \r\n[16] rmarkdown_2.17     textshaping_0.3.6  stringr_1.4.1     \r\n[19] munsell_0.5.0      proxy_0.4-27       compiler_4.1.3    \r\n[22] xfun_0.32          pkgconfig_2.0.3    systemfonts_1.0.4 \r\n[25] htmltools_0.5.3    downlit_0.4.2      tidyselect_1.2.0  \r\n[28] tibble_3.1.8       codetools_0.2-18   fansi_1.0.3       \r\n[31] dplyr_1.0.10       withr_2.5.0        sf_1.0-8          \r\n[34] wk_0.6.0           grid_4.1.3         jsonlite_1.8.3    \r\n[37] lwgeom_0.2-8       gtable_0.3.1       lifecycle_1.0.3   \r\n[40] DBI_1.1.3          magrittr_2.0.3     units_0.8-0       \r\n[43] scales_1.2.1       KernSmooth_2.23-20 cli_3.4.0         \r\n[46] stringi_1.7.6      cachem_1.0.6       farver_2.1.1      \r\n[49] bslib_0.4.1        ellipsis_0.3.2     ragg_1.2.4        \r\n[52] generics_0.1.3     vctrs_0.4.1        distill_1.5       \r\n[55] s2_1.1.0           tools_4.1.3        glue_1.6.2        \r\n[58] purrr_0.3.4        abind_1.4-5        parallel_4.1.3    \r\n[61] fastmap_1.1.0      yaml_2.3.5         colorspace_2.0-3  \r\n[64] terra_1.6-17       stars_0.5-6        gt_0.7.0          \r\n[67] classInt_0.4-7     memoise_2.0.1      knitr_1.40        \r\n[70] sass_0.4.2        \r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts_geodata/landuse_atlas_2009_1m_03035_tif/landuse_atlas_2009_1m_03035_tif_files/figure-html5/plot-1.png",
+    "last_modified": "2022-11-22T13:24:01+01:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts_geodata/motorways_berlin_2022_100m_03035_tif/",
+    "title": "motorways berlin 2022",
+    "description": {},
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2022-11-14",
+    "categories": [
+      "Berlin",
+      "Binary",
+      "2022"
+    ],
+    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\nmotorways_berlin_2022_100m_03035_tifname\r\nmotorways_berlin_2022_100m_03035.tifcrs\r\n+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defsepsg\r\n3035year_of_data\r\n2022units_of_data\r\nNAresolution\r\n100mtype_of_data\r\nbinary_categoricaltype_of_file\r\n.tifsource\r\ngeofabriklink_of_source\r\nhttps://download.geofabrik.de/europe.htmldate_of_compile\r\n2022-05-16short_description\r\ncreated from osm_germany_2022_4326.gpkgmodified\r\nNA\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2022-11-21 11:29:20 CET\"\r\nR version 4.1.3 (2022-03-10)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 17763)\r\n\r\nMatrix products: default\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.1.2\r\n\r\nloaded via a namespace (and not attached):\r\n [1] Rcpp_1.0.9         tidyr_1.2.1        class_7.3-20      \r\n [4] assertthat_0.2.1   digest_0.6.29      utf8_1.2.2        \r\n [7] R6_2.5.1           evaluate_0.18      e1071_1.7-11      \r\n[10] ggplot2_3.3.6      highr_0.9          pillar_1.8.1      \r\n[13] rlang_1.0.6        rstudioapi_0.14    jquerylib_0.1.4   \r\n[16] rmarkdown_2.17     textshaping_0.3.6  stringr_1.4.1     \r\n[19] munsell_0.5.0      proxy_0.4-27       compiler_4.1.3    \r\n[22] xfun_0.32          pkgconfig_2.0.3    systemfonts_1.0.4 \r\n[25] htmltools_0.5.3    downlit_0.4.2      tidyselect_1.2.0  \r\n[28] tibble_3.1.8       codetools_0.2-18   fansi_1.0.3       \r\n[31] dplyr_1.0.10       withr_2.5.0        sf_1.0-8          \r\n[34] wk_0.6.0           grid_4.1.3         jsonlite_1.8.3    \r\n[37] lwgeom_0.2-8       gtable_0.3.1       lifecycle_1.0.3   \r\n[40] DBI_1.1.3          magrittr_2.0.3     units_0.8-0       \r\n[43] scales_1.2.1       KernSmooth_2.23-20 cli_3.4.0         \r\n[46] stringi_1.7.6      cachem_1.0.6       farver_2.1.1      \r\n[49] bslib_0.4.1        ellipsis_0.3.2     ragg_1.2.4        \r\n[52] generics_0.1.3     vctrs_0.4.1        distill_1.5       \r\n[55] s2_1.1.0           tools_4.1.3        glue_1.6.2        \r\n[58] purrr_0.3.4        abind_1.4-5        parallel_4.1.3    \r\n[61] fastmap_1.1.0      yaml_2.3.5         colorspace_2.0-3  \r\n[64] terra_1.6-17       stars_0.5-6        gt_0.7.0          \r\n[67] classInt_0.4-7     memoise_2.0.1      knitr_1.40        \r\n[70] sass_0.4.2        \r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts_geodata/motorways_berlin_2022_100m_03035_tif/motorways_berlin_2022_100m_03035_tif_files/figure-html5/plot-1.png",
+    "last_modified": "2022-11-22T13:24:01+01:00",
+    "input_file": {}
   }
 ]
