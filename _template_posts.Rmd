@@ -1,0 +1,34 @@
+---
+title: "please enter title"
+description: |
+ please enter description
+categories:
+  - please enter categories in this format
+  
+author:
+  - name: your name
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r install, eval=3}
+
+```
+
+```{r example}
+
+```
+
+```{r plot, echo=FALSE}
+
+```
+
