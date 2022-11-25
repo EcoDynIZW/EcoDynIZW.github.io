@@ -1,15 +1,14 @@
 ---
-title: 'corine berlin 2015'
+title: 'Europe raw raster data'
 categories:
-  - Corine
-  - '2015'
-  - Berlin
+  - Europe
+  - Raster
 author:
   - name: Moritz Wenzler-Meya
 
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 2022-11-22
+date: 2022-11-25
 output:
   distill::distill_article:
     self_contained: false
@@ -39,40 +38,40 @@ ggplot2::theme_update(
 ```
 
 
-
-```{r data-impor}
-
-# get path
-path <-
-    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-proc/berlin/corine_berlin_2015_20m_03035_tif')
-
-meta <-
-      utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
-  dplyr::mutate(dplyr::across(dplyr::everything(), as.character))
-
-tif <-
-  terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
+<details><summary>100m resolution</summary>
+```{r}
+"meta-data grassland 100m 2018"
+"meta-data grassland 100m 2015"
 ```
+</details>
 
-```{r data-table}
-meta_gt <- gt::gt(meta %>%
-  tidyr::pivot_longer(
-    cols = dplyr::everything(),
-    names_to = 'column',
-    values_to = 'input'
-  ))
+<details><summary>20m resolution</summary>
+
+  <details><summary>2018</summary>
+```{r}
+"meta-data grassland 20m 2018"
 ```
+  </details>
 
-```{r map}
-p_map <-
- readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-proc/berlin/corine_berlin_2015_20m_03035_tif/corine_berlin_2015_20m_03035_tif' ,'.rds'))
-
+  <details><summary>2015</summary>
+```{r}
+"meta-data grassland 20m 2015"
 ```
+  </details>
 
-```{r plot, layout='l-screen'}
-p_map
-meta_gt
+  <details><summary>2012</summary>
+```{r}
+"meta-data grassland 20m 2012"
 ```
+  </details>
+
+</details>
+
+<details><summary>10m resolution</summary>
+```{r}
+"meta-data grassland 10m 2012"
+```
+</details>
 
 <details><summary>Session Info</summary>
 
