@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2644,7 +2637,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2732,12 +2725,32 @@ Research
 <div class="d-article">
 <p><strong>2020</strong></p>
 <ul>
-<li><p>A population viability and connectivity analysis for the alpine lynx (<em>Lynx lynx</em>) population. <strong>Eva Sanchez Arribas.</strong> <span class="desaturated">19.11.2020. MSc. Uppsala University, Sweden. Supervision: Kramer-Schadt S, Planillo A, Molinari-Jobin A (KORA).</span></p></li>
-<li><p>Influence of roost site availability on activity of forest-dwelling bats above coniferous forests. <strong>Franziska Röpke.</strong> <span class="desaturated">15.10.2020. BSc. Ökologie und Umweltplanung. TU Berlin. Supervision: Volker Kelm (K&amp;S Umweltgutachten), Kramer-Schadt S.</span></p></li>
-<li><p>Spatial, temporal and interindividual determinants of wildlife-vehicle collision mortality in spotted hyenas in the Serengeti National Park between 1989 and 2020. <strong>Marwan Naciri.</strong> <span class="desaturated">25.06.2020. Msc. Master Biosciences École Normale Supérieure (ENS) Lyon, Frankreich. Supervision: Benhaiem S, Gicquel M, Planillo A, East M, Hofer H.</span></p></li>
-<li><p>Using social network analysis on a population of reintroduced Northern Bald Ibis (<em>Geronticus eremita</em>) to understand decisions of migratory association. <strong>Sinah Drenske.</strong> <span class="desaturated">03.08.2020. Msc. Ökologie und Umweltplanung. Technische Universität Berlin. Supervision: Kramer-Schadt S, Radchuk V, Benhaiem S, Landgraf C.</span> <strong>→ Prize for best Master thesis!</strong></p></li>
+<li><p>A population viability and connectivity analysis for the alpine
+lynx (<em>Lynx lynx</em>) population. <strong>Eva Sanchez
+Arribas.</strong> <span class="desaturated">19.11.2020. MSc. Uppsala
+University, Sweden. Supervision: Kramer-Schadt S, Planillo A,
+Molinari-Jobin A (KORA).</span></p></li>
+<li><p>Influence of roost site availability on activity of
+forest-dwelling bats above coniferous forests. <strong>Franziska
+Röpke.</strong> <span class="desaturated">15.10.2020. BSc. Ökologie und
+Umweltplanung. TU Berlin. Supervision: Volker Kelm (K&amp;S
+Umweltgutachten), Kramer-Schadt S.</span></p></li>
+<li><p>Spatial, temporal and interindividual determinants of
+wildlife-vehicle collision mortality in spotted hyenas in the Serengeti
+National Park between 1989 and 2020. <strong>Marwan Naciri.</strong>
+<span class="desaturated">25.06.2020. Msc. Master Biosciences École
+Normale Supérieure (ENS) Lyon, Frankreich. Supervision: Benhaiem S,
+Gicquel M, Planillo A, East M, Hofer H.</span></p></li>
+<li><p>Using social network analysis on a population of reintroduced
+Northern Bald Ibis (<em>Geronticus eremita</em>) to understand decisions
+of migratory association. <strong>Sinah Drenske.</strong> <span
+class="desaturated">03.08.2020. Msc. Ökologie und Umweltplanung.
+Technische Universität Berlin. Supervision: Kramer-Schadt S, Radchuk V,
+Benhaiem S, Landgraf C.</span> <strong>→ Prize for best Master
+thesis!</strong></p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
