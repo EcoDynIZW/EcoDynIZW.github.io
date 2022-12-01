@@ -1,0 +1,27 @@
+---
+title: "Teaching"
+description: ""
+output:
+distill::distill_article:
+  toc: true
+  toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+tba
+
+start [download link project](www.download.de)
+
+Session 1 [read more](session1.html)
+          [donwload](session 1.R)
+
+
+berlin_districts <- terra::rast("https://nx29700.your-storageshare.de/s/KRW7BxmWX5GLEWL/download/motorways_berlin_2022_100m_03035.tif")
+
+
+
+
+
