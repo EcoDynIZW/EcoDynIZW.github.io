@@ -48,11 +48,11 @@ Go the [Geoportal Berlin (FIS-Broker)](https://fbinter.stadt-berlin.de/fb/index.
 
 ![](man/download-fisbroker-1.png)
 
-```{r example}
+```{r example, layout="l-page"}
 data_sf <- d6raster::download_fisbroker("https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort")
 ```
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, layout="l-page"}
 data_raster <- raster::rasterize(x = data_sf,
                                  y = raster::raster(
                                    crs = sf::st_crs(data_sf)$proj4string,
@@ -63,39 +63,17 @@ data_raster <- raster::rasterize(x = data_sf,
                                  field = "inst_leistung")
 ```
 
-
-```{r, echo=FALSE}
- ggplot2::ggplot() +
-  stars::geom_stars(data = stars::st_as_stars(data_raster)) +
-  ggplot2::coord_sf(expand = FALSE) + 
-  ggplot2::scale_fill_gradient(
-     low = "#f1effc",
-      high = "#221462",
-      breaks = as.vector(terra::minmax(terra::rast(data_raster))),
-      name = NULL,
-      na.value = "grey90"
-    ) +
-    ggplot2::guides(fill = ggplot2::guide_legend(label.position = "bottom"))+
-  ggplot2::theme(axis.text.x=ggplot2::element_blank(),
-        axis.ticks.x=ggplot2::element_blank(),
-        axis.text.y=ggplot2::element_blank(),
-        axis.ticks.y=ggplot2::element_blank(),
-        axis.title = ggplot2::element_blank())
-
-```
-
-
 ## useage with lapply
 
 After that you can just run "data_sf".
 
-```{r example-data}
+```{r example-data, layout="l-page"}
 data_sf
 ```
 
 If you want to download several datasets at one time you can just use lapply and a list of download links.
 
-```{r example-lapply}
+```{r example-lapply, layout="l-page"}
 data_list <- list("https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wind_standort",
                   "https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/sach_kleing") 
   
@@ -108,11 +86,11 @@ After that you can save them to disk or use them just within our script!
 
 Note that some of the links may not work in the future because links can be changed or data gets outdated.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, layout="l-page"}
 df <- read.csv2("man/fis_broker_wfs_links.csv")[,c(1,2,4)]
 ```
 
-```{r, echo=FALSE}
-gt::gt(df)
+```{r, echo=FALSE, layout="l-page"}
+DT::datatable(df)
 ```
 
