@@ -790,6 +790,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1862,15 +1863,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2637,7 +2644,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2718,8 +2725,7 @@ Research
 <h1>Team 2: Population Dynamics</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p><b>Lead: Dr. Stephanie Kramer-Schadt &amp; Dr. Viktoriia
-Radchuk</b><br />
+<p><p><b>Lead: Dr. Stephanie Kramer-Schadt &amp; Dr. Viktoriia Radchuk</b><br />
 <b>Assistance: Dr. Conny Landgraf &amp; Moritz Wenzler</b></p></p>
 </div>
 
@@ -2729,32 +2735,14 @@ Radchuk</b><br />
 <p><img src="img/team-pop-header.png" width="913" /></p>
 </div>
 <div class="highlightbox">
-<p><span class="highlight"> Wildlife has to cope with many challenges in
-the Anthropocene, but data are often too scarce and messy to predict the
-future fate of populations and communities under global change. To
-disentangle processes and drivers behind ecological and evolutionary
-dynamics of wildlife populations and communities, we combine field work
-with advanced data analysis and the development of concepts with
-designing stochastic simulation models. We use forecasting techniques to
-project scenarios of population and community change under disturbances.
-With this, we contribute to applied and theoretic ecology and
-biodiversity conservation under global change. </span></p>
+<p><span class="highlight">
+Wildlife has to cope with many challenges in the Anthropocene, but data are often too scarce and messy to predict the future fate of populations and communities under global change. To disentangle processes and drivers behind ecological and evolutionary dynamics of wildlife populations and communities, we combine field work with advanced data analysis and the development of concepts with designing stochastic simulation models. We use forecasting techniques to project scenarios of population and community change under disturbances. With this, we contribute to applied and theoretic ecology and biodiversity conservation under global change.
+</span></p>
 </div>
-<p><strong>Dr. Stephanie Kramer-Schadt</strong>, Department and Team
-Lead — applied ecologist, population and disease dynamics at the
-landscape scale, passionate about wildlife per se, carnivores in
-particular, D6 and movement ecology, uses models as tools to communicate
-management issues.</br></p>
-<p><strong>Dr. Viktoriia Radchuk</strong>, Team Lead — quantitative
-ecologist, stability of populations and communities under global change,
-interested in theory, synthesis, and integration of data with models to
-assist conservation.</br></p>
-<p><strong>Dr. Conny Landgraf</strong>, Coordination — organizes us,
-behavioral ecologist, interested in sensory and acoustic cues of
-animals.</br></p>
-<p><strong>Moritz Wenzler-Meya</strong>, GIS-Lab— geodata analyst,
-responsible for the GIS lab, providing geodata and supporting
-coding.</br></p>
+<p><strong>Dr. Stephanie Kramer-Schadt</strong>, Department and Team Lead — applied ecologist, population and disease dynamics at the landscape scale, passionate about wildlife per se, carnivores in particular, D6 and movement ecology, uses models as tools to communicate management issues.</br></p>
+<p><strong>Dr. Viktoriia Radchuk</strong>, Team Lead — quantitative ecologist, stability of populations and communities under global change, interested in theory, synthesis, and integration of data with models to assist conservation.</br></p>
+<p><strong>Dr. Conny Landgraf</strong>, Coordination — organizes us, behavioral ecologist, interested in sensory and acoustic cues of animals.</br></p>
+<p><strong>Moritz Wenzler-Meya</strong>, GIS-Lab— geodata analyst, responsible for the GIS lab, providing geodata and supporting coding.</br></p>
 <p><br></p>
 <div class="layout-chunk" data-layout="l-screen">
 <p><img src="img/meckpom-csf-inferno-cut-top.png" width="2048" /></p>
@@ -2764,78 +2752,55 @@ coding.</br></p>
 <hbox>Theory and Synthesis</hbox>
 </div>
 <div class="headerbox-secondary">
-<hbox-secondary>Stability under global change and across levels of
-organization</headerbox-secondary>
+<hbox-secondary>Stability under global change and across levels of organization</headerbox-secondary>
 </div>
 <p><img src="img/team-pop-stability.png" /></p>
 <p><strong>Dr. Cédric Scherer, Thibault Fronville</strong></p>
-<p>To understand how populations and communities react to global change
-we study how their stability is affected by disturbances. To this end we
-model disturbances of different types and intensity and measure several
-stability metrics.</p>
+<p>To understand how populations and communities react to global change we study how their stability is affected by disturbances. To this end we model disturbances of different types and intensity and measure several stability metrics.</p>
 <ul>
 <li><strong>Animal responses to climate change</strong></li>
-<li><strong>Environmental variation effects on stability of populations
-and communities</strong></li>
+<li><strong>Environmental variation effects on stability of populations and communities</strong></li>
 </ul>
-<small> <b>Key Publications:</b>
+<small>
+<b>Key Publications:</b>
 <ul>
 <li>
-<a href="https://doi.org/10.1111/ele.13226">Radchuk et al. (2019) ECOL
-LETT</a>
+<a href="https://doi.org/10.1111/ele.13226">Radchuk et al. (2019) ECOL LETT</a>
 </li>
 <li>
-<a
-href="https://doi.org/10.1038/s41467-019-10924-4&#39;%3E10.1038/s41467-019-10924-4">Radchuk
-et al. (2019) NAT COMMUN</a>
+<a href="https://doi.org/10.1038/s41467-019-10924-4&#39;%3E10.1038/s41467-019-10924-4">Radchuk et al. (2019) NAT COMMUN</a>
 </li>
 </ul>
 <p></small></p>
 <div class="headerbox-secondary">
-<hbox-secondary>Wildlife disease dynamics: Linking host and pathogen
-traits</headerbox-secondary>
+<hbox-secondary>Wildlife disease dynamics: Linking host and pathogen traits</headerbox-secondary>
 </div>
 <p><img src="img/team-pop-disease.png" /></p>
-<p><strong>Dr. Cédric Scherer, Tobias Kürschner, Marius
-Grabow</strong></p>
-<p>Pathogens are an integral part of biodiversity, influencing
-population dynamics of their hosts and playing an important functional
-role in shaping community structure. Here, our aim is to understand the
-effect that species as ‘mobile pathogen links’ with their different
-movement types and life-history strategies have on disease distribution,
-spread, persistence and evolution.</p>
-<p> → see also <a href="https://www.bio-move.org/">BioMove Graduate
-School</a></p>
+<p><strong>Dr. Cédric Scherer, Tobias Kürschner, Marius Grabow</strong></p>
+<p>Pathogens are an integral part of biodiversity, influencing population dynamics of their hosts and playing an important functional role in shaping community structure. Here, our aim is to understand the effect that species as ‘mobile pathogen links’ with their different movement types and life-history strategies have on disease distribution, spread, persistence and evolution.</p>
+<p> → see also <a href="https://www.bio-move.org/">BioMove Graduate School</a></p>
 <ul>
-<li><strong>Movement effects on pathogen spread and disease
-persistence</strong></li>
-<li><strong>Evolution of pathogenic strains in dynamic
-landscapes</strong></li>
-<li><strong>Pathogen-induced movement strategies and fitness
-consequences</strong></li>
+<li><strong>Movement effects on pathogen spread and disease persistence</strong></li>
+<li><strong>Evolution of pathogenic strains in dynamic landscapes</strong></li>
+<li><strong>Pathogen-induced movement strategies and fitness consequences</strong></li>
 </ul>
-<small> <b>Key Publications:</b>
+<small>
+<b>Key Publications:</b>
 <ul>
 <li>
-<a href="https://doi.org/10.1002/ece3.7478">Kürschner et al. (2021) ECOL
-EVOL</a>
+<a href="https://doi.org/10.1002/ece3.7478">Kürschner et al. (2021) ECOL EVOL</a>
 </li>
 <li>
-<a
-href="https://doi.org/10.1111/oik.07002&#39;%3E10.1111/oik.07002">Scherer
-et al. (2020) OIKOS</a>
+<a href="https://doi.org/10.1111/oik.07002&#39;%3E10.1111/oik.07002">Scherer et al. (2020) OIKOS</a>
 </li>
 <li>
-<a href="https://doi.org/10.1111/1365-2656.13070">Scherer et al. (2019)
-J ANIM ECOL</a>
+<a href="https://doi.org/10.1111/1365-2656.13070">Scherer et al. (2019) J ANIM ECOL</a>
 </li>
 <li>
-<a href="https://doi.org/10.1111/1365-2435.13059">Marescot et al. (2018)
-FUNCT ECOL</a>
+<a href="https://doi.org/10.1111/1365-2435.13059">Marescot et al. (2018) FUNCT ECOL</a>
 </li>
 <li>
-<a href="https://doi.org/10.1111/j.1600-0706.2008.16582.x">Kramer-Schadt
-et al. (2009) OIKOS</a>
+<a href="https://doi.org/10.1111/j.1600-0706.2008.16582.x">Kramer-Schadt et al. (2009) OIKOS</a>
 </li>
 </ul>
 <p></small></p>
@@ -2843,99 +2808,69 @@ et al. (2009) OIKOS</a>
 <hbox>Applied Ecology</hbox>
 </div>
 <div class="headerbox-secondary">
-<hbox-secondary>Urban wildlife ecology: How do animals respond to novel
-environments?</hbox-secondary>
+<hbox-secondary>Urban wildlife ecology: How do animals respond to novel environments?</hbox-secondary>
 </div>
 <p><img src="img/team-pop-urban.png" /></p>
-<p><strong>Dr. Aimara Planillo, Dr. Julie Louvrier, Sinah Drenske, Simon
-Moesch</strong></p>
-<p>Urbanisation poses risks and opportunities for wildlife. We
-investigate how species cope with these everyday challenges by analysing
-the spatial factors and species interactions that underlie their
-distributions along a rural to urban gradient and by making inference on
-their behavioral plasticity.</p>
-<p> → see also <a
-href="https://www.bbib.org/rural-urban-coupling.html">BIBS — rural-urban
-coupling</a><br />
+<p><strong>Dr. Aimara Planillo, Dr. Julie Louvrier, Sinah Drenske, Simon Moesch</strong></p>
+<p>Urbanisation poses risks and opportunities for wildlife. We investigate how species cope with these everyday challenges by analysing the spatial factors and species interactions that underlie their distributions along a rural to urban gradient and by making inference on their behavioral plasticity.</p>
+<p> → see also <a href="https://www.bbib.org/rural-urban-coupling.html">BIBS — rural-urban coupling</a><br />
  → see also <a href="https://www.wtimpact.de/">WT Impact</a></p>
 <ul>
-<li><strong>Bridging spatial data in community distribution
-models</strong></li>
-<li><strong>Effects of species interactions and human disturbance on
-community compositions</strong></li>
-<li><strong>Ecology of red foxes (<em>Vulpes vulpes</em>) in
-anthropogenic landscapes</strong></li>
+<li><strong>Bridging spatial data in community distribution models</strong></li>
+<li><strong>Effects of species interactions and human disturbance on community compositions</strong></li>
+<li><strong>Ecology of red foxes (<em>Vulpes vulpes</em>) in anthropogenic landscapes</strong></li>
 <li><strong>Human perceptions of urban wildlife</strong></li>
 </ul>
-<small> <b>Key Publications:</b><br />
+<small>
+<b>Key Publications:</b><br />
+
 <ul>
 <li>
-<a
-href="https://doi.org/10.1016/j.landurbplan.2021.104098&#39;%3E10.1016/j.landurbplan.2021.104098">Planillo
-et al. (2021) LANDSC URBAN PLA</a>
+<a href="https://doi.org/10.1016/j.landurbplan.2021.104098&#39;%3E10.1016/j.landurbplan.2021.104098">Planillo et al. (2021) LANDSC URBAN PLA</a>
 </li>
 <li>
-<a
-href="https://doi.org/10.1111/ddi.13169&#39;%3E10.1111/ddi.13169">Planillo,
-Kramer-Schadt, et al. (2020) DIVERS DISTRIB</a>
+<a href="https://doi.org/10.1111/ddi.13169&#39;%3E10.1111/ddi.13169">Planillo, Kramer-Schadt, et al. (2020) DIVERS DISTRIB</a>
 </li>
 <li>
-<a href="https://doi.org/10.3389/fevo.2018.00136">Gras et al. (2018)
-FRONT ECOL EVOL</a>
+<a href="https://doi.org/10.3389/fevo.2018.00136">Gras et al. (2018) FRONT ECOL EVOL</a>
 </li>
 <li>
-<a href="https://doi.org/10.3389/fevo.2017.00157">Stillfried et
-al. (2017) FRONT ECOL EVOL</a>
+<a href="https://doi.org/10.3389/fevo.2017.00157">Stillfried et al. (2017) FRONT ECOL EVOL</a>
 </li>
 </ul>
 <p></small></p>
 <div class="headerbox-secondary">
-<hbox-secondary>Wildlife distributions, population dynamics, and
-conservation</hbox-secondary>
+<hbox-secondary>Wildlife distributions, population dynamics, and conservation</hbox-secondary>
 </div>
 <p><img src="img/team-pop-wildlife.png" /></p>
-<p><strong>Dr. Julie Louvrier, Dr. Aimara Planillo, Dr. Cédric Scherer,
-Dr. Joe Premier, Ana Patricia Calderon, Eva Sánchez Arribas</strong></p>
-<p>Wildlife faces big challenges persisting in human-dominated
-landscapes. We model their population dynamics, viability and
-connectivity using individual-based models on a spatially-explicit
-basis, with the aim of supporting wildlife management and
-conservation.</p>
+<p><strong>Dr. Julie Louvrier, Dr. Aimara Planillo, Dr. Cédric Scherer, Dr. Joe Premier, Ana Patricia Calderon, Eva Sánchez Arribas</strong></p>
+<p>Wildlife faces big challenges persisting in human-dominated landscapes. We model their population dynamics, viability and connectivity using individual-based models on a spatially-explicit basis, with the aim of supporting wildlife management and conservation.</p>
 <ul>
-<li><strong>Wolf population dynamics and establishment in
-Germany</strong></li>
-<li><strong>Jaguar connectivity and conservation prioritization in
-Central America</strong></li>
-<li><strong>Modelling genetic processes to support the conservation
-management of Eurasian lynx</strong></li>
+<li><strong>Wolf population dynamics and establishment in Germany</strong></li>
+<li><strong>Jaguar connectivity and conservation prioritization in Central America</strong></li>
+<li><strong>Modelling genetic processes to support the conservation management of Eurasian lynx</strong></li>
 </ul>
-<small> <b>Key Publications:</b>
+<small>
+<b>Key Publications:</b>
 <ul>
 <li>
-<a href="https://doi.org/10.1186/s40462-020-00204-y">Premier et
-al. (2020) MOV ECOL</a>
+<a href="https://doi.org/10.1186/s40462-020-00204-y">Premier et al. (2020) MOV ECOL</a>
 </li>
 <li>
-<a
-href="https://doi.org/10.1016/j.biocon.2018.05.011&#39;%3E10.1016/j.biocon.2018.05.011">Heurich,
-Schultze-Naumburg et al. (2018) BIOL CONSERV</a>
+<a href="https://doi.org/10.1016/j.biocon.2018.05.011&#39;%3E10.1016/j.biocon.2018.05.011">Heurich, Schultze-Naumburg et al. (2018) BIOL CONSERV</a>
 </li>
 <li>
-<a
-href="https://doi.org/10.1890/15-0756.1&#39;%3E10.1890/15-0756.1">Radchuk,
-Ims &amp; Andreassen (2016) ECOLOGY</a>
+<a href="https://doi.org/10.1890/15-0756.1&#39;%3E10.1890/15-0756.1">Radchuk, Ims &amp; Andreassen (2016) ECOLOGY</a>
 </li>
 <li>
-<a href="https://doi.org/10.1016/j.cub.2014.11.067">Struebig et
-al. (2015) CURR BIOL</a>
+<a href="https://doi.org/10.1016/j.cub.2014.11.067">Struebig et al. (2015) CURR BIOL</a>
 </li>
 </ul>
 <p></small></p>
 <div class="layout-chunk" data-layout="l-screen">
 <p><img src="img/meckpom-csf-inferno-cut-bottom.png" width="2048" /></p>
 </div>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
