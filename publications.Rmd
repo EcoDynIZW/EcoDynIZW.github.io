@@ -96,13 +96,13 @@ FRONT VET SCI, **9**, 980554. doi:<span>[10.3389/fvets.2022.980554](https://doi.
 
 * Stiegler J, Lins A, Dammhahn M, **Kramer-Schadt S**, Ortmann S, Blaum N (2022): Personality drives activity and space use in a mammalian herbivore. MOV ECOL, **10**, 33. doi:<span>[10.1016/j.biocon.2021.109446](https://doi.org/10.1016/j.biocon.2021.109446)</span>
 
-* Vallejo-Vargas AF, Sheil D, Semper-Pascual A, ... **Mugerwa B**, ... et al. (2022): Consistent diel activity patterns of forest mammals among tropical regions. NAT COMMUN **13**, 7102.  doi:<span>[10.1038/s41467-022-34825-1](https://doi.org/10.1038/s41467-022-34825-1)</span>
+* Vallejo-Vargas AF, Sheil D, Semper-Pascual A, ... **Mugerwa B**, ... et al. (2022): Consistent diel activity patterns of forest mammals among tropical regions. NAT COMMUN, **13**, 7102.  doi:<span>[10.1038/s41467-022-34825-1](https://doi.org/10.1038/s41467-022-34825-1)</span>
 
 * Vlaschenko A, Kravchenko K, Yatsiuk Y, Hukov V, **Kramer-Schadt S**, **Radchuk V** (2022): Bat assemblages are shaped by land cover types and forest age: A case study from eastern Ukraine. FORESTS, **13**, 1732. doi:<span>[10.3390/f13101732](https://doi.org/10.3390/f13101732)</span>
 
-* Voigt CC, **Scherer C**, Runkel V (2022). Modelling the power of acoustic monitoring to predict bat fatalities at wind turbines. CONSERV SCI PRACT (Early View). doi:<span>[10.1111/csp2.12841](https://doi.org/10.1111/csp2.12841)</span>
+* Voigt CC, **Scherer C**, Runkel V (2022). Modelling the power of acoustic monitoring to predict bat fatalities at wind turbines. CONSERV SCI PRACT, **4**, e12841. doi:<span>[10.1111/csp2.12841](https://doi.org/10.1111/csp2.12841)</span>
 
-* **Wong S**, Guharajan R, Petrus A, Jubili J, Lietz R, Abrams J, Hon J, Alen L, Ting N, Wong G, Tchin L, Bijack N, **Kramer-Schadt S**, **Wilting A**, **Sollmann R** (2022): How do terrestrial wildlife communities respond to small-scale Acacia plantations embedded in harvested tropical forest? ECOL EVOL,**12**, e9337. doi:<span>[10.1002/ece3.9337](https://doi.org/10.1002/ece3.9337)</span>
+* **Wong S**, Guharajan R, Petrus A, Jubili J, Lietz R, Abrams J, Hon J, Alen L, Ting N, Wong G, Tchin L, Bijack N, **Kramer-Schadt S**, **Wilting A**, **Sollmann R** (2022): How do terrestrial wildlife communities respond to small-scale Acacia plantations embedded in harvested tropical forest? ECOL EVOL, **12**, e9337. doi:<span>[10.1002/ece3.9337](https://doi.org/10.1002/ece3.9337)</span>
 
 
 
