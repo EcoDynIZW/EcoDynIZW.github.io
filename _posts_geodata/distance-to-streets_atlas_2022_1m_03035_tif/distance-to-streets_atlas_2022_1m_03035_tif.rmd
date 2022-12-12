@@ -1,8 +1,9 @@
 ---
-title: 'landuse atlas 2009'
+title: 'distance-to-streets atlas 2022'
 categories:
   - Atlas
-  - '2019'
+  - '2022'
+  - distance
 author:
   - name: Moritz Wenzler-Meya
 
@@ -43,7 +44,7 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-proc/atlas/landuse_atlas_2009_1m_03035_tif')
+    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-proc/atlas/distance-to-streets_atlas_2022_1m_03035_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -64,7 +65,7 @@ meta_gt <- gt::gt(meta %>%
 
 ```{r map}
 p_map <-
- readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-proc/atlas/landuse_atlas_2009_1m_03035_tif/landuse_atlas_2009_1m_03035_tif' ,'.rds'))
+ readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-proc/atlas/distance-to-streets_atlas_2022_1m_03035_tif/distance-to-streets_atlas_2022_1m_03035_tif' ,'.rds'))
 
 ```
 

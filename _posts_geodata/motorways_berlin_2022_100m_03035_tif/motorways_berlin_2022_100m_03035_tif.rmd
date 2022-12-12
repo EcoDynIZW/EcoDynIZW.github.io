@@ -2,18 +2,20 @@
 title: 'motorways berlin 2022'
 categories:
   - Berlin
-  - Binary
+  - binary
   - '2022'
 author:
   - name: Moritz Wenzler-Meya
+
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 2022-11-14
+date: '2022-12-12'
 output:
   distill::distill_article:
     self_contained: false
     toc: true
 ---
+
 
 
 ```{r setup, include=FALSE}
@@ -42,7 +44,7 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/GeoData/data-proc/berlin/motorways_berlin_2022_100m_03035_tif')
+    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-proc/berlin/motorways_berlin_2022_100m_03035_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -63,7 +65,7 @@ meta_gt <- gt::gt(meta %>%
 
 ```{r map}
 p_map <-
- readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-proc/berlin/motorways_berlin_2022_100m_03035_tif/motorways_berlin_2022_100m_03035_tif', '.rds'))
+ readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-proc/berlin/motorways_berlin_2022_100m_03035_tif/motorways_berlin_2022_100m_03035_tif' ,'.rds'))
 
 ```
 
