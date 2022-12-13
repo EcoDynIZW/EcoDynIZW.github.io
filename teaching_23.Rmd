@@ -28,7 +28,8 @@ If you are not familiar with R, open RStudio and follow the steps shown here: [I
 
 ### Folder setup
 
-We chose the following folder structure for our courses, which you may adopt. Create the subfolders (data, output, R) relative to a root-folder (e.g., d6_course_collection). Users familiar with R could directly implement our [d6 workflow package](https://github.com/EcoDynIZW/d6) to make project setups easier and to handle code and projects in a reproducible way.
+We chose the following folder structure for our courses, which you may adopt. Create a main (root) folder named d6_teaching_collection, then create the subfolders (data, output, R) relative to this root-folder (= d6_teaching_collection). Create an R-project within this folder (e.g. d6_teaching_collection.Rproj).
+Users familiar with R could directly implement our [d6 workflow package](https://github.com/EcoDynIZW/d6) to make project setups easier and to handle code and projects in a reproducible way.
 <br>
 Or you clone our [github repository](https://github.com/EcoDynIZW/d6_teaching_collection) directly:
 https://github.com/EcoDynIZW/d6_teaching_collection.
@@ -36,7 +37,7 @@ https://github.com/EcoDynIZW/d6_teaching_collection.
 <br>
 
 ``` bash
-├── d6_course_collection                   # root folder 
+├── d6_teaching_collection                   # root folder 
 │   └── data_borneo                        # the Borneo data
 │       └── geo_raster_current_asc         # geo data, found in data_borneo
 │       └── animal_data                    # animal observation data data_borneo
@@ -46,6 +47,12 @@ https://github.com/EcoDynIZW/d6_teaching_collection.
 │       └── script_course2.R
 ```
 <br>
+
+For the full courses, we will provide you with additional data. Drag and drop the folders "data_borneo", "data_berlin", "data_move" from the provided zip files into the main folder (e.g. d6_teaching_collection). 
+
+<br>
+TODO --------------- provide link ----------------------
+
 
 ### Change decimal separator
 from comma to point in your computer settings if you are working from a German PC, e.g.in Windows --> Settings --> Time and Region --> Region --> Advanced Settings --> decimal separator: change here to point.
