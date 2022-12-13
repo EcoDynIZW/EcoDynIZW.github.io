@@ -75,7 +75,7 @@ These courses contain the minimum knowledge for handling, manipulating and visua
 (https://www.r-bloggers.com/list-of-free-online-r-tutorials/). Course 1 is rather a 'refresher' of the basic R concepts that are needed for all subsequent courses.
 <br>
 
-Course1_IntroR
+[Course1_IntroR](Course1_RIntro.html)&ensp -----TODO - correct linking---------- 
 course2_SpatialR
 
 
@@ -87,14 +87,14 @@ Please download MaxEnt here: https://biodiversityinformatics.amnh.org/open_sourc
 For MaxEnt you may still need to install a Java version. If you double-click the file maxent.jar, an  interface should appear
 
 
-Course3_SDM
+Course3_a_SDM
 
 
 
 
 
 ### repeated presence absence / occupancy models
-Course5_occu
+Course5_b_occu
 
 ##Movement analysis
 ### telemetry data
@@ -102,6 +102,6 @@ Course5_occu
 Course4_MoveQ
 
 ##Biodiversity analysis
-Course6_
+Course5_
 
 
