@@ -11,17 +11,59 @@ distill::distill_article:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-tba
+#Course collection
 
-start [download link project](www.download.de)
+Welcome to the course collection we have developed at our Department/ Chair. Below you will find the compilation of our courses hosted within one repository, so that data can be shared between the courses.
 
-Session 1 [read more](session1.html)
-          [donwload](session 1.R)
+The courses follow a logic order. The first introductory courses give an overview over handling data in R; we then introduce statistical analyses for various types of data, e.g. from biodiversity analyses of community transect counts, via spatial distribution models of single species, towards analyses of population trends.
+
+To conduct the courses, please follow the course instructions step by step in the respective html-files.
+
+## Folder setup
+
+We chose the following folder structure for our courses, which you may adopt. Create the subfolders (data, output, R) relative to a root-folder (e.g., d6_course_collection). Users familiar with R could directly implement our [d6 workflow package](https://github.com/EcoDynIZW/d6) to make project setups easier and to handle code and projects in a reproducible way.
+
+Or you clone our [github repository](https://github.com/EcoDynIZW/d6_teaching_collection) directly:
+https://github.com/EcoDynIZW/d6_teaching_collection.
+
+<br>
+
+``` bash
+├── d6_course_collection                   # root folder 
+│   └── data_borneo                        # the Borneo data
+│       └── geo_raster_current_asc         # geo data, found in data_borneo
+│       └── animal_data                    # animal observation data data_borneo
+│   └── output                             # storage for files created during course
+│   └── R                                  # store here all your scripts, i.e.
+│       └── script_course1.R
+│       └── script_course2.R
+```
+<br>
 
 
-berlin_districts <- terra::rast("https://nx29700.your-storageshare.de/s/KRW7BxmWX5GLEWL/download/motorways_berlin_2022_100m_03035.tif")
+
+##Basic concepts in R & Spatial R
+
+These courses contain the minimum knowledge for handling, manipulating and visualizing various data types in R (Course1: vectors, data.frames, lists; Course2: spatial data like raster and vector files). The second course builds on the concepts introduced in course 1. It is therefore recommended to start with course 1. Please note, that course 1 is **not** meant as a beginners course - a lot of great in-depth courses are out there. Course 1 is rather a 'refresher' of the basic R concepts that are needed for all subsequent courses.
 
 
+Course1_IntroR
+course2_SpatialR
+
+
+
+##Species distribution models 
+### presence absence / MaxEnt
+Course3_SDM
+### repeated presence absence / occupancy models
+
+
+##Movement analysis
+### telemetry data
+
+Course4_MoveQ
+
+##Biodiversity analysis
 
 
 
