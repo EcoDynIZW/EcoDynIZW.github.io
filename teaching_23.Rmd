@@ -25,7 +25,7 @@ To do the courses, please follow the course instructions step by step in the res
 * RStudio Desktop (https://rstudio.com/products/rstudio/download/)  <br>
 * current R-version (https://cran.r-project.org/bin/windows/base/)  <br>
 <br>
-If you are not familiar with R and RStudio, open RStudio and follow the steps shown here of how to wwrite scripts in R: [Intro to RStudio](https://github.com/EcoDynIZW/EcoDynIZW.github.io/tree/main/docs/teaching/L1_Intro_RStudio.pdf)
+If you are not familiar with R and RStudio, open RStudio and follow the steps shown here of how to wwrite scripts in R: [Intro to RStudio](https://github.com/EcoDynIZW/EcoDynIZW.github.io/tree/main/docs/teach/L1_Intro_RStudio.pdf)
 <br>
 ----------------to DO correct linking ----------------------
 <br>
