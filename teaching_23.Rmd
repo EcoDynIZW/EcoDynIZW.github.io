@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Welcome to the course collection we have developed at our Department/ Chair. Below you will find the compilation of our courses hosted within one repository, so that data can be shared between the courses.
 <br>
-The courses follow a logic order. The first introductory courses give an overview over handling data in R; we then introduce statistical analyses for various types of data, e.g. from biodiversity analyses of community transect counts, via spatial distribution models of single species, towards analyses of population trends.
+The courses follow a logic order. The first introductory courses give an overview over handling data in R; we then introduce statistical analyses for various types of data, e.g. from spatial distribution models of single species via biodiversity analyses of community counts, towards analyses of population trends.
 <br>
 To do the courses, please follow the course instructions step by step in the respective html-files of each course.
 
@@ -25,28 +25,22 @@ To do the courses, please follow the course instructions step by step in the res
 * RStudio Desktop (https://rstudio.com/products/rstudio/download/)  <br>
 * current R-version (https://cran.r-project.org/bin/windows/base/)  <br>
 <br>
-If you are not familiar with R, open RStudio and follow the steps shown here: [Intro to RStudio](https://github.com/EcoDynIZW/EcoDynIZW.github.io/tree/main/docs/teaching/L1_Intro_RStudio.pdf)
+If you are not familiar with R and RStudio, open RStudio and follow the steps shown here of how to wwrite scripts in R: [Intro to RStudio](https://github.com/EcoDynIZW/EcoDynIZW.github.io/tree/main/docs/teaching/L1_Intro_RStudio.pdf)
 <br>
 ----------------to DO correct linking ----------------------
 <br>
-A cool feature: use rainbow parentheses in RStudio. For this, go to: Tools --> Global Options --> Code --> Display: enable rainbow parentheses. It helps you visually with  closing brackets correctly for function calls and loops.
+A cool feature in RStudio: use the rainbow parentheses option. For this, go to: Tools --> Global Options --> Code --> Display: enable rainbow parentheses. It helps you visually with  closing brackets correctly for function calls and loops.
 
 ### Folder setup
 
-We chose the following folder structure for our courses, which you may adopt. Create a main (root) folder named d6_teaching_collection, then create the subfolders (data, output, R) relative to this root-folder (= d6_teaching_collection). Create an R-project within this folder (e.g. d6_teaching_collection.Rproj).
-<br>
-Users familiar with R could directly implement our [d6 workflow package](https://github.com/EcoDynIZW/d6) to make project setups easier and to handle code and projects in a reproducible way. If you chose this option, please read the ReadMe that appears on the github website and install the d6 package (with the options github= FALSE). This has the advantage that you have automatically created a root directory and an R-project. You can then load the data (e.g. data_borneo, provided in zip-files, see below) directly under the root directory. In the d6-package there are already start-rmd-scripts (= RMarkdown-scripts with yaml header -> open and execute with the symbol 'knitR'), which make the start easier. But you can also create your own  R-scripts, e.g. a new script for each course unit, which you put into the folder 'R'.
-
-<br>
-Or you clone our [github repository](https://github.com/EcoDynIZW/d6_teaching_collection) directly:
-https://github.com/EcoDynIZW/d6_teaching_collection.
+We chose the following folder structure for our courses, which you may adopt. 
 
 <br>
 
 ``` bash
 ├── d6_teaching_collection                 # root folder 
 │   └── data_borneo                        # e.g., the Borneo data
-│       └── geo_raster_current_asc         # geo data, found in data_borneo
+│       └── geo_raster_current_asc         # geo data, raster ascii format, as in data_borneo
 │       └── animal_data                    # animal observation data data_borneo
 │   └── output                             # storage for files created during course
 │   └── R                                  # store here all your scripts, i.e.
@@ -55,6 +49,18 @@ https://github.com/EcoDynIZW/d6_teaching_collection.
 │   └── d6_teaching_collection.Rproj       # the R-project
 ```
 <br>
+
+
+
+
+Create a main (root) folder named d6_teaching_collection, then create the subfolders (data, output, R) relative to this root-folder (= d6_teaching_collection). Create an R-project within this folder (e.g. d6_teaching_collection.Rproj).
+<br>
+Users familiar with R could directly implement our [d6 workflow package](https://github.com/EcoDynIZW/d6) to make project setups easier and to handle code and projects in a reproducible way. If you chose this option, please read the ReadMe that appears on the github website and install the d6 package (with the options github= FALSE). This has the advantage that you have automatically created a root directory and an R-project. You can then load the data (e.g. data_borneo, provided in zip-files, see below) directly under the root directory. In the d6-package there are already start-rmd-scripts (= RMarkdown-scripts with yaml header -> open and execute with the symbol 'knitR'), which make the start easier. But you can also create your own  R-scripts, e.g. a new script for each course unit, which you put into the folder 'R'.
+
+<br>
+Or you clone our [github repository](https://github.com/EcoDynIZW/d6_teaching_collection) directly:
+https://github.com/EcoDynIZW/d6_teaching_collection.
+
 
 ### Download course data
 For the full course, we will provide you with additional data. Drag and drop the folders "data_borneo", "data_berlin", "data_move" from the provided zip files into the main folder (here: d6_teaching_collection). 
