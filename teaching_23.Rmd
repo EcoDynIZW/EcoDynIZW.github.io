@@ -23,7 +23,7 @@ The courses follow a logic order. The first introductory courses give an overvie
 * RStudio Desktop (https://rstudio.com/products/rstudio/download/)  <br>
 * current R-version (https://cran.r-project.org/bin/windows/base/)  <br>
 <br>
-If you are not familiar with R and RStudio, open RStudio and follow the steps shown here of how to write scripts in R: [Intro to RStudio](img/teach/L1_Intro_RStudio.pdf)
+If you are not familiar with R and RStudio, open RStudio and follow the steps shown here of how to write scripts in R: [Intro to RStudio](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/teaching_23/img/teach/L1_Intro_RStudio.pdf)
 <br>
 <br>
 If you are familiar with scripting in R in RStudio, here's our tip of the day of a cool feature in RStudio: use the rainbow parentheses option. For this, go to: Tools --> Global Options --> Code --> Display: tick rainbow parentheses. It helps you visually with  closing brackets correctly for function calls and loops.
@@ -74,7 +74,7 @@ These courses contain the minimum knowledge for handling, manipulating and visua
 Course 1 is rather a 'refresher' of the basic R concepts that are needed for all subsequent courses. In a nutshell, it goes through the [base R cheatsheet](https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf) . It is recommended to have the cheatsheets ready and make your own notes into a copy of our script.
 <br>
 
-[Course1_IntroR](Course1_RIntro.html)&ensp -----TODO - correct linking---------- 
+[Course1_IntroR](https://stephkramer.github.io/Course1_RIntro.html) -----TODO - correct linking---------- 
 course2_SpatialR
 
 
