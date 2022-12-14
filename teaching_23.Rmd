@@ -48,7 +48,7 @@ To ease access to data and script-functionality, we recommend that you use the s
 a) If you are not so familiar with R and want to do the steps 'by hand', create a main (root) folder named *d6_teaching_collection*, then create the subfolders (data, output, R) relative to this root-folder (= d6_teaching_collection). Create an R-project within this folder (e.g. *d6_teaching_collection.Rproj*. For this, open RStudio --> File --> New Project --> Existing directory: and then link it with the root folder).
 <br><br>
 b) Users familiar with R and RMarkdown could directly implement our [d6 workflow package](https://github.com/EcoDynIZW/d6) to make project setups easier and to handle code and projects in a reproducible way. If you chose this option, please read the ReadMe that appears on the github website and install the d6 package (with the options github= FALSE). This has the advantage that you have automatically created a root directory and an R-project. You can then load the data (e.g. data_borneo, provided in zip-files, see below) directly under the root directory. In the d6-package there are already start-rmd-scripts (= RMarkdown-scripts with yaml header -> open and execute with the symbol 'knitR'), which make the start easier. But you can also create your own  R-scripts, e.g. a new script for each course unit, which you put into the folder 'R'.
-<br><br>  
+<br>  
 For both options, a) and b), you need to download the data separately (link to zip.file below)
 <br><br>
 c) Or you simply clone our [github repository](https://github.com/EcoDynIZW/d6_teaching_collection) directly: https://github.com/EcoDynIZW/d6_teaching_collection . This has the advantage that it comes with some basic data. However, we still recommend that you make a copy of the R-scripts so that you can write your own comments. <br>
@@ -63,6 +63,8 @@ For the full course, we will provide you with additional data. Drag and drop the
 ### Change decimal separator
 from comma to point in your computer settings if you are working from a German PC, e.g. in Windows --> Settings --> Time and Region --> Region --> Advanced Settings --> decimal separator: change here to point.
 
+### Change decimal separator
+Each course comes with exercises as a learning control.
 
 
 # Follow the courses
@@ -77,8 +79,9 @@ Course 1 is rather a 'refresher' of the basic R concepts that are needed for all
 
 ----------------------TODO - correct linking----------
 <br>
-[Course1_IntroR](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/teaching_23/img/teach/Course1_RIntro.html) 
-[course2_SpatialR]()
+[Course1_IntroR](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/teaching_23/img/teach/Course1_RIntro.html) <br>
+[course2_SpatialR]()<br>
+<br>
 
 
 
