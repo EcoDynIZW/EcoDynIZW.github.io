@@ -77,7 +77,7 @@ Course 1 is rather a 'refresher' of the basic R concepts that are needed for all
 
 ----------------------TODO - correct linking----------
 <br>
-[Course1_IntroR]( ) 
+[Course1_IntroR](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/teaching_23/img/teach/Course1_RIntro.html) 
 [course2_SpatialR]()
 
 
