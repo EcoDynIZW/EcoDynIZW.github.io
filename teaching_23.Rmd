@@ -91,10 +91,6 @@ For MaxEnt you may still need to install a Java version. If you double-click the
 
 Course3_a_SDM
 
-
-
-
-
 ### repeated presence absence / occupancy models
 Course3_b_occu
 
