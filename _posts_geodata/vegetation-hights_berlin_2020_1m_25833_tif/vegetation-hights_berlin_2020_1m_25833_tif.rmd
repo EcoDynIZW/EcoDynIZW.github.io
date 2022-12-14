@@ -1,15 +1,15 @@
 ---
-title: 'distance-to-streets atlas 2022'
+title: 'vegetation-hights berlin 2020'
 categories:
-  - Atlas
-  - '2022'
-  - distance
+  - Berlin
+  - '2020'
+  - 1m
 author:
   - name: Moritz Wenzler-Meya
 
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: '2022-12-13'
+date: '2022-12-14'
 output:
   distill::distill_article:
     self_contained: false
@@ -44,7 +44,7 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-proc/atlas/distance-to-streets_atlas_2022_1m_03035_tif')
+    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-raw/berlin/vegetation-hights_berlin_2020_1m_25833_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -65,7 +65,7 @@ meta_gt <- gt::gt(meta %>%
 
 ```{r map}
 p_map <-
- readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-proc/atlas/distance-to-streets_atlas_2022_1m_03035_tif/distance-to-streets_atlas_2022_1m_03035_tif' ,'.rds'))
+ readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-raw/berlin/vegetation-hights_berlin_2020_1m_25833_tif/vegetation-hights_berlin_2020_1m_25833_tif' ,'.rds'))
 
 ```
 
