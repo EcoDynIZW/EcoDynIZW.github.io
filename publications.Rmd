@@ -55,12 +55,14 @@ For older publications please check here:<br> [2021](pubs-2021.html)&ensp;|&ensp
 
 * **Gicquel M**, **East ML**, Hofer H, Cubaynes S, **Benhaiem S** (2022): Climate change does not decouple interactions between a central place foraging predator and its migratory prey. ECOSPHERE, **13**, e4012. doi:<span>[10.1002/ecs2.4012](https://doi.org/10.1002/ecs2.4012)</span>
 
+* Gorczynski D, Hsieh C, Ahumad J, Akampurira E, Andrianarisoa MH, Espinosa S, Johnson S, Kayijamahe C, Lima MGM, **Mugerwa B**, Rovero F, Salvador J, Santos F, Sheil D, Uzabah, E, & Beaudrot L (2022): Human density modulates spatial associations among tropical forest terrestrial mammal species. GLOB CHANG BIOL, **28**, 7205– 7216. doi:<span>[10.1111/gcb.16434](https://doi.org/10.1111/gcb.16434)</span> 
+
 * **Grabow M**, **Louvrier JLP**, **Planillo A**, Kiefer S, **Drenske S**, **Börner K**, Stillfried M, Hagen R, Kimmig S, Straka TM and **Kramer-Schadt S** (2022): Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels. FRONT ECOL EVOL, **10**, 881247. doi:<span>[10.3389/fevo.2022.881247](https://doi.org/10.3389/fevo.2022.881247)</span>
+
+* **Guharajan R**, Abrams JF, Abram NK, Lim HY, Gopalasamy RC, Deere NJ, Struebig MJ, Goossens B, Gardner PC, Brodie JF, Granados A, Teoh SW, Hearn AJ, Ross J, Macdonald DW, **Mohamed A**, **Wong ST**, Hastie AYL, Wong W-M, Kretschmar P, Wong ST, Koh SPH, **Wilting A** (2022): Determinants of sun bear *Helarctos malayanus* habitat use in Sabah, Malaysian Borneo and its predicted distribution under future forest degradation and loss. BIODIVERS CONSERV. doi:<span>[10.1007/s10531-022-02503-9](https://doi.org/10.1007/s10531-022-02503-9)</span>
 
 * Günther T, **Kramer-Schadt S**, Fuhrmann M and Belik V (2022): Environmental factors associated with the prevalence of ESBL/AmpC-producing Escherichia coli in wild boar (Sus scrofa).
 FRONT VET SCI, **9**, 980554. doi:<span>[10.3389/fvets.2022.980554](https://doi.org/10.3389/fvets.2022.980554)</span> 
-
-* Gorczynski D, Hsieh C, Ahumad J, Akampurira E, Andrianarisoa MH, Espinosa S, Johnson S, Kayijamahe C, Lima MGM, **Mugerwa B**, Rovero F, Salvador J, Santos F, Sheil D, Uzabah, E, & Beaudrot L (2022): Human density modulates spatial associations among tropical forest terrestrial mammal species. GLOB CHANG BIOL, **28**, 7205– 7216. doi:<span>[10.1111/gcb.16434](https://doi.org/10.1111/gcb.16434)</span> 
 
 * **Hagen R**, Ortmann S, Elliger A, & Arnold J (2022): Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation. ECOL EVOL, **12**, e8938. doi:<span>[10.1002/ece3.8938](https://doi.org/10.1002/ece3.8938)</span>
 
