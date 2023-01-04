@@ -3,12 +3,13 @@ title: 'landuse atlas 2009'
 categories:
   - Atlas
   - '2019'
+  - 1m
 author:
   - name: Moritz Wenzler-Meya
 
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: '2022-12-12'
+date: '2023-01-04'
 output:
   distill::distill_article:
     self_contained: false
