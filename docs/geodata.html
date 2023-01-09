@@ -88,31 +88,28 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Ecological Dynamics: Effects of beavers on amphibian communities along the anthropogenic gradient</title>
+  <title>Ecological Dynamics: Geodata</title>
 
-  <meta property="description" itemprop="description" content=""/>
 
   <link rel="icon" type="image/png" href="img/d6_purple_round.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Ecological Dynamics: Effects of beavers on amphibian communities along the anthropogenic gradient"/>
+  <meta property="og:title" content="Ecological Dynamics: Geodata"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content=""/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Ecological Dynamics"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Ecological Dynamics: Effects of beavers on amphibian communities along the anthropogenic gradient"/>
-  <meta property="twitter:description" content=""/>
+  <meta property="twitter:title" content="Ecological Dynamics: Geodata"/>
   <meta property="twitter:site" content="@EcoDynIZW"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Effects of beavers on amphibian communities along the anthropogenic gradient"]},{"type":"character","attributes":{},"value":[""]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing","link-citations"]}},"value":[{"type":"character","attributes":{},"value":["Geodata"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts_geodata"]},{"type":"logical","attributes":{},"value":[true]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -790,6 +787,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1862,15 +1860,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2637,7 +2641,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2652,12 +2656,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Effects of beavers on amphibian communities along the anthropogenic gradient","description":"","authors":[]}
+{"title":"Geodata","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2700,6 +2704,7 @@ Research
 </div>
 <a href="teaching.html">Teaching</a>
 <a href="wiki.html">Wiki</a>
+<a href="geodata.html">Geodata</a>
 <a href="https://twitter.com/EcoDynIZW">
 <i class="fa fa-twitter" aria-hidden="true"></i>
 </a>
@@ -2713,9 +2718,644 @@ Research
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).on("load", function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      page_category = decodeURIComponent(page_category)
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="Geodata">Geodata</h1>
+<a href="posts_geodata/distance-to-human-settlements_atlas_2009_1m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Atlas","2022","1m","distance"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 4, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts_geodata/distance-to-human-settlements_atlas_2009_1m_03035_tif/distance-to-human-settlements_atlas_2009_1m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>distance-to-human-settlements atlas 2009</h2>
+<div class="dt-tags">
+<div class="dt-tag">Atlas</div>
+<div class="dt-tag">2022</div>
+<div class="dt-tag">1m</div>
+<div class="dt-tag">distance</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/distance-to-kettleholes_atlas_2022_1m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Atlas","2022","1m","distance"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 4, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts_geodata/distance-to-kettleholes_atlas_2022_1m_03035_tif/distance-to-kettleholes_atlas_2022_1m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>distance-to-kettleholes atlas 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">Atlas</div>
+<div class="dt-tag">2022</div>
+<div class="dt-tag">1m</div>
+<div class="dt-tag">distance</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/distance-to-motorway-rural-road_germany_2022_100m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["distance","Germany","2022"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 4, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts_geodata/distance-to-motorway-rural-road_germany_2022_100m_03035_tif/distance-to-motorway-rural-road_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>distance-to-motorway-rural-road germany 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">distance</div>
+<div class="dt-tag">Germany</div>
+<div class="dt-tag">2022</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/distance-to-rivers_atlas_2009_1m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Atlas","2022","1m","distance"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 4, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts_geodata/distance-to-rivers_atlas_2009_1m_03035_tif/distance-to-rivers_atlas_2009_1m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>distance-to-rivers atlas 2009</h2>
+<div class="dt-tags">
+<div class="dt-tag">Atlas</div>
+<div class="dt-tag">2022</div>
+<div class="dt-tag">1m</div>
+<div class="dt-tag">distance</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/distance-to-roads-paths_germany_2022_100m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["distance","Germany","2022"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 4, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts_geodata/distance-to-roads-paths_germany_2022_100m_03035_tif/distance-to-roads-paths_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>distance-to-roads-paths germany 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">distance</div>
+<div class="dt-tag">Germany</div>
+<div class="dt-tag">2022</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/landuse_atlas_2009_1m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Atlas","2019","1m"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 4, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/landuse_atlas_2009_1m_03035_tif/landuse_atlas_2009_1m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>landuse atlas 2009</h2>
+<div class="dt-tags">
+<div class="dt-tag">Atlas</div>
+<div class="dt-tag">2019</div>
+<div class="dt-tag">1m</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/motorway-rural-road_germany_2022_100m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Germany","2022"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 4, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/motorway-rural-road_germany_2022_100m_03035_tif/motorway-rural-road_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>motorway-rural-road germany 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">Germany</div>
+<div class="dt-tag">2022</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/motorways_germany_2022_100m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Germany","2022"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 4, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/motorways_germany_2022_100m_03035_tif/motorways_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>motorways germany 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">Germany</div>
+<div class="dt-tag">2022</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/paths_germany_2022_100m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Germany","2022"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 4, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/paths_germany_2022_100m_03035_tif/paths_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>paths germany 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">Germany</div>
+<div class="dt-tag">2022</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/roads_germany_2022_100m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Germany","2022"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 4, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/roads_germany_2022_100m_03035_tif/roads_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>roads germany 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">Germany</div>
+<div class="dt-tag">2022</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/distance-to-paths_germany_2022_100m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Distance","Germany","2022"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 3, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/distance-to-paths_germany_2022_100m_03035_tif/distance-to-paths_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>distance-to-paths germany 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">Distance</div>
+<div class="dt-tag">Germany</div>
+<div class="dt-tag">2022</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/tree-cover-density_germany_2015_100m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Germany","2015"]}</script>
+<div class="metadata">
+<div class="publishedDate">Jan. 3, 2023</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/tree-cover-density_germany_2015_100m_03035_tif/tree-cover-density_germany_2015_100m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>tree-cover-density germany 2015</h2>
+<div class="dt-tags">
+<div class="dt-tag">Germany</div>
+<div class="dt-tag">2015</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/dem_berlin_2021_1m_25833_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Berlin","2021","elevation","1m"]}</script>
+<div class="metadata">
+<div class="publishedDate">Dec. 14, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/dem_berlin_2021_1m_25833_tif/dem_berlin_2021_1m_25833_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>dem berlin 2021</h2>
+<div class="dt-tags">
+<div class="dt-tag">Berlin</div>
+<div class="dt-tag">2021</div>
+<div class="dt-tag">elevation</div>
+<div class="dt-tag">1m</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/vegetation-hights_berlin_2020_1m_25833_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Berlin","2020","1m"]}</script>
+<div class="metadata">
+<div class="publishedDate">Dec. 14, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/vegetation-hights_berlin_2020_1m_25833_tif/vegetation-hights_berlin_2020_1m_25833_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>vegetation-hights berlin 2020</h2>
+<div class="dt-tags">
+<div class="dt-tag">Berlin</div>
+<div class="dt-tag">2020</div>
+<div class="dt-tag">1m</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/distance-to-streets_atlas_2022_1m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Atlas","2022","distance"]}</script>
+<div class="metadata">
+<div class="publishedDate">Dec. 13, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/distance-to-streets_atlas_2022_1m_03035_tif/distance-to-streets_atlas_2022_1m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>distance-to-streets atlas 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">Atlas</div>
+<div class="dt-tag">2022</div>
+<div class="dt-tag">distance</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/motorways_berlin_2022_100m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Berlin","binary","2022"]}</script>
+<div class="metadata">
+<div class="publishedDate">Dec. 12, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/motorways_berlin_2022_100m_03035_tif/motorways_berlin_2022_100m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>motorways berlin 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">Berlin</div>
+<div class="dt-tag">binary</div>
+<div class="dt-tag">2022</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/overview_europe/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Europe","Raster"]}</script>
+<div class="metadata">
+<div class="publishedDate">Nov. 25, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img/>
+</div>
+<div class="description">
+<h2>Europe raw raster data</h2>
+<div class="dt-tags">
+<div class="dt-tag">Europe</div>
+<div class="dt-tag">Raster</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/corine_berlin_2015_20m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Corine","2015","Berlin"]}</script>
+<div class="metadata">
+<div class="publishedDate">Nov. 22, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/corine_berlin_2015_20m_03035_tif/corine_berlin_2015_20m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>corine berlin 2015</h2>
+<div class="dt-tags">
+<div class="dt-tag">Corine</div>
+<div class="dt-tag">2015</div>
+<div class="dt-tag">Berlin</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/distance-to-motorways_germany_2022_100m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["distance","Germany","2022"]}</script>
+<div class="metadata">
+<div class="publishedDate">Nov. 14, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/distance-to-motorways_germany_2022_100m_03035_tif/distance-to-motorways_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>distance-to-motorways germany 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">distance</div>
+<div class="dt-tag">Germany</div>
+<div class="dt-tag">2022</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/distance-to-roads_germany_2022_100m_03035_tif/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Germany","2022","distance"]}</script>
+<div class="metadata">
+<div class="publishedDate">Nov. 14, 2022</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/distance-to-roads_germany_2022_100m_03035_tif/distance-to-roads_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>distance-to-roads germany 2022</h2>
+<div class="dt-tags">
+<div class="dt-tag">Germany</div>
+<div class="dt-tag">2022</div>
+<div class="dt-tag">distance</div>
+</div>
+<p></p>
+</div>
+</a>
+</div>
+<div class="posts-sidebar">
+<div class="sidebar-section categories">
+<h3>Categories</h3>
+<ul>
+<li>
+<a href="#category:Articles">Articles</a>
+<span class="category-count">(20)</span>
+</li>
+<li>
+<a href="#category:1m">1m</a>
+<span class="category-count">(6)</span>
+</li>
+<li>
+<a href="#category:2015">2015</a>
+<span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#category:2019">2019</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:2020">2020</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:2021">2021</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:2022">2022</a>
+<span class="category-count">(14)</span>
+</li>
+<li>
+<a href="#category:Atlas">Atlas</a>
+<span class="category-count">(5)</span>
+</li>
+<li>
+<a href="#category:Berlin">Berlin</a>
+<span class="category-count">(4)</span>
+</li>
+<li>
+<a href="#category:binary">binary</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:Corine">Corine</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:distance">distance</a>
+<span class="category-count">(8)</span>
+</li>
+<li>
+<a href="#category:Distance">Distance</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:elevation">elevation</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:Europe">Europe</a>
+<span class="category-count">(1)</span>
+</li>
+<li>
+<a href="#category:Germany">Germany</a>
+<span class="category-count">(10)</span>
+</li>
+<li>
+<a href="#category:Raster">Raster</a>
+<span class="category-count">(1)</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Effects of beavers on amphibian communities along the anthropogenic gradient</h1>
+<h1>Geodata</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2723,29 +3363,7 @@ Research
 
 
 <div class="d-article">
-<p>(contact
-<a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>)</p>
-<p>Due to their dam-building activity, beavers affect other species in
-diverse ways, ranging from positive to negative effects. Although
-effects of beaver activity on several taxa were studied, our
-understanding of their effects on amphibian assemblages is still
-incomplete. Especially little is understood how effects of beaver
-activity on amphibians may be moderated by the gradient of anthropogenic
-disturbance (represented by human population density). However, such
-knowledge is important in our human-dominated world. In this study we
-will sample amphibian diversity (both compositional and functional)
-along the gradient of human population density, in ponds with and
-without beavers. The study will take place in North Rhine-Westfalia, in
-Eifel region, where beaver presence is monitored along the gradient of
-human population density over several decades.</p>
-<p>Profile: interest in community and functional ecology, previous field
-work experience is an advantage, driver’s license, basic knowledge of
-R</p>
-<p>Supervisors: Viktoriia Radchuk <a href="mailto:radchuk@izw-berlin.de"
-class="email">radchuk@izw-berlin.de</a>, Lutz Dalbeck, Stephanie
-Kramer-Schadt</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

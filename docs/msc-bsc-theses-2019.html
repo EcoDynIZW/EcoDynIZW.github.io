@@ -790,6 +790,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1862,15 +1863,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2637,7 +2644,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2700,6 +2707,7 @@ Research
 </div>
 <a href="teaching.html">Teaching</a>
 <a href="wiki.html">Wiki</a>
+<a href="geodata.html">Geodata</a>
 <a href="https://twitter.com/EcoDynIZW">
 <i class="fa fa-twitter" aria-hidden="true"></i>
 </a>
@@ -2725,36 +2733,13 @@ Research
 <div class="d-article">
 <p><strong>2019</strong></p>
 <ul>
-<li><p>Demography and population viability of the Northern Bald Ibis
-(<em>Geronticus eremita</em>), a reintroduced bird species.
-<strong>Sinah Drenske.</strong> <span class="desaturated">04.02.2019.
-Bsc. Ökologie und Umweltplanung. Technische Universität Berlin.
-Supervision: Kramer-Schadt S, Radchuk V, Kowarik I
-(TUB).</span></p></li>
-<li><p>Wolfmanagement in Deutschland – Vergleich der Wolfmanagementpläne
-der Bundesländer. <strong>Patrick Enders.</strong> <span
-class="desaturated">26.09.2019. Bsc. Landschaftsarchitektur und
-Landschaftsplanung. TU Berlin. Supervision: Heiland S (TUB),
-Kramer-Schadt S.</span></p></li>
-<li><p>Inwiefern beeinflussen anthropogene Faktoren die
-Streifgebietsgrößen sowie täglichen Distanzen von Wildschweinen (<em>Sus
-scrofa</em>)? <strong>Elena Wernitz.</strong> <span
-class="desaturated">08.08.2019. Bsc. Ökologie und Umweltplanung. TUB.
-Supervision: Stillfried M, Kramer-Schadt S.</span></p></li>
-<li><p>Predicting community structure in a changing world – a new
-dynamic agent-based model to simulate multi-species home range behavior.
-<strong>Marie-Sophie Rohwäder.</strong> <span
-class="desaturated">26.02.2019. Msc. Ökologie, Evolution und
-Naturschutz. Universität Potsdam. Supervision: Kramer-Schadt S, Jeltsch
-F (UP).</span></p></li>
-<li><p>Assessing patterns of livestock attacks caused by wolf (<em>Canis
-lupus</em>) using sightings and habitat predictions. <strong>Moritz
-Wenzler.</strong> <span class="desaturated">26.11.2019. Msc. Global
-Change Geography. Humboldt-Universität zu Berlin. Kramer-Schadt S,
-Planillo A, Kümmerle T (HU).</span></p></li>
+<li><p>Demography and population viability of the Northern Bald Ibis (<em>Geronticus eremita</em>), a reintroduced bird species. <strong>Sinah Drenske.</strong> <span class="desaturated">04.02.2019. Bsc. Ökologie und Umweltplanung. Technische Universität Berlin. Supervision: Kramer-Schadt S, Radchuk V, Kowarik I (TUB).</span></p></li>
+<li><p>Wolfmanagement in Deutschland – Vergleich der Wolfmanagementpläne der Bundesländer. <strong>Patrick Enders.</strong> <span class="desaturated">26.09.2019. Bsc. Landschaftsarchitektur und Landschaftsplanung. TU Berlin. Supervision: Heiland S (TUB), Kramer-Schadt S.</span></p></li>
+<li><p>Inwiefern beeinflussen anthropogene Faktoren die Streifgebietsgrößen sowie täglichen Distanzen von Wildschweinen (<em>Sus scrofa</em>)? <strong>Elena Wernitz.</strong> <span class="desaturated">08.08.2019. Bsc. Ökologie und Umweltplanung. TUB. Supervision: Stillfried M, Kramer-Schadt S.</span></p></li>
+<li><p>Predicting community structure in a changing world – a new dynamic agent-based model to simulate multi-species home range behavior. <strong>Marie-Sophie Rohwäder.</strong> <span class="desaturated">26.02.2019. Msc. Ökologie, Evolution und Naturschutz. Universität Potsdam. Supervision: Kramer-Schadt S, Jeltsch F (UP).</span></p></li>
+<li><p>Assessing patterns of livestock attacks caused by wolf (<em>Canis lupus</em>) using sightings and habitat predictions. <strong>Moritz Wenzler.</strong> <span class="desaturated">26.11.2019. Msc. Global Change Geography. Humboldt-Universität zu Berlin. Kramer-Schadt S, Planillo A, Kümmerle T (HU).</span></p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

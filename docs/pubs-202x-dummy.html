@@ -88,7 +88,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Ecological Dynamics: Msc/Bsc offers 20xx</title>
+  <title>Ecological Dynamics: Publications 20xx</title>
 
   <meta property="description" itemprop="description" content=""/>
 
@@ -96,7 +96,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Ecological Dynamics: Msc/Bsc offers 20xx"/>
+  <meta property="og:title" content="Ecological Dynamics: Publications 20xx"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content=""/>
   <meta property="og:locale" content="en_US"/>
@@ -104,7 +104,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Ecological Dynamics: Msc/Bsc offers 20xx"/>
+  <meta property="twitter:title" content="Ecological Dynamics: Publications 20xx"/>
   <meta property="twitter:description" content=""/>
   <meta property="twitter:site" content="@EcoDynIZW"/>
 
@@ -112,7 +112,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Msc/Bsc offers 20xx"]},{"type":"character","attributes":{},"value":[""]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Publications 20xx"]},{"type":"character","attributes":{},"value":[""]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -790,6 +790,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1862,15 +1863,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2637,7 +2644,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2657,7 +2664,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Msc/Bsc offers 20xx","description":"","authors":[]}
+{"title":"Publications 20xx","description":"","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2700,6 +2707,7 @@ Research
 </div>
 <a href="teaching.html">Teaching</a>
 <a href="wiki.html">Wiki</a>
+<a href="geodata.html">Geodata</a>
 <a href="https://twitter.com/EcoDynIZW">
 <i class="fa fa-twitter" aria-hidden="true"></i>
 </a>
@@ -2715,7 +2723,7 @@ Research
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Msc/Bsc offers 20xx</h1>
+<h1>Publications 20xx</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2723,9 +2731,19 @@ Research
 
 
 <div class="d-article">
-<p><strong>20xx</strong></p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="headerbox">
+<hbox>Peer-Reviewed Publications</hbox>
+</div>
+<p><br></p>
+<div class="headerbox">
+<hbox>Preprints</hbox>
+</div>
+<p><br></p>
+<div class="headerbox">
+<hbox>Book Chapters &amp; Reports</hbox>
+</div>
+<p><br></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
