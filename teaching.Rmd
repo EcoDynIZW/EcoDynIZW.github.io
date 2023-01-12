@@ -31,10 +31,10 @@ Each year, we teach a block course (in March) held in English, which comprises 6
 * current R-version (https://cran.r-project.org/bin/windows/base/)  <br>
 <br>
 
-If you are not familiar with `R` and `RStudio`, open `RStudio` and follow the steps shown here of how to write scripts in R: [Intro to RStudio](https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/teach/L1_Intro_RStudio.pdf)
+If you are **not** familiar with `R` and `RStudio`, open `RStudio` and follow the steps shown here of how to write scripts in R: [Intro to RStudio](https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/teach/L1_Intro_RStudio.pdf)
 <br>
 
-If you are familiar with scripting in `R` in `RStudio`, here's our tip of the day of a cool feature in `RStudio`: use the rainbow parentheses option. For this, go to `Tools` &rarr; `Global Options` &rarr; `Code` &rarr;` Display`: tick rainbow parentheses. It helps you visually with  closing brackets correctly for function calls and loops.
+If you are familiar with scripting in `R` in `RStudio`, here is [Cedric's](https://www.cedricscherer.com/) tip of the day of a cool feature in `RStudio`: use the rainbow parentheses option. For this, go to `Tools` &rarr; `Global Options` &rarr; `Code` &rarr;` Display`: tick rainbow parentheses. It helps you visually with  closing brackets correctly for function calls and loops.
 
 
 ### Change decimal separator
@@ -44,29 +44,31 @@ If you are familiar with scripting in `R` in `RStudio`, here's our tip of the da
 ### Download course
 Simply copy our [github repository](https://github.com/EcoDynIZW/d6_teaching_collection) directly [here](https://github.com/EcoDynIZW/d6_teaching_collection/archive/refs/heads/main.zip). This will download the whole folder structure with some basic data. However, we still recommend that you make a copy of the `R-scripts` so that you can write your own comments and code into the scripts. <br>
 
-<details><summary> Optional - use own course folder setup </summary>
-
-##### Optional - use own course folder setup
-Only do this if you haven't done the prior step of downloading the whole course and want to set up your own course folder structure or download only a part of the course. In order to ease access to data and script-functionality, we recommend that you use a similar folder structure as we do. We chose the following folder structure for our courses, which you may adopt:
+We chose the following folder structure for our courses:
 <br>
 
 ``` bash
 ├── d6_teaching_collection                 # root folder 
 │   └── data_borneo                        # e.g., the Borneo data
 │       └── geo_raster_current_asc         # geo data, raster ascii format, as in data_borneo
-│       └── animal_data                    # animal observation data data_borneo
+│       └── animal_data                    # animal observation data in borneo
 │   └── output                             # storage for files created during course
 │   └── R                                  # store here all your scripts, i.e.
-│       └── script_course1.R               # rmd-files with codes
+│       └── script_course1.R               # r-files or rmd-files with codes
 │       └── script_course2.R
 │   └── d6_teaching_collection.Rproj       # the R-project (recommended)
 ```
 <br>
 
-a) If you are familiar with `R` and want to do the steps 'by hand', create a main (root) folder named *d6_teaching_collection*, then create the subfolders (`data, output, R`) relative to this root-folder (= d6_teaching_collection). Create an `R-project` within this folder (e.g. *d6_teaching_collection.Rproj*. For this, open `RStudio &rarr; File &rarr; New Project &rarr; Existing directory`: and then link it with the root folder).
+<details><summary> Optional - use own course folder setup </summary>
+
+##### Optional - use own course folder setup
+Only do this if you haven't done the prior step of downloading the whole course and want to set up your own course folder structure or download only a part of the course. In order to ease access to data and script-functionality, we recommend that you use a similar folder structure as we do (see above). 
+
+a) If you are familiar with `R` and want to do the steps 'by hand', create a main (root) folder named `d6_teaching_collection`, then create the subfolders (`data, output, R`) relative to this root-folder (= d6_teaching_collection). Create an `R-project` within this folder (e.g. *d6_teaching_collection.Rproj*. For this, open `RStudio &rarr; File &rarr; New Project &rarr; Existing directory`: and then link it with the root folder).
 <br>
 
-b) Users familiar with R and RMarkdown could directly implement our [d6 workflow package](https://github.com/EcoDynIZW/d6) to make project setups easier and to handle code and projects in a reproducible way. If you chose this option, please read the ReadMe that appears on the github website and install the d6 package (with the options `github= FALSE`). This has the advantage that you have automatically created a root directory and an R-project. You can then load the data (e.g. data_borneo, provided in zip-files, see below) directly under the root directory. In the d6-package there are already start-rmd-scripts (= `RMarkdown`-scripts with `yaml header` &arr; open and execute with the symbol `knitR`), which make the start easier. But you can also create your own  `R`-scripts, e.g. a new script for each course unit, which you put into the folder `R`.
+b) Users familiar with `R` and `RMarkdown` could directly implement our [d6 workflow package](https://github.com/EcoDynIZW/d6) to make project setups easier and to handle code and projects in a reproducible way. If you chose this option, please read the `ReadMe` that appears on the github website and install the d6 package (with the options `github= FALSE`). This has the advantage that you have automatically created a root directory and an `R-project`. You can then load the data (e.g. data_borneo, provided in zip-files, see below) directly under the root directory. In the `d6`-package there are already start-rmd-scripts (= `RMarkdown`-scripts with `yaml header` &arr; open and execute with the symbol `knitR`), which make the start easier. But you can also create your own `R`-scripts, e.g. a new script for each course unit, which you put into the folder `R`.
 <br>  
 
 For both options, a) and b), you would need to download the data separately (link to zip.file below)
@@ -78,7 +80,7 @@ For both options, a) and b), you would need to download the data separately (lin
 
 # Follow the courses
 
-...when you have downloaded the repository (see above). In the respective course `R` folder, you will find html files (open them in a browser by double clicking) and rmd files. Either create your own `R`-script and follow the steps in the html file (you can copy-paste the commands), or save a copy of the rmd file under your own name and run the code chunks step by step in the `RStudio` console. Each course comes with exercises as a learning control.
+...when you have downloaded the repository (see above). In the respective course `R` folder, you will find html-files and rmd-files. Open the html-file in a browser by double clicking. Then, either create your own `R`-script and follow the steps in the html file (you can copy-paste the commands from the html-file), or save a copy of the rmd file under your own name and run the code chunks step by step in the `RStudio` console. Each course comes with exercises as a learning control.
 
 <details><summary>Courses 1 and 2: Basic concepts in R & Spatial R</summary>
 
