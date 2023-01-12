@@ -50,17 +50,16 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  { color: #00769e; background-color: #f1f3f5; }
+  {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #657422; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #00769e; } /* ControlFlow */
+code span.cf { color: #007ba5; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -74,9 +73,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #00769e; } /* Keyword */
+code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #00769e; } /* Other */
+code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -790,7 +789,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1032,6 +1030,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
+  }
+
+  .figure img {
+    width: 100%;
   }
 
   .figure .caption {
@@ -1863,21 +1865,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
-          $(this).html(fn.shadowRoot.querySelector("sup"))
-          $(this).id = fn.id
-          fn.remove()
-        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1889,31 +1879,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
-
-      // fix footnotes in tables (#411)
-      // replacing broken distill.pub feature
-      $('table d-footnote').each(function() {
-        // we replace internal showAtNode methode which is triggered when hovering a footnote
-        this.hoverBox.showAtNode = function(node) {
-          // ported from https://github.com/distillpub/template/pull/105/files
-          calcOffset = function(elem) {
-              let x = elem.offsetLeft;
-              let y = elem.offsetTop;
-              // Traverse upwards until an `absolute` element is found or `elem`
-              // becomes null.
-              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
-                  x += elem.offsetLeft;
-                  y += elem.offsetTop;
-              }
-
-              return { left: x, top: y };
-          }
-          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
-          const bbox = node.getBoundingClientRect();
-          const offset = calcOffset(node);
-          this.show([offset.left + bbox.width, offset.top + bbox.height]);
-        }
-      })
 
       // clear polling timer
       clearInterval(tid);
@@ -2013,8 +1978,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
-      // ignore leaflet img layers (#106)
-      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -2037,7 +2000,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
       });
     }
 
@@ -2644,7 +2607,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2705,7 +2668,7 @@ Research
 <a href="msc-bsc-theses.html">Msc/Bsc Theses</a>
 </div>
 </div>
-<a href="teaching.html">Teaching</a>
+<a href="teaching_23.html">Teaching</a>
 <a href="wiki.html">Wiki</a>
 <a href="geodata.html">Geodata</a>
 <a href="https://twitter.com/EcoDynIZW">
@@ -2733,16 +2696,51 @@ Research
 <div class="d-article">
 <p><strong>2021</strong></p>
 <ul>
-<li><p>Modelling Eurasian red squirrel (<em>Sciurus vulgaris</em>) occurrence along urban gradients in Berlin. <strong>Marius Grabow.</strong> <span class="desaturated">29.09.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Louvrier J (IZW), Kramer-Schadt S.</span> <strong>→ Prize for best Master thesis!</strong></p></li>
-<li><p>Accuracy of a new high throughput wildlife movement tracking system in comparison with GPS tracking. <strong>Johannes Marold.</strong> <span class="desaturated">16.09.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Radchuk V (IZW), Kramer-Schadt S.</span></p></li>
-<li><p>Density and life-history of the Sunda clouded leopard <em>Neofelis diardi</em> in the Deramakot Forest Complex, Sabah, Malaysia. <strong>Katharina Kasper.</strong> <span class="desaturated">30.08.2021. MSc. Goethe-Universität Frankfurt am Main. Supervision: Thomas Müller (SBiK-F), Andreas Wilting (IZW).</span></p></li>
-<li><p>Evaluating the habitat suitability of tiger in Bardia National Park and Buffer Zone areas, Nepal. <strong>Kamal Ghimire.</strong> <span class="desaturated">18.08.2021. MSc. TU Dresden. Tropical Forestry. Supervision: Berger U (TUD), Kramer-Schadt S.</span></p></li>
-<li><p>Small-Scale Habitat Selection of the European Wildcat <em>Felis silvestris silvestris</em> in the Bernese Seeland, Switzerland. <strong>Johanna Bellack.</strong> <span class="desaturated">26.06.2021. BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Maronde L (KORA), Kramer-Schadt S.</span></p></li>
-<li><p>Effect of artificial light at night (ALAN) on behaviour of the European hedgehog (<em>Erinaceus europaeus Linnaeus</em>, 1758) in the urban area of Berlin. <strong>Briseida Lozano Granados.</strong> <span class="desaturated">15.05.2021. MSc. TU Berlin. Urban Ecology. Supervision: Berger A, Kramer-Schadt S.</span></p></li>
-<li><p>What contribution can non-standardized Citizen Science data make in biodiversity monitoring? <strong>Lena Fiechter.</strong> <span class="desaturated">21.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Planillo A, Kramer-Schadt S, Heucke-Voigt S (MfN).</span></p></li>
-<li><p>A habitat suitability model for Grey Crowned Cranes (<em>Balearica regulorum</em>) in Rwanda based on sightings. <strong>Ann-Marie Attenberger.</strong> <span class="desaturated">04.01.2021. MSc. TU Berlin. Ecology and Environmental Planning. Supervision: Olivier Nsengimana (RWCA), Kramer-Schadt S, vd Lippe M (TUB).</span></p></li>
+<li><p>Modelling Eurasian red squirrel (<em>Sciurus vulgaris</em>)
+occurrence along urban gradients in Berlin. <strong>Marius
+Grabow.</strong> <span class="desaturated">29.09.2021. MSc. TU Berlin.
+Ecology and Environmental Planning. Supervision: Louvrier J (IZW),
+Kramer-Schadt S.</span> <strong>→ Prize for best Master
+thesis!</strong></p></li>
+<li><p>Accuracy of a new high throughput wildlife movement tracking
+system in comparison with GPS tracking. <strong>Johannes
+Marold.</strong> <span class="desaturated">16.09.2021. BSc. TU Berlin.
+Ecology and Environmental Planning. Supervision: Radchuk V (IZW),
+Kramer-Schadt S.</span></p></li>
+<li><p>Density and life-history of the Sunda clouded leopard
+<em>Neofelis diardi</em> in the Deramakot Forest Complex, Sabah,
+Malaysia. <strong>Katharina Kasper.</strong> <span
+class="desaturated">30.08.2021. MSc. Goethe-Universität Frankfurt am
+Main. Supervision: Thomas Müller (SBiK-F), Andreas Wilting
+(IZW).</span></p></li>
+<li><p>Evaluating the habitat suitability of tiger in Bardia National
+Park and Buffer Zone areas, Nepal. <strong>Kamal Ghimire.</strong> <span
+class="desaturated">18.08.2021. MSc. TU Dresden. Tropical Forestry.
+Supervision: Berger U (TUD), Kramer-Schadt S.</span></p></li>
+<li><p>Small-Scale Habitat Selection of the European Wildcat <em>Felis
+silvestris silvestris</em> in the Bernese Seeland, Switzerland.
+<strong>Johanna Bellack.</strong> <span class="desaturated">26.06.2021.
+BSc. TU Berlin. Ecology and Environmental Planning. Supervision: Maronde
+L (KORA), Kramer-Schadt S.</span></p></li>
+<li><p>Effect of artificial light at night (ALAN) on behaviour of the
+European hedgehog (<em>Erinaceus europaeus Linnaeus</em>, 1758) in the
+urban area of Berlin. <strong>Briseida Lozano Granados.</strong> <span
+class="desaturated">15.05.2021. MSc. TU Berlin. Urban Ecology.
+Supervision: Berger A, Kramer-Schadt S.</span></p></li>
+<li><p>What contribution can non-standardized Citizen Science data make
+in biodiversity monitoring? <strong>Lena Fiechter.</strong> <span
+class="desaturated">21.01.2021. MSc. TU Berlin. Ecology and
+Environmental Planning. Supervision: Planillo A, Kramer-Schadt S,
+Heucke-Voigt S (MfN).</span></p></li>
+<li><p>A habitat suitability model for Grey Crowned Cranes
+(<em>Balearica regulorum</em>) in Rwanda based on sightings.
+<strong>Ann-Marie Attenberger.</strong> <span
+class="desaturated">04.01.2021. MSc. TU Berlin. Ecology and
+Environmental Planning. Supervision: Olivier Nsengimana (RWCA),
+Kramer-Schadt S, vd Lippe M (TUB).</span></p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
