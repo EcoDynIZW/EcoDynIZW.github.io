@@ -11,11 +11,16 @@ distill::distill_article:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Course collection
+
+# Course collection **biodiversity analysis**
 
 Welcome to the course collection we have developed at our Department. Below you will find the compilation of our courses. These are hosted within one repository, so that data can be shared between the courses.
 <br>
-The courses follow a logic order. The first introductory courses give an overview over handling data in R; we then introduce statistical analyses for various types of data, e.g. from spatial distribution models of single species via biodiversity analyses of community counts, towards analyses of population trends. To do the courses, please follow the course instructions step by step in the respective html-files of each course. 
+The courses follow a logic order. The first introductory courses give an overview over handling data in R; we then introduce statistical analyses for various types of data, e.g. from spatial distribution models of single species via biodiversity analyses of community counts, towards analyses of population trends. To do the courses, please follow the code step by step in the respective html-files of each course (see below). 
+<br>
+The courses are held in English and comprise 6 ECTS. 
+
+
 
 ## Prior steps
 ### Program installation
@@ -28,8 +33,16 @@ If you are not familiar with R and RStudio, open RStudio and follow the steps sh
 <br>
 If you are familiar with scripting in R in RStudio, here's our tip of the day of a cool feature in RStudio: use the rainbow parentheses option. For this, go to: Tools --> Global Options --> Code --> Display: tick rainbow parentheses. It helps you visually with  closing brackets correctly for function calls and loops.
 
-### Folder setup
-To ease access to data and script-functionality, we recommend that you use the same folder structure as we do. We chose the following folder structure for our courses, which you may adopt:
+
+### Change decimal separator
+from comma to point in your computer settings if you are working from a German PC, e.g. in Windows --> Settings --> Time and Region --> Region --> Advanced Settings --> decimal separator: change here to point.
+
+
+### Download course
+Simply clone our [github repository](https://github.com/EcoDynIZW/d6_teaching_collection) directly: https://github.com/EcoDynIZW/d6_teaching_collection . This will download the whole folder structure with some basic data. However, we still recommend that you make a copy of the R-scripts so that you can write your own comments into the scripts. <br>
+
+#### Optional - Own course folder setup
+Only do this if you haven't done the prior step of downloading the whole course and want to set up your own course folder structure or download only a part of the course. In order to ease access to data and script-functionality, we recommend that you use a similar folder structure as we do. We chose the following folder structure for our courses, which you may adopt:
 <br>
 
 ``` bash
@@ -51,30 +64,24 @@ b) Users familiar with R and RMarkdown could directly implement our [d6 workflow
 <br>  
 For both options, a) and b), you need to download the data separately (link to zip.file below)
 <br><br>
-c) Or you simply clone our [github repository](https://github.com/EcoDynIZW/d6_teaching_collection) directly: https://github.com/EcoDynIZW/d6_teaching_collection . This has the advantage that it comes with some basic data. However, we still recommend that you make a copy of the R-scripts so that you can write your own comments. <br>
- 
-
-### Download course data
-For the full course, we will provide you with additional data. Drag and drop the folders "data_borneo", "data_berlin", "data_move" from the provided zip files into the main folder (here: d6_teaching_collection). 
-
-<br>  TODO --------------- provide link ----------------------
-
-
-### Change decimal separator
-from comma to point in your computer settings if you are working from a German PC, e.g. in Windows --> Settings --> Time and Region --> Region --> Advanced Settings --> decimal separator: change here to point.
 
 ### Change decimal separator
 Each course comes with exercises as a learning control.
 
 
 # Follow the courses
+
+In the respective R folder, you will find htmls (open them in a browser by double clicking) and rmd files. Either create your own R-script and follow the steps in the html file (you can copy-paste the commands), or save a copy of the rmd file under your own name and run the code chunks step by step in the RStudio console.
+
+
+
 ## Courses 1 and 2: Basic concepts in R & Spatial R
 
-These courses contain the minimum knowledge for handling, manipulating and visualizing various data types in R (Course1: vectors, data.frames, lists; Course2: spatial data like raster and vector files). The second course builds on the concepts introduced in course 1. It is therefore recommended to start with course 1. Please note, that course 1 is **not** meant as a beginners course - a lot of great in-depth courses are out there, e.g. here
+These courses contain the minimum knowledge for handling, manipulating and visualizing various data types in R (Course1: vectors, data.frames, lists; Course2: spatial data like raster and vector files). The second course builds on the concepts introduced in course 1. It is therefore recommended to start with course 1. Please note, that course 1 is **not** meant as a beginners course - a lot of great in-depth courses are out there, e.g. here: <br>
 * https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf or here <br>
 * https://www.r-bloggers.com/list-of-free-online-r-tutorials/. 
 <br>
-Course 1 is rather a 'refresher' of the basic R concepts that are needed for all subsequent courses. In a nutshell, it goes through the [base R cheatsheet](https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf) . It is recommended to have the cheatsheets ready and make your own notes into a copy of our script.
+Course 1 is rather a 'refresher' of the basic R concepts that are needed for all subsequent courses. In a nutshell, it goes through the [base R cheatsheet](https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf) . It is recommended to have the cheatsheet downloaded and make your own notes into a copy of our script.
 <br>
 
 ----------------------TODO - correct linking----------
@@ -89,7 +96,12 @@ Course 1 is rather a 'refresher' of the basic R concepts that are needed for all
 ### presence only  / MaxEnt
 
 Please download MaxEnt here: https://biodiversityinformatics.amnh.org/open_source/maxent/
-For MaxEnt you may still need to install a Java version. If you double-click the file maxent.jar, an  interface should appear
+For MaxEnt you may still need to install a Java version. If you double-click the file maxent.jar, an  interface should appear.
+<br>
+Download course data :For the full course 3, we will provide you with additional data. Drag and drop the folders "data_borneo", "data_berlin", "data_move" from the provided zip files into the main folder (here: d6_teaching_collection). 
+
+<br>  TODO --------------- provide link ----------------------
+
 
 
 Course3_a_SDM
@@ -97,12 +109,15 @@ Course3_a_SDM
 ### repeated presence absence / occupancy models
 Course3_b_occu
 
-##Movement analysis
+## Movement analysis
 ### telemetry data
 
 Course4_MoveQ
 
-##Biodiversity analysis
+## Biodiversity analysis
 Course5_biodiv
+
+## Population analysis
+Course6_cmr
 
 
