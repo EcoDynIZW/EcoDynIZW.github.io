@@ -2699,16 +2699,21 @@ Research
 <p>Welcome to the course collection we have developed at our Department.
 Below you will find the compilation of our courses. These are hosted
 within one repository, so that data can be shared between the courses.
-<br> The courses follow a logic order. The first introductory courses
+The course has a strong focus on ecological data analysis, especially
+spatio-temporal data of animals. <br></p>
+<p>The courses follow a logic order. The first two introductory courses
 give an overview over handling data in R; we then introduce statistical
 analyses for various types of data, e.g. from spatial distribution
 models of single species via biodiversity analyses of community counts,
 towards analyses of population trends. To do the courses, please follow
 the code step by step in the respective html-files of each course (see
-below). <br> Each year, we teach a block course (in March) held in
-English, which comprises 6 ECTS (approx. 180 hrs, of which 60 hrs are
-preparation, 60 hrs are in presence, and 60 hrs are for preparing a
-project which will be graded).</p>
+below). <br></p>
+<p>Each year, we teach a block course (in March) held in English, which
+comprises 6 ECTS (approx. 180 hrs, of which 60 hrs are preparation, 60
+hrs are in presence, and 60 hrs are for preparing a project which will
+be graded). We will lecture the steps in data analysis, and you will
+prepare a little spatial conservation concept with data we provide; you
+are welcome to bring your own data. <br></p>
 <h2 id="prior-steps">Prior steps</h2>
 <h3 id="program-installation">Program installation</h3>
 <ul>
@@ -2721,19 +2726,23 @@ href="https://cran.r-project.org/bin/windows/base/"
 class="uri">https://cran.r-project.org/bin/windows/base/</a>) <br>
 <br></li>
 </ul>
-<p>If you are not familiar with R and RStudio, open RStudio and follow
-the steps shown here of how to write scripts in R: <a
+<p>If you are not familiar with <code>R</code> and <code>RStudio</code>,
+open <code>RStudio</code> and follow the steps shown here of how to
+write scripts in R: <a
 href="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/teach/L1_Intro_RStudio.pdf">Intro
 to RStudio</a> <br></p>
-<p>If you are familiar with scripting in R in RStudio, here’s our tip of
-the day of a cool feature in RStudio: use the rainbow parentheses
-option. For this, go to: Tools → Global Options → Code → Display: tick
-rainbow parentheses. It helps you visually with closing brackets
+<p>If you are familiar with scripting in <code>R</code> in
+<code>RStudio</code>, here’s our tip of the day of a cool feature in
+<code>RStudio</code>: use the rainbow parentheses option. For this, go
+to:
+<code>Tools &amp;rarr; Global Options &amp;rarr; Code &amp;rarr; Display</code>:
+tick rainbow parentheses. It helps you visually with closing brackets
 correctly for function calls and loops.</p>
 <h3 id="change-decimal-separator">Change decimal separator</h3>
 <p>from comma to point in your computer settings if you are working from
-a German PC, e.g. in Windows → Settings → Time and Region → Region →
-Advanced Settings → decimal separator: change here to point.</p>
+a German PC, e.g. in
+<code>Windows &amp;rarr; Settings &amp;rarr; Time and Region &amp;rarr; Region &amp;rarr; Advanced Settings &amp;rarr; decimal separator</code>:
+change here to point.</p>
 <h3 id="download-course">Download course</h3>
 <p>Simply copy our <a
 href="https://github.com/EcoDynIZW/d6_teaching_collection">github
@@ -2762,14 +2771,14 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── d6_teaching_collection.Rproj       <span class="co"># the R-project (recommended)</span></span></code></pre></div>
 <p><br></p>
 <ol type="a">
-<li><p>If you are not so familiar with R and want to do the steps ‘by
-hand’, create a main (root) folder named
-<em>d6_teaching_collection</em>, then create the subfolders (data,
-output, R) relative to this root-folder (= d6_teaching_collection).
-Create an R-project within this folder
-(e.g. <em>d6_teaching_collection.Rproj</em>. For this, open RStudio →
-File → New Project → Existing directory: and then link it with the root
-folder). <br></p></li>
+<li><p>If you are familiar with <code>R</code> and want to do the steps
+‘by hand’, create a main (root) folder named
+<em>d6_teaching_collection</em>, then create the subfolders
+(<code>data, output, R</code>) relative to this root-folder (=
+d6_teaching_collection). Create an <code>R-project</code> within this
+folder (e.g. <em>d6_teaching_collection.Rproj</em>. For this, open
+<code>RStudio &amp;rarr; File &amp;rarr; New Project &amp;rarr; Existing directory</code>:
+and then link it with the root folder). <br></p></li>
 <li><p>Users familiar with R and RMarkdown could directly implement our
 <a href="https://github.com/EcoDynIZW/d6">d6 workflow package</a> to
 make project setups easier and to handle code and projects in a
@@ -2779,47 +2788,49 @@ options <code>github= FALSE</code>). This has the advantage that you
 have automatically created a root directory and an R-project. You can
 then load the data (e.g. data_borneo, provided in zip-files, see below)
 directly under the root directory. In the d6-package there are already
-start-rmd-scripts (= RMarkdown-scripts with yaml header -&gt; open and
-execute with the symbol ‘knitR’), which make the start easier. But you
-can also create your own R-scripts, e.g. a new script for each course
-unit, which you put into the folder ‘R’. <br></p></li>
+start-rmd-scripts (= <code>RMarkdown</code>-scripts with
+<code>yaml header</code> &amp;arr; open and execute with the symbol
+<code>knitR</code>), which make the start easier. But you can also
+create your own <code>R</code>-scripts, e.g. a new script for each
+course unit, which you put into the folder <code>R</code>. <br></p></li>
 </ol>
 <p>For both options, a) and b), you would need to download the data
 separately (link to zip.file below) <br><br></p>
 <h1 id="follow-the-courses">Follow the courses</h1>
-<p>In the respective R folder, you will find htmls (open them in a
-browser by double clicking) and rmd files. Either create your own
-R-script and follow the steps in the html file (you can copy-paste the
-commands), or save a copy of the rmd file under your own name and run
-the code chunks step by step in the RStudio console. <br> Each course
-comes with exercises as a learning control.</p>
+<p>In the respective course <code>R</code> folder, you will find html
+files (open them in a browser by double clicking) and rmd files. Either
+create your own <code>R</code>-script and follow the steps in the html
+file (you can copy-paste the commands), or save a copy of the rmd file
+under your own name and run the code chunks step by step in the
+<code>RStudio</code> console. Each course comes with exercises as a
+learning control.</p>
+<details>
+<summary>
+Courses 1 and 2: Basic concepts in R &amp; Spatial R
+</summary>
 <h2 id="courses-1-and-2-basic-concepts-in-r-spatial-r">Courses 1 and 2:
 Basic concepts in R &amp; Spatial R</h2>
 <p>These courses contain the minimum knowledge for handling,
-manipulating and visualizing various data types in R (Course1: vectors,
-data.frames, lists; Course2: spatial data like raster and vector files).
-The second course builds on the concepts introduced in course 1. It is
-therefore recommended to start with course 1. Please note, that course 1
-is <strong>not</strong> meant as a beginners course - a lot of great
-in-depth courses are out there, e.g. here: <br></p>
-<ul>
-<li><a
-href="https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf"
-class="uri">https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf</a>
-or here <br></li>
-<li><a
-href="https://www.r-bloggers.com/list-of-free-online-r-tutorials/"
-class="uri">https://www.r-bloggers.com/list-of-free-online-r-tutorials/</a>
-<br></li>
-</ul>
-<p>Course 1 is rather a ‘refresher’ of the basic R concepts that are
-needed for all subsequent courses. In a nutshell, it goes through the <a
+manipulating and visualizing various data types in <code>R</code>
+(Course1: vectors, data.frames, lists; Course2: spatial data like raster
+and vector files). The second course builds on the concepts introduced
+in course 1. It is therefore recommended to start with course 1. Please
+note, that course 1 is <strong>not</strong> meant as a beginners course
+- a lot of great in-depth courses are available online. Course 1 is
+rather a ‘refresher’ of the basic R concepts that are needed for all
+subsequent courses. In a nutshell, it goes through the <a
 href="https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf">base
-R cheatsheet</a> . It is recommended to have the cheatsheet downloaded
+R cheatsheet</a>. It is recommended to have the cheatsheet downloaded
 and make your own notes into a copy of our script. <br></p>
-<p>———————-TODO - correct linking———- <br> <a
-href="https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/teaching_23/img/teach/Course1_RIntro.html">Course1_IntroR</a>
-<br> <a href="">course2_SpatialR</a><br> <br></p>
+<p><a
+href="https://github.com/EcoDynIZW/d6_teaching_collection/raw/main/R/Course1_R_intro/Course1_RIntro.html">Course1</a></p>
+</details>
+<p><br> The following courses are under construction. You might need to
+download the repository again at a later stage. <br></p>
+<details>
+<summary>
+Courses 3_a and 3_b Species distribution models
+</summary>
 <h2 id="courses-3_a-and-3_b-species-distribution-models">Courses 3_a and
 3_b Species distribution models</h2>
 <h3 id="presence-only-maxent">presence only / MaxEnt</h3>
@@ -2827,24 +2838,39 @@ href="https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/teaching_23/img/teach
 href="https://biodiversityinformatics.amnh.org/open_source/maxent/"
 class="uri">https://biodiversityinformatics.amnh.org/open_source/maxent/</a>
 For MaxEnt you may still need to install a Java version. If you
-double-click the file maxent.jar, an interface should appear. <br>
-Download course data :For the full course 3, we will provide you with
+double-click the file maxent.jar, an interface should appear. <br></p>
+<p>Download course data :For the full course 3, we will provide you with
 additional data. Drag and drop the folders “data_borneo” and
 “data_berlin” from the provided zip files into the main folder (here:
-d6_teaching_collection).</p>
-<p><br> under construction (TODO: clean data folders and provide link
-)</p>
+d6_teaching_collection). <br></p>
+<p>Link to data_borneo and data_berlin under construction</p>
 <p>Course3_a_SDM</p>
 <h3 id="repeated-presence-absence-occupancy-models">repeated presence
 absence / occupancy models</h3>
 <p>Course3_b_occu</p>
+</details>
+<details>
+<summary>
+Course 4 Movement data analysis
+</summary>
 <h2 id="movement-analysis">Movement analysis</h2>
 <h3 id="telemetry-data">telemetry data</h3>
 <p>Course4_MoveQ</p>
+</details>
+<details>
+<summary>
+Course 5 Biodiversity metrics
+</summary>
 <h2 id="biodiversity-analysis">Biodiversity analysis</h2>
-<p>Course5_biodiv</p>
+Course5_biodiv
+</details>
+<details>
+<summary>
+Course 6 Population analyses
+</summary>
 <h2 id="population-analysis">Population analysis</h2>
-<p>Course6_cmr</p>
+Course6_cmr
+</details>
 <div class="sourceCode" id="cb2"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
