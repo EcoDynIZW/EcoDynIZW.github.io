@@ -56,7 +56,7 @@ We chose the following folder structure for our courses:
 │   └── R                                  # store here all your scripts, i.e.
 │       └── script_course1.R               # r-files or rmd-files with codes
 │       └── script_course2.R
-│   └── d6_teaching_collection.Rproj       # the R-project (recommended)
+│   └── d6_teaching_collection.Rproj       # the R-project
 ```
 <br>
 
@@ -65,7 +65,7 @@ We chose the following folder structure for our courses:
 ##### Optional - use own course folder setup
 Only do this if you haven't done the prior step of downloading the whole course and want to set up your own course folder structure or download only a part of the course. In order to ease access to data and script-functionality, we recommend that you use a similar folder structure as we do (see above). 
 
-a) If you are familiar with `R` and want to do the steps 'by hand', create a main (root) folder named `d6_teaching_collection`, then create the subfolders (`data, output, R`) relative to this root-folder (= d6_teaching_collection). Create an `R-project` within this folder (e.g. *d6_teaching_collection.Rproj*. For this, open `RStudio &rarr; File &rarr; New Project &rarr; Existing directory`: and then link it with the root folder).
+a) If you are familiar with `R` and want to do the steps 'by hand', create a main (root) folder named `d6_teaching_collection`, then create the subfolders (`data, output, R`) relative to this root-folder (= `d6_teaching_collection`). Create an `R-project` within this folder (e.g. `d6_teaching_collection.Rproj`. For this, open `RStudio &rarr; File &rarr; New Project &rarr; Existing directory`: and then link it with the root folder).
 <br>
 
 b) Users familiar with `R` and `RMarkdown` could directly implement our [d6 workflow package](https://github.com/EcoDynIZW/d6) to make project setups easier and to handle code and projects in a reproducible way. If you chose this option, please read the `ReadMe` that appears on the github website and install the d6 package (with the options `github= FALSE`). This has the advantage that you have automatically created a root directory and an `R-project`. You can then load the data (e.g. data_borneo, provided in zip-files, see below) directly under the root directory. In the `d6`-package there are already start-rmd-scripts (= `RMarkdown`-scripts with `yaml header` &arr; open and execute with the symbol `knitR`), which make the start easier. But you can also create your own `R`-scripts, e.g. a new script for each course unit, which you put into the folder `R`.
@@ -80,7 +80,12 @@ For both options, a) and b), you would need to download the data separately (lin
 
 # Follow the courses
 
-...when you have downloaded the repository (see above). In the respective course `R` folder, you will find html-files and rmd-files. Open the html-file in a browser by double clicking. Then, either create your own `R`-script and follow the steps in the html file (you can copy-paste the commands from the html-file), or save a copy of the rmd file under your own name and run the code chunks step by step in the `RStudio` console. Each course comes with exercises as a learning control.
+...when you have downloaded the repository (see above). In the respective course `R` folder, you will find html-files and rmd-files. Open the html-file in a browser by double clicking. Open `RStudio` in parallel by double-klicking on the `d6_teaching_collection.Rproj`-file. Under `Files`(lower right window pane) , you can open the `R`-scripts.
+<br>
+
+Then, either create your own `R`-script and follow the steps in the html file (you can copy-paste the commands from the html-file), or save a copy of the rmd-file under your own name and run the code chunks step by step in the `RStudio` console. But you should always have the html-file opened in parallel to `RStudio`. Each course comes with exercises as a learning control.
+
+
 
 <details><summary>Courses 1 and 2: Basic concepts in R & Spatial R</summary>
 
@@ -89,8 +94,10 @@ For both options, a) and b), you would need to download the data separately (lin
 These courses contain the minimum knowledge for handling, manipulating and visualizing various data types in `R` (Course1: `vectors`, `data.frames`, `lists`; Course2: spatial data like `raster` and vector files). The second course builds on the concepts introduced in course 1. It is therefore recommended to start with course 1. Please note, that course 1 is **not** meant as a beginners course - a lot of great in-depth courses are available online. Course 1 is rather a 'refresher' of the basic `R` concepts that are needed for all subsequent courses. In a nutshell, it goes through the [base R cheatsheet](https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf). It is recommended to have the cheatsheet downloaded and make your own notes into a copy of our script.
 <br>
 
-
 </details>
+
+
+
 
 <br>
 The following courses are under construction. You might need to download the repository again at a later stage.
