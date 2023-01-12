@@ -25,7 +25,7 @@ Each year, we teach a block course (in March) held in English, which comprises 6
 
 20.02.2023: 9 - 15 hrs CET: Introduction to spatial R via zoom 
 20.-24.03.2023: block course `biodiversity dynamics`
-
+<br>
 
 ## Prior steps
 ### Program installation
