@@ -65,15 +65,15 @@ b) Users familiar with R and RMarkdown could directly implement our [d6 workflow
 For both options, a) and b), you need to download the data separately (link to zip.file below)
 <br><br>
 
-### Change decimal separator
-Each course comes with exercises as a learning control.
+
+
 
 
 # Follow the courses
 
 In the respective R folder, you will find htmls (open them in a browser by double clicking) and rmd files. Either create your own R-script and follow the steps in the html file (you can copy-paste the commands), or save a copy of the rmd file under your own name and run the code chunks step by step in the RStudio console.
-
-
+<br>
+Each course comes with exercises as a learning control.
 
 ## Courses 1 and 2: Basic concepts in R & Spatial R
 
