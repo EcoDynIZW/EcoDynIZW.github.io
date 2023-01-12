@@ -23,9 +23,10 @@ The single course blocks follow a logical order. The first two introductory cour
 Each year, we teach a block course (in March) held in English, which comprises 6 ECTS (approx. 180 hrs, of which 60 hrs are preparation, 60 hrs are in presence, and 60 hrs are for preparing a project which will be graded). We will lecture the steps in data analysis, and you will prepare a little spatial conservation concept with data we provide; you are welcome to bring your own data. Drop us a line if you are interested to join ( assist6[at]izw-berlin.de ). 
 <br>
 
-*20.02.2023: 9 - 15 hrs CET: Introduction to spatial R via zoom 
+
+* 20.02.2023: 9 - 15 hrs CET: Introduction to spatial R via zoom 
 <br>
-*20.-24.03.2023: block course `biodiversity dynamics`
+* 20.-24.03.2023: block course `biodiversity dynamics`
 <br>
 
 ## Prior steps
@@ -69,10 +70,10 @@ We chose the following folder structure for our courses:
 ##### Optional - use own course folder setup
 Only do this if you haven't done the prior step of downloading the whole course and want to set up your own course folder structure or download only a part of the course. In order to ease access to data and script-functionality, we recommend that you use a similar folder structure as we do (see above). 
 
-a) If you are familiar with `R` and want to do the steps 'by hand', create a main (root) folder named `d6_teaching_collection`, then create the subfolders (`data, output, R`) relative to this root-folder (= `d6_teaching_collection`). Create an `R-project` within this folder (e.g. `d6_teaching_collection.Rproj`. For this, open `RStudio &rarr; File &rarr; New Project &rarr; Existing directory`: and then link it with the root folder).
+a) If you are familiar with `R` and want to do the steps 'by hand', create a main (root) folder named `d6_teaching_collection`, then create the subfolders (`data, output, R`) relative to this root-folder (= `d6_teaching_collection`). Create an `R-project` within this folder (e.g. `d6_teaching_collection.Rproj`. For this, open `RStudio` &rarr; `File` &rarr; `New Project` &rarr; `Existing directory`: and then link it with the root folder).
 <br>
 
-b) Users familiar with `R` and `RMarkdown` could directly implement our [d6 workflow package](https://github.com/EcoDynIZW/d6) to make project setups easier and to handle code and projects in a reproducible way. If you chose this option, please read the `ReadMe` that appears on the github website and install the d6 package (with the options `github= FALSE`). This has the advantage that you have automatically created a root directory and an `R-project`. You can then load the data (e.g. data_borneo, provided in zip-files, see below) directly under the root directory. In the `d6`-package there are already start-rmd-scripts (= `RMarkdown`-scripts with `yaml header` &arr; open and execute with the symbol `knitR`), which make the start easier. But you can also create your own `R`-scripts, e.g. a new script for each course unit, which you put into the folder `R`.
+b) Users familiar with `R` and `RMarkdown` could directly implement our [d6 workflow package](https://github.com/EcoDynIZW/d6) to make project setups easier and to handle code and projects in a reproducible way. If you chose this option, please read the `ReadMe` that appears on the github website and install the d6 package (with the options `github= FALSE`). This has the advantage that you have automatically created a root directory and an `R-project`. You can then load the data (e.g. data_borneo, provided in zip-files, see below) directly under the root directory. In the `d6`-package there are already start-rmd-scripts (= `RMarkdown`-scripts with `yaml` header &rarr; open and execute with the symbol `knitR`), which make the start easier. But you can also create your own `R`-scripts, e.g. a new script for each course unit, which you put into the folder `R`.
 <br>  
 
 For both options, a) and b), you would need to download the data separately (link to zip.file below)
@@ -87,7 +88,7 @@ For both options, a) and b), you would need to download the data separately (lin
 ...when you have downloaded the repository (see above). In the respective course `R` folder, you will find html-files and rmd-files. Open the html-file in a browser by double clicking. Open `RStudio` in parallel by double-klicking on the `d6_teaching_collection.Rproj`-file. Under `Files` (lower right window pane) , you can open the `R`-scripts.
 <br>
 
-Then, either create your own `R`-script and follow the steps in the html file (you can copy-paste the commands from the html-file), or save a copy of the rmd-file under your own name and run the code chunks step by step in the `RStudio` console. But you should always have the html-file opened in parallel to `RStudio`. Each course comes with exercises as a learning control.
+Then, either create your own `R`-script and follow the steps in the html-file (you can copy-paste the commands from the html-file), or save a copy of the rmd-file under your own name and run the code chunks step by step in the `RStudio` console. But you should always have the html-file opened in parallel to `RStudio`. Each course comes with exercises as a learning control.
 
 
 
