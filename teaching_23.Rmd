@@ -18,7 +18,7 @@ Welcome to the course collection we have developed at our Department. Below you 
 <br>
 The courses follow a logic order. The first introductory courses give an overview over handling data in R; we then introduce statistical analyses for various types of data, e.g. from spatial distribution models of single species via biodiversity analyses of community counts, towards analyses of population trends. To do the courses, please follow the code step by step in the respective html-files of each course (see below). 
 <br>
-The courses are held in English and comprise 6 ECTS. 
+Each year, we teach a block course (in March) held in English, which comprises 6 ECTS (approx. 180 hrs, of which 60 hrs are preparation, 60 hrs are in presence, and 60 hrs are for preparing a project which will be graded). 
 
 
 
@@ -65,10 +65,6 @@ b) Users familiar with R and RMarkdown could directly implement our [d6 workflow
 For both options, a) and b), you would need to download the data separately (link to zip.file below)
 <br><br>
 
-
-
-
-
 # Follow the courses
 
 In the respective R folder, you will find htmls (open them in a browser by double clicking) and rmd files. Either create your own R-script and follow the steps in the html file (you can copy-paste the commands), or save a copy of the rmd file under your own name and run the code chunks step by step in the RStudio console.
@@ -98,11 +94,9 @@ Course 1 is rather a 'refresher' of the basic R concepts that are needed for all
 Please download MaxEnt here: https://biodiversityinformatics.amnh.org/open_source/maxent/
 For MaxEnt you may still need to install a Java version. If you double-click the file maxent.jar, an  interface should appear.
 <br>
-Download course data :For the full course 3, we will provide you with additional data. Drag and drop the folders "data_borneo", "data_berlin", "data_move" from the provided zip files into the main folder (here: d6_teaching_collection). 
+Download course data :For the full course 3, we will provide you with additional data. Drag and drop the folders "data_borneo" and "data_berlin" from the provided zip files into the main folder (here: d6_teaching_collection). 
 
-<br>  TODO --------------- provide link ----------------------
-
-
+<br>  under construction (TODO: clean data folders and provide link )
 
 Course3_a_SDM
 
