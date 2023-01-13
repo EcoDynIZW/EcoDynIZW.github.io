@@ -68,7 +68,7 @@ We chose the following folder structure for our courses:
 <details><summary> Optional - use own course folder setup </summary>
 
 ##### Optional - use own course folder setup
-Only do this if you haven't done the prior step of downloading the whole course and want to set up your own course folder structure or download only a part of the course. In order to ease access to data and script-functionality, we recommend that you use a similar folder structure as we do (see above). 
+Only do this if you haven't done the prior step of downloading the whole course and want to set up your own course folder structure or download only a part of the course. In order to ease access to data and script-functionality, we recommend that you use a similar folder structure as we do (see above). You will find the `github repository`here: https://github.com/EcoDynIZW/d6_teaching_collection.
 
 a) If you are familiar with `R` and want to do the steps 'by hand', create a main (root) folder named `d6_teaching_collection`, then create the subfolders (`data, output, R`) relative to this root-folder (= `d6_teaching_collection`). Create an `R-project` within this folder (e.g. `d6_teaching_collection.Rproj`. For this, open `RStudio` &rarr; `File` &rarr; `New Project` &rarr; `Existing directory`: and then link it with the root folder).
 <br>
