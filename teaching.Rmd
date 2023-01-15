@@ -91,7 +91,7 @@ For both options, a) and b), you would need to download the data separately (lin
 
 # Follow the courses
 
-...when you have downloaded the course folder repository (see above). In the respective course `R` folder, you will find html-files and rmd-files. Open the html-file in a browser by double-clicking. Open `RStudio` in parallel by double-klicking on the `d6_teaching_collection.Rproj`-file. Under `Files` (lower right window pane) , you can open the `R`-scripts.
+...when you have downloaded the course folder repository (see above). In the respective course `R` folder, you will find html-files and rmd-files. Open the html-file in a browser by double-clicking. Open `RStudio` in parallel by double-clicking on the `d6_teaching_collection.Rproj`-file. Under `Files` (lower right window pane) , you can open the `R`-scripts.
 <br>
 
 Then, either create your own `R`-script and follow the steps in the html-file (you can copy-paste the commands from the html-file), or save a copy of the rmd-file under your own name and run the code chunks step by step in the `RStudio` console. But you should always have the html-file opened in parallel to `RStudio`. Each course comes with exercises as a learning control.
