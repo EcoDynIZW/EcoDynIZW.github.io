@@ -105,7 +105,7 @@ Then, either create your own `R`-script and follow the steps in the html-file (y
 These courses contain the minimum knowledge for handling, manipulating and visualizing various data types in `R` (Course1: `vectors`, `data.frames`, `lists`; Course2: spatial data like `raster` and vector files). The second course builds on the concepts introduced in course 1. It is therefore recommended to start with Course 1. 
 <br>
 
-You can run Course 1 without downloading any additional data. Please note that course 1 is **not** meant as a beginners course - a lot of great in-depth courses are available online (see links provided in Course 1). Course 1 is rather a 'refresher' of the basic `R` concepts that are needed for all subsequent courses. In a nutshell, it goes through the [base R cheatsheet](https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf). It is recommended to have the cheatsheet downloaded and to make your own notes into a copy of our script.
+You can run Course 1 without downloading any additional data. Please note that course 1 is **not** meant as a beginners course - a lot of great in-depth courses are available online (see links provided in Course 1). Course 1 is rather a 'refresher' of the basic `R` concepts that are needed for all subsequent courses. In a nutshell, it goes through the [base R cheatsheet](https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf). It is recommended to have the cheatsheet downloaded and to make your own notes into a copy of our script. You will find the course material for Course 1 in the repository under ./R/Course1_R_Intro.
 <br>
 
 </details>
