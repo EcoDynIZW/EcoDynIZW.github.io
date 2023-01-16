@@ -41,8 +41,8 @@ navbar:
     
     - text: "Wikis"
       menu:
-        - text: "Wiki"
-          href: wiki.html
+        - text: "Coding"
+          href: coding.html
         - text: "Geodata"
           href: geodata.html
     #- text: "Ressources"

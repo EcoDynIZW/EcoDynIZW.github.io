@@ -1,7 +1,5 @@
 ---
 title: "Geodata"
-description: |
-  This is an overview blog of the geodata of the d6. If you need any of this data please contact our geodata manager <a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a>
 site: distill::distill_website
 listing: posts_geodata
 link-citations: true
