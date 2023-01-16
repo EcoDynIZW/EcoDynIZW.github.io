@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -789,6 +790,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1030,10 +1032,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1865,9 +1863,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1879,6 +1889,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1978,6 +2013,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -2000,7 +2037,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2607,7 +2644,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2694,82 +2731,41 @@ Research
 
 
 <div class="d-article">
-<h1 id="course-biodiversity-dynamics">Course <em>biodiversity
-dynamics</em></h1>
-<p>Welcome to the course collection we have developed at our Department.
-Below you will find the compilation of our courses. These are hosted
-within one repository, so that data can be shared between the single
-course blocks The course has a strong focus on ecological data analysis
-and modelling, especially spatio-temporal data of animals. It covers the
-whole pipeline from observation and sampling → data analysis → model
-prediction → conservation concept.<br />
+<h1 id="course-biodiversity-dynamics">Course <em>biodiversity dynamics</em></h1>
+<p>Welcome to the course collection we have developed at our Department. Below you will find the compilation of our courses. These are hosted within one repository, so that data can be shared between the single course blocks The course has a strong focus on ecological data analysis and modelling, especially spatio-temporal data of animals. It covers the whole pipeline from observation and sampling → data analysis → model prediction → conservation concept.<br />
 <br></p>
 <figure>
 <img src="img/teach/pipeline.png" alt="Course pipeline" />
 <figcaption aria-hidden="true">Course pipeline</figcaption>
 </figure>
-<p>The single course blocks follow a logical order. The first two
-introductory courses give an overview over handling data in R. These two
-course blocks are mandatory for all other courses; we then introduce
-statistical analyses for various types of data, e.g. from spatial
-distribution models for single species via biodiversity analyses of
-community counts, towards analyses of population trends. To do the
-courses, please follow the code step by step in the respective
-html-files of each course (see below). <br></p>
-<p>Each year, we teach a block course (in March) held in English, which
-comprises 6 ECTS (approx. 180 hrs, of which 60 hrs are preparation, 60
-hrs are in presence, and 60 hrs are for preparing a project which will
-be graded). We will lecture the steps in data analysis, and you will
-prepare a little spatial conservation concept with data we provide; you
-are welcome to bring your own data. Drop us a line if you are interested
-in joining ( assist6[at]izw-berlin.de ). <br></p>
+<p>The single course blocks follow a logical order. The first two introductory courses give an overview over handling data in R. These two course blocks are mandatory for all other courses; we then introduce statistical analyses for various types of data, e.g. from spatial distribution models for single species via biodiversity analyses of community counts, towards analyses of population trends. To do the courses, please follow the code step by step in the respective html-files of each course (see below).
+<br></p>
+<p>Each year, we teach a block course (in March) held in English, which comprises 6 ECTS (approx. 180 hrs, of which 60 hrs are preparation, 60 hrs are in presence, and 60 hrs are for preparing a project which will be graded). We will lecture the steps in data analysis, and you will prepare a little spatial conservation concept with data we provide; you are welcome to bring your own data. Drop us a line if you are interested in joining ( assist6[at]izw-berlin.de ).
+<br></p>
 <h2 id="course-announcements">Course announcements</h2>
 <ul>
-<li>20.02.2023: 9 - 15 hrs CET: Introduction to spatial R via zoom;
-exercises on your own <br></li>
-<li>20.-24.03.2023: block course <code>biodiversity dynamics</code> (at
-IZW; hybrid possibility) <br></li>
+<li>20.02.2023: 9 - 15 hrs CET: Introduction to spatial R via zoom; exercises on your own
+<br></li>
+<li>20.-24.03.2023: block course <code>biodiversity dynamics</code> (at IZW; hybrid possibility)
+<br></li>
 </ul>
 <h2 id="prior-steps">Prior steps</h2>
 <h3 id="program-installation">Program installation</h3>
 <ul>
-<li>RStudio Desktop (<a
-href="https://posit.co/download/rstudio-desktop/"
-class="uri">https://posit.co/download/rstudio-desktop/</a>) <br></li>
-<li>current R-version (<a
-href="https://cran.r-project.org/bin/windows/base/"
-class="uri">https://cran.r-project.org/bin/windows/base/</a>) <br>
+<li>RStudio Desktop (<a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>) <br></li>
+<li>current R-version (<a href="https://cran.r-project.org/bin/windows/base/" class="uri">https://cran.r-project.org/bin/windows/base/</a>) <br>
 <br></li>
 </ul>
-<p>If you are <strong>not</strong> familiar with <code>R</code> and
-<code>RStudio</code>, open <code>RStudio</code> and follow the steps
-shown here of how to write scripts in R: <a
-href="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/teach/L1_Intro_RStudio.pdf">Intro
-to RStudio</a> <br></p>
-<p>If you are familiar with scripting in <code>R</code> in
-<code>RStudio</code>, here is <a
-href="https://www.cedricscherer.com/">Cedric’s</a> tip of the day of a
-cool feature in <code>RStudio</code>: use the rainbow parentheses
-option. For this, go to <code>Tools</code> → <code>Global Options</code>
-→ <code>Code</code> →<code>Display</code>: tick rainbow parentheses. It
-helps you visually with closing brackets correctly for function calls
-and loops.</p>
+<p>If you are <strong>not</strong> familiar with <code>R</code> and <code>RStudio</code>, open <code>RStudio</code> and follow the steps shown here of how to write scripts in R: <a href="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/teach/L1_Intro_RStudio.pdf">Intro to RStudio</a>
+<br></p>
+<p>If you are familiar with scripting in <code>R</code> in <code>RStudio</code>, here is <a href="https://www.cedricscherer.com/">Cedric’s</a> tip of the day of a cool feature in <code>RStudio</code>: use the rainbow parentheses option. For this, go to <code>Tools</code> → <code>Global Options</code> → <code>Code</code> →<code>Display</code>: tick rainbow parentheses. It helps you visually with closing brackets correctly for function calls and loops.</p>
 <h3 id="change-decimal-separator">Change decimal separator</h3>
-<p>…from comma to point in your computer settings if you are working
-from a German PC, e.g. in <code>Windows</code> → <code>Settings</code> →
-<code>Time and Region</code> → <code>Region</code> →
-<code>Advanced Settings</code> → <code>decimal separator</code>: change
-here to point.</p>
+<p>…from comma to point in your computer settings if you are working from a German PC, e.g. in <code>Windows</code> → <code>Settings</code> → <code>Time and Region</code> → <code>Region</code> → <code>Advanced Settings</code> → <code>decimal separator</code>: change here to point.</p>
 <h3 id="download-course">Download course</h3>
-<p>Simply copy our course <code>github repository</code> directly <a
-href="https://github.com/EcoDynIZW/d6_teaching_collection/archive/refs/heads/main.zip">here</a>.
-This will download the whole folder structure with some basic data.
-However, we still recommend that you make a copy of the
-<code>R-scripts</code> so that you can write your own comments and code
-into the scripts. <br></p>
-<p>We chose the following folder structure for our courses: <br></p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> d6_teaching_collection                 <span class="co"># root folder </span></span>
+<p>Simply copy our course <code>github repository</code> directly <a href="https://github.com/EcoDynIZW/d6_teaching_collection/archive/refs/heads/main.zip">here</a>. This will download the whole folder structure with some basic data. However, we still recommend that you make a copy of the <code>R-scripts</code> so that you can write your own comments and code into the scripts. <br></p>
+<p>We chose the following folder structure for our courses:
+<br></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> d6_teaching_collection                 <span class="co"># root folder </span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span>   <span class="ex">└──</span> data                               <span class="co"># data folder</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>       └── data_borneo                    <span class="co"># e.g., the Borneo data</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>           └── geo_raster_current_asc     <span class="co"># geo data, raster ascii format, as in data_borneo</span></span>
@@ -2785,107 +2781,48 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="
 <summary>
 Optional - use own course folder setup
 </summary>
-<h5 id="optional---use-own-course-folder-setup">Optional - use own
-course folder setup</h5>
-<p>Only do this if you haven’t done the prior step of downloading the
-whole course and want to set up your own course folder structure or
-download only a part of the course. In order to ease access to data and
-script-functionality, we recommend that you use a similar folder
-structure as we do (see above). You will find the
-<code>github repository</code> here: <a
-href="https://github.com/EcoDynIZW/d6_teaching_collection"
-class="uri">https://github.com/EcoDynIZW/d6_teaching_collection</a>.</p>
+<h5 id="optional---use-own-course-folder-setup">Optional - use own course folder setup</h5>
+<p>Only do this if you haven’t done the prior step of downloading the whole course and want to set up your own course folder structure or download only a part of the course. In order to ease access to data and script-functionality, we recommend that you use a similar folder structure as we do (see above). You will find the <code>github repository</code> here: <a href="https://github.com/EcoDynIZW/d6_teaching_collection" class="uri">https://github.com/EcoDynIZW/d6_teaching_collection</a>.</p>
 <ol type="a">
-<li><p>If you are familiar with <code>R</code> and want to do the steps
-‘by hand’, create a main (root) folder named
-<code>d6_teaching_collection</code>, then create the subfolders
-(<code>data, output, R</code>) relative to this root-folder (=
-<code>d6_teaching_collection</code>). Create an <code>R-project</code>
-within this folder (e.g. <code>d6_teaching_collection.Rproj</code>. For
-this, open <code>RStudio</code> → <code>File</code> →
-<code>New Project</code> → <code>Existing directory</code>: and then
-link it with the root folder). <br></p></li>
-<li><p>Users familiar with <code>R</code> and <code>RMarkdown</code>
-could directly implement our <a
-href="https://github.com/EcoDynIZW/d6">d6 workflow package</a> to make
-project setups easier and to handle code and projects in a reproducible
-way. If you chose this option, please read the <code>ReadMe</code> that
-appears on the github website and install the d6 package (with the
-options <code>github= FALSE</code>). This has the advantage that you
-have automatically created a root directory and an
-<code>R-project</code>. You can then load the data (e.g. data_borneo,
-provided in zip-files, see below) directly under the root directory. In
-the <code>d6</code>-package there are already start-rmd-scripts (=
-<code>RMarkdown</code>-scripts with <code>yaml</code> header → open and
-execute with the symbol <code>knitR</code>), which make the start
-easier. But you can also create your own <code>R</code>-scripts, e.g. a
-new script for each course unit, which you put into the folder
-<code>R</code>. <br></p></li>
+<li><p>If you are familiar with <code>R</code> and want to do the steps ‘by hand’, create a main (root) folder named <code>d6_teaching_collection</code>, then create the subfolders (<code>data, output, R</code>) relative to this root-folder (= <code>d6_teaching_collection</code>). Create an <code>R-project</code> within this folder (e.g. <code>d6_teaching_collection.Rproj</code>. For this, open <code>RStudio</code> → <code>File</code> → <code>New Project</code> → <code>Existing directory</code>: and then link it with the root folder).
+<br></p></li>
+<li><p>Users familiar with <code>R</code> and <code>RMarkdown</code> could directly implement our <a href="https://github.com/EcoDynIZW/d6">d6 workflow package</a> to make project setups easier and to handle code and projects in a reproducible way. If you chose this option, please read the <code>ReadMe</code> that appears on the github website and install the d6 package (with the options <code>github= FALSE</code>). This has the advantage that you have automatically created a root directory and an <code>R-project</code>. You can then load the data (e.g. data_borneo, provided in zip-files, see below) directly under the root directory. In the <code>d6</code>-package there are already start-rmd-scripts (= <code>RMarkdown</code>-scripts with <code>yaml</code> header → open and execute with the symbol <code>knitR</code>), which make the start easier. But you can also create your own <code>R</code>-scripts, e.g. a new script for each course unit, which you put into the folder <code>R</code>.
+<br></p></li>
 </ol>
-<p>For both options, a) and b), you would need to download the data
-separately (link to zip.file below) <br></p>
+<p>For both options, a) and b), you would need to download the data separately (link to zip.file below)
+<br></p>
 </details>
 <h1 id="follow-the-courses">Follow the courses</h1>
-<p>…when you have downloaded the course folder repository (see above).
-In the respective course <code>R</code> folder, you will find html-files
-and rmd-files. Open the html-file in a browser by double-clicking. Open
-<code>RStudio</code> in parallel by double-clicking on the
-<code>d6_teaching_collection.Rproj</code>-file. Under <code>Files</code>
-(lower right window pane) , you can open the <code>R</code>-scripts.
+<p>…when you have downloaded the course folder repository (see above). In the respective course <code>R</code> folder, you will find html-files and rmd-files. Open the html-file in a browser by double-clicking. Open <code>RStudio</code> in parallel by double-clicking on the <code>d6_teaching_collection.Rproj</code>-file. Under <code>Files</code> (lower right window pane) , you can open the <code>R</code>-scripts.
 <br></p>
-<p>Then, either create your own <code>R</code>-script and follow the
-steps in the html-file (you can copy-paste the commands from the
-html-file), or save a copy of the rmd-file under your own name and run
-the code chunks step by step in the <code>RStudio</code> console. But
-you should always have the html-file opened in parallel to
-<code>RStudio</code>. Each course comes with exercises as a learning
-control.</p>
+<p>Then, either create your own <code>R</code>-script and follow the steps in the html-file (you can copy-paste the commands from the html-file), or save a copy of the rmd-file under your own name and run the code chunks step by step in the <code>RStudio</code> console. But you should always have the html-file opened in parallel to <code>RStudio</code>. Each course comes with exercises as a learning control.</p>
 <details>
 <summary>
 Courses 1 and 2: Basic concepts in R &amp; Spatial R
 </summary>
-<h3 id="courses-1-and-2-basic-concepts-in-r-spatial-r">Courses 1 and 2:
-Basic concepts in R &amp; Spatial R</h3>
-<p>These courses contain the minimum knowledge for handling,
-manipulating and visualizing various data types in <code>R</code>
-(Course1: <code>vectors</code>, <code>data.frames</code>,
-<code>lists</code>; Course2: spatial data like <code>raster</code> and
-vector files). The second course builds on the concepts introduced in
-course 1. It is therefore recommended to start with Course 1. <br></p>
-<p>You can run Course 1 without downloading any additional data. Please
-note that course 1 is <strong>not</strong> meant as a beginners course -
-a lot of great in-depth courses are available online (see links provided
-in Course 1). Course 1 is rather a ‘refresher’ of the basic
-<code>R</code> concepts that are needed for all subsequent courses. In a
-nutshell, it goes through the <a
-href="https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf">base
-R cheatsheet</a>. It is recommended to have the cheatsheet downloaded
-and to make your own notes into a copy of our script. You will find the
-course material for Course 1 in the repository under
-./R/Course1_R_Intro. <br></p>
+<h3 id="courses-1-and-2-basic-concepts-in-r-spatial-r">Courses 1 and 2: Basic concepts in R &amp; Spatial R</h3>
+<p>These courses contain the minimum knowledge for handling, manipulating and visualizing various data types in <code>R</code> (Course1: <code>vectors</code>, <code>data.frames</code>, <code>lists</code>; Course2: spatial data like <code>raster</code> and vector files). The second course builds on the concepts introduced in course 1. It is therefore recommended to start with Course 1.
+<br></p>
+<p>You can run Course 1 without downloading any additional data. Please note that course 1 is <strong>not</strong> meant as a beginners course - a lot of great in-depth courses are available online (see links provided in Course 1). Course 1 is rather a ‘refresher’ of the basic <code>R</code> concepts that are needed for all subsequent courses. In a nutshell, it goes through the <a href="https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf">base R cheatsheet</a>. It is recommended to have the cheatsheet downloaded and to make your own notes into a copy of our script. You will find the course material for Course 1 in the repository under ./R/Course1_R_Intro.
+<br></p>
 </details>
-<p><br> The following courses are under construction. You might need to
-download the repository/ R-scripts again at a later stage. <br></p>
+<p><br>
+The following courses are under construction. You might need to download the repository/ R-scripts again at a later stage.
+<br></p>
 <details>
 <summary>
 Courses 3_a and 3_b Species distribution models
 </summary>
-<h3 id="courses-3_a-3_b-species-distribution-models">Courses 3_a &amp;
-3_b Species distribution models</h3>
+<h3 id="courses-3_a-3_b-species-distribution-models">Courses 3_a &amp; 3_b Species distribution models</h3>
 <h5 id="presence-only-maxent">presence only / MaxEnt</h5>
-<p>Please download MaxEnt here: <a
-href="https://biodiversityinformatics.amnh.org/open_source/maxent/"
-class="uri">https://biodiversityinformatics.amnh.org/open_source/maxent/</a>
-For MaxEnt you may still need to install a Java version. If you
-double-click the file maxent.jar, an interface should appear. <br></p>
-<p>Download course data: For conducting course 3, we will provide you
-with additional data. Drag and drop the folders “data_borneo” and
-“data_berlin” from the provided zip files into the main folder (here:
-<code>d6_teaching_collection</code>). <br></p>
+<p>Please download MaxEnt here: <a href="https://biodiversityinformatics.amnh.org/open_source/maxent/" class="uri">https://biodiversityinformatics.amnh.org/open_source/maxent/</a>
+For MaxEnt you may still need to install a Java version. If you double-click the file maxent.jar, an interface should appear.
+<br></p>
+<p>Download course data: For conducting course 3, we will provide you with additional data. Drag and drop the folders “data_borneo” and “data_berlin” from the provided zip files into the main folder (here: <code>d6_teaching_collection</code>).
+<br></p>
 <p>Link to data_borneo and data_berlin under construction</p>
 <p>Course3_a_SDM</p>
-<h5 id="repeated-presence-absence-occupancy-models">repeated presence
-absence / occupancy models</h5>
+<h5 id="repeated-presence-absence-occupancy-models">repeated presence absence / occupancy models</h5>
 <p>Course3_b_occu</p>
 </details>
 <details>
@@ -2910,8 +2847,7 @@ Course 6 Population analyses
 <h3 id="population-analysis">Population analysis</h3>
 Course6_cmr
 </details>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

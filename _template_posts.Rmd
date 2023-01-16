@@ -9,7 +9,7 @@ author:
   - name: your name
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: "`r Sys.Date()`"
+date: yyyy-mm-dd
 output:
   distill::distill_article:
     self_contained: false

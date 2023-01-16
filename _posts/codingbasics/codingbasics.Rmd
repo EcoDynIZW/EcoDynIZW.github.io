@@ -1,16 +1,15 @@
 ---
 title: "Coding basics 2 - loops and functions"
-description: A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.
- 
+description: |
+    A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.
 categories:
   - tutorial 
   - coding
-  
 author:
   - name: Tobias Kürschner
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: "`r Sys.Date()`"
+date: 2022-11-14
 output:
   distill::distill_article:
     self_contained: false
@@ -97,10 +96,11 @@ myFunction <-
 in **C++**:
 
 ```{r, eval=FALSE}
-
-bool Grid::viableCell(CellCount_t x, CellCount_t y) # the viableCell function of the class Grid returns a bool and takes two inputs (x and y coordinates)
+# the viableCell function of the class Grid returns a bool and takes two inputs
+# (x and y coordinates)
+bool Grid::viableCell(CellCount_t x, CellCount_t y) 
 {
-    return !m_grid.empty() && x < m_grid.cbegin()->size() && y < m_grid.size();
+    return !m_grid.empty() && x < m_grid.cbegin() -> size() && y < m_grid.size();
 }
 
 ```
@@ -145,37 +145,32 @@ for (variable in vector)
 So what is **variable** and what is **vector**? In this case the **variable**, you could also call iterator (often you will see the letter *i* used) is simply put a counter that tells our loop how many times it has repeated itself. The **vector** is determined by us and tells the loop how many repetitions we want before it stops.
 
 ```{r iterator and vector}
-
 for (i in 1:10)
 {
   #body
 }
-
-
 ```
 
 The loop above will now repeat exactly 10 times and then stop. R is helpful in the sense that it automatically increments *i* after each repetition. Other language like C++ for example need a manual increment of *i*:
 
 
 ```{r c++ example, eval=FALSE}
-
 for (i = 0, i <= 10, ++i) #C++ 
 {
   #body
 }
-
 ```
 
 With the basics out of the way lets look at an example:
 
 ```{r for loop example}
-
 myData <- rnorm(30) # random numbers
 myResults <- 0 # initializing myResults
 
 for(i in 1:10)
 {
-  myResults[i] <- myData[i] * myData[i]  # i-th element of `myData` squared into `i`-th position of `myResults`
+  # i-th element of `myData` squared into `i`-th position of `myResults`
+  myResults[i] <- myData[i] * myData[i]  
   print(i)
 }
 
@@ -183,6 +178,7 @@ myResults
 
 
 ```
+
 This was of course a very simple loop and there is pretty much no limit to the level of complexity those loops can have and how many loops could be nested. But be warned there can be some pitfalls with loops. **Exercise:** Would the following loop work?
 
 ```{r loop issues, eval=FALSE}
@@ -356,9 +352,10 @@ while(!viableCell() && timer < 50 )
 
 
 ```
+
 Now the individual turns a maximum of 50 times before the loop ends. Another option would be conditionals:
 
-## 🎉Bonus round - Conditionals 
+## Bonus round - Conditionals 
 
 
 Most people already know what a conditional is. Basically, when a certain condition is fulfilled something happens (usually done via **if** and/or **else**).
@@ -381,12 +378,5 @@ while(!viableCell())
 
 ```
 
-Conditionals can be used in a variety of way within and outside of loops but have the advantage that they can be used stop loops under certain conditions. Lets say you are running a complex construct of multiple nested for loops to find a certain value in your data. You dont need to always iterate through all the data if you can create certain logical stop conditions.
-
-```{r}
-
-```
-
-
-
+Conditionals can be used in a variety of way within and outside of loops but have the advantage that they can be used stop loops under certain conditions. Lets say you are running a complex construct of multiple nested for loops to find a certain value in your data. You don't need to always iterate through all the data if you can create certain logical stop conditions.
 
