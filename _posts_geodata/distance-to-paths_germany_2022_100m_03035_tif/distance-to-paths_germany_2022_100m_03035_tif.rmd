@@ -1,7 +1,7 @@
 ---
 title: 'distance-to-paths germany 2022'
 categories:
-  - Distance
+  - distance
   - Germany
   - '2022'
 author:
