@@ -38,10 +38,13 @@ navbar:
           href: msc-bsc-theses.html
     - text: "Teaching"
       href: teaching.html 
-    - text: "Wiki"
-      href: wiki.html
-    - text: "Geodata"
-      href: geodata.html
+    
+    - text: "Wikis"
+      menu:
+        - text: "Wiki"
+          href: wiki.html
+        - text: "Geodata"
+          href: geodata.html
     #- text: "Ressources"
     #  menu:
     #    - text: "Guidelines"
