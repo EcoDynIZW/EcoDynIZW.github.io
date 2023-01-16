@@ -1,7 +1,7 @@
 ---
-title: "Download spatial data from the fisbroker database of the Berlin Senate"
+title: "Download Spatial Data from the Fisbroker Database of the Berlin Senate"
 description: |
- In the d6raster package is a function called download_fisbroker that downloads wfs data from the fisbroker database from the Berlin Senate. 
+ The d6raster package provides a function called download_fisbroker to help you when downloading wfs data from the fisbroker database from the Berlin Senate. 
 preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/d6_raster_icon.png
 categories:
   - tutorial

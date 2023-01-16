@@ -1,10 +1,9 @@
 ---
-title: "Coding Basics 1 - General tips"
+title: "Coding Basics 1 – General Tips"
 description: A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code.
 categories:
   - tutorial
   - coding
-  
 author:
   - name: Tobias Kürschner
     affiliation: IZW Berlin
