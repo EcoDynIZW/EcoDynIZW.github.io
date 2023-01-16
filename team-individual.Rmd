@@ -125,9 +125,18 @@ We investigate if DNA methylation is a main mechanism through which an individua
    </ul>
 </small>
 
+::: {.floatting}
+```{r out.width='20%', out.extra='style="float:right; padding:10px"'}
+knitr::include_graphics("./img/logo_serengeti_spotted_hyaena_project.png")
+```
 
-[Spotted Hyaenas - Findings and Insights](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/img/Leaflet_Serengeti_Hyena_project.pdf)
 
+</br>
+
+[Information leaflet Serengeti Spotted Hyaena Project](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/img/Leaflet_Serengeti_Hyena_project.pdf)
+:::
+
+</br>
 
 **Here is an overview of our research interests, methods and partners since the establishment of the project in 1987:**
 
