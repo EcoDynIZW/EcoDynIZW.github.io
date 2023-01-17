@@ -9,7 +9,7 @@ author:
 
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: '2022-12-14'
+date: '2023-01-16'
 output:
   distill::distill_article:
     self_contained: false
