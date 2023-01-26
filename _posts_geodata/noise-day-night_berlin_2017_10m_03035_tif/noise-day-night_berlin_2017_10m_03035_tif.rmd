@@ -3,7 +3,8 @@ title: 'noise-day-night berlin 2017'
 categories:
   - Berlin
   - '2017'
-  - noise
+  - 10m
+  - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
 

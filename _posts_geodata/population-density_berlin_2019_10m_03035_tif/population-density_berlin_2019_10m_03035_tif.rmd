@@ -2,8 +2,9 @@
 title: 'population-density berlin 2019'
 categories:
   - '2019'
-  - population density
   - Berlin
+  - 10m
+  - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
 

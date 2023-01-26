@@ -4,6 +4,7 @@ categories:
   - Berlin
   - '2020'
   - 1m
+  - epsg:25833
 author:
   - name: Moritz Wenzler-Meya
 
