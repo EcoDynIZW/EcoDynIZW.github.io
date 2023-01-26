@@ -59,9 +59,9 @@ We chose the following folder structure for our courses:
 ``` bash
 └── d6_teaching_collection                 # root folder 
     ├──  data                              # data folder
-    |    └── data_borneo                   # e.g., the Borneo data
-    |        ├── geo_raster_current_asc    # geo data, raster ascii format, as in data_borneo
-    |        └── animal_data               # animal observation data in borneo
+    │    └── data_borneo                   # e.g., the Borneo data
+    │        ├── geo_raster_current_asc    # geo data, raster ascii format, as in data_borneo
+    │        └── animal_data               # animal observation data in borneo
     ├── output                             # storage for files created during course
     ├── R                                  # store here all your scripts, i.e.
     │   ├── script_course1.R               # r-files or rmd-files with codes
