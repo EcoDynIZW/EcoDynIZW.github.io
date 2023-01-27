@@ -3,7 +3,8 @@ title: 'corine berlin 2015'
 categories:
   - Corine
   - '2015'
-  - Berlin
+  - 20m
+  - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
 
