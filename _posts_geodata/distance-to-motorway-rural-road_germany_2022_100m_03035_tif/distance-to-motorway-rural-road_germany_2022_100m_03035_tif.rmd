@@ -1,9 +1,10 @@
 ---
 title: 'distance-to-motorway-rural-road germany 2022'
 categories:
-  - distance
   - Germany
   - '2022'
+  - 100m
+  - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
 

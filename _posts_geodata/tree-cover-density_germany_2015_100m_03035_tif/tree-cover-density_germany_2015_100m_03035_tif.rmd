@@ -3,6 +3,8 @@ title: 'tree-cover-density germany 2015'
 categories:
   - Germany
   - '2015'
+  - 100m
+  - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
 

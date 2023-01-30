@@ -3,6 +3,8 @@ title: 'paths germany 2022'
 categories:
   - Germany
   - '2022'
+  - 100m
+  - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
 
