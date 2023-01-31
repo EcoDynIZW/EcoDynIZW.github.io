@@ -1,0 +1,53 @@
+---
+title: "d6geodata - a package to manage spatial data in the Ecodyn Department of the IZW"
+description: |
+ This package provides functions to show and get geodata. 
+  To download data from the fisbroker database and several functions for the geodata manager to provide these datasets. 
+categories:
+  - tutorial
+  - spatial
+  -
+  
+author:
+  - name: Moritz Wenzler-Meya
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: 2023-01-31
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The [`{d6geodata}` package](https://github.com/EcoDynIZW/d6geodata) provides several functions for the members of the Ecological Department of the IZW. Some functions can be used without access to our resources such as *download_fisbroker_wfs* and *download_fisbroker_atom*.
+
+```{r install, eval=3}
+devtools::install_github("EcoDynIZW/d6geodata")
+library(d6geodata)
+```
+
+Functions for all: 
+
+- download_fisbroker_wfs
+- download_fisbroker_atom
+
+
+For using these two functions you have to go to the fisbroker data base and select a layer you want to download. 
+```{r example}
+
+```
+
+Functions for internal use only:
+
+- geo_overview
+- get_geodata
+
+
+```{r plot, echo=FALSE}
+
+```
+
