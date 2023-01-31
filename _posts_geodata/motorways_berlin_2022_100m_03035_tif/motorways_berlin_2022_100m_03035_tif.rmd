@@ -2,8 +2,9 @@
 title: 'motorways berlin 2022'
 categories:
   - Berlin
-  - binary
   - '2022'
+  - 100m
+  - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
 

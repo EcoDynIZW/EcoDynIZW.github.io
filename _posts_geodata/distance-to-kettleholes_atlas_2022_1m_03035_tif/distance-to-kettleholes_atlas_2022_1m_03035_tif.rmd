@@ -4,7 +4,7 @@ categories:
   - Atlas
   - '2022'
   - 1m
-  - distance
+  - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
 

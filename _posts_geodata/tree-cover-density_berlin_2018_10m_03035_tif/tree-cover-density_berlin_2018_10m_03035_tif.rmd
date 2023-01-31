@@ -3,7 +3,8 @@ title: 'tree-cover-density berlin 2018'
 categories:
   - Berlin
   - '2018'
-  - tree cover density
+  - 10m
+  - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
 
