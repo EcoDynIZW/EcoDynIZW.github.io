@@ -108,11 +108,14 @@ These courses contain the minimum knowledge for handling, manipulating and visua
 You can run Course 1 without downloading any additional data. Please note that course 1 is **not** meant as a beginners course - a lot of great in-depth courses are available online (see links provided in Course 1). Course 1 is rather a 'refresher' of the basic `R` concepts that are needed for all subsequent courses. In a nutshell, it goes through the [base R cheatsheet](https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf). It is recommended to have the cheatsheet downloaded and to make your own notes into a copy of our script. You will find the course material for Course 1 in the repository under ./R/Course1_R_Intro.
 <br>
 
-For Course 2, you need to have the repository downloaded for access to the spatial data. Please open the .html file in ./R/Course2_R_Spatial.
-<br>
-
 </details>
 
+
+
+
+<br>
+The following courses are under construction. You might need to download the repository/ R-scripts again at a later stage.
+<br>
 
 <details><summary>Courses 3_a and 3_b Species distribution models</summary>
 
@@ -126,7 +129,7 @@ For MaxEnt you may still need to install a Java version. If you double-click the
 Download course data: For conducting course 3, we will provide you with additional data. Drag and drop the folders "data_borneo" and "data_berlin" from the provided zip files into the main folder (here: `d6_teaching_collection`). 
 <br> 
 
-Link to data_borneo and data_berlin will be provided. 
+Link to data_borneo and data_berlin under construction 
 
 Course3_a_SDM
 
