@@ -38,7 +38,7 @@ Functions for all:
 
 For using these two functions you have to go to the fisbroker data base and select a layer you want to download. 
 ```{r example}
-
+download_fisbroker_wfs()
 ```
 
 Functions for internal use only:
