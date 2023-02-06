@@ -55,20 +55,20 @@ For older publications please check here:<br> [2023](publications.html)&ensp;|&e
 
 * **Gicquel M**, **East ML**, Hofer H, Cubaynes S, **Benhaiem S** (2022): Climate change does not decouple interactions between a central place foraging predator and its migratory prey. ECOSPHERE, **13**, e4012. doi:<span>[10.1002/ecs2.4012](https://doi.org/10.1002/ecs2.4012)</span>
 
-* Gorczynski D, Hsieh C, Ahumad J, Akampurira E, Andrianarisoa MH, Espinosa S, Johnson S, Kayijamahe C, Lima MGM, **Mugerwa B**, Rovero F, Salvador J, Santos F, Sheil D, Uzabah, E, & Beaudrot L (2022): Human density modulates spatial associations among tropical forest terrestrial mammal species. GLOB CHANG BIOL, **28**, 7205– 7216. doi:<span>[10.1111/gcb.16434](https://doi.org/10.1111/gcb.16434)</span> 
+* Gorczynski D, Hsieh C, Ahumad J, Akampurira E, Andrianarisoa MH, Espinosa S, Johnson S, Kayijamahe C, Lima MGM, **Mugerwa B**, Rovero F, Salvador J, Santos F, Sheil D, Uzabah, E, Beaudrot L (2022): Human density modulates spatial associations among tropical forest terrestrial mammal species. GLOB CHANG BIOL, **28**, 7205–7216. doi:<span>[10.1111/gcb.16434](https://doi.org/10.1111/gcb.16434)</span> 
 
-* **Grabow M**, **Louvrier JLP**, **Planillo A**, Kiefer S, **Drenske S**, **Börner K**, Stillfried M, Hagen R, Kimmig S, Straka TM and **Kramer-Schadt S** (2022): Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels. FRONT ECOL EVOL, **10**, 881247. doi:<span>[10.3389/fevo.2022.881247](https://doi.org/10.3389/fevo.2022.881247)</span>
+* **Grabow M**, **Louvrier JLP**, **Planillo A**, Kiefer S, **Drenske S**, **Börner K**, Stillfried M, Hagen R, Kimmig S, Straka TM,  **Kramer-Schadt S** (2022): Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels. FRONT ECOL EVOL, **10**, 881247. doi:<span>[10.3389/fevo.2022.881247](https://doi.org/10.3389/fevo.2022.881247)</span>
 
 * **Guharajan R**, Abrams JF, Abram NK, Lim HY, Gopalasamy RC, Deere NJ, Struebig MJ, Goossens B, Gardner PC, Brodie JF, Granados A, Teoh SW, Hearn AJ, Ross J, Macdonald DW, **Mohamed A**, **Wong ST**, Hastie AYL, Wong W-M, Kretschmar P, Wong ST, Koh SPH, **Wilting A** (2022): Determinants of sun bear *Helarctos malayanus* habitat use in Sabah, Malaysian Borneo and its predicted distribution under future forest degradation and loss. BIODIVERS CONSERV. doi:<span>[10.1007/s10531-022-02503-9](https://doi.org/10.1007/s10531-022-02503-9)</span>
 
-* Günther T, **Kramer-Schadt S**, Fuhrmann M and Belik V (2022): Environmental factors associated with the prevalence of ESBL/AmpC-producing Escherichia coli in wild boar (Sus scrofa).
+* Günther T, **Kramer-Schadt S**, Fuhrmann M,  Belik V (2022): Environmental factors associated with the prevalence of ESBL/AmpC-producing Escherichia coli in wild boar (Sus scrofa).
 FRONT VET SCI, **9**, 980554. doi:<span>[10.3389/fvets.2022.980554](https://doi.org/10.3389/fvets.2022.980554)</span> 
 
 * **Hagen R**, Ortmann S, Elliger A, & Arnold J (2022): Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation. ECOL EVOL, **12**, e8938. doi:<span>[10.1002/ece3.8938](https://doi.org/10.1002/ece3.8938)</span>
 
 * Hering R, Hauptfleisch M, Jago M, Smith T, **Kramer-Schadt S**, Stiegler J, Blaum N (2022): Don’t stop me now: Managed fence gaps could allow migratory ungulates to track dynamic resources and reduce fence related energy loss. FRONT ECOL EVOL, **10**, 907079. doi:<span>[10.3389/fevo.2022.907079](https://doi.org/10.3389/fevo.2022.907079)</span>
 
-* Hering R, Hauptfleisch M, **Kramer-Schadt S**, Stiegler J and Blaum N (2022): Effects of fences and fence gaps on the movement behavior of three southern African antelope species. FRONT CONSERV SCI, **3**, 959423. doi:<span>[10.3389/fcosc.2022.959423](https://doi.org/10.3389/fcosc.2022.959423)</span> 
+* Hering R, Hauptfleisch M, **Kramer-Schadt S**, Stiegler J,  Blaum N (2022): Effects of fences and fence gaps on the movement behavior of three southern African antelope species. FRONT CONSERV SCI, **3**, 959423. doi:<span>[10.3389/fcosc.2022.959423](https://doi.org/10.3389/fcosc.2022.959423)</span> 
 
 * **Kalyahe MM**, Hofer H, **East ML** (2022): Do anthropogenic sources of food increase livestock predation in the area surrounding Ruaha National Park? ENVIRON CONSERV **49**, 105-113. doi:<span>[10.1017/S037689292200008X](https://doi.org/10.1017/S037689292200008X)</span>
 
@@ -98,7 +98,7 @@ FRONT VET SCI, **9**, 980554. doi:<span>[10.3389/fvets.2022.980554](https://doi.
 
 * Stiegler J, Lins A, Dammhahn M, **Kramer-Schadt S**, Ortmann S, Blaum N (2022): Personality drives activity and space use in a mammalian herbivore. MOV ECOL, **10**, 33. doi:<span>[10.1016/j.biocon.2021.109446](https://doi.org/10.1016/j.biocon.2021.109446)</span>
 
-* Synodinos AD, Karnatak R, Aguilar-Trigueros CA, Gras P, Heger T, Ionescu D, Maaß S, Musseau CL, Onandia G, **Planillo A**, Weiss L, Wollrab S and Ryo M (2022): The rate of environmental change as an important driver across scales in ecology. OIKOS e09616. doi:<span>[10.1111/oik.09616](https://doi.org/10.1111/oik.09616)</span>
+* Synodinos AD, Karnatak R, Aguilar-Trigueros CA, Gras P, Heger T, Ionescu D, Maaß S, Musseau CL, Onandia G, **Planillo A**, Weiss L, Wollrab S, Ryo M (2022): The rate of environmental change as an important driver across scales in ecology. OIKOS e09616. doi:<span>[10.1111/oik.09616](https://doi.org/10.1111/oik.09616)</span>
 
 * Vallejo-Vargas AF, Sheil D, Semper-Pascual A, ... **Mugerwa B**, ... et al. (2022): Consistent diel activity patterns of forest mammals among tropical regions. NAT COMMUN, **13**, 7102.  doi:<span>[10.1038/s41467-022-34825-1](https://doi.org/10.1038/s41467-022-34825-1)</span>
 
@@ -118,8 +118,8 @@ FRONT VET SCI, **9**, 980554. doi:<span>[10.3389/fvets.2022.980554](https://doi.
 
 <div class='headerbox'><hbox>Book Chapters & Reports</hbox></div><br>
 
-* Gimenez  O, **Louvrier  J**, Lauret  V and Santostasi  N (2022): Studying Species Demography and Distribution in Natural Conditions: Hidden Markov Models. In Statistical Approaches for Hidden Variables in Ecology (eds N. Peyrard and O. Gimenez). [https://doi.org/10.1002/9781119902799.ch3](https://doi.org/10.1002/9781119902799.ch3)
+* Gimenez  O, **Louvrier  J**, Lauret  V,  Santostasi  N (2022): Studying Species Demography and Distribution in Natural Conditions: Hidden Markov Models. In Statistical Approaches for Hidden Variables in Ecology (eds N. Peyrard and O. Gimenez). [https://doi.org/10.1002/9781119902799.ch3](https://doi.org/10.1002/9781119902799.ch3)
 
-* Papaïx J, Soubeyrand S, Bonnefon O, Walker E, **Louvrier J**, Klein E and Roques L (2022): Inferring Mechanistic Models in Spatial Ecology Using a Mechanistic-Statistical Approach. In Statistical Approaches for Hidden Variables in Ecology (eds N. Peyrard and O. Gimenez). [https://doi.org/10.1002/9781119902799.ch4](https://doi.org/10.1002/9781119902799.ch4)
+* Papaïx J, Soubeyrand S, Bonnefon O, Walker E, **Louvrier J**, Klein E,  Roques L (2022): Inferring Mechanistic Models in Spatial Ecology Using a Mechanistic-Statistical Approach. In Statistical Approaches for Hidden Variables in Ecology (eds N. Peyrard and O. Gimenez). [https://doi.org/10.1002/9781119902799.ch4](https://doi.org/10.1002/9781119902799.ch4)
 
-* Thonicke K, Rahner E, Arneth A, Bartkowski B, Bonn A, Döhler C, Finger R, Freitag J, Grosch R, Grossart H.-P, Grützmacher K, Hartman Scholz A, Häuser C, Hickler T, Hölker F, Jähnig S C, Jeschke J, Kasen R, Kastner T, **Kramer-Schadt S**, Krug C, Lakner S, Loft L, Matzdorf B, Meakins F, De Meester L, Monaghan M T, Müller D, Overmann J, Quaas M, **Radchuk V**, Reyer C, Roos C, Scholz I, Schroer S, Sioen G B, Sommer S, Sommerwerk N, Tockner K, Turk Z, Warner B, Wätzold F, Wende W, Veenstra  und van der Voort H (2022): 10 Must-Knows aus der Biodiversitätsforschung | 10 Must knows from biodiversity science 2022. Zenodo. [https://doi.org/10.5281/zenodo.6257476](https://doi.org/10.5281/zenodo.6257476) | [https://zenodo.org/record/6257527](https://zenodo.org/record/6257527)
+* Thonicke K, Rahner E, Arneth A, Bartkowski B, Bonn A, Döhler C, Finger R, Freitag J, Grosch R, Grossart H.-P, Grützmacher K, Hartman Scholz A, Häuser C, Hickler T, Hölker F, Jähnig S C, Jeschke J, Kasen R, Kastner T, **Kramer-Schadt S**, Krug C, Lakner S, Loft L, Matzdorf B, Meakins F, De Meester L, Monaghan M T, Müller D, Overmann J, Quaas M, **Radchuk V**, Reyer C, Roos C, Scholz I, Schroer S, Sioen G B, Sommer S, Sommerwerk N, Tockner K, Turk Z, Warner B, Wätzold F, Wende W, Veenstra, van der Voort H (2022): 10 Must-Knows aus der Biodiversitätsforschung | 10 Must knows from biodiversity science 2022. Zenodo. [https://doi.org/10.5281/zenodo.6257476](https://doi.org/10.5281/zenodo.6257476) | [https://zenodo.org/record/6257527](https://zenodo.org/record/6257527)
