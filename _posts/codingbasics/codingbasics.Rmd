@@ -1,5 +1,5 @@
 ---
-title: "Coding Basics 2 – Loops and Functions"
+title: "Coding Basics 2: Loops and Functions"
 description: |
     A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.
 categories:
@@ -35,21 +35,19 @@ for (pckg in
 ```
 
 
-# **Functions and loops** 
+# Functions and Loops
 
 ### What are they for?
 
 In short: making you life easier. They are used to automate certain steps in your code to make the execution faster.
 
-## **Functions**
+## Functions
 
 A simple **example**: you have multiple data sets with a measurement in inches. To continue working with that data you need to convert it meter, but doing that manually would take hours. Solution: a function!!
 
 In **R**:
 
 ```{r conversion function}
-
-
 inch_to_meter <-   #function name
   function(inch) #function input parameter(s)
   { # function body
@@ -57,32 +55,27 @@ inch_to_meter <-   #function name
     
     return(inM) # function reporter
   }
-
 ```
+
 Now lets apply that function to some random example data:
 
 ```{r data conversion}
-
 myOldData <- c(15,98,102,5,17)
 
 myNewData <- inch_to_meter(myOldData)
-
 ```
 
 Our function is applied to all elements of the old data, giving us the converted measurements.
 
 ```{r old and new data}
-
 myOldData
 
 myNewData
-
 ```
 
 For a more general approach we can use the following template for simple functions:
 
 ```{r function template}
-
 myFunction <-
   function(input1, input2, input3)
   {
@@ -90,10 +83,9 @@ myFunction <-
     
     return(output)
   }
-
 ```
 
-in **C++**:
+In **C++**:
 
 ```{r, eval=FALSE}
 # the viableCell function of the class Grid returns a bool and takes two inputs
@@ -102,13 +94,11 @@ bool Grid::viableCell(CellCount_t x, CellCount_t y)
 {
     return !m_grid.empty() && x < m_grid.cbegin() -> size() && y < m_grid.size();
 }
-
 ```
 
-in **NetLogo**, the closest thing we have to functions are reporters:
+In **NetLogo**, the closest thing we have to functions are reporters:
 
 ```{r, eval=FALSE}
-
 to-report Male_Alpha_Alive 
 
   ifelse (any? turtles-here with [isAlpha = true AND isFemale = false])
@@ -116,30 +106,24 @@ to-report Male_Alpha_Alive
   [report false] #else
 
 end
-
 ```
 
 
-## **Loops** 
+## Loops
 
 What is a loop? It a simply a piece of code we want to repeat. But wait, isn't that exactly what a function does? Well, yes and no. A function (after it is declared) is an embodiment of a piece of code that we can run anytime just by calling it. A loop is a local repetition of code.
 
 Lets stay in R and look at some **examples**:
 
-### A classic, the 'for' loop:
+### A Classic, the 'for' Loop
 
 If you auto fill "for" in R, it will give you the following structure:
 
 ```{r for loop basic, eval=FALSE}
-
-
-
 for (variable in vector)
 {
   #body
 }
-
-
 ```
 
 So what is **variable** and what is **vector**? In this case the **variable**, you could also call iterator (often you will see the letter *i* used) is simply put a counter that tells our loop how many times it has repeated itself. The **vector** is determined by us and tells the loop how many repetitions we want before it stops.
@@ -152,7 +136,6 @@ for (i in 1:10)
 ```
 
 The loop above will now repeat exactly 10 times and then stop. R is helpful in the sense that it automatically increments *i* after each repetition. Other language like C++ for example need a manual increment of *i*:
-
 
 ```{r c++ example, eval=FALSE}
 for (i = 0, i <= 10, ++i) #C++ 
@@ -175,14 +158,11 @@ for(i in 1:10)
 }
 
 myResults
-
-
 ```
 
 This was of course a very simple loop and there is pretty much no limit to the level of complexity those loops can have and how many loops could be nested. But be warned there can be some pitfalls with loops. **Exercise:** Would the following loop work?
 
 ```{r loop issues, eval=FALSE}
-
 for (i in 1:length(summIdentSplit))
 {
   tmpSumm <- summIdentSplit[[i]]
@@ -218,16 +198,11 @@ for (i in 1:length(summIdentSplit))
     combiMelt_c$quarter[i] <- q
   }
 }
-
-
-
-
 ```
 
 The answer is **no**. There are two loops involved where one is nested inside the other. So far, that would not be an issue, however, both loops use the iterator (variable) i. To see what would happen:
 
 ```{r loop issues first iteration, eval=FALSE}
-
 First iteration:
   i = 1
 
@@ -257,14 +232,11 @@ for (i in 1:length(summIdentSplit))
   q <- 0
   combiMelt_c$quarter <- 0
   
-  
 ```
 
 At this point i is still 1 and lets say nrow(combiMelt_c) is also 10 (like in our outer loop) 
   
 ```{r loop issues first iteration2, eval=FALSE}  
-  
-  
   for (i in 1:nrow(combiMelt_c))
   {
     if (i %% 13 == 0)
@@ -272,15 +244,12 @@ At this point i is still 1 and lets say nrow(combiMelt_c) is also 10 (like in ou
       q <- q + 1
     }
     combiMelt_c$quarter[i] <- q
-    
 ```
    
    at this point i is iterated within the inner loop
    
 ```{r loop issues first iteration3, eval=FALSE}     
-    
   }
-
 ```
 
   once we reach this point i is 10, so the for the next iteration of the outer 
@@ -288,31 +257,26 @@ At this point i is still 1 and lets say nrow(combiMelt_c) is also 10 (like in ou
   
 ```{r loop issues first iteration4, eval=FALSE}   
 }
-
-
 ```
 
 **Solution**: make sure to use different iterators in nested loops. For example the outer loop uses ***i***, the inner loop uses ***j*** and maybe that loop has also a nested loop which then uses ***k*** as its iterator.
 
 
-### 'while' loops
+### 'while' Loops
 
 Similar to for loops, while loops also repeat a certain block of code. The difference here is, that while loop repeat until a certain condition is fulfilled, potentially forever. R's auto fill provides us the following code snippet:
 
 ```{r, eval=FALSE}
-
 while (condition)
 {
   
 }
-
 ```
 
 
-An easy example:
+A simple example:
 
 ```{r}
-
 n <- 0
 
 while(n < 100)
@@ -321,26 +285,20 @@ while(n < 100)
 }
 
 print(n)
-
 ```
 
 As long as n is below 100 we increment n every repeat. Take note: if the condition is never fulfilled, the loop will run forever and the software might crash. In complex loops you could run a "escape timer" such as in this example plucked from an IBM:
 
 ```{r, eval = FALSE}
-
-
 while(!viableCell())
 {
    turn(2 * (atan (( (1 - 0.5) / (1 + 0.9)) * tan ((randomDouble(1) - 0.5)) * 180)) + 1) 
 }
-  
-
 ```
 
 This little loop runs on an individual and check's the cell in front of the individual for its viability to move into. As long as viableCell() reports false, the individual turns. However, there are cases when they are no viable cells around so the individual would turn in a circle forever. Introducing a random timer (note, this is not an optimal solution just a quick fix).
 
 ```{r, eval=FALSE}
-
 int timer = 0
 
 while(!viableCell() && timer < 50 )
@@ -349,19 +307,16 @@ while(!viableCell() && timer < 50 )
   
   ++timer #increment the timer
 }
-
-
 ```
 
 Now the individual turns a maximum of 50 times before the loop ends. Another option would be conditionals:
 
-## Bonus round - Conditionals 
 
+## Bonus Round: Conditionals 
 
 Most people already know what a conditional is. Basically, when a certain condition is fulfilled something happens (usually done via **if** and/or **else**).
 
 ```{r, eval=FALSE}
-
 int timer = 0
 
 while(!viableCell())
@@ -375,7 +330,6 @@ while(!viableCell())
     break # break is a function that for example ends a loop
   }
 }
-
 ```
 
 Conditionals can be used in a variety of way within and outside of loops but have the advantage that they can be used stop loops under certain conditions. Lets say you are running a complex construct of multiple nested for loops to find a certain value in your data. You don't need to always iterate through all the data if you can create certain logical stop conditions.

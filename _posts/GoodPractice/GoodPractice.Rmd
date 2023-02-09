@@ -1,5 +1,5 @@
 ---
-title: "Coding Basics 1 – General Tips"
+title: "Coding Basics 1: General Tips"
 description: A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code.
 categories:
   - tutorial
@@ -29,81 +29,72 @@ knitr::opts_chunk$set(echo = TRUE)
 5. Don't repeat yourself.
 
 
-
 ```{r results='hide', message=FALSE, warning=FALSE, echo=FALSE}
-
 library(tidyverse)
 
 data("iris")
 head(iris)
-
-
 ```
 
 
-## **Variable Naming Conventions**
+## Variable Naming Conventions
 
 Variable naming is an important aspect in making your code readable. Create variables that describe their function and follow a consistent theme throughout your code. Separate words in a variable name without the use of whitespace and do not repeat variable names (unless in certain circumstances such as temporary variable within loops).
 
 ### Snakecase:
-Words are delimited by an underscore
-```{r}
 
+Words are delimited by an underscore.
+
+```{r}
 variable_one <- 1
 
 variable_two <- 2
-
 ```
 
 ### Camelcase: 
-Words are delimited by capital letters, except the initial word
+
+Words are delimited by capital letters, except the initial word.
 
 ```{r}
-
 variableOne <- 1
 
 variableTwo <- 2
-
 ```
 
 ### Pascalcase: 
+
 Words are delimited by capital letters.
 
 ```{r}
-
 VariableOne <- 1
 
 VariableTwo <- 2
-
 ```
 
 
 ### Hungarian Notation:
+
 This notation describes the variable type or purpose at the start of the variable name, followed by a descriptor that indicates the variable’s function. The Camelcase notation is used to delimit words.
 
 ```{r}
-
 iVariableOne   <- 1  # i - integer
 
 sVariableTwo   <- "two" # s - string
 
 lVariableThree <- list() # l - list
-
 ```
-### Sidenote: Namespaces and function names
+
+### Sidenote: Namespaces and Function Names
 
 Often when using for example R we will use libraries and many of them at the same time. Quite a few of those libraries are using the same names for their functions. This can be a big issues and cause code to suddenly not run anymore even though the only difference my be the order in which libraries are loaded. The last library loaded with a certain function will be the default one used by R. A prominent example would be the 'raster' package and 'tidyverse' (dplyr) who share the name 'select' for a function. So, when in doubt use namespaces to make sure to link a function to their library.
 
 ```{r eval=FALSE}
-
-#use the select function from the dplyr library
+use the select function from the dplyr library
 dplyr::select(.....)
-
-
 ```
 
 
-## **Indentation**
+## Indentation
 
 I assume you already know that your code should have some sort of indentation. However, it's also worth noting that its a good idea to keep your indentation style consistent.
 As a quick reminder:
@@ -113,24 +104,18 @@ As a quick reminder:
 Long lines of text with no separation:
 
 ```{r eval=FALSE}
-
 mydata <- iris %>% dplyr::filter(Species == "virginica") %>% summarise_at(.vars = c("Sepal.Length", "Sepal.Width"),.funs = "mean")
 
-
-
 for (i in 1:length(hmpSplit)){ tmp1 <- as.data.frame(hmpSplit[[i]]$pm); colnames(tmp1) <- c(paste0("tab_", i), 'pxcor', 'pycor', 'agent', 'breed'); tmp1 <- tmp1 %>% dplyr::select(-c('pxcor', 'pycor', 'agent', 'breed')); tempDf <- cbind(tempDf, tmp1)}
-
 ```
 
 #### Good:
 
 ```{r eval=FALSE}
-
 mydata <- iris %>%
   dplyr::filter(Species == "virginica") %>%
   summarise_at(.vars = c("Sepal.Length", "Sepal.Width"),
                .funs = "mean")
-
 
 
 for (i in 1:length(hmpSplit))
@@ -144,14 +129,11 @@ for (i in 1:length(hmpSplit))
   
   tempDf <- cbind(tempDf, tmp1)
 }
-
-
 ```
 
 The details on how to indent or use whitesapces are up to individual styles with some guidelines, such as avoiding long lines of text, to keep in mind. Also fine would be something like the following.  
 
 ```{r eval=FALSE}
-
 for (i in 1:length(hmpSplit))
 {
   tmp1 <- as.data.frame(hmpSplit[[i]]$pm)
@@ -159,16 +141,14 @@ for (i in 1:length(hmpSplit))
   tmp1 <- tmp1 %>% dplyr::select(-c('pxcor', 'pycor', 'agent', 'breed'))
   tempDf <- cbind(tempDf, tmp1)
 }
-
 ```
 
 
-## **Commenting your Code**
+## Commenting Your Code
 
 Commenting your code is fantastic but it can be overdone or just be plain redundant. Comments should add information or explanations to make your code understandable for people who didn't write it or yourself in a year from now:
 
 ```{r  eval=FALSE}
-
 # comment that adds information:
 
 write_simoutput(nl) #having nlrx write the output into a file - only works without patch or turtle metrics
@@ -180,35 +160,28 @@ if (col == "blue") # if colour is blue
 {
   print('colour is blue') # print that the colour is blue
 }
-
 ```
 
 A better solution (if a comment is absolutely necessary) would be:
 
 ```{r eval=FALSE}
-
-
 # display selected colour
 if (colour == "blue")
 {
   print('colour is blue')
 }
-
 ```
 
-## **Don't repeat yourself**
+## Don't Repeat Yourself
 
 As a rule of thumb, if you have to do the same task multiple times in your code: automate it. A while back, I was decomposing many timeseries and I needed only part of the output, in this case the 'trend'. Instead of running the same lines of code that remove all other components for each timeseries individually, a short function reduced the amount of needed code substantially.
 
 ```{r eval=FALSE}
-
 DecompTrend <- function(ts){
   
   temp1<-stats::decompose(ts)
   return(temp1$trend)
 }
-
-
 ```
 
 

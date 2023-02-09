@@ -1,7 +1,7 @@
 ---
-title: "d6berlin-fisbroker - two functions to download spatial data from the fisbroker data base"
+title: "Download Spatial Data from the FIS-Broker Data Base in R"
 description: |
-  download_fisbroker_wfs a function for downloading WFS (vector) data. download_fisbroker_atom a function to download ATOM (raster) data.
+  Learn how to download WFS (vector) data and ATOM (raster) data from the fisbroker data base using the our custom functions download_fisbroker_wfs() and download_fisbroker_atom().
 categories:
   - tutorial
   - spatial
@@ -20,26 +20,26 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The [`{d6berlin}` package](https://github.com/EcoDynIZW/d6berlin) provides several functions for the members of the Ecological Department of the IZW. Now two functions are added to the package: *download_fisbroker_wfs* and *download_fisbroker_atom*.
+The [`{d6berlin}` package](https://github.com/EcoDynIZW/d6berlin) provides several functions for the members of the Ecological Department of the IZW. Now two functions are added to the package: `download_fisbroker_wfs()` and `download_fisbroker_atom()`.
 
 ```{r install, eval=3}
 devtools::install_github("EcoDynIZW/d6berlin")
 library(d6berlin)
 ```
 
-## The [fis-broker](https://fbinter.stadt-berlin.de/fb/index.jsp) database
+## The [FIS-Broker](https://fbinter.stadt-berlin.de/fb/index.jsp) database
 
-The fisbroker database is a hosted by the Berlin Senate and provides several geodatasets. The file formats differ and some datasets have just one of the file formats to offer. The file formats are WMS (Web Media Service: Just like a png or jpg), WFS (Web Feature Service: Shapefiles) and ATOM (xml format: Raster layers data). This function is only looking for WFS files (Shapefiles), because these are the polygons, lines or points that we are looking for. 
+The fisbroker database [ADD LINK] is hosted by the Berlin Senate and provides several geographical data sets. The file formats differ and some data sets have just one of the file formats to offer. The file formats are WMS (Web Media Service: Just like a png or jpg), WFS (Web Feature Service: Shapefiles) and ATOM (xml format: Raster layers data). This function is only looking for WFS files (Shapefiles), because these are the polygons, lines or points that we are looking for. 
 
-For using these two functions you have to go to the  data base and select a layer you want to download. 
+For using these two functions you have to select the layer you aim to download from the online data base. 
 
-# image fis broker site
+# Image Fisbroker Webpage
 
-# image pop up window
+# Image Pop Up Window
 
-## WFS
+## WFS Data
 
-As an example we will download the berlin districts (*ALKIS Bezirke*) layer:
+As an example we will download the layer containing the districts of Berlin (*ALKIS Bezirke*):
 
 ![](man/fisbroker_site_wfs_comb.PNG)
 
@@ -47,8 +47,9 @@ As an example we will download the berlin districts (*ALKIS Bezirke*) layer:
 library(dplyr)
 library(ggplot2)
 
-data_wfs <-
-  d6berlin::download_fisbroker_wfs(link = "https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis_bezirk")
+url <- "https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis_bezirk"
+
+data_wfs <- d6berlin::download_fisbroker_wfs(link = url)
 
 data_wfs
 
@@ -59,9 +60,9 @@ ggplot() +
 
 You got a spatial layer which you can save to disk or to use it directly.
 
-## ATOM 
+## ATOM Data 
 
-As an example we will download the vegetation heights (*Vegetationshöhen 2020 (Umweltatlas)*)
+As an example we will download a raster of vegetation heights (*Vegetationshöhen 2020 (Umweltatlas)*)
 
 ![](man/fisbroker_site_atom_comb.PNG)
 
@@ -69,10 +70,14 @@ As an example we will download the vegetation heights (*Vegetationshöhen 2020 (
 library(dplyr)
 library(ggplot2)
 
+url <- "https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.zip"
+
 data_atom <-
-  d6berlin::download_fisbroker_atom(zip_link = "https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.zip",
-                                     path = "_posts/d6geodatapackage/man",
-                                     name = "vegetation_heights")
+  d6berlin::download_fisbroker_atom(
+    zip_link = url,
+    path = "_posts/d6geodatapackage/man",
+    name = "vegetation_heights"
+  )
 
 data_atom
 
