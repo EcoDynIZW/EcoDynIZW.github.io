@@ -14,6 +14,8 @@ For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>In Press</hbox></div><br>
 
+* Chakravarty R, **Radchuk V**, Managave S, Voigt CC (2023): Increasing species richness along elevational gradients is associated with niche packing in bat assemblages. J ANIM ECOL. Accepted Author Manuscript. doi:<span>[10.1111/1365-2656.13897](https://doi.org/10.1111/1365-2656.13897)</span>
+
 * Reusch R, Paul AA, Fritze M, **Kramer-Schadt S**, Voigt C (2023): Wind energy production in forests conflicts with tree-roosting bats. CURR BIOL. doi:<span>[10.1016/j.cub.2022.12.050](https://doi.org/10.1016/j.cub.2022.12.050)</span>
 
 
@@ -23,8 +25,11 @@ For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp
 
 * **Planillo A**, Viñuela J, Malo JE, García JT, Acebes P, Santamaría AE, Domínguez JC, Olea PP (2023): Addressing phase of population cycle and spatial scale is key to understand vole abundance in crop field margins: Implications for managing a cyclic pest species. AGRIC ECOSYST ENVIRON, **345**, 108306. doi:<span>[10.1016/j.agee.2022.108306](https://doi.org/10.1016/j.agee.2022.108306)</span>
 
+* Svendsen NA, **Radchuk V**, Morel-Journel T, Thuillier V, Schtickzelle N (2023): Complexity vs linearity: relations between functional traits in a heterotrophic protist. BMC ECOL EVOL, **23**, 1. doi:<span>[10.1186/s12862-022-02102-w](https://doi.org/10.1186/s12862-022-02102-w)</span>
+
 * **Tilker** A, Sinovas P (2023): Reading the signs: Camera-trapping provides new insights on scent marking in the large-antlered muntjac (*Muntiacus vuquangensis*). ECOL EVOL, **13**, e9692. doi:<span>[10.1002/ece3.9692](https://doi.org/10.1002/ece3.9692)</span>
 
+* van Moorsel SJ, Thébault E, **Radchuk V**, Narwani A, Montoya JM, Dakos V, Holmes M, De Laender F, Pennekamp F (2023): Predicting effects of multiple interacting global change drivers across trophic levels. GLOB CHANG BIOL, **29**, 1223– 1238. doi:<span>[10.1111/gcb.16548](https://doi.org/10.1111/gcb.16548)</span>
 
 
 <div class='headerbox'><hbox>Preprints</hbox></div><br>
