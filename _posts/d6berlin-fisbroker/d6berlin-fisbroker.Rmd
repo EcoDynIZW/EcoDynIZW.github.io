@@ -1,0 +1,87 @@
+---
+title: "d6berlin-fisbroker - two functions to download spatial data from the fisbroker data base"
+description: |
+  download_fisbroker_wfs a function for downloading WFS (vector) data. download_fisbroker_atom a function to download ATOM (raster) data.
+categories:
+  - tutorial
+  - spatial
+author:
+  - name: Moritz Wenzler-Meya
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: 2023-02-08
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The [`{d6berlin}` package](https://github.com/EcoDynIZW/d6berlin) provides several functions for the members of the Ecological Department of the IZW. Now two functions are added to the package: *download_fisbroker_wfs* and *download_fisbroker_atom*.
+
+```{r install, eval=3}
+devtools::install_github("EcoDynIZW/d6berlin")
+library(d6berlin)
+```
+
+## The [fis-broker](https://fbinter.stadt-berlin.de/fb/index.jsp) database
+
+The fisbroker database is a hosted by the Berlin Senate and provides several geodatasets. The file formats differ and some datasets have just one of the file formats to offer. The file formats are WMS (Web Media Service: Just like a png or jpg), WFS (Web Feature Service: Shapefiles) and ATOM (xml format: Raster layers data). This function is only looking for WFS files (Shapefiles), because these are the polygons, lines or points that we are looking for. 
+
+For using these two functions you have to go to the  data base and select a layer you want to download. 
+
+# image fis broker site
+
+# image pop up window
+
+## WFS
+
+As an example we will download the berlin districts (*ALKIS Bezirke*) layer:
+
+![](man/fisbroker_site_wfs_comb.PNG)
+
+```{r example wfs}
+library(dplyr)
+library(ggplot2)
+
+data_wfs <-
+  d6berlin::download_fisbroker_wfs(link = "https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis_bezirk")
+
+data_wfs
+
+ggplot() +
+  geom_sf(data = data_wfs, aes(fill = namgem)) +
+  rcartocolor::scale_fill_carto_d(palette = "Bold")
+```
+
+You got a spatial layer which you can save to disk or to use it directly.
+
+## ATOM 
+
+As an example we will download the vegetation heights (*Vegetationshöhen 2020 (Umweltatlas)*)
+
+![](man/fisbroker_site_atom_comb.PNG)
+
+```{r example atom}
+library(dplyr)
+library(ggplot2)
+
+data_atom <-
+  d6berlin::download_fisbroker_atom(zip_link = "https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.zip",
+                                     path = "_posts/d6geodatapackage/man",
+                                     name = "vegetation_heights")
+
+data_atom
+
+data_atom_10 <- terra::aggregate(data_atom, 10)
+
+p_base_map <-
+  ggplot2::ggplot() +
+  stars::geom_stars(data = stars::st_as_stars(data_atom_10)) +
+  ggplot2::coord_sf(expand = FALSE)
+
+d6geodata::plot_quantitative_map(tif = data_atom_10, p_base_map = p_base_map)
+```

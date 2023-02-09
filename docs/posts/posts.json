@@ -1,5 +1,25 @@
 [
   {
+    "path": "posts/d6geodatapackage/",
+    "title": "d6geodata - a package to manage spatial data in the Ecodyn Department of the IZW",
+    "description": "This package provides functions to show and get geodata and several functions for the geodata manager to provide these datasets.",
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2023-01-31",
+    "categories": [
+      "tutorial",
+      "spatial"
+    ],
+    "contents": "\r\nThe {d6geodata} package provides several functions for the members of the Ecological Department of the IZW.\r\n\r\n\r\n## devtools::install_github(\"EcoDynIZW/d6geodata\")\r\n## library(d6geodata)\r\n\r\n\r\nFunctions for internal use only:\r\ngeo_overview\r\nget_geodata\r\nIf you want to get geodata we already have in our database you have two options: go on the EcoDyn Website, click on wikis and select geodata. There you’ll find several raster layers and vector data with plots and metadata. In the metadata section, you’ll find the folder_name. You can copy this and use this together with wth get_geodata function to get the data from our PopDynCloud. Another option is the function called get_overview. There you can select which data and from which location you want to have a list of data we have.\r\n\r\n\r\n#d6geodata::geo_overview(\"C:/PopDynCloud\")\r\n\r\n\r\n\r\nNow you can nopy the name of one of the layers and paste it into the get_geodata function\r\n\r\n\r\ncorine <-\r\n  d6geodata::get_geodata(\r\n    data_name = \"corine_berlin_2015_20m_03035_tif\",\r\n    path_to_cloud = \"E:/PopDynCloud\",\r\n    download_data = FALSE\r\n  )\r\n\r\n\r\nIf you set download_data = TRUE the data will be download and copied to your data-raw folder. If the data-raw folder doesn’t exist, it will create one.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2023-02-08T16:45:10+01:00",
+    "input_file": "d6geodatapackage.knit.md"
+  },
+  {
     "path": "posts/GoodPractice/",
     "title": "Coding Basics 1 - General tips",
     "description": "A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code.",
