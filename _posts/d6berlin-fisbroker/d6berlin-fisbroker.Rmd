@@ -79,12 +79,11 @@ data_atom
 
 data_atom_10 <- terra::aggregate(data_atom, 10)
 
-p_base_map <-
-  ggplot2::ggplot() +
+ggplot2::ggplot() +
   stars::geom_stars(data = stars::st_as_stars(data_atom_10)) +
-  ggplot2::coord_sf(expand = FALSE)
-
-d6geodata::plot_quantitative_map(tif = data_atom_10, p_base_map = p_base_map)
+  ggplot2::coord_sf(expand = FALSE) + 
+  rcartocolor::scale_fill_carto_c(palette = "Emrld", 
+    name = NULL) + ggplot2::guides(fill = ggplot2::guide_legend(label.position = "bottom"))
 ```
 
 ```{r, echo=FALSE, include=FALSE}
