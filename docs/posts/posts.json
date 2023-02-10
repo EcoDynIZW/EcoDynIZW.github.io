@@ -1,5 +1,25 @@
 [
   {
+    "path": "posts/d6geodatapackage/",
+    "title": "d6geodata - a package to manage spatial data in the Ecodyn Department of the IZW",
+    "description": "Learn how to use the {d6geodata} R package that provides functions for accessing data from the Geodata archive of the d6 department. The two functions *geo_overview()* and *get_geaodata()* are the main components for all members of the EcoDyn Department. Several other functions are within this package but only meant to be used by the Geodata Manager of the Department.",
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2023-02-10",
+    "categories": [
+      "tutorial",
+      "spatial"
+    ],
+    "contents": "\r\n\r\nContents\r\nAdditional functions\r\n\r\nThe {d6geodata} package aims to access the data from the Geodata archive of the EcoDyn Department for members only!\r\nThe two main functions are:\r\ngeo_overview()\r\nget_geodata()\r\n\r\n\r\n## devtools::install_github(\"EcoDynIZW/d6geodata\")\r\n## library(d6geodata)\r\n\r\n\r\nIf you want to get geodata we already have in our Geodata archive you have two options: go on the EcoDyn Website, click on wikis and select Geodata. There you’ll find several raster layers and vector data with plots and metadata. In the metadata section, you’ll find the folder_name. You can copy this and use this together with get_geodata() function to get the data from our PopDynCloud. Another option is the function called get_overview(). There you can select which data and from which location you want to have a list of data we have.\r\n\r\n\r\n#d6geodata::geo_overview(\"C:/PopDynCloud\")\r\n\r\n\r\n\r\nNow you can nopy the name of one of the layers and paste it into the get_geodata function\r\n\r\n\r\ncorine <-\r\n  d6geodata::get_geodata(\r\n    data_name = \"corine_berlin_2015_20m_03035_tif\",\r\n    path_to_cloud = \"E:/PopDynCloud\",\r\n    download_data = FALSE\r\n  )\r\n\r\n\r\nIf you set download_data = TRUE the data will be download and copied to your data-raw folder. If the data-raw folder doesn’t exist, it will create one.\r\nAdditional functions\r\nThe three functions plot_binary_map(), plot_qualitative_map() and plot plot_quantitative_map() can be used to add the respective color sceams we used for the Geodata wiki page, but for raster data only!\r\n\r\n\r\np_base_map + plot_binary_map(tif = tif)\r\np_base_map + plot_qualitative_map(tif = tif)\r\np_base_map + plot_quantitative_map(tif = tif)\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2023-02-10T14:47:23+01:00",
+    "input_file": "d6geodatapackage.knit.md"
+  },
+  {
     "path": "posts/d6berlin-fisbroker/",
     "title": "Download Spatial Data from the FIS-Broker Data Base in R",
     "description": "Learn how to download WFS (vector) data and ATOM (raster) data from the fisbroker data base using the our custom functions download_fisbroker_wfs() and download_fisbroker_atom().",
