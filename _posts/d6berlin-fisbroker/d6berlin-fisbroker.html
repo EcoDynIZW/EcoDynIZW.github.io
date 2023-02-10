@@ -1537,7 +1537,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>## devtools::install_github("EcoDynIZW/d6berlin")</span></span>
-<span><span class='co'>## library(d6berlin)</span></span></code></pre>
+<span><span class='co'>## #install.packages("rcartocolor")</span></span>
+<span><span class='co'>#install.packages("stars")</span></span></code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>d6berlin</span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dplyr.tidyverse.org'>dplyr</a></span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/Nowosad/rcartocolor'>rcartocolor</a></span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/stars/'>stars</a></span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <h2 id="the-fis-broker-database">The FIS-Broker database</h2>
@@ -1548,10 +1558,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><img src="man/fisbroker_site_wfs_comb_new.PNG" /></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dplyr.tidyverse.org'>dplyr</a></span><span class='op'>)</span></span>
-<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>url</span> <span class='op'>&lt;-</span> <span class='st'>"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis_bezirk"</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>url</span> <span class='op'>&lt;-</span> <span class='st'>"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis_bezirk"</span></span>
 <span></span>
 <span><span class='va'>data_wfs</span> <span class='op'>&lt;-</span> <span class='fu'>d6berlin</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6berlin/man/download_fisbroker_wfs.html'>download_fisbroker_wfs</a></span><span class='op'>(</span>link <span class='op'>=</span> <span class='va'>url</span><span class='op'>)</span></span></code></pre>
 </div>
@@ -1607,15 +1614,7 @@ First 10 features:
 <p><img src="man/fisbroker_site_atom_comb.PNG" /></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>#install.packages("rcartocolor")</span></span>
-<span><span class='co'>#install.packages("stars")</span></span>
-<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dplyr.tidyverse.org'>dplyr</a></span><span class='op'>)</span></span>
-<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span></span>
-<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/Nowosad/rcartocolor'>rcartocolor</a></span><span class='op'>)</span></span>
-<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/stars/'>stars</a></span><span class='op'>)</span></span>
-<span></span>
-<span></span>
-<span><span class='va'>url</span> <span class='op'>&lt;-</span> <span class='st'>"https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.zip"</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>url</span> <span class='op'>&lt;-</span> <span class='st'>"https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.zip"</span></span>
 <span></span>
 <span><span class='va'>data_atom</span> <span class='op'>&lt;-</span></span>
 <span>  <span class='fu'>d6berlin</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6berlin/man/download_fisbroker_atom.html'>download_fisbroker_atom</a></span><span class='op'>(</span></span>

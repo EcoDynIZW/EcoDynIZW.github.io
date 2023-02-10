@@ -24,8 +24,18 @@ The [`{d6berlin}` package](https://github.com/EcoDynIZW/d6berlin) provides sever
 
 ```{r install, eval=3}
 devtools::install_github("EcoDynIZW/d6berlin")
-library(d6berlin)
+#install.packages("rcartocolor")
+#install.packages("stars")
 ```
+
+```{r library}
+library(d6berlin)
+library(dplyr)
+library(ggplot2)
+library(rcartocolor)
+library(stars)
+```
+
 
 ## The FIS-Broker database
 
@@ -40,9 +50,6 @@ As an example we will download the layer containing the districts of Berlin (*AL
 ![](man/fisbroker_site_wfs_comb_new.PNG)
 
 ```{r example wfs}
-library(dplyr)
-library(ggplot2)
-
 url <- "https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis_bezirk"
 
 data_wfs <- d6berlin::download_fisbroker_wfs(link = url)
@@ -63,14 +70,6 @@ As an example we will download a raster of vegetation heights (*Vegetationshöhe
 ![](man/fisbroker_site_atom_comb.PNG)
 
 ```{r example atom}
-#install.packages("rcartocolor")
-#install.packages("stars")
-library(dplyr)
-library(ggplot2)
-library(rcartocolor)
-library(stars)
-
-
 url <- "https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.zip"
 
 data_atom <-
