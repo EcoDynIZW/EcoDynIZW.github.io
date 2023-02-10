@@ -37,7 +37,7 @@ For using these two functions you have to select the layer you aim to download f
 
 As an example we will download the layer containing the districts of Berlin (*ALKIS Bezirke*):
 
-![](/man/fisbroker_site_wfs_comb.png)
+![](man/fisbroker_site_wfs_comb.PNG)
 
 ```{r example wfs}
 library(dplyr)
