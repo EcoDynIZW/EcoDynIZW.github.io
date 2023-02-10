@@ -27,15 +27,11 @@ devtools::install_github("EcoDynIZW/d6berlin")
 library(d6berlin)
 ```
 
-## The [FIS-Broker](https://fbinter.stadt-berlin.de/fb/index.jsp) database
+## The FIS-Broker database
 
-The fisbroker database [ADD LINK] is hosted by the Berlin Senate and provides several geographical data sets. The file formats differ and some data sets have just one of the file formats to offer. The file formats are WMS (Web Media Service: Just like a png or jpg), WFS (Web Feature Service: Shapefiles) and ATOM (xml format: Raster layers data). This function is only looking for WFS files (Shapefiles), because these are the polygons, lines or points that we are looking for. 
+The [FIS-Broker database](https://fbinter.stadt-berlin.de/fb/index.jsp) is hosted by the Berlin Senate and provides several geographical data sets. The file formats differ and some data sets have just one of the file formats to offer. The file formats are WMS (Web Media Service: Just like a png or jpg), WFS (Web Feature Service: Shapefiles) and ATOM (xml format: Raster layers data). This function is only looking for WFS files (Shapefiles), because these are the polygons, lines or points that we are looking for. 
 
 For using these two functions you have to select the layer you aim to download from the online data base. 
-
-# Image Fisbroker Webpage
-
-# Image Pop Up Window
 
 ## WFS Data
 
