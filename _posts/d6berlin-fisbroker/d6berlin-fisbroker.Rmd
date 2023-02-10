@@ -63,8 +63,13 @@ As an example we will download a raster of vegetation heights (*Vegetationshöhe
 ![](man/fisbroker_site_atom_comb.PNG)
 
 ```{r example atom}
+#install.packages("rcartocolor")
+#install.packages("stars")
 library(dplyr)
 library(ggplot2)
+library(rcartocolor)
+library(stars)
+
 
 url <- "https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.zip"
 
