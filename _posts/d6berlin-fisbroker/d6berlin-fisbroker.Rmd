@@ -86,3 +86,9 @@ p_base_map <-
 
 d6geodata::plot_quantitative_map(tif = data_atom_10, p_base_map = p_base_map)
 ```
+
+```{r, echo=FALSE, include=FALSE}
+suppressMessages(file.remove(here::here("_posts", "d6geodatapackage", "man", "vegetation_heights")))
+```
+
+
