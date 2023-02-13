@@ -30,13 +30,10 @@ If you want to learn more about the `{NLMR}` package and the accompanying `{land
 
 ## Installation
 
-The `{NLMR}` is not available on CRAN at the moment (see [issue #95](https://github.com/ropensci/NLMR/issues)). The only way to install the package at the moment is:
+Install the release version from CRAN:
 
 ```{r install, eval=FALSE}
-# install.packages("remotes")
-remotes::install_github("cran/RandomFieldsUtils")
-remotes::install_github("cran/RandomFields")
-remotes::install_github("ropen
+install.packages("NLMR")
 ```
 
 ## Usage

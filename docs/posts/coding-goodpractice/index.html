@@ -88,40 +88,40 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-<title>Ecological Dynamics: Simulate Neutral Landscape Models</title>
+<title>Ecological Dynamics: Coding Basics 1: General Tips</title>
 
-<meta property="description" itemprop="description" content="Learn how to use the {NLMR} R package to simulate neutral landscape models (NLM), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models."/>
+<meta property="description" itemprop="description" content="A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code."/>
 
 <link rel="icon" type="image/png" href="../../img/d6_purple_round.png"/>
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2021-08-06"/>
-<meta property="article:created" itemprop="dateCreated" content="2021-08-06"/>
-<meta name="article:author" content="Cédric Scherer"/>
+<meta property="article:published" itemprop="datePublished" content="2023-02-13"/>
+<meta property="article:created" itemprop="dateCreated" content="2023-02-13"/>
+<meta name="article:author" content="Tobias Kürschner"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Ecological Dynamics: Simulate Neutral Landscape Models"/>
+<meta property="og:title" content="Ecological Dynamics: Coding Basics 1: General Tips"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Learn how to use the {NLMR} R package to simulate neutral landscape models (NLM), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models."/>
+<meta property="og:description" content="A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Ecological Dynamics"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Ecological Dynamics: Simulate Neutral Landscape Models"/>
-<meta property="twitter:description" content="Learn how to use the {NLMR} R package to simulate neutral landscape models (NLM), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models."/>
+<meta property="twitter:title" content="Ecological Dynamics: Coding Basics 1: General Tips"/>
+<meta property="twitter:description" content="A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code."/>
 <meta property="twitter:site" content="@EcoDynIZW"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Simulate Neutral Landscape Models"]},{"type":"character","attributes":{},"value":["Learn how to use the {NLMR} R package to simulate neutral landscape models (NLM), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models."]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-nlmr.png"]},{"type":"character","attributes":{},"value":["tutorial","rstats","spatial","modelling"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Cédric Scherer"]},{"type":"character","attributes":{},"value":["htttps://cedricscherer.com"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2021-08-06"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding Basics 1: General Tips"]},{"type":"character","attributes":{},"value":["A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code."]},{"type":"character","attributes":{},"value":["tutorial","coding"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Tobias Kürschner"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2023-02-13"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["nlmr_files/anchor-4.2.2/anchor.min.js","nlmr_files/bowser-1.9.3/bowser.min.js","nlmr_files/distill-2.2.21/template.v2.js","nlmr_files/figure-html5/plotting-1.png","nlmr_files/figure-html5/plotting-2.png","nlmr_files/figure-html5/plotting-3.png","nlmr_files/figure-html5/visualization-1.png","nlmr_files/figure-html5/visualization-2.png","nlmr_files/figure-html5/visualization-3.png","nlmr_files/header-attrs-2.16/header-attrs.js","nlmr_files/jquery-3.6.0/jquery-3.6.0.js","nlmr_files/jquery-3.6.0/jquery-3.6.0.min.js","nlmr_files/jquery-3.6.0/jquery-3.6.0.min.map","nlmr_files/popper-2.6.0/popper.min.js","nlmr_files/tippy-6.2.7/tippy-bundle.umd.min.js","nlmr_files/tippy-6.2.7/tippy-light-border.css","nlmr_files/tippy-6.2.7/tippy.css","nlmr_files/tippy-6.2.7/tippy.umd.min.js","nlmr_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"NULL"}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2673,7 +2673,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Simulate Neutral Landscape Models","description":"Learn how to use the {NLMR} R package to simulate neutral landscape models (NLM), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models.","authors":[{"author":"Cédric Scherer","authorURL":"htttps://cedricscherer.com","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2021-08-06T00:00:00.000+02:00","citationText":"Scherer, 2021"}
+{"title":"Coding Basics 1: General Tips","description":"A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code.","authors":[{"author":"Tobias Kürschner","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2023-02-13T00:00:00.000+01:00","citationText":"Kürschner, 2023"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2741,101 +2741,184 @@ Wikis
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Simulate Neutral Landscape Models</h1>
+<h1>Coding Basics 1: General Tips</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../coding.html#category:tutorial" class="dt-tag">tutorial</a>
-  <a href="../../coding.html#category:rstats" class="dt-tag">rstats</a>
-  <a href="../../coding.html#category:spatial" class="dt-tag">spatial</a>
-  <a href="../../coding.html#category:modelling" class="dt-tag">modelling</a>
+  <a href="../../coding.html#category:coding" class="dt-tag">coding</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Learn how to use the {NLMR} R package to simulate neutral landscape models (NLM), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models.</p></p>
+<p>A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code.</p>
 </div>
 
 <div class="d-byline">
-  Cédric Scherer htttps://cedricscherer.com (IZW Berlin)<a href="https://ecodynizw.github.io/EcoDynIZW" class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
+  Tobias Kürschner  (IZW Berlin)<a href="https://ecodynizw.github.io/EcoDynIZW" class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
   
-<br/>2021-08-06
+<br/>2023-02-13
 </div>
 
 <div class="d-article">
-<p>The <a href="https://ropensci.github.io/NLMR/index.html"><code>{NLMR}</code> R package</a> to simulate neutral landscape models (NLM). Designed to be a generic framework like <a href="https://pypi.org/project/nlmpy/">NLMpy</a>, it leverages the ability to simulate the most common NLM that are described in the ecological literature.</p>
-<p>If you want to learn more about the <code>{NLMR}</code> package and the accompanying <code>{landscapetools}</code> package, check the publication <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13076">Sciaini, Fritsch, Scherer 6 Simpkins (2019) Methods in Ecology and Evolution</a>.</p>
-<h2 id="installation">Installation</h2>
-<p>Install the release version from CRAN:</p>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#general" id="toc-general">General:</a></li>
+<li><a href="#variable-naming-conventions" id="toc-variable-naming-conventions">Variable Naming Conventions</a>
+<ul>
+<li><a href="#snakecase" id="toc-snakecase">Snakecase:</a></li>
+<li><a href="#camelcase" id="toc-camelcase">Camelcase:</a></li>
+<li><a href="#pascalcase" id="toc-pascalcase">Pascalcase:</a></li>
+<li><a href="#hungarian-notation" id="toc-hungarian-notation">Hungarian Notation:</a></li>
+<li><a href="#sidenote-namespaces-and-function-names" id="toc-sidenote-namespaces-and-function-names">Sidenote: Namespaces and Function Names</a></li>
+</ul></li>
+<li><a href="#indentation" id="toc-indentation">Indentation</a></li>
+<li><a href="#commenting-your-code" id="toc-commenting-your-code">Commenting Your Code</a></li>
+<li><a href="#dont-repeat-yourself" id="toc-dont-repeat-yourself">Don’t Repeat Yourself</a></li>
+</ul>
+</nav>
+</div>
+<h2 id="general">General:</h2>
+<ol type="1">
+<li>Write as few lines as possible.</li>
+<li>Use appropriate naming conventions.</li>
+<li>Segment blocks of code in the same section into paragraphs.</li>
+<li>Use indentation to marks the beginning and end of control structures.</li>
+<li>Don’t repeat yourself.</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="variable-naming-conventions">Variable Naming Conventions</h2>
+<p>Variable naming is an important aspect in making your code readable. Create variables that describe their function and follow a consistent theme throughout your code. Separate words in a variable name without the use of whitespace and do not repeat variable names (unless in certain circumstances such as temporary variable within loops).</p>
+<h3 id="snakecase">Snakecase:</h3>
+<p>Words are delimited by an underscore.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"NLMR"</span><span class='op'>)</span></span></code></pre>
-</div>
-</div>
-<h2 id="usage">Usage</h2>
-<p>Each neutral landscape models is simulated with a single function (all starting with <code>nlm_</code>) in NLMR, e.g.:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>random_cluster</span> <span class='op'>&lt;-</span> <span class='fu'>NLMR</span><span class='fu'>::</span><span class='fu'><a href='https://ropensci.github.io/NLMR/reference/nlm_randomcluster.html'>nlm_randomcluster</a></span><span class='op'>(</span></span>
-<span>  nrow <span class='op'>=</span> <span class='fl'>100</span>,</span>
-<span>  ncol <span class='op'>=</span> <span class='fl'>100</span>,</span>
-<span>  p    <span class='op'>=</span> <span class='fl'>0.5</span>,</span>
-<span>  ai   <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0.3</span>, <span class='fl'>0.6</span>, <span class='fl'>0.1</span><span class='op'>)</span>,</span>
-<span>  rescale <span class='op'>=</span> <span class='cn'>FALSE</span></span>
-<span><span class='op'>)</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>variable_one</span> <span class='op'>&lt;-</span> <span class='fl'>1</span></span>
 <span></span>
-<span><span class='va'>random_curdling</span> <span class='op'>&lt;-</span> <span class='fu'>NLMR</span><span class='fu'>::</span><span class='fu'><a href='https://ropensci.github.io/NLMR/reference/nlm_curds.html'>nlm_curds</a></span><span class='op'>(</span></span>
-<span>  curds <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0.5</span>, <span class='fl'>0.3</span>, <span class='fl'>0.6</span><span class='op'>)</span>,</span>
-<span>  recursion_steps <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>32</span>, <span class='fl'>6</span>, <span class='fl'>2</span><span class='op'>)</span></span>
-<span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>midpoint_displacement</span> <span class='op'>&lt;-</span> <span class='fu'>NLMR</span><span class='fu'>::</span><span class='fu'><a href='https://ropensci.github.io/NLMR/reference/nlm_mpd.html'>nlm_mpd</a></span><span class='op'>(</span></span>
-<span>  ncol <span class='op'>=</span> <span class='fl'>100</span>,</span>
-<span>  nrow <span class='op'>=</span> <span class='fl'>100</span>,</span>
-<span>  roughness <span class='op'>=</span> <span class='fl'>0.61</span></span>
-<span><span class='op'>)</span></span></code></pre>
+<span><span class='va'>variable_two</span> <span class='op'>&lt;-</span> <span class='fl'>2</span></span></code></pre>
 </div>
 </div>
-<p><code>{NLMR}</code> supplies 15 NLM algorithms, with several options to simulate derivatives of them. The algorithms differ from each other in spatial auto-correlation, from no auto-correlation (random NLM) to a constant gradient (planar gradients).</p>
-<p>The package builds on the advantages of the raster package and returns all simulation as <code>RasterLayer</code> objects, thus ensuring a direct compatibility to common GIS tasks and a flexible and simple usage:</p>
+<h3 id="camelcase">Camelcase:</h3>
+<p>Words are delimited by capital letters, except the initial word.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/base/class.html'>class</a></span><span class='op'>(</span><span class='va'>random_cluster</span><span class='op'>)</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>variableOne</span> <span class='op'>&lt;-</span> <span class='fl'>1</span></span>
+<span></span>
+<span><span class='va'>variableTwo</span> <span class='op'>&lt;-</span> <span class='fl'>2</span></span></code></pre>
 </div>
-<pre><code>[1] &quot;RasterLayer&quot;
-attr(,&quot;package&quot;)
-[1] &quot;raster&quot;</code></pre>
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>random_cluster</span></span></code></pre>
 </div>
-<pre><code>class      : RasterLayer 
-dimensions : 100, 100, 10000  (nrow, ncol, ncell)
-resolution : 1, 1  (x, y)
-extent     : 0, 100, 0, 100  (xmin, xmax, ymin, ymax)
-crs        : NA 
-source     : memory
-names      : clumps 
-values     : 1, 3  (min, max)</code></pre>
-</div>
-<h2 id="visualization">Visualization</h2>
-<p>The <a href="https://docs.ropensci.org/landscapetools"><code>{landscapetools}</code> package</a> provides a function <code>show_landscape</code> that was developed to plot raster objects and help users to adhere to some standards concerning color scales and typography. This means for example that by default the viridis color scale is applied (and you can pick others from the <code>{viridis}</code> package, too).</p>
+<h3 id="pascalcase">Pascalcase:</h3>
+<p>Words are delimited by capital letters.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>#install.packages("landscapetools")</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>VariableOne</span> <span class='op'>&lt;-</span> <span class='fl'>1</span></span>
 <span></span>
-<span><span class='co'>## plotting continuous values</span></span>
-<span><span class='fu'>landscapetools</span><span class='fu'>::</span><span class='fu'><a href='https://ropensci.github.io/landscapetools/reference/show_landscape.html'>show_landscape</a></span><span class='op'>(</span><span class='va'>random_cluster</span><span class='op'>)</span></span></code></pre>
+<span><span class='va'>VariableTwo</span> <span class='op'>&lt;-</span> <span class='fl'>2</span></span></code></pre>
 </div>
-<img src="nlmr_files/figure-html5/visualization-1.png" width="624" />
+</div>
+<h3 id="hungarian-notation">Hungarian Notation:</h3>
+<p>This notation describes the variable type or purpose at the start of the variable name, followed by a descriptor that indicates the variable’s function. The Camelcase notation is used to delimit words.</p>
+<div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>## plotting discrete values</span></span>
-<span><span class='fu'>landscapetools</span><span class='fu'>::</span><span class='fu'><a href='https://ropensci.github.io/landscapetools/reference/show_landscape.html'>show_landscape</a></span><span class='op'>(</span><span class='va'>random_curdling</span>, discrete <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>iVariableOne</span>   <span class='op'>&lt;-</span> <span class='fl'>1</span>  <span class='co'># i - integer</span></span>
+<span></span>
+<span><span class='va'>sVariableTwo</span>   <span class='op'>&lt;-</span> <span class='st'>"two"</span> <span class='co'># s - string</span></span>
+<span></span>
+<span><span class='va'>lVariableThree</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='op'>)</span> <span class='co'># l - list</span></span></code></pre>
 </div>
-<img src="nlmr_files/figure-html5/visualization-2.png" width="624" />
+</div>
+<h3 id="sidenote-namespaces-and-function-names">Sidenote: Namespaces and Function Names</h3>
+<p>Often when using for example R we will use libraries and many of them at the same time. Quite a few of those libraries are using the same names for their functions. This can be a big issues and cause code to suddenly not run anymore even though the only difference my be the order in which libraries are loaded. The last library loaded with a certain function will be the default one used by R. A prominent example would be the ‘raster’ package and ‘tidyverse’ (dplyr) who share the name ‘select’ for a function. So, when in doubt use namespaces to make sure to link a function to their library.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>use the select <span class="cf">function</span> from the dplyr library</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">select</span>(.....)</span></code></pre></div>
+</div>
+<h2 id="indentation">Indentation</h2>
+<p>I assume you already know that your code should have some sort of indentation. However, it’s also worth noting that its a good idea to keep your indentation style consistent.
+As a quick reminder:</p>
+<h4 id="bad">Bad:</h4>
+<p>Long lines of text with no separation:</p>
+<div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>## using another viridis palette</span></span>
-<span><span class='fu'>landscapetools</span><span class='fu'>::</span><span class='fu'><a href='https://ropensci.github.io/landscapetools/reference/show_landscape.html'>show_landscape</a></span><span class='op'>(</span><span class='va'>midpoint_displacement</span>, viridis_scale <span class='op'>=</span> <span class='st'>"magma"</span><span class='op'>)</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>mydata</span> <span class='op'>&lt;-</span> <span class='va'>iris</span> <span class='op'>%&gt;%</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>Species</span> <span class='op'>==</span> <span class='st'>"virginica"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'>summarise_at</span><span class='op'>(</span>.vars <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Sepal.Length"</span>, <span class='st'>"Sepal.Width"</span><span class='op'>)</span>,.funs <span class='op'>=</span> <span class='st'>"mean"</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>)</span><span class='op'>)</span><span class='op'>{</span> <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>[[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>]</span><span class='op'>$</span><span class='va'>pm</span><span class='op'>)</span>; <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>tmp1</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='st'>"tab_"</span>, <span class='va'>i</span><span class='op'>)</span>, <span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span>; <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='va'>tmp1</span> <span class='op'>%&gt;%</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span><span class='op'>)</span>; <span class='va'>tempDf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='op'>(</span><span class='va'>tempDf</span>, <span class='va'>tmp1</span><span class='op'>)</span><span class='op'>}</span></span></code></pre>
 </div>
-<p><img src="nlmr_files/figure-html5/visualization-3.png" width="624" /></p>
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h4 id="good">Good:</h4>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>mydata</span> <span class='op'>&lt;-</span> <span class='va'>iris</span> <span class='op'>%&gt;%</span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>Species</span> <span class='op'>==</span> <span class='st'>"virginica"</span><span class='op'>)</span> <span class='op'>%&gt;%</span></span>
+<span>  <span class='fu'>summarise_at</span><span class='op'>(</span>.vars <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Sepal.Length"</span>, <span class='st'>"Sepal.Width"</span><span class='op'>)</span>,</span>
+<span>               .funs <span class='op'>=</span> <span class='st'>"mean"</span><span class='op'>)</span></span>
+<span></span>
+<span></span>
+<span><span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='op'>{</span></span>
+<span>  <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>[[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>]</span><span class='op'>$</span><span class='va'>pm</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>tmp1</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='st'>"tab_"</span>, <span class='va'>i</span><span class='op'>)</span>, <span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='va'>tmp1</span> <span class='op'>%&gt;%</span> </span>
+<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='va'>tempDf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='op'>(</span><span class='va'>tempDf</span>, <span class='va'>tmp1</span><span class='op'>)</span></span>
+<span><span class='op'>}</span></span></code></pre>
+</div>
+</div>
+<p>The details on how to indent or use whitesapces are up to individual styles with some guidelines, such as avoiding long lines of text, to keep in mind. Also fine would be something like the following.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='op'>{</span></span>
+<span>  <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>[[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>]</span><span class='op'>$</span><span class='va'>pm</span><span class='op'>)</span></span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>tmp1</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='st'>"tab_"</span>, <span class='va'>i</span><span class='op'>)</span>, <span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span></span>
+<span>  <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='va'>tmp1</span> <span class='op'>%&gt;%</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span><span class='op'>)</span></span>
+<span>  <span class='va'>tempDf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='op'>(</span><span class='va'>tempDf</span>, <span class='va'>tmp1</span><span class='op'>)</span></span>
+<span><span class='op'>}</span></span></code></pre>
+</div>
+</div>
+<h2 id="commenting-your-code">Commenting Your Code</h2>
+<p>Commenting your code is fantastic but it can be overdone or just be plain redundant. Comments should add information or explanations to make your code understandable for people who didn’t write it or yourself in a year from now:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># comment that adds information:</span></span>
+<span></span>
+<span><span class='fu'>write_simoutput</span><span class='op'>(</span><span class='va'>nl</span><span class='op'>)</span> <span class='co'>#having nlrx write the output into a file - only works without patch or turtle metrics</span></span>
+<span></span>
+<span></span>
+<span><span class='co'># redundant comments:</span></span>
+<span></span>
+<span><span class='kw'>if</span> <span class='op'>(</span><span class='va'>col</span> <span class='op'>==</span> <span class='st'>"blue"</span><span class='op'>)</span> <span class='co'># if colour is blue</span></span>
+<span><span class='op'>{</span></span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>'colour is blue'</span><span class='op'>)</span> <span class='co'># print that the colour is blue</span></span>
+<span><span class='op'>}</span></span></code></pre>
+</div>
+</div>
+<p>A better solution (if a comment is absolutely necessary) would be:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># display selected colour</span></span>
+<span><span class='kw'>if</span> <span class='op'>(</span><span class='va'>colour</span> <span class='op'>==</span> <span class='st'>"blue"</span><span class='op'>)</span></span>
+<span><span class='op'>{</span></span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>'colour is blue'</span><span class='op'>)</span></span>
+<span><span class='op'>}</span></span></code></pre>
+</div>
+</div>
+<h2 id="dont-repeat-yourself">Don’t Repeat Yourself</h2>
+<p>As a rule of thumb, if you have to do the same task multiple times in your code: automate it. A while back, I was decomposing many timeseries and I needed only part of the output, in this case the ‘trend’. Instead of running the same lines of code that remove all other components for each timeseries individually, a short function reduced the amount of needed code substantially.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>DecompTrend</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>ts</span><span class='op'>)</span><span class='op'>{</span></span>
+<span>  </span>
+<span>  <span class='va'>temp1</span><span class='op'>&lt;-</span><span class='fu'>stats</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/r/stats/decompose.html'>decompose</a></span><span class='op'>(</span><span class='va'>ts</span><span class='op'>)</span></span>
+<span>  <span class='kw'><a href='https://rdrr.io/r/base/function.html'>return</a></span><span class='op'>(</span><span class='va'>temp1</span><span class='op'>$</span><span class='va'>trend</span><span class='op'>)</span></span>
+<span><span class='op'>}</span></span></code></pre>
+</div>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

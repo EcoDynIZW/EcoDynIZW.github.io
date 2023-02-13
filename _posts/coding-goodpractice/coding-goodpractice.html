@@ -88,37 +88,37 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Coding basics 2 - loops and functions</title>
+  <title>Coding Basics 1: General Tips</title>
 
-  <meta property="description" itemprop="description" content="A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality."/>
+  <meta property="description" itemprop="description" content="A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code."/>
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2022-11-14"/>
-  <meta property="article:created" itemprop="dateCreated" content="2022-11-14"/>
+  <meta property="article:published" itemprop="datePublished" content="2023-02-13"/>
+  <meta property="article:created" itemprop="dateCreated" content="2023-02-13"/>
   <meta name="article:author" content="Tobias Kürschner"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Coding basics 2 - loops and functions"/>
+  <meta property="og:title" content="Coding Basics 1: General Tips"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality."/>
+  <meta property="og:description" content="A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code."/>
   <meta property="og:locale" content="en_US"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Coding basics 2 - loops and functions"/>
-  <meta property="twitter:description" content="A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality."/>
+  <meta property="twitter:title" content="Coding Basics 1: General Tips"/>
+  <meta property="twitter:description" content="A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding basics 2 - loops and functions"]},{"type":"character","attributes":{},"value":["A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.\n"]},{"type":"character","attributes":{},"value":["tutorial","coding"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Tobias Kürschner"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding Basics 1: General Tips"]},{"type":"character","attributes":{},"value":["A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code."]},{"type":"character","attributes":{},"value":["tutorial","coding"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Tobias Kürschner"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2023-02-13"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["codingbasics_files/anchor-4.2.2/anchor.min.js","codingbasics_files/bowser-1.9.3/bowser.min.js","codingbasics_files/distill-2.2.21/template.v2.js","codingbasics_files/header-attrs-2.17/header-attrs.js","codingbasics_files/jquery-3.6.0/jquery-3.6.0.js","codingbasics_files/jquery-3.6.0/jquery-3.6.0.min.js","codingbasics_files/jquery-3.6.0/jquery-3.6.0.min.map","codingbasics_files/popper-2.6.0/popper.min.js","codingbasics_files/tippy-6.2.7/tippy-bundle.umd.min.js","codingbasics_files/tippy-6.2.7/tippy-light-border.css","codingbasics_files/tippy-6.2.7/tippy.css","codingbasics_files/tippy-6.2.7/tippy.umd.min.js","codingbasics_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"NULL"}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1475,16 +1475,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="codingbasics_files/header-attrs-2.17/header-attrs.js"></script>
-  <script src="codingbasics_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <script src="codingbasics_files/popper-2.6.0/popper.min.js"></script>
-  <link href="codingbasics_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="codingbasics_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="codingbasics_files/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="codingbasics_files/anchor-4.2.2/anchor.min.js"></script>
-  <script src="codingbasics_files/bowser-1.9.3/bowser.min.js"></script>
-  <script src="codingbasics_files/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="codingbasics_files/distill-2.2.21/template.v2.js"></script>
+  <script src="coding-goodpractice_files/header-attrs-2.19/header-attrs.js"></script>
+  <script src="coding-goodpractice_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="coding-goodpractice_files/popper-2.6.0/popper.min.js"></script>
+  <link href="coding-goodpractice_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="coding-goodpractice_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="coding-goodpractice_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="coding-goodpractice_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="coding-goodpractice_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="coding-goodpractice_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="coding-goodpractice_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
@@ -1496,7 +1496,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Coding basics 2 - loops and functions","description":"A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.","authors":[{"author":"Tobias Kürschner","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2022-11-14T00:00:00.000+01:00","citationText":"Kürschner, 2022"}
+{"title":"Coding Basics 1: General Tips","description":"A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code.","authors":[{"author":"Tobias Kürschner","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2023-02-13T00:00:00.000+01:00","citationText":"Kürschner, 2023"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1506,20 +1506,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Coding basics 2 - loops and functions</h1>
+<h1>Coding Basics 1: General Tips</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
 <div class="dt-tag">tutorial</div>
 <div class="dt-tag">coding</div>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.</p></p>
+<p>A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code.</p>
 </div>
 
 <div class="d-byline">
   Tobias Kürschner  (IZW Berlin)<a href="https://ecodynizw.github.io/EcoDynIZW" class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
   
-<br/>2022-11-14
+<br/>2023-02-13
 </div>
 
 <div class="d-article">
@@ -1527,303 +1527,163 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#functions-and-loops" id="toc-functions-and-loops"><strong>Functions and loops</strong></a>
+<li><a href="#general" id="toc-general">General:</a></li>
+<li><a href="#variable-naming-conventions" id="toc-variable-naming-conventions">Variable Naming Conventions</a>
 <ul>
-<li><a href="#what-are-they-for" id="toc-what-are-they-for">What are they for?</a></li>
-<li><a href="#functions" id="toc-functions"><strong>Functions</strong></a></li>
-<li><a href="#loops" id="toc-loops"><strong>Loops</strong></a>
-<ul>
-<li><a href="#a-classic-the-for-loop" id="toc-a-classic-the-for-loop">A classic, the ‘for’ loop:</a></li>
-<li><a href="#while-loops" id="toc-while-loops">‘while’ loops</a></li>
+<li><a href="#snakecase" id="toc-snakecase">Snakecase:</a></li>
+<li><a href="#camelcase" id="toc-camelcase">Camelcase:</a></li>
+<li><a href="#pascalcase" id="toc-pascalcase">Pascalcase:</a></li>
+<li><a href="#hungarian-notation" id="toc-hungarian-notation">Hungarian Notation:</a></li>
+<li><a href="#sidenote-namespaces-and-function-names" id="toc-sidenote-namespaces-and-function-names">Sidenote: Namespaces and Function Names</a></li>
 </ul></li>
-<li><a href="#bonus-round---conditionals" id="toc-bonus-round---conditionals">Bonus round - Conditionals</a></li>
-</ul></li>
+<li><a href="#indentation" id="toc-indentation">Indentation</a></li>
+<li><a href="#commenting-your-code" id="toc-commenting-your-code">Commenting Your Code</a></li>
+<li><a href="#dont-repeat-yourself" id="toc-dont-repeat-yourself">Don’t Repeat Yourself</a></li>
 </ul>
 </nav>
 </div>
+<h2 id="general">General:</h2>
+<ol type="1">
+<li>Write as few lines as possible.</li>
+<li>Use appropriate naming conventions.</li>
+<li>Segment blocks of code in the same section into paragraphs.</li>
+<li>Use indentation to marks the beginning and end of control structures.</li>
+<li>Don’t repeat yourself.</li>
+</ol>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
-<h1 id="functions-and-loops"><strong>Functions and loops</strong></h1>
-<h3 id="what-are-they-for">What are they for?</h3>
-<p>In short: making you life easier. They are used to automate certain steps in your code to make the execution faster.</p>
-<h2 id="functions"><strong>Functions</strong></h2>
-<p>A simple <strong>example</strong>: you have multiple data sets with a measurement in inches. To continue working with that data you need to convert it meter, but doing that manually would take hours. Solution: a function!!</p>
-<p>In <strong>R</strong>:</p>
+<h2 id="variable-naming-conventions">Variable Naming Conventions</h2>
+<p>Variable naming is an important aspect in making your code readable. Create variables that describe their function and follow a consistent theme throughout your code. Separate words in a variable name without the use of whitespace and do not repeat variable names (unless in certain circumstances such as temporary variable within loops).</p>
+<h3 id="snakecase">Snakecase:</h3>
+<p>Words are delimited by an underscore.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>inch_to_meter</span> <span class='op'>&lt;-</span>   <span class='co'>#function name</span></span>
-<span>  <span class='kw'>function</span><span class='op'>(</span><span class='va'>inch</span><span class='op'>)</span> <span class='co'>#function input parameter(s)</span></span>
-<span>  <span class='op'>{</span> <span class='co'># function body</span></span>
-<span>    <span class='va'>inM</span> <span class='op'>&lt;-</span> <span class='op'>(</span><span class='va'>inch</span> <span class='op'>*</span> <span class='fl'>0.0254</span><span class='op'>)</span> <span class='co'># in our case: transformation</span></span>
-<span>    </span>
-<span>    <span class='kw'><a href='https://rdrr.io/r/base/function.html'>return</a></span><span class='op'>(</span><span class='va'>inM</span><span class='op'>)</span> <span class='co'># function reporter</span></span>
-<span>  <span class='op'>}</span></span></code></pre>
-</div>
-</div>
-<p>Now lets apply that function to some random example data:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>myOldData</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>15</span>,<span class='fl'>98</span>,<span class='fl'>102</span>,<span class='fl'>5</span>,<span class='fl'>17</span><span class='op'>)</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>variable_one</span> <span class='op'>&lt;-</span> <span class='fl'>1</span></span>
 <span></span>
-<span><span class='va'>myNewData</span> <span class='op'>&lt;-</span> <span class='fu'>inch_to_meter</span><span class='op'>(</span><span class='va'>myOldData</span><span class='op'>)</span></span></code></pre>
+<span><span class='va'>variable_two</span> <span class='op'>&lt;-</span> <span class='fl'>2</span></span></code></pre>
 </div>
 </div>
-<p>Our function is applied to all elements of the old data, giving us the converted measurements.</p>
+<h3 id="camelcase">Camelcase:</h3>
+<p>Words are delimited by capital letters, except the initial word.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>myOldData</span></span></code></pre>
-</div>
-<pre><code>[1]  15  98 102   5  17</code></pre>
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>myNewData</span></span></code></pre>
-</div>
-<pre><code>[1] 0.3810 2.4892 2.5908 0.1270 0.4318</code></pre>
-</div>
-<p>For a more general approach we can use the following template for simple functions:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>myFunction</span> <span class='op'>&lt;-</span></span>
-<span>  <span class='kw'>function</span><span class='op'>(</span><span class='va'>input1</span>, <span class='va'>input2</span>, <span class='va'>input3</span><span class='op'>)</span></span>
-<span>  <span class='op'>{</span></span>
-<span>    <span class='va'>output</span> <span class='op'>&lt;-</span> <span class='va'>input1</span> <span class='op'>*</span> <span class='va'>input3</span> <span class='op'>/</span> <span class='va'>input2</span> <span class='co'># example operation</span></span>
-<span>    </span>
-<span>    <span class='kw'><a href='https://rdrr.io/r/base/function.html'>return</a></span><span class='op'>(</span><span class='va'>output</span><span class='op'>)</span></span>
-<span>  <span class='op'>}</span></span></code></pre>
-</div>
-</div>
-<p>in <strong>C++</strong>:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># the viableCell function of the class Grid returns a bool and takes two inputs</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (x and y coordinates)</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>bool Grid<span class="sc">::</span><span class="fu">viableCell</span>(CellCount_t x, CellCount_t y) </span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    return <span class="sc">!</span><span class="fu">m_grid.empty</span>() <span class="sc">&amp;&amp;</span> x <span class="sc">&lt;</span> <span class="fu">m_grid.cbegin</span>() <span class="ot">-&gt;</span> <span class="fu">size</span>() <span class="sc">&amp;&amp;</span> y <span class="sc">&lt;</span> <span class="fu">m_grid.size</span>();</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-</div>
-<p>in <strong>NetLogo</strong>, the closest thing we have to functions are reporters:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>to<span class="sc">-</span>report Male_Alpha_Alive </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ifelse</span> (any? turtles<span class="sc">-</span>here with [<span class="at">isAlpha =</span> true AND <span class="at">isFemale =</span> false])</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  [report true]</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  [report false] <span class="co">#else</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>end</span></code></pre></div>
-</div>
-<h2 id="loops"><strong>Loops</strong></h2>
-<p>What is a loop? It a simply a piece of code we want to repeat. But wait, isn’t that exactly what a function does? Well, yes and no. A function (after it is declared) is an embodiment of a piece of code that we can run anytime just by calling it. A loop is a local repetition of code.</p>
-<p>Lets stay in R and look at some <strong>examples</strong>:</p>
-<h3 id="a-classic-the-for-loop">A classic, the ‘for’ loop:</h3>
-<p>If you auto fill “for” in R, it will give you the following structure:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'>for</span> <span class='op'>(</span><span class='va'>variable</span> <span class='kw'>in</span> <span class='va'>vector</span><span class='op'>)</span></span>
-<span><span class='op'>{</span></span>
-<span>  <span class='co'>#body</span></span>
-<span><span class='op'>}</span></span></code></pre>
-</div>
-</div>
-<p>So what is <strong>variable</strong> and what is <strong>vector</strong>? In this case the <strong>variable</strong>, you could also call iterator (often you will see the letter <em>i</em> used) is simply put a counter that tells our loop how many times it has repeated itself. The <strong>vector</strong> is determined by us and tells the loop how many repetitions we want before it stops.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fl'>10</span><span class='op'>)</span></span>
-<span><span class='op'>{</span></span>
-<span>  <span class='co'>#body</span></span>
-<span><span class='op'>}</span></span></code></pre>
-</div>
-</div>
-<p>The loop above will now repeat exactly 10 times and then stop. R is helpful in the sense that it automatically increments <em>i</em> after each repetition. Other language like C++ for example need a manual increment of <em>i</em>:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (<span class="at">i =</span> <span class="dv">0</span>, i <span class="sc">&lt;=</span> <span class="dv">10</span>, <span class="sc">++</span>i) <span class="co">#C++ </span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">#body</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-</div>
-<p>With the basics out of the way lets look at an example:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>myData</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span><span class='op'>(</span><span class='fl'>30</span><span class='op'>)</span> <span class='co'># random numbers</span></span>
-<span><span class='va'>myResults</span> <span class='op'>&lt;-</span> <span class='fl'>0</span> <span class='co'># initializing myResults</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>variableOne</span> <span class='op'>&lt;-</span> <span class='fl'>1</span></span>
 <span></span>
-<span><span class='kw'>for</span><span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fl'>10</span><span class='op'>)</span></span>
-<span><span class='op'>{</span></span>
-<span>  <span class='co'># i-th element of `myData` squared into `i`-th position of `myResults`</span></span>
-<span>  <span class='va'>myResults</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='va'>myData</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='op'>*</span> <span class='va'>myData</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span>  </span>
-<span>  <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>i</span><span class='op'>)</span></span>
-<span><span class='op'>}</span></span></code></pre>
+<span><span class='va'>variableTwo</span> <span class='op'>&lt;-</span> <span class='fl'>2</span></span></code></pre>
 </div>
-<pre><code>[1] 1
-[1] 2
-[1] 3
-[1] 4
-[1] 5
-[1] 6
-[1] 7
-[1] 8
-[1] 9
-[1] 10</code></pre>
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>myResults</span></span></code></pre>
 </div>
-<pre><code> [1] 0.0000999678 0.0794697772 0.2125326041 0.9557794217 0.0248627857
- [6] 3.0403694809 0.8609073405 3.2489361501 0.7981953246 2.9057468622</code></pre>
-</div>
-<p>This was of course a very simple loop and there is pretty much no limit to the level of complexity those loops can have and how many loops could be nested. But be warned there can be some pitfalls with loops. <strong>Exercise:</strong> Would the following loop work?</p>
+<h3 id="pascalcase">Pascalcase:</h3>
+<p>Words are delimited by capital letters.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>summIdentSplit</span><span class='op'>)</span><span class='op'>)</span></span>
-<span><span class='op'>{</span></span>
-<span>  <span class='va'>tmpSumm</span> <span class='op'>&lt;-</span> <span class='va'>summIdentSplit</span><span class='op'>[[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>]</span></span>
-<span>  <span class='va'>tmpName</span> <span class='op'>&lt;-</span> <span class='va'>SummIdentVector</span><span class='op'>[[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>]</span></span>
-<span>  </span>
-<span>  <span class='kw'>if</span> <span class='op'>(</span><span class='fu'>base</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/r/base/grep.html'>grepl</a></span><span class='op'>(</span><span class='st'>"HD"</span>, <span class='va'>tmpName</span><span class='op'>)</span> <span class='op'>==</span> <span class='cn'>TRUE</span><span class='op'>)</span></span>
-<span>  <span class='op'>{</span></span>
-<span>    <span class='va'>clearName</span> <span class='op'>&lt;-</span> <span class='st'>"Habitat-driven movement"</span></span>
-<span>    <span class='va'>cn</span> <span class='op'>&lt;-</span> <span class='st'>"HD"</span></span>
-<span>  <span class='op'>}</span></span>
-<span>  </span>
-<span>  <span class='va'>combiMelt</span> <span class='op'>&lt;-</span> <span class='va'>tmpSumm</span> <span class='op'>%&gt;%</span></span>
-<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>ungroup</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>%&gt;%</span></span>
-<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>t</span>, <span class='va'>Ninfected_mean</span>, <span class='va'>Nimmune_mean</span><span class='op'>)</span> <span class='op'>%&gt;%</span></span>
-<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span>Infected <span class='op'>=</span> <span class='va'>Ninfected_mean</span>, Immune <span class='op'>=</span> <span class='va'>Nimmune_mean</span><span class='op'>)</span></span>
-<span>  </span>
-<span>  <span class='va'>combiMelt_sd</span> <span class='op'>&lt;-</span> <span class='va'>tmpSumm</span> <span class='op'>%&gt;%</span></span>
-<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>ungroup</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>%&gt;%</span></span>
-<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>t</span>, <span class='va'>Ninfected_sd</span>, <span class='va'>Nimmune_sd</span><span class='op'>)</span> <span class='op'>%&gt;%</span></span>
-<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span>Inf_sd <span class='op'>=</span> <span class='va'>Ninfected_sd</span>, Imm_sd <span class='op'>=</span> <span class='va'>Nimmune_sd</span><span class='op'>)</span></span>
-<span>  </span>
-<span>  <span class='va'>combiMelt_c</span> <span class='op'>&lt;-</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate-joins.html'>left_join</a></span><span class='op'>(</span><span class='va'>combiMelt</span>, <span class='va'>combiMelt_sd</span> , by <span class='op'>=</span> <span class='st'>"t"</span><span class='op'>)</span></span>
-<span>  </span>
-<span>  <span class='va'>q</span> <span class='op'>&lt;-</span> <span class='fl'>0</span></span>
-<span>  <span class='va'>combiMelt_c</span><span class='op'>$</span><span class='va'>quarter</span> <span class='op'>&lt;-</span> <span class='fl'>0</span></span>
-<span>  </span>
-<span>  <span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>combiMelt_c</span><span class='op'>)</span><span class='op'>)</span></span>
-<span>  <span class='op'>{</span></span>
-<span>    <span class='kw'>if</span> <span class='op'>(</span><span class='va'>i</span> <span class='op'><a href='https://rdrr.io/r/base/Arithmetic.html'>%%</a></span> <span class='fl'>13</span> <span class='op'>==</span> <span class='fl'>0</span><span class='op'>)</span></span>
-<span>    <span class='op'>{</span></span>
-<span>      <span class='va'>q</span> <span class='op'>&lt;-</span> <span class='va'>q</span> <span class='op'>+</span> <span class='fl'>1</span></span>
-<span>    <span class='op'>}</span></span>
-<span>    <span class='va'>combiMelt_c</span><span class='op'>$</span><span class='va'>quarter</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='va'>q</span></span>
-<span>  <span class='op'>}</span></span>
-<span><span class='op'>}</span></span></code></pre>
-</div>
-</div>
-<p>The answer is <strong>no</strong>. There are two loops involved where one is nested inside the other. So far, that would not be an issue, however, both loops use the iterator (variable) i. To see what would happen:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>First iteration<span class="sc">:</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  i <span class="ot">=</span> <span class="dv">1</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(summIdentSplit))</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  tmpSumm <span class="ot">&lt;-</span> summIdentSplit[[i]]</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  tmpName <span class="ot">&lt;-</span> SummIdentVector[[i]]</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (base<span class="sc">::</span><span class="fu">grepl</span>(<span class="st">&quot;HD&quot;</span>, tmpName) <span class="sc">==</span> <span class="cn">TRUE</span>)</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    clearName <span class="ot">&lt;-</span> <span class="st">&quot;Habitat-driven movement&quot;</span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    cn <span class="ot">&lt;-</span> <span class="st">&quot;HD&quot;</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  combiMelt <span class="ot">&lt;-</span> tmpSumm <span class="sc">%&gt;%</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(t, Ninfected_mean, Nimmune_mean) <span class="sc">%&gt;%</span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">Infected =</span> Ninfected_mean, <span class="at">Immune =</span> Nimmune_mean)</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  combiMelt_sd <span class="ot">&lt;-</span> tmpSumm <span class="sc">%&gt;%</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(t, Ninfected_sd, Nimmune_sd) <span class="sc">%&gt;%</span></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">Inf_sd =</span> Ninfected_sd, <span class="at">Imm_sd =</span> Nimmune_sd)</span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  combiMelt_c <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">left_join</span>(combiMelt, combiMelt_sd , <span class="at">by =</span> <span class="st">&quot;t&quot;</span>)</span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>  q <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>  combiMelt_c<span class="sc">$</span>quarter <span class="ot">&lt;-</span> <span class="dv">0</span></span></code></pre></div>
-</div>
-<p>At this point i is still 1 and lets say nrow(combiMelt_c) is also 10 (like in our outer loop)</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(combiMelt_c))</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (i <span class="sc">%%</span> <span class="dv">13</span> <span class="sc">==</span> <span class="dv">0</span>)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    {</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>      q <span class="ot">&lt;-</span> q <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    combiMelt_c<span class="sc">$</span>quarter[i] <span class="ot">&lt;-</span> q</span></code></pre></div>
-</div>
-<p>at this point i is iterated within the inner loop</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>  <span class="er">}</span></span></code></pre></div>
-</div>
-<p>once we reach this point i is 10, so the for the next iteration of the outer
-loop, i = 10 so most iterations of the outer loop will be skipped!</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="er">}</span></span></code></pre></div>
-</div>
-<p><strong>Solution</strong>: make sure to use different iterators in nested loops. For example the outer loop uses <strong><em>i</em></strong>, the inner loop uses <strong><em>j</em></strong> and maybe that loop has also a nested loop which then uses <strong><em>k</em></strong> as its iterator.</p>
-<h3 id="while-loops">‘while’ loops</h3>
-<p>Similar to for loops, while loops also repeat a certain block of code. The difference here is, that while loop repeat until a certain condition is fulfilled, potentially forever. R’s auto fill provides us the following code snippet:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'>while</span> <span class='op'>(</span><span class='va'>condition</span><span class='op'>)</span></span>
-<span><span class='op'>{</span></span>
-<span>  </span>
-<span><span class='op'>}</span></span></code></pre>
-</div>
-</div>
-<p>An easy example:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>n</span> <span class='op'>&lt;-</span> <span class='fl'>0</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>VariableOne</span> <span class='op'>&lt;-</span> <span class='fl'>1</span></span>
 <span></span>
-<span><span class='kw'>while</span><span class='op'>(</span><span class='va'>n</span> <span class='op'>&lt;</span> <span class='fl'>100</span><span class='op'>)</span></span>
-<span><span class='op'>{</span></span>
-<span>  <span class='va'>n</span> <span class='op'>=</span> <span class='va'>n</span> <span class='op'>+</span> <span class='fl'>1</span></span>
-<span><span class='op'>}</span></span>
-<span></span>
-<span><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>n</span><span class='op'>)</span></span></code></pre>
+<span><span class='va'>VariableTwo</span> <span class='op'>&lt;-</span> <span class='fl'>2</span></span></code></pre>
 </div>
-<pre><code>[1] 100</code></pre>
 </div>
-<p>As long as n is below 100 we increment n every repeat. Take note: if the condition is never fulfilled, the loop will run forever and the software might crash. In complex loops you could run a “escape timer” such as in this example plucked from an IBM:</p>
+<h3 id="hungarian-notation">Hungarian Notation:</h3>
+<p>This notation describes the variable type or purpose at the start of the variable name, followed by a descriptor that indicates the variable’s function. The Camelcase notation is used to delimit words.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'>while</span><span class='op'>(</span><span class='op'>!</span><span class='fu'>viableCell</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>iVariableOne</span>   <span class='op'>&lt;-</span> <span class='fl'>1</span>  <span class='co'># i - integer</span></span>
+<span></span>
+<span><span class='va'>sVariableTwo</span>   <span class='op'>&lt;-</span> <span class='st'>"two"</span> <span class='co'># s - string</span></span>
+<span></span>
+<span><span class='va'>lVariableThree</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='op'>)</span> <span class='co'># l - list</span></span></code></pre>
+</div>
+</div>
+<h3 id="sidenote-namespaces-and-function-names">Sidenote: Namespaces and Function Names</h3>
+<p>Often when using for example R we will use libraries and many of them at the same time. Quite a few of those libraries are using the same names for their functions. This can be a big issues and cause code to suddenly not run anymore even though the only difference my be the order in which libraries are loaded. The last library loaded with a certain function will be the default one used by R. A prominent example would be the ‘raster’ package and ‘tidyverse’ (dplyr) who share the name ‘select’ for a function. So, when in doubt use namespaces to make sure to link a function to their library.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>use the select <span class="cf">function</span> from the dplyr library</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">select</span>(.....)</span></code></pre></div>
+</div>
+<h2 id="indentation">Indentation</h2>
+<p>I assume you already know that your code should have some sort of indentation. However, it’s also worth noting that its a good idea to keep your indentation style consistent.
+As a quick reminder:</p>
+<h4 id="bad">Bad:</h4>
+<p>Long lines of text with no separation:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>mydata</span> <span class='op'>&lt;-</span> <span class='va'>iris</span> <span class='op'>%&gt;%</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>Species</span> <span class='op'>==</span> <span class='st'>"virginica"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'>summarise_at</span><span class='op'>(</span>.vars <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Sepal.Length"</span>, <span class='st'>"Sepal.Width"</span><span class='op'>)</span>,.funs <span class='op'>=</span> <span class='st'>"mean"</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>)</span><span class='op'>)</span><span class='op'>{</span> <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>[[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>]</span><span class='op'>$</span><span class='va'>pm</span><span class='op'>)</span>; <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>tmp1</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='st'>"tab_"</span>, <span class='va'>i</span><span class='op'>)</span>, <span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span>; <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='va'>tmp1</span> <span class='op'>%&gt;%</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span><span class='op'>)</span>; <span class='va'>tempDf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='op'>(</span><span class='va'>tempDf</span>, <span class='va'>tmp1</span><span class='op'>)</span><span class='op'>}</span></span></code></pre>
+</div>
+</div>
+<h4 id="good">Good:</h4>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>mydata</span> <span class='op'>&lt;-</span> <span class='va'>iris</span> <span class='op'>%&gt;%</span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>Species</span> <span class='op'>==</span> <span class='st'>"virginica"</span><span class='op'>)</span> <span class='op'>%&gt;%</span></span>
+<span>  <span class='fu'>summarise_at</span><span class='op'>(</span>.vars <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Sepal.Length"</span>, <span class='st'>"Sepal.Width"</span><span class='op'>)</span>,</span>
+<span>               .funs <span class='op'>=</span> <span class='st'>"mean"</span><span class='op'>)</span></span>
+<span></span>
+<span></span>
+<span><span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>)</span><span class='op'>)</span></span>
 <span><span class='op'>{</span></span>
-<span>   <span class='fu'>turn</span><span class='op'>(</span><span class='fl'>2</span> <span class='op'>*</span> <span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/Trig.html'>atan</a></span> <span class='op'>(</span><span class='op'>(</span> <span class='op'>(</span><span class='fl'>1</span> <span class='op'>-</span> <span class='fl'>0.5</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='fl'>1</span> <span class='op'>+</span> <span class='fl'>0.9</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>*</span> <span class='fu'><a href='https://rdrr.io/r/base/Trig.html'>tan</a></span> <span class='op'>(</span><span class='op'>(</span><span class='fu'>randomDouble</span><span class='op'>(</span><span class='fl'>1</span><span class='op'>)</span> <span class='op'>-</span> <span class='fl'>0.5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>*</span> <span class='fl'>180</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='fl'>1</span><span class='op'>)</span> </span>
+<span>  <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>[[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>]</span><span class='op'>$</span><span class='va'>pm</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>tmp1</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='st'>"tab_"</span>, <span class='va'>i</span><span class='op'>)</span>, <span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='va'>tmp1</span> <span class='op'>%&gt;%</span> </span>
+<span>    <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span><span class='op'>)</span></span>
+<span>  </span>
+<span>  <span class='va'>tempDf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='op'>(</span><span class='va'>tempDf</span>, <span class='va'>tmp1</span><span class='op'>)</span></span>
 <span><span class='op'>}</span></span></code></pre>
 </div>
 </div>
-<p>This little loop runs on an individual and check’s the cell in front of the individual for its viability to move into. As long as viableCell() reports false, the individual turns. However, there are cases when they are no viable cells around so the individual would turn in a circle forever. Introducing a random timer (note, this is not an optimal solution just a quick fix).</p>
+<p>The details on how to indent or use whitesapces are up to individual styles with some guidelines, such as avoiding long lines of text, to keep in mind. Also fine would be something like the following.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>int timer <span class="ot">=</span> <span class="dv">0</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span>(<span class="sc">!</span><span class="fu">viableCell</span>() <span class="sc">&amp;&amp;</span> timer <span class="sc">&lt;</span> <span class="dv">50</span> )</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">turn</span>(<span class="dv">2</span> <span class="sc">*</span> (<span class="fu">atan</span> (( (<span class="dv">1</span> <span class="sc">-</span> <span class="fl">0.5</span>) <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> <span class="fl">0.9</span>)) <span class="sc">*</span> <span class="fu">tan</span> ((<span class="fu">randomDouble</span>(<span class="dv">1</span>) <span class="sc">-</span> <span class="fl">0.5</span>)) <span class="sc">*</span> <span class="dv">180</span>)) <span class="sc">+</span> <span class="dv">1</span>) </span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="sc">++</span>timer <span class="co">#increment the timer</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='op'>{</span></span>
+<span>  <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame</a></span><span class='op'>(</span><span class='va'>hmpSplit</span><span class='op'>[[</span><span class='va'>i</span><span class='op'>]</span><span class='op'>]</span><span class='op'>$</span><span class='va'>pm</span><span class='op'>)</span></span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>tmp1</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='st'>"tab_"</span>, <span class='va'>i</span><span class='op'>)</span>, <span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span></span>
+<span>  <span class='va'>tmp1</span> <span class='op'>&lt;-</span> <span class='va'>tmp1</span> <span class='op'>%&gt;%</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'pxcor'</span>, <span class='st'>'pycor'</span>, <span class='st'>'agent'</span>, <span class='st'>'breed'</span><span class='op'>)</span><span class='op'>)</span></span>
+<span>  <span class='va'>tempDf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='op'>(</span><span class='va'>tempDf</span>, <span class='va'>tmp1</span><span class='op'>)</span></span>
+<span><span class='op'>}</span></span></code></pre>
 </div>
-<p>Now the individual turns a maximum of 50 times before the loop ends. Another option would be conditionals:</p>
-<h2 id="bonus-round---conditionals">Bonus round - Conditionals</h2>
-<p>Most people already know what a conditional is. Basically, when a certain condition is fulfilled something happens (usually done via <strong>if</strong> and/or <strong>else</strong>).</p>
+</div>
+<h2 id="commenting-your-code">Commenting Your Code</h2>
+<p>Commenting your code is fantastic but it can be overdone or just be plain redundant. Comments should add information or explanations to make your code understandable for people who didn’t write it or yourself in a year from now:</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>int timer <span class="ot">=</span> <span class="dv">0</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span>(<span class="sc">!</span><span class="fu">viableCell</span>())</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">turn</span>(<span class="dv">2</span> <span class="sc">*</span> (<span class="fu">atan</span> (( (<span class="dv">1</span> <span class="sc">-</span> <span class="fl">0.5</span>) <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> <span class="fl">0.9</span>)) <span class="sc">*</span> <span class="fu">tan</span> ((<span class="fu">randomDouble</span>(<span class="dv">1</span>) <span class="sc">-</span> <span class="fl">0.5</span>)) <span class="sc">*</span> <span class="dv">180</span>)) <span class="sc">+</span> <span class="dv">1</span>) </span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="sc">++</span>timer <span class="co">#increment the timer</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(timer <span class="sc">==</span> <span class="dv">50</span>)</span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span> <span class="co"># break is a function that for example ends a loop</span></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># comment that adds information:</span></span>
+<span></span>
+<span><span class='fu'>write_simoutput</span><span class='op'>(</span><span class='va'>nl</span><span class='op'>)</span> <span class='co'>#having nlrx write the output into a file - only works without patch or turtle metrics</span></span>
+<span></span>
+<span></span>
+<span><span class='co'># redundant comments:</span></span>
+<span></span>
+<span><span class='kw'>if</span> <span class='op'>(</span><span class='va'>col</span> <span class='op'>==</span> <span class='st'>"blue"</span><span class='op'>)</span> <span class='co'># if colour is blue</span></span>
+<span><span class='op'>{</span></span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>'colour is blue'</span><span class='op'>)</span> <span class='co'># print that the colour is blue</span></span>
+<span><span class='op'>}</span></span></code></pre>
 </div>
-<p>Conditionals can be used in a variety of way within and outside of loops but have the advantage that they can be used stop loops under certain conditions. Lets say you are running a complex construct of multiple nested for loops to find a certain value in your data. You don’t need to always iterate through all the data if you can create certain logical stop conditions.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+</div>
+<p>A better solution (if a comment is absolutely necessary) would be:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># display selected colour</span></span>
+<span><span class='kw'>if</span> <span class='op'>(</span><span class='va'>colour</span> <span class='op'>==</span> <span class='st'>"blue"</span><span class='op'>)</span></span>
+<span><span class='op'>{</span></span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='st'>'colour is blue'</span><span class='op'>)</span></span>
+<span><span class='op'>}</span></span></code></pre>
+</div>
+</div>
+<h2 id="dont-repeat-yourself">Don’t Repeat Yourself</h2>
+<p>As a rule of thumb, if you have to do the same task multiple times in your code: automate it. A while back, I was decomposing many timeseries and I needed only part of the output, in this case the ‘trend’. Instead of running the same lines of code that remove all other components for each timeseries individually, a short function reduced the amount of needed code substantially.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>DecompTrend</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>ts</span><span class='op'>)</span><span class='op'>{</span></span>
+<span>  </span>
+<span>  <span class='va'>temp1</span><span class='op'>&lt;-</span><span class='fu'>stats</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/r/stats/decompose.html'>decompose</a></span><span class='op'>(</span><span class='va'>ts</span><span class='op'>)</span></span>
+<span>  <span class='kw'><a href='https://rdrr.io/r/base/function.html'>return</a></span><span class='op'>(</span><span class='va'>temp1</span><span class='op'>$</span><span class='va'>trend</span><span class='op'>)</span></span>
+<span><span class='op'>}</span></span></code></pre>
+</div>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
