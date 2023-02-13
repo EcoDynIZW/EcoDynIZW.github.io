@@ -110,7 +110,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img class="card-repo-img" src='img/planillo_2021_divdist.jpg' alt='Figure 6 of Planillo et al. 2021: associations among bird species in urban areas identified by the JSDM, whose 95 CI did not overlap zero. All associations were positive. Species have been categorized based on their response group. The size of the dot represents the number of sites where the species was recorded (total 29 sites).'>
     <h3>Planillo et al. 2021</h3>
-    <p>Arthropod abundance modulates bird community responses to urbanization. *DIVDIST*, 27:34-49.</p><p>
+    <p>Arthropod abundance modulates bird community responses to urbanization. *DIV DIST*, 27:34-49.</p><p>
     <a href='https://doi.org/10.1111/ddi.131698'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Planillo_2021_DivDist'>![](img/icon-github.png){width=12%}</a></p>
   </li>
@@ -119,7 +119,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img class="card-repo-img" src='img/planillo_2021_landurbplan.png' alt='Figure 1 of Planillo et al. 2021: map of the study area with the locations of the nightingale observations in the different datasets: breeding bird survey transects (blue squares); eBird records classified as all presences (red dots, all the observations submitted), filtered presences (orange dots, presences after data filtering, see methods), and absences (white dots, inferred absences after data filtering); and opportunistic observations from the Nachtigall project (black dots).'>
     <h3>Planillo et al. 2021</h3>
-    <p>Citizen science data for urban planning: Comparing different sampling schemes for modelling urban bird distribution. *LANDURBPLAN*, 211:104098.</p><p>
+    <p>Citizen science data for urban planning: Comparing different sampling schemes for modelling urban bird distribution. *LAND URB PLAN*, 211:104098.</p><p>
     <a href='https://doi.org/10.1016/j.landurbplan.2021.104098'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Planillo_2021_LandUrbPlan'>![](img/icon-github.png){width=12%}</a></p>
   </li>
