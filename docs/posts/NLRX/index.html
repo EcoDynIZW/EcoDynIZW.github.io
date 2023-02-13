@@ -88,9 +88,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-<title>Ecological Dynamics: NLRX - quick guide</title>
+<title>Ecological Dynamics: Run NetLogo Simulations in R</title>
 
-<meta property="description" itemprop="description" content="This guide is supposed to function as a starting point for running NetLogo models/experiments with the nlrx library  (Salecker et al. 2019; https://doi.org/10.1111/2041-210X.13286). This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
+<meta property="description" itemprop="description" content="Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
 
 <link rel="icon" type="image/png" href="../../img/d6_purple_round.png"/>
 
@@ -100,28 +100,28 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta name="article:author" content="Tobias Kürschner"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Ecological Dynamics: NLRX - quick guide"/>
+<meta property="og:title" content="Ecological Dynamics: Run NetLogo Simulations in R"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="This guide is supposed to function as a starting point for running NetLogo models/experiments with the nlrx library  (Salecker et al. 2019; https://doi.org/10.1111/2041-210X.13286). This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
+<meta property="og:description" content="Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Ecological Dynamics"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Ecological Dynamics: NLRX - quick guide"/>
-<meta property="twitter:description" content="This guide is supposed to function as a starting point for running NetLogo models/experiments with the nlrx library  (Salecker et al. 2019; https://doi.org/10.1111/2041-210X.13286). This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
+<meta property="twitter:title" content="Ecological Dynamics: Run NetLogo Simulations in R"/>
+<meta property="twitter:description" content="Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
 <meta property="twitter:site" content="@EcoDynIZW"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["NLRX - quick guide"]},{"type":"character","attributes":{},"value":["This guide is supposed to function as a starting point for running NetLogo models/experiments with the nlrx library  (Salecker et al. 2019; https://doi.org/10.1111/2041-210X.13286). This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."]},{"type":"character","attributes":{},"value":["coding","tutorial","NetLogo","R"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Tobias Kürschner"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-23"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Run NetLogo Simulations in R"]},{"type":"character","attributes":{},"value":["Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."]},{"type":"character","attributes":{},"value":["coding","tutorial","NetLogo","R"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Tobias Kürschner"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-23"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["Model/myModel.nlogo","Script_nlrx_files/anchor-4.2.2/anchor.min.js","Script_nlrx_files/bowser-1.9.3/bowser.min.js","Script_nlrx_files/distill-2.2.21/template.v2.js","Script_nlrx_files/figure-html5/global plot-1.png","Script_nlrx_files/figure-html5/spatial plots-1.png","Script_nlrx_files/header-attrs-2.17/header-attrs.js","Script_nlrx_files/jquery-3.6.0/jquery-3.6.0.js","Script_nlrx_files/jquery-3.6.0/jquery-3.6.0.min.js","Script_nlrx_files/jquery-3.6.0/jquery-3.6.0.min.map","Script_nlrx_files/popper-2.6.0/popper.min.js","Script_nlrx_files/tippy-6.2.7/tippy-bundle.umd.min.js","Script_nlrx_files/tippy-6.2.7/tippy-light-border.css","Script_nlrx_files/tippy-6.2.7/tippy.css","Script_nlrx_files/tippy-6.2.7/tippy.umd.min.js","Script_nlrx_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["Model/myModel.nlogo","nlrxpackage_files/anchor-4.2.2/anchor.min.js","nlrxpackage_files/bowser-1.9.3/bowser.min.js","nlrxpackage_files/distill-2.2.21/template.v2.js","nlrxpackage_files/figure-html5/global plot-1.png","nlrxpackage_files/figure-html5/spatial plots-1.png","nlrxpackage_files/header-attrs-2.17/header-attrs.js","nlrxpackage_files/header-attrs-2.19/header-attrs.js","nlrxpackage_files/jquery-3.6.0/jquery-3.6.0.js","nlrxpackage_files/jquery-3.6.0/jquery-3.6.0.min.js","nlrxpackage_files/jquery-3.6.0/jquery-3.6.0.min.map","nlrxpackage_files/popper-2.6.0/popper.min.js","nlrxpackage_files/tippy-6.2.7/tippy-bundle.umd.min.js","nlrxpackage_files/tippy-6.2.7/tippy-light-border.css","nlrxpackage_files/tippy-6.2.7/tippy.css","nlrxpackage_files/tippy-6.2.7/tippy.umd.min.js","nlrxpackage_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2652,7 +2652,7 @@ d-appendix d-footnote-list a.footnote-backlink {
   color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.17/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.19/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2673,7 +2673,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"NLRX - quick guide","description":"This guide is supposed to function as a starting point for running NetLogo models/experiments with the nlrx library  (Salecker et al. 2019; https://doi.org/10.1111/2041-210X.13286). This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.","authors":[{"author":"Tobias Kürschner","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2022-11-23T00:00:00.000+01:00","citationText":"Kürschner, 2022"}
+{"title":"Run NetLogo Simulations in R","description":"Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.","authors":[{"author":"Tobias Kürschner","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2022-11-23T00:00:00.000+01:00","citationText":"Kürschner, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2741,7 +2741,7 @@ Wikis
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>NLRX - quick guide</h1>
+<h1>Run NetLogo Simulations in R</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
   <a href="../../coding.html#category:coding" class="dt-tag">coding</a>
@@ -2750,7 +2750,7 @@ Wikis
   <a href="../../coding.html#category:R" class="dt-tag">R</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p>This guide is supposed to function as a starting point for running NetLogo models/experiments with the nlrx library (Salecker et al. 2019; <a href="https://doi.org/10.1111/2041-210X.13286" class="uri">https://doi.org/10.1111/2041-210X.13286</a>). This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.</p>
+<p>Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.</p>
 </div>
 
 <div class="d-byline">
@@ -2764,42 +2764,33 @@ Wikis
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#nlrx" id="toc-nlrx">NLRX</a>
-<ul>
-<li><a href="#setting-up-the-library-to-work-with-your-netlogo-model" id="toc-setting-up-the-library-to-work-with-your-netlogo-model">Setting up the library to work with your netlogo model</a></li>
-<li><a href="#creating-an-experiment" id="toc-creating-an-experiment">Creating an experiment</a></li>
-<li><a href="#creating-a-simulation" id="toc-creating-a-simulation">Creating a simulation</a></li>
-<li><a href="#running-the-experiment" id="toc-running-the-experiment">Running the experiment</a>
+<li><a href="#libraries-and-folders" id="toc-libraries-and-folders">Libraries and Folders</a></li>
+<li><a href="#setting-up-the-library-to-work-with-your-netlogo-model" id="toc-setting-up-the-library-to-work-with-your-netlogo-model">Setting Up the Library to Work with Your NetLogo Model</a></li>
+<li><a href="#creating-an-experiment" id="toc-creating-an-experiment">Creating an Experiment</a></li>
+<li><a href="#creating-a-simulation" id="toc-creating-a-simulation">Creating a Simulation</a></li>
+<li><a href="#running-the-experiment" id="toc-running-the-experiment">Running the Experiment</a>
 <ul>
 <li><a href="#nlrx-output-handling" id="toc-nlrx-output-handling">NLRX output handling</a></li>
 </ul></li>
 <li><a href="#cleaning-the-data" id="toc-cleaning-the-data">Cleaning the data</a></li>
 <li><a href="#example-plots" id="toc-example-plots">Example plots</a></li>
-</ul></li>
 </ul>
 </nav>
 </div>
-<h1 id="nlrx">NLRX</h1>
-<p>libraries and folders</p>
+<p>The NLRX package provides tools to setup and execute NetLogo simulations from R developed by <a href="https://doi.org/10.1111/2041-210X.13286">Salecker et al. 2019</a>. NetLogo is a free, open-source and cross-platform modelling environment for simulating natural and social phenomena.</p>
+<h2 id="libraries-and-folders">Libraries and Folders</h2>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/base/rm.html'>rm</a></span><span class='op'>(</span>list<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/ls.html'>ls</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span> <span class='co'>#clear</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># libraries</span></span>
 <span></span>
-<span><span class='co'>#libraries</span></span>
-<span></span>
-<span><span class='kw'>for</span> <span class='op'>(</span><span class='va'>pckg</span> <span class='kw'>in</span></span>
-<span>     <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span></span>
-<span>     <span class='op'>(</span> <span class='st'>'tidyverse'</span>,</span>
-<span>       <span class='st'>'viridis'</span>,</span>
-<span>       <span class='st'>'scico'</span>,</span>
-<span>       <span class='st'>'nlrx'</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='kw'>for</span> <span class='op'>(</span><span class='va'>pckg</span> <span class='kw'>in</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'tidyverse'</span>, <span class='st'>'viridis'</span>, <span class='st'>'scico'</span>, <span class='st'>'nlrx'</span><span class='op'>)</span><span class='op'>)</span></span>
 <span><span class='op'>{</span></span>
-<span>  <span class='kw'>if</span> <span class='op'>(</span><span class='op'>!</span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'>pckg</span>, character.only <span class='op'>=</span> <span class='cn'>T</span><span class='op'>)</span><span class='op'>)</span></span>
+<span>  <span class='kw'>if</span> <span class='op'>(</span><span class='op'>!</span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'>pckg</span>, character.only <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span></span>
 <span>    <span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='va'>pckg</span>, dependencies <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></span>
-<span>  <span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'>pckg</span>, character.only <span class='op'>=</span> <span class='cn'>T</span><span class='op'>)</span></span>
+<span>  <span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'>pckg</span>, character.only <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></span>
 <span><span class='op'>}</span></span>
 <span></span>
-<span><span class='co'>#output folder</span></span>
+<span><span class='co'># output folder</span></span>
 <span></span>
 <span><span class='va'>currentDate</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/grep.html'>gsub</a></span><span class='op'>(</span><span class='st'>"-"</span>, <span class='st'>""</span>, <span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.Date</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span>
 <span><span class='co'># todaysFolder &lt;- paste("Output", currentDate, sep = "_")</span></span>
@@ -2809,7 +2800,7 @@ Wikis
 <span><span class='co'>#memory.limit(85000)</span></span></code></pre>
 </div>
 </div>
-<h2 id="setting-up-the-library-to-work-with-your-netlogo-model">Setting up the library to work with your netlogo model</h2>
+<h2 id="setting-up-the-library-to-work-with-your-netlogo-model">Setting Up the Library to Work with Your NetLogo Model</h2>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>#NetLogo path</span></span>
@@ -2825,36 +2816,38 @@ Wikis
 <span><span class='fu'><a href='https://rdrr.io/r/base/Sys.setenv.html'>Sys.setenv</a></span><span class='op'>(</span>JAVA_HOME<span class='op'>=</span><span class='st'>"C:/Program Files/Java/jre1.8.0_331"</span><span class='op'>)</span> </span></code></pre>
 </div>
 </div>
-<p>Configure the NetLogo object</p>
+<p>Configure the NetLogo object:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>nl</span> <span class='op'>&lt;-</span> <span class='fu'>nlrx</span><span class='fu'>::</span><span class='fu'><a href='https://docs.ropensci.org/nlrx/reference/nl.html'>nl</a></span><span class='op'>(</span>nlversion <span class='op'>=</span> <span class='st'>"6.2.2"</span>,</span>
-<span>         nlpath <span class='op'>=</span> <span class='va'>netlogoPath</span>,</span>
-<span>         modelpath <span class='op'>=</span> <span class='va'>modelPath</span>,</span>
-<span>         jvmmem <span class='op'>=</span> <span class='fl'>1024</span><span class='op'>)</span> <span class='co'>#Java virtual machine memory capacity</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>nl</span> <span class='op'>&lt;-</span> <span class='fu'>nlrx</span><span class='fu'>::</span><span class='fu'><a href='https://docs.ropensci.org/nlrx/reference/nl.html'>nl</a></span><span class='op'>(</span></span>
+<span>  nlversion <span class='op'>=</span> <span class='st'>"6.2.2"</span>,</span>
+<span>  nlpath <span class='op'>=</span> <span class='va'>netlogoPath</span>,</span>
+<span>  modelpath <span class='op'>=</span> <span class='va'>modelPath</span>,</span>
+<span>  jvmmem <span class='op'>=</span> <span class='fl'>1024</span> <span class='co'># Java virtual machine memory capacity</span></span>
+<span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<h2 id="creating-an-experiment">Creating an experiment</h2>
+<h2 id="creating-an-experiment">Creating an Experiment</h2>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>nl</span><span class='op'>@</span><span class='va'>experiment</span> <span class='op'>&lt;-</span> <span class='fu'>nlrx</span><span class='fu'>::</span><span class='fu'><a href='https://docs.ropensci.org/nlrx/reference/experiment.html'>experiment</a></span><span class='op'>(</span></span>
 <span>  expname <span class='op'>=</span> <span class='st'>'Exp_1_1'</span>,</span>
-<span>  <span class='co'>#name</span></span>
+<span>  <span class='co'># name</span></span>
 <span>  outpath <span class='op'>=</span> <span class='va'>outPath</span>,</span>
-<span>  <span class='co'>#outpath</span></span>
+<span>  <span class='co'># outpath</span></span>
 <span>  repetition <span class='op'>=</span> <span class='fl'>1</span>,</span>
-<span>  <span class='co'>#number of times the experiment is repeated with the !!!SAME!!! random seed</span></span>
+<span>  <span class='co'># number of times the experiment is repeated with the !!!SAME!!! random seed</span></span>
 <span>  tickmetrics <span class='op'>=</span> <span class='st'>'true'</span>,</span>
-<span>  <span class='co'>#record metrics at every step</span></span>
+<span>  <span class='co'># record metrics at every step</span></span>
 <span>  idsetup <span class='op'>=</span> <span class='st'>'setup'</span>,</span>
-<span>  <span class='co'>#in-code setup function</span></span>
+<span>  <span class='co'># in-code setup function</span></span>
 <span>  idgo <span class='op'>=</span> <span class='st'>'go'</span>,</span>
-<span>  <span class='co'>#in-code go function</span></span>
+<span>  <span class='co'># in-code go function</span></span>
 <span>  runtime <span class='op'>=</span> <span class='fl'>200</span>,</span>
-<span>  <span class='co'>#soft runtime-cap</span></span>
-<span>  metrics <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'population'</span>,  <span class='co'>#global variables to be recorded, can also use NetLogos 'count' e.g. count turtles</span></span>
+<span>  <span class='co'># soft runtime-cap</span></span>
+<span>  metrics <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'population'</span>,  <span class='co'># global variables to be recorded, can also use NetLogos 'count' e.g. count turtles</span></span>
 <span>              <span class='st'>'susceptible'</span>, <span class='co'># but requires escaped quotation marks for longer commands when strings are involved</span></span>
-<span>              <span class='st'>'infected'</span>,    <span class='co'>#functions similar for both patch and turtle variables (below)</span></span>
+<span>              <span class='st'>'infected'</span>,    <span class='co'># functions similar for both patch and turtle variables (below)</span></span>
 <span>              <span class='st'>'immune'</span><span class='op'>)</span>,</span>
 <span>  metrics.patches <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'totalINfectionsHere'</span>,</span>
 <span>                      <span class='st'>'pxcor'</span>,</span>
@@ -2862,28 +2855,29 @@ Wikis
 <span> <span class='co'># metrics.turtles = list(</span></span>
 <span> <span class='co'>#   "turtles" = c("xcor", "ycor")</span></span>
 <span> <span class='co'># ),</span></span>
-<span>  constants <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>  <span class='co'>#model parameters that are fixed. In theory all the constant values set in the UI before saving are the ones used</span></span>
-<span>    <span class='st'>'duration'</span> <span class='op'>=</span> <span class='fl'>20</span>, <span class='co'>#however, I would always make sure to 'fix" them though the constant input</span></span>
+<span>  constants <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>  <span class='co'># model parameters that are fixed. In theory all the constant values set in the UI before saving are the ones used</span></span>
+<span>    <span class='st'>'duration'</span> <span class='op'>=</span> <span class='fl'>20</span>, <span class='co'># however, I would always make sure to 'fix" them though the constant input</span></span>
 <span>    <span class='st'>'turtle-shape'</span> <span class='op'>=</span> <span class='st'>"\"circle\""</span>,</span>
 <span>    <span class='st'>'runtime'</span> <span class='op'>=</span> <span class='fl'>5</span></span>
 <span>  <span class='op'>)</span>,</span>
-<span>  variables <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span> <span class='co'>#model parameters you want to 'test' have several ways to be set</span></span>
-<span>    <span class='st'>'number-people'</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>values <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>150</span><span class='op'>)</span><span class='op'>)</span>,     <span class='co'>#simple list of values</span></span>
-<span>    <span class='st'>'infectiousness'</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>                     <span class='co'>#stepwise value change</span></span>
+<span>  variables <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span> <span class='co'># model parameters you want to 'test' have several ways to be set</span></span>
+<span>    <span class='st'>'number-people'</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>values <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>150</span><span class='op'>)</span><span class='op'>)</span>,     <span class='co'># simple list of values</span></span>
+<span>    <span class='st'>'infectiousness'</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>                      <span class='co'>#stepwise value change</span></span>
 <span>      min <span class='op'>=</span> <span class='fl'>50</span>,</span>
 <span>      max <span class='op'>=</span> <span class='fl'>100</span>,</span>
 <span>      step <span class='op'>=</span> <span class='fl'>25</span>,</span>
 <span>      qfun <span class='op'>=</span> <span class='st'>'qunif'</span></span>
 <span>    <span class='op'>)</span>,</span>
-<span>    <span class='co'>#"turtle-shape" = list(values = c("\"circle\"","\"person\"")), #string based inputs such as used in NetLogo's 'choosers' or inputs require escaped quotation marks</span></span>
+<span>    <span class='co'># string based inputs such as used in NetLogo's 'choosers' or inputs require escaped quotation marks</span></span>
+<span>    <span class='co'># "turtle-shape" = list(values = c("\"circle\"","\"person\"")), </span></span>
 <span>    <span class='st'>'chance-recover'</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>values <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>50</span>, <span class='fl'>75</span>, <span class='fl'>95</span><span class='op'>)</span><span class='op'>)</span></span>
 <span>  <span class='op'>)</span></span>
 <span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<h2 id="creating-a-simulation">Creating a simulation</h2>
-<p>Here we have several choices of simulation types. The full factorial simdesign used below creates a full-factorial parameter matrix with all possible combinations of parameter values. There are however, other options to choose from if needed and <a href="https://docs.ropensci.org/nlrx/articles/simdesign-examples.html" class="uri">https://docs.ropensci.org/nlrx/articles/simdesign-examples.html</a> provides a good initial overview.</p>
-<p>A bit counterintuitive but ‘nseeds’ used in the simdesigns is actually the number of repeats we want to use for our simulation. In case we set nseed = 10 and have set the the repetitions above to 1, we would run each parameter-combination with 10 different random seeds i.e. 10 times per combination. If we would have set the repetitions to 2 we would run each random seed 2 times i.e. 20 times in total but twice for each seed so 2 results should be identical.</p>
+<h2 id="creating-a-simulation">Creating a Simulation</h2>
+<p>Here we have several choices of simulation types. The full factorial <code>simdesign</code> used below creates a full-factorial parameter matrix with all possible combinations of parameter values. There are however, other options to choose from if needed and <a href="https://docs.ropensci.org/nlrx/articles/simdesign-examples.html">the vignette</a> provides a good initial overview.</p>
+<p>A bit counter intuitive but <code>nseeds</code> used in the <code>simdesign</code> is actually the number of repeats we want to use for our simulation. In case we set <code>nseed = 10</code> and have set the the repetitions above to 1, we would run each parameter combination with 10 different random seeds i.e. 10 times per combination. If we would have set the repetitions to 2 we would run each random seed 2 times i.e. 20 times in total but twice for each seed so 2 results should be identical.</p>
 <p>However, if your model handles seeds internally such as setting a random seed every time the model is setup, repetitions could be used instead.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -2894,11 +2888,11 @@ Wikis
 <span><span class='fu'>nlrx</span><span class='fu'>::</span><span class='fu'><a href='https://docs.ropensci.org/nlrx/reference/eval_variables_constants.html'>eval_variables_constants</a></span><span class='op'>(</span><span class='va'>nl</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<h2 id="running-the-experiment">Running the experiment</h2>
+<h2 id="running-the-experiment">Running the Experiment</h2>
 <p>Since the simulations are executed in a nested loop where the outer loop iterates over the random seeds of the simdesign, and the inner loop iterates over the rows of the parameter matrix. These loops can be executed in parallel by setting up an appropriate plan from the future package which is built into nlrx.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>#plan(multisession, workers = 12) #one worker represents one CPU thread</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>#plan(multisession, workers = 12) # one worker represents one CPU thread</span></span>
 <span></span>
 <span><span class='va'>results</span><span class='op'>&lt;-</span> <span class='fu'>nlrx</span><span class='fu'>::</span><span class='fu'><a href='https://docs.ropensci.org/nlrx/reference/run_nl_all.html'>run_nl_all</a></span><span class='op'>(</span>nl <span class='op'>=</span> <span class='va'>nl</span><span class='op'>)</span></span></code></pre>
 </div>
@@ -2932,9 +2926,9 @@ $ siminputrow      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1~</cod
 <p>There are several ways to use / analyze the output directly via nlrx (although I have not used them personally) detailed information can be found here: <a href="https://cran.r-project.org/web/packages/nlrx/nlrx.pdf" class="uri">https://cran.r-project.org/web/packages/nlrx/nlrx.pdf</a></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>nlrx</span><span class='fu'>::</span><span class='fu'><a href='https://docs.ropensci.org/nlrx/reference/setsim.html'>setsim</a></span><span class='op'>(</span><span class='va'>nl</span>, <span class='st'>"simoutput"</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='va'>results</span> <span class='co'>#attaching simpout to our NetLogo object</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>nlrx</span><span class='fu'>::</span><span class='fu'><a href='https://docs.ropensci.org/nlrx/reference/setsim.html'>setsim</a></span><span class='op'>(</span><span class='va'>nl</span>, <span class='st'>"simoutput"</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='va'>results</span> <span class='co'># attaching simpout to our NetLogo object</span></span>
 <span></span>
-<span><span class='co'>#write_simoutput(nl) #having nlrx write the output into a file only works without patch or turtle metrics</span></span>
+<span><span class='co'>#write_simoutput(nl) # having nlrx write the output into a file only works without patch or turtle metrics</span></span>
 <span></span>
 <span><span class='fu'>nlrx</span><span class='fu'>::</span><span class='fu'><a href='https://docs.ropensci.org/nlrx/reference/analyze_nl.html'>analyze_nl</a></span><span class='op'>(</span><span class='va'>nl</span>, metrics <span class='op'>=</span> <span class='fu'>nlrx</span><span class='fu'>::</span><span class='fu'><a href='https://docs.ropensci.org/nlrx/reference/getexp.html'>getexp</a></span><span class='op'>(</span><span class='va'>nl</span>, <span class='st'>"metrics"</span><span class='op'>)</span>, funs <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>mean <span class='op'>=</span> <span class='va'>mean</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
@@ -2966,12 +2960,14 @@ $ siminputrow      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1~</cod
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>sum_1</span> <span class='op'>&lt;-</span></span>
 <span>  <span class='va'>globalData</span> <span class='op'>%&gt;%</span></span>
 <span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span><span class='op'>(</span><span class='va'>t</span>, <span class='va'>recoveryChance</span>, <span class='va'>infectiousness</span><span class='op'>)</span> <span class='op'>%&gt;%</span></span>
-<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise_all.html'>summarise_at</a></span><span class='op'>(</span></span>
-<span>    .vars <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'infected'</span>,</span>
-<span>              <span class='st'>'immune'</span>,</span>
-<span>              <span class='st'>'susceptible'</span>,</span>
-<span>              <span class='st'>'population'</span><span class='op'>)</span>,</span>
-<span>    .funs <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span>mean <span class='op'>=</span> <span class='st'>"mean"</span><span class='op'>)</span></span>
+<span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise.html'>summarise</a></span><span class='op'>(</span></span>
+<span>    <span class='fu'>across</span><span class='op'>(</span></span>
+<span>      <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'infected'</span>,</span>
+<span>        <span class='st'>'immune'</span>,</span>
+<span>        <span class='st'>'susceptible'</span>,</span>
+<span>        <span class='st'>'population'</span><span class='op'>)</span>,</span>
+<span>      <span class='va'>mean</span></span>
+<span>    <span class='op'>)</span></span>
 <span>  <span class='op'>)</span> <span class='op'>%&gt;%</span></span>
 <span>  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>t</span> <span class='op'>&lt;</span> <span class='fl'>201</span><span class='op'>)</span> <span class='op'>%&gt;%</span></span>
 <span>  <span class='fu'>tidyr</span><span class='fu'>::</span><span class='fu'><a href='https://tidyr.tidyverse.org/reference/pivot_longer.html'>pivot_longer</a></span><span class='op'>(</span>cols <span class='op'>=</span> <span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>recoveryChance</span>, <span class='va'>infectiousness</span>, <span class='va'>t</span><span class='op'>)</span>,</span>
@@ -2980,23 +2976,23 @@ $ siminputrow      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1~</cod
 </div>
 </div>
 <h2 id="example-plots">Example plots</h2>
-<p>using the global data to get an SIR overview</p>
+<p>We use the global data to get an overview of the simulated SIR dynamics:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>ggplot</span><span class='op'>(</span><span class='va'>sum_1</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'>geom_line</span><span class='op'>(</span><span class='fu'>aes</span><span class='op'>(</span><span class='va'>t</span>, <span class='va'>value</span>, colour <span class='op'>=</span> <span class='va'>EpiStat</span><span class='op'>)</span>, size <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>geom_line</span><span class='op'>(</span><span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>t</span>, y <span class='op'>=</span> <span class='va'>value</span>, colour <span class='op'>=</span> <span class='va'>EpiStat</span><span class='op'>)</span>, size <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span> <span class='op'>+</span></span>
 <span>  <span class='fu'>facet_grid</span><span class='op'>(</span><span class='va'>infectiousness</span> <span class='op'>~</span> <span class='va'>recoveryChance</span>, labeller <span class='op'>=</span> <span class='va'>label_both</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'>theme_bw</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
 <span>  <span class='fu'>scale_colour_scico_d</span><span class='op'>(</span></span>
 <span>    palette <span class='op'>=</span> <span class='st'>"lajolla"</span>,</span>
 <span>    begin <span class='op'>=</span> <span class='fl'>0.1</span>,</span>
 <span>    end <span class='op'>=</span> <span class='fl'>0.9</span>,</span>
 <span>    direction <span class='op'>=</span> <span class='fl'>1</span></span>
-<span>  <span class='op'>)</span></span></code></pre>
+<span>  <span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>theme_bw</span><span class='op'>(</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="Script_nlrx_files/figure-html5/global%20plot-1.png" width="624" /></p>
+<p><img src="nlrxpackage_files/figure-html5/global%20plot-1.png" width="624" /></p>
 </div>
-<p>and using the patch specific data to create a heatmap where most infections happened in one specific scenario</p>
+<p>… and use the patch specific data to create a heatmap to visualize where most infections have happened in one specific scenario:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>hmpRaw</span> <span class='op'>&lt;-</span> <span class='va'>raw2</span> <span class='op'>%&gt;%</span></span>
@@ -3025,12 +3021,12 @@ $ siminputrow      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1~</cod
 <span><span class='va'>hmpData</span> <span class='op'>&lt;-</span> <span class='va'>tempDf</span> <span class='op'>%&gt;%</span> <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>summ</span>, <span class='va'>pxcor</span>, <span class='va'>pycor</span><span class='op'>)</span></span>
 <span></span>
 <span><span class='fu'>ggplot</span><span class='op'>(</span><span class='va'>hmpData</span><span class='op'>)</span><span class='op'>+</span></span>
-<span>  <span class='fu'>geom_tile</span><span class='op'>(</span><span class='fu'>aes</span><span class='op'>(</span><span class='va'>pxcor</span>, <span class='va'>pycor</span>, fill <span class='op'>=</span> <span class='va'>summ</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span></span>
-<span>  <span class='fu'>theme_bw</span><span class='op'>(</span><span class='op'>)</span><span class='op'>+</span></span>
-<span>  <span class='fu'>scale_fill_scico</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>'roma'</span>, direction <span class='op'>=</span> <span class='op'>-</span><span class='fl'>1</span>, name<span class='op'>=</span> <span class='st'>'N infected'</span><span class='op'>)</span><span class='op'>+</span></span>
-<span>  <span class='fu'>ggtitle</span><span class='op'>(</span><span class='st'>"N infections per cell"</span><span class='op'>)</span></span></code></pre>
+<span>  <span class='fu'>geom_tile</span><span class='op'>(</span><span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>pxcor</span>, y <span class='op'>=</span> <span class='va'>pycor</span>, fill <span class='op'>=</span> <span class='va'>summ</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>scale_fill_scico</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>'roma'</span>, direction <span class='op'>=</span> <span class='op'>-</span><span class='fl'>1</span>, name<span class='op'>=</span> <span class='st'>'N infected'</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>ggtitle</span><span class='op'>(</span><span class='st'>"N infections per cell"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'>theme_bw</span><span class='op'>(</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="Script_nlrx_files/figure-html5/spatial%20plots-1.png" width="624" /></p>
+<p><img src="nlrxpackage_files/figure-html5/spatial%20plots-1.png" width="624" /></p>
 </div>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
