@@ -1555,7 +1555,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>For using these two functions you have to select the layer you aim to download from the online data base.</p>
 <h2 id="wfs-data">WFS Data</h2>
 <p>As an example we will download the layer containing the districts of Berlin (<em>ALKIS Bezirke</em>):</p>
-<p><img src="man/fisbroker_site_wfs_comb_new.PNG" /></p>
+<p><img src="man/fisbroker_site_wfs_1.PNG" />
+<img src="man/fisbroker_site_wfs_2.PNG" style="width:50.0%" /></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>url</span> <span class='op'>&lt;-</span> <span class='st'>"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis_bezirk"</span></span>
@@ -1611,7 +1612,8 @@ First 10 features:
 <p>You got a spatial layer which you can save to disk or to use it directly.</p>
 <h2 id="atom-data">ATOM Data</h2>
 <p>As an example we will download a raster of vegetation heights (<em>Vegetationshöhen 2020 (Umweltatlas)</em>)</p>
-<p><img src="man/fisbroker_site_atom_comb.PNG" /></p>
+<p><img src="man/fisbroker_site_atom_1.PNG" />
+<img src="man/fisbroker_site_atom_2.PNG" style="width:50.0%" /></p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>url</span> <span class='op'>&lt;-</span> <span class='st'>"https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.zip"</span></span>
@@ -1650,6 +1652,7 @@ max value   :                   350 </code></pre>
 </div>
 <p><img src="d6berlin-fisbroker_files/figure-html5/example%20atom-1.png" width="624" /></p>
 </div>
+<p>A shortcut to plot this kind of data is the <code>xy()</code> function from our dedicated d6georaster package. You can install…</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
