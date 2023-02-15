@@ -133,7 +133,9 @@ knitr::include_graphics("./img/logo_serengeti_spotted_hyaena_project.png")
 
 </br>
 
-[Information leaflet Serengeti Spotted Hyaena Project](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/img/Leaflet_Serengeti_Hyena_project.pdf)
+[Information leaflet Serengeti Spotted Hyaena Project](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/img/Serengeti_Hyaena_Project_Leaflet_English.pdf)
+
+[Informationsbroschüre Serengeti Tüpfelhyänen-Projekt  (auf Deutsch)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/img/Informationsbroschüre_Serengeti_Tüpfelhyänen-Projekt.pdf)
 :::
 
 </br>
