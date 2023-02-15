@@ -50,11 +50,11 @@ knitr::opts_chunk$set(echo = FALSE)
   
   
   <li class="card-repo">
-    <img class="card-repo-img" src='img/drenske_2022.png' alt='Figure 1b of Drenske et al. 2022: study site of Northern Bald Ibis in Europe with two already established breeding sites (pink) in Burghausen (Bavaria, Germany) and Kuchl (State of Salzburg, Austria) and new colonies in Ueberlingen (Baden-Württemberg, Germany; pink) and Rosegg (Kärnten, Austria) with released NBI. The common wintering ground is the WWF Oasi Laguna di Orbetello in Tuscany, Italy (blue).'>
-    <h3>Drenske et al. 2022</h3>
-    <p>On the road to self-sustainability: Reintroduced migratory European Northern Bald Ibises (*Geronticus eremita*) still need management interventions for population viability. *ORYX*.</p><p>
+    <img class="card-repo-img" src='img/drenske_2023.png' alt='Figure 1b of Drenske et al. 2023: study site of Northern Bald Ibis in Europe with two already established breeding sites (pink) in Burghausen (Bavaria, Germany) and Kuchl (State of Salzburg, Austria) and new colonies in Ueberlingen (Baden-Württemberg, Germany; pink) and Rosegg (Kärnten, Austria) with released NBI. The common wintering ground is the WWF Oasi Laguna di Orbetello in Tuscany, Italy (blue).'>
+    <h3>Drenske et al. 2023</h3>
+    <p>On the road to self-sustainability: reintroduced migratory European northern bald ibises *Geronticus eremita* still need management interventions for population viability. *ORYX*.</p><p>
     <!--<a href=''>![](img/icon-paper.png){width=12%}</a>-->
-    <a href='https://github.com/EcoDynIZW/Drenske_2022_Oryx'>![](img/icon-github.png){width=12%}</a>
+    <a href='https://github.com/EcoDynIZW/Drenske_2023_Oryx'>![](img/icon-github.png){width=12%}</a>
     <a href='https://doi.org/10.5281/zenodo.6790671'>![](img/icon-zenodo.png){width=12%}</a>
     <a href='https://www.comses.net/codebases/f021a012-1507-417f-88ad-d181914219d1/releases/1.0.0/'>![](img/icon-comses.png){width=12%}</a></p>
   </li>
