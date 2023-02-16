@@ -46,7 +46,7 @@ For using these two functions you have to select the layer you aim to download f
 
 As an example we will download the layer containing the districts of Berlin ("ALKIS Bezirke"):
 
-![](man/fisbroker_site_wfs_1_crop.PNG)
+![](man/fisbroker_site_wfs_1_crop.png)
 ![](man/fisbroker_site_wfs_2.PNG){width=50%}
 
 ```{r example wfs}
@@ -67,7 +67,7 @@ You got a spatial layer which you can save to disk or to use it directly.
 
 As an example we will download a raster of vegetation heights ("Vegetationshöhen 2020 (Umweltatlas)"):
 
-![](man/fisbroker_site_atom_1_crop.PNG)
+![](man/fisbroker_site_atom_1_crop.png)
 ![](man/fisbroker_site_atom_2.PNG){width=50%}
 
 ```{r example atom}
