@@ -63,24 +63,16 @@ If you set download_data = TRUE the data will be download and copied to your dat
 The three functions `plot_binary_map()`, `plot_qualitative_map()` and plot `plot_quantitative_map()` can be used to add the respective color sceams we used for the Geodata wiki page, but for raster data only!
 
 ```{r plotting functions, eval=FALSE}
-p_base_map <- ggplot2::ggplot() +
-              stars::geom_stars(data = stars::st_as_stars(tif)) +
-              ggplot2::coord_sf(expand = FALSE) 
-
-plot_binary_map(tif = tif, p_base_map = p_base_map)
-plot_qualitative_map(tif = tif, p_base_map = p_base_map)
-plot_quantitative_map(tif = tif, p_base_map = p_base_map)
+plot_binary_map(tif = tif)
+plot_qualitative_map(tif = tif)
+plot_quantitative_map(tif = tif)
 ```
 
 # Example plot
 
 ```{r}
 library(d6geodata)
-p_base_map <- ggplot2::ggplot() +
-              stars::geom_stars(data = stars::st_as_stars(corine)) +
-              ggplot2::coord_sf(expand = FALSE) 
-
-plot_qualitative_map(tif = corine, p_base_map = p_base_map)
+plot_qualitative_map(tif = corine)
 ```
 
 

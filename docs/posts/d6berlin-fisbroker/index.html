@@ -2859,11 +2859,7 @@ $ geom   &lt;MULTIPOLYGON [m]&gt; MULTIPOLYGON (((391281.1 58..., MULTIPOLYGON (
 <p>A shortcut to plot this kind of data is the <code>plot_qualitative_map()</code> function from our dedicated d6geodata package. You can install this package with devtools::install_github(“EcoDynIZW/d6geodata”).</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>p_base_map</span> <span class='op'>&lt;-</span> <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>              <span class='fu'>stars</span><span class='fu'>::</span><span class='fu'><a href='https://r-spatial.github.io/stars/reference/geom_stars.html'>geom_stars</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='fu'>stars</span><span class='fu'>::</span><span class='fu'><a href='https://r-spatial.github.io/stars/reference/st_as_stars.html'>st_as_stars</a></span><span class='op'>(</span><span class='va'>data_atom_10</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>              <span class='fu'>ggplot2</span><span class='fu'>::</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>coord_sf</a></span><span class='op'>(</span>expand <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span> </span>
-<span></span>
-<span><span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_quantitative_map.html'>plot_quantitative_map</a></span><span class='op'>(</span>tif <span class='op'>=</span> <span class='va'>data_atom_10</span>, p_base_map <span class='op'>=</span> <span class='va'>p_base_map</span><span class='op'>)</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_quantitative_map.html'>plot_quantitative_map</a></span><span class='op'>(</span>tif <span class='op'>=</span> <span class='va'>data_atom_10</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>

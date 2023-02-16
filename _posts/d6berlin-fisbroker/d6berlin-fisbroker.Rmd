@@ -101,11 +101,7 @@ suppressMessages(file.remove(here::here("_posts", "d6geodatapackage", "man", "ve
 A shortcut to plot this kind of data is the `plot_qualitative_map()` function from our dedicated d6geodata package. You can install this package with devtools::install_github("EcoDynIZW/d6geodata").
 
 ```{r, eval=FALSE}
-p_base_map <- ggplot2::ggplot() +
-              stars::geom_stars(data = stars::st_as_stars(data_atom_10)) +
-              ggplot2::coord_sf(expand = FALSE) 
-
-d6geodata::plot_quantitative_map(tif = data_atom_10, p_base_map = p_base_map)
+d6geodata::plot_quantitative_map(tif = data_atom_10)
 ```
 
 

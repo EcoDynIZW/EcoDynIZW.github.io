@@ -2,15 +2,14 @@
 title: 'landuse atlas 2009'
 categories:
   - Atlas
-  - '2009'
+  - '2019'
   - 1m
-  - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
 
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: '2023-01-04'
+date: '2023-02-16'
 output:
   distill::distill_article:
     self_contained: false
@@ -51,8 +50,6 @@ meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
   dplyr::mutate(dplyr::across(dplyr::everything(), as.character))
 
-tif <-
-  terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
 ```
 
 ```{r data-table}
