@@ -1,7 +1,7 @@
 ---
 title: "d6geodata - a package to manage spatial data in the Ecodyn Department of the IZW"
 description: |
- Learn how to use the {d6geodata} R package that provides functions for accessing data from the Geodata archive of the d6 department. The two functions `geo_overview()` and `get_geaodata()` are the main components for all members of the EcoDyn Department. Several other functions are within this package but only meant to be used by the Geodata Manager of the Department.
+ Learn how to use the {d6geodata} R package that provides functions for accessing data from the Geodata archive of the d6 department. The two functions `geo_overview()` and `get_geodata()` are the main components for all members of the EcoDyn Department. Several other functions are within this package but only meant to be used by the Geodata Manager of the Department.
 categories:
   - tutorial
   - spatial
