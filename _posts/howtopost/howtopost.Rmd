@@ -1,12 +1,12 @@
 ---
-title: "please enter title"
+title: "How to make a blogpost - a brief introduction"
 description: |
- please enter description
+ Learn how to contribute to the wiki section of the Ecological Department webpage. If you think you have an important information, script, package or just a pieace of code that might be intersesting for your collegues you can create easily a blog post and add this to the wiki section of the webpage.
 categories:
-  - please enter categories in this format
-  
+  - tutorial
+  - workflow
 author:
-  - name: your name
+  - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
 date: yyyy-mm-dd
