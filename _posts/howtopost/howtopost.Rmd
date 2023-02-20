@@ -20,6 +20,15 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+- why contributing?
+  You have a nice peace of code? You made a cool package?
+
+- how to contribute?
+  You have to fork the EcoDynIZW repository, create a post by using the _post_template.rmd and make a merge request when done.
+
+- Please check before for spelling mistakes and if the knitting is working easily, because sometimes we have to rerun the knitting.
+
+
 ```{r install, eval=3}
 
 ```
