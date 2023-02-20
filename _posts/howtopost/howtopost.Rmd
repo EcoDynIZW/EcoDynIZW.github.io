@@ -9,7 +9,7 @@ author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: yyyy-mm-dd
+date: 2023-02-20
 output:
   distill::distill_article:
     self_contained: false
@@ -24,27 +24,29 @@ knitr::opts_chunk$set(echo = TRUE)
   You have a nice peace of code? You made a cool package?
 
 - how to contribute?
-  You have to fork the EcoDynIZW repository, create a post by using the _post_template.rmd and make a merge request when done.
+  You have to clone the [EcoDynIZW.github.io](x-github-client://openRepo/https://github.com/EcoDynIZW/EcoDynIZW.github.io) repository, create a post by using the _post_template.rmd and make a merge request when done.
+  You have to create a folder with the name of the post and save the rmd in there (maybe we create a function for that, like our own post wiki function or so).
+  
+```{r}
+distill::create_post()
+
+post_fun <- function(post_name){
+  if(dir.exists(here::here("_posts", post_name)) == FALSE){
+  dir.create(here::here("_posts", post_name))
+  }
+  file.copy("_template_posts.Rmd", here::here("_posts", post_name, paste0(post_name, ".rmd")))
+}
+
+```
+
+  
 
 - Please check before for spelling mistakes and if the knitting is working easily, because sometimes we have to rerun the knitting.
 
-- examples for styling like "``" for functions examples
+- examples for styling like `plot` for functions examples
 
 - maybe show how to hide code? Or hot to make pseudo code? 
 
-- prepare/update the _post_template.rmd
+- prepare/update the "_post_template.rmd"
 
-
-
-```{r install, eval=3}
-
-```
-
-```{r example}
-
-```
-
-```{r plot, echo=FALSE}
-
-```
 
