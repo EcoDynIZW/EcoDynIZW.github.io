@@ -28,6 +28,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Please check before for spelling mistakes and if the knitting is working easily, because sometimes we have to rerun the knitting.
 
+- examples for styling like "``" for functions examples
+
+- maybe show how to hide code? Or hot to make pseudo code? 
+
+- prepare/update the _post_template.rmd
+
+
 
 ```{r install, eval=3}
 
