@@ -40,7 +40,7 @@ If you run the function `get_overview` you have to decide if you want to see the
 #### Example 1: main folder
 
 ```{r example geo_overview, eval=FALSE}
-d6geodata::get_overview(path_to_cloud = "C:/PopDynCloud")
+d6geodata::get_overview(path_to_cloud = "E:/PopDynCloud")
 Raw or processed data: 
 
 1: raw
@@ -61,7 +61,7 @@ Auswahl: 1
 
 ```{r example geo_overview two, eval=FALSE}
 
-d6geodata::get_overview(path_to_cloud = "C:/PopDynCloud")
+d6geodata::get_overview(path_to_cloud = "E:/PopDynCloud")
 Raw or processed data: 
 
 1: raw
@@ -129,7 +129,7 @@ Now you can copy the name of one of the layers and paste it into the get_geodata
 corine <-
   d6geodata::get_geodata(
     data_name = "corine_berlin_2015_20m_03035_tif",
-    path_to_cloud = "C:/PopDynCloud",
+    path_to_cloud = "E:/PopDynCloud",
     download_data = FALSE
   )
 ```
