@@ -1,7 +1,7 @@
 ---
 title: "How to make a blogpost - a brief introduction"
 description: |
- Learn how to contribute to the wiki section of the Ecological Department webpage. If you think you have an important information, script, package or just a pieace of code that might be intersesting for your collegues you can create easily a blog post and add this to the wiki section of the webpage.
+ Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a pieace of code that might be intersesting for your colleagues you can create easily a blog post and add this to the wiki section of the webpage.
 categories:
   - tutorial
   - workflow
