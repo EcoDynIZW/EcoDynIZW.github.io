@@ -76,7 +76,7 @@ url <- "https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.
 data_atom <-
   d6berlin::download_fisbroker_atom(
     zip_link = url,
-    path = "_posts/d6geodatapackage/man",
+    path = "_posts/d6berlin-fisbroker/man",
     name = "vegetation_heights"
   )
 
