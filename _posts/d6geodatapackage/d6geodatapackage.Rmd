@@ -9,7 +9,7 @@ author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 2023-02-10
+date: 2023-02-21
 output:
   distill::distill_article:
     self_contained: false
@@ -24,8 +24,8 @@ The [`{d6geodata}` package](https://github.com/EcoDynIZW/d6geodata) aims to acce
 
 The two main functions are:
 
-- geo_overview() 
-- get_geodata()
+- `get_overview()` 
+- `get_geodata()`
 
 
 ```{r install, eval=3}
