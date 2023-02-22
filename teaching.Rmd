@@ -38,7 +38,7 @@ Each year, we teach a block course (in March) held in English, which comprises 6
 
 * RStudio Desktop (https://posit.co/download/rstudio-desktop/)  <br>
 * current R-version (https://cran.r-project.org/bin/windows/base/)  <br>
-* RTools (https://cran.r-project.org/bin/windows/Rtools/) or you are using the `installr` package by following the examples (https://search.r-project.org/CRAN/refmans/installr/html/install.Rtools.html) <br>
+* RTools (https://cran.r-project.org/bin/windows/Rtools/) or you are using the `{installr}` package by following the examples (https://search.r-project.org/CRAN/refmans/installr/html/install.Rtools.html) <br>
 <br>
 
 If you are **not** familiar with `R` and `RStudio`, open `RStudio` and follow the steps shown here of how to write scripts in R: [Intro to RStudio](https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/teach/L1_Intro_RStudio.pdf)
