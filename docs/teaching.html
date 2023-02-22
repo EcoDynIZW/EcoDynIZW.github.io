@@ -2762,7 +2762,8 @@ Wikis
 <h3 id="program-installation">Program installation</h3>
 <ul>
 <li>RStudio Desktop (<a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>) <br></li>
-<li>current R-version (<a href="https://cran.r-project.org/bin/windows/base/" class="uri">https://cran.r-project.org/bin/windows/base/</a>) <br>
+<li>current R-version (<a href="https://cran.r-project.org/bin/windows/base/" class="uri">https://cran.r-project.org/bin/windows/base/</a>) <br></li>
+<li>RTools (<a href="https://cran.r-project.org/bin/windows/Rtools/" class="uri">https://cran.r-project.org/bin/windows/Rtools/</a>) or you are using the <code>installr</code> package by following the examples (<a href="https://search.r-project.org/CRAN/refmans/installr/html/install.Rtools.html" class="uri">https://search.r-project.org/CRAN/refmans/installr/html/install.Rtools.html</a>) <br>
 <br></li>
 </ul>
 <p>If you are <strong>not</strong> familiar with <code>R</code> and <code>RStudio</code>, open <code>RStudio</code> and follow the steps shown here of how to write scripts in R: <a href="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/teach/L1_Intro_RStudio.pdf">Intro to RStudio</a>
@@ -2807,21 +2808,22 @@ Optional - use own course folder setup
 <p>Then, either create your own <code>R</code>-script and follow the steps in the html-file (you can copy-paste the commands from the html-file), or save a copy of the rmd-file under your own name and run the code chunks step by step in the <code>RStudio</code> console. But you should always have the html-file opened in parallel to <code>RStudio</code>. Each course comes with exercises as a learning control.</p>
 <details>
 <summary>
-Courses 1 and 2: Basic concepts in R &amp; Spatial R
+<strong>Courses 1 and 2: Basic concepts in R &amp; Spatial R</strong>
 </summary>
-<h3 id="courses-1-and-2-basic-concepts-in-r-spatial-r">Courses 1 and 2: Basic concepts in R &amp; Spatial R</h3>
+<div class="highlightbox">
 <p>These courses contain the minimum knowledge for handling, manipulating and visualizing various data types in <code>R</code> (Course1: <code>vectors</code>, <code>data.frames</code>, <code>lists</code>; Course2: spatial data like <code>raster</code> and vector files). The second course builds on the concepts introduced in course 1. It is therefore recommended to start with Course 1.
 <br></p>
 <p>You can run Course 1 without downloading any additional data. Please note that course 1 is <strong>not</strong> meant as a beginners course - a lot of great in-depth courses are available online (see links provided in Course 1). Course 1 is rather a ‘refresher’ of the basic <code>R</code> concepts that are needed for all subsequent courses. In a nutshell, it goes through the <a href="https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf">base R cheatsheet</a>. It is recommended to have the cheatsheet downloaded and to make your own notes into a copy of our script. You will find the course material for Course 1 in the repository under ./R/Course1_R_Intro.
 <br></p>
-<p>For Course 2, you need to have the repository downloaded for access to the spatial data. Please open the .html file in ./R/Course2_R_Spatial.
-<br></p>
+<p>For Course 2, you need to have the repository downloaded for access to the spatial data. Please open the .html file in ./R/Course2_R_Spatial.</p>
+</div>
 </details>
 <details>
 <summary>
-Courses 3_a and 3_b Species distribution models
+<strong>Courses 3_a and 3_b Species distribution models</strong>
 </summary>
-<h3 id="courses-3_a-3_b-species-distribution-models">Courses 3_a &amp; 3_b Species distribution models</h3>
+<div class="highlightbox">
+<p>In these courses, you will learn how to establish a functional relationship between the (relative) occurrence probability of species and (environmental) variables. This functional relationship – or species distribution/ occupancy model – can be extrapolated to other similar areas and used as an assessment of the availability of potentially suitable habitat for the respective species.</p>
 <h5 id="presence-only-maxent">presence only / MaxEnt</h5>
 <p>Please download MaxEnt here: <a href="https://biodiversityinformatics.amnh.org/open_source/maxent/" class="uri">https://biodiversityinformatics.amnh.org/open_source/maxent/</a>
 For MaxEnt you may still need to install a Java version. If you double-click the file maxent.jar, an interface should appear.
@@ -2829,31 +2831,36 @@ For MaxEnt you may still need to install a Java version. If you double-click the
 <p>Download course data: For conducting course 3, we will provide you with additional data. Drag and drop the folders “data_borneo” and “data_berlin” from the provided zip files into the main folder (here: <code>d6_teaching_collection</code>).
 <br></p>
 <p>Link to data_borneo and data_berlin will be provided.</p>
-<p>Course3_a_SDM</p>
+<p>Please open the .html file in ./R/Course3_a_presence_only_sdm.</p>
 <h5 id="repeated-presence-absence-occupancy-models">repeated presence absence / occupancy models</h5>
-<p>Course3_b_occu</p>
+<p>Please open the .html file in ./R/Course3_b_presence_absence_occupancy.</p>
+</div>
 </details>
 <details>
 <summary>
-Course 4 Movement analysis
+<strong>Course 4 Movement analysis</strong>
 </summary>
-<h3 id="movement-analysis">Movement analysis</h3>
-<h5 id="telemetry-data">telemetry data</h5>
-<p>Course4_MoveQ</p>
+<div class="highlightbox">
+<p>This course is an overview over the first steps for analysing relocation (telemetry) data. Using our collared red fox (Vulpes vulpes) ‘Q von Stralau’ as an example of movement data with fixes every 4 minutes, we will show how to clean your data and make first analyses of the tracks (step length, turning angles) and home range analyses.</p>
+<p>Please open the .html file in ./R/Course4_telemetry_movement.</p>
+</div>
 </details>
 <details>
 <summary>
-Course 5 Biodiversity metrics
+<strong>Course 5 Biodiversity metrics</strong>
 </summary>
-<h3 id="biodiversity-analysis">Biodiversity analysis</h3>
-Course5_biodiv
+<div class="highlightbox">
+<p>In this part of the course we are going to explore more in detail how we measure and compare biodiversity among different sites. We will focus mainly of alpha diversity, which refers to the diversity at a specific site; this is the group of metrics we use to compare diversity among sites. We will explore the classic and current alpha diversity indices for both presence/absence data and abundance data. Then, we will learn which conditions the diversity samples need to meet to be comparable and how to analyse the effects of environmental variables in the diversity metric values. Finally, we will apply all this to statistically analyse urban Berlin bird diversity and create a spatial “map of diversity” for the city.</p>
+<p>Please open the .html file in ./R/Course5_biodiversity_abundance_metrics.</p>
+</div>
 </details>
 <details>
 <summary>
-Course 6 Population analyses
+<strong>Course 6 Population analyses</strong>
 </summary>
-<h3 id="population-analysis">Population analysis</h3>
-Course6_cmr
+<div class="highlightbox">
+<p>Please open the .html file in ./R/Course6_demography_population_models.</p>
+</div>
 </details>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

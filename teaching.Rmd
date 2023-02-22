@@ -38,6 +38,7 @@ Each year, we teach a block course (in March) held in English, which comprises 6
 
 * RStudio Desktop (https://posit.co/download/rstudio-desktop/)  <br>
 * current R-version (https://cran.r-project.org/bin/windows/base/)  <br>
+* RTools (https://cran.r-project.org/bin/windows/Rtools/) or you are using the `installr` package by following the examples (https://search.r-project.org/CRAN/refmans/installr/html/install.Rtools.html) <br>
 <br>
 
 If you are **not** familiar with `R` and `RStudio`, open `RStudio` and follow the steps shown here of how to write scripts in R: [Intro to RStudio](https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/teach/L1_Intro_RStudio.pdf)
@@ -98,25 +99,26 @@ Then, either create your own `R`-script and follow the steps in the html-file (y
 
 
 
-<details><summary>Courses 1 and 2: Basic concepts in R & Spatial R</summary>
+<details><summary>**Courses 1 and 2: Basic concepts in R & Spatial R**</summary>
 
-### Courses 1 and 2: Basic concepts in R & Spatial R
-
-These courses contain the minimum knowledge for handling, manipulating and visualizing various data types in `R` (Course1: `vectors`, `data.frames`, `lists`; Course2: spatial data like `raster` and vector files). The second course builds on the concepts introduced in course 1. It is therefore recommended to start with Course 1. 
+<div class='highlightbox'>These courses contain the minimum knowledge for handling, manipulating and visualizing various data types in `R` (Course1: `vectors`, `data.frames`, `lists`; Course2: spatial data like `raster` and vector files). The second course builds on the concepts introduced in course 1. It is therefore recommended to start with Course 1. 
 <br>
 
 You can run Course 1 without downloading any additional data. Please note that course 1 is **not** meant as a beginners course - a lot of great in-depth courses are available online (see links provided in Course 1). Course 1 is rather a 'refresher' of the basic `R` concepts that are needed for all subsequent courses. In a nutshell, it goes through the [base R cheatsheet](https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf). It is recommended to have the cheatsheet downloaded and to make your own notes into a copy of our script. You will find the course material for Course 1 in the repository under ./R/Course1_R_Intro.
 <br>
 
 For Course 2, you need to have the repository downloaded for access to the spatial data. Please open the .html file in ./R/Course2_R_Spatial.
-<br>
+</div> 
 
 </details>
 
 
-<details><summary>Courses 3_a and 3_b Species distribution models</summary>
+<details><summary>**Courses 3_a and 3_b Species distribution models**</summary>
 
-### Courses 3_a & 3_b Species distribution models 
+<div class='highlightbox'>
+
+In these courses, you will learn how to establish a functional relationship between the (relative) occurrence probability of species and (environmental) variables. This functional relationship – or species distribution/ occupancy model – can be extrapolated to other similar areas and used as an assessment of the availability of potentially suitable habitat for the respective species.   
+
 ##### presence only  / MaxEnt
 
 Please download MaxEnt here: https://biodiversityinformatics.amnh.org/open_source/maxent/
@@ -128,10 +130,12 @@ Download course data: For conducting course 3, we will provide you with addition
 
 Link to data_borneo and data_berlin will be provided. 
 
-Course3_a_SDM
+Please open the .html file in ./R/Course3_a_presence_only_sdm.
 
 ##### repeated presence absence / occupancy models
-Course3_b_occu
+Please open the .html file in ./R/Course3_b_presence_absence_occupancy.
+
+</div> 
 
 </details>
 
@@ -139,30 +143,39 @@ Course3_b_occu
 
 
 
-<details><summary>Course 4 Movement analysis</summary>
+<details><summary>**Course 4 Movement analysis**</summary>
 
-### Movement analysis
-##### telemetry data
+<div class='highlightbox'>This course is an overview over the first steps for analysing relocation (telemetry) data. Using our collared red fox (Vulpes vulpes) ‘Q von Stralau’ as an example of movement data with fixes every 4 minutes, we will show how to clean your data and make first analyses of the tracks (step length, turning angles) and home range analyses.
 
-Course4_MoveQ
+Please open the .html file in ./R/Course4_telemetry_movement.
+
+</div> 
 
 </details>
 
 
 
 
-<details><summary>Course 5 Biodiversity metrics</summary>
+<details><summary>**Course 5 Biodiversity metrics**</summary>
 
-### Biodiversity analysis
-Course5_biodiv
+<div class='highlightbox'>In this part of the course we are going to explore more in detail how we measure and compare biodiversity among different sites. We will focus mainly of alpha diversity, which refers to the diversity at a specific site; this is the group of metrics we use to compare diversity among sites. We will explore the classic and current alpha diversity indices for both presence/absence data and abundance data. Then, we will learn which conditions the diversity samples need to meet to be comparable and how to analyse the effects of environmental variables in the diversity metric values. Finally, we will apply all this to statistically analyse urban Berlin bird diversity and create a spatial “map of diversity” for the city.  
+
+Please open the .html file in ./R/Course5_biodiversity_abundance_metrics.
+
+</div> 
+
 </details>
 
 
 
 
-<details><summary>Course 6 Population analyses</summary>
+<details><summary>**Course 6 Population analyses**</summary>
 
-### Population analysis
-Course6_cmr
+<div class='highlightbox'>
+
+Please open the .html file in ./R/Course6_demography_population_models.
+
+</div> 
+
 </details>
 
