@@ -41,7 +41,7 @@ knitr::opts_chunk$set(echo = FALSE)
   
   
   <li class="card-repo">
-    <img class="card-repo-img" src='img/dalleau_2019.png' alt='Figure 2 of Dalleau et al. 2019: Overview of the SWIO landscape (eastern coast of the African continent with Madagascar shwon central in the map) with black pentagons represent nesting sites.'>
+    <img class="card-repo-img" src='img/dalleau_2019.png' alt='Figure 2 of Dalleau et al. 2019: Overview of the SWIO landscape (eastern coast of the African continent with Madagascar shown central in the map) with black pentagons represent nesting sites.'>
     <h3>Dalleau et al. 2019</h3>
     <p>Modeling the emergence of migratory corridors and foraging hot spots of the green sea turtle. *ECOL EVOL*, 9:10317–1034.</p><p>
     <a href='https://doi.org/10.1002/ece3.5552'>![](img/icon-paper.png){width=12%}</a> 
@@ -50,11 +50,12 @@ knitr::opts_chunk$set(echo = FALSE)
   
   
   <li class="card-repo">
-    <img class="card-repo-img" src='img/Danabalan_2023.png' alt='Figure 2 of Danabalan et al. 2023: Overview of the SWIO landscape (eastern coast of the African continent with Madagascar shwon central in the map) with black pentagons represent nesting sites.'>
+    <img class="card-repo-img" src='img/Danabalan_2023.png' alt='Figure 1 of Danabalan et al. 2023: Sampling sites in Berlin with one example of fly trap used in the study in the top left corner. Orange circles denote collection sites of both flies and mosquitoes, red circle indicates collection of bloodfed mosquitoes only, and gray triangles indicate fly detection locations used by Hoffman et al. (2018)'>
     <h3>Danabalan et al. 2023</h3>
-    <p>Modeling the emergence of migratory corridors and foraging hot spots of the green sea turtle. *ECOL EVOL*, 9:10317–1034.</p><p>
-    <a href='https://doi.org/10.1002/ece3.5552'>![](img/icon-paper.png){width=12%}</a> 
-    <a href='https://www.comses.net/codebases/69863caa-2f8e-4412-a564-a2826d9d38d3/releases/1.0.0/'>![](img/icon-comses.png){width=12%}</a></p>
+    <p>Comparison of mosquito and fly derived DNA as a tool for sampling vertebrate biodiversity in suburban forests in Berlin, Germany. ENVIRON DNA.</p><p>
+    <a href='https://doi.org/10.1002/edn3.398'>![](img/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Danabalan_Planillo_2023_eDNA'>![](img/icon-github.png){width=12%}</a>
+    <a href='https://doi.org/10.5061/dryad.xsj3tx9j8'>![](img/icon-dryad.png){width=12%}</a> </p>
   </li>
   
   
