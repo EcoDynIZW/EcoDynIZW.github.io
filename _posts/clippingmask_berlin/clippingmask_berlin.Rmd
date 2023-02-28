@@ -1,0 +1,46 @@
+---
+title: "Clipping mask for Berlin borders"
+description: |
+ Learn how to use a clipping mask to clip raster maps to the extent and borders of Berlin.
+categories:
+  - tutorial
+  - spatial
+  - Berlin
+  
+author:
+  - name: Mrotz Wenzler-Meya    
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: 2023-02-28
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r install, eval=3}
+
+
+
+
+```
+
+```{r example}
+berlin_mask <- terra::rast("E:/PopDynCloud/GeoData/data-proc/berlin/template-raster_berlin_2018_10m_03035_tif/template-raster_berlin_2018_10m_03035.tif")
+
+berlin_light <- terra::rast("E:/PopDynCloud/GeoData/data-proc/berlin/light-pollution_berlin_2021_100m_03035_tif/light-pollution_berlin_2021_100m_03035.tif")
+
+terra::ext(terra::aggregate(berlin_mask, 10))
+terra::ext(terra::disagg(berlin_light, 10))
+
+
+```
+
+```{r plot, echo=FALSE}
+
+```
+
