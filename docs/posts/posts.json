@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/clippingmask_berlin/",
+    "title": "Clipping mask for Berlin borders",
+    "description": "Learn how to use a clipping mask to clip a raster map to the extent and borders of Berlin.",
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2023-02-28",
+    "categories": [
+      "tutorial",
+      "spatial",
+      "Berlin"
+    ],
+    "contents": "\r\nSometimes you will get a dataset that is larger than your study area and you want to clip it to your specific extent or boundaries. There are two ways to do that:\r\n- the crop function of the {terra} package: this will crop the dataset to the extent of the cropping mask\r\n- the mask function of the {terra} package: this will crop the dataset to the extent of the cropping mask and set everything outside of the mask boundaries to NA (or to a costum set value)\r\nIn this tutorial only the mask function is covered because the crop function is usable in several ways and quite easy(?). The mask function gives the opportunity to only get the raster cells that are covered by another raster or spatial object.\r\nHere are two examples showing how to use data from the PopDynCloud and one with data from the geoboundaries website.\r\n\r\n\r\nlibrary(d6geodata)\r\nlibrary(sf)\r\nlibrary(terra)\r\nlibrary(dplyr)\r\n\r\n\r\nExample PopDynCloud\r\nIf you have access to the PopDynCloud you can use the districts_berlin_layer like this:\r\n\r\n\r\nberlin_mask <- get_geodata(data_name =  \"districs_berlin_2022_poly_03035_gpkg\",\r\n                           path_to_cloud = \"E:/PopDynCloud\")\r\n\r\nReading layer `districs_berlin_2022_poly_03035' from data source \r\n  `E:\\PopDynCloud\\GeoData\\data-raw\\berlin\\districs_berlin_2022_poly_03035_gpkg\\districs_berlin_2022_poly_03035.gpkg' \r\n  using driver `GPKG'\r\nSimple feature collection with 97 features and 6 fields\r\nGeometry type: MULTIPOLYGON\r\nDimension:     XY\r\nBounding box:  xmin: 4531043 ymin: 3253864 xmax: 4576654 ymax: 3290795\r\nProjected CRS: ETRS89-extended / LAEA Europe\r\n\r\nrast_example <- get_geodata(data_name =  \"tree-cover-density_berlin_2018_10m_03035_tif\",\r\n                           path_to_cloud = \"E:/PopDynCloud\")\r\n\r\n\r\nplot_quantitative_map(tif = rast_example)\r\n\r\n\r\nrast_example_masked <- mask(rast_example, berlin_mask)\r\n\r\nplot_quantitative_map(tif = rast_example_masked)\r\n\r\n\r\n\r\nExample geoboundaries\r\nIf not, you can use the data from the geoboundaries website or using the rgeoboundaries package from github:\r\n\r\n\r\ndevtools::install_github(\"dickoa/rgeoboundaries\")\r\n\r\n\r\n\r\n\r\nlibrary(rgeoboundaries)\r\nrgeob_mask_berlin <- rgeoboundaries::gb_adm2(\"Germany\") %>% \r\n  filter(shapeName %in% \"Berlin\") %>%\r\n  st_transform(3035)\r\n\r\nrast_example_rgeob_masked <- mask(rast_example, rgeob_mask_berlin)\r\n\r\nplot_quantitative_map(tif = rast_example_rgeob_masked)\r\n\r\n\r\n\r\nThis framework can be used with other datasets as well as long as the projections are the same and the maks must have a smaller or the same extent.\r\n\r\n\r\n\r\n",
+    "preview": "posts/clippingmask_berlin/clippingmask_berlin_files/figure-html5/example-1.png",
+    "last_modified": "2023-03-01T11:22:00+01:00",
+    "input_file": "clippingmask_berlin.knit.md"
+  },
+  {
     "path": "posts/d6berlin-fisbroker/",
     "title": "Download Spatial Data from the FIS-Broker Data Base in R",
     "description": "Learn how to download WFS (vector) data and ATOM (raster) data from the fisbroker data base using the our custom functions `download_fisbroker_wfs()` and `download_fisbroker_atom()`.",
