@@ -118,7 +118,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["d6geodatapackage_files/anchor-4.2.2/anchor.min.js","d6geodatapackage_files/bowser-1.9.3/bowser.min.js","d6geodatapackage_files/distill-2.2.21/template.v2.js","d6geodatapackage_files/figure-html5/unnamed-chunk-1-1.png","d6geodatapackage_files/header-attrs-2.20/header-attrs.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.min.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.min.map","d6geodatapackage_files/popper-2.6.0/popper.min.js","d6geodatapackage_files/tippy-6.2.7/tippy-bundle.umd.min.js","d6geodatapackage_files/tippy-6.2.7/tippy-light-border.css","d6geodatapackage_files/tippy-6.2.7/tippy.css","d6geodatapackage_files/tippy-6.2.7/tippy.umd.min.js","d6geodatapackage_files/webcomponents-2.0.0/webcomponents.js","man/fisbroker_site_atom_1.PNG","man/fisbroker_site_atom_2.PNG","man/fisbroker_site_atom_comb.PNG","man/fisbroker_site_wfs_1.PNG","man/fisbroker_site_wfs_2.PNG","man/fisbroker_site_wfs_comb.png","man/get_overview_example_1.PNG","man/get_overview_example_2.PNG","man/vegetation_heights/veg_hoehe_2020_nodata.tif.aux.xml"]}
+  {"type":"character","attributes":{},"value":["d6geodatapackage_files/anchor-4.2.2/anchor.min.js","d6geodatapackage_files/bowser-1.9.3/bowser.min.js","d6geodatapackage_files/distill-2.2.21/template.v2.js","d6geodatapackage_files/figure-html5/unnamed-chunk-1-1.png","d6geodatapackage_files/header-attrs-2.20/header-attrs.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.min.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.min.map","d6geodatapackage_files/popper-2.6.0/popper.min.js","d6geodatapackage_files/tippy-6.2.7/tippy-bundle.umd.min.js","d6geodatapackage_files/tippy-6.2.7/tippy-light-border.css","d6geodatapackage_files/tippy-6.2.7/tippy.css","d6geodatapackage_files/tippy-6.2.7/tippy.umd.min.js","d6geodatapackage_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1535,11 +1535,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span><span class='co'>## library(d6geodata)</span></span></code></pre>
 </div>
 </div>
-<p>If you want to get geodata we already have in our Geodata archive you have two options: go on the EcoDyn Website, click on wikis and select <a href="https://ecodynizw.github.io/geodata.html">Geodata</a>. There you’ll find several raster layers and vector data with plots and metadata. In the metadata section, you’ll find the folder_name. You can copy this and use this together with <code>get_geodata()</code> function to get the data from our PopDynCloud. Another option is the function called <code>get_overview()</code>. There you can select which data and from which location you want to have a list of data.</p>
-<p>If you run the function <code>get_overview</code> you have to decide if you want to see the raw or processed data by typing 1 for raw and 2 for processed data. Afterwards, you have to decide if you want to see the main (type 1) folders (the regions or sub-regions we have data from) or the sub (type 2) folders (the actually data we have in each region).</p>
+<p>If you want to get geodata we already have in our Geodata archive you have two options: go on the EcoDyn Website, click on wikis and select <a href="https://ecodynizw.github.io/geodata.html">Geodata</a>. There you’ll find several raster layers and vector data with plots and metadata. In the metadata section, you’ll find the folder_name. You can copy this and use this together with <code>get_geodata()</code> function to get the data from our PopDynCloud. Another option is the function called <code>geo_overview()</code>. There you can select which data and from which location you want to have a list of data.</p>
+<p>If you run the function <code>geo_overview</code> you have to decide if you want to see the raw or processed data by typing 1 for raw and 2 for processed data. Afterwards, you have to decide if you want to see the main (type 1) folders (the regions or sub-regions we have data from) or the sub (type 2) folders (the actually data we have in each region).</p>
 <h4 id="example-1-main-folder">Example 1: main folder</h4>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>d6geodata<span class="sc">::</span><span class="fu">get_overview</span>(<span class="at">path_to_cloud =</span> <span class="st">&quot;E:/PopDynCloud&quot;</span>)</span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>d6geodata<span class="sc">::</span><span class="fu">geo_overview</span>(<span class="at">path_to_cloud =</span> <span class="st">&quot;E:/PopDynCloud&quot;</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Raw or processed data<span class="sc">:</span> </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span> raw</span>
@@ -1556,7 +1556,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <h4 id="example-2-sub-folder">Example 2: sub folder</h4>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>d6geodata<span class="sc">::</span><span class="fu">get_overview</span>(<span class="at">path_to_cloud =</span> <span class="st">&quot;E:/PopDynCloud&quot;</span>)</span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>d6geodata<span class="sc">::</span><span class="fu">geo_overview</span>(<span class="at">path_to_cloud =</span> <span class="st">&quot;E:/PopDynCloud&quot;</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Raw or processed data<span class="sc">:</span> </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span> raw</span>
@@ -1628,6 +1628,23 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 </div>
 <p>If you set download_data = TRUE the data will be download and copied to your data-raw folder. If the data-raw folder doesn’t exist, it will create one.</p>
+<p>If you want to download more than one file, you can simply use lapply and add multiple file names like this:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>data_list</span> <span class='op'>&lt;-</span></span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/base/lapply.html'>lapply</a></span><span class='op'>(</span></span>
+<span>    <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span></span>
+<span>      <span class='st'>"corine_berlin_2015_20m_03035_tif"</span>,</span>
+<span>      <span class='st'>"motorways_berlin_2022_100m_03035_tif"</span></span>
+<span>    <span class='op'>)</span>,</span>
+<span>    FUN <span class='op'>=</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span> <span class='op'>{</span></span>
+<span>      <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/get_geodata.html'>get_geodata</a></span><span class='op'>(</span></span>
+<span>        data_name <span class='op'>=</span> <span class='va'>x</span>,</span>
+<span>        path_to_cloud <span class='op'>=</span> <span class='st'>"E:/PopDynCloud"</span>,</span>
+<span>        download_data <span class='op'>=</span> <span class='cn'>FALSE</span></span>
+<span>      <span class='op'>)</span><span class='op'>}</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
 <h4 id="additional-functions">Additional functions</h4>
 <p>The three functions <code>plot_binary_map()</code>, <code>plot_qualitative_map()</code> and plot <code>plot_quantitative_map()</code> can be used to plot raster data with the respective color sceams we used for the Geodata wiki page, but for raster data only!</p>
 <div class="layout-chunk" data-layout="l-body">
