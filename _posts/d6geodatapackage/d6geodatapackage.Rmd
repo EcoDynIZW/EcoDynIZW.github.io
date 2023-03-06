@@ -1,7 +1,7 @@
 ---
 title: "d6geodata - a package to manage spatial data in the Ecodyn Department of the IZW"
 description: |
- Learn how to use the {d6geodata} R package that provides functions for accessing data from the Geodata archive of the d6 department. The two functions `geo_overview()` and `get_geodata()` are the main components for all members of the EcoDyn Department. Several other functions are within this package but only meant to be used by the Geodata Manager of the Department.
+ Learn how to use the {d6geodata} R package that provides functions for accessing data from the Geodata archive of the Department of Ecological Dynamics. The two functions `geo_overview()` and `get_geodata()` are the main components for all members of our Department. Several other functions are within this package but only meant to be used by the Geodata Manager of the Department.
 categories:
   - tutorial
   - spatial
@@ -24,7 +24,7 @@ The [`{d6geodata}` package](https://github.com/EcoDynIZW/d6geodata) aims to acce
 
 The two main functions are:
 
-- `get_overview()` 
+- `geo_overview()` 
 - `get_geodata()`
 
 
@@ -33,7 +33,7 @@ devtools::install_github("EcoDynIZW/d6geodata")
 library(d6geodata)
 ```
 
-If you want to get geodata we already have in our Geodata archive you have two options: go on the EcoDyn Website, click on wikis and select [Geodata](https://ecodynizw.github.io/geodata.html). There you'll find several raster layers and vector data with plots and metadata. In the metadata section, you'll find the folder_name. You can copy this and use this together with `get_geodata()` function to get the data from our PopDynCloud. Another option is the function called `geo_overview()`. There you can select which data and from which location you want to have a list of data.
+If you want to get geodata we already have in our Geodata archive you have two options: go on the EcoDynIZW Website, click on wikis and select [Geodata](https://ecodynizw.github.io/geodata.html). There you'll find several raster layers and vector data with plots and metadata. In the metadata section, you'll find the folder_name. You can copy this and use this together with `get_geodata()` function to get the data from our PopDynCloud. Another option is the function called `geo_overview()`. There you can select which data and from which location you want to have a list of data.
 
 If you run the function `geo_overview` you have to decide if you want to see the raw or processed data by typing 1 for raw and 2 for processed data. Afterwards, you have to decide if you want to see the main (type 1) folders (the regions or sub-regions we have data from) or the sub (type 2) folders (the actually data we have in each region).
 
