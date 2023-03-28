@@ -1,0 +1,81 @@
+---
+title: "Clipping mask for Berlin borders"
+description: |
+ Learn how to use a clipping mask to clip a raster map to the extent and borders of Berlin. 
+categories:
+  - tutorial
+  - spatial
+  - Berlin
+  
+author:
+  - name: Moritz Wenzler-Meya    
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: 2023-02-28
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Sometimes you will get a dataset that is larger than your study area and you want to clip it to your specific extent or boundaries. There are two ways to do that:
+- the `crop` function of the {terra} package: this will crop the dataset to the extent of the cropping mask
+- the `mask` function of the {terra} package: this will crop the dataset to the extent of the cropping mask and set everything outside of the mask boundaries to NA (or to a costum set value)
+
+In this tutorial only the `mask` function is covered because the crop function is usable in several ways and quite easy(?). The `mask` function gives the opportunity to only get the raster cells that are covered by another raster or spatial object. 
+
+Here are two examples showing how to use data from the PopDynCloud and one with data from the geoboundaries website.
+
+```{r library}
+library(d6geodata)
+library(sf)
+library(terra)
+library(dplyr)
+```
+
+#### Example PopDynCloud
+
+If you have access to the PopDynCloud you can use the districts_berlin_layer like this:
+
+```{r example}
+berlin_mask <- get_geodata(data_name =  "districs_berlin_2022_poly_03035_gpkg",
+                           path_to_cloud = "E:/PopDynCloud")
+  
+rast_example <- get_geodata(data_name =  "tree-cover-density_berlin_2018_10m_03035_tif",
+                           path_to_cloud = "E:/PopDynCloud")
+
+
+plot_quantitative_map(tif = rast_example)
+
+rast_example_masked <- mask(rast_example, berlin_mask)
+
+plot_quantitative_map(tif = rast_example_masked)
+
+```
+
+#### Example geoboundaries
+
+If not, you can use the data from the [geoboundaries website](https://www.geoboundaries.org/) or using the rgeoboundaries package from github:
+
+```{r install, eval=FALSE}
+devtools::install_github("dickoa/rgeoboundaries")
+```
+
+
+```{r using rgeoboundaries}
+library(rgeoboundaries)
+rgeob_mask_berlin <- rgeoboundaries::gb_adm2("Germany") %>% 
+  filter(shapeName %in% "Berlin") %>%
+  st_transform(3035)
+
+rast_example_rgeob_masked <- mask(rast_example, rgeob_mask_berlin)
+
+plot_quantitative_map(tif = rast_example_rgeob_masked)
+```
+
+This framework can be used with other datasets as well as long as the projections are the same and the maks must have a smaller or the same extent.
+
