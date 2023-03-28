@@ -1,0 +1,58 @@
+---
+title: "A collection of different spatial data sources"
+description: |
+ Learn how to search and find spatial data from different sources and in different scales.
+ Sometimes data is easy to acces by just downloading them without logging, but sometimes it needs a bit more afford to get them like creating an account and selecting data from different time periods and scales.
+categories:
+  - Tuturial
+  - saptial data
+  - 
+  
+author:
+  - name: Moritz Wenzler-Meya
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: `r Sys.Date()`
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+draft: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Berlin data
+
+```{r Berlin}
+
+```
+
+## Germany
+
+```{r Germany}
+
+```
+
+## Europe
+
+```{r Europe}
+
+```
+
+## World wide
+
+### single data sets
+
+```{r}
+
+```
+
+### archives with temporal and spatial tiles
+
+```{r}
+
+```
+
