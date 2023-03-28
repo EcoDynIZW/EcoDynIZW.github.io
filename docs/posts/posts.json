@@ -1,14 +1,31 @@
 [
   {
+<<<<<<< HEAD
+    "path": "posts/howtopost/",
+    "title": "How to make a blogpost - a brief introduction",
+    "description": "Learn how to contribute to the wiki section of the Ecological Department webpage. If you think you have an important information, script, package or just a pieace of code that might be intersesting for your collegues you can create easily a blog post and add this to the wiki section of the webpage.",
+=======
     "path": "posts/d6geodatapackage/",
     "title": "d6geodata - a package to manage spatial data in the Department of Ecological Dynamics of the IZW",
     "description": "Learn how to use the {d6geodata} R package that provides functions for accessing data from the Geodata archive of the Department of Ecological Dynamics. The two functions `geo_overview()` and `get_geodata()` are the main components for all members of our Department. Several other functions are within this package but only meant to be used by the Geodata Manager of the Department.",
+>>>>>>> main
     "author": [
       {
         "name": "Moritz Wenzler-Meya",
         "url": {}
       }
     ],
+<<<<<<< HEAD
+    "date": "2023-02-20",
+    "categories": [
+      "tutorial",
+      "workflow"
+    ],
+    "contents": "\r\nwhy contributing?\r\nYou have a nice peace of code? You made a cool package?\r\nhow to contribute?\r\nYou have to clone the EcoDynIZW repository, create a post by using the _post_template.rmd and make a merge request when done.\r\nPlease check before for spelling mistakes and if the knitting is working easily, because sometimes we have to rerun the knitting.\r\nexamples for styling like plot for functions examples\r\nmaybe show how to hide code? Or hot to make pseudo code?\r\nprepare/update the “_post_template.rmd”\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2023-02-20T14:45:57+01:00",
+    "input_file": "howtopost.knit.md"
+=======
     "date": "2023-03-03",
     "categories": [
       "tutorial",
@@ -18,6 +35,7 @@
     "preview": "posts/d6geodatapackage/d6geodatapackage_files/figure-html5/unnamed-chunk-1-1.png",
     "last_modified": "2023-03-07T13:31:12+01:00",
     "input_file": {}
+>>>>>>> main
   },
   {
     "path": "posts/d6berlin-fisbroker/",

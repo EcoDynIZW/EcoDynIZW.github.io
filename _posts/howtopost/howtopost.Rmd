@@ -1,0 +1,52 @@
+---
+title: "How to make a blogpost - a brief introduction"
+description: |
+ Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a pieace of code that might be intersesting for your colleagues you can create easily a blog post and add this to the wiki section of the webpage.
+categories:
+  - tutorial
+  - workflow
+author:
+  - name: Moritz Wenzler-Meya
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: 2023-02-20
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+- why contributing?
+  You have a nice peace of code? You made a cool package?
+
+- how to contribute?
+  You have to clone the [EcoDynIZW.github.io](x-github-client://openRepo/https://github.com/EcoDynIZW/EcoDynIZW.github.io) repository, create a post by using the _post_template.rmd and make a merge request when done.
+  You have to create a folder with the name of the post and save the rmd in there (maybe we create a function for that, like our own post wiki function or so).
+  
+```{r}
+distill::create_post()
+
+post_fun <- function(post_name){
+  if(dir.exists(here::here("_posts", post_name)) == FALSE){
+  dir.create(here::here("_posts", post_name))
+  }
+  file.copy("_template_posts.Rmd", here::here("_posts", post_name, paste0(post_name, ".rmd")))
+}
+
+```
+
+  
+
+- Please check before for spelling mistakes and if the knitting is working easily, because sometimes we have to rerun the knitting.
+
+- examples for styling like `plot` for functions examples
+
+- maybe show how to hide code? Or hot to make pseudo code? 
+
+- prepare/update the "_post_template.rmd"
+
+
