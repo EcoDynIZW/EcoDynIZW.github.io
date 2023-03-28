@@ -14,8 +14,6 @@ output:
   distill::distill_article:
     self_contained: false
     toc: true
-    
-draft: TRUE
 ---
 
 ```{r setup, include=FALSE}
@@ -29,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE)
   You have to clone the [EcoDynIZW.github.io](x-github-client://openRepo/https://github.com/EcoDynIZW/EcoDynIZW.github.io) repository, create a post by using the _post_template.rmd and make a merge request when done.
   You have to create a folder with the name of the post and save the rmd in there (maybe we create a function for that, like our own post wiki function or so).
   
-```{r, eval=FALSE}
+```{r}
 distill::create_post()
 
 post_fun <- function(post_name){
