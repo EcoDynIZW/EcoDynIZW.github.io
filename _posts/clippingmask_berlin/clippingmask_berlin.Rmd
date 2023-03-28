@@ -1,7 +1,7 @@
 ---
 title: "Clipping mask for Berlin borders"
 description: |
- Learn how to use a clipping mask to clip a raster map to the extent and borders of Berlin. 
+ Learn how to use a clipping mask to clip a raster map to the extent and borders of Berlin boundaries. This a basic example how to create a clipping mask and how to use it. This can be done for other regions as well as long as the extent of the clipping mask is smaller or similar to the raster map.
 categories:
   - tutorial
   - spatial
@@ -16,6 +16,8 @@ output:
   distill::distill_article:
     self_contained: false
     toc: true
+    
+draft: TRUE
 ---
 
 ```{r setup, include=FALSE}
@@ -23,12 +25,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 Sometimes you will get a dataset that is larger than your study area and you want to clip it to your specific extent or boundaries. There are two ways to do that:
+
 - the `crop` function of the {terra} package: this will crop the dataset to the extent of the cropping mask
-- the `mask` function of the {terra} package: this will crop the dataset to the extent of the cropping mask and set everything outside of the mask boundaries to NA (or to a costum set value)
+- the `mask` function of the {terra} package: this will crop the dataset to the extent of the cropping mask and set everything outside of the mask boundaries to NA (or to a custom set value)
 
-In this tutorial only the `mask` function is covered because the crop function is usable in several ways and quite easy(?). The `mask` function gives the opportunity to only get the raster cells that are covered by another raster or spatial object. 
+In this tutorial only the `mask` function is covered because the crop function is straightforward to use. The `mask` function gives the opportunity to only get the raster cells that are covered by another raster or spatial object. 
 
-Here are two examples showing how to use data from the PopDynCloud and one with data from the geoboundaries website.
+Here are two examples showing how to use data from the PopDynCloud and one with data from the geoboundaries website/package.
 
 ```{r library}
 library(d6geodata)
@@ -43,10 +46,10 @@ If you have access to the PopDynCloud you can use the districts_berlin_layer lik
 
 ```{r example}
 berlin_mask <- get_geodata(data_name =  "districs_berlin_2022_poly_03035_gpkg",
-                           path_to_cloud = "E:/PopDynCloud")
+                           path_to_cloud = "C:/PopDynCloud")
   
 rast_example <- get_geodata(data_name =  "tree-cover-density_berlin_2018_10m_03035_tif",
-                           path_to_cloud = "E:/PopDynCloud")
+                           path_to_cloud = "C:/PopDynCloud")
 
 
 plot_quantitative_map(tif = rast_example)
@@ -76,6 +79,4 @@ rast_example_rgeob_masked <- mask(rast_example, rgeob_mask_berlin)
 
 plot_quantitative_map(tif = rast_example_rgeob_masked)
 ```
-
-This framework can be used with other datasets as well as long as the projections are the same and the maks must have a smaller or the same extent.
 
