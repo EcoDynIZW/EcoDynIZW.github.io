@@ -5,14 +5,13 @@ description: |
  Sometimes data is easy to acces by just downloading them without logging, but sometimes it needs a bit more afford to get them like creating an account and selecting data from different time periods and scales.
 categories:
   - Tuturial
-  - saptial data
-  - 
+  - spatial data
   
 author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: `r Sys.Date()`
+date: 2023-03-28
 output:
   distill::distill_article:
     self_contained: false
@@ -24,35 +23,57 @@ draft: TRUE
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Berlin data
+## Berlin
 
-```{r Berlin}
+### fisbroker
 
-```
+[https://fbinter.stadt-berlin.de/fb/index.jsp](https://fbinter.stadt-berlin.de/fb/index.jsp)
+
+- without account
+- you can use the d6berlin package with the function download_fisbroker_wfs (vector data) and download_fisbroker_atom (raster data)
+
 
 ## Germany
 
-```{r Germany}
+### BKG
 
-```
+[https://gdz.bkg.bund.de/index.php/default/digitale-geodaten.html](https://gdz.bkg.bund.de/index.php/default/digitale-geodaten.html)
+
+- some data is accessible without an account
+- for a full access you have to pay or be part of a federal agency or similar
+- some data can be directly downloaded some have to be processed and provided after certain time
 
 ## Europe
 
-```{r Europe}
+### Copernicus
 
-```
+[https://land.copernicus.eu/pan-european](https://land.copernicus.eu/pan-european)
+
+- needs an account but data is for free
+- direct downloads in most of the data sets
+- raster data only!
+
 
 ## World wide
 
 ### single data sets
 
-```{r}
-
-```
 
 ### archives with temporal and spatial tiles
 
-```{r}
+### Earthexplorer
 
-```
+[https://earthexplorer.usgs.gov/](https://earthexplorer.usgs.gov/)
 
+- most of the data is free available
+- Landsat, MODIS, VIIRS and many more
+- raster data only
+- raw data only
+
+### ESPA
+
+[https://espa.cr.usgs.gov/](https://espa.cr.usgs.gov/)
+
+- same account as for earthexplorer
+- provides satellite image products such as ndvi and ndsi
+- works for Landsat, MODIS and VIIRS data only
