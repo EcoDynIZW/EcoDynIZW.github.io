@@ -2644,7 +2644,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2832,6 +2832,18 @@ To document scripting we recommend to use R Markdown (<code>.rmd</code>) files i
 <h3 id="r">R</h3>
 <ul>
 <li>Stick to the <a href="https://style.tidyverse.org/index.html">Rstudio style guide</a> to ensure readability of code.</li>
+<li>If you are using RStudio, make sure to set the following under <code>Tools &gt; Global Options &gt; General &gt; Basic</code>:
+<ul>
+<li>untick “Restore .RData into workspace at startup”</li>
+<li>set “Save workspace to .RData on exit:” to “Never”</li>
+<li>untick “Always save history (even when not saving .RData)” (recommended)</li>
+</ul></li>
+</ul>
+<figure>
+<img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/rstudio-settings.png" style="width:65.0%;height:65.0%" alt="A screenshot of the RStudio general settings" />
+<figcaption aria-hidden="true">A screenshot of the RStudio general settings</figcaption>
+</figure>
+<ul>
 <li>We recommend using R-Studio projects and R Markdown documents when scripting in R. If you use another “integrated development environment” (IDE) make sure you can provide versioned plain R scripts using a relative path to the used data files.</li>
 <li>Implement version control by using GitHub. If you install packages or use scripts and code chunks from GitHub provided by others, be aware to acknowledge the code developer prior to publication of scripts.</li>
 <li>Do not save the R history or the R environment. Always start a fresh and an empty R session to avoid artifacts by using objects of functions that were not defined in your script. More details here: <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/" class="uri">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/</a>.</li>

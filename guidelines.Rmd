@@ -147,11 +147,11 @@ To document scripting we recommend to use R Markdown (`.rmd`) files if possible.
 
 *	Stick to the [Rstudio style guide](https://style.tidyverse.org/index.html) to ensure readability of code. 
 *	If you are using RStudio, make sure to set the following under `Tools > Global Options > General > Basic`:
-  * untick "Restore .RData into workspace at startup"
-  * set "Save workspace to .RData on exit:" to "Never"
-  * untick "Always save history (even when not saving .RData)" (recommended)
+    * untick "Restore .RData into workspace at startup"
+    * set "Save workspace to .RData on exit:" to "Never"
+    * untick "Always save history (even when not saving .RData)" (recommended)
 
-![A screenshot of the RStudioo setting](https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/rstudio-settings.png)
+![A screenshot of the RStudio general settings](https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/rstudio-settings.png){width="65%" height="65%"}
 
 *	We recommend using R-Studio projects and R Markdown documents when scripting in R. If you use another “integrated development environment” (IDE) make sure you can provide versioned plain R scripts using a relative path to the used data files. 
 *	Implement version control by using GitHub. If you install packages or use scripts and code chunks from GitHub provided by others, be aware to acknowledge the code developer prior to publication of scripts.
