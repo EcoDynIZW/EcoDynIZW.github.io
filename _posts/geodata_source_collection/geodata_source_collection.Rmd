@@ -30,7 +30,7 @@ A lof spatial data is easily and freely available, but sometimes it needs a bit 
 [https://fbinter.stadt-berlin.de/fb/index.jsp](https://fbinter.stadt-berlin.de/fb/index.jsp)
 
 - open-access
-- the d6berlin package provides utility functions to download FIS-Broker data: `download_fisbroker_wfs` (vector data) and `download_fisbroker_atom` (raster data)
+- the [{d6berlin} package](https://ecodynizw.github.io/posts/d6berlinpackage/) provides utility functions to download FIS-Broker data: `download_fisbroker_wfs` (vector data) and `download_fisbroker_atom` (raster data)
 
 
 ## Germany
