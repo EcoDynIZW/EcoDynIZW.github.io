@@ -1,8 +1,7 @@
 ---
 title: "A collection of different spatial data sources"
 description: |
- Learn how to search and find spatial data from different sources and in different scales.
- Sometimes data is easy to acces by just downloading them without logging, but sometimes it needs a bit more afford to get them like creating an account and selecting data from different time periods and scales.
+ Learn how to search and download spatial data from various sources and in different resolutions and scales.
 categories:
   - Tuturial
   - spatial data
@@ -22,15 +21,16 @@ draft: TRUE
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+A lof spatial data is easily and freely available, but sometimes it needs a bit more afford to get them like creating an account and selecting data from different time periods and scales. Below you find a list of data sources, sorted by the region covered, and some further information about how to access and download the data.
 
 ## Berlin
 
-### fisbroker
+### FIS-Broker
 
 [https://fbinter.stadt-berlin.de/fb/index.jsp](https://fbinter.stadt-berlin.de/fb/index.jsp)
 
-- without account
-- you can use the d6berlin package with the function download_fisbroker_wfs (vector data) and download_fisbroker_atom (raster data)
+- open-access
+- the d6berlin package provides utility functions to download FIS-Broker data: `download_fisbroker_wfs` (vector data) and `download_fisbroker_atom` (raster data)
 
 
 ## Germany
@@ -39,9 +39,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [https://gdz.bkg.bund.de/index.php/default/digitale-geodaten.html](https://gdz.bkg.bund.de/index.php/default/digitale-geodaten.html)
 
-- some data is accessible without an account
-- for a full access you have to pay or be part of a federal agency or similar
-- some data can be directly downloaded some have to be processed and provided after certain time
+- partly open-access
+- for access to all sources you have to pay or be part of a federal agency
+- some data can be directly downloaded, other have to be processed and are provided after a certain time
+
 
 ## Europe
 
@@ -49,31 +50,30 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [https://land.copernicus.eu/pan-european](https://land.copernicus.eu/pan-european)
 
-- needs an account but data is for free
-- direct downloads in most of the data sets
-- raster data only!
+- data are freely avaiable but sign-up required
+- direct download links are provided for most of the data sets
+- only raster data
 
 
 ## World wide
 
-### single data sets
+### Single data sets
 
 
-### archives with temporal and spatial tiles
+### Archives with temporal and spatial tiles
 
 ### Earthexplorer
 
 [https://earthexplorer.usgs.gov/](https://earthexplorer.usgs.gov/)
 
-- most of the data is free available
-- Landsat, MODIS, VIIRS and many more
-- raster data only
-- raw data only
+- mostly open-access
+- only raw raster data
+- provides Landsat, MODIS, VIIRS and many more sources
 
 ### ESPA
 
 [https://espa.cr.usgs.gov/](https://espa.cr.usgs.gov/)
 
 - same account as for earthexplorer
-- provides satellite image products such as ndvi and ndsi
-- works for Landsat, MODIS and VIIRS data only
+- provides satellite image products such as NDVI and NDSI
+- Landsat, MODIS and VIIRS data only
