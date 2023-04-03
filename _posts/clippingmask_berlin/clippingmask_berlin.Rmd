@@ -1,5 +1,5 @@
 ---
-title: "Clipping mask for Berlin borders"
+title: "Clipping a Raster to a Specific Area"
 description: |
  Learn how to use a clipping mask to extract a portion of a raster based on a template extent. In this example we show you how to clip a raster map to the extent and borders of Berlin boundaries.
 categories:
