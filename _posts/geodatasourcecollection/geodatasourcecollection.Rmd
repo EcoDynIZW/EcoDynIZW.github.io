@@ -1,5 +1,5 @@
 ---
-title: "A collection of different spatial data sources"
+title: "A Collection of Different Spatial Data Sources"
 description: |
  Learn how to search and download spatial data from various sources and in different resolutions and scales.
 categories:
@@ -66,6 +66,7 @@ A lof spatial data is easily and freely available, but sometimes it needs a bit 
 
 [https://earthexplorer.usgs.gov/](https://earthexplorer.usgs.gov/)
 
+- data are freely avaiable but sign-up required
 - mostly open-access
 - only raw raster data
 - provides Landsat, MODIS, VIIRS and many more sources
