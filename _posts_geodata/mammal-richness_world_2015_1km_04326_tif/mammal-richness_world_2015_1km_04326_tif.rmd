@@ -1,16 +1,16 @@
 ---
 title: 'mammal-richness world 2015'
 categories:
-  - mammal-richness
   - '2015'
   - World
   - epsg:4326
+  - 1km
 author:
   - name: Moritz Wenzler-Meya
 
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: '2023-03-15'
+date: '2023-04-21'
 output:
   distill::distill_article:
     self_contained: false
