@@ -1,8 +1,8 @@
 ---
-title: 'corine berlin 2015'
+title: 'corine berlin 2018'
 categories:
-  - Corine
-  - '2015'
+  - 20m
+  - '2018'
   - Berlin
   - epsg:3035
 author:
@@ -10,7 +10,7 @@ author:
 
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: '2023-03-13'
+date: '2023-04-21'
 output:
   distill::distill_article:
     self_contained: false
@@ -45,7 +45,7 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-proc/berlin/corine_berlin_2015_20m_03035_tif')
+    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-proc/berlin/corine_berlin_2018_20m_03035_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -64,7 +64,7 @@ meta_gt <- gt::gt(meta %>%
 
 ```{r map}
 p_map <-
- readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-proc/berlin/corine_berlin_2015_20m_03035_tif/corine_berlin_2015_20m_03035_tif' ,'.rds'))
+ readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-proc/berlin/corine_berlin_2018_20m_03035_tif/corine_berlin_2018_20m_03035_tif' ,'.rds'))
 
 ```
 
