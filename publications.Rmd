@@ -37,6 +37,8 @@ For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp
 
 * **Planillo A**, Viñuela J, Malo JE, García JT, Acebes P, Santamaría AE, Domínguez JC, Olea PP (2023): Addressing phase of population cycle and spatial scale is key to understand vole abundance in crop field margins: Implications for managing a cyclic pest species. AGRIC ECOSYST ENVIRON, **345**, 108306. doi:<span>[10.1016/j.agee.2022.108306](https://doi.org/10.1016/j.agee.2022.108306)</span>
 
+* Rocha DG and Sollmann R (2023): Habitat use patterns suggest that climate-driven vegetation changes will negatively impact mammal communities in the Amazon. ANIM CONSERV. doi:<span>[10.1111/acv.12853](https://doi.org/10.1111/acv.12853)</span>
+
 * Svendsen NA, **Radchuk V**, Morel-Journel T, Thuillier V, Schtickzelle N (2023): Complexity vs linearity: relations between functional traits in a heterotrophic protist. BMC ECOL EVOL, **23**, 1. doi:<span>[10.1186/s12862-022-02102-w](https://doi.org/10.1186/s12862-022-02102-w)</span>
 
 * **Tilker** A, Sinovas P (2023): Reading the signs: Camera-trapping provides new insights on scent marking in the large-antlered muntjac (*Muntiacus vuquangensis*). ECOL EVOL, **13**, e9692. doi:<span>[10.1002/ece3.9692](https://doi.org/10.1002/ece3.9692)</span>
