@@ -152,6 +152,16 @@ knitr::opts_chunk$set(echo = FALSE)
     <a href='https://doi.org/10.1038/s41467-019-10924-4'>![](img/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Radchuk_2019_NatCom'>![](img/icon-github.png){width=12%}</a></p>
   </li>
+
+
+<li class="card-repo">
+    <img class="card-repo-img" src='img/rocha_2023_AnimConserv.jpg' alt='Figure 1 of Rocha and Sollmann 2023: Map of the study region in the southern Brazilian Amazon with camera-trap locations, land cover features and surveyed protected areas (CANP, Campos Amazônicos National Park; MNP, Mapinguari National Park GBR; Guaporé Biological Reserve and CSP; Corumbiara State Park). As there were two surveys at CANP, camera-trap locations of the second survey are in light blue.'>
+    <h3>Rocha and Sollmann 2023</h3>
+    <p>Habitat use patterns suggest that climate-driven vegetation changes will negatively impact mammal communities in the Amazon. *ANIM CONSERV*.</p><p>
+    <a href='https://doi.org/10.1111/acv.12853'>![](img/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Rocha_Sollmann_2023_AnimConserv'>![](img/icon-github.png){width=12%}</a>
+    <a href='https://doi.org/10.25338/B84060'>![](img/icon-dryad.png){width=12%}</a> </p>
+  </li>
   
   
   <li class="card-repo">
