@@ -22,6 +22,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Spatial Data](#spatial)
 * [Data Backup](#backup)
 * [Manuscript Submissions/Revisions](#manuscripts)
+* [GitHub repository](#repository)
 * [Appendices](#appendices)
 
 <br><br>
@@ -202,6 +203,14 @@ For detailed information about Spatial data go to [Appendix B](#appendixB)).
 When you are submitting a manuscript create a copy of the related subproject folder and add a suffix `submission_1_<JournalAbbreviation>`. This copy shall be stored and never changed—we recommend to zip this folder! When conducting a revisions or resubmission, copy the folder to `submission_2_<JournalAbbreviation>` and revise the paper.
 
 Please find additional information on ‘how to write a scientific paper’, how to avoid statistical pitfalls or how to organize workflows [here](https://wolke.izw-berlin.de/index.php/apps/files/?dir=/Abteilung-Department%206/LabGuidelines&fileid=346243).
+
+
+## GitHub repository {#repository}
+
+The final step after your paper gets published is to create a GitHub repository. Please create one with the author(s) and the year as names and transfer the ownership to the ecodyn GitHub account. The repository should contain clean code and data that runs properly. In case of using R please use a R-Project with the given folder structure (see appendix A).
+
+If you have need help or have questions please ask the data manager for help.
+
 
 [↑ Jump back to top.](#toc)<br><br>
 
