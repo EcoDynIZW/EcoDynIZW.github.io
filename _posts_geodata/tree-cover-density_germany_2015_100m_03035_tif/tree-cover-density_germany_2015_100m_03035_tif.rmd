@@ -3,14 +3,14 @@ title: 'tree-cover-density germany 2015'
 categories:
   - Germany
   - '2015'
-  - 100m
   - epsg:3035
+  - 100m
 author:
   - name: Moritz Wenzler-Meya
 
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: '2023-01-03'
+date: '2023-05-23'
 output:
   distill::distill_article:
     self_contained: false
@@ -51,8 +51,6 @@ meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
   dplyr::mutate(dplyr::across(dplyr::everything(), as.character))
 
-tif <-
-  terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
 ```
 
 ```{r data-table}
