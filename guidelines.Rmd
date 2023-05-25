@@ -217,11 +217,13 @@ If you have need help or have questions please ask the data manager for help.
 
 
 ### Example README
+<br>
 
 ```text
 # Smith et al. (2023) *Science*
 
-> **Richard Smith**, Don Joe Radchuk & **Jane Head** (2023): Study title. *Science* 1-2. DOI: [doi-goes-here](https://doi.org/doi-goes-here)
+> **Richard Smith**, Don Joe Radchuk & **Jane Head** (2023): Study title. 
+*Science* 1-2. DOI: [doi-goes-here](https://doi.org/doi-goes-here)
 
 Abstract text.
 
