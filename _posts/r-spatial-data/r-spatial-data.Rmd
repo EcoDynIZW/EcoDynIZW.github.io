@@ -1,8 +1,8 @@
 ---
-title: "Spatial data sources in R"
+title: "Spatial Data Sources in R"
 description: |
   Learn how to use a suite of R packages to download various spatial data sources. This guide illustrates how to download data of countries, physical objects, and cultural properties as vector or raster objects that can be assessed from within R.
-preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/rnaturalearth-glaciers-large.png
+preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/rnaturalearth-examples.png
 categories:
   - tutorial
   - rstats
@@ -21,7 +21,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
 ```
 
 ## Preparation
@@ -121,15 +121,15 @@ small <- ggplot() +
   geom_sf(data = world, color = "grey85", fill = "grey85", lwd = .05) +
   geom_sf(data = glacier_small, color = "grey40", fill = "grey40") + 
   coord_sf(crs = "+proj=eqearth") +
-  labs(title = 'type = "glaciated_areas", category = "physical", scale = "small"')
+  labs(title = 'scale = "small"')
 
 large <- ggplot() +
   geom_sf(data = world, color = "grey85", fill = "grey85", lwd = .05) +
   geom_sf(data = glacier_large, color = "grey40", fill = "grey40") +
   coord_sf(crs = "+proj=eqearth") + 
-  labs(title = 'type = "glaciated_areas", category = "physical", scale = "large"')
+  labs(title = 'scale = "large"')
 
-small + large
+small + large * theme(plot.margin = margin(0, -20, 0, -20))
 ```
 
 
@@ -236,7 +236,7 @@ sf_berlin <- gb_adm1(c("germany"), type = "sscgs")[6,] # the sixth element is Be
 sf_berlin <- d6berlin::sf_districts
 
 ggplot(beekeper_locations) + 
-  geom_sf(data = sf_berlin, fill = "grey10", color = "grey20") +
+  geom_sf(data = sf_berlin, fill = "grey10", color = "grey30") +
   geom_sf(size = 4, color = "#FFB000", alpha = .3) +
   labs(title = "Beekeepers in Berlin",
        caption = "© OpenStreetMap contributors")
@@ -269,16 +269,3 @@ elev_usa <- get_elev_raster(locations = sf_bbox_usa, z = 5)
 
 terra::plot(elev_usa)
 ```
-<hr>
-
-<details><summary>Session Info</summary>
-
-```{r}
-#| label: sessionInfo
-#| echo: false
-Sys.time()
-git2r::repository()
-sessionInfo()
-```
-
-</details>
