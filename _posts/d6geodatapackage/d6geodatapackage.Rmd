@@ -129,7 +129,7 @@ Now you can copy the name of one of the layers and paste it into the `get_geodat
 ```{r example get_geodata}
 corine <-
   d6geodata::get_geodata(
-    data_name = "corine_berlin_2015_20m_03035_tif",
+    data_name = "corine_berlin_2018_20m_03035_tif",
     path_to_cloud = "E:/PopDynCloud",
     download_data = FALSE
   )
@@ -143,7 +143,7 @@ If you want to download more than one file, you can simply use `lapply()` and ad
 data_list <-
   lapply(
     c(
-      "corine_berlin_2015_20m_03035_tif",
+      "corine_berlin_2018_20m_03035_tif",
       "motorways_berlin_2022_100m_03035_tif"
     ),
     FUN = function(x) {
