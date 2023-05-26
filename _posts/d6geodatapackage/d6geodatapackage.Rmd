@@ -1,10 +1,11 @@
 ---
-title: "Manage Spatial Data from Our Geodata archive"
+title: "Manage Spatial Data from Our Geodata Archive"
 description: |
- Learn how to use the {d6geodata} R package that provides functions for accessing data from the Geodata archive of the Department of Ecological Dynamics. The two functions `geo_overview()` and `get_geodata()` are the main components for all members of our Department. Several other functions are within this package but only meant to be used by the Geodata Manager of the Department.
+  Learn how to use the {d6geodata} R package that provides functions for accessing data from the Geodata archive of the Department of Ecological Dynamics. The two functions `geo_overview()` and `get_geodata()` are the main components for all members of our Department. Several other functions are within this package but only meant to be used by the Geodata Manager of the Department.
 categories:
   - tutorial
   - spatial
+  - rstats
 author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
@@ -29,7 +30,7 @@ The two main functions are:
 
 
 ```{r install, eval=3}
-devtools::install_github("EcoDynIZW/d6geodata")
+remotes::install_github("EcoDynIZW/d6geodata")
 library(d6geodata)
 ```
 
@@ -56,13 +57,11 @@ choose folder type:
 
 Auswahl: 1
 [1] "atlas" "BB_MV_B" "berlin" "europe" "germany" "world"
-
 ```
 
 #### Example 2: Sub Folder
 
 ```{r example geo_overview two, eval=FALSE}
-
 d6geodata::geo_overview(path_to_cloud = "E:/PopDynCloud")
 Raw or processed data: 
 
@@ -130,7 +129,7 @@ Now you can copy the name of one of the layers and paste it into the `get_geodat
 ```{r example get_geodata}
 corine <-
   d6geodata::get_geodata(
-    data_name = "corine_berlin_2015_20m_03035_tif",
+    data_name = "corine_berlin_2018_20m_03035_tif",
     path_to_cloud = "E:/PopDynCloud",
     download_data = FALSE
   )
@@ -144,7 +143,7 @@ If you want to download more than one file, you can simply use `lapply()` and ad
 data_list <-
   lapply(
     c(
-      "corine_berlin_2015_20m_03035_tif",
+      "corine_berlin_2018_20m_03035_tif",
       "motorways_berlin_2022_100m_03035_tif"
     ),
     FUN = function(x) {

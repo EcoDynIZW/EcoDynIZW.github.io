@@ -1,0 +1,271 @@
+---
+title: "Spatial Data Sources in R"
+description: |
+  Learn how to use a suite of R packages to download various spatial data sources. This guide illustrates how to download data of countries, physical objects, and cultural properties as vector or raster objects that can be assessed from within R.
+preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/rnaturalearth-examples.png
+categories:
+  - tutorial
+  - rstats
+  - workflow
+  - spatial
+author:
+  - name: Cédric Scherer
+    url: htttps://cedricscherer.com
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: 05-25-2023
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+## Preparation
+
+To visualize the data sets, we use the `{ggplot2}` package. We will also use the `{sf}` and the `{terra}` packages to work and plot spatial data--vector and raster, respectively--in R. Make sure all packages are installed when running the code snippets.
+
+```{r package-prep}
+# install.packages("ggplot2")
+# install.packages("sf")
+# install.packages("terra")
+
+library(ggplot2)
+
+### set "empty" theme with centered titles for ggplot output
+theme_set(theme_void())
+theme_update(plot.title = element_text(face = "bold", hjust = .5))
+```
+<br>
+
+
+## {rnaturalearth}
+
+[NaturalEarth](http://www.naturalearthdata.com) is a public domain map data set that features vector and raster data of physical and cultural properties. It is available at 1:10m, 1:50m, and 1:110 million scales.
+
+[`{rnaturalearth}`](https://docs.ropensci.org/rnaturalearth) is an R package to hold and facilitate interaction with NaturalEarth map data via dedicated `ne_*` functions. After loading the package, you can for example quickly access shapefiles of all countries--the resulting spatial object contains vector data that is already projected and can be stored as either `sp` or `sf` format:
+
+```{r data-rnaturalearth}
+## install development version of {rnaturalearth} as currently the 
+## download doesn't work in the CRAN package version
+# install.packages("remotes")
+# remotes::install_github("ropensci/rnaturalearth")
+
+## for high resolution data, also install {rnaturalearthhires}
+# remotes::install_github("ropensci/rnaturalearthhires")
+
+library(rnaturalearth)
+
+## store as sp object (SpatialPolygonsDataFrame)
+world <- ne_countries() ## `returnclass = "sp"` by default
+class(world)
+
+## store as sf object (simple features)
+world <- ne_countries(returnclass = "sf")
+class(world)
+
+sf::st_crs(world)[1]
+```
+
+### Country Data
+
+This country data set (which is actually not downloaded but stored locally by installing the package) already contains several useful variables, mostly referring to different naming conventions (helpful when joining with other data sets), to identify continents and regions, and also some information on population size, GDP, and economy:
+
+```{r names-world-rnaturalearth}
+names(world)
+```
+
+We can quickly plot it:
+
+```{r plot-world-rnaturalearth, fig.width=10, fig.height=4, layout="l-page"}
+ggplot(world) + 
+  geom_sf(aes(fill = economy)) + 
+  coord_sf(crs = "+proj=eqearth")
+```
+
+**NOTE:** Unfortunately, NaturalEarth is using [weird *de-facto* and *on-the-ground rules* to define country borders which do not follow the borders the UN and most countries agree on](https://github.com/nvkelso/natural-earth-vector/issues/391). For correct and official borders, please use the `{rgeoboundaries}` package (see below).
+
+### Physical Data Sources
+
+You can specify the scale, category, and type you want as in the examples below.
+
+```{r glacier-rnaturalearth}
+glacier_small <- ne_download(type = "glaciated_areas", category = "physical", 
+                             scale = "small", returnclass = "sf")
+
+glacier_large <- ne_download(type = "glaciated_areas", category = "physical", 
+                             scale = "large", returnclass = "sf")
+```
+
+Now we can compare the impact of different scales specified--there is a notable difference in detail here  (and also in size of the object with 11 versus 1886 observations).
+
+```{r glacier-rnaturalearth-ggplot, eval=FALSE}
+ggplot() + 
+  geom_sf(data = world, color = "grey85", fill = "grey85") +
+  geom_sf(data = glacier_small, color = "grey40", fill = "grey40") + 
+  coord_sf(crs = "+proj=eqearth")
+
+ggplot() +
+  geom_sf(data = world, color = "grey85", fill = "grey85") +
+  geom_sf(data = glacier_large, color = "grey40", fill = "grey40") +
+  coord_sf(crs = "+proj=eqearth")
+```
+
+```{r glacier-rnaturalearth-patchwork, fig.width=15, fig.height=4, layout="l-screen"}
+library(patchwork)
+
+small <- ggplot() + 
+  geom_sf(data = world, color = "grey85", fill = "grey85", lwd = .05) +
+  geom_sf(data = glacier_small, color = "grey40", fill = "grey40") + 
+  coord_sf(crs = "+proj=eqearth") +
+  labs(title = 'scale = "small"')
+
+large <- ggplot() +
+  geom_sf(data = world, color = "grey85", fill = "grey85", lwd = .05) +
+  geom_sf(data = glacier_large, color = "grey40", fill = "grey40") +
+  coord_sf(crs = "+proj=eqearth") + 
+  labs(title = 'scale = "large"')
+
+small + large * theme(plot.margin = margin(0, -20, 0, -20))
+```
+
+
+### Cultural Data Sources
+
+NaturalEarth also provides several cultural data sets, such as airports, roads, disputed areas. Let's have a look at the urban areas across the world:
+
+```{r urban-rnaturalearth, fig.width=10, fig.height=5, layout="l-page"}
+urban <- ne_download(type = "urban_areas", category = "cultural", 
+                     scale = "medium", returnclass = "sf")
+
+ggplot() + 
+  geom_sf(data = world, color = "grey90", fill = "grey90") +
+  geom_sf(data = urban, color = "firebrick", fill = "firebrick") + 
+  coord_sf(crs = "+proj=eqearth")
+```
+
+### Relief Data
+
+The physical and cultural data sets showcased above are all vector data. NaturalEarth also provides raster data, namely gridded relief data:
+
+```{r relief-rnaturalearth, fig.width=8, fig.height=5, layout="l-page"}
+relief <- ne_download(type = "MSR_50M", category = "raster",
+                      scale = 50, returnclass = "sf")
+
+terra::plot(relief)
+```
+<br>
+
+## {rgeoboundaries}
+
+The [`{rgeoboundaries}` package](https://github.com/wmgeolab/rgeoboundaries) uses the Global Database of Political Administrative Boundaries that provide generally accepted political borders. The data are licensed openly. 
+
+```{r rgeoboundaries-world, fig.width=10, fig.height=5, layout="l-page"}
+## install package from GitHub as it is not featured on CRAN yet
+# install.packages("remotes")
+# remotes::install_github("wmgeolab/rgeoboundaries")
+
+library(rgeoboundaries)
+
+gb_adm0()
+
+ggplot(gb_adm0()) + 
+  geom_sf(color = "grey40", lwd = .2) + 
+  coord_sf(crs = "+proj=eqearth") 
+```
+
+Lower administrative levels are available as well, e.g. in Germany `adm1` represents federal states ("Bundesländer"), adm2 districts ("Kreise") and so on.
+
+Let's plot the admin 1 levels for the DACH countries:
+
+```{r rgeoboundaries-country, fig.width=6, fig.height=7}
+dach <- gb_adm1(c("germany", "switzerland", "austria"), type = "sscgs")
+
+ggplot(dach) +
+  geom_sf(aes(fill = shapeGroup)) +
+  scale_fill_brewer(palette = "Set2")
+```
+
+
+## {osmdata}
+
+[OpenStreetMap](https://www.openstreetmap.org) (https://www.openstreetmap.org) is a collaborative project to create a free editable geographic database of the world. The geodata underlying the maps is considered the primary output of the project and is accessible from R via the `{osmdata}` package.
+
+We first need to define our query and limit it to a region. You can explore the features and tags (also available as information via OpenStreetMap directly).
+
+```{r data-osmdata}
+## install package
+# install.packages("osmdata")
+
+library(osmdata)
+
+## explore features + tags
+head(available_features())
+head(available_tags("craft"))
+
+## building the query, e.g. beekeepers
+beekeeper_query <- 
+  ## you can automatically retrieve a boudning box (pr specify one manually)
+  getbb("Berlin") %>%
+  ## build an Overpass query
+  opq(timeout = 999) %>%
+  ## access particular feature
+  add_osm_feature("craft", "beekeeper")
+  
+## download data
+sf_beekeepers <- osmdata_sf(beekeeper_query)
+```
+
+Now we can investigate beekeepers in Berlin:
+
+```{r plot-osmdata, fig.width=6, fig.height=5.2, layout="l-body-outset"}
+names(sf_beekeepers)
+
+head(sf_beekeepers$osm_points)
+
+beekeper_locations <- sf_beekeepers$osm_points
+
+## Berlin borders via {geoboundaries}
+sf_berlin <- gb_adm1(c("germany"), type = "sscgs")[6,] # the sixth element is Berlin
+
+## Berlin border incl. district borders via our {d6berlin}
+# remotes::install_github("EcoDynIZW/d6berlin")
+sf_berlin <- d6berlin::sf_districts
+
+ggplot(beekeper_locations) + 
+  geom_sf(data = sf_berlin, fill = "grey10", color = "grey30") +
+  geom_sf(size = 4, color = "#FFB000", alpha = .3) +
+  labs(title = "Beekeepers in Berlin",
+       caption = "© OpenStreetMap contributors")
+```
+
+## {elevatr}
+
+The [`{elevatr}`](https://github.com/jhollist/elevatr/) (https://github.com/jhollist/elevatr/) is an R package that provides access to elevation data from AWS Open Data Terrain Tiles and the Open Topography Global data sets API for raster digital elevation models (DEMs).
+
+We first need to define a location or bounding box for our elevation data. This can either be a data frame or a spatial object. We use an `sf` object which holds the projection to be used when assessing the elevation data:
+
+```{r bbox-elevatr, fig.height=4.5}
+## install package
+# install.packages("elevatr")
+
+library(elevatr)
+
+## manually specify corners of the bounding box of the US
+bbox_usa <- data.frame(x = c(-125.0011, -66.9326), 
+                       y = c(24.9493, 49.5904))
+
+## turn into spatial, projected bounding box
+sf_bbox_usa <- sf::st_as_sf(bbox_usa, coords = c("x", "y"), crs = 4326)
+```
+
+Now we can download the elevation data with a specified resolution z (ranging from 1 to 14 with 1 being very coarse and 14 being very fine).
+
+```{r data-plot-elevatr, fig.width=9, fig.height=5, layout="l-page"}
+elev_usa <- get_elev_raster(locations = sf_bbox_usa, z = 5)
+
+terra::plot(elev_usa)
+```
