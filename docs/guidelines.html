@@ -460,8 +460,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.2.1/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.2.1/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
   <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -2637,7 +2637,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
+<<<<<<< HEAD
+  <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+=======
   <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+>>>>>>> main
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2744,6 +2748,7 @@ quality standards for the analysis of your data.</p>
 <li><a href="#spatial">Spatial Data</a></li>
 <li><a href="#backup">Data Backup</a></li>
 <li><a href="#manuscripts">Manuscript Submissions/Revisions</a></li>
+<li><a href="#repository">GitHub repository</a></li>
 <li><a href="#appendices">Appendices</a></li>
 </ul>
 <p><br><br></p>
@@ -2937,6 +2942,10 @@ contain the above documents as far as possible, including a very
 detailed method description. For the ease of documentation effort please
 follow the section (3.3.1).</p>
 <h5 id="electronic-lab-book">Electronic lab-book</h5>
+<<<<<<< HEAD
+<p>At the start of each new project, create an electronic lab-book to document your workflow and decisions therein. It is of major importance that you keep this lab-book updated. For the ease of use we recommend simple .doc files (MS Word, Libre Office etc.) to keep record of our work. Write down important thoughts, things you have tried, also failed experiments. Try to use clear and comprehensible notes. Although this generates some additional effort you will realize soon that it will help you and others to track your work and make it reproducible. We highly recommend to use GitHub as version control of your project. You have to connect your GitHub account to the EcoDynIZW organization on <a href="https://github.com/EcoDynIZW/">GitHub</a> to share code with colleagues. Please create repositories as part of this organization. It is mandatory to hand over the electronic lab-book to the institute as part of the ‘Safeguarding and Storing of Primary Data’ regulation of the German Research Council DFG after finishing your project.
+To document scripting we recommend to use R Markdown (<code>.rmd</code>) files if possible. Between your code chunks you should annotate the script with everything that is necessary to understand and follow the code. Additionally, if you push new code to GitHub for version control, you have to comment on your committed code as well. It may be necessary to have an additional word document.</p>
+=======
 <p>At the start of each new project, create an electronic lab-book to
 document your workflow and decisions therein. It is of major importance
 that you keep this lab-book updated. For the ease of use we recommend
@@ -2958,6 +2967,7 @@ you should annotate the script with everything that is necessary to
 understand and follow the code. Additionally, if you push new code to
 GitHub for version control, you have to comment on your committed code
 as well. It may be necessary to have an additional word document.</p>
+>>>>>>> main
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <h2 id="scripting">Scripting</h2>
 <h3 id="general-recommendations">General recommendations</h3>
@@ -3060,6 +3070,28 @@ data/files and scripts and save it in another location if you work on
 private computers. PhD students should work on the M-drive or the
 U-drive, never directly on the C-drive of the computer.</p>
 <h2 id="manuscripts">Manuscript Submissions/Revisions</h2>
+<<<<<<< HEAD
+<p>When you are submitting a manuscript create a copy of the related subproject folder and add a suffix <code>submission_1_&lt;JournalAbbreviation&gt;</code>. This copy shall be stored and never changed—we recommend to zip this folder! When conducting a revisions or resubmission, copy the folder to <code>submission_2_&lt;JournalAbbreviation&gt;</code> and revise the paper.</p>
+<p>Please find additional information on ‘how to write a scientific paper’, how to avoid statistical pitfalls or how to organize workflows <a href="https://wolke.izw-berlin.de/index.php/apps/files/?dir=/Abteilung-Department%206/LabGuidelines&amp;fileid=346243">here</a>.</p>
+<h2 id="repository">GitHub repository</h2>
+<p>The final step after your paper gets published is to make the GitHub repository public (or create a repository if you haven’t before). The repository should contain clean code and data that runs properly. If you are using R, please make sure to use a R-Project with the given folder structure (see appendix A).</p>
+<p>The title of the repository should contain the last name of the first author, the year, and the abbreviation of the journal (e.g. Smith_2023_Science). Please add the title of the paper as the description (in quotation marks). In the README file please provide the reference of the paper including the DOI as a hyperlink, and the abstract. Add further notes on the files contained and the scripts if needed. or examples see <a href="https://github.com/orgs/EcoDynIZW/repositories">study repositories on our GitHub</a>).</p>
+<p>Finally, make sure to turn the visibility to public and transfer the ownership to the EcoDynIZW GitHub organization.</p>
+<p>If you have need help or have questions please ask the data manager for help.</p>
+<h3 id="example-readme">Example README</h3>
+<p><br></p>
+<pre class="text"><code># Smith et al. (2023) *Science*
+
+&gt; **Richard Smith**, Don Joe Radchuk &amp; **Jane Head** (2023): Study title. 
+*Science* 1-2. DOI: [doi-goes-here](https://doi.org/doi-goes-here)
+
+Abstract text.
+
+## Scripts
+
+... more notes if needed
+</code></pre>
+=======
 <p>When you are submitting a manuscript create a copy of the related
 subproject folder and add a suffix
 <code>submission_1_&lt;JournalAbbreviation&gt;</code>. This copy shall
@@ -3071,6 +3103,7 @@ paper.</p>
 paper’, how to avoid statistical pitfalls or how to organize workflows
 <a
 href="https://wolke.izw-berlin.de/index.php/apps/files/?dir=/Abteilung-Department%206/LabGuidelines&amp;fileid=346243">here</a>.</p>
+>>>>>>> main
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <hr />
 <h2 id="appendices">Appendices</h2>
@@ -3223,8 +3256,12 @@ negotiating new experiments without explicitly saying ‘no’.</p>
 href="https://doi.org/10.1038/d41586-018-06619-3"
 class="uri">https://doi.org/10.1038/d41586-018-06619-3</a></em></p>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
+<<<<<<< HEAD
+<div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+=======
 <div class="sourceCode" id="cb3"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+>>>>>>> main
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
