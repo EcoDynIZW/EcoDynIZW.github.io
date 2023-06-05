@@ -90,7 +90,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
 <title>Ecological Dynamics: Run NetLogo Simulations in R</title>
 
-<meta property="description" itemprop="description" content="Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
+<meta property="description" itemprop="description" content="Learn how to use the {NLRX} R package to run NetLogo models/experiments. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
 
 <link rel="icon" type="image/png" href="../../img/d6_purple_round.png"/>
 
@@ -102,21 +102,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
 <meta property="og:title" content="Ecological Dynamics: Run NetLogo Simulations in R"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
+<meta property="og:description" content="Learn how to use the {NLRX} R package to run NetLogo models/experiments. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Ecological Dynamics"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
 <meta property="twitter:title" content="Ecological Dynamics: Run NetLogo Simulations in R"/>
-<meta property="twitter:description" content="Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
+<meta property="twitter:description" content="Learn how to use the {NLRX} R package to run NetLogo models/experiments. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."/>
 <meta property="twitter:site" content="@EcoDynIZW"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Run NetLogo Simulations in R"]},{"type":"character","attributes":{},"value":["Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."]},{"type":"character","attributes":{},"value":["coding","tutorial","NetLogo","R"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Tobias Kürschner"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-23"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Run NetLogo Simulations in R"]},{"type":"character","attributes":{},"value":["Learn how to use the {NLRX} R package to run NetLogo models/experiments. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs."]},{"type":"character","attributes":{},"value":["tutorial","NetLogo","rstats","modelling"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Tobias Kürschner"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-23"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -468,8 +468,8 @@ d-title {
 </style>
 
 <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<link href="../../site_libs/font-awesome-6.2.1/css/all.min.css" rel="stylesheet"/>
-<link href="../../site_libs/font-awesome-6.2.1/css/v4-shims.min.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
 <script src="../../site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
 <script src="../../site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -798,6 +798,7 @@ d-title .dt-tags {
 d-article table.gt_table td,
 d-article table.gt_table th {
   border-bottom: none;
+  font-size: 100%;
 }
 
 .html-widget {
@@ -1870,15 +1871,21 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-        var fn = $(this).children()[0]
+      const citeChild = $(this).children()[0]
+      // Do not process if @xyz has been used without escaping and without bibliography activated
+      // https://github.com/rstudio/distill/issues/466
+      if (citeChild === undefined) return true
+
+      if (citeChild.nodeName == "D-FOOTNOTE") {
+        var fn = citeChild
         $(this).html(fn.shadowRoot.querySelector("sup"))
         $(this).id = fn.id
         fn.remove()
       }
       var refs = $(this).attr('data-cites').split(" ");
       var refHtml = refs.map(function(ref) {
-        return "<p>" + $('#ref-' + ref).html() + "</p>";
+        // Could use CSS.escape too here, we insure backward compatibility in navigator
+        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
       }).join("\n");
       window.tippy(this, {
         allowHTML: true,
@@ -2666,7 +2673,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Run NetLogo Simulations in R","description":"Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.","authors":[{"author":"Tobias Kürschner","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2022-11-23T00:00:00.000+01:00","citationText":"Kürschner, 2022"}
+{"title":"Run NetLogo Simulations in R","description":"Learn how to use the {NLRX} R package to run NetLogo models/experiments. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.","authors":[{"author":"Tobias Kürschner","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2022-11-23T00:00:00.000+01:00","citationText":"Kürschner, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2737,13 +2744,13 @@ Wikis
 <h1>Run NetLogo Simulations in R</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
-  <a href="../../coding.html#category:coding" class="dt-tag">coding</a>
   <a href="../../coding.html#category:tutorial" class="dt-tag">tutorial</a>
   <a href="../../coding.html#category:NetLogo" class="dt-tag">NetLogo</a>
-  <a href="../../coding.html#category:R" class="dt-tag">R</a>
+  <a href="../../coding.html#category:rstats" class="dt-tag">rstats</a>
+  <a href="../../coding.html#category:modelling" class="dt-tag">modelling</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p>Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.</p>
+<p>Learn how to use the {NLRX} R package to run NetLogo models/experiments. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.</p>
 </div>
 
 <div class="d-byline">
@@ -2983,7 +2990,7 @@ $ siminputrow      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1~</cod
 <span>  <span class='op'>)</span> <span class='op'>+</span></span>
 <span>  <span class='fu'>theme_bw</span><span class='op'>(</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="nlrxpackage_files/figure-html5/global%20plot-1.png" width="624" /></p>
+<p><img src="nlrxpackage_files/figure-html5/global plot-1.png" width="624" /></p>
 </div>
 <p>… and use the patch specific data to create a heatmap to visualize where most infections have happened in one specific scenario:</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -3019,7 +3026,7 @@ $ siminputrow      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1~</cod
 <span>  <span class='fu'>ggtitle</span><span class='op'>(</span><span class='st'>"N infections per cell"</span><span class='op'>)</span> <span class='op'>+</span></span>
 <span>  <span class='fu'>theme_bw</span><span class='op'>(</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="nlrxpackage_files/figure-html5/spatial%20plots-1.png" width="624" /></p>
+<p><img src="nlrxpackage_files/figure-html5/spatial plots-1.png" width="624" /></p>
 </div>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

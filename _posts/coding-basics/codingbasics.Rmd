@@ -4,7 +4,10 @@ description: |
     A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.
 categories:
   - tutorial 
-  - coding
+  - workflow
+  - rstats
+  - NetLogo
+  - cplusplus
 author:
   - name: Tobias Kürschner
     affiliation: IZW Berlin

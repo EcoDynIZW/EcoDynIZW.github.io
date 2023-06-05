@@ -3,7 +3,8 @@ title: "Coding Basics 1: General Tips"
 description: A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code.
 categories:
   - tutorial
-  - coding
+  - workflow
+  - rstats
 author:
   - name: Tobias Kürschner
     affiliation: IZW Berlin
@@ -131,7 +132,7 @@ for (i in 1:length(hmpSplit))
 }
 ```
 
-The details on how to indent or use whitesapces are up to individual styles with some guidelines, such as avoiding long lines of text, to keep in mind. Also fine would be something like the following.  
+The details on how to indent or use white spaces are up to individual styles with some guidelines, such as avoiding long lines of text, to keep in mind. Also fine would be something like the following.  
 
 ```{r eval=FALSE}
 for (i in 1:length(hmpSplit))
@@ -151,7 +152,7 @@ Commenting your code is fantastic but it can be overdone or just be plain redund
 ```{r  eval=FALSE}
 # comment that adds information:
 
-write_simoutput(nl) #having nlrx write the output into a file - only works without patch or turtle metrics
+write_simoutput(nl) # having nlrx write the output into a file - only works without patch or turtle metrics
 
 
 # redundant comments:
@@ -174,7 +175,7 @@ if (colour == "blue")
 
 ## Don't Repeat Yourself
 
-As a rule of thumb, if you have to do the same task multiple times in your code: automate it. A while back, I was decomposing many timeseries and I needed only part of the output, in this case the 'trend'. Instead of running the same lines of code that remove all other components for each timeseries individually, a short function reduced the amount of needed code substantially.
+As a rule of thumb, if you have to do the same task multiple times in your code: automate it. A while back, I was decomposing many time series and I needed only part of the output, in this case the 'trend'. Instead of running the same lines of code that remove all other components for each time series individually, a short function reduced the amount of needed code substantially.
 
 ```{r eval=FALSE}
 DecompTrend <- function(ts){
@@ -183,5 +184,3 @@ DecompTrend <- function(ts){
   return(temp1$trend)
 }
 ```
-
-

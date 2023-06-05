@@ -1,11 +1,11 @@
 ---
 title: "Run NetLogo Simulations in R"
-description: Learn how to use the {NLRS} R package to run NetLogo models/experiments with the NLRX library. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.
+description: Learn how to use the {NLRX} R package to run NetLogo models/experiments. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.
 categories:
-  - coding
   - tutorial
   - NetLogo
-  - R
+  - rstats
+  - modelling
 author:
   - name: Tobias Kürschner
     affiliation: IZW Berlin

@@ -113,12 +113,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding Basics 2: Loops and Functions"]},{"type":"character","attributes":{},"value":["A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.\n"]},{"type":"character","attributes":{},"value":["tutorial","coding"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Tobias Kürschner"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding Basics 2: Loops and Functions"]},{"type":"character","attributes":{},"value":["A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.\n"]},{"type":"character","attributes":{},"value":["tutorial","workflow","rstats","NetLogo","cplusplus"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Tobias Kürschner"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2022-11-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["codingbasics_files/anchor-4.2.2/anchor.min.js","codingbasics_files/bowser-1.9.3/bowser.min.js","codingbasics_files/distill-2.2.21/template.v2.js","codingbasics_files/header-attrs-2.17/header-attrs.js","codingbasics_files/jquery-3.6.0/jquery-3.6.0.js","codingbasics_files/jquery-3.6.0/jquery-3.6.0.min.js","codingbasics_files/jquery-3.6.0/jquery-3.6.0.min.map","codingbasics_files/popper-2.6.0/popper.min.js","codingbasics_files/tippy-6.2.7/tippy-bundle.umd.min.js","codingbasics_files/tippy-6.2.7/tippy-light-border.css","codingbasics_files/tippy-6.2.7/tippy.css","codingbasics_files/tippy-6.2.7/tippy.umd.min.js","codingbasics_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["codingbasics_files/anchor-4.2.2/anchor.min.js","codingbasics_files/bowser-1.9.3/bowser.min.js","codingbasics_files/distill-2.2.21/template.v2.js","codingbasics_files/header-attrs-2.17/header-attrs.js","codingbasics_files/header-attrs-2.19/header-attrs.js","codingbasics_files/jquery-3.6.0/jquery-3.6.0.js","codingbasics_files/jquery-3.6.0/jquery-3.6.0.min.js","codingbasics_files/jquery-3.6.0/jquery-3.6.0.min.map","codingbasics_files/popper-2.6.0/popper.min.js","codingbasics_files/tippy-6.2.7/tippy-bundle.umd.min.js","codingbasics_files/tippy-6.2.7/tippy-light-border.css","codingbasics_files/tippy-6.2.7/tippy.css","codingbasics_files/tippy-6.2.7/tippy.umd.min.js","codingbasics_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1510,7 +1510,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
 <div class="dt-tag">tutorial</div>
-<div class="dt-tag">coding</div>
+<div class="dt-tag">workflow</div>
+<div class="dt-tag">rstats</div>
+<div class="dt-tag">NetLogo</div>
+<div class="dt-tag">cplusplus</div>
 </div>
 <!--/radix_placeholder_categories-->
 <p><p>A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.</p></p>
@@ -1666,8 +1669,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>myResults</span></span></code></pre>
 </div>
-<pre><code> [1] 0.0001410016 0.6997562533 0.0092729159 0.1070337352 0.1392032186
- [6] 1.8664878519 0.2213922328 0.6309227824 1.5626483108 0.1790988143</code></pre>
+<pre><code> [1] 0.04493279 1.86260854 1.82815669 1.91198939 0.14574421 1.66176595
+ [7] 0.03259391 0.03871596 0.60029468 0.01056545</code></pre>
 </div>
 <p>This was of course a very simple loop and there is pretty much no limit to the level of complexity those loops can have and how many loops could be nested. But be warned there can be some pitfalls with loops. <strong>Exercise:</strong> Would the following loop work?</p>
 <div class="layout-chunk" data-layout="l-body">
