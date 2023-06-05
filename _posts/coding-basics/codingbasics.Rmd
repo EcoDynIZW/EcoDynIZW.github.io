@@ -7,7 +7,7 @@ categories:
   - workflow
   - rstats
   - NetLogo
-  - cplusplus
+  - C++
 author:
   - name: Tobias Kürschner
     affiliation: IZW Berlin
