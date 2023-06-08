@@ -41,6 +41,8 @@ For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp
 
 * Rocha DG and **Sollmann R** (2023): Habitat use patterns suggest that climate-driven vegetation changes will negatively impact mammal communities in the Amazon. ANIM CONSERV. doi:<span>[10.1111/acv.12853](https://doi.org/10.1111/acv.12853)</span>
 
+* Rostro-García S, Kamler JF, **Sollmann R**, Balme G, Augustine BC, Kéry M, Crouthers R, Gray TNE, Groenenberg M, Prum S, Macdonald DW (2023): Population dynamics of the last leopard population of eastern Indochina in the context of improved law enforcement. BIOL CONSERV, **283**. doi:<span>[10.1016/j.biocon.2023.110080](https://doi.org/10.1016/j.biocon.2023.110080)</span>
+
 * Svendsen NA, **Radchuk V**, Morel-Journel T, Thuillier V, Schtickzelle N (2023): Complexity vs linearity: relations between functional traits in a heterotrophic protist. BMC ECOL EVOL, **23**, 1. doi:<span>[10.1186/s12862-022-02102-w](https://doi.org/10.1186/s12862-022-02102-w)</span>
 
 * **Tilker** A, Sinovas P (2023): Reading the signs: Camera-trapping provides new insights on scent marking in the large-antlered muntjac (*Muntiacus vuquangensis*). ECOL EVOL, **13**, e9692. doi:<span>[10.1002/ece3.9692](https://doi.org/10.1002/ece3.9692)</span>

@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif/",
+    "title": "tree-cover-density berlin 2018",
+    "description": {},
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2023-06-07",
+    "categories": [
+      "Berlin",
+      "2018",
+      "10m",
+      "epsg:3035"
+    ],
+    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\ntree-cover-density_berlin_2018_10m_03035_tifname\r\ntree-cover-density_berlin_2018_10m_03035.tifcrs\r\n+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defsepsg\r\n3035year_of_data\r\n2018units_of_data\r\ntree cover density in percentresolution\r\n10mtype_of_data\r\ncontinuous_numerictype_of_file\r\n.tifsource\r\ncopernicuslink_of_source\r\nhttps://land.copernicus.eu/date_of_compile\r\n2023-01-24copyright\r\n© European Union, Copernicus Land Monitoring Service 2023, European Environment Agency (EEA)short_description\r\ncropped from tree_cover_density_2018_10m_3035modified\r\nNA\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2023-06-07 15:11:04 CEST\"\r\nR version 4.3.0 (2023-04-21 ucrt)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 17763)\r\n\r\nMatrix products: default\r\n\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\ntime zone: Europe/Berlin\r\ntzcode source: internal\r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.1.2\r\n\r\nloaded via a namespace (and not attached):\r\n [1] gt_0.9.0             sass_0.4.6           utf8_1.2.3          \r\n [4] generics_0.1.3       tidyr_1.3.0          lwgeom_0.2-13       \r\n [7] class_7.3-21         xml2_1.3.4           KernSmooth_2.23-20  \r\n[10] distill_1.5          digest_0.6.31        magrittr_2.0.3      \r\n[13] timechange_0.2.0     evaluate_0.21        grid_4.3.0          \r\n[16] fastmap_1.1.1        jsonlite_1.8.5       e1071_1.7-13        \r\n[19] DBI_1.1.3            purrr_1.0.1          fansi_1.0.4         \r\n[22] scales_1.2.1         codetools_0.2-19     textshaping_0.3.6   \r\n[25] jquerylib_0.1.4      abind_1.4-5          cli_3.6.1           \r\n[28] rlang_1.1.1          units_0.8-2          munsell_0.5.0       \r\n[31] withr_2.5.0          cachem_1.0.8         yaml_2.3.7          \r\n[34] parallel_4.3.0       tools_4.3.0          memoise_2.0.1       \r\n[37] dplyr_1.1.2          colorspace_2.1-0     ggplot2_3.4.2       \r\n[40] vctrs_0.6.2          R6_2.5.1             lubridate_1.9.2     \r\n[43] proxy_0.4-27         lifecycle_1.0.3      classInt_0.4-9      \r\n[46] ragg_1.2.5           pkgconfig_2.0.3      terra_1.7-29        \r\n[49] pillar_1.9.0         bslib_0.4.2          gtable_0.3.3        \r\n[52] glue_1.6.2           Rcpp_1.0.10          sf_1.0-13           \r\n[55] systemfonts_1.0.4    highr_0.10           xfun_0.39           \r\n[58] tibble_3.2.1         tidyselect_1.2.0     rstudioapi_0.14     \r\n[61] knitr_1.43           farver_2.1.1         htmltools_0.5.5     \r\n[64] labeling_0.4.2       rmarkdown_2.22       d6geodata_0.0.0.9000\r\n[67] compiler_4.3.0       downlit_0.4.2        stars_0.6-1         \r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif/tree-cover-density_berlin_2018_10m_03035_tif_files/figure-html5/plot-1.png",
+    "last_modified": "2023-06-07T15:11:05+02:00",
+    "input_file": "tree-cover-density_berlin_2018_10m_03035_tif.knit.md"
+  },
+  {
     "path": "posts_geodata/tree-cover-density_germany_2015_100m_03035_tif/",
     "title": "tree-cover-density germany 2015",
     "description": {},
@@ -195,28 +217,6 @@
     "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\nnoise-day-night_berlin_2017_10m_25833_tifname\r\nnoise-day-night_berlin_2017_10m_25833.tifcrs\r\n+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defsepsg\r\n25833year_of_data\r\n2017units_of_data\r\nnoise mean of 24 hours in dezibelresolution\r\n10mtype_of_data\r\ncontinuous_numerictype_of_file\r\n.tifsource\r\nfisbrokerlink_of_source\r\nhttps://stadtentwicklung.berlin.de/geoinformation/fis-broker/date_of_compile\r\n2023-01-25copyright\r\nAmt für Statistik Berlin-Brandenburg 2023short_description\r\ndownloaded from fisborker, original name Strat. Lärmkarte Gesamtlärmindex L_DEN (Tag-Abend-Nacht) Raster 2017 (Umweltatlas)modified\r\nNA\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2023-01-26 13:53:37 CET\"\r\nR version 4.2.2 (2022-10-31 ucrt)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 17763)\r\n\r\nMatrix products: default\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.1.2\r\n\r\nloaded via a namespace (and not attached):\r\n [1] tidyselect_1.2.0   xfun_0.36          bslib_0.4.2       \r\n [4] purrr_1.0.1        sf_1.0-9           colorspace_2.0-3  \r\n [7] vctrs_0.5.1        generics_0.1.3     htmltools_0.5.4   \r\n[10] stars_0.6-0        yaml_2.3.6         utf8_1.2.2        \r\n[13] rlang_1.0.6        e1071_1.7-12       jquerylib_0.1.4   \r\n[16] pillar_1.8.1       glue_1.6.2         withr_2.5.0       \r\n[19] DBI_1.1.3          lifecycle_1.0.3    stringr_1.5.0     \r\n[22] munsell_0.5.0      gtable_0.3.1       ragg_1.2.5        \r\n[25] memoise_2.0.1      evaluate_0.20      labeling_0.4.2    \r\n[28] knitr_1.41         fastmap_1.1.0      parallel_4.2.2    \r\n[31] class_7.3-20       fansi_1.0.4        highr_0.10        \r\n[34] Rcpp_1.0.10        KernSmooth_2.23-20 scales_1.2.1      \r\n[37] classInt_0.4-8     lwgeom_0.2-11      cachem_1.0.6      \r\n[40] jsonlite_1.8.4     abind_1.4-5        farver_2.1.1      \r\n[43] systemfonts_1.0.4  textshaping_0.3.6  distill_1.5       \r\n[46] ggplot2_3.4.0      digest_0.6.31      stringi_1.7.12    \r\n[49] dplyr_1.0.10       grid_4.2.2         cli_3.6.0         \r\n[52] tools_4.2.2        magrittr_2.0.3     sass_0.4.4        \r\n[55] proxy_0.4-27       tibble_3.1.8       tidyr_1.2.1       \r\n[58] pkgconfig_2.0.3    downlit_0.4.2      ellipsis_0.3.2    \r\n[61] assertthat_0.2.1   gt_0.8.0           rmarkdown_2.20    \r\n[64] rstudioapi_0.14    R6_2.5.1           units_0.8-1       \r\n[67] compiler_4.2.2    \r\n\r\n\r\n\r\n\r\n",
     "preview": "posts_geodata/noise-day-night_berlin_2017_10m_25833_tif/noise-day-night_berlin_2017_10m_25833_tif_files/figure-html5/plot-1.png",
     "last_modified": "2023-02-06T11:01:04+01:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif/",
-    "title": "tree-cover-density berlin 2018",
-    "description": {},
-    "author": [
-      {
-        "name": "Moritz Wenzler-Meya",
-        "url": {}
-      }
-    ],
-    "date": "2023-01-24",
-    "categories": [
-      "Berlin",
-      "2018",
-      "10m",
-      "epsg:3035"
-    ],
-    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\ntree-cover-density_berlin_2018_10m_03035_tifname\r\ntree-cover-density_berlin_2018_10m_03035.tifcrs\r\n+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defsepsg\r\n3035year_of_data\r\n2018units_of_data\r\ntree cover density in percentresolution\r\n10mtype_of_data\r\ncontinuous_numerictype_of_file\r\n.tifsource\r\ncopernicuslink_of_source\r\nhttps://land.copernicus.eu/date_of_compile\r\n2023-01-24copyright\r\n© European Union, Copernicus Land Monitoring Service 2023, European Environment Agency (EEA)short_description\r\ncropped from tree_cover_density_2018_10m_3035modified\r\nNA\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2023-01-31 09:00:46 CET\"\r\nR version 4.2.1 (2022-06-23 ucrt)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 17763)\r\n\r\nMatrix products: default\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.1.2\r\n\r\nloaded via a namespace (and not attached):\r\n [1] tidyselect_1.2.0   xfun_0.36          bslib_0.4.2       \r\n [4] purrr_1.0.1        sf_1.0-9           colorspace_2.1-0  \r\n [7] vctrs_0.5.2        generics_0.1.3     htmltools_0.5.4   \r\n[10] stars_0.6-0        yaml_2.3.7         utf8_1.2.2        \r\n[13] rlang_1.0.6        e1071_1.7-12       jquerylib_0.1.4   \r\n[16] pillar_1.8.1       glue_1.6.2         withr_2.5.0       \r\n[19] DBI_1.1.3          lifecycle_1.0.3    munsell_0.5.0     \r\n[22] gtable_0.3.1       ragg_1.2.5         memoise_2.0.1     \r\n[25] evaluate_0.20      labeling_0.4.2     knitr_1.42        \r\n[28] fastmap_1.1.0      parallel_4.2.1     class_7.3-20      \r\n[31] fansi_1.0.4        highr_0.10         Rcpp_1.0.10       \r\n[34] KernSmooth_2.23-20 scales_1.2.1       classInt_0.4-8    \r\n[37] lwgeom_0.2-11      cachem_1.0.6       jsonlite_1.8.4    \r\n[40] abind_1.4-5        farver_2.1.1       systemfonts_1.0.4 \r\n[43] textshaping_0.3.6  distill_1.5        ggplot2_3.4.0     \r\n[46] digest_0.6.31      dplyr_1.0.10       grid_4.2.1        \r\n[49] cli_3.6.0          tools_4.2.1        magrittr_2.0.3    \r\n[52] sass_0.4.5         proxy_0.4-27       tibble_3.1.8      \r\n[55] tidyr_1.3.0        pkgconfig_2.0.3    downlit_0.4.2     \r\n[58] assertthat_0.2.1   gt_0.8.0           rmarkdown_2.20    \r\n[61] rstudioapi_0.14    R6_2.5.1           units_0.8-1       \r\n[64] compiler_4.2.1    \r\n\r\n\r\n\r\n\r\n",
-    "preview": "posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif/tree-cover-density_berlin_2018_10m_03035_tif_files/figure-html5/plot-1.png",
-    "last_modified": "2023-02-06T11:01:07+01:00",
     "input_file": {}
   },
   {
