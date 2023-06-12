@@ -2,8 +2,8 @@
 title: 'motorways berlin 2022'
 categories:
   - Berlin
-  - 100m
   - '2022'
+  - 100m
   - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
@@ -51,6 +51,8 @@ meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
   dplyr::mutate(dplyr::across(dplyr::everything(), as.character))
 
+tif <-
+  terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
 ```
 
 ```{r data-table}
