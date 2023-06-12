@@ -1,7 +1,10 @@
 ---
 title: "Ecological Dynamics"
-description: "Department 6 at Leibniz Institute for Zoo and Wildlife Research (IZW)"
+description: Department 6 at Leibniz Institute for Zoo and Wildlife Research (IZW)
 site: distill::distill_website
+output:
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
