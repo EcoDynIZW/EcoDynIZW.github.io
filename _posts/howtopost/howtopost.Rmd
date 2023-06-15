@@ -63,4 +63,6 @@ post_fun <- function(post_name){
 
 - TODO: prepare/update the "_post_template.rmd"
 
+- TODO: show how to add/show/use a table of contents 
+
 

@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/netlogoturtlespatialprojection/",
+    "title": "Netlogo Turtle Spatial Projection",
+    "description": "Learn how to transform the relative coordinates of the individuals from Netlogo into coordinates from real maps. This code is especially designed for spatially explicit netlogo models that were set to store the individual coordinates (xcor, ycor) in the output for the turtle data.",
+    "author": [
+      {
+        "name": "Aimara Planillo",
+        "url": {}
+      }
+    ],
+    "date": "2023-06-15",
+    "categories": [
+      "NetLogo",
+      "spatial",
+      "tutorial"
+    ],
+    "contents": "\r\n\r\nContents\r\nHow to project Netlogo Turtle coordinates into a real map\r\n0. Load libraries\r\n1. Create data\r\n2. Get reference coordinates\r\n3. Transform turtle coordinates into map coordinates\r\n4. Quick plot with tmap\r\n5. Plot with ggplot2\r\n\r\n\r\nHow to project Netlogo Turtle coordinates into a real map\r\nWhen using spatial data in Netlogo, the coordinates of a raster get transformed to relative coordinates. This means, the cell in the bottom left gets coordinate (1,1), the one on top of it is (1,2), and so on.\r\nAfter running a model, usually we want to reproject the output back to the spatial data coordinates used, either for post-simulation analyses or for plotting.\r\nThis code shows how to project the turtles’ coordinates back into a map, when a raster was\r\nused to create the Netlogo landscape.\r\nFor this we need:\r\n- The raster used as netlogo input\r\n- The turtle coordinates in the output\r\n0. Load libraries\r\n\r\n\r\nlibrary(terra)\r\nlibrary(dplyr)\r\nlibrary(sf)\r\nlibrary(tmap)\r\nlibrary(ggplot2)\r\nlibrary(ggspatial)\r\n\r\n\r\n1. Create data\r\nIn this example we create a raster and some turtle data to use.\r\nWith real data, you will load your raster here and make sure it has a PROJECTED coordinate system.\r\nTurtle data will have different formats depending how it was created, the basic data we need for this is the identity of the turtle and the coordinates.\r\n\r\n\r\n## Create raster with 100 cells for the example\r\nmyraster <- rast(nrows = 100, ncols = 100, \r\n                 xmin = 4541100, xmax = 4542100, \r\n                 ymin = 3265800, ymax = 3266800)\r\n## give random values to the raster\r\nmyraster <- init(myraster, sample(1:1000))\r\n\r\n## assign projection\r\ncrs(myraster) <- \"epsg:3035\"\r\nplot(myraster)\r\n\r\n\r\n## turtle data - example data\r\nwho <- seq(1,10)\r\nxcoord <- sample(1:100, 10) # create random integers for x coordinate\r\nycoord <- sample(1:100, 10) # create random integers for y coordinate\r\n\r\nturtle_variables <- cbind.data.frame(who, xcoord, ycoord)\r\nhead(turtle_variables)\r\n\r\n  who xcoord ycoord\r\n1   1      8     23\r\n2   2     51     97\r\n3   3     87     74\r\n4   4     11     24\r\n5   5     69     26\r\n6   6     68     81\r\n\r\nNow that we have our data, let’s extract the map coordinates as reference and transform the turtle ones. This process will work with any PROJECTED coordinate system.\r\n2. Get reference coordinates\r\nWe need the bottom left corner of the map as a reference point and the resolution of the map\r\n\r\n\r\n# we are going to trasnform the cell relative numbering to real coordinates, starting left down as this is where netlogo starts numbering the cells\r\nstart_left <- xmin(myraster)\r\nstart_down <- ymin(myraster)\r\nmy_res <- res(myraster)[1]\r\n\r\n\r\n3. Transform turtle coordinates into map coordinates\r\nNow we use the reference point to transform our coordinates into the projected coordinates and the resolution to correct for the size of the cells\r\n\r\n\r\nturtle_spatial <- turtle_variables %>% \r\n  mutate(spatial_xcoord = start_left + ((xcoord * my_res) + my_res/2), #divided by 2 to locate in the center of the cell\r\n         spatial_ycoord = start_down + ((ycoord * my_res) + my_res/2))\r\n\r\n\r\n## make spatial points\r\nturtle_sf <- st_as_sf(turtle_spatial, \r\n                      coords = c(\"spatial_xcoord\", \"spatial_ycoord\"), \r\n                      crs = crs(myraster))\r\n\r\n\r\n4. Quick plot with tmap\r\n\r\n\r\n\r\n5. Plot with ggplot2\r\n\r\n        x       y  hs\r\n1 4541105 3266795 902\r\n2 4541115 3266795 698\r\n3 4541125 3266795 500\r\n4 4541135 3266795 492\r\n5 4541145 3266795 405\r\n6 4541155 3266795 151\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/netlogoturtlespatialprojection/netlogoturtlespatialprojection_files/figure-html5/get raster and turtle data-1.png",
+    "last_modified": "2023-06-15T14:19:47+02:00",
+    "input_file": "netlogoturtlespatialprojection.knit.md"
+  },
+  {
     "path": "posts/r-spatial-data/",
     "title": "Spatial Data Sources in R",
     "description": "Learn how to use a suite of R packages to download various spatial data sources. This guide illustrates how to download data of countries, physical objects, and cultural properties as vector or raster objects that can be assessed from within R.",
