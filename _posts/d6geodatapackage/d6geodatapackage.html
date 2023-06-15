@@ -118,7 +118,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["d6geodatapackage_files/anchor-4.2.2/anchor.min.js","d6geodatapackage_files/bowser-1.9.3/bowser.min.js","d6geodatapackage_files/distill-2.2.21/template.v2.js","d6geodatapackage_files/figure-html5/unnamed-chunk-1-1.png","d6geodatapackage_files/header-attrs-2.20/header-attrs.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.min.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.min.map","d6geodatapackage_files/popper-2.6.0/popper.min.js","d6geodatapackage_files/tippy-6.2.7/tippy-bundle.umd.min.js","d6geodatapackage_files/tippy-6.2.7/tippy-light-border.css","d6geodatapackage_files/tippy-6.2.7/tippy.css","d6geodatapackage_files/tippy-6.2.7/tippy.umd.min.js","d6geodatapackage_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["d6geodatapackage_files/anchor-4.2.2/anchor.min.js","d6geodatapackage_files/bowser-1.9.3/bowser.min.js","d6geodatapackage_files/distill-2.2.21/template.v2.js","d6geodatapackage_files/figure-html5/unnamed-chunk-1-1.png","d6geodatapackage_files/header-attrs-2.20/header-attrs.js","d6geodatapackage_files/header-attrs-2.21/header-attrs.js","d6geodatapackage_files/header-attrs-2.22/header-attrs.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.min.js","d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.min.map","d6geodatapackage_files/popper-2.6.0/popper.min.js","d6geodatapackage_files/tippy-6.2.7/tippy-bundle.umd.min.js","d6geodatapackage_files/tippy-6.2.7/tippy-light-border.css","d6geodatapackage_files/tippy-6.2.7/tippy.css","d6geodatapackage_files/tippy-6.2.7/tippy.umd.min.js","d6geodatapackage_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1475,7 +1475,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="d6geodatapackage_files/header-attrs-2.21/header-attrs.js"></script>
+  <script src="d6geodatapackage_files/header-attrs-2.22/header-attrs.js"></script>
   <script src="d6geodatapackage_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="d6geodatapackage_files/popper-2.6.0/popper.min.js"></script>
   <link href="d6geodatapackage_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1524,6 +1524,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#example-1-main-folder" id="toc-example-1-main-folder">Example 1: Main Folder</a></li>
+<li><a href="#example-2-sub-folder" id="toc-example-2-sub-folder">Example 2: Sub Folder</a></li>
+</ul>
+</nav>
+</div>
 <p>The <a href="https://github.com/EcoDynIZW/d6geodata"><code>{d6geodata}</code> package</a> aims to access the data from the Geodata archive of the EcoDyn Department for members only!</p>
 <p>The two main functions are:</p>
 <ul>
@@ -1541,7 +1550,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>Go to the EcoDynIZW Website, click on wikis and select <a href="https://ecodynizw.github.io/geodata.html">Geodata</a>. There you find several spatial data sets with respective metadaat and visualizations. In the metadata section, you’ll find the information . To donwload the data, cope the <code>folder_name</code> information provided in the metadata and use it as an input in the <code>get_geodata()</code> function from our <code>{d6geodata}</code> to get the data from our PopDynCloud. Another option is the function called <code>geo_overview()</code>. There you can select which data and from which location you want to have a list of data.</li>
 </ol>
 <p>If you run the function <code>geo_overview</code> you have to decide if you want to see the raw or processed data by typing 1 for raw and 2 for processed data. Afterwards, you have to decide if you want to see the main (type 1) folders (the regions or sub-regions we have data from) or the sub (type 2) folders (the actually data we have in each region).</p>
-<h4 id="example-1-main-folder">Example 1: Main Folder</h4>
+<h2 id="example-1-main-folder">Example 1: Main Folder</h2>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>d6geodata<span class="sc">::</span><span class="fu">geo_overview</span>(<span class="at">path_to_cloud =</span> <span class="st">&quot;E:/PopDynCloud&quot;</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Raw or processed data<span class="sc">:</span> </span>
@@ -1558,7 +1567,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Auswahl<span class="sc">:</span> <span class="dv">1</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">&quot;atlas&quot;</span> <span class="st">&quot;BB_MV_B&quot;</span> <span class="st">&quot;berlin&quot;</span> <span class="st">&quot;europe&quot;</span> <span class="st">&quot;germany&quot;</span> <span class="st">&quot;world&quot;</span></span></code></pre></div>
 </div>
-<h4 id="example-2-sub-folder">Example 2: Sub Folder</h4>
+<h2 id="example-2-sub-folder">Example 2: Sub Folder</h2>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>d6geodata<span class="sc">::</span><span class="fu">geo_overview</span>(<span class="at">path_to_cloud =</span> <span class="st">&quot;E:/PopDynCloud&quot;</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Raw or processed data<span class="sc">:</span> </span>

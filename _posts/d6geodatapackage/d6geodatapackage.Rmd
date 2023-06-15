@@ -40,7 +40,7 @@ If you want to work with geodata that is already stored in our Geodata archive y
 
 If you run the function `geo_overview` you have to decide if you want to see the raw or processed data by typing 1 for raw and 2 for processed data. Afterwards, you have to decide if you want to see the main (type 1) folders (the regions or sub-regions we have data from) or the sub (type 2) folders (the actually data we have in each region).
 
-#### Example 1: Main Folder
+## Example 1: Main Folder
 
 ```{r example geo_overview, eval=FALSE}
 d6geodata::geo_overview(path_to_cloud = "E:/PopDynCloud")
@@ -59,7 +59,7 @@ Auswahl: 1
 [1] "atlas" "BB_MV_B" "berlin" "europe" "germany" "world"
 ```
 
-#### Example 2: Sub Folder
+## Example 2: Sub Folder
 
 ```{r example geo_overview two, eval=FALSE}
 d6geodata::geo_overview(path_to_cloud = "E:/PopDynCloud")
