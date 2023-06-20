@@ -9,7 +9,7 @@ author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 2023-06-14
+date: 2023-06-20
 output:
   distill::distill_article:
     self_contained: false
@@ -23,33 +23,46 @@ knitr::opts_chunk$set(echo = TRUE)
 
 You have a nice piece of code? You have developed a cool package? You have something to share within (or even outside) our department?
   
-You can share it with a blogpost on our ecodynizw Website by folllowing these simple steps:
+You can share it with a blogpost on our EcoDynIZW Website by following these simple steps:
+
+### Step 0
+  - if not installed, install the d6 package. It provides several functions for our department as well as the blogpost template
   
+```{r, eval=FALSE}
+devtools::install_github("EcoDynIZW/d6")
+```
+
 ### Step 1 
 
-  - Clone the [GitHub repository](https://github.com/EcoDynIZW/EcoDynIZW.github.io)
-  - Find the _posts_template.Rmd and start with filling all the information/code/images into the template
-  - please describe every task briefly 
+  - Create a new rmarkdown script by using the **D6 Blogpost Template**.
   
 ### Step 2
 
-  - knit the post and check if the knitted document looks as desired
-  - push and commit everything to github 
-  - create a pull request and select a reviewer
-
+  - Fill in a proper name, please use uppercase for the name.   
+  - Write a short description. Please have in mind that this description will appear on the blogpost listing page as well as in the post.
+  - Fill in some categories. You can find some examples on the webpage wiki section
+  - Enter your name and the date of the post in the given format
+  
 ### Step 3 
 
-  - wait for the comments of the reviewer and if there are any include them and push again the script
-  - the reviewer will merge the pull request and shortly your post will appear on the website under coding posts
+  - Describe briefly what you will show us and describe each chunk separately. 
+  - Please use the chunk options to name chunks, hide them or ignore them in the knitting process. This will help later to find possible errors.
+  
+### Step 4
 
-```{r, eval=FALSE, echo=TRUE}
-post_fun <- function(post_name){
-  if(dir.exists(here::here("_posts", post_name)) == FALSE){
-  dir.create(here::here("_posts", post_name))
-  }
-  file.copy("_template_posts.Rmd", here::here("_posts", post_name, paste0(post_name, ".rmd")))
-}
-```
+  - Knit the post and check if the knitted document looks as desired.
+  - Send the script to the data manager for a short review.
+
+### Step 5 
+
+  - Wait for eventual comments of the data manager and if there are any include them and send again the corrected script
+
+### Step 6
+  
+  - The blog post will appear after the data manager published it on the website 
+  
+  
+  
 
 ### General tips for posting
 
@@ -57,12 +70,10 @@ post_fun <- function(post_name){
 
 - Please check if the code is running (in a reasonable time) as we have to rebuild the page sometimes.
 
-- Examples for styling like `plot` for functions examples.
+- Use styling like `r knitr::asis_output("\u0027")`plot`r knitr::asis_output("\u0027")`  for functions examples.
 
-- TODO: maybe show how to hide code? Or how to add pseudo code?
+- Try to use examples that can be easily recreated within the script.
 
-- TODO: prepare/update the "_post_template.rmd"
 
-- TODO: show how to add/show/use a table of contents 
 
 
