@@ -48,6 +48,7 @@ devtools::install_github("EcoDynIZW/d6")
 ### Step 3 
 
   - Describe briefly what you will show us and describe each chunk separately. 
+  - leave a line of space between text and chunk for separating text and chunk output.
   - Please use the chunk options to name chunks, hide them or ignore them in the knitting process. This will help later to find possible errors.
   
 ### Step 4
