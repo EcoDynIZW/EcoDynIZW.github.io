@@ -113,7 +113,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["How to Make a Blog Post: a Brief Introduction"]},{"type":"character","attributes":{},"value":["Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a pieace of code that might be interesting for your colleagues you can add a blog post to the wiki section of our webpage.\n"]},{"type":"character","attributes":{},"value":["tutorial","workflow"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2023-06-20"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[true]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["How to Make a Blog Post: a Brief Introduction"]},{"type":"character","attributes":{},"value":["Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a pieace of code that might be interesting for your colleagues you can add a blog post to the wiki section of our webpage.\n"]},{"type":"character","attributes":{},"value":["tutorial","workflow"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2023-06-20"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[false]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1527,20 +1527,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#step-0" id="toc-step-0">Step 0</a></li>
-<li><a href="#step-1" id="toc-step-1">Step 1</a></li>
-<li><a href="#step-2" id="toc-step-2">Step 2</a></li>
-<li><a href="#step-3" id="toc-step-3">Step 3</a></li>
-<li><a href="#step-4" id="toc-step-4">Step 4</a></li>
-<li><a href="#step-5" id="toc-step-5">Step 5</a></li>
-<li><a href="#step-6" id="toc-step-6">Step 6</a></li>
+<li><a href="#step-0-install-d6-package" id="toc-step-0-install-d6-package">Step 0 Install D6 package</a></li>
+<li><a href="#step-1-use-blogpost-template" id="toc-step-1-use-blogpost-template">Step 1 Use blogpost template</a></li>
+<li><a href="#step-2-name-the-script" id="toc-step-2-name-the-script">Step 2 Name the script</a></li>
+<li><a href="#step-3-fill-the-script" id="toc-step-3-fill-the-script">Step 3 Fill the script</a></li>
+<li><a href="#step-4-knitting" id="toc-step-4-knitting">Step 4 Knitting</a></li>
+<li><a href="#step-5-review" id="toc-step-5-review">Step 5 Review</a></li>
+<li><a href="#step-6-done" id="toc-step-6-done">Step 6 Done</a></li>
 <li><a href="#general-tips-for-posting" id="toc-general-tips-for-posting">General tips for posting</a></li>
 </ul>
 </nav>
 </div>
 <p>You have a nice piece of code? You have developed a cool package? You have something to share within (or even outside) our department?</p>
 <p>You can share it with a blogpost on our EcoDynIZW Website by following these simple steps:</p>
-<h3 id="step-0">Step 0</h3>
+<h3 id="step-0-install-d6-package">Step 0 Install D6 package</h3>
 <ul>
 <li>if not installed, install the d6 package. It provides several functions for our department as well as the blogpost template</li>
 </ul>
@@ -1549,12 +1549,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>devtools</span><span class='fu'>::</span><span class='fu'><a href='https://remotes.r-lib.org/reference/install_github.html'>install_github</a></span><span class='op'>(</span><span class='st'>"EcoDynIZW/d6"</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<h3 id="step-1">Step 1</h3>
+<h3 id="step-1-use-blogpost-template">Step 1 Use blogpost template</h3>
 <ul>
 <li>Create a new rmarkdown script by using the <strong>D6 Blogpost Template</strong>.</li>
 </ul>
 <p><img src="img/howtopost_1.PNG" style="width:70.0%" /></p>
-<h3 id="step-2">Step 2</h3>
+<h3 id="step-2-name-the-script">Step 2 Name the script</h3>
 <ul>
 <li>Fill in a proper name, please use uppercase for the name.<br />
 </li>
@@ -1562,22 +1562,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>Fill in some categories. You can find some examples on the webpage wiki section</li>
 <li>Enter your name and the date of the post in the given format</li>
 </ul>
-<h3 id="step-3">Step 3</h3>
+<h3 id="step-3-fill-the-script">Step 3 Fill the script</h3>
 <ul>
 <li>Describe briefly what you will show us and describe each chunk separately.</li>
 <li>leave a line of space between text and chunk for separating text and chunk output.</li>
 <li>Please use the chunk options to name chunks, hide them or ignore them in the knitting process. This will help later to find possible errors.</li>
 </ul>
-<h3 id="step-4">Step 4</h3>
+<h3 id="step-4-knitting">Step 4 Knitting</h3>
 <ul>
 <li>Knit the post and check if the knitted document looks as desired.</li>
 <li>Send the script to the data manager for a short review.</li>
 </ul>
-<h3 id="step-5">Step 5</h3>
+<h3 id="step-5-review">Step 5 Review</h3>
 <ul>
 <li>Wait for eventual comments of the data manager and if there are any include them and send again the corrected script</li>
 </ul>
-<h3 id="step-6">Step 6</h3>
+<h3 id="step-6-done">Step 6 Done</h3>
 <ul>
 <li>The blog post will appear after the data manager published it on the website</li>
 </ul>

@@ -14,7 +14,7 @@ output:
   distill::distill_article:
     self_contained: false
     toc: true
-draft: true
+draft: false
 ---
 
 ```{r setup, include=FALSE}
@@ -25,42 +25,42 @@ You have a nice piece of code? You have developed a cool package? You have somet
   
 You can share it with a blogpost on our EcoDynIZW Website by following these simple steps:
 
-### Step 0
+### Step 0 Install D6 package
   - if not installed, install the d6 package. It provides several functions for our department as well as the blogpost template
   
 ```{r, eval=FALSE}
 devtools::install_github("EcoDynIZW/d6")
 ```
 
-### Step 1 
+### Step 1 Use blogpost template
 
   - Create a new rmarkdown script by using the **D6 Blogpost Template**.
 
 ![](img/howtopost_1.PNG){width=70%}
   
-### Step 2
+### Step 2 Name the script 
 
   - Fill in a proper name, please use uppercase for the name.   
   - Write a short description. Please have in mind that this description will appear on the blogpost listing page as well as in the post.
   - Fill in some categories. You can find some examples on the webpage wiki section
   - Enter your name and the date of the post in the given format
   
-### Step 3 
+### Step 3 Fill the script
 
   - Describe briefly what you will show us and describe each chunk separately. 
   - leave a line of space between text and chunk for separating text and chunk output.
   - Please use the chunk options to name chunks, hide them or ignore them in the knitting process. This will help later to find possible errors.
   
-### Step 4
+### Step 4 Knitting
 
   - Knit the post and check if the knitted document looks as desired.
   - Send the script to the data manager for a short review.
 
-### Step 5 
+### Step 5 Review
 
   - Wait for eventual comments of the data manager and if there are any include them and send again the corrected script
 
-### Step 6
+### Step 6 Done
   
   - The blog post will appear after the data manager published it on the website 
   

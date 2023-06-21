@@ -1,5 +1,25 @@
 [
   {
+    "path": "posts/howtopost/",
+    "title": "How to Make a Blog Post: a Brief Introduction",
+    "description": "Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a pieace of code that might be interesting for your colleagues you can add a blog post to the wiki section of our webpage.",
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2023-06-20",
+    "categories": [
+      "tutorial",
+      "workflow"
+    ],
+    "contents": "\r\n\r\nContents\r\nStep 0 Install D6 package\r\nStep 1 Use blogpost template\r\nStep 2 Name the script\r\nStep 3 Fill the script\r\nStep 4 Knitting\r\nStep 5 Review\r\nStep 6 Done\r\nGeneral tips for posting\r\n\r\nYou have a nice piece of code? You have developed a cool package? You have something to share within (or even outside) our department?\r\nYou can share it with a blogpost on our EcoDynIZW Website by following these simple steps:\r\nStep 0 Install D6 package\r\nif not installed, install the d6 package. It provides several functions for our department as well as the blogpost template\r\n\r\n\r\ndevtools::install_github(\"EcoDynIZW/d6\")\r\n\r\n\r\nStep 1 Use blogpost template\r\nCreate a new rmarkdown script by using the D6 Blogpost Template.\r\n\r\nStep 2 Name the script\r\nFill in a proper name, please use uppercase for the name.\r\nWrite a short description. Please have in mind that this description will appear on the blogpost listing page as well as in the post.\r\nFill in some categories. You can find some examples on the webpage wiki section\r\nEnter your name and the date of the post in the given format\r\nStep 3 Fill the script\r\nDescribe briefly what you will show us and describe each chunk separately.\r\nleave a line of space between text and chunk for separating text and chunk output.\r\nPlease use the chunk options to name chunks, hide them or ignore them in the knitting process. This will help later to find possible errors.\r\nStep 4 Knitting\r\nKnit the post and check if the knitted document looks as desired.\r\nSend the script to the data manager for a short review.\r\nStep 5 Review\r\nWait for eventual comments of the data manager and if there are any include them and send again the corrected script\r\nStep 6 Done\r\nThe blog post will appear after the data manager published it on the website\r\nGeneral tips for posting\r\nPlease use the spell check before knitting and pushing the post.\r\nPlease check if the code is running (in a reasonable time) as we have to rebuild the page sometimes.\r\nUse styling like ‘plot’ for functions examples.\r\nTry to use examples that can be easily recreated within the script.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2023-06-21T09:18:35+02:00",
+    "input_file": "howtopost.knit.md"
+  },
+  {
     "path": "posts/netlogoturtlespatialprojection/",
     "title": "Netlogo Turtle Spatial Projection",
     "description": "Learn how to transform the relative coordinates of the individuals from Netlogo into coordinates from real maps. This code is especially designed for spatially explicit netlogo models that were set to store the individual coordinates (xcor, ycor) in the output for the turtle data.",
