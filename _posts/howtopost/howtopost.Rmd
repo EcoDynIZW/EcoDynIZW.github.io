@@ -36,8 +36,8 @@ devtools::install_github("EcoDynIZW/d6")
 
   - Create a new rmarkdown script by using the **D6 Blogpost Template**.
 
-![](img/howtopost-1.png){width=70%}
-  
+![](man/howtopost-1.png)
+
 ### Step 2 Name the script 
 
   - Fill in a proper name, please use uppercase for the name.   
