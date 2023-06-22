@@ -6,10 +6,10 @@ categories:
   - tutorial
   - workflow
 author:
-  - name: Moritz Wenzler-Meya
+  - name: Moritz Wenzler-Meya, Cédric Scherer
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 2023-06-20
+date: 2023-06-22
 output:
   distill::distill_article:
     self_contained: false
@@ -73,7 +73,7 @@ devtools::install_github("EcoDynIZW/d6")
 
 - Please check if the code is running (in a reasonable time) as we have to rebuild the page sometimes.
 
-- Use styling like `r knitr::asis_output("\u0027")`plot`r knitr::asis_output("\u0027")`  for functions examples.
+- Use styling like `r knitr::asis_output("\u0027")`plot`r knitr::asis_output("\u0027")` for functions examples.
 
 - Try to use examples that can be easily recreated within the script.
 
