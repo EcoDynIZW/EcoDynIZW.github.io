@@ -1,5 +1,5 @@
 ---
-title: 'landcover germany 2023'
+title: 'landcover germany 2021'
 categories:
   - 10m
   - Germany
@@ -45,7 +45,7 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-raw/germany/landcover_germany_2023_10m_04326_tif')
+    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-raw/germany/landcover_germany_2021_10m_04326_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -64,7 +64,7 @@ meta_gt <- gt::gt(meta %>%
 
 ```{r map}
 p_map <-
- readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-raw/germany/landcover_germany_2023_10m_04326_tif/landcover_germany_2023_10m_04326_tif' ,'.rds'))
+ readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-raw/germany/landcover_germany_2021_10m_04326_tif/landcover_germany_2021_10m_04326_tif' ,'.rds'))
 
 ```
 
