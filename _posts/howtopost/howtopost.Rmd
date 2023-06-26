@@ -12,12 +12,12 @@ author:
   - name: Cédric Scherer
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 2023-06-22
+date: 2023-06-26
 output:
   distill::distill_article:
     self_contained: false
     toc: true
-draft: true
+draft: false
 ---
 
 ```{r setup, include=FALSE}

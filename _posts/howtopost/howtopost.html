@@ -94,8 +94,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2023-06-22"/>
-  <meta property="article:created" itemprop="dateCreated" content="2023-06-22"/>
+  <meta property="article:published" itemprop="datePublished" content="2023-06-26"/>
+  <meta property="article:created" itemprop="dateCreated" content="2023-06-26"/>
   <meta name="article:author" content="Moritz Wenzler-Meya"/>
   <meta name="article:author" content="Cédric Scherer"/>
 
@@ -114,7 +114,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["How to Make a Blogpost: a Brief Introduction"]},{"type":"character","attributes":{},"value":["Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a piece of code that might be interesting for your colleagues, consider to turn it into a blogpost for our webpage.\n"]},{"type":"character","attributes":{},"value":["tutorial","workflow"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Cédric Scherer"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2023-06-22"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[true]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["How to Make a Blogpost: a Brief Introduction"]},{"type":"character","attributes":{},"value":["Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a piece of code that might be interesting for your colleagues, consider to turn it into a blogpost for our webpage.\n"]},{"type":"character","attributes":{},"value":["tutorial","workflow"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Cédric Scherer"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2023-06-26"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[false]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -190,6 +190,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1262,15 +1263,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1469,7 +1476,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="howtopost_files/header-attrs-2.16/header-attrs.js"></script>
+  <script src="howtopost_files/header-attrs-2.22/header-attrs.js"></script>
   <script src="howtopost_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="howtopost_files/popper-2.6.0/popper.min.js"></script>
   <link href="howtopost_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1490,7 +1497,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"How to Make a Blogpost: a Brief Introduction","description":"Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a piece of code that might be interesting for your colleagues, consider to turn it into a blogpost for our webpage.","authors":[{"author":"Moritz Wenzler-Meya","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""},{"author":"Cédric Scherer","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2023-06-22T00:00:00.000+02:00","citationText":"Wenzler-Meya & Scherer, 2023"}
+{"title":"How to Make a Blogpost: a Brief Introduction","description":"Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a piece of code that might be interesting for your colleagues, consider to turn it into a blogpost for our webpage.","authors":[{"author":"Moritz Wenzler-Meya","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""},{"author":"Cédric Scherer","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2023-06-26T00:00:00.000+02:00","citationText":"Wenzler-Meya & Scherer, 2023"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1507,23 +1514,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="dt-tag">workflow</div>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Learn how to contribute to the wiki section of the Ecological
-Dynamics Department webpage. If you think you have an important
-information, script, package or just a piece of code that might be
-interesting for your colleagues, consider to turn it into a blogpost for
-our webpage.</p></p>
+<p><p>Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a piece of code that might be interesting for your colleagues, consider to turn it into a blogpost for our webpage.</p></p>
 </div>
 
 <div class="d-byline">
-  Moritz Wenzler-Meya  (IZW Berlin)<a
-href="https://ecodynizw.github.io/EcoDynIZW"
-class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
+  Moritz Wenzler-Meya  (IZW Berlin)<a href="https://ecodynizw.github.io/EcoDynIZW" class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
   
-,   Cédric Scherer  (IZW Berlin)<a
-href="https://ecodynizw.github.io/EcoDynIZW"
-class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
+,   Cédric Scherer  (IZW Berlin)<a href="https://ecodynizw.github.io/EcoDynIZW" class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
   
-<br/>2023-06-22
+<br/>2023-06-26
 </div>
 
 <div class="d-article">
@@ -1531,128 +1530,78 @@ class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#create-a-blogpost" id="toc-create-a-blogpost">Create a
-Blogpost</a>
+<li><a href="#create-a-blogpost" id="toc-create-a-blogpost">Create a Blogpost</a>
 <ul>
-<li><a href="#step-0-install-the-d6-package"
-id="toc-step-0-install-the-d6-package">Step 0 — Install the {d6}
-Package</a></li>
-<li><a href="#step-1-use-the-d6-blogpost-template"
-id="toc-step-1-use-the-d6-blogpost-template">Step 1 — Use the D6
-Blogpost Template</a></li>
-<li><a href="#step-2-fill-the-yaml-header-of-the-script"
-id="toc-step-2-fill-the-yaml-header-of-the-script">Step 2 — Fill the
-YAML Header of the Script</a></li>
-<li><a href="#step-3-add-the-content"
-id="toc-step-3-add-the-content">Step 3 — Add the Content</a></li>
-<li><a href="#step-4-render-the-blogpost"
-id="toc-step-4-render-the-blogpost">Step 4 — Render the
-Blogpost</a></li>
-<li><a href="#step-5-review-process" id="toc-step-5-review-process">Step
-5 — Review Process</a></li>
-<li><a href="#step-6-published" id="toc-step-6-published">Step 6 —
-Published!</a></li>
+<li><a href="#step-0-install-the-d6-package" id="toc-step-0-install-the-d6-package">Step 0 — Install the {d6} Package</a></li>
+<li><a href="#step-1-use-the-d6-blogpost-template" id="toc-step-1-use-the-d6-blogpost-template">Step 1 — Use the D6 Blogpost Template</a></li>
+<li><a href="#step-2-fill-the-yaml-header-of-the-script" id="toc-step-2-fill-the-yaml-header-of-the-script">Step 2 — Fill the YAML Header of the Script</a></li>
+<li><a href="#step-3-add-the-content" id="toc-step-3-add-the-content">Step 3 — Add the Content</a></li>
+<li><a href="#step-4-render-the-blogpost" id="toc-step-4-render-the-blogpost">Step 4 — Render the Blogpost</a></li>
+<li><a href="#step-5-review-process" id="toc-step-5-review-process">Step 5 — Review Process</a></li>
+<li><a href="#step-6-published" id="toc-step-6-published">Step 6 — Published!</a></li>
 </ul></li>
-<li><a href="#general-tips-for-posting"
-id="toc-general-tips-for-posting">General Tips for Posting</a></li>
+<li><a href="#general-tips-for-posting" id="toc-general-tips-for-posting">General Tips for Posting</a></li>
 </ul>
 </nav>
 </div>
-<p>You have a nice piece of code? You have developed a cool package? You
-have something to share within (or even outside) our department?</p>
-<p>You can share it with a blogpost on our <a
-href="https://ecodynizw.github.io">EcoDynIZW Website</a> by following
-these simple steps!</p>
+<p>You have a nice piece of code? You have developed a cool package? You have something to share within (or even outside) our department?</p>
+<p>You can share it with a blogpost on our <a href="https://ecodynizw.github.io">EcoDynIZW Website</a> by following these simple steps!</p>
 <h2 id="create-a-blogpost">Create a Blogpost</h2>
-<h3 id="step-0-install-the-d6-package">Step 0 — Install the {d6}
-Package</h3>
+<h3 id="step-0-install-the-d6-package">Step 0 — Install the {d6} Package</h3>
 <ul>
-<li>If not yet installed, install the <a
-href="https://github.com/ecodynizw/d6"><code>{d6}</code> package</a>. It
-provides several functions for our department along with Rmarkdown
-templates, including the D6 blogpost template.</li>
+<li>If not yet installed, install the <a href="https://github.com/ecodynizw/d6"><code>{d6}</code> package</a>. It provides several functions for our department along with Rmarkdown templates, including the D6 blogpost template.</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># install.packages(remotes)</span>
-<span class='fu'>remotes</span><span class='fu'>::</span><span class='fu'><a href='https://remotes.r-lib.org/reference/install_github.html'>install_github</a></span><span class='op'>(</span><span class='st'>"EcoDynIZW/d6"</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># install.packages(remotes)</span></span>
+<span><span class='fu'>remotes</span><span class='fu'>::</span><span class='fu'><a href='https://remotes.r-lib.org/reference/install_github.html'>install_github</a></span><span class='op'>(</span><span class='st'>"EcoDynIZW/d6"</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<h3 id="step-1-use-the-d6-blogpost-template">Step 1 — Use the D6
-Blogpost Template</h3>
+<h3 id="step-1-use-the-d6-blogpost-template">Step 1 — Use the D6 Blogpost Template</h3>
 <ul>
-<li>In RStudio, navigate to
-<code>File &gt; New File... &gt; R Markdown...</code> .</li>
-<li>In the <code>From Template</code> section, choose the <strong>D6
-Blogpost Template</strong> from the list.</li>
+<li>In RStudio, navigate to <code>File &gt; New File... &gt; R Markdown...</code> .</li>
+<li>In the <code>From Template</code> section, choose the <strong>D6 Blogpost Template</strong> from the list.</li>
 </ul>
 <p><img src="man/howtopost-1.png" /></p>
 <aside>
-If the template is not listed, please make sure that the latest version
-of <code>{d6}</code> is installed.
+If the template is not listed, please make sure that the latest version of <code>{d6}</code> is installed.
 </aside>
-<h3 id="step-2-fill-the-yaml-header-of-the-script">Step 2 — Fill the
-YAML Header of the Script</h3>
+<h3 id="step-2-fill-the-yaml-header-of-the-script">Step 2 — Fill the YAML Header of the Script</h3>
 <ul>
 <li>Fill in a proper name, please use uppercase for the name.<br />
 </li>
-<li>Write a short description. Please have in mind that this description
-will appear on the blogpost listing page as well as in the post.
-Usually, we start these descriptions with <em>“Learn how to learn x to
-do y.”</em>.</li>
-<li>Add some categories that relate to your article. For examples,
-browse through other posts featured in the <a
-href="https://ecodynizw.github.io/coding.html">wiki section of our web
-page</a>.</li>
+<li>Write a short description. Please have in mind that this description will appear on the blogpost listing page as well as in the post. Usually, we start these descriptions with <em>“Learn how to learn x to do y.”</em>.</li>
+<li>Add some categories that relate to your article. For examples, browse through other posts featured in the <a href="https://ecodynizw.github.io/coding.html">wiki section of our web page</a>.</li>
 <li>Enter your name and the date of the post in the given format.</li>
 </ul>
 <h3 id="step-3-add-the-content">Step 3 — Add the Content</h3>
 <ul>
-<li>Describe briefly what you will show us and describe each chunk
-separately.</li>
-<li>Leave a line of space between text and chunk for separating text and
-chunk output.</li>
-<li>Please use the chunk options to name chunks, hide them or ignore
-them in the knitting process. This will help later to find possible
-errors.</li>
+<li>Describe briefly what you will show us and describe each chunk separately.</li>
+<li>Leave a line of space between text and chunk for separating text and chunk output.</li>
+<li>Please use the chunk options to name chunks, hide them or ignore them in the knitting process. This will help later to find possible errors.</li>
 </ul>
 <h3 id="step-4-render-the-blogpost">Step 4 — Render the Blogpost</h3>
 <ul>
-<li>Knit the post and check if the knitted document looks as
-desired.</li>
+<li>Knit the post and check if the knitted document looks as desired.</li>
 </ul>
 <h3 id="step-5-review-process">Step 5 — Review Process</h3>
 <ul>
-<li><a href="mailto:wenzler@izw-berlin.de">Send the Rmd file to the data
-manager</a> for review.</li>
-<li>Wait for feedback by the data manager. If changes are requested,
-update the article accordingly and send the corrected script.</li>
+<li><a href="mailto:wenzler@izw-berlin.de">Send the Rmd file to the data manager</a> for review.</li>
+<li>Wait for feedback by the data manager. If changes are requested, update the article accordingly and send the corrected script.</li>
 </ul>
 <h3 id="step-6-published">Step 6 — Published!</h3>
 <ul>
-<li>The data manager will publish your post as soon as possible on the
-website.</li>
+<li>The data manager will publish your post as soon as possible on the website.</li>
 </ul>
 <h2 id="general-tips-for-posting">General Tips for Posting</h2>
 <ul>
-<li><p>Please use the spell check before knitting and pushing the
-post.</p></li>
-<li><p>Please check if the code is running (in a reasonable time) as we
-have to rebuild the page from time to time.</p></li>
-<li><p>Use styling like `plot()` for function names in the text and
-`{pckg}` package names.</p></li>
-<li><p>Pick examples that are simple enough in terms of file size and
-performance so that they can be easily reproduced within the
-script.</p></li>
-<li><p>Make sure that your code can be run by anybody reading the post.
-If you need data inputs, generate made-up data examples, use data sets
-from packages, or link to the data source (make sure it is publicly
-available as readers are not necessarily part of the
-department!)</p></li>
+<li><p>Please use the spell check before knitting and pushing the post.</p></li>
+<li><p>Please check if the code is running (in a reasonable time) as we have to rebuild the page from time to time.</p></li>
+<li><p>Use styling like `plot()` for function names in the text and `{pckg}` package names.</p></li>
+<li><p>Pick examples that are simple enough in terms of file size and performance so that they can be easily reproduced within the script.</p></li>
+<li><p>Make sure that your code can be run by anybody reading the post. If you need data inputs, generate made-up data examples, use data sets from packages, or link to the data source (make sure it is publicly available as readers are not necessarily part of the department!)</p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

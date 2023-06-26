@@ -1,24 +1,27 @@
 [
   {
-    "path": "posts/scientificwritingtips/",
-    "title": "Scientific Writing Tips",
-    "description": "Find here some guidelines how to write and structure a scientific introduction, a scientific discussion or prepare a response letter for your revisions. You will find three pdf documents, one for each section.",
+    "path": "posts/howtopost/",
+    "title": "How to Make a Blogpost: a Brief Introduction",
+    "description": "Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a piece of code that might be interesting for your colleagues, consider to turn it into a blogpost for our webpage.",
     "author": [
       {
-        "name": "Aimara Planillo",
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      },
+      {
+        "name": "Cédric Scherer",
         "url": {}
       }
     ],
-    "date": "2023-06-22",
+    "date": "2023-06-26",
     "categories": [
       "tutorial",
-      "writing",
       "workflow"
     ],
-    "contents": "\r\n\r\nIntroduction Discussion\r\n\r\n\r\nIntroduction Structure\r\n\r\n\r\n\r\n\r\nlink to pdf\r\n\r\n\r\nResponse Letter\r\n\r\n\r\n",
+    "contents": "\r\n\r\nContents\r\nCreate a Blogpost\r\nStep 0 — Install the {d6} Package\r\nStep 1 — Use the D6 Blogpost Template\r\nStep 2 — Fill the YAML Header of the Script\r\nStep 3 — Add the Content\r\nStep 4 — Render the Blogpost\r\nStep 5 — Review Process\r\nStep 6 — Published!\r\n\r\nGeneral Tips for Posting\r\n\r\nYou have a nice piece of code? You have developed a cool package? You have something to share within (or even outside) our department?\r\nYou can share it with a blogpost on our EcoDynIZW Website by following these simple steps!\r\nCreate a Blogpost\r\nStep 0 — Install the {d6} Package\r\nIf not yet installed, install the {d6} package. It provides several functions for our department along with Rmarkdown templates, including the D6 blogpost template.\r\n\r\n\r\n# install.packages(remotes)\r\nremotes::install_github(\"EcoDynIZW/d6\")\r\n\r\n\r\nStep 1 — Use the D6 Blogpost Template\r\nIn RStudio, navigate to File > New File... > R Markdown... .\r\nIn the From Template section, choose the D6 Blogpost Template from the list.\r\n\r\n\r\nIf the template is not listed, please make sure that the latest version of {d6} is installed.\r\nStep 2 — Fill the YAML Header of the Script\r\nFill in a proper name, please use uppercase for the name.\r\nWrite a short description. Please have in mind that this description will appear on the blogpost listing page as well as in the post. Usually, we start these descriptions with “Learn how to learn x to do y.”.\r\nAdd some categories that relate to your article. For examples, browse through other posts featured in the wiki section of our web page.\r\nEnter your name and the date of the post in the given format.\r\nStep 3 — Add the Content\r\nDescribe briefly what you will show us and describe each chunk separately.\r\nLeave a line of space between text and chunk for separating text and chunk output.\r\nPlease use the chunk options to name chunks, hide them or ignore them in the knitting process. This will help later to find possible errors.\r\nStep 4 — Render the Blogpost\r\nKnit the post and check if the knitted document looks as desired.\r\nStep 5 — Review Process\r\nSend the Rmd file to the data manager for review.\r\nWait for feedback by the data manager. If changes are requested, update the article accordingly and send the corrected script.\r\nStep 6 — Published!\r\nThe data manager will publish your post as soon as possible on the website.\r\nGeneral Tips for Posting\r\nPlease use the spell check before knitting and pushing the post.\r\nPlease check if the code is running (in a reasonable time) as we have to rebuild the page from time to time.\r\nUse styling like `plot()` for function names in the text and `{pckg}` package names.\r\nPick examples that are simple enough in terms of file size and performance so that they can be easily reproduced within the script.\r\nMake sure that your code can be run by anybody reading the post. If you need data inputs, generate made-up data examples, use data sets from packages, or link to the data source (make sure it is publicly available as readers are not necessarily part of the department!)\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2023-06-22T13:47:18+02:00",
-    "input_file": "scientificwritingtips.knit.md"
+    "last_modified": "2023-06-26T11:24:25+02:00",
+    "input_file": "howtopost.knit.md"
   },
   {
     "path": "posts/netlogoturtlespatialprojection/",
