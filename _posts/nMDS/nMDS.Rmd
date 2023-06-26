@@ -1,5 +1,5 @@
 ---
-title: "non-metric Multidimensional Scaling"
+title: "Non-metric Multidimensional Scaling"
 description: |
   Learn how to run a non-metric Multidimensional Scaling (nMDS) in R, 
   plot the results using the defaul plots or ggplot2, 

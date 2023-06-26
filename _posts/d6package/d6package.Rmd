@@ -9,11 +9,11 @@ categories:
   - workflow
   - data management
 author:
-  - name: Cédric Scherer
-    url: htttps://cedricscherer.com
+  - name: Cedric Scherer
+    url: https://cedricscherer.com
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 09-12-2020
+date: 2020-12-09
 output:
   distill::distill_article:
     self_contained: false
@@ -79,7 +79,7 @@ countries](https://www.iban.com/country-codes).
 The full scaffolding structure created in the root folder (here
 `unicornus_wl_sdm_smith_j`) is the following:
 
-```{text}
+```{verbatim}
 . 
 └── unicornus_wl_sdm_smith_j
     ├── .Rproj.user         —  Rproject files
@@ -107,7 +107,7 @@ The full scaffolding structure created in the root folder (here
 
 ### Use A Custom Root Directory
 
-You don’t need to change the working directory first—you can also
+You do not need to change the working directory first---you can also
 specify a path to a custom root folder in which the new project folder
 is created:
 
@@ -182,14 +182,14 @@ d6::install_d6_packages(geo = FALSE)
 
 The default packages that are going to be installed are:
 
-```{text}
+```{verbatim}
 tidyverse (tibble, dplyr, tidyr, ggplot2, readr, forecats, stringr, purrr), lubridate, here, vroom, patchwork, usethis
 ```
 
 The following packages will be installed in case you specify
 `geo = TRUE`:
 
-```{text}
+```{verbatim}
 rgdal, geos, raster, sp, sf, tmap
 ```
 

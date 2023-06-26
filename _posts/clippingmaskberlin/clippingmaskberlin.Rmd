@@ -1,7 +1,7 @@
 ---
 title: "Clipping a Raster to a Specific Area"
 description: |
- Learn how to use a clipping mask to extract a portion of a raster based on a template extent. In this example we show you how to clip a raster map to the extent and borders of Berlin boundaries.
+ Learn how to use a clipping mask to extract a portion of a raster, based on a template extent. In this example we show you how to clip a raster map to the extent and borders of Berlin boundaries.
 categories:
   - tutorial
   - spatial
@@ -11,13 +11,12 @@ author:
   - name: Moritz Wenzler-Meya    
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 2023-02-28
+date: 2023-06-26
 output:
   distill::distill_article:
     self_contained: false
     toc: true
-    
-draft: TRUE
+draft: false
 ---
 
 ```{r setup, include=FALSE}
@@ -31,7 +30,7 @@ Sometimes you will get a dataset that is larger than your study area and you wan
 
 In this tutorial only the `mask` function is covered because the crop function is straightforward to use. The `mask` function gives the opportunity to only get the raster cells that are covered by another raster or spatial object. 
 
-Here are two examples showing how to use data from the PopDynCloud and one with data from the geoboundaries website/package.
+Here are two examples showing how to use data from the PopDynCloud and one with data from the geoboundaries website/package:
 
 ```{r library}
 library(d6geodata)
@@ -40,43 +39,45 @@ library(terra)
 library(dplyr)
 ```
 
-#### Example PopDynCloud
+### Example PopDynCloud
 
 If you have access to the PopDynCloud you can use the districts_berlin_layer like this:
 
 ```{r example}
 berlin_mask <- get_geodata(data_name =  "districs_berlin_2022_poly_03035_gpkg",
-                           path_to_cloud = "C:/PopDynCloud")
+                           path_to_cloud = "E:/PopDynCloud") # get_geodata function from the d6geodata package
   
 rast_example <- get_geodata(data_name =  "tree-cover-density_berlin_2018_10m_03035_tif",
-                           path_to_cloud = "C:/PopDynCloud")
+                           path_to_cloud = "E:/PopDynCloud")
 
 
-plot_quantitative_map(tif = rast_example)
+plot_quantitative_map(tif = rast_example) # plot not masked layer
 
-rast_example_masked <- mask(rast_example, berlin_mask)
+rast_example_masked <- mask(rast_example, # input raster 
+                            berlin_mask) # mask to be clipped on 
 
-plot_quantitative_map(tif = rast_example_masked)
+plot_quantitative_map(tif = rast_example_masked) # plot masked layer
 
 ```
 
-#### Example geoboundaries
+### Example geoboundaries
 
 If not, you can use the data from the [geoboundaries website](https://www.geoboundaries.org/) or using the rgeoboundaries package from github:
 
 ```{r install, eval=FALSE}
-devtools::install_github("dickoa/rgeoboundaries")
+remotes::install_github("dickoa/rgeoboundaries")
 ```
 
 
 ```{r using rgeoboundaries}
 library(rgeoboundaries)
-rgeob_mask_berlin <- rgeoboundaries::gb_adm2("Germany") %>% 
-  filter(shapeName %in% "Berlin") %>%
-  st_transform(3035)
+rgeob_mask_berlin <- rgeoboundaries::gb_adm2("Germany") %>% # set Country name(s)
+  filter(shapeName %in% "Berlin") %>% # filter for Berlin
+  st_transform(3035) # reproject to 3035 (or desired crs) 
 
-rast_example_rgeob_masked <- mask(rast_example, rgeob_mask_berlin)
+rast_example_rgeob_masked <- mask(rast_example, # input raster 
+                                  rgeob_mask_berlin) # mask to be clipped on
 
-plot_quantitative_map(tif = rast_example_rgeob_masked)
+plot_quantitative_map(tif = rast_example_rgeob_masked) # plot with function from d6geodata package
 ```
 

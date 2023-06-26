@@ -9,7 +9,7 @@ author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-  - name: Cédric Scherer
+  - name: Cedric Scherer
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
 date: 2023-06-26

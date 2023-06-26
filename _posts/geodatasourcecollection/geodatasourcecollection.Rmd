@@ -10,7 +10,7 @@ author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 2023-03-28
+date: 2023-06-26
 output:
   distill::distill_article:
     self_contained: false
@@ -21,7 +21,8 @@ draft: TRUE
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-A lof spatial data is easily and freely available, but sometimes it needs a bit more afford to get them like creating an account and selecting data from different time periods and scales. Below you find a list of data sources, sorted by the region covered, and some further information about how to access and download the data.
+
+A lot of spatial data is easily and freely available, but sometimes it needs a bit more afford to get them like creating an account and selecting data from different time periods and scales. Below you find a list of data sources, sorted by the region covered, and some further information about how to access and download the data.
 
 ## Berlin
 
@@ -50,7 +51,7 @@ A lof spatial data is easily and freely available, but sometimes it needs a bit 
 
 [https://land.copernicus.eu/pan-european](https://land.copernicus.eu/pan-european)
 
-- data are freely avaiable but sign-up required
+- data are freely available but sign-up required
 - direct download links are provided for most of the data sets
 - only raster data
 
@@ -59,6 +60,7 @@ A lof spatial data is easily and freely available, but sometimes it needs a bit 
 
 ### Single data sets
 
+You'll find some datasets on most of the websites in this post, but as far as we know there is no such a side hosting more than one world dataset.
 
 ### Archives with temporal and spatial tiles
 

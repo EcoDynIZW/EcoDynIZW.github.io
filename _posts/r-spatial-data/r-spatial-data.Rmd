@@ -9,7 +9,7 @@ categories:
   - workflow
   - spatial
 author:
-  - name: Cédric Scherer
+  - name: Cedric Scherer
     url: htttps://cedricscherer.com
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
