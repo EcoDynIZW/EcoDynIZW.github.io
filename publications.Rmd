@@ -39,9 +39,13 @@ For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp
 
 * **Planillo A**, Viñuela J, Malo JE, García JT, Acebes P, Santamaría AE, Domínguez JC, Olea PP (2023): Addressing phase of population cycle and spatial scale is key to understand vole abundance in crop field margins: Implications for managing a cyclic pest species. AGRIC ECOSYST ENVIRON, **345**, 108306. doi:<span>[10.1016/j.agee.2022.108306](https://doi.org/10.1016/j.agee.2022.108306)</span>
 
+* Palmero S, **Premier J**, **Kramer-Schadt S**, Monterroso P and Heurich M (2023): Sampling variables and their thresholds for the precise estimation of wild felid population density with camera traps and spatial capture–recapture methods. MAM REV. doi:<span>[10.1111/mam.12320](https://doi.org/10.1111/mam.12320)</span> 
+
 * Rocha DG and **Sollmann R** (2023): Habitat use patterns suggest that climate-driven vegetation changes will negatively impact mammal communities in the Amazon. ANIM CONSERV. doi:<span>[10.1111/acv.12853](https://doi.org/10.1111/acv.12853)</span>
 
 * Rostro-García S, Kamler JF, **Sollmann R**, Balme G, Augustine BC, Kéry M, Crouthers R, Gray TNE, Groenenberg M, Prum S, Macdonald DW (2023): Population dynamics of the last leopard population of eastern Indochina in the context of improved law enforcement. BIOL CONSERV, **283**. doi:<span>[10.1016/j.biocon.2023.110080](https://doi.org/10.1016/j.biocon.2023.110080)</span>
+
+* Semper-Pascual A, Sheil D, Beaudrot L, ... , **Mugerwa B**, et al. (2023): Occurrence dynamics of mammals in protected tropical forests respond to human presence and activities. NAT ECOL EVOL. doi:<span>[10.1038/s41559-023-02060-6](https://doi.org/10.1038/s41559-023-02060-6)</span>
 
 * Svendsen NA, **Radchuk V**, Morel-Journel T, Thuillier V, Schtickzelle N (2023): Complexity vs linearity: relations between functional traits in a heterotrophic protist. BMC ECOL EVOL, **23**, 1. doi:<span>[10.1186/s12862-022-02102-w](https://doi.org/10.1186/s12862-022-02102-w)</span>
 
