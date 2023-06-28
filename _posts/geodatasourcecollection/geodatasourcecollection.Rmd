@@ -62,6 +62,8 @@ A lot of spatial data is easily and freely available, but sometimes it needs a b
 
 You'll find some datasets on most of the websites in this post, but as far as we know there is no such a side hosting more than one world dataset.
 
+A good overview of global datasets is the [Nasa Earth Observations](https://neo.gsfc.nasa.gov/) website. Here you can search for different topics and where to download them. 
+
 ### Archives with temporal and spatial tiles
 
 ### Earthexplorer
