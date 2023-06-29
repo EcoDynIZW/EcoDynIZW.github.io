@@ -1,7 +1,7 @@
 ---
 title: "Raster Template"
 description: |
-  Learn how to download a raster tmeplate from our cloud and to make a multiple/expand it. In the end we will rasterize a shapefile with one of the rasters 
+  Learn how to use a raster template from the `{d6geodata}` package und how to multiple/expand it. In the end we will rasterize a shapefile with the raster have a look into different extraction functions.
 categories:
   - Tutorial
   - Spatial
@@ -21,17 +21,32 @@ draft: true
 knitr::opts_chunk$set(echo = TRUE) ## keep this, add other settings if needed
 ```
 
-download raster template from geodatabase
+# load packages
+
+```{r}
+library(terra)
+library(d6geodata)
+```
+
+
+use `{d6geodata}` package
 
 ```{r install}
-rast_temp <- d6geodata::get_geodata("template-raster_berlin_2018_10m_03035_tif",
-                                    "E:/popDynCloud")
+temp <- d6geodata::temp_ras(1000)
+values(temp) <- 1
+
+plot(temp)
 ```
 
 make a multiple/expand for eurogrid
 
 ```{r}
+ncell(terra::extend(temp, 1))
 
+temp_exp <- terra::extend(temp, 100)
+
+
+temp_exp_m <- mask(temp, temp_exp, inverse = T)
 ```
 
 rasterize
