@@ -1,0 +1,155 @@
+---
+title: "Our Corporate D6 ggplot2 Theme"
+description: |
+  Learn how to...
+categories:
+  - rstats
+  - ggplot2
+  - workflow
+  - tutorial
+author:
+  - name: Cedric Scherer
+    url: https://cedricscherer.com
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: 2023-06-29
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, 
+                      fig.width = 7, fig.height = 4.3,
+                      dev = "ragg_png", dpi = 130)
+library(patchwork)
+```
+
+Recently, I added a custom theme for `{ggplot2}` to [our `{d6}` workflow package](https://ecodynizw.github.io/posts/d6package/) which makes it easy to create plots in a style that matches our "lab identity" used for our webpage, posters, and publications. Also, it hopefully simplifies your workflow by a ready-to-use theme with additional options that allow you to adjust the style of your ggplots.
+
+> Let me know if there is a theme feature you often modify via the `theme()` function! We can add it as an argument to the complete theme function.
+
+
+```{r}
+# remotes::install_github("EcoDynIZW/d6")
+library(d6)
+library(ggplot2)
+```
+
+```{r theme-d6-default}
+data <- dplyr::filter(economics_long, !variable %in% c("pop", "pce"))
+
+g <- 
+  ggplot(data, aes(x = date, y = value01, color = variable)) +
+  geom_line()
+
+g + d6::theme_d6()
+```
+
+```{r theme-d6-base-settings}
+g + d6::theme_d6(base_size = 18, base_rect_size = 2)
+```
+
+
+### Typeface Choices
+
+#### Main Typeface
+
+```{r theme-d6-font-serif, eval=FALSE}
+g + d6::theme_d6(serif = FALSE) ## uses PT Sans (default)
+g + d6::theme_d6(serif = TRUE)  ## uses PT Serif
+```
+```{r theme-d6-font-serif-plots, echo=FALSE, fig.width=16, fig.height=4.7, layout="l-page"}
+((g + d6::theme_d6(serif = FALSE) + ggtitle('PT Sans via serif = FALSE')) + 
+   plot_spacer() +
+  (g + d6::theme_d6(serif = TRUE) + ggtitle('PT Serif via serif = TRUE'))) * 
+  theme(plot.title = element_text(hjust = .5)) + plot_layout(widths = c(1, .03, 1))
+```
+
+
+#### Tabular Font Option
+
+```{r theme-d6-font-mono, eval=FALSE}
+## all combinations of upper- and lowercase work
+g + d6::theme_d6(mono = "xyl")
+g + d6::theme_d6(mono = "xy")
+g + d6::theme_d6(mono = "y")
+```
+```{r theme-d6-font-mono-plots, echo=FALSE, fig.width=16, fig.height=4.7, layout="l-page"}
+((g + d6::theme_d6(mono = "xyl") + ggtitle('mono = "xyl"')) + 
+  plot_spacer() +
+  (g + d6::theme_d6(mono = "xy") + ggtitle('mono = "xy"')) + 
+  plot_spacer() +
+  (g + d6::theme_d6(mono = "y") + ggtitle('mono = "y"'))) * 
+  theme(plot.title = element_text(hjust = .5)) + plot_layout(widths = c(1, .03, 1, .05, 1))
+```
+
+
+### Legend Position
+
+```{r theme-d6-legend, eval=FALSE}
+g + d6::theme_d6(legend = "right")
+g + d6::theme_d6(legend = "none")
+g + d6::theme_d6(legend = c(.65, .8))
+```
+```{r theme-d6-legend-plots, echo=FALSE, fig.width=16, fig.height=4.7, layout="l-page"}
+((g + d6::theme_d6(legend = "right") + ggtitle('legend = "right"')) + 
+  plot_spacer() +
+  (g + d6::theme_d6(legend = "none") + ggtitle('legend = "none"')) + 
+  plot_spacer() +
+  (g + d6::theme_d6(legend = c(.7, .7)) + ggtitle('legend = c(.7, .7)'))) * 
+  theme(plot.title = element_text(hjust = .5)) + plot_layout(widths = c(1, .03, 1, .05, 1))
+```
+
+
+### Control Grid
+
+```{r theme-d6-grid, eval=FALSE}
+g + d6::theme_d6(grid = "none") ## "" works as well (default)
+g + d6::theme_d6(grid = "xy") ## "XY" works as well, and even "xY" or "Xy"
+g + d6::theme_d6(grid = "x") ## "x" works as well
+g + d6::theme_d6(grid = "y") ## "Y" works as well
+```
+```{r theme-d6-grid-plots, echo=FALSE, fig.width=14, fig.height=9, layout="l-page"}
+((g + d6::theme_d6(grid = "none") + ggtitle('grid = "none" or grid = ""')) + 
+  (g + d6::theme_d6(grid = "xy") + ggtitle('grid = "xy" or grid = "XY"')) + 
+  (g + d6::theme_d6(grid = "x") + ggtitle('grid = "x" or grid = "X"')) + 
+  (g + d6::theme_d6(grid = "y") + ggtitle('grid = "y" or grid = "Y"'))) * 
+  theme(plot.title = element_text(hjust = .5), legend.position = "none")
+```
+
+
+### Modify Background Color
+
+```{r theme-d6-background, eval=FALSE}
+g + d6::theme_d6(bg = "orange")
+g + d6::theme_d6(bg = "grey95")
+g + d6::theme_d6(bg = "beige")
+```
+```{r theme-d6-background-plots, echo=FALSE, fig.width=16, fig.height=4.7, layout="l-page"}
+((g + d6::theme_d6(bg = "orange") + ggtitle('bg = "orange"')) + 
+  plot_spacer() +
+  (g + d6::theme_d6(bg = "grey95") + ggtitle('bg = "grey85"')) + 
+  plot_spacer() +
+  (g + d6::theme_d6(bg = "beige") + ggtitle('bg = "beige"'))) * 
+  theme(plot.title = element_text(hjust = .5)) + plot_layout(widths = c(1, .03, 1, .03, 1))
+```
+
+
+### Set Plot Margin
+
+```{r theme-d6-margin, eval=FALSE}
+g + d6::theme_d6(margin = rep(0, 4), bg = "grey95")
+g + d6::theme_d6(margin = rep(50, 4), bg = "grey95")
+g + d6::theme_d6(margin = c(120, 40, 40, 10), bg = "grey95")
+```
+```{r theme-d6-margin-plots, echo=FALSE, fig.width=16, fig.height=4.7, layout="l-page"}
+((g + d6::theme_d6(margin = rep(0, 4), bg = "grey95") + ggtitle('margin = rep(0, 4)')) + 
+  plot_spacer() +
+  (g + d6::theme_d6(margin = rep(50, 4), bg = "grey95" + ggtitle('margin = rep(50, 4)')) + 
+  plot_spacer() +
+  (g + d6::theme_d6(margin = c(120, 40, 40, 10), bg = "grey95") + ggtitle('margin = c(120, 40, 40, 10)')))) * 
+  theme(plot.title = element_text(hjust = .5)) + plot_layout(widths = c(1, .03, 1, .05, 1))
+```
