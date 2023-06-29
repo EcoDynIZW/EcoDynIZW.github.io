@@ -2,7 +2,7 @@
 title: "Non-metric Multidimensional Scaling"
 description: |
   Learn how to run a non-metric Multidimensional Scaling (nMDS) in R, 
-  plot the results using the defaul plots or ggplot2, 
+  plot the results using the defaul `plots` or `{ggplot2}`, 
   add species and explanatory variables to the plot, 
   use groups centroids or run a PERMANOVA analysis.  
 categories:
@@ -102,7 +102,7 @@ Then, the process regress the positions with the real distances and estimates a 
 
 If stress is high, the algorithm will try to lower it by repositioning the points.
 
-Rule of thumb: stress values below 0.1 are good, below 0.2 is ok. Higher values indicate a poor representition of our observations.
+Rule of thumb: stress values below 0.1 are good, below 0.2 is ok. Higher values indicate a poor representation of our observations.
 
 Some options for reducing the stress are increasing the number of dimensions (k), changing the initial configuration for the first points, of increasing the number of iterations (trymax).
 
@@ -268,10 +268,10 @@ plot_ellipses
 
 ## Effect of explanatory variables
 
-***Important note***: An NMDS is mostly a visualization technique, not a real representation of distances. Correlation of variables wiht the axes can be used for plotting but to asses real effects we need to run statistical tests on the data, like a permanova test for categorical variables, or a Mantel test for continuous variables. 
+***Important note***: An NMDS is mostly a visualization technique, not a real representation of distances. Correlation of variables with the axes can be used for plotting but to asses real effects we need to run statistical tests on the data, like a permanova test for categorical variables, or a Mantel test for continuous variables. 
 Other ordination techniques like PCA, PCoA or CA can be used for testing effects directly on the axes.
 
-To add the explanatory variables to the plot, we use the `envfit()` function from `vegan`. 
+To add the explanatory variables to the plot, we use the `envfit()` function from `{vegan}`. 
 As we are not testing the significance of the relationship, we set the permutations to 0. 
 
 The two types of explanatory variables will give us different results:
@@ -298,7 +298,7 @@ plot(mtcars_NMDS, display = "sites")
 plot(env_fit, cex=1.2, bg = rgb(1, 1, 1, 0.5))
 ```
 
-Or plot with ggplot:
+Or plot with `{ggplot2}`:
 
 ```{r}
 ## extract coordinates of variables and make them fit into the plot
