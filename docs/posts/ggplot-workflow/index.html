@@ -90,7 +90,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
 <title>Ecological Dynamics: ggplot2 Workflow Tips</title>
 
-<meta property="description" itemprop="description" content="Learn how to efficiently use the powerful graphics library ggplot2 by avoiding repeated code and manual adjustments. You will leanr how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."/>
+<meta property="description" itemprop="description" content="Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."/>
 
 <link rel="icon" type="image/png" href="../../img/d6_purple_round.png"/>
 
@@ -102,21 +102,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
 <meta property="og:title" content="Ecological Dynamics: ggplot2 Workflow Tips"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Learn how to efficiently use the powerful graphics library ggplot2 by avoiding repeated code and manual adjustments. You will leanr how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."/>
+<meta property="og:description" content="Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Ecological Dynamics"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
 <meta property="twitter:title" content="Ecological Dynamics: ggplot2 Workflow Tips"/>
-<meta property="twitter:description" content="Learn how to efficiently use the powerful graphics library ggplot2 by avoiding repeated code and manual adjustments. You will leanr how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."/>
+<meta property="twitter:description" content="Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."/>
 <meta property="twitter:site" content="@EcoDynIZW"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["ggplot2 Workflow Tips"]},{"type":"character","attributes":{},"value":["Learn how to efficiently use the powerful graphics library ggplot2 by avoiding repeated code and manual adjustments. You will leanr how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."]},{"type":"character","attributes":{},"value":["rstats","ggplot2","workflow","tutorial"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Cedric Scherer"]},{"type":"character","attributes":{},"value":["https://cedricscherer.com"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2023-06-22‚"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["ggplot2 Workflow Tips"]},{"type":"character","attributes":{},"value":["Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."]},{"type":"character","attributes":{},"value":["rstats","ggplot2","workflow","tutorial"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Cedric Scherer"]},{"type":"character","attributes":{},"value":["https://cedricscherer.com"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2023-06-22‚"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -468,8 +468,8 @@ d-title {
 </style>
 
 <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
 <script src="../../site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
 <script src="../../site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -798,6 +798,7 @@ d-title .dt-tags {
 d-article table.gt_table td,
 d-article table.gt_table th {
   border-bottom: none;
+  font-size: 100%;
 }
 
 .html-widget {
@@ -1870,15 +1871,21 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-        var fn = $(this).children()[0]
+      const citeChild = $(this).children()[0]
+      // Do not process if @xyz has been used without escaping and without bibliography activated
+      // https://github.com/rstudio/distill/issues/466
+      if (citeChild === undefined) return true
+
+      if (citeChild.nodeName == "D-FOOTNOTE") {
+        var fn = citeChild
         $(this).html(fn.shadowRoot.querySelector("sup"))
         $(this).id = fn.id
         fn.remove()
       }
       var refs = $(this).attr('data-cites').split(" ");
       var refHtml = refs.map(function(ref) {
-        return "<p>" + $('#ref-' + ref).html() + "</p>";
+        // Could use CSS.escape too here, we insure backward compatibility in navigator
+        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
       }).join("\n");
       window.tippy(this, {
         allowHTML: true,
@@ -2645,7 +2652,7 @@ d-appendix d-footnote-list a.footnote-backlink {
   color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.16/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.22/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2666,7 +2673,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"ggplot2 Workflow Tips","description":"Learn how to efficiently use the powerful graphics library ggplot2 by avoiding repeated code and manual adjustments. You will leanr how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends.","authors":[{"author":"Cedric Scherer","authorURL":"https://cedricscherer.com","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2023-06-22T00:00:00.000+02:00","citationText":"Scherer, 2023"}
+{"title":"ggplot2 Workflow Tips","description":"Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends.","authors":[{"author":"Cedric Scherer","authorURL":"https://cedricscherer.com","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2023-06-22T00:00:00.000+02:00","citationText":"Scherer, 2023"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2743,18 +2750,11 @@ Wikis
   <a href="../../coding.html#category:tutorial" class="dt-tag">tutorial</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Learn how to efficiently use the powerful graphics library ggplot2
-by avoiding repeated code and manual adjustments. You will leanr how to
-define your themes globally and how to use the {patchwork} package to
-create multi-panel plots with automated numbering and combined
-legends.</p></p>
+<p><p>Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends.</p></p>
 </div>
 
 <div class="d-byline">
-  Cedric Scherer <a href="https://cedricscherer.com"
-class="uri">https://cedricscherer.com</a> (IZW Berlin)<a
-href="https://ecodynizw.github.io/EcoDynIZW"
-class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
+  Cedric Scherer <a href="https://cedricscherer.com" class="uri">https://cedricscherer.com</a> (IZW Berlin)<a href="https://ecodynizw.github.io/EcoDynIZW" class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
   
 <br/>2023-06-22‚
 </div>
@@ -2768,275 +2768,202 @@ class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
 <li><a href="#theming" id="toc-theming">Theming</a>
 <ul>
 <li><a href="#theme-set" id="toc-theme-set">Set Themes Globally</a></li>
-<li><a href="#theme-base-settings" id="toc-theme-base-settings">Adjust
-Theme Base Settings</a></li>
-<li><a href="#theme-update" id="toc-theme-update">Update Theme
-Elements</a></li>
-<li><a href="#theme-custom-mods" id="toc-theme-custom-mods">Custom Local
-Modifications</a></li>
+<li><a href="#theme-base-settings" id="toc-theme-base-settings">Adjust Theme Base Settings</a></li>
+<li><a href="#theme-update" id="toc-theme-update">Update Theme Elements</a></li>
+<li><a href="#theme-custom-mods" id="toc-theme-custom-mods">Custom Local Modifications</a></li>
 <li><a href="#theming-summary" id="toc-theming-summary">Summary</a></li>
 </ul></li>
 <li><a href="#multi-panel" id="toc-multi-panel">Multi-Panel Figures</a>
 <ul>
-<li><a href="#patchwork-layout" id="toc-patchwork-layout">Adjust
-Layout</a></li>
-<li><a href="#patchwork-spacer" id="toc-patchwork-spacer">Add White
-Space</a></li>
-<li><a href="#patchwork-nested" id="toc-patchwork-nested">Nested
-Layouts</a></li>
-<li><a href="#patchwork-guides" id="toc-patchwork-guides">Merge
-Legends</a></li>
-<li><a href="#patchwork-tags" id="toc-patchwork-tags">Automate Plot
-Tags</a></li>
-<li><a href="#patchwork-insets" id="toc-patchwork-insets">Inset
-Plots</a></li>
-<li><a href="#patchwork-summary"
-id="toc-patchwork-summary">Summary</a></li>
+<li><a href="#patchwork-layout" id="toc-patchwork-layout">Adjust Layout</a></li>
+<li><a href="#patchwork-spacer" id="toc-patchwork-spacer">Add White Space</a></li>
+<li><a href="#patchwork-nested" id="toc-patchwork-nested">Nested Layouts</a></li>
+<li><a href="#patchwork-guides" id="toc-patchwork-guides">Merge Legends</a></li>
+<li><a href="#patchwork-tags" id="toc-patchwork-tags">Automate Plot Tags</a></li>
+<li><a href="#patchwork-insets" id="toc-patchwork-insets">Inset Plots</a></li>
+<li><a href="#patchwork-summary" id="toc-patchwork-summary">Summary</a></li>
 </ul></li>
 </ul>
 </nav>
 </div>
 <h2 id="setup">Setup</h2>
-<p>Let’s load the <code>{ggplot2}</code> library and create two basic
-ggplots, stored as <code>g1</code> (scatter plot) and <code>g2</code>
-(box-and-whisker plot) that can be used later.</p>
+<p>Let’s load the <code>{ggplot2}</code> library and create two basic ggplots, stored as <code>g1</code> (scatter plot) and <code>g2</code> (box-and-whisker plot) that can be used later.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mpg</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>displ</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='va'>class</span><span class='op'>)</span><span class='op'>)</span>
-
-<span class='va'>g1</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mpg</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>displ</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='va'>class</span><span class='op'>)</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='va'>g1</span></span></code></pre>
 </div>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g2</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mpg</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>class</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span><span class='op'>)</span>
-
-<span class='va'>g2</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g2</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mpg</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>class</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='va'>g2</span></span></code></pre>
 </div>
 </div>
 <div class="layout-chunk" data-layout="l-page">
 <p><img src="ggplot-workflow_files/figure-html5/basic-ggplots-plots-1.png" width="1820" /></p>
 </div>
 <h2 id="theming">Theming</h2>
-<p>The resulting plots use the default gray theme:
-<code>theme_gray()</code> or <code>theme_grey()</code>.</p>
-<p>We can change the default theme by adding a complete theme, starting
-with <code>theme_*()</code>, and/or customizing single elements of the
-default theme via <code>theme()</code>:</p>
+<p>The resulting plots use the default gray theme: <code>theme_gray()</code> or <code>theme_grey()</code>.</p>
+<p>We can change the default theme by adding a complete theme, starting with <code>theme_*()</code>, and/or customizing single elements of the default theme via <code>theme()</code>:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g1</span> <span class='op'>+</span> 
-  <span class='co'>## apply light complete theme</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_light</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> 
-  <span class='co'>## remove minor grid + modify typeface</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-        text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>family <span class='op'>=</span> <span class='st'>"PT Sans"</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g1</span> <span class='op'>+</span> </span>
+<span>  <span class='co'>## apply light complete theme</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_light</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span>  <span class='co'>## remove minor grid + modify typeface</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>        text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>family <span class='op'>=</span> <span class='st'>"PT Sans"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g2</span> <span class='op'>+</span> 
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_light</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> 
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>, 
-        text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>family <span class='op'>=</span> <span class='st'>"PT Sans"</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g2</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_light</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>, </span>
+<span>        text <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>family <span class='op'>=</span> <span class='st'>"PT Sans"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <div class="layout-chunk" data-layout="l-page">
 <p><img src="ggplot-workflow_files/figure-html5/local-theme-changes-plots-1.png" width="1820" /></p>
 </div>
-<p>This procedure involves a lot of copy-and-paste’ing, which makes it a
-tedious procedure especially in case you decide to make some general
-styling changes at a later point. It is also prone to mistakes as you
-might forget to set specific adjustments for single plots.</p>
+<p>This procedure involves a lot of copy-and-paste’ing, which makes it a tedious procedure especially in case you decide to make some general styling changes at a later point. It is also prone to mistakes as you might forget to set specific adjustments for single plots.</p>
 <h3 id="theme-set">Set Themes Globally</h3>
-<p>Instead of repeating the same code to change the appearance of your
-plots, it is more efficient and beneficial to overwrite the default
-global theme:</p>
+<p>Instead of repeating the same code to change the appearance of your plots, it is more efficient and beneficial to overwrite the default global theme:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme_get.html'>theme_set</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_light</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme_get.html'>theme_set</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_light</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<p>After <em>setting the new theme</em>, all plots created within the
-same environment are styled accordingly:</p>
+<p>After <em>setting the new theme</em>, all plots created within the same environment are styled accordingly:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g1</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g1</span></span></code></pre>
 </div>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g2</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g2</span></span></code></pre>
 </div>
 </div>
 <div class="layout-chunk" data-layout="l-page">
 <p><img src="ggplot-workflow_files/figure-html5/set-global-theme-plots-1.png" width="1820" /></p>
 </div>
 <h3 id="theme-base-settings">Adjust Theme Base Settings</h3>
-<p>Complete themes allow for some general modifications, no matter if
-added locally to your plot or if set globally. The setting include the
-typeface used for all text elements (<code>base_family</code>), the
-general base size (<code>base_size</code>) as well as dedicated relative
-sizes for line elements (<code>base_line_size</code>) and rect elements
-(<code>base_rect_size</code>).</p>
+<p>Complete themes allow for some general modifications, no matter if added locally to your plot or if set globally. The setting include the typeface used for all text elements (<code>base_family</code>), the general base size (<code>base_size</code>) as well as dedicated relative sizes for line elements (<code>base_line_size</code>) and rect elements (<code>base_rect_size</code>).</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g1</span> <span class='op'>+</span> 
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_light</a></span><span class='op'>(</span>
-    base_family <span class='op'>=</span> <span class='st'>"PT Serif"</span>, <span class='co'>## default: depends on OS</span>
-    base_size <span class='op'>=</span> <span class='fl'>18</span>,           <span class='co'>## default: 11</span>
-    base_line_size <span class='op'>=</span> <span class='fl'>3</span>,       <span class='co'>## default: base_size/22 -&gt; 0.5</span>
-    base_rect_size <span class='op'>=</span> <span class='fl'>10</span>       <span class='co'>## default: base_size/22 -&gt; 0.5</span>
-  <span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g1</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_light</a></span><span class='op'>(</span></span>
+<span>    base_family <span class='op'>=</span> <span class='st'>"PT Serif"</span>, <span class='co'>## default: depends on OS</span></span>
+<span>    base_size <span class='op'>=</span> <span class='fl'>18</span>,           <span class='co'>## default: 11</span></span>
+<span>    base_line_size <span class='op'>=</span> <span class='fl'>3</span>,       <span class='co'>## default: base_size/22 -&gt; 0.5</span></span>
+<span>    base_rect_size <span class='op'>=</span> <span class='fl'>10</span>       <span class='co'>## default: base_size/22 -&gt; 0.5</span></span>
+<span>  <span class='op'>)</span></span></code></pre>
 </div>
 <p><img src="ggplot-workflow_files/figure-html5/complete-theme-base-settings-1.png" width="1040" /></p>
 </div>
-<p>Knowing of this feature, we can already adjust the general size
-(which tends to be too small by default) as well as the typeface of our
-custom global theme:</p>
+<p>Knowing of this feature, we can already adjust the general size (which tends to be too small by default) as well as the typeface of our custom global theme:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme_get.html'>theme_set</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_light</a></span><span class='op'>(</span>base_size <span class='op'>=</span> <span class='fl'>15</span>, base_family <span class='op'>=</span> <span class='st'>"PT Sans"</span><span class='op'>)</span><span class='op'>)</span> 
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme_get.html'>theme_set</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_light</a></span><span class='op'>(</span>base_size <span class='op'>=</span> <span class='fl'>15</span>, base_family <span class='op'>=</span> <span class='st'>"PT Sans"</span><span class='op'>)</span><span class='op'>)</span> </span></code></pre>
 </div>
 </div>
 <p>… which is then used for all following plots:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g1</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g1</span></span></code></pre>
 </div>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g2</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g2</span></span></code></pre>
 </div>
 </div>
 <div class="layout-chunk" data-layout="l-page">
 <p><img src="ggplot-workflow_files/figure-html5/set-global-theme-base-setting-plots-1.png" width="1820" /></p>
 </div>
 <h3 id="theme-update">Update Theme Elements</h3>
-<p>Complete themes are great but in most circumstances we likely want to
-adjust a few things. Usually, you do that by adding the
-<code>theme()</code> function to your ggplot (as shown in the
-beginning). However, similarly to <code>theme_set()</code> we can apply
-the modifications globally:</p>
+<p>Complete themes are great but in most circumstances we likely want to adjust a few things. Usually, you do that by adding the <code>theme()</code> function to your ggplot (as shown in the beginning). However, similarly to <code>theme_set()</code> we can apply the modifications globally:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme_get.html'>theme_update</a></span><span class='op'>(</span>
-  panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,
-  axis.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>face <span class='op'>=</span> <span class='st'>"bold"</span><span class='op'>)</span>,
-  legend.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>face <span class='op'>=</span> <span class='st'>"bold"</span><span class='op'>)</span>
-<span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme_get.html'>theme_update</a></span><span class='op'>(</span></span>
+<span>  panel.grid.minor <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>,</span>
+<span>  axis.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>face <span class='op'>=</span> <span class='st'>"bold"</span><span class='op'>)</span>,</span>
+<span>  legend.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>face <span class='op'>=</span> <span class='st'>"bold"</span><span class='op'>)</span></span>
+<span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g1</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g1</span></span></code></pre>
 </div>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g2</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g2</span></span></code></pre>
 </div>
 </div>
 <div class="layout-chunk" data-layout="l-page">
 <p><img src="ggplot-workflow_files/figure-html5/update-global-theme-settings-plots-1.png" width="1820" /></p>
 </div>
 <h3 id="theme-custom-mods">Custom Local Modifications</h3>
-<p>Of course, you can still either overwrite the global theme as before
-or modify specific elements for a single plot if needed:</p>
+<p>Of course, you can still either overwrite the global theme as before or modify specific elements for a single plot if needed:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g1</span> <span class='op'>+</span> 
-  <span class='co'>## new complete theme</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_classic</a></span><span class='op'>(</span>base_family <span class='op'>=</span> <span class='st'>"PT Serif"</span>, base_size <span class='op'>=</span> <span class='fl'>15</span><span class='op'>)</span> <span class='op'>+</span> 
-  <span class='co'>## add grid lines</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>panel.grid.major <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"grey90"</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g1</span> <span class='op'>+</span> </span>
+<span>  <span class='co'>## new complete theme</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_classic</a></span><span class='op'>(</span>base_family <span class='op'>=</span> <span class='st'>"PT Serif"</span>, base_size <span class='op'>=</span> <span class='fl'>15</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span>  <span class='co'>## add grid lines</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>panel.grid.major <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_line</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"grey90"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g2</span> <span class='op'>+</span> 
-  <span class='co'>## remove vertical grid lines + overwrite axis title styling</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>panel.grid.major.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>, 
-           axis.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"red"</span>, face <span class='op'>=</span> <span class='st'>"italic"</span><span class='op'>)</span><span class='op'>)</span> 
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g2</span> <span class='op'>+</span> </span>
+<span>  <span class='co'>## remove vertical grid lines + overwrite axis title styling</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>panel.grid.major.x <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_blank</a></span><span class='op'>(</span><span class='op'>)</span>, </span>
+<span>           axis.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"red"</span>, face <span class='op'>=</span> <span class='st'>"italic"</span><span class='op'>)</span><span class='op'>)</span> </span></code></pre>
 </div>
 </div>
 <div class="layout-chunk" data-layout="l-page">
 <p><img src="ggplot-workflow_files/figure-html5/local-theme-changes-afterwards-plots-1.png" width="1820" /></p>
 </div>
 <h3 id="theming-summary">Summary</h3>
-<p>Setting and updating ggplot themes globally is efficient and avoids
-potential mistakes.</p>
-<p>As a workflow routine, add a chunk that loads <code>{ggplot2}</code>
-and afterwards sets and updates your theme <strong>at the beginning of a
-script</strong> rather than adding the same code to each plot
-individually.</p>
+<p>Setting and updating ggplot themes globally is efficient and avoids potential mistakes.</p>
+<p>As a workflow routine, add a chunk that loads <code>{ggplot2}</code> and afterwards sets and updates your theme <strong>at the beginning of a script</strong> rather than adding the same code to each plot individually.</p>
 <h2 id="multi-panel">Multi-Panel Figures</h2>
-<p>We often use multi-panel visualizations, i.e. several plots layed out
-in a single graphic. Instead of combining single figures manually, we
-make use of a coding-first approach.</p>
-<p>There are many packages to combine ggplots such as
-<code>{gridExtra}</code>, <code>{cowplot}</code>, and
-<code>{ggarrange}</code>. The most recent, and IMHO the best in terms of
-functionality and simplicity, is the <a
-href="https://patchwork.data-imaginist.com/"><code>{patchwok}</code>
-package by Thomas Lin Pedersen</a>. For simple multi-panel graphics,
-mathematical operators can be used – easy to use and remember.</p>
+<p>We often use multi-panel visualizations, i.e. several plots layed out in a single graphic. Instead of combining single figures manually, we make use of a coding-first approach.</p>
+<p>There are many packages to combine ggplots such as <code>{gridExtra}</code>, <code>{cowplot}</code>, and <code>{ggarrange}</code>. The most recent, and IMHO the best in terms of functionality and simplicity, is the <a href="https://patchwork.data-imaginist.com/"><code>{patchwok}</code> package by Thomas Lin Pedersen</a>. For simple multi-panel graphics, mathematical operators can be used – easy to use and remember.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://patchwork.data-imaginist.com'>patchwork</a></span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://patchwork.data-imaginist.com'>patchwork</a></span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g2</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g2</span></span></code></pre>
 </div>
 <p><img src="ggplot-workflow_files/figure-html5/patchwork-addition-1.png" width="1820" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g1</span> <span class='op'>/</span> <span class='va'>g2</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g1</span> <span class='op'>/</span> <span class='va'>g2</span></span></code></pre>
 </div>
 <p><img src="ggplot-workflow_files/figure-html5/patchwork-division-1.png" width="1820" /></p>
 </div>
 <h3 id="patchwork-layout">Adjust Layout</h3>
-<p>By default, both plots take the same space. In case you want to
-adjust how the plots are laid out, use <code>plot_layout()</code> in
-combination with either <code>widths</code> or <code>heights</code>.
-These arguments take a vector with the relaitve width or height for each
-plot, repsectively.</p>
+<p>By default, both plots take the same space. In case you want to adjust how the plots are laid out, use <code>plot_layout()</code> in combination with either <code>widths</code> or <code>heights</code>. These arguments take a vector with the relative width or height for each plot, respectively.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g2</span> <span class='op'>+</span> 
-  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>widths <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>.5</span>, <span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g2</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>widths <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>.5</span>, <span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 <p><img src="ggplot-workflow_files/figure-html5/patchwork-layout-widths-1.png" width="1820" /></p>
 </div>
 <h3 id="patchwork-spacer">Add White Space</h3>
-<p><code>{patchwok}</code> comes with a placeholder to add empty space
-between plots. Once can add a <code>plot_spacer()</code> similar to a
-regular plot:</p>
+<p><code>{patchwok}</code> comes with a placeholder to add empty space between plots. Once can add a <code>plot_spacer()</code> similar to a regular plot:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g1</span> <span class='op'>+</span> <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_spacer.html'>plot_spacer</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> <span class='va'>g2</span> <span class='op'>+</span> 
-  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>widths <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>.5</span>, <span class='fl'>.1</span>, <span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g1</span> <span class='op'>+</span> <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_spacer.html'>plot_spacer</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> <span class='va'>g2</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>widths <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>.5</span>, <span class='fl'>.1</span>, <span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 <p><img src="ggplot-workflow_files/figure-html5/patchwork-plot-spacer-1.png" width="1820" /></p>
 </div>
@@ -3047,8 +2974,7 @@ regular plot:</p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <details>
@@ -3057,130 +2983,95 @@ Code to create <code>g3</code>, <code>g4</code>, and <code>g5</code>
 </summary>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g3</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mpg</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>cyl</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='va'>class</span><span class='op'>)</span><span class='op'>)</span>
-
-<span class='va'>g4</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mpg</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>cty</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='va'>class</span><span class='op'>)</span><span class='op'>)</span>
-
-<span class='va'>g5</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mpg</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>class</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/stat_summary.html'>stat_summary</a></span><span class='op'>(</span>fun.data <span class='op'>=</span> <span class='st'>"mean_sdl"</span>, fun.args <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>mult <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g3</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mpg</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>cyl</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='va'>class</span><span class='op'>)</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='va'>g4</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mpg</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>cty</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='va'>class</span><span class='op'>)</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='va'>g5</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mpg</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>class</span>, y <span class='op'>=</span> <span class='va'>hwy</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/stat_summary.html'>stat_summary</a></span><span class='op'>(</span>fun.data <span class='op'>=</span> <span class='st'>"mean_sdl"</span>, fun.args <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>mult <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 </details>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="ggplot-workflow_files/figure-html5/patchwork-nesting-plots-1.png" width="1820" /></p>
 </div>
-<p>Alternatively, you can also create a design layout to have full
-control:</p>
+<p>Alternatively, you can also create a design layout to have full control:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>layout</span> <span class='op'>&lt;-</span> 
-  <span class='st'>"
-  ABBCCC#
-  DDDD#EE
-  "</span>
-
-<span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span> <span class='op'>+</span> <span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span> <span class='op'>+</span> 
-  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>design <span class='op'>=</span> <span class='va'>layout</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>layout</span> <span class='op'>&lt;-</span> </span>
+<span>  <span class='st'>"</span></span>
+<span><span class='st'>  ABBCCC#</span></span>
+<span><span class='st'>  DDDD#EE</span></span>
+<span><span class='st'>  "</span></span>
+<span></span>
+<span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span> <span class='op'>+</span> <span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>design <span class='op'>=</span> <span class='va'>layout</span><span class='op'>)</span></span></code></pre>
 </div>
 <p><img src="ggplot-workflow_files/figure-html5/patchwork-layout-1.png" width="1820" /></p>
 </div>
-<p>The letters refer to the single plots (in the order you combine them
-later) and a hash <code>#</code> indicates empty space, similar to
-<code>plot_spacer()</code>.</p>
+<p>The letters refer to the single plots (in the order you combine them later) and a hash <code>#</code> indicates empty space, similar to <code>plot_spacer()</code>.</p>
 <h3 id="patchwork-guides">Merge Legends</h3>
-<p>Displaying the legend three times makes no sense.
-<code>{patchwork}</code> offers the utility to “collect your guides”
-inside the <code>plot_layout()</code> function:</p>
+<p>Displaying the legend three times makes no sense. <code>{patchwork}</code> offers the utility to “collect your guides” inside the <code>plot_layout()</code> function:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span><span class='op'>)</span> <span class='op'>+</span> 
-  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>guides <span class='op'>=</span> <span class='st'>"collect"</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>guides <span class='op'>=</span> <span class='st'>"collect"</span><span class='op'>)</span></span></code></pre>
 </div>
 <p><img src="ggplot-workflow_files/figure-html5/patchwork-guides-collect-1.png" width="1820" /></p>
 </div>
-<p>Now we may want to move it to the top so it is shown next to the
-relevant colored scatter plots, not in the middle. We can adjust the
-theme for all plots inside another <code>{patchwork}</code> function
-called <code>plot_annotation()</code>—or by <a
-href="#theme-update">updating your global theme</a> 😉</p>
+<p>Now we may want to move it to the top so it is shown next to the relevant colored scatter plots, not in the middle. We can adjust the theme for all plots inside another <code>{patchwork}</code> function called <code>plot_annotation()</code>—or by <a href="#theme-update">updating your global theme</a> 😉</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='op'>(</span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> 
-  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>guides <span class='op'>=</span> <span class='st'>"collect"</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span>theme <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.justification <span class='op'>=</span> <span class='st'>"top"</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='op'>(</span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>guides <span class='op'>=</span> <span class='st'>"collect"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span>theme <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.justification <span class='op'>=</span> <span class='st'>"top"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 <p><img src="ggplot-workflow_files/figure-html5/patchwork-guides-collect-just-1.png" width="1820" /></p>
 </div>
 <h3 id="patchwork-tags">Automate Plot Tags</h3>
-<p>When preparing such multi-panel figures for publications, we usually
-want to add tags to be able to refer to subplots in the figure caption
-or main text. Again, we can do this inside R instead of adding them
-afterwards by hand (which either takes very long or results in
-irregularly aligned labels).</p>
+<p>When preparing such multi-panel figures for publications, we usually want to add tags to be able to refer to subplots in the figure caption or main text. Again, we can do this inside R instead of adding them afterwards by hand (which either takes very long or results in irregularly aligned labels).</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='op'>(</span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> 
-  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>guides <span class='op'>=</span> <span class='st'>"collect"</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span>tag_levels <span class='op'>=</span> <span class='st'>"A"</span>, 
-                  theme <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.justification <span class='op'>=</span> <span class='st'>"top"</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='op'>(</span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>guides <span class='op'>=</span> <span class='st'>"collect"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span>tag_levels <span class='op'>=</span> <span class='st'>"A"</span>, </span>
+<span>                  theme <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.justification <span class='op'>=</span> <span class='st'>"top"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 <p><img src="ggplot-workflow_files/figure-html5/pathwork-tags-1.png" width="1820" /></p>
 </div>
-<p><code>{patchwork}</code> understands a range of numbering formats
-such as <code>a</code> for lowercase letters, <code>1</code> for
-numbers, or <code>i</code> and <code>I</code> for lowercase and
-uppercase Roman numerals, respectively. Furthermore we can style the tag
-by defining a pre- and/or suffix:</p>
+<p><code>{patchwork}</code> understands a range of numbering formats such as <code>a</code> for lowercase letters, <code>1</code> for numbers, or <code>i</code> and <code>I</code> for lowercase and uppercase Roman numerals, respectively. Furthermore we can style the tag by defining a pre- and/or suffix:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='op'>(</span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> 
-  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>guides <span class='op'>=</span> <span class='st'>"collect"</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span>tag_levels <span class='op'>=</span> <span class='st'>"i"</span>, tag_prefix <span class='op'>=</span> <span class='st'>"("</span>, tag_suffix <span class='op'>=</span> <span class='st'>")"</span>,
-                  theme <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.justification <span class='op'>=</span> <span class='st'>"top"</span><span class='op'>)</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='op'>(</span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='va'>g3</span> <span class='op'>+</span> <span class='va'>g4</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>g2</span> <span class='op'>+</span> <span class='va'>g5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>guides <span class='op'>=</span> <span class='st'>"collect"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span>tag_levels <span class='op'>=</span> <span class='st'>"i"</span>, tag_prefix <span class='op'>=</span> <span class='st'>"("</span>, tag_suffix <span class='op'>=</span> <span class='st'>")"</span>,</span>
+<span>                  theme <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.justification <span class='op'>=</span> <span class='st'>"top"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 <p><img src="ggplot-workflow_files/figure-html5/patchwork-tags-customization-1.png" width="1820" /></p>
 </div>
 <h3 id="patchwork-insets">Inset Plots</h3>
-<p>Similar to other arrangement packages, we can use
-<code>{patchwork}</code> also to add inset plots. Inside the
-<code>inside_element()</code> function, we specify the plot to draw and
-then the outer bounds (left, bottom, right top).</p>
+<p>Similar to other arrangement packages, we can use <code>{patchwork}</code> also to add inset plots. Inside the <code>inside_element()</code> function, we specify the plot to draw and then the outer bounds (left, bottom, right top).</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g4</span> <span class='op'>+</span> <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/inset_element.html'>inset_element</a></span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/guides.html'>guides</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span>, <span class='fl'>.5</span>, <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>.5</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g4</span> <span class='op'>+</span> <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/inset_element.html'>inset_element</a></span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/guides.html'>guides</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span>, <span class='fl'>.5</span>, <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>.5</span><span class='op'>)</span></span></code></pre>
 </div>
 <p><img src="ggplot-workflow_files/figure-html5/patchwork-inset-1.png" width="1170" /></p>
 </div>
-<p>By default, the inset plot is aligned with the panel of the main
-plot. If you want to modify the behavior, overwrite the default input of
-<code>align_to</code>.</p>
+<p>By default, the inset plot is aligned with the panel of the main plot. If you want to modify the behavior, overwrite the default input of <code>align_to</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>g4</span> <span class='op'>+</span> <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/inset_element.html'>inset_element</a></span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/guides.html'>guides</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span>, <span class='fl'>.5</span>, <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>.5</span>, align_to <span class='op'>=</span> <span class='st'>"plot"</span><span class='op'>)</span>
-<span class='va'>g4</span> <span class='op'>+</span> <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/inset_element.html'>inset_element</a></span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/guides.html'>guides</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span>, <span class='fl'>.5</span>, <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>.5</span>, align_to <span class='op'>=</span> <span class='st'>"full"</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>g4</span> <span class='op'>+</span> <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/inset_element.html'>inset_element</a></span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/guides.html'>guides</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span>, <span class='fl'>.5</span>, <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>.5</span>, align_to <span class='op'>=</span> <span class='st'>"plot"</span><span class='op'>)</span></span>
+<span><span class='va'>g4</span> <span class='op'>+</span> <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/inset_element.html'>inset_element</a></span><span class='op'>(</span><span class='va'>g1</span> <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/guides.html'>guides</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"none"</span><span class='op'>)</span>, <span class='fl'>.5</span>, <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>.5</span>, align_to <span class='op'>=</span> <span class='st'>"full"</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <div class="layout-chunk" data-layout="l-page">
 <p><img src="ggplot-workflow_files/figure-html5/patchwork-inset-alignment-plots-1.png" width="2340" /></p>
 </div>
 <h3 id="patchwork-summary">Summary</h3>
-<p><code>{patchwork}</code> offers some great functionality to create
-basic and pretty complex layouts, add inset plots, merge repeated
-legends, and automate tag numbering. This makes it a powerful tool as
-you do not need to adjust tag labels, legends, and more for the
-individual ggplot.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p><code>{patchwork}</code> offers some great functionality to create basic and pretty complex layouts, add inset plots, merge repeated legends, and automate tag numbering. This makes it a powerful tool as you do not need to adjust tag labels, legends, and more for the individual ggplot.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
