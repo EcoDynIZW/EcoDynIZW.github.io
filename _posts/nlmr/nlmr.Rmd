@@ -1,7 +1,7 @@
 ---
 title: "Simulate Neutral Landscape Models"
 description: |
-  Learn how to use the {NLMR} R package to simulate neutral landscape models (NLM), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models.
+  Learn how to use the {NLMR} R package to simulate neutral landscape models (NLMs), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models.
 preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-nlmr.png
 categories:
   - tutorial
@@ -34,6 +34,15 @@ Install the release version from CRAN:
 
 ```{r install, eval=FALSE}
 install.packages("NLMR")
+```
+
+or the development version from Github, along with two packages that are needed for the generation of random fields:
+
+```{r install-github, eval=FALSE}
+install.packages("remotes")
+remotes::install_github("cran/RandomFieldsUtils")
+remotes::install_github("cran/RandomFields")
+remotes::install_github("ropensci/NLMR")
 ```
 
 ## Usage

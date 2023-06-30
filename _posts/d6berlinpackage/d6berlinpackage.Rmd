@@ -51,12 +51,12 @@ Furthermore, the package provides utility to add a globe with locator pin, a sca
 You can install the `{d6berlin}` package from GitHub:
 
 ```{r install, eval=3}
-install.packages("devtools")
-devtools::install_github("EcoDynIZW/d6berlin")
+install.packages("remotes")
+remotes::install_github("EcoDynIZW/d6berlin")
 library(d6berlin)
 ```
 
-(Note: If you are asked if you want to update other packages either press "No" (option 3) and continue or update the packages before running the install command again.)
+Note: If you are asked if you want to update other packages either press "No" (option 3) and continue or update the packages before running the install command again.
 
 
 ## A Basic Template Map of Imperviousness {#basics}
@@ -108,7 +108,7 @@ Let's assume you have recorded some animal locations or you want to plot another
 library(ggplot2)
 library(sf)
 
-map <- base_map_imp(color_intensity = .5, resolution = 500, legend = "top")
+map <- base_map_imp(color_intensity = .4, resolution = 500, legend = "top")
 
 map + geom_sf(data = sf_metro) ## sf_metro is contained in the {d6berlin} package
 ```
@@ -134,12 +134,12 @@ map +
           shape = 21, fill = "forestgreen", size = 2)
 ```
 
-You can also use the `mapping` functionality of ggplot2 to address variables from your data set:
+You can also use the `mapping` functionality of ggplot2 to address variables from your data set. 
 
 ```{r example-points-filter-aes, fig.height=10.5}
 map + 
   geom_sf(data = sf_metro, aes(color = type), size = 2) +
-  scale_color_discrete(type = c("dodgerblue", "forestgreen"), 
+  scale_color_discrete(type = c("forestgreen", "dodgerblue"), 
                        name = NULL) +
   guides(color = guide_legend(direction = "horizontal",
                               title.position = "top", 

@@ -25,10 +25,11 @@ terra::terraOptions(progress = 0)
 
 The [`{d6berlin}` package](https://github.com/EcoDynIZW/d6berlin) provides several functions for the members of the Ecological Department of the IZW. Now two functions are added to the package: `download_fisbroker_wfs()` and `download_fisbroker_atom()`.
 
-```{r install, eval=3}
-devtools::install_github("EcoDynIZW/d6berlin")
-#install.packages("rcartocolor")
-#install.packages("stars")
+```{r install, eval=FALSE}
+install.packages("remotes")
+remotes::install_github("EcoDynIZW/d6berlin")
+install.packages("rcartocolor")
+install.packages("stars")
 ```
 
 ```{r library}

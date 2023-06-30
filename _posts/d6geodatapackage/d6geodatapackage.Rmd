@@ -23,7 +23,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The [`{d6geodata}` package](https://github.com/EcoDynIZW/d6geodata) aims to access the data from the Geodata archive of the EcoDyn Department for members only!
+The [`{d6geodata}` package](https://github.com/EcoDynIZW/d6geodata) aims to provide access to the data from the Geodata archive for members of our department.
 
 The two main functions are:
 
@@ -32,13 +32,14 @@ The two main functions are:
 
 
 ```{r install, eval=3}
+install.packages("remotes")
 remotes::install_github("EcoDynIZW/d6geodata")
 library(d6geodata)
 ```
 
-If you want to work with geodata that is already stored in our Geodata archive you have two options: 
+If you want to work with spatial data that is already stored in our Geodata archive you have two options: 
 
-1. Go to the EcoDynIZW Website, click on wikis and select [Geodata](https://ecodynizw.github.io/geodata.html). There you find several spatial data sets with respective metadaat and visualizations. In the metadata section, you'll find the information . To donwload the data, cope the `folder_name` information provided in the metadata  and use it as an input in the  `get_geodata()` function from our `{d6geodata}` to get the data from our PopDynCloud. Another option is the function called `geo_overview()`. There you can select which data and from which location you want to have a list of data.
+1. Go to the EcoDynIZW Website, click on wikis and select [Geodata](https://ecodynizw.github.io/geodata.html). There you find several spatial data sets with respective metadatA and visualizations. In the metadata section, you'll find the information . To donwload the data, cope the `folder_name` information provided in the metadata  and use it as an input in the  `get_geodata()` function from our `{d6geodata}` to get the data from our PopDynCloud. Another option is the function called `geo_overview()`. There you can select which data and from which location you want to have a list of data.
 
 If you run the function `geo_overview` you have to decide if you want to see the raw or processed data by typing 1 for raw and 2 for processed data. Afterwards, you have to decide if you want to see the main (type 1) folders (the regions or sub-regions we have data from) or the sub (type 2) folders (the actually data we have in each region).
 
@@ -128,7 +129,7 @@ character(0)
 
 Now you can copy the name of one of the layers and paste it into the `get_geodata()` function
 
-```{r example get_geodata}
+```{r example-get_geodata}
 corine <-
   d6geodata::get_geodata(
     data_name = "corine_berlin_2018_20m_03035_tif",
@@ -141,7 +142,7 @@ If you set `download_data = TRUE` the data will be download and copied to your `
 
 If you want to download more than one file, you can simply use `lapply()` and add multiple file names like this:
 
-```{r example lapply}
+```{r example-lapply}
 data_list <-
   lapply(
     c(
@@ -161,7 +162,7 @@ data_list <-
 
 The three functions `plot_binary_map()`, `plot_qualitative_map()` and plot `plot_quantitative_map()` can be used to plot raster data with the respective color schemes we used for the Geodata wiki page (note that this function works only for raster data).
 
-```{r plotting functions, eval=FALSE}
+```{r plotting-functions, eval=FALSE}
 plot_binary_map(tif = tif)
 plot_qualitative_map(tif = tif)
 plot_quantitative_map(tif = tif)
@@ -169,8 +170,7 @@ plot_quantitative_map(tif = tif)
 
 #### Example plot
 
-```{r}
-library(d6geodata)
+```{r example-map}
 plot_qualitative_map(tif = corine)
 ```
 
