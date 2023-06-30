@@ -6,6 +6,8 @@ categories:
   - tutorial
   - spatial
   - rstats
+  - data sources
+  - workflow
 author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin

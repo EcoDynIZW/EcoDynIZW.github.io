@@ -5,6 +5,8 @@ description: |
 categories:
   - tutorial
   - spatial
+  - rstats
+  - data sources
 author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin

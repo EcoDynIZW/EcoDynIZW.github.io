@@ -9,6 +9,8 @@ categories:
   - spatial
   - Berlin
   - ggplot2
+  - data sources
+  - workflow
 author:
   - name: Cedric Scherer
     url: htttps://cedricscherer.com
@@ -77,7 +79,7 @@ base_map_imp(color_intensity = 1, globe = TRUE, resolution = 500,
 If you think the legend is not need, there is also an option called `"none"`. (The default is `"bottom"`. You can also use of the predefined setting `"top"` as illustrated below or a custom position as shown in the previous example.)
 
 
-## Berlin Data Sets {datasets}
+## Berlin Data Sets {#datasets}
 
 The package contains several data sets for Berlin. All of them start with `sf_`, e.g. `d6berlin::sf_roads`. Here is a full overview of the data sets that are available:
 
@@ -106,7 +108,7 @@ Let's assume you have recorded some animal locations or you want to plot another
 library(ggplot2)
 library(sf)
 
-map <- base_map_imp(color_intensity = .3, resolution = 500, legend = "top")
+map <- base_map_imp(color_intensity = .5, resolution = 500, legend = "top")
 
 map + geom_sf(data = sf_metro) ## sf_metro is contained in the {d6berlin} package
 ```
@@ -160,7 +162,7 @@ base_map_imp(color_intensity = 1, resolution = 250, globe = TRUE,
           stroke = .4, size = 4) +
   ggtitle("Metro Stations in Berlin") + 
   theme(plot.title = element_text(size = 30, hjust = .5, family = "Bangers"),
-        panel.grid.major = element_line(color = "white", size = .3),
+        panel.grid.major = element_line(color = "white", linewidth = .3),
         axis.text = element_text(color = "black", size = 8),
         plot.background = element_rect(fill = "#fff0de", color = NA),
         plot.margin = margin(rep(20, 4)))
