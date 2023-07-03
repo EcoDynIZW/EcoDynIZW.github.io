@@ -460,8 +460,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
   <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -790,7 +790,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1863,21 +1862,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2644,7 +2637,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2740,30 +2733,59 @@ Wikis
 
 
 <div class="d-article">
-<p>(contact <a href="mailto:wiebke.ullmann@uni-potsdam.de">wiebke.ullmann[at]uni-potsdam.de</a> or <a href="mailto:kramer@izw-berlin.de">kramer[at]izw-berlin.de</a>)</p>
-<p><strong>Short Abstract:</strong>
-Die reduzierte Abundanz und Diversität von Insekten bedeutet eine Verringerung der Nahrungsverfügbarkeit für insektivore Räuber. Dadurch steigt die Konkurrenz zwischen Arten welche sich von ähnlichen Insekten ernähren. Dies kann zum Konkurrenzausschlussprinzip und somit zum Verlust von Biodiversität führen. Um die Auswirkungen des Insektensterbens auf das Konkurrenzverhalten insektivorer Tierarten zu bestimmen, wollen wir Rauch- und Mehlschwalben in insektenarmen Agrarlandschaften besendern und die Bewegungen der Tiere mit der lokalen Abundanz und Diversität der Insekten in Zusammenhang bringen. Da die fliegenden Insektivoren jedoch in unterschiedlichen Flughöhen ihre Beute jagen, müssen die Insekten in unterschiedlichen Luftschichten gefangen werden. Dazu wollen wir eine Drohne mit einem Insektenfangnetz ausstatten. Die insektenfangende Drohne soll dann in unterschiedlichen Luftschichten mit dem Netz fliegen und Insekten fangen. Mit dieser Methode wollen wir die Insektendiversität und –abundanz in den unterschiedlichen Luftschichten quantifizieren und diese mit den Flugpfaden der Schwalben korrelieren. Gleichzeitig soll ein Vergleich verschiedener Insektenfangmethoden unternommen werden: Befinden sich die gleichen Insekten im Netz der Drohne wie in der Malaisefalle?</p>
-<p><img src="img/thesis_offer_flying_insect.png" style="width:30.0%" /></p>
-<p><strong>Freilanduntersuchungen und Laborarbeit:</strong>
-- Erstellen einer Arbeitsroutine zum Abfliegen verschiedener Luftschichten mit Drohnen und Insektenfangnetzen
-- Durchführung des Insektenfangs an verschiedenen Orten im Untersuchungsgebiet
-- Hilfe bei der Ausstattung der Drohne mit dem Fangnetz
-- Insektenbestimmung und Quantifizierung, der mit den Drohnen und den Malaisefallen gefangenen Insekten (möglichst bis zur Familie)</p>
-<p><strong>Untersuchungsgebiet/Zeitraum:</strong>
-Die Masterarbeit beginnt im März 2023 mit den Vorbereitungen (Annerkennung als Vertiefungsmodul möglich). Im Mai 2023 und Juni/Juli 2023 werden für jeweils ca. eine Woche täglich Insektenfänge durchgeführt. Das Untersuchungsgebiet befindet sich in der Nordwestuckermark (ca. 15km westlich von Prenzlau). In der ZALF-Forschungsstation in Dedelow stehen Zimmer als Unterkunftsmöglichkeit bereit.</p>
-<p><strong>Voraussetzungen</strong>
-Führerschein Klasse B, selbständige Arbeit im Feld und im Team mit Masterstudenten, HiWis und Praktikanten, Drohnenführerschein von Vorteil</p>
-<p><strong>Kontakt:</strong>
-Wiebke Ullmann<br />
+<p>(contact
+<a href="mailto:wiebke.ullmann@uni-potsdam.de">wiebke.ullmann[at]uni-potsdam.de</a>
+or
+<a href="mailto:kramer@izw-berlin.de">kramer[at]izw-berlin.de</a>)</p>
+<p><strong>Short Abstract:</strong> Die reduzierte Abundanz und
+Diversität von Insekten bedeutet eine Verringerung der
+Nahrungsverfügbarkeit für insektivore Räuber. Dadurch steigt die
+Konkurrenz zwischen Arten welche sich von ähnlichen Insekten ernähren.
+Dies kann zum Konkurrenzausschlussprinzip und somit zum Verlust von
+Biodiversität führen. Um die Auswirkungen des Insektensterbens auf das
+Konkurrenzverhalten insektivorer Tierarten zu bestimmen, wollen wir
+Rauch- und Mehlschwalben in insektenarmen Agrarlandschaften besendern
+und die Bewegungen der Tiere mit der lokalen Abundanz und Diversität der
+Insekten in Zusammenhang bringen. Da die fliegenden Insektivoren jedoch
+in unterschiedlichen Flughöhen ihre Beute jagen, müssen die Insekten in
+unterschiedlichen Luftschichten gefangen werden. Dazu wollen wir eine
+Drohne mit einem Insektenfangnetz ausstatten. Die insektenfangende
+Drohne soll dann in unterschiedlichen Luftschichten mit dem Netz fliegen
+und Insekten fangen. Mit dieser Methode wollen wir die
+Insektendiversität und –abundanz in den unterschiedlichen Luftschichten
+quantifizieren und diese mit den Flugpfaden der Schwalben korrelieren.
+Gleichzeitig soll ein Vergleich verschiedener Insektenfangmethoden
+unternommen werden: Befinden sich die gleichen Insekten im Netz der
+Drohne wie in der Malaisefalle?</p>
+<p><img src="img/thesis_offer_flying_insect.png"
+style="width:30.0%" /></p>
+<p><strong>Freilanduntersuchungen und Laborarbeit:</strong> - Erstellen
+einer Arbeitsroutine zum Abfliegen verschiedener Luftschichten mit
+Drohnen und Insektenfangnetzen - Durchführung des Insektenfangs an
+verschiedenen Orten im Untersuchungsgebiet - Hilfe bei der Ausstattung
+der Drohne mit dem Fangnetz - Insektenbestimmung und Quantifizierung,
+der mit den Drohnen und den Malaisefallen gefangenen Insekten (möglichst
+bis zur Familie)</p>
+<p><strong>Untersuchungsgebiet/Zeitraum:</strong> Die Masterarbeit
+beginnt im März 2023 mit den Vorbereitungen (Annerkennung als
+Vertiefungsmodul möglich). Im Mai 2023 und Juni/Juli 2023 werden für
+jeweils ca. eine Woche täglich Insektenfänge durchgeführt. Das
+Untersuchungsgebiet befindet sich in der Nordwestuckermark (ca. 15km
+westlich von Prenzlau). In der ZALF-Forschungsstation in Dedelow stehen
+Zimmer als Unterkunftsmöglichkeit bereit.</p>
+<p><strong>Voraussetzungen</strong> Führerschein Klasse B, selbständige
+Arbeit im Feld und im Team mit Masterstudenten, HiWis und Praktikanten,
+Drohnenführerschein von Vorteil</p>
+<p><strong>Kontakt:</strong> Wiebke Ullmann<br />
 Universität Potsdam, Vegetationsökolgie &amp; Naturschutz<br />
 Am Mühlenberg 3, 14476 Potsdam<br />
 <a href="wiebke.ullmann@uni-potsdam.de">Ullmann</a><br />
 Tel.: 01715453029</p>
-<p>Prof. Dr. Stephanie Kramer-Schadt
-Leibniz-Institute für Zoo- und Wild-tierforschung
-Alfred-Kowalke-Str. 17, 10315 Berlin
-<a href="kramer@izw-berlin.de">Kramer-Schadt</a></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Prof. Dr. Stephanie Kramer-Schadt Leibniz-Institute für Zoo- und
+Wild-tierforschung Alfred-Kowalke-Str. 17, 10315 Berlin <a
+href="kramer@izw-berlin.de">Kramer-Schadt</a></p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
