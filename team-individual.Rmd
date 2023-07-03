@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r, layout="l-screen-inset"}
-knitr::include_graphics("img/team-ind-header.png")
+knitr::include_graphics("img/teams/team-ind/header.png")
 ```
 
 <div class='highlightbox'>
@@ -20,9 +20,10 @@ knitr::include_graphics("img/team-ind-header.png")
   </span>
 </div>
 
-![Figure: M. Gicquel (from [Gicquel et al. 2022 Ecosphere](https://doi.org/10.1002/ecs2.4012))](img/gicquel_2022.png)
+![Figure: M. Gicquel (from [Gicquel et al. 2022 Ecosphere](https://doi.org/10.1002/ecs2.4012))](img/teams/team-ind/gicquel_2022.png)
 
-**Why are spotted hyenas so interesting to study?**</br>
+**Why are spotted hyenas so interesting to study?**<br>
+
 This highly social mammal has several unusual traits: female social dominance, an erectile ‘pseudopenis’ in females (similar to that of the male penis), an exceptionally long lactation period and intense sibling competing. It is a keystone carnivore in the ecosystem, which both hunts and scavenges. All these aspects make hyenas an interesting model species to study social behaviour, sexual conflict, maternal effects, host-pathogen interactions, immunology or endocrinology. 
 Our study population experiences extreme and unpredictable fluctuations in prey abundance throughout the year, because of the migratory movements of its main prey (wildebeest, zebras and Thompson’s gazelles) and the low abundance of resident herbivores. We discovered that Serengeti hyenas solve this problem by commuting long distances to forage throughout the year. Individuals leave their clan territory and travel to areas up to 70 km to locate areas with large aggregations of migratory herbivores where they feed before returning to their clan territory. In the context of global change, the commuting system of Serengeti hyenas is particularly valuable to study how animals cope with a variable and uncertain resource. 
 Unfortunately, commuting hyenas in the Serengeti can get killed by wire snares set illegally by bushmeat hunters along some borders of the Park or become victims of road accidents. These anthropogenic threats are likely to intensify with the expected increases in local human populations and traffic volume associated with tourism. Changes in rainfall patterns driven by global warming may also have cascading effects on this large slow-reproducing mammal.
@@ -30,7 +31,7 @@ Unfortunately, commuting hyenas in the Serengeti can get killed by wire snares s
 <br>
 
 ```{r, layout="l-screen"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
+knitr::include_graphics("img/banner-mv-csf-top.png")
 ```
 
 # Running Projects
@@ -41,8 +42,8 @@ knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
 <div class='headerbox-secondary'><hbox-secondary>Ecological, social and maternal effects on individual performance, population dynamics and resilience</div>
 
 
-![](img/hyenas_metzger_1.png){width=32.5%}
-![](img/gicquel_2022_2.png){width=32.5%}
+![](img/teams/team-ind/hyenas_metzger_1.png){width=44%}
+![](img/teams/team-ind/gicquel_2022_2.png){width=55%}
 
 **Current team & collaborators: Morgane Gicquel, Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Viktoriia Radchuk (Dept. 6, IZW), Oliver Höner (Dept. 1, IZW), Adam Clark (University of Graz), Stephanie Kramer-Schadt (Dept. 6, IZW)**
 
@@ -64,8 +65,8 @@ We investigate how ecological and social conditions (e.g. rainfall, maternal ran
 
 <div class='headerbox-secondary'><hbox-secondary>Disease ecology: consequences of infections on allostatic load and fitness</div>
 
-![](img/hyenas_metzger_2.png){width=32.5%}
-![](img/ferreira_2021.png){width=32.5%}
+![](img/teams/team-ind/hyenas_metzger_2.png){width=60%}
+![](img/teams/team-ind/ferreira_2021.png){width=39%}
 
 **Current team & collaborators: Miguel Veiga, Susana Soares, Dagmar Thierer, Stephan Karl, Sonja Metzger, Joshua Dalijono (student helper), Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 3, IZW), Sarah Benhaiem, Jella Wauters (Dept. 4, IZW)**
 
@@ -88,8 +89,8 @@ We investigate the interactions between spotted hyenas and their pathogens, incl
 
 <div class='headerbox-secondary'><hbox-secondary>Human-wildlife conflicts and climate change in the Serengeti</div>
 
-![](img/hyenas_metzger_3.png){width=32.5%}
-![](img/gicquel_2022_3.png){width=32.5%}
+![](img/teams/team-ind/hyenas_metzger_3.png){width=59%}
+![](img/teams/team-ind/gicquel_2022_3.png){width=40%}
 
 **Current team & collaborators: Marwan Naciri (former MSc student), Montan Kalyahe, Morgane Gicquel, Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Aimara Planillo (Dept. 6, IZW), Sarah Cubaynes (CEFE, Montpellier)**
 
@@ -110,8 +111,8 @@ We are interested in assessing the effects of illegal bushmeat hunting (snaring)
 
 <div class='headerbox-secondary'><hbox-secondary>Epigenetic stability and plasticity of social environmental effects</div>
 
-![](img/hyenas_metzger_4.png){width=32.5%}
-![](img/guerrero_2021.png){width=32.5%}
+![](img/teams/team-ind/hyenas_metzger_4.png){width=51%}
+![](img/teams/team-ind/guerrero_2021.png){width=48%}
 
 **Current team & collaborators: Alexandra Weyrich (Dept. 2, IZW, PI), Colin Vullioud (Dept. 2, IZW), Jörns Fickel (Dept. 2, IZW), Lena Ruf (Dept. 2, IZW), Nick Mewes (Dept. 2, IZW), Sarah Benhaiem, Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 2, IZW), Emmanuel Heitlinger (Humboldt University), Jerzy Adamski (Helmholtz-Center Munich), Alexander Cecil (Helmholtz-Center Munich), Moshe Szyf (McGill University), Yoav Soen (Weizmann Institute of Science)**
 
@@ -125,26 +126,35 @@ We investigate if DNA methylation is a main mechanism through which an individua
    </ul>
 </small>
 
+<br>
+
+
+<div class='headerbox'><hbox>General Information</hbox></div>
+
+**Get our information leaflet about the Serengeti Spotted Hyaena Project!**
+
 ::: {.floatting}
-```{r out.width='20%', out.extra='style="float:right; padding:10px"'}
-knitr::include_graphics("./img/logo_serengeti_spotted_hyaena_project.png")
+```{r out.width='28%', out.extra='style="float:left; padding:2px"'}
+knitr::include_graphics("./img/teams/team-ind/logo_serengeti_spotted_hyaena_project.png")
 ```
 
+<br>
+&emsp;&rarr; [English version](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Serengeti_Hyaena_Project_Leaflet_English.pdf)
 
-[Information leaflet Serengeti Spotted Hyaena Project](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/img/Serengeti_Hyaena_Project_Leaflet_English.pdf)
+&emsp;&rarr; [Deutsche Version (in German)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Informationsbroschüre_Serengeti_Tüpfelhyänen-Projekt.pdf)
 
-[Informationsbroschüre Serengeti Tüpfelhyänen-Projekt  (auf Deutsch)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/img/Informationsbroschüre_Serengeti_Tüpfelhyänen-Projekt.pdf)
-
-[Information leaflet Serengeti Spotted Hyaena Project  (in Swahili)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/img/Serengeti Hyaena Project Leaflet_Swahili_small.pdf)
+&emsp;&rarr; [Toleo la Kiswahili (in Swahili)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Serengeti Hyaena Project Leaflet_Swahili_small.pdf)
 :::
 
-</br>
+<br>
 
-**Here is an overview of our research interests, methods and partners since the establishment of the project in 1987:**
+Here is an overview of our research interests, methods and partners since the establishment of the project in 1987:
 
-![](img/team-ind-research.png)
-![](img/team-ind-methods.png)
+![](img/teams/team-ind/research.png)
+![](img/teams/team-ind/methods.png)
+
+<br>
 
 ```{r, layout="l-screen"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
+knitr::include_graphics("img/banner-mv-csf-bottom.png")
 ```
