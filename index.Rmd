@@ -41,7 +41,7 @@ knitr::include_graphics("img/banner-mv-csf-top.png")
 ```
 
 ```{r, layout="l-page"}
-knitr::include_graphics("img/teams-map.png")
+knitr::include_graphics("img/teams/research-map.png")
 ```
 
 ```{r, layout="l-screen"}
