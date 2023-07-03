@@ -45,7 +45,7 @@ g2 <- ggplot(mpg, aes(x = class, y = hwy)) +
 
 g2
 ```
-```{r basic-ggplots-plots, echo=FALSE, layout="l-page"}
+```{r basic-ggplots-plots, echo=FALSE}
 library(patchwork)
 g1 + g2
 ```
