@@ -5,7 +5,6 @@ description: ""
 
 ### Feather analysis of swallows and starlings
 
-(contact <a href="mailto:grabow@izw-berlin.de">grabow[at]izw-berlin.de</a> or <a href="mailtolLandgraf@izw-berlin.de">landgraf[at]izw-berlin.de</a>)
 
 **General background**
 
@@ -17,7 +16,7 @@ The overarching project aims to understand how fitness consequences of parasites
 
 ### Assessing resource-mediated movement strategies of breeding starlings
 
-(contact <a href="mailto:grabow@izw-berlin.de">grabow[at]izw-berlin.de</a>)
+Contact: <a href="mailto:grabow@izw-berlin.de">grabow[at]izw-berlin.de</a>
 
 Reproduction and survival are key elements in the life-history of individuals and have significant impact on fitness of populations. Among other species, the Common Starling (Sturnus vulgaris) is declining in Europe mainly due to agricultural intensification and associated loss of biodiversity, which is decreased habitat quality in the face of foraging quality (Heldbjerg et al., 2017). During breeding season of birds, foraging movements of parents play a substantial role regarding reproduction success and survival of nestlings. 
 
@@ -26,7 +25,7 @@ Reproduction and survival are key elements in the life-history of individuals an
 
 ### Effects of beavers on amphibian communities along the anthropogenic gradient
 
-(contact <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>)
+Contact: <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>
 
 Due to their dam-building activity, beavers affect other species in diverse ways, ranging from positive to negative effects. Although effects of beaver activity on several taxa were studied, our understanding of their effects on amphibian assemblages is still incomplete. Especially little is understood how effects of beaver activity on amphibians may be moderated by the gradient of anthropogenic disturbance (represented by human population density). 
 
@@ -35,7 +34,7 @@ Due to their dam-building activity, beavers affect other species in diverse ways
 
 ### Quantifying demographic resilience across animals
 
-(contact <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>)
+Contact: <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>
 
 Assessing demographic resilience is crucial to assist the conservation of populations and species. A recently proposed method to quantify demographic resilience is based on using average population matrices over time to calculate a single demographic resilience metric. This neglects the fact that the resilience of a population may change over time and is driven by population responses to disturbances, which may also change over time. 
 
@@ -44,7 +43,7 @@ Assessing demographic resilience is crucial to assist the conservation of popula
 
 ### The chicken or the egg: Population cycles of rodents
 
-(contact <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>)
+Contact: <a href="mailto:radchuk@izw-berlin.de">radchuk[at]izw-berlin.de</a>
 
 Although population cycles received much research interest, we still poorly understand how the demographic structure of the population, i.e. sex ratio and age structure, are changing along the cycle. This is partly because in rodents, which became models for studying population cycles, the field data are typically collected at the coarse yearly resolution. 
 
@@ -53,16 +52,16 @@ Although population cycles received much research interest, we still poorly unde
 
 ### Does prey abundance and diversity drive offspring numbers and flight pathes of hirundines foraging in highly industrialized agricultural landscapes?
 
-(contact <a href="mailto:wiebke.ullmann@uni-potsdam.de">wiebke.ullmann[at]uni-potsdam.de</a> or <a href="mailto:kramer@izw-berlin.de">kramer[at]izw-berlin.de</a>)
+Contact: <a href="mailto:wiebke.ullmann@uni-potsdam.de">wiebke.ullmann[at]uni-potsdam.de</a> or <a href="mailto:kramer@izw-berlin.de">kramer[at]izw-berlin.de</a>
 
-Die reduzierte Abundanz und Diversität von Insekten bedeutet eine Verringerung der Nahrungsverfügbarkeit für insektivore Räuber. Dadurch steigt die Konkurrenz zwischen Arten welche sich von ähnlichen Insekten ernähren. Dies kann zum Konkurrenzausschlussprinzip und somit zum Verlust von Biodiversität führen. Um die Auswirkungen des Insektensterbens auf das Konkurrenzverhalten insektivorer Tierarten zu bestimmen, wollen wir Rauch- und Mehlschwalben in insektenarmen Agrarlandschaften besendern und die Bewegungen der Tiere sowie deren Reproduktionserfolg mit der lokalen Abundanz und Diversität der Insekten in Zusammenhang bringen. Dazu werden die Schwalben mit hochauf-lösenden Telemetriesendern ausgestattet und Insekten mit Malaisefallen im Untersuchungsgebiet gefangen. Um den Reproduktionserfolg verzeichnen zu können, müssen die Nester der besenderten Schwalben identifiziert werden. Die Nestidentifikation wird während des Schwalbenfangs mit Sichtbeobachtungen durchgeführt und später mit der Telemetrietechnick überprüft bzw. vervollständigt. Der Nachwuchs soll mit Kameraauf-zeichnungen und/oder mit einer Endoskopkamera gezählt werden. Die Insekten aus den Malaisefallen sollen möglichst bis zur Familie bestimmt werden und in Größenklassen unterteilt und gewogen werden. 
+Die reduzierte Abundanz und Diversität von Insekten bedeutet eine Verringerung der Nahrungsverfügbarkeit für insektivore Räuber. Dadurch steigt die Konkurrenz zwischen Arten welche sich von ähnlichen Insekten ernähren. Dies kann zum Konkurrenzausschlussprinzip und somit zum Verlust von Biodiversität führen. Um die Auswirkungen des Insektensterbens auf das Konkurrenzverhalten insektivorer Tierarten zu bestimmen, wollen wir Rauch- und Mehlschwalben in insektenarmen Agrarlandschaften besendern und die Bewegungen der Tiere sowie deren Reproduktionserfolg mit der lokalen Abundanz und Diversität der Insekten in Zusammenhang bringen. Dazu werden die Schwalben mit hochauflösenden Telemetriesendern ausgestattet und Insekten mit Malaisefallen im Untersuchungsgebiet gefangen. Um den Reproduktionserfolg verzeichnen zu können, müssen die Nester der besenderten Schwalben identifiziert werden. Die Nestidentifikation wird während des Schwalbenfangs mit Sichtbeobachtungen durchgeführt und später mit der Telemetrietechnick überprüft bzw. vervollständigt. Der Nachwuchs soll mit Kameraauf-zeichnungen und/oder mit einer Endoskopkamera gezählt werden. Die Insekten aus den Malaisefallen sollen möglichst bis zur Familie bestimmt werden und in Größenklassen unterteilt und gewogen werden. 
 
 &emsp;&rarr;&ensp;[read more](msc-bsc-theses-prey_abundance_kramer.html)
 
 
 ### Linking flying-insect abundance in various air layers and in several habitats with vertical and horizontal hirundine flight patterns in agricultural landscapes?
 
-(contact <a href="mailto:wiebke.ullmann@uni-potsdam.de">wiebke.ullmann[at]uni-potsdam.de</a> or <a href="mailto:kramer@izw-berlin.de">kramer[at]izw-berlin.de</a>)
+Contact: <a href="mailto:wiebke.ullmann@uni-potsdam.de">wiebke.ullmann[at]uni-potsdam.de</a> or <a href="mailto:kramer@izw-berlin.de">kramer[at]izw-berlin.de</a>
 
 Die reduzierte Abundanz und Diversität von Insekten bedeutet eine Verringerung der Nahrungsverfügbarkeit für insektivore Räuber. Dadurch steigt die Konkurrenz zwischen Arten welche sich von ähnlichen Insekten ernähren. Dies kann zum Konkurrenzausschlussprinzip und somit zum Verlust von Biodiversität führen. Um die Auswirkungen des Insektensterbens auf das Konkurrenzverhalten insektivorer Tierarten zu bestimmen, wollen wir Rauch- und Mehlschwalben in insektenarmen Agrarlandschaften besendern und die Bewegungen der Tiere mit der lokalen Abundanz und Diversität der Insekten in Zusammenhang bringen. Da die fliegenden Insektivoren jedoch in unterschiedlichen Flughöhen ihre Beute jagen, müssen die Insekten in unterschiedlichen Luftschichten gefangen werden. Dazu wollen wir eine Drohne mit einem Insektenfangnetz ausstatten. Die insektenfangende Drohne soll dann in unterschiedlichen Luftschichten mit dem Netz fliegen und Insekten fangen. Mit dieser Methode wollen wir die Insektendiversität und –abundanz in den unterschiedlichen Luftschichten quantifizieren und diese mit den Flugpfaden der Schwalben korrelieren. Gleichzeitig soll ein Vergleich verschiedener Insektenfangmethoden unternommen werden: Befinden sich die gleichen Insekten im Netz der Drohne wie in der Malaisefalle? 
 
@@ -71,8 +70,8 @@ Die reduzierte Abundanz und Diversität von Insekten bedeutet eine Verringerung 
 
 ### Does prey abundance and diversity drive offspring numbers, flight pathes and competition patterns of hirundines foraging in highly industrialized agricultural landscapes?
 
-(contact <a href="mailto:wiebke.ullmann@uni-potsdam.de">wiebke.ullmann[at]uni-potsdam.de</a> or <a href="mailto:kramer@izw-berlin.de">kramer[at]izw-berlin.de</a>)
+Contact: <a href="mailto:wiebke.ullmann@uni-potsdam.de">wiebke.ullmann[at]uni-potsdam.de</a> or <a href="mailto:kramer@izw-berlin.de">kramer[at]izw-berlin.de</a>
 
-Die reduzierte Abundanz und Diversität von Insekten bedeutet eine Verringerung der Nahrungsverfügbarkeit für insektivore Räuber. Dadurch steigt die Konkurrenz zwischen Arten welche sich von ähnlichen Insekten ernähren. Dies kann zum Konkurrenzausschlussprinzip und somit zum Verlust von Biodiversität führen. Um die Auswirkungen des Insektensterbens auf das Konkurrenzverhalten insektivorer Tierarten zu bestimmen, wollen wir Rauch- und Mehlschwalben in insektenarmen Agrarlandschaften besendern und die Bewegungen der Tiere sowie deren Reproduktionserfolg mit der lokalen Abundanz und Diversität der Insekten in Zusammenhang bringen. Dazu werden die Schwalben mit hochauf-lösenden Telemetriesendern ausgestattet und Insekten mit Malaisefallen im Untersuchungsgebiet gefangen. Um den Reproduktionserfolg verzeichnen zu können, müssen die Nester der besenderten Schwalben identifiziert werden. Die Nestidentifikation wird während des Schwalbenfangs mit Sichtbeobachtungen durchgeführt und später mit der Telemetrietechnick überprüft bzw. vervollständigt. Der Nachwuchs soll mit Kameraauf-zeichnungen und/oder mit einer Endoskopkamera gezählt werden. Die Insekten aus den Malaisefallen sollen möglichst bis zur Familie bestimmt werden und in Größenklassen unterteilt und gewogen werden.  
+Die reduzierte Abundanz und Diversität von Insekten bedeutet eine Verringerung der Nahrungsverfügbarkeit für insektivore Räuber. Dadurch steigt die Konkurrenz zwischen Arten welche sich von ähnlichen Insekten ernähren. Dies kann zum Konkurrenzausschlussprinzip und somit zum Verlust von Biodiversität führen. Um die Auswirkungen des Insektensterbens auf das Konkurrenzverhalten insektivorer Tierarten zu bestimmen, wollen wir Rauch- und Mehlschwalben in insektenarmen Agrarlandschaften besendern und die Bewegungen der Tiere sowie deren Reproduktionserfolg mit der lokalen Abundanz und Diversität der Insekten in Zusammenhang bringen. Dazu werden die Schwalben mit hochauflösenden Telemetriesendern ausgestattet und Insekten mit Malaisefallen im Untersuchungsgebiet gefangen. Um den Reproduktionserfolg verzeichnen zu können, müssen die Nester der besenderten Schwalben identifiziert werden. Die Nestidentifikation wird während des Schwalbenfangs mit Sichtbeobachtungen durchgeführt und später mit der Telemetrietechnick überprüft bzw. vervollständigt. Der Nachwuchs soll mit Kameraauf-zeichnungen und/oder mit einer Endoskopkamera gezählt werden. Die Insekten aus den Malaisefallen sollen möglichst bis zur Familie bestimmt werden und in Größenklassen unterteilt und gewogen werden.  
 
 &emsp;&rarr;&ensp;[read more](msc-bsc-theses-prey_abundance_diversity_kramer.html)
