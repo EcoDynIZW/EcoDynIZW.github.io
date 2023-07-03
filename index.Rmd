@@ -37,7 +37,7 @@ We investigate how fitness consequences of processes acting at the individual le
 </ul>
 
 ```{r, layout="l-screen"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
+knitr::include_graphics("img/banner-mv-csf-top.png")
 ```
 
 ```{r, layout="l-page"}
@@ -45,7 +45,7 @@ knitr::include_graphics("img/teams-map.png")
 ```
 
 ```{r, layout="l-screen"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
+knitr::include_graphics("img/banner-mv-csf-bottom.png")
 ```
 
 ## Contact {.appendix}

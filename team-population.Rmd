@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r, layout="l-screen-inset"}
-knitr::include_graphics("img/team-pop-header.png")
+knitr::include_graphics("img/teams/team-pop/header.png")
 ```
 
 <div class='highlightbox'>
@@ -30,7 +30,7 @@ knitr::include_graphics("img/team-pop-header.png")
 <br>
 
 ```{r, layout="l-screen"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
+knitr::include_graphics("img/banner-mv-csf-top.png")
 ```
 
 # Running Projects
@@ -41,7 +41,7 @@ knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
 
 <div class='headerbox-secondary'><hbox-secondary>Stability under global change and across levels of organization</headerbox-secondary></div>
 
-![](img/team-pop-stability.png)
+![](img/teams/team-pop/stability.png)
 
 **Dr. Cédric Scherer, Thibault Fronville**
 
@@ -61,7 +61,7 @@ To understand how populations and communities react to global change we study ho
 
 <div class='headerbox-secondary'><hbox-secondary>Wildlife disease dynamics: Linking host and pathogen traits</headerbox-secondary></div>
 
-![](img/team-pop-disease.png)
+![](img/teams/team-pop/disease.png)
 
 **Dr. Cédric Scherer, Tobias Kürschner, Marius Grabow**
 
@@ -89,7 +89,7 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
  
 <div class='headerbox-secondary'><hbox-secondary>Urban wildlife ecology: How do animals respond to novel environments?</hbox-secondary></div>
 
-![](img/team-pop-urban.png)
+![](img/teams/team-pop/urban.png)
 
 **Dr. Aimara Planillo, Dr. Julie Louvrier, Sinah Drenske, Simon Moesch**
 
@@ -115,7 +115,7 @@ Urbanisation poses risks and opportunities for wildlife. We investigate how spec
 
 <div class='headerbox-secondary'><hbox-secondary>Wildlife distributions, population dynamics, and conservation</hbox-secondary></div>
 
-![](img/team-pop-wildlife.png)
+![](img/teams/team-pop/wildlife.png)
 
 **Dr. Julie Louvrier, Dr. Aimara Planillo, Dr. Cédric Scherer, Dr. Joe Premier, Ana Patricia Calderon, Eva Sánchez Arribas**
 
@@ -136,5 +136,5 @@ Wildlife faces big challenges persisting in human-dominated landscapes. We model
 </small>
 
 ```{r, layout="l-screen"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
+knitr::include_graphics("img/banner-mv-csf-bottom.png")
 ```

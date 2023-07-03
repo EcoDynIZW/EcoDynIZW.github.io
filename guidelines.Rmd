@@ -28,7 +28,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <br><br>
 
 ```{r, layout="l-screen", echo=FALSE}
-knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
+knitr::include_graphics("img/banner-mv-csf-top.png")
 ```
 
 <br>

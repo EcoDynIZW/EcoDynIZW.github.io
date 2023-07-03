@@ -9,7 +9,7 @@ description: ""
   Die reduzierte Abundanz und Diversität von Insekten bedeutet eine Verringerung der Nahrungsverfügbarkeit für insektivore Räuber. Dadurch steigt die Konkurrenz zwischen Arten welche sich von ähnlichen Insekten ernähren. Dies kann zum Konkurrenzausschlussprinzip und somit zum Verlust von Biodiversität führen. Um die Auswirkungen des Insektensterbens auf das Konkurrenzverhalten insektivorer Tierarten zu bestimmen, wollen wir Rauch- und Mehlschwalben in insektenarmen Agrarlandschaften besendern und die Bewegungen der Tiere sowie deren Reproduktionserfolg mit der lokalen Abundanz und Diversität der Insekten in Zusammenhang bringen. Dazu werden die Schwalben mit hochauf-lösenden Telemetriesendern ausgestattet und Insekten mit Malaisefallen und Drohnen im Untersuchungsgebiet gefangen. 
 In den Gebieten in denen die Insektivoren nach Nahrung suchen werden 18 Malaisefallen aufgestellt und gleichzeitig unterschiedliche Luftschichten mit insektenfangenden Drohnen abgeflogen. So soll die Nahrungsverfügbarkeit im Unterschungsgebiete überprüft werden. Für die Mitarbeit im Drohnenprojekt, der Betreuung der Insektenfallen vor Ort und eventuell der Bestimmung der Insekten im Labor benötigen wir Hilfe und vergeben Praktikanten-Stellen.
 
-img/thesis_offer_prey_abundance_diversity.png){width=30%}
+![](img/theses/thesis_offer_prey_abundance_diversity.png){width=30%}
 
 **Freilanduntersuchungen und eventuelle Laborarbeit:**
   -	Hilfe bei der Durchführung des Insektenfangs mit Drohnen und Malaisefallen im Untersuchungsgebiet

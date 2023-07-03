@@ -2,7 +2,7 @@
 title: "Simulate Neutral Landscape Models"
 description: |
   Learn how to use the {NLMR} R package to simulate neutral landscape models (NLMs), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models.
-preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-nlmr.png
+preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-nlmr.png
 categories:
   - tutorial
   - rstats

@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r, layout="l-screen-inset"}
-knitr::include_graphics("img/team-div-header.png")
+knitr::include_graphics("img/teams/team-div/header.png")
 ```
 
 <div class='highlightbox'>
@@ -28,7 +28,7 @@ knitr::include_graphics("img/team-div-header.png")
 <br>
 
 ```{r, layout="l-screen"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
+knitr::include_graphics("img/banner-mv-csf-top.png")
 ```
 
 ## Running Projects
@@ -87,7 +87,7 @@ Financial support: Federal Ministry of Education and Research (BMBF), Point Defi
 
 <div class='headerbox-secondary'><hbox-secondary>Hierarchical statistical modeling for wildlife research.</div>
 
-![](img/team-biodiv-concepts.png){width=70%}
+![](img/teams/team-div/concepts.png)
 
 **People involved: Ana Sanz, Jürgen Niedballa**
 
@@ -110,7 +110,7 @@ Wildlife survey data are fraught with challenges: often sparse, spatially and/or
 <div class='headerbox-secondary'><hbox-secondary>Developing standardized and reliable survey tools to monitor mammals in tropical rainforests.</div>
 
 
-![](img/team-biodiv-monitoring.png)
+![](img/teams/team-div/monitoring.png)
 
 **People involved: Jan Axtner, Roshan Guharajan, Thanh Van Nguyen, Jürgen Niedballa, Rahel Sollmann, Badru Mugerwa, Andrew Tilker, Seth T Wong, Andreas Wilting**
 
@@ -136,5 +136,5 @@ ScreenForBio user guide
 </small>
 
 ```{r, layout="l-screen"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
+knitr::include_graphics("img/banner-mv-csf-bottom.png")
 ```

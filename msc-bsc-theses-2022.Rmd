@@ -5,12 +5,12 @@ description: ""
 
 **2022**
 
-![](img/bee_bsc-theses.png){width=32.5%}
-![](img/leopard_msc-theses.png){width=32.5%}
-![](img/greycrownedcrane_msc-theses.png){width=32.5%}
-![](img/ibis-bsc-theses.png){width=32.5%}
-![](img/vulpes_vulpes.png){width=32.5%}
-![](img/squirrel.png){width=32.5%}
+![](img/theses/bee_bsc-theses.png){width=32.5%}
+![](img/theses/leopard_msc-theses.png){width=32.5%}
+![](img/theses/greycrownedcrane_msc-theses.png){width=32.5%}
+![](img/theses/ibis-bsc-theses.png){width=32.5%}
+![](img/theses/vulpes_vulpes.png){width=32.5%}
+![](img/theses/squirrel.png){width=32.5%}
 
 * Pilot study for the use of tick surveys and blood meal analysis to monitor wildlife populations and disease risk in the Southern Black Forest. **Sarah Evelyn Hollis.** <span class='desaturated'>18.11.2022. MSc. Albert-Ludwigs-Universität Freiburg , Faculty of Environmental and Natural Sciences. Supervision: Prof. Dr. Gernot Segelbacher (ALUF), S Kramer-Schadt.</span>
 

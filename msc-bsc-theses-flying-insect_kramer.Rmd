@@ -8,7 +8,7 @@ description: ""
 **Short Abstract:** 
 Die reduzierte Abundanz und Diversität von Insekten bedeutet eine Verringerung der Nahrungsverfügbarkeit für insektivore Räuber. Dadurch steigt die Konkurrenz zwischen Arten welche sich von ähnlichen Insekten ernähren. Dies kann zum Konkurrenzausschlussprinzip und somit zum Verlust von Biodiversität führen. Um die Auswirkungen des Insektensterbens auf das Konkurrenzverhalten insektivorer Tierarten zu bestimmen, wollen wir Rauch- und Mehlschwalben in insektenarmen Agrarlandschaften besendern und die Bewegungen der Tiere mit der lokalen Abundanz und Diversität der Insekten in Zusammenhang bringen. Da die fliegenden Insektivoren jedoch in unterschiedlichen Flughöhen ihre Beute jagen, müssen die Insekten in unterschiedlichen Luftschichten gefangen werden. Dazu wollen wir eine Drohne mit einem Insektenfangnetz ausstatten. Die insektenfangende Drohne soll dann in unterschiedlichen Luftschichten mit dem Netz fliegen und Insekten fangen. Mit dieser Methode wollen wir die Insektendiversität und –abundanz in den unterschiedlichen Luftschichten quantifizieren und diese mit den Flugpfaden der Schwalben korrelieren. Gleichzeitig soll ein Vergleich verschiedener Insektenfangmethoden unternommen werden: Befinden sich die gleichen Insekten im Netz der Drohne wie in der Malaisefalle?
 
-![](./img/thesis_offer_flying_insect.png){width=30%}
+![](./img/theses/thesis_offer_flying_insect.png){width=30%}
 
 **Freilanduntersuchungen und Laborarbeit:**
 -	Erstellen einer Arbeitsroutine zum Abfliegen verschiedener Luftschichten mit Drohnen und Insektenfangnetzen

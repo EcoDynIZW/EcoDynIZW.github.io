@@ -8,7 +8,7 @@ description: ""
 **Short Abstract:** 
 Die reduzierte Abundanz und Diversität von Insekten bedeutet eine Verringerung der Nahrungsverfügbarkeit für insektivore Räuber. Dadurch steigt die Konkurrenz zwischen Arten welche sich von ähnlichen Insekten ernähren. Dies kann zum Konkurrenzausschlussprinzip und somit zum Verlust von Biodiversität führen. Um die Auswirkungen des Insektensterbens auf das Konkurrenzverhalten insektivorer Tierarten zu bestimmen, wollen wir Rauch- und Mehlschwalben in insektenarmen Agrarlandschaften besendern und die Bewegungen der Tiere sowie deren Reproduktionserfolg mit der lokalen Abundanz und Diversität der Insekten in Zusammenhang bringen. Dazu werden die Schwalben mit hochauf-lösenden Telemetriesendern ausgestattet und Insekten mit Malaisefallen im Untersuchungsgebiet gefangen. Um den Reproduktionserfolg verzeichnen zu können, müssen die Nester der besenderten Schwalben identifiziert werden. Die Nestidentifikation wird während des Schwalbenfangs mit Sichtbeobachtungen durchgeführt und später mit der Telemetrietechnick überprüft bzw. vervollständigt. Der Nachwuchs soll mit Kameraauf-zeichnungen und/oder mit einer Endoskopkamera gezählt werden. Die Insekten aus den Malaisefallen sollen möglichst bis zur Familie bestimmt werden und in Größenklassen unterteilt und gewogen werden. 
 
-![](./img/thesis_offer_prey_abundance.png){width=30%}
+![](./img/theses/thesis_offer_prey_abundance.png){width=30%}
 
 **Freilanduntersuchungen und Laborarbeit:**
 -	Erstellen einer Arbeitsroutine zur Nestidentifikation und zum Zählen des Nachwuches
