@@ -13,9 +13,9 @@ categories:
   - workflow
 author:
   - name: Cedric Scherer
-    url: htttps://cedricscherer.com
+    url: https://cedricscherer.com
     affiliation: IZW Berlin
-    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+    affiliation_url: https://ecodynizw.github.io/
 date: 2021-03-18
 output:
   distill::distill_article:

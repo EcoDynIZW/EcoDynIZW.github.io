@@ -9,7 +9,7 @@ author:
   - name: Moritz Wenzler-Meya
 
     affiliation: IZW Berlin
-    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+    affiliation_url: https://ecodynizw.github.io/
 date: '2022-12-13'
 output:
   distill::distill_article:

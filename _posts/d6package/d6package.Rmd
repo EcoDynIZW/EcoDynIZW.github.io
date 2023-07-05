@@ -12,7 +12,7 @@ author:
   - name: Cedric Scherer
     url: https://cedricscherer.com
     affiliation: IZW Berlin
-    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+    affiliation_url: https://ecodynizw.github.io/
 date: 2020-12-09
 output:
   distill::distill_article:

@@ -11,7 +11,7 @@ categories:
 author:
   - name: Tobias Kürschner
     affiliation: IZW Berlin
-    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+    affiliation_url: https://ecodynizw.github.io/
 date: 2022-11-14
 output:
   distill::distill_article:
