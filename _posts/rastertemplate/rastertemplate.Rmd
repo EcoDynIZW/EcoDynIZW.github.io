@@ -21,35 +21,48 @@ draft: false
 knitr::opts_chunk$set(echo = TRUE) ## keep this, add other settings if needed
 ```
 
-# load packages
+## Setup {#setup}
 
 ```{r}
-library(terra)
+#remotes::install_github("EcoDynIZW/d6geodata")
 library(d6geodata)
+library(terra)
+library(ggplot2)
+library(sf)
+library(patchwork)
 ```
 
 
-use `{d6geodata}` package
+## get template {#template}
 
-```{r install}
+```{r template}
 temp <- d6geodata::temp_ras(1000)
 values(temp) <- 1
 
-plot(temp)
+p1 <- d6geodata::plot_qualitative_map(temp)
+p1
 ```
 
-make a multiple/expand for eurogrid
+## expand raster {#expand}
 
-```{r, preview=FALSE}
-ncell(terra::extend(x = temp, 
-                    y = 100,
-                    fill = 2))
-
-
-temp_exp <- terra::extend(x = temp, 
-                    y = 100,
+```{r}
+temp_exp_all <- terra::extend(x = temp, 
+                    y = 10,
                     fill = 2)
 
+p2 <- d6geodata::plot_qualitative_map(temp_exp_all)
+
+temp_exp_2_sides <- terra::extend(x = temp, 
+                    y = c(10, 0),
+                    fill = 2,
+                    )
+p3 <- d6geodata::plot_qualitative_map(temp_exp_2_sides)
+
+temp_exp_1_sides <- terra::extend(x = temp, 
+                    y = c(10, 0, 0, 0),
+                    fill = 2,
+                    )
+p3 <- d6geodata::plot_qualitative_map(temp_exp_2_sides)
 ```
 
 rasterize
