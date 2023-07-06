@@ -53,11 +53,10 @@ For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp
 
 * van Moorsel SJ, Thébault E, **Radchuk V**, Narwani A, Montoya JM, Dakos V, Holmes M, De Laender F, Pennekamp F (2023): Predicting effects of multiple interacting global change drivers across trophic levels. GLOB CHANG BIOL, **29**, 1223– 1238. doi:<span>[10.1111/gcb.16548](https://doi.org/10.1111/gcb.16548)</span>
 
-<!--
-<div class='headerbox'><hbox>Preprints</hbox></div><br>
+
+<!--<div class='headerbox'><hbox>Preprints</hbox></div><br>-->
 
 
 
-<div class='headerbox'><hbox>Book Chapters & Reports</hbox></div><br>
--->
+<!--<div class='headerbox'><hbox>Book Chapters & Reports</hbox></div><br>-->
 

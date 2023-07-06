@@ -89,8 +89,8 @@ We investigate the interactions between spotted hyenas and their pathogens, incl
 
 <div class='headerbox-secondary'><hbox-secondary>Human-wildlife conflicts and climate change in the Serengeti</div>
 
-![](img/teams/team-ind/hyenas_metzger_3.png){width=59%}
-![](img/teams/team-ind/gicquel_2022_3.png){width=40%}
+![](img/teams/team-ind/hyenas_metzger_3.png){width=60%}
+![](img/teams/team-ind/gicquel_2022_3.png){width=39%}
 
 **Current team & collaborators: Marwan Naciri (former MSc student), Montan Kalyahe, Morgane Gicquel, Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Aimara Planillo (Dept. 6, IZW), Sarah Cubaynes (CEFE, Montpellier)**
 
