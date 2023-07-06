@@ -27,10 +27,10 @@ The NLRX package provides tools to setup and execute NetLogo simulations from R 
 
 ## Libraries and Folders
 
-```{r Sources, results='hide', message=FALSE, warning=FALSE}
+```{r sources, results='hide', message=FALSE, warning=FALSE}
 # libraries
 
-for (pckg in c('tidyverse', 'viridis', 'scico', 'nlrx'))
+for (pckg in c('dplyr', 'ggplot2', 'scico', 'nlrx'))
 {
   if (!require(pckg, character.only = TRUE))
     install.packages(pckg, dependencies = TRUE)
@@ -49,7 +49,7 @@ currentDate <- gsub("-", "", Sys.Date())
 
 ## Setting Up the Library to Work with Your NetLogo Model
 
-```{r path setup, eval=FALSE}
+```{r path-setup, eval=FALSE}
 #NetLogo path
 netlogoPath <- file.path("C:/Program Files/NetLogo 6.2.2/")
 
@@ -65,7 +65,7 @@ Sys.setenv(JAVA_HOME="C:/Program Files/Java/jre1.8.0_331")
 
 Configure the NetLogo object:
 
-```{r configure NetLogo object, eval=FALSE}
+```{r configure-NetLogo-object, eval=FALSE}
 nl <- nlrx::nl(
   nlversion = "6.2.2",
   nlpath = netlogoPath,
@@ -76,7 +76,7 @@ nl <- nlrx::nl(
 
 ## Creating an Experiment
 
-```{r setup experiment, eval=FALSE}
+```{r setup-experiment, eval=FALSE}
 nl@experiment <- nlrx::experiment(
   expname = 'Exp_1_1',
   # name
@@ -131,7 +131,7 @@ A bit counter intuitive but `nseeds` used in the `simdesign` is actually the num
 However, if your model handles seeds internally such as setting a random seed every time the model is setup, repetitions could be used instead.
 
 
-```{r create simulation, eval=FALSE}
+```{r create-simulation, eval=FALSE}
 nl@simdesign <- nlrx::simdesign_ff(nl=nl, nseeds=1) 
 
 print(nl)
@@ -143,7 +143,7 @@ nlrx::eval_variables_constants(nl)
 
 Since the simulations are executed in a nested loop where the outer loop iterates over the random seeds of the simdesign, and the inner loop iterates over the rows of the  parameter matrix. These loops can be executed in parallel by setting up an appropriate plan from the future package which is built into nlrx. 
 
-```{r run experiment, eval=FALSE}
+```{r run-experiment, eval=FALSE}
 #plan(multisession, workers = 12) # one worker represents one CPU thread
 
 results<- nlrx::run_nl_all(nl = nl)
@@ -151,7 +151,7 @@ results<- nlrx::run_nl_all(nl = nl)
 
 to speed up this this tutorial we load a pre-generated simulation result 
 
-```{r}
+```{r glimpse-results}
 results <- readr::read_rds("example1.rds")
 
 dplyr::glimpse(results)
@@ -162,7 +162,7 @@ dplyr::glimpse(results)
 
 There are several ways to use / analyze the output directly via nlrx (although I have not used them personally) detailed information can be found here: https://cran.r-project.org/web/packages/nlrx/nlrx.pdf
 
-```{r nlrx output handeling, eval=FALSE}
+```{r nlrx-output-handeling, eval=FALSE}
 nlrx::setsim(nl, "simoutput") <- results # attaching simpout to our NetLogo object
 
 #write_simoutput(nl) # having nlrx write the output into a file only works without patch or turtle metrics
@@ -189,12 +189,11 @@ raw2 <-
 
 In case of very large datasets we want to separate the patch (or turtle) specific data from the global data to speed up the analysis of the global data
 
-```{r data seperation}
+```{r data-seperation}
 globalData <- raw2 %>% dplyr::select(!metrics.patches)#, !metrics.turtles)
 ```
 
 and summarise like any other dataset
-
 
 ```{r summary}
 sum_1 <-
@@ -219,7 +218,7 @@ sum_1 <-
 
 We use the global data to get an overview of the simulated SIR dynamics:
 
-```{r global plot, fig.height=5}
+```{r global-plot, fig.height=5}
 ggplot(sum_1) +
   geom_line(aes(x = t, y = value, colour = EpiStat), size = 1) +
   facet_grid(infectiousness ~ recoveryChance, labeller = label_both) +
@@ -234,7 +233,7 @@ ggplot(sum_1) +
 
 ... and use the patch specific data to create a heatmap to visualize where most infections have happened in one specific scenario:
 
-```{r spatial plots}
+```{r spatial-plots, preview=TRUE}
 hmpRaw <- raw2 %>%
   dplyr::filter(infectiousness == 75 & recoveryChance == 75) %>%
   dplyr::select(metrics.patches, t) %>%
