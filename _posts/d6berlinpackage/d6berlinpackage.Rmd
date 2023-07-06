@@ -2,7 +2,7 @@
 title: "Spatial Datasets and Template Maps for Berlin"
 description: |
   Learn how to use the {d6berlin} R package that provides spatial data sets and template maps for Berlin with carefully chosen and aesthetically pleasing defaults. The template maps include Berlin districts, green spaces, imperviousness levels, water bodies, district borders, roads, metro stations, and railways. Templates maps are created with a {ggplot2} wrapper function with the utility to add an inset globe with a locator pin, a scalebar, and a caption stating the data sources.
-preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-d6berlin.png 
+preview: ./img/wiki/hex-d6berlin.png 
 categories:
   - tutorial
   - rstats

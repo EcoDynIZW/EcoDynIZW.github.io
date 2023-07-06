@@ -2,7 +2,7 @@
 title: "Isorix"
 description: |
   IsoriX is an R package aiming at building isoscapes using mixed models and inferring the geographic origin of organisms based on their isotopic ratios
-preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-isorix.png 
+preview: ./img/wiki/hex-isorix.png 
 author:
   - name: Alexandre Courtiol
     affiliation: IZW Berlin
