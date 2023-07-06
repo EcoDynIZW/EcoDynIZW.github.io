@@ -2,7 +2,7 @@
 title: "Spatial Data Sources in R"
 description: |
   Learn how to use a suite of R packages to download various spatial data sources. This guide illustrates how to download data of countries, physical objects, and cultural properties as vector or raster objects that can be assessed from within R.
-preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/preview-r-spatial-data.png
+preview: ./img/wiki/preview-r-spatial-data.png
 categories:
   - tutorial
   - rstats
