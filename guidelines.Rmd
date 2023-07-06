@@ -24,6 +24,9 @@ knitr::opts_chunk$set(echo = TRUE)
 * [Manuscript Submissions/Revisions](#manuscripts)
 * [GitHub repository](#repository)
 * [Appendices](#appendices)
+  * [Folder Structure for Project Folders](#appendixA)
+  * [Detailed Spatial Data Information](#appendixB)
+  * [What Nature Says…](#appendixC)
 
 <br><br>
 
@@ -346,7 +349,11 @@ additional files looks like this:
 **Why you need an agenda for meetings with your principal investigator**
 
 A list of talking points can help with navigating potentially difficult topics and sticky negotiations. 
-As PhD students, we often find ourselves discussing our interactions with our principal investigators (PIs) and swapping advice for improving our mentoring meetings. We have found three practices to be consistently helpful: asking our PIs about all aspects of their job; preparing an agenda for each meeting; and negotiating new experiments without explicitly saying ‘no’.
+As PhD students, we often find ourselves discussing our interactions with our principal investigators (PIs) and swapping advice for improving our mentoring meetings. We have found three practices to be consistently helpful: 
+
+* asking our PIs about all aspects of their job;
+* preparing an agenda for each meeting;
+* negotiating new experiments without explicitly saying ‘no’.
 
 *Read the full text: https://doi.org/10.1038/d41586-018-06619-3*
 
