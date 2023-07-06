@@ -12,20 +12,11 @@ For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp
 
 ## 2023
 
-<div class='headerbox'><hbox>In Press</hbox></div><br>
-
-* Chakravarty R, **Radchuk V**, Managave S, Voigt CC (2023): Increasing species richness along elevational gradients is associated with niche packing in bat assemblages. J ANIM ECOL. Accepted Author Manuscript. doi:<span>[10.1111/1365-2656.13897](https://doi.org/10.1111/1365-2656.13897)</span>
-
-* Nguyen AT, **Tilker A**, Le Khac Q, Le M (2023): New records of the Annamite striped rabbit in Ngoc Linh, Quang Nam and Kon Tum provinces, Vietnam. MAMMALIA, in press. doi:<span>[10.1515/mammalia-2023-0005](https://doi.org/10.1515/mammalia-2023-0005)</span>
-
-* Reusch R, Paul AA, Fritze M, **Kramer-Schadt S**, Voigt C (2023): Wind energy production in forests conflicts with tree-roosting bats. CURR BIOL. doi:<span>[10.1016/j.cub.2022.12.050](https://doi.org/10.1016/j.cub.2022.12.050)</span>
-
-* Schmitz OJ, Sylvén M, Atwood TB, Bakker ES, Berzaghi F, Brodie JF, Cromsigt JPGM, Davies AB, Leroux SJ, Schepers FJ, Smith FA, stark S, Svenning J-C, **Tilker A**, Ylänne H (2023): Trophic rewilding can expand natural climate solutions. NAT CLIM CHANG. in press. doi:<span>[10.1038/s41558-023-01631-6](doi:10.1038/s41558-023-01631-6)</span>
-
-
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
 * Bonenfant C, Rutschmann A, Burton J, Boyles R, García F, **Tilker A**, Schütz E (2023): Cast away on Mindoro island: lack of space limits population growth of the endangered tamaraw. ANIM CONSERV. doi:<span>[10.1111/acv.12842](https://doi.org/10.1111/acv.12842)</span>
+
+* Chakravarty R, **Radchuk V**, Managave S, Voigt CC (2023): Increasing species richness along elevational gradients is associated with niche packing in bat assemblages. J ANIM ECOL, **92**, 863– 874. doi:<span>[10.1111/1365-2656.13897](https://doi.org/10.1111/1365-2656.13897)</span>
 
 * Danabalan R, **Planillo A**, Butschkau S, Deeg S, Pierre G, Thion C, Calvignac-Spencer S, **Kramer-Schadt S**, Mazzoni C (2023): Comparison of mosquito and fly derived DNA as a tool for sampling vertebrate biodiversity in suburban forests in Berlin, Germany. ENVIRON DNA, **00**, 1-12. doi:<span>[10.1002/edn3.398](https://doi.org/10.1002/edn3.398)</span> 
 
@@ -35,15 +26,21 @@ For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp
 
 * Naciri M, **Planillo A**, **Gicquel M**, **East ML**, Hofer H, **Metzger S**, **Benhaiem S** (2023): Three decades of wildlife-vehicle collisions in a protected area: main roads and long-distance commuting trips to migratory prey increase spotted hyena roadkills in the Serengeti. BIOL CONSERV, **279**, 109950. doi:<span>[10.1016/j.biocon.2023.109950](https://doi.org/10.1016/j.biocon.2023.109950)</span>
 
+* Nguyen AT, **Tilker A**, Le Khac Q, Le M (2023): New records of the Annamite striped rabbit in Ngoc Linh, Quang Nam and Kon Tum provinces, Vietnam. MAMMALIA. doi:<span>[10.1515/mammalia-2023-0005](https://doi.org/10.1515/mammalia-2023-0005)</span>
+
 * Oeser J, Heurich M, **Kramer-Schadt S** et al. (2023): Prerequisites for coexistence: human pressure and refuge habitat availability shape continental-scale habitat use patterns of a large carnivore. LANDSC ECOL. doi:<span>[10.1007/s10980-023-01645-7](https://doi.org/10.1007/s10980-023-01645-7)</span> 
 
 * **Planillo A**, Viñuela J, Malo JE, García JT, Acebes P, Santamaría AE, Domínguez JC, Olea PP (2023): Addressing phase of population cycle and spatial scale is key to understand vole abundance in crop field margins: Implications for managing a cyclic pest species. AGRIC ECOSYST ENVIRON, **345**, 108306. doi:<span>[10.1016/j.agee.2022.108306](https://doi.org/10.1016/j.agee.2022.108306)</span>
 
 * Palmero S, **Premier J**, **Kramer-Schadt S**, Monterroso P and Heurich M (2023): Sampling variables and their thresholds for the precise estimation of wild felid population density with camera traps and spatial capture–recapture methods. MAM REV. doi:<span>[10.1111/mam.12320](https://doi.org/10.1111/mam.12320)</span> 
 
+* Reusch R, Paul AA, Fritze M, **Kramer-Schadt S**, Voigt C (2023): Wind energy production in forests conflicts with tree-roosting bats. CURR BIOL, **33**(4), doi:<span>[10.1016/j.cub.2022.12.050](https://doi.org/10.1016/j.cub.2022.12.050)</span>
+
 * Rocha DG and **Sollmann R** (2023): Habitat use patterns suggest that climate-driven vegetation changes will negatively impact mammal communities in the Amazon. ANIM CONSERV. doi:<span>[10.1111/acv.12853](https://doi.org/10.1111/acv.12853)</span>
 
 * Rostro-García S, Kamler JF, **Sollmann R**, Balme G, Augustine BC, Kéry M, Crouthers R, Gray TNE, Groenenberg M, Prum S, Macdonald DW (2023): Population dynamics of the last leopard population of eastern Indochina in the context of improved law enforcement. BIOL CONSERV, **283**. doi:<span>[10.1016/j.biocon.2023.110080](https://doi.org/10.1016/j.biocon.2023.110080)</span>
+
+* Schmitz OJ, Sylvén M, Atwood TB, Bakker ES, Berzaghi F, Brodie JF, Cromsigt JPGM, Davies AB, Leroux SJ, Schepers FJ, Smith FA, stark S, Svenning J-C, **Tilker A**, Ylänne H (2023): Trophic rewilding can expand natural climate solutions. NAT CLIM CHANG, **13**, 324–333. doi:<span>[10.1038/s41558-023-01631-6](doi:10.1038/s41558-023-01631-6)</span>
 
 * Semper-Pascual A, Sheil D, Beaudrot L, ... , **Mugerwa B**, et al. (2023): Occurrence dynamics of mammals in protected tropical forests respond to human presence and activities. NAT ECOL EVOL. doi:<span>[10.1038/s41559-023-02060-6](https://doi.org/10.1038/s41559-023-02060-6)</span>
 
