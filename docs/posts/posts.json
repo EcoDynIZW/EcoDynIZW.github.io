@@ -1,5 +1,25 @@
 [
   {
+    "path": "posts/rastertemplate/",
+    "title": "Raster Template",
+    "description": "Learn how to use a raster template from the `{d6geodata}` package und how to multiple/expand it. In the end we will rasterize a shapefile with the raster have a look into different extraction functions.",
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2023-06-28",
+    "categories": [
+      "Tutorial",
+      "Spatial"
+    ],
+    "contents": "\r\n\r\nContents\r\nSetup\r\nget template\r\nexpand raster\r\n\r\nSetup\r\n\r\n\r\n#remotes::install_github(\"EcoDynIZW/d6geodata\")\r\nlibrary(d6geodata)\r\nlibrary(terra)\r\nlibrary(ggplot2)\r\nlibrary(sf)\r\nlibrary(patchwork)\r\n\r\ntheme_set(\r\n  theme(axis.text.x = element_text(size = 8),\r\n        axis.text.y = element_text(size = 8))\r\n) \r\n\r\n\r\nget template\r\n\r\n\r\ntemp <- d6geodata::temp_ras(1000)\r\nvalues(temp) <- 1\r\n\r\np1 <- d6geodata::plot_qualitative_map(temp)\r\np1\r\n\r\n\r\n\r\nexpand raster\r\n\r\n\r\ntemp_exp_all <- terra::extend(x = temp, \r\n                    y = 10,\r\n                    fill = 2)\r\n\r\np2 <- d6geodata::plot_qualitative_map(temp_exp_all)\r\n\r\ntemp_exp_2_sides <- terra::extend(x = temp, \r\n                    y = c(10, 0),\r\n                    fill = 2,\r\n                    )\r\np3 <- d6geodata::plot_qualitative_map(temp_exp_2_sides)\r\n\r\ntemp_exp_1_sides <- terra::extend(x = temp, \r\n                    y = c(c(10, 0)),\r\n                    fill = 2,\r\n                    )\r\np4 <- d6geodata::plot_qualitative_map(temp_exp_1_sides)\r\n\r\n(p1 + p2) / (p3 + p4) + \r\n  plot_layout(guides = \"collect\") +\r\n   plot_annotation(tag_levels = \"1\", tag_prefix = \"(P\", tag_suffix = \")\")\r\n\r\n\r\n\r\nrasterize\r\n\r\n\r\n#d6geodata::plot_qualitative_map(temp_exp)\r\n\r\n\r\nPlease knit the whole document in the end, to test if it is working!\r\n\r\n\r\n\r\n",
+    "preview": "posts/rastertemplate/rastertemplate_files/figure-html5/unnamed-chunk-2-1.png",
+    "last_modified": "2023-07-07T10:59:35+02:00",
+    "input_file": "rastertemplate.knit.md"
+  },
+  {
     "path": "posts/clippingmaskberlin/",
     "title": "Clipping a Raster to a Specific Area",
     "description": "Learn how to use a clipping mask to extract a portion of a raster, based on a template extent. In this example we show you how to clip a raster map to the extent and borders of Berlin boundaries.",

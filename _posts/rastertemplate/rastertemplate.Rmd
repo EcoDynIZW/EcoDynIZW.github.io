@@ -30,6 +30,11 @@ library(terra)
 library(ggplot2)
 library(sf)
 library(patchwork)
+
+theme_set(
+  theme(axis.text.x = element_text(size = 8),
+        axis.text.y = element_text(size = 8))
+) 
 ```
 
 
@@ -39,36 +44,64 @@ library(patchwork)
 temp <- d6geodata::temp_ras(1000)
 values(temp) <- 1
 
-p1 <- d6geodata::plot_qualitative_map(temp)
+p1 <- d6geodata::plot_qualitative_map(temp) 
 p1
 ```
 
 ## expand raster {#expand}
 
+### expand on all sides
+
+If you want to expand the raster on all size similar to a buffer around a polygon you can just add cells to all sides. You can do this by adding an integer number in the y argument in the function `extend` of the `{terra}` package.
+
 ```{r}
-temp_exp_all <- terra::extend(x = temp, 
-                    y = 10,
-                    fill = 2)
+temp_exp_all <- terra::extend(x = temp, # template raster as input
+                    y = 10, # number of cells to add
+                    fill = 2) # value for new cells
 
 p2 <- d6geodata::plot_qualitative_map(temp_exp_all)
-
-temp_exp_2_sides <- terra::extend(x = temp, 
-                    y = c(10, 0),
-                    fill = 2,
-                    )
-p3 <- d6geodata::plot_qualitative_map(temp_exp_2_sides)
-
-temp_exp_1_sides <- terra::extend(x = temp, 
-                    y = c(10, 0, 0, 0),
-                    fill = 2,
-                    )
-p3 <- d6geodata::plot_qualitative_map(temp_exp_2_sides)
 ```
+
+### expand on two sides
+
+```{r}
+temp_exp_tb_sides <- terra::extend(x = temp, 
+                    y = c(10, 0), # add 10 cells on top and below
+                    fill = 2,
+                    )
+p3 <- d6geodata::plot_qualitative_map(temp_exp_tb_sides)
+```
+
+### expand on one side with a costum extent
+
+```{r}
+temp_exp_1_sides <- terra::extend(x = temp, 
+                    y = ext(
+                      ext(temp_exp_lr_sides)[1], # xmin
+                      ext(temp)[2], # xmax
+                      ext(temp)[3], # ymin
+                      ext(temp)[4]),# ymax
+                    fill = 2,
+                    )
+
+p4 <- d6geodata::plot_qualitative_map(temp_exp_1_sides)
+```
+
+### combined plot
+
+```{r, preview = TRUE}
+(p1 + theme(legend.position="none") + p2) / (p3 + p4) + 
+  plot_layout(guides = "collect") +
+   plot_annotation(tag_levels = "1", tag_prefix = "(P", tag_suffix = ")")
+```
+
+
+
 
 rasterize
 
 ```{r plot}
-d6geodata::plot_qualitative_map(temp_exp)
+#d6geodata::plot_qualitative_map(temp_exp)
 ```
 
 Please knit the whole document in the end, to test if it is working!
