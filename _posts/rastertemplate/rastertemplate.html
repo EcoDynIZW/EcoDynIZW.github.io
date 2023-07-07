@@ -113,12 +113,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Raster Template"]},{"type":"character","attributes":{},"value":["Learn how to use a raster template from the `{d6geodata}` package und how to multiple/expand it. In the end we will rasterize a shapefile with the raster have a look into different extraction functions.\n"]},{"type":"character","attributes":{},"value":["Tutorial","Spatial"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["2023-06-28"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[false]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Raster Template"]},{"type":"character","attributes":{},"value":["Learn how to use a raster template from the `{d6geodata}` package und how to multiple/expand it. In the end we will rasterize a shapefile with the raster have a look into different extraction functions.\n"]},{"type":"character","attributes":{},"value":["Tutorial","Spatial"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["2023-06-28"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[true]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["rastertemplate_files/figure-html5/template-1.png","rastertemplate_files/figure-html5/unnamed-chunk-2-1.png"]}
+  {"type":"character","attributes":{},"value":["rastertemplate_files/anchor-4.2.2/anchor.min.js","rastertemplate_files/bowser-1.9.3/bowser.min.js","rastertemplate_files/distill-2.2.21/template.v2.js","rastertemplate_files/figure-html5/template-1.png","rastertemplate_files/figure-html5/unnamed-chunk-2-1.png","rastertemplate_files/figure-html5/unnamed-chunk-5-1.png","rastertemplate_files/header-attrs-2.23/header-attrs.js","rastertemplate_files/jquery-3.6.0/jquery-3.6.0.js","rastertemplate_files/jquery-3.6.0/jquery-3.6.0.min.js","rastertemplate_files/jquery-3.6.0/jquery-3.6.0.min.map","rastertemplate_files/popper-2.6.0/popper.min.js","rastertemplate_files/tippy-6.2.7/tippy-bundle.umd.min.js","rastertemplate_files/tippy-6.2.7/tippy-light-border.css","rastertemplate_files/tippy-6.2.7/tippy.css","rastertemplate_files/tippy-6.2.7/tippy.umd.min.js","rastertemplate_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1529,7 +1529,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <ul>
 <li><a href="#setup" id="toc-setup">Setup</a></li>
 <li><a href="#template" id="toc-template">get template</a></li>
-<li><a href="#expand" id="toc-expand">expand raster</a></li>
+<li><a href="#expand" id="toc-expand">expand raster</a>
+<ul>
+<li><a href="#expand-on-all-sides" id="toc-expand-on-all-sides">expand on all sides</a></li>
+<li><a href="#expand-on-two-sides" id="toc-expand-on-two-sides">expand on two sides</a></li>
+<li><a href="#expand-on-one-side-with-a-costum-extent" id="toc-expand-on-one-side-with-a-costum-extent">expand on one side with a costum extent</a></li>
+<li><a href="#combined-plot" id="toc-combined-plot">combined plot</a></li>
+</ul></li>
 </ul>
 </nav>
 </div>
@@ -1555,37 +1561,56 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/temp_ras.html'>temp_ras</a></span><span class='op'>(</span><span class='fl'>1000</span><span class='op'>)</span></span>
 <span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/values.html'>values</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fl'>1</span></span>
 <span></span>
-<span><span class='va'>p1</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_qualitative_map.html'>plot_qualitative_map</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span></span>
+<span><span class='va'>p1</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_qualitative_map.html'>plot_qualitative_map</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span> </span>
 <span><span class='va'>p1</span></span></code></pre>
 </div>
 <p><img src="rastertemplate_files/figure-html5/template-1.png" width="624" /></p>
 </div>
 <h2 id="expand">expand raster</h2>
+<h3 id="expand-on-all-sides">expand on all sides</h3>
+<p>If you want to expand the raster on all size similar to a buffer around a polygon you can just add cells to all sides. You can do this by adding an integer number in the y argument in the function <code>extend</code> of the <code>{terra}</code> package.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_exp_all</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, </span>
-<span>                    y <span class='op'>=</span> <span class='fl'>10</span>,</span>
-<span>                    fill <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_exp_all</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, <span class='co'># template raster as input</span></span>
+<span>                    y <span class='op'>=</span> <span class='fl'>10</span>, <span class='co'># number of cells to add</span></span>
+<span>                    fill <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span> <span class='co'># value for new cells</span></span>
 <span></span>
-<span><span class='va'>p2</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_qualitative_map.html'>plot_qualitative_map</a></span><span class='op'>(</span><span class='va'>temp_exp_all</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>temp_exp_2_sides</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, </span>
-<span>                    y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>10</span>, <span class='fl'>0</span><span class='op'>)</span>,</span>
+<span><span class='va'>p2</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_qualitative_map.html'>plot_qualitative_map</a></span><span class='op'>(</span><span class='va'>temp_exp_all</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<h3 id="expand-on-two-sides">expand on two sides</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_exp_tb_sides</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, </span>
+<span>                    y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>10</span>, <span class='fl'>0</span><span class='op'>)</span>, <span class='co'># add 10 cells on top and below</span></span>
 <span>                    fill <span class='op'>=</span> <span class='fl'>2</span>,</span>
 <span>                    <span class='op'>)</span></span>
-<span><span class='va'>p3</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_qualitative_map.html'>plot_qualitative_map</a></span><span class='op'>(</span><span class='va'>temp_exp_2_sides</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>temp_exp_1_sides</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, </span>
-<span>                    y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>10</span>, <span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span><span class='va'>p3</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_qualitative_map.html'>plot_qualitative_map</a></span><span class='op'>(</span><span class='va'>temp_exp_tb_sides</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<h3 id="expand-on-one-side-with-a-costum-extent">expand on one side with a costum extent</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_exp_1_sides</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, </span>
+<span>                    y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/pkg/terra/man/ext.html'>ext</a></span><span class='op'>(</span></span>
+<span>                      <span class='fu'><a href='https://rdrr.io/pkg/terra/man/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp_exp_all</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='co'># xmin</span></span>
+<span>                      <span class='fu'><a href='https://rdrr.io/pkg/terra/man/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>, <span class='co'># xmax</span></span>
+<span>                      <span class='fu'><a href='https://rdrr.io/pkg/terra/man/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>3</span><span class='op'>]</span>, <span class='co'># ymin</span></span>
+<span>                      <span class='fu'><a href='https://rdrr.io/pkg/terra/man/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>4</span><span class='op'>]</span><span class='op'>)</span>,<span class='co'># ymax</span></span>
 <span>                    fill <span class='op'>=</span> <span class='fl'>2</span>,</span>
 <span>                    <span class='op'>)</span></span>
-<span><span class='va'>p4</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_qualitative_map.html'>plot_qualitative_map</a></span><span class='op'>(</span><span class='va'>temp_exp_1_sides</span><span class='op'>)</span></span>
 <span></span>
-<span><span class='op'>(</span><span class='va'>p1</span> <span class='op'>+</span> <span class='va'>p2</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>p3</span> <span class='op'>+</span> <span class='va'>p4</span><span class='op'>)</span> <span class='op'>+</span> </span>
+<span><span class='va'>p4</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_qualitative_map.html'>plot_qualitative_map</a></span><span class='op'>(</span><span class='va'>temp_exp_1_sides</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<h3 id="combined-plot">combined plot</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='op'>(</span><span class='va'>p1</span> <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>legend.position<span class='op'>=</span><span class='st'>"none"</span><span class='op'>)</span> <span class='op'>+</span> <span class='va'>p2</span><span class='op'>)</span> <span class='op'>/</span> <span class='op'>(</span><span class='va'>p3</span> <span class='op'>+</span> <span class='va'>p4</span><span class='op'>)</span> <span class='op'>+</span> </span>
 <span>  <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_layout.html'>plot_layout</a></span><span class='op'>(</span>guides <span class='op'>=</span> <span class='st'>"collect"</span><span class='op'>)</span> <span class='op'>+</span></span>
 <span>   <span class='fu'><a href='https://patchwork.data-imaginist.com/reference/plot_annotation.html'>plot_annotation</a></span><span class='op'>(</span>tag_levels <span class='op'>=</span> <span class='st'>"1"</span>, tag_prefix <span class='op'>=</span> <span class='st'>"(P"</span>, tag_suffix <span class='op'>=</span> <span class='st'>")"</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="rastertemplate_files/figure-html5/unnamed-chunk-2-1.png" width="624" data-distill-preview=1 /></p>
+<p><img src="rastertemplate_files/figure-html5/unnamed-chunk-5-1.png" width="624" data-distill-preview=1 /></p>
 </div>
 <p>rasterize</p>
 <div class="layout-chunk" data-layout="l-body">

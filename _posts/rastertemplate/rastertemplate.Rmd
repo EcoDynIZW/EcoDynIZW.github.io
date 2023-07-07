@@ -14,7 +14,7 @@ output:
   distill::distill_article:
     self_contained: false
     toc: true
-draft: false
+draft: true
 ---
 
 ```{r setup, include=FALSE}
@@ -77,7 +77,7 @@ p3 <- d6geodata::plot_qualitative_map(temp_exp_tb_sides)
 ```{r}
 temp_exp_1_sides <- terra::extend(x = temp, 
                     y = ext(
-                      ext(temp_exp_lr_sides)[1], # xmin
+                      ext(temp_exp_all)[1], # xmin
                       ext(temp)[2], # xmax
                       ext(temp)[3], # ymin
                       ext(temp)[4]),# ymax
