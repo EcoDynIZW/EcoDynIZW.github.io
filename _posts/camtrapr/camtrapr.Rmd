@@ -2,7 +2,7 @@
 title: "Manage Camera Trap Data in R"
 description: |
   Learn how to use the {camtrapR} R package for streamlined and flexible camera trap data management. It should be most useful to researchers and practitioners who regularly handle large amounts of camera trapping data.
-preview: ./img/wiki/hex-camtrapr.png
+preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-camtrapr.png
 categories:
   - tutorial
   - rstats

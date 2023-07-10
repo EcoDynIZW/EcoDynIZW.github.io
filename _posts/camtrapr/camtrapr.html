@@ -113,12 +113,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Manage Camera Trap Data in R"]},{"type":"character","attributes":{},"value":["Learn how to use the {camtrapR} R package for streamlined and flexible camera trap data management. It should be most useful to researchers and practitioners who regularly handle large amounts of camera trapping data.\n"]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/hex-camtrapr.png"]},{"type":"character","attributes":{},"value":["tutorial","rstats","camera traping","data management"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Jürgen Niedballa"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["05-23-2022"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Manage Camera Trap Data in R"]},{"type":"character","attributes":{},"value":["Learn how to use the {camtrapR} R package for streamlined and flexible camera trap data management. It should be most useful to researchers and practitioners who regularly handle large amounts of camera trapping data.\n"]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-camtrapr.png"]},{"type":"character","attributes":{},"value":["tutorial","rstats","camera traping","data management"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Jürgen Niedballa"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["05-23-2022"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["camtrapr_files/anchor-4.2.2/anchor.min.js","camtrapr_files/bowser-1.9.3/bowser.min.js","camtrapr_files/distill-2.2.21/template.v2.js","camtrapr_files/header-attrs-2.16/header-attrs.js","camtrapr_files/jquery-3.6.0/jquery-3.6.0.js","camtrapr_files/jquery-3.6.0/jquery-3.6.0.min.js","camtrapr_files/jquery-3.6.0/jquery-3.6.0.min.map","camtrapr_files/popper-2.6.0/popper.min.js","camtrapr_files/tippy-6.2.7/tippy-bundle.umd.min.js","camtrapr_files/tippy-6.2.7/tippy-light-border.css","camtrapr_files/tippy-6.2.7/tippy.css","camtrapr_files/tippy-6.2.7/tippy.umd.min.js","camtrapr_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["camtrapr_files/anchor-4.2.2/anchor.min.js","camtrapr_files/bowser-1.9.3/bowser.min.js","camtrapr_files/distill-2.2.21/template.v2.js","camtrapr_files/header-attrs-2.16/header-attrs.js","camtrapr_files/header-attrs-2.22/header-attrs.js","camtrapr_files/jquery-3.6.0/jquery-3.6.0.js","camtrapr_files/jquery-3.6.0/jquery-3.6.0.min.js","camtrapr_files/jquery-3.6.0/jquery-3.6.0.min.map","camtrapr_files/popper-2.6.0/popper.min.js","camtrapr_files/tippy-6.2.7/tippy-bundle.umd.min.js","camtrapr_files/tippy-6.2.7/tippy-light-border.css","camtrapr_files/tippy-6.2.7/tippy.css","camtrapr_files/tippy-6.2.7/tippy.umd.min.js","camtrapr_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -189,6 +189,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1261,15 +1262,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1468,7 +1475,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="camtrapr_files/header-attrs-2.16/header-attrs.js"></script>
+  <script src="camtrapr_files/header-attrs-2.22/header-attrs.js"></script>
   <script src="camtrapr_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="camtrapr_files/popper-2.6.0/popper.min.js"></script>
   <link href="camtrapr_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1508,16 +1515,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="dt-tag">data management</div>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Learn how to use the {camtrapR} R package for streamlined and
-flexible camera trap data management. It should be most useful to
-researchers and practitioners who regularly handle large amounts of
-camera trapping data.</p></p>
+<p><p>Learn how to use the {camtrapR} R package for streamlined and flexible camera trap data management. It should be most useful to researchers and practitioners who regularly handle large amounts of camera trapping data.</p></p>
 </div>
 
 <div class="d-byline">
-  Jürgen Niedballa  (IZW Berlin)<a
-href="https://ecodynizw.github.io/"
-class="uri">https://ecodynizw.github.io/</a>
+  Jürgen Niedballa  (IZW Berlin)<a href="https://ecodynizw.github.io/" class="uri">https://ecodynizw.github.io/</a>
   
 <br/>05-23-2022
 </div>
@@ -1532,38 +1534,21 @@ class="uri">https://ecodynizw.github.io/</a>
 </ul>
 </nav>
 </div>
-<p>The <a
-href="https://github.com/jniedballa/camtrapR"><code>{camtrapR}</code> R
-package</a> simplifies camera trap data management in R.</p>
+<p>The <a href="https://github.com/jniedballa/camtrapR"><code>{camtrapR}</code> R package</a> simplifies camera trap data management in R.</p>
 <h2 id="installation">Installation</h2>
-<p>You can install the release version of <code>{camtrapR}</code> from
-CRAN:</p>
+<p>You can install the release version of <code>{camtrapR}</code> from CRAN:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"camtrapR"</span><span class='op'>)</span>
-</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"camtrapR"</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <h2 id="exiftool">Exiftool</h2>
-<p>Numerous important <code>{camtrapR}</code> functions read EXIF
-metadata from JPG images (and videos). This is done via
-<code>Exiftool</code>, a free and open-source sofware tool developed by
-Phil Harvey and available for Windows, MacOS and Linux.</p>
-<p>To make full use of <code>{camtrapR}</code>, you will need
-<code>Exiftool</code> on your system. You can download it from the
-<code>Exiftool</code> homepage and follow the installation instruction
-in vignette 1.</p>
-<p>You may not need <code>Exiftool</code> if you do not work with image
-files, but only use <code>{camtrapR}</code> to create input for
-occupancy or spatial capture-recapture models from existing record
-tables.</p>
-<p>See the <a
-href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12600">article
-in Methods in Ecology and Evolution</a> for an overview of the package.
-The five vignettes provide examples for the entire workflow.
+<p>Numerous important <code>{camtrapR}</code> functions read EXIF metadata from JPG images (and videos). This is done via <code>Exiftool</code>, a free and open-source sofware tool developed by Phil Harvey and available for Windows, MacOS and Linux.</p>
+<p>To make full use of <code>{camtrapR}</code>, you will need <code>Exiftool</code> on your system. You can download it from the <code>Exiftool</code> homepage and follow the installation instruction in vignette 1.</p>
+<p>You may not need <code>Exiftool</code> if you do not work with image files, but only use <code>{camtrapR}</code> to create input for occupancy or spatial capture-recapture models from existing record tables.</p>
+<p>See the <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12600">article in Methods in Ecology and Evolution</a> for an overview of the package. The five vignettes provide examples for the entire workflow.
 Citation</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

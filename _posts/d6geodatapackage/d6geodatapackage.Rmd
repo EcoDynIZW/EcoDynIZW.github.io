@@ -39,7 +39,7 @@ library(d6geodata)
 
 If you want to work with spatial data that is already stored in our Geodata archive you have two options: 
 
-1. Go to the EcoDynIZW Website, click on wikis and select [Geodata](https://ecodynizw.github.io/geodata.html). There you find several spatial data sets with respective metadatA and visualizations. In the metadata section, you'll find the information . To donwload the data, cope the `folder_name` information provided in the metadata  and use it as an input in the  `get_geodata()` function from our `{d6geodata}` to get the data from our PopDynCloud. Another option is the function called `geo_overview()`. There you can select which data and from which location you want to have a list of data.
+1. Go to the EcoDynIZW Website, click on wikis and select [Geodata](https://ecodynizw.github.io/geodata.html). There you find several spatial data sets with respective metadatA and visualizations. In the metadata section, you'll find the information . To download the data, cope the `folder_name` information provided in the metadata  and use it as an input in the  `get_geodata()` function from our `{d6geodata}` to get the data from our PopDynCloud. Another option is the function called `geo_overview()`. There you can select which data and from which location you want to have a list of data.
 
 If you run the function `geo_overview` you have to decide if you want to see the raw or processed data by typing 1 for raw and 2 for processed data. Afterwards, you have to decide if you want to see the main (type 1) folders (the regions or sub-regions we have data from) or the sub (type 2) folders (the actually data we have in each region).
 

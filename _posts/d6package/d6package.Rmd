@@ -2,7 +2,7 @@
 title: "Simplify Workflows of D6 Research Projects"
 description: |
   Learn how to use the {d6} package to follow the project workflow within the department “Ecological Dynamics” at the Leibniz Institute for Zoo and Wildlife Research. The package functionality allows you to set up a standardized folder structure, to use templates for standardized reports and provides some helpful utility functions.
-preview: ./img/wiki/hex-d6.png 
+preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-d6.png 
 categories:
   - tutorial
   - rstats
