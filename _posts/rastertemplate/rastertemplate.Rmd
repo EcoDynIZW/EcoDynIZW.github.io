@@ -1,7 +1,7 @@
 ---
 title: "Raster Template"
 description: |
-  Learn how to use a raster template from the `{d6geodata}` package und how to multiple/expand it. In the end we will rasterize a shapefile with the raster have a look into different extraction functions.
+  Learn how to use a raster template from the `{d6geodata}` package und how to multiple/expand it. In the end we will rasterize a shapefile with the raster and have a look into different extraction functions.
 categories:
   - Tutorial
   - Spatial
@@ -95,13 +95,18 @@ p4 <- d6geodata::plot_qualitative_map(temp_exp_1_sides)
    plot_annotation(tag_levels = "1", tag_prefix = "(P", tag_suffix = ")")
 ```
 
-
-
-
-rasterize
+## rasterize vector data {#rasterize}
 
 ```{r plot}
-#d6geodata::plot_qualitative_map(temp_exp)
+# first we need vector data
+temp_vec <- terra::vect(ext(temp), crs(temp))
+
+temp_rast <- rasterize(temp_vec, temp %>% disagg(10))
+
+d6geodata::plot_qualitative_map(temp_rast)
+
+
+#
 ```
 
 Please knit the whole document in the end, to test if it is working!
