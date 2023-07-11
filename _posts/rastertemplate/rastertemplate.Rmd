@@ -9,7 +9,7 @@ author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/
-date: 2023-06-28
+date: 2023-07-11
 output:
   distill::distill_article:
     self_contained: false
@@ -102,6 +102,8 @@ p4 <- d6geodata::plot_qualitative_map(temp_exp_1_sides)
 temp_vec <- terra::vect(ext(temp), crs(temp))
 
 temp_rast <- rasterize(temp_vec, temp %>% disagg(10))
+
+temp_rast
 
 d6geodata::plot_qualitative_map(temp_rast)
 
