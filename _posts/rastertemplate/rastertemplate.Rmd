@@ -97,19 +97,30 @@ p4 <- d6geodata::plot_qualitative_map(temp_exp_1_sides)
 
 ## rasterize vector data {#rasterize}
 
-```{r plot}
-# first we need vector data
-temp_vec <- terra::vect(ext(temp), crs(temp))
+With `vect()` you can make a spatVector (a kind of shapfile) out of an extent object.
+Afterwards, we can use this spatVector to rasterize the data. This works similar with an sf object.
 
-temp_rast <- rasterize(temp_vec, temp %>% disagg(10))
+```{r plot}
+temp_vec <- terra::vect(ext(temp), crs(temp)) # spatVector out of smalest raster extent
+
+temp_rast <- rasterize(temp_vec, # vector data
+                       temp_exp_all %>% disagg(10), 
+                       # raster data with larger extent, disaggregated to 100m 
+                       background = 2) # set to 2 to visualize the difference
 
 temp_rast
-
-d6geodata::plot_qualitative_map(temp_rast)
-
-
-#
 ```
 
-Please knit the whole document in the end, to test if it is working!
+### rasterized plot
+
+```{r}
+d6geodata::plot_qualitative_map(temp_rast)
+```
+
+## extract with vector data {#extract}
+You can use any vector data with the smae projection to extract values from a raster. The `extract()` 
+
+```{r}
+
+```
 
