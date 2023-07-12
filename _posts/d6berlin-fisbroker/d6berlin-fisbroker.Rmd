@@ -86,7 +86,10 @@ data_atom <-
 glimpse(data_atom)
 
 data_atom_10 <- terra::aggregate(data_atom, 10)
+```
 
+
+```{r, preview=TRUE}
 ggplot() +
   stars::geom_stars(data = stars::st_as_stars(data_atom_10)) +
   coord_sf(expand = FALSE) + 
@@ -98,10 +101,10 @@ ggplot() +
 ```
 
 ```{r, echo=FALSE, include=FALSE}
-suppressMessages(file.remove(here::here("_posts", "d6geodatapackage", "man", "vegetation_heights")))
+suppressMessages(file.remove(here::here("_posts", "d6berlin-fisbroker", "man", "vegetation_heights")))
 ```
 
-A shortcut to plot this kind of data is the `plot_qualitative_map()` function from our dedicated d6geodata package. You can install this package with devtools::install_github("EcoDynIZW/d6geodata").
+A shortcut to plot this kind of data is the `plot_qualitative_map()` function from our dedicated `{d6geodata}` package. You can install this package with devtools::install_github("EcoDynIZW/d6geodata").
 
 ```{r, eval=FALSE}
 d6geodata::plot_quantitative_map(tif = data_atom_10)

@@ -1,10 +1,10 @@
 ---
-title: 'landcover germany 2021'
+title: 'streets europe 2012'
 categories:
-  - 10m
-  - Germany
-  - '2021'
-  - epsg:4326
+  - Europe
+  - 100m
+  - epsg:3025
+  - '2012'
 author:
   - name: Moritz Wenzler-Meya
 
@@ -45,7 +45,7 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-raw/germany/landcover_germany_2021_10m_04326_tif')
+    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-raw/europe/streets_europe_2012_100m_03035_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -64,7 +64,7 @@ meta_gt <- gt::gt(meta %>%
 
 ```{r map}
 p_map <-
- readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-raw/germany/landcover_germany_2021_10m_04326_tif/landcover_germany_2021_10m_04326_tif' ,'.rds'))
+ readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-raw/europe/streets_europe_2012_100m_03035_tif/streets_europe_2012_100m_03035_tif' ,'.rds'))
 
 ```
 
