@@ -26,6 +26,10 @@ For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp
 
 * Lokatis S, Jeschke JM, Bernard-Verdier M, Buchholz S, Grossart H-P, Havemann F, Hölker F, Itescu Y, Kowarik I, **Kramer-Schadt S**, Mietchen D, Musseau CL, **Planillo A**, Schittko C, Straka TM and Heger T (2023): Hypotheses in urban ecology: building a common knowledge base. BIOL REV. doi:<span>[10.1111/brv.12964](https://doi.org/10.1111/brv.12964)</span>
 
+* Milles A, Banitz T, Bielcik M, Frank K, Gallagher CA, Jeltsch F, Jepsen JU, Oro D, **Radchuk V**, Grimm V (2023): Local buffer mechanisms for population persistence. TRENDS ECOL EVOL. doi:<span>[10.1016/j.tree.2023.06.006](https://doi.org/10.1016/j.tree.2023.06.006)</span>
+
+* **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2023): Global disparity of camera trap research allocation and defaunation risk of terrestrial mammals. REMOTE SENS ECOL CONS.  doi:<span>[10.1002/rse2.360](https://doi.org/10.1002/rse2.360)</span>
+
 * Naciri M, **Planillo A**, **Gicquel M**, **East ML**, Hofer H, **Metzger S**, **Benhaiem S** (2023): Three decades of wildlife-vehicle collisions in a protected area: main roads and long-distance commuting trips to migratory prey increase spotted hyena roadkills in the Serengeti. BIOL CONSERV, **279**, 109950. doi:<span>[10.1016/j.biocon.2023.109950](https://doi.org/10.1016/j.biocon.2023.109950)</span>
 
 * Nguyen AT, **Tilker A**, Le Khac Q, Le M (2023): New records of the Annamite striped rabbit in Ngoc Linh, Quang Nam and Kon Tum provinces, Vietnam. MAMMALIA. doi:<span>[10.1515/mammalia-2023-0005](https://doi.org/10.1515/mammalia-2023-0005)</span>
@@ -52,6 +56,7 @@ For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp
 
 * van Moorsel SJ, Thébault E, **Radchuk V**, Narwani A, Montoya JM, Dakos V, Holmes M, De Laender F, Pennekamp F (2023): Predicting effects of multiple interacting global change drivers across trophic levels. GLOB CHANG BIOL, **29**, 1223– 1238. doi:<span>[10.1111/gcb.16548](https://doi.org/10.1111/gcb.16548)</span>
 
+* Zelnik YR, Clark AT, **Radchuk V**, Hodapp D and Dominguez-Garcia V (2023): Editorial: Stability across spatial and temporal scales. FRONT ECOL EEVOL **11**, 1201269. doi:<span>[10.3389/fevo.2023.1201269](https://doi.org/10.3389/fevo.2023.1201269)</span>
 
 <!--<div class='headerbox'><hbox>Preprints</hbox></div><br>-->
 
