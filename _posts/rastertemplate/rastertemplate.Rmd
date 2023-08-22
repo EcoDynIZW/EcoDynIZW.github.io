@@ -118,9 +118,22 @@ d6geodata::plot_qualitative_map(temp_rast)
 ```
 
 ## extract with vector data {#extract}
-You can use any vector data with the smae projection to extract values from a raster. The `extract()` 
+You can use any vector data with the same projection and extent to extract values from a raster. The `extract()` function 
 
 ```{r}
 
+dummy_line <- terra::as.lines(temp_rast) %>% 
+  as("sf") %>% 
+  dplyr::mutate(id = 1:n())
+
+
+terra::extract(x = temp_rast, 
+               y = dummy_line, 
+               fun=NULL, 
+               method="simple", 
+               cells=FALSE, 
+               xy=FALSE,
+               ID=TRUE
+               )
 ```
 
