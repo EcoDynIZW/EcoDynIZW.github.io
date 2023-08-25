@@ -140,7 +140,7 @@ To document scripting we recommend to use R Markdown (`.rmd`) files if possible.
 * Write the author, name and date in a header (you can use the d6 package templates for this as well).
 *	Keep code in scripts as concise as possible.
 *	Use in-line comments to explain your code that others can follow your code. 
-*	If possible, use dynamic paths (i.e. see R-package [`here`](https://here.r-lib.org/).
+*	If possible, use dynamic paths (i.e. see R-package [`here`](https://here.r-lib.org/)).
 *	Always set variables/ parameters at the top of your script; do not set values somewhere inside the code as this is error prone, because these values tend to be forgotten to get changed when updating a script. The same applies to loading packages. Please also make sure to only load packages that are really needed and remove those that you are not using for the final analysis.
 *	Save the output of a script as .rds file to smoothly load it in the next script. Additionally, save the output in a file format usable beyond R, e.g. use .csv or .txt if you want to save tabular data or GeoTiff if you want to save a raster map.
 *	Use separate scripts to create figures of publishable quality (700 dpi) from the results. Use a vector graphics format like pdf.

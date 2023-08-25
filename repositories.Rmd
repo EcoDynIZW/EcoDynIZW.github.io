@@ -40,11 +40,11 @@ knitr::opts_chunk$set(echo = FALSE)
   </li>
 
   <li class="card-repo">
-    <img class="card-repo-img" src='img/repo/caro_2023.png' alt='Meta- and subpopulation estimation with disparate data: coconut crabs in the Western Indian Ocean.'>
+    <img class="card-repo-img" src='img/repo/caro_2023.jpg' alt='Meta- and subpopulation estimation with disparate data: coconut crabs in the Western Indian Ocean.'>
     <h3>Caro et al. 2023</h3>
     <p>Meta- and subpopulation estimation with disparate data: coconut crabs in the Western Indian Ocean. *ANIM CONSERV*.</p><p>
     <a href='https://doi.org/10.1111/acv.12896'>![](img/repo/icon-paper.png){width=12%}</a> 
-    <a href='https://github.com/rasrage/Coconut-crabs'>![](img/repo/icon-github.png){width=12%}</a>
+    <a href='https://github.com/EcoDynIZW/Coconut-crabs'>![](img/repo/icon-github.png){width=12%}</a>
      <a href='https://zenodo.org/record/8153309'>![](img/repo/icon-zenodo.png){width=12%}</a></p>
   </li>
   
