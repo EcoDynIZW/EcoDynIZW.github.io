@@ -45,7 +45,9 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * Palmero S, **Premier J**, **Kramer-Schadt S**, Monterroso P and Heurich M (2023): Sampling variables and their thresholds for the precise estimation of wild felid population density with camera traps and spatial capture–recapture methods. MAM REV. doi:<span>[10.1111/mam.12320](https://doi.org/10.1111/mam.12320)</span> 
 
-* Reusch R, Paul AA, Fritze M, **Kramer-Schadt S**, Voigt C (2023): Wind energy production in forests conflicts with tree-roosting bats. CURR BIOL, **33**(4), doi:<span>[10.1016/j.cub.2022.12.050](https://doi.org/10.1016/j.cub.2022.12.050)</span>
+* Reusch R, Paul AA, Fritze M, **Kramer-Schadt S**, Voigt C (2023): Wind energy production in forests conflicts with tree-roosting bats. CURR BIOL, **33**(4). doi:<span>[10.1016/j.cub.2022.12.050](https://doi.org/10.1016/j.cub.2022.12.050)</span>
+
+* Revilla-Martín N, Giralt D, **Sanz-Pérez A**, Bota G, Sardà-Palomera F (2023): Disentangling the effects of management, field characteristics of fallows, and surrounding landscape to promote steppe bird conservation. AGRIC ECOSYST ENVIRON **357**, 108657.  doi:<span>[10.1016/j.agee.2023.108657](doi:10.1016/j.agee.2023.108657)</span>
 
 * Rocha DG and **Sollmann R** (2023): Habitat use patterns suggest that climate-driven vegetation changes will negatively impact mammal communities in the Amazon. ANIM CONSERV. doi:<span>[10.1111/acv.12853](https://doi.org/10.1111/acv.12853)</span>
 
