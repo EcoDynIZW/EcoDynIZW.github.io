@@ -30,6 +30,7 @@ library(terra)
 library(ggplot2)
 library(sf)
 library(patchwork)
+library(dplyr)
 
 theme_set(
   theme(axis.text.x = element_text(size = 8),
@@ -121,10 +122,13 @@ d6geodata::plot_qualitative_map(temp_rast)
 You can use any vector data with the same projection and extent to extract values from a raster. The `extract()` function 
 
 ```{r}
+pts <- tibble(x = c(4528790, 4576890),
+              y = c(3271740, 3272140))
 
-dummy_line <- terra::as.lines(temp_rast) %>% 
-  as("sf") %>% 
-  dplyr::mutate(id = 1:n())
+dummy_line <- st_as_sf(pts,
+                       coords = c("x", "y"),
+                       crs = 3035,
+                       sf_column_name = "geometry")
 
 
 terra::extract(x = temp_rast, 
@@ -135,5 +139,7 @@ terra::extract(x = temp_rast,
                xy=FALSE,
                ID=TRUE
                )
+
+
 ```
 
