@@ -52,8 +52,26 @@ First get the template raster. The origin is the extent of Berlin with the proje
 temp <- d6geodata::temp_ras(1000) # resolution is 1000m
 values(temp) <- 1 # set a dummy value for visualization purposes 
 
+temp
+```
+
+We load Berlin borders from the cloud to show the borders  
+
+```{r berlin borders}
+berlin <- d6geodata::get_geodata(data_name = "districs_berlin_2022_poly_03035_gpkg",
+                                 path_to_cloud = "E:/PopDynCloud",
+                                 download_data = FALSE) %>% 
+  st_union() %>% # using `st_union()` to combine  
+  st_cast("POLYGON")
+
+p_berlin <- geom_sf(data = berlin, alpha = 0, color = "black", lwd = 0.7)
+```
+
+
+```{r plot template}
 p1 <- d6geodata::plot_qualitative_map(temp) # you can use this build-in plot function from the `{d6geodata}` package 
-p1
+ 
+p1 + p_berlin
 ```
 
 ## Expand Raster {#expand}
@@ -68,7 +86,7 @@ temp_exp_all <- terra::extend(x = temp, # template raster as input
                               fill = 2) # value for new cells
 
 p2 <- d6geodata::plot_qualitative_map(temp_exp_all)
-p2
+p2 + p_berlin
 ```
 
 ### Expand On Two Sides
@@ -80,7 +98,7 @@ temp_exp_tb_sides <- terra::extend(x = temp,
                                    y = c(10, 0), # add 10 cells on top and below
                                    fill = 2,)
 p3 <- d6geodata::plot_qualitative_map(temp_exp_tb_sides)
-p3
+p3 + p_berlin
 ```
 
 ### Expand On One Side With A Costum Extent
@@ -96,7 +114,7 @@ temp_exp_1_sides <- terra::extend(x = temp,
                                   fill = 2)
 
 p4 <- d6geodata::plot_qualitative_map(temp_exp_1_sides)
-p4
+p4 + p_berlin
 ```
 
 ### Combined Plot
@@ -104,7 +122,7 @@ p4
 Here you see a combination of all plots made to compare them directly.
 
 ```{r, preview = TRUE}
-(p1 + theme(legend.position="none") + p2) / (p3 + p4) + 
+(p1 + p_berlin + theme(legend.position="none") + p2 + p_berlin) / (p3 + p_berlin + p4 + p_berlin) + 
   plot_layout(guides = "collect") +
    plot_annotation(tag_levels = "1", tag_prefix = "(P", tag_suffix = ")")
 ```
@@ -176,7 +194,11 @@ ext_tab <- terra::extract(x = temp_rast,
                xy=FALSE,
                ID=TRUE
                )
+```
 
+As you can see, the largest part of the line lays within the purple area and 
+
+```{r}
 table(ext_tab$layer)
 ```
 
