@@ -1,7 +1,8 @@
 ---
-title: "Raster Template"
+title: "Raster Operations"
 description: |
-  Learn how to use a raster template from the `{d6geodata}` package und how to multiple/expand it. In the end we will rasterize a shapefile with the raster and have a look into different extraction functions.
+  Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. In the end we will rasterize vector data with the expanded raster.
+  
 preview: ./img/wiki/preview-rastertemplate.png
 categories:
   - tutorial
