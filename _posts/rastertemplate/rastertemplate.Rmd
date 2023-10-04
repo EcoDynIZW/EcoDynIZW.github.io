@@ -1,7 +1,7 @@
 ---
 title: "Raster Operations"
 description: |
-  Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. In the end we will rasterize vector data with the expanded raster.
+  Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you tranform your vector data to your disired raster resolution and extent. In the end we will rasterize vector data with the expanded raster to get information of your vector data like gps point or tracks.
   
 preview: ./img/wiki/preview-rastertemplate.png
 categories:
@@ -13,7 +13,7 @@ author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/
-date: 2023-09-22
+date: 2023-09-27
 output:
   distill::distill_article:
     self_contained: false
@@ -152,11 +152,13 @@ d6geodata::plot_qualitative_map(temp_rast)
 
 ## Extract With Vector Data {#extract}
 
-Sometimes you want to know the values from vector data over a raster layer. There are several ways to this but the easiest way is to 'just' extract the values laying under the vector data.
+Imagine you have a track of your animal and you want to see, which type of information lays in this track. In this case, you can use your line and extract the values from a raster below. There are several ways to this but the easiest way is to use the `extract()` function form the `{terra}` package to get the values laying under the vector data.
 
-For this, you can use any vector data with the same projection and extent to extract values from a raster. The `extract()` function uses the raster as first input and the vector data as second. Depending on the type of data you are using you can define a function for the extraction like min, max or mean. 'Cells' gives you the call ID, 'xy' the coordinates and 'ID' the row number of your extraction.
+For this, you can use any vector data (points, lines, polygons) with the same projection and extent to extract values from a raster. The `extract()` function uses the raster as first input and the vector data as second. Depending on the type of data you are using you can define a function for the extraction like min, max or mean. 'Cells' gives you the call ID, 'xy' the coordinates and 'ID' the row number of your extraction.
 
 ### Line For Extraction
+
+For this we just creating a dummy line with coordinates laying within the raster
 
 ```{r}
 pts <- tibble(x = c(4528790, 4576890), # a point out of two coordinates from the raster
@@ -164,12 +166,12 @@ pts <- tibble(x = c(4528790, 4576890), # a point out of two coordinates from the
 
 dummy_line <- st_as_sf(pts,             # a line made out of the point data
                        coords = c("x", "y"),
-                       crs = 3035,
+                       crs = st_crs(temp)$wkt, # using the same projection as for the template raster
                        sf_column_name = "geometry",
                        remove = FALSE) %>% 
-  summarise(do_union = FALSE) %>% 
-  st_cast("LINESTRING") %>% 
-  mutate(id = 1)
+  summarise(do_union = FALSE) %>% # this part is for creating the lines out of the points
+  st_cast("LINESTRING") %>% # this as well
+  mutate(id = 1:n()) # add an id
 ```
 
 ### Plot Of Raster And Line
@@ -187,13 +189,13 @@ p5
 Here we finally extract the data and view the result with a table.
 
 ```{r}
-ext_tab <- terra::extract(x = temp_rast, 
-               y = dummy_line, 
-               fun=NULL, 
+ext_tab <- terra::extract(x = temp_rast, # template raster as first input
+               y = dummy_line, # dummy line as second input
+               fun=NULL, # here you can set a function to summarise the data directly
                method="simple", 
-               cells=FALSE, 
-               xy=FALSE,
-               ID=TRUE
+               cells=FALSE, # here you can get the cell number as well
+               xy=FALSE, # here the xy coordinates 
+               ID=TRUE # and the id infront of each row
                )
 ```
 
