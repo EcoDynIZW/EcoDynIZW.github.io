@@ -66,6 +66,8 @@ ELIFE, 12:e66550. doi:<span>[10.7554/eLife.66550](https://doi.org/10.7554/eLife.
 
 * **Tilker** A, Sinovas P (2023): Reading the signs: Camera-trapping provides new insights on scent marking in the large-antlered muntjac (*Muntiacus vuquangensis*). ECOL EVOL, **13**, e9692. doi:<span>[10.1002/ece3.9692](https://doi.org/10.1002/ece3.9692)</span>
 
+* Ullmann W, Fischer C, **Kramer-Schadt S** et al. (2023): The secret life of wild animals revealed by accelerometer data: how landscape diversity and seasonality influence the behavioural types of European hares. LANDSC ECOL. doi:<span>[10.1007/s10980-023-01765-0](https://doi.org/10.1007/s10980-023-01765-0)</span>
+
 * van Moorsel SJ, Thébault E, **Radchuk V**, Narwani A, Montoya JM, Dakos V, Holmes M, De Laender F, Pennekamp F (2023): Predicting effects of multiple interacting global change drivers across trophic levels. GLOB CHANG BIOL, **29**, 1223– 1238. doi:<span>[10.1111/gcb.16548](https://doi.org/10.1111/gcb.16548)</span>
 
 * Zelnik YR, Clark AT, **Radchuk V**, Hodapp D and Dominguez-Garcia V (2023): Editorial: Stability across spatial and temporal scales. FRONT ECOL EEVOL **11**, 1201269. doi:<span>[10.3389/fevo.2023.1201269](https://doi.org/10.3389/fevo.2023.1201269)</span>

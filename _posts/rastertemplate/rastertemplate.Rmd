@@ -195,7 +195,7 @@ ext_tab <- terra::extract(x = temp_rast, # template raster as first input
                method="simple", 
                cells=FALSE, # here you can get the cell number as well
                xy=FALSE, # here the xy coordinates 
-               ID=TRUE # and the id infront of each row
+               ID=TRUE # and the id in front of each row
                )
 ```
 
