@@ -16,22 +16,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <div class='highlightbox'>
 
-## The TL;DR Version
+## The TL;DR Version  
+<br>
 
 ### General Information
 
 - Important lab information (server access, responsibilities,...) can be found on our cloud in the folder `Lab_Orga`.
 - Follow our rules how to call project folders: `animal_species_where_what_who`.
 - Create the project folder structure with our [d6 package](https://ecodynizw.github.io/posts/d6package/): `d6::new_project()`.
-- At the end of a project, transfer [your repository](https://ecodynizw.github.io/guidelines.html#repository) to our [EcoDynIZW account](https://github.com/EcoDynIZW/).
-- Ask Moritz Wenzler (<a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a>) for help of needed.
-
+- For consistent style, we ask you to use our corporate [d6 theme](): `d6::theme_d6()`.
+- At the end of a project, transfer [your repository](https://ecodynizw.github.io/guidelines.html#repository) to our [EcoDynIZW GitHub account](https://github.com/EcoDynIZW/).
+- Ask Moritz Wenzler (<a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a>) for help of needed.  
+<br>
 
 ### Information for Students (BSc | MSc | PhD)
 
 #### Supervisory Meetings
 
-- Plan regular meetings with your supervisor(s) at least 3 months ahead (2 weeks for non-regular meetings). 
+- Plan regular meetings at least 3 months ahead (2 weeks for non-regular meetings). 
 - Prepare for the meeting! Think about open questions, difficulties encountered, and the timeline for upcoming tasks.
 - Write the minutes of the meeting and send it to your supervisor(s).
 
@@ -244,15 +246,7 @@ Please find additional information on ‘how to write a scientific paper’, how
 
 The final step after your paper gets published is to make the GitHub repository public (or create a repository if you haven't before). The repository should contain clean code and data that runs properly. If you are using R, please make sure to use a R-Project with the given folder structure (see appendix A).
 
-The title of the repository should contain the last name of the first author, the year, and the abbreviation of the journal (e.g. Smith_2023_Science). Please add the title of the paper as the description (in quotation marks). In the README file please provide the reference of the paper including the DOI as a hyperlink, and the abstract. Add further notes on the files contained and the scripts if needed. or examples see [study repositories on our GitHub](https://github.com/orgs/EcoDynIZW/repositories)).
-
-Finally, make sure to turn the visibility to public and transfer the ownership to the EcoDynIZW GitHub organization.
-
-If you have need help or have questions please ask the data manager for help.
-
-
-### Example README
-<br>
+The title of the repository should contain the last name of the first author, the year, and the abbreviation of the journal (e.g. `Smith_2023_Science`). Please add the title of the paper as the description (in quotation marks). Please provide the reference of the paper, including the DOI as a hyperlink, and the abstract in the README file. Add further notes on the files contained and the scripts if needed. Please use this template:
 
 ```text
 # Smith et al. (2023) *Science*
@@ -267,6 +261,10 @@ Abstract text.
 ... more notes if needed
 
 ```
+
+Add the title in quotation marks as the description and the DOI as link to the repository about (right upper corner). For examples see [study repositories on our GitHub](https://github.com/orgs/EcoDynIZW/repositories)). 
+
+Finally, make sure to turn the visibility to public and transfer the ownership to the EcoDynIZW GitHub organization. If you have need help or have questions please ask the data manager for help.
 
 
 [↑ Jump back to top.](#toc)<br><br>

@@ -102,7 +102,7 @@ Wildlife survey data are fraught with challenges: often sparse, spatially and/or
     <li>[Sollmann et al. (2021) ECOL APPL](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2249)</li>
     <li>[Gardner et al. (2018) ECOL EVOL](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.4509)</li>
     <li>[Sollmann et al. (2016) MEE](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12518)</li>
-    <li>[Royle et al. 2014. Spatial Capture Recapture. Academic Press, Waltham, MA.]()</li>
+    <li>[Royle et al. (2014) Spatial Capture Recapture. Academic Press, Waltham, MA.](https://shop.elsevier.com/books/spatial-capture-recapture/royle/978-0-12-405939-9)</li>
   </ul>
 </small>
 
