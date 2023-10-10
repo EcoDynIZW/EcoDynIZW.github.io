@@ -2644,7 +2644,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2750,7 +2750,7 @@ Wikis
 <li>Create the project folder structure with our <a href="https://ecodynizw.github.io/posts/d6package/">d6 package</a>: <code>d6::new_project()</code>.</li>
 <li>For consistent style, we ask you to use our corporate <a href="">d6 theme</a>: <code>d6::theme_d6()</code>.</li>
 <li>At the end of a project, transfer <a href="https://ecodynizw.github.io/guidelines.html#repository">your repository</a> to our <a href="https://github.com/EcoDynIZW/">EcoDynIZW GitHub account</a>.</li>
-<li>Ask Moritz Wenzler (<a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a>) for help of needed.<br />
+<li>Ask Moritz Wenzler-Meya (<a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a>) for help if needed.<br />
 <br></li>
 </ul>
 <h3 id="information-for-students-bsc-msc-phd">Information for Students (BSc | MSc | PhD)</h3>
@@ -2773,15 +2773,14 @@ Wikis
 <li><a href="#general">General Information</a></li>
 <li><a href="#theses">Conducting BSc/MSc/PhD Projects</a></li>
 <li><a href="#workflows">Organizing Workflows</a></li>
-<li><a href="#scripting">Scripting</a></li>
-<li><a href="#spatial">Spatial Data</a></li>
+<li><a href="#projectfolders">Project Folders</a></li>
 <li><a href="#backup">Data Backup</a></li>
 <li><a href="#manuscripts">Manuscript Submissions/Revisions</a></li>
 <li><a href="#repository">GitHub repository</a></li>
 <li><a href="#appendices">Appendices</a>
 <ul>
-<li><a href="#appendixA">Folder Structure for Project Folders</a></li>
-<li><a href="#appendixB">Detailed Spatial Data Information</a></li>
+<li><a href="#appendixA">Scripting</a></li>
+<li><a href="#appendixB">Spatial Data Information</a></li>
 <li><a href="#appendixC">What Nature Says…</a></li>
 </ul></li>
 </ul>
@@ -2792,7 +2791,7 @@ Wikis
 <p><br></p>
 <h2 id="general">General Information</h2>
 <p>The department is composed of three teams on (1) Individual Dynamics, (2) Population Dynamics and (3) Biodiversity Dynamics.</p>
-<p>Stephanie Kramer-Schadt is the department head and leader of the Population Dynamics team. Conny Landgraf is the assistant of the department head; she can assist with administrative duties (e.g. contracts, travel sheets, etc.). Moritz Wenzler and Jan Axtner are responsible for data management, data storage and the working group’s R code collection. As each department member has a specific area of expertise, we created an expert list (see 1.3) if you need help on specific topics. PhD students and scientists are obliged to update this expert list with their own skills and responsibilities as well.</p>
+<p>Stephanie Kramer-Schadt is the department head and leader of the Population Dynamics team. Conny Landgraf is the assistant of the department head; she can assist with administrative duties (e.g. contracts, travel sheets, etc.). Moritz Wenzler-Meya and Jan Axtner are responsible for data management, data storage and the working group’s R code collection. As each department member has a specific area of expertise, we created an expert list (see 1.3) if you need help on specific topics. PhD students and scientists are obliged to update this expert list with their own skills and responsibilities as well.</p>
 <p>For information on the Department, check <a href="https://www.ecological-dynamics-izw.com">our webpage</a> or subscribe to <a href="https://www.twitter.com/EcoDynIZW">our Twitter account</a> (@EcoDynIZW) for news about papers, helpful R-code, courses or scientific positions.</p>
 <h3 id="teams-of-the-department-of-ecological-dynamics">Teams of the Department of Ecological Dynamics:</h3>
 <ol type="1">
@@ -2838,7 +2837,7 @@ Email: <a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a></p>
 <h3 id="project-workflow">Project workflow</h3>
 <p>Contact the Data Managers (Jan Axtner or Moritz Wenzler-Meya) of the respective teams to organize your project ID, get server access and how to arrange your workspace best. To setup a project folder, we ask you to follow the setup:</p>
 <ul>
-<li><strong>Use the standardized project folder</strong> structure! (see <a href="#appendixA">Appendix A</a>, cf. <a href="https://github.com/EcoDynIZW/d6"><code>d6</code> R package</a> and <a href="https://github.com/">GitHub</a>)</li>
+<li><strong>Use the standardized project folder</strong> structure! (see <a href="#projectfolder">Project Folder Structure</a>, <a href="https://github.com/EcoDynIZW/d6"><code>d6</code> R package</a> and <a href="https://github.com/">GitHub</a>)</li>
 <li>Make an outline of the structure separately in your <strong>electronic lab-book</strong> (see 3.3.1), to indicate what to find in each folder and keep it updated.</li>
 <li>Please <strong>hand over the raw data to the data manager <u>before</u> starting your project analysis</strong>, to avoid accidental data losses.</li>
 <li>Store the raw data, e.g. data from field work, in the folder named <code>data-raw</code>. Use a folder named <code>output</code> to store data created from the raw data (e.g. after data cleaning or editing). This should also be the place where the <code>master table</code> is located, i.e. the data set of all subsequent analyses. If needed you can have a temporary subfolder in the “output” folder for everyday work and analysis trials. Empty the temporary folder regularly. Plots and figures should be stored in the <code>plots</code> folder. Scripts should be stored in the <code>R</code> folder. Documents like manuscripts, proposals, etc. should be stored in the <code>docs</code> folder. Save important, computational or labour intensive interim results or final results. Use appropriate subfolders such as <code>interim-results_&lt;date&gt;</code> or <code>final-results_&lt;date&gt;</code>.</li>
@@ -2851,85 +2850,11 @@ Email: <a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a></p>
 <p>At the start of each new project, create an electronic lab-book to document your workflow and decisions therein. It is of major importance that you keep this lab-book updated. For the ease of use we recommend simple .doc files (MS Word, Libre Office etc.) to keep record of our work. Write down important thoughts, things you have tried, also failed experiments. Try to use clear and comprehensible notes. Although this generates some additional effort you will realize soon that it will help you and others to track your work and make it reproducible. We highly recommend to use GitHub as version control of your project. You have to connect your GitHub account to the EcoDynIZW organization on <a href="https://github.com/EcoDynIZW/">GitHub</a> to share code with colleagues. Please create repositories as part of this organization. It is mandatory to hand over the electronic lab-book to the institute as part of the ‘Safeguarding and Storing of Primary Data’ regulation of the German Research Council DFG after finishing your project.
 To document scripting we recommend to use R Markdown (<code>.rmd</code>) files if possible. Between your code chunks you should annotate the script with everything that is necessary to understand and follow the code. Additionally, if you push new code to GitHub for version control, you have to comment on your committed code as well. It may be necessary to have an additional word document.</p>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
-<h2 id="scripting">Scripting</h2>
-<h3 id="general-recommendations">General recommendations</h3>
-<ul>
-<li>Write the author, name and date in a header (you can use the d6 package templates for this as well).</li>
-<li>Keep code in scripts as concise as possible.</li>
-<li>Use in-line comments to explain your code that others can follow your code.</li>
-<li>If possible, use dynamic paths (i.e. see R-package <a href="https://here.r-lib.org/"><code>here</code></a>).</li>
-<li>Always set variables/ parameters at the top of your script; do not set values somewhere inside the code as this is error prone, because these values tend to be forgotten to get changed when updating a script. The same applies to loading packages. Please also make sure to only load packages that are really needed and remove those that you are not using for the final analysis.</li>
-<li>Save the output of a script as .rds file to smoothly load it in the next script. Additionally, save the output in a file format usable beyond R, e.g. use .csv or .txt if you want to save tabular data or GeoTiff if you want to save a raster map.</li>
-<li>Use separate scripts to create figures of publishable quality (700 dpi) from the results. Use a vector graphics format like pdf.</li>
-<li>For simulation studies: Include all scripts, e.g. additional model code, batch files with simulated parameters, simulated landscapes and simulation results, and files used for the analyses.</li>
-</ul>
-<h3 id="r">R</h3>
-<ul>
-<li>Stick to the <a href="https://style.tidyverse.org/index.html">Rstudio style guide</a> to ensure readability of code.</li>
-<li>If you are using RStudio, make sure to set the following under <code>Tools &gt; Global Options &gt; General &gt; Basic</code>:
-<ul>
-<li>untick “Restore .RData into workspace at startup”</li>
-<li>set “Save workspace to .RData on exit:” to “Never”</li>
-<li>untick “Always save history (even when not saving .RData)” (recommended)</li>
-</ul></li>
-</ul>
-<figure>
-<img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/rstudio-settings.png" style="width:65.0%;height:65.0%" alt="A screenshot of the RStudio general settings" />
-<figcaption aria-hidden="true">A screenshot of the RStudio general settings</figcaption>
-</figure>
-<ul>
-<li>We recommend using R-Studio projects and R Markdown documents when scripting in R. If you use another “integrated development environment” (IDE) make sure you can provide versioned plain R scripts using a relative path to the used data files.</li>
-<li>Implement version control by using GitHub. If you install packages or use scripts and code chunks from GitHub provided by others, be aware to acknowledge the code developer prior to publication of scripts.</li>
-<li>Do not save the R history or the R environment. Always start a fresh and an empty R session to avoid artifacts by using objects of functions that were not defined in your script. More details here: <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/" class="uri">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/</a>.</li>
-<li>If possible use log files to document messages and errors.</li>
-</ul>
-<h3 id="python">Python</h3>
-<p>In general we recommend using Jupyter notebooks.
-[under construction]</p>
-<h3 id="netlogo">Netlogo</h3>
-<p>[under construction]</p>
-<h3 id="qgis">QGIS</h3>
-<p>In general we recommend doing GIS analyses in R. If you have to use QGIS use Python as scripting language. However, the RQGIS package provides a great opportunity to script complete workflows in QGIS by using R. Moreover, you can include R scripts in the QGIS toolbox.</p>
-<p>[under construction]</p>
-<p><a href="#toc">↑ Jump back to top.</a><br><br></p>
-<h2 id="spatial">Spatial Data</h2>
-<p>If you are working with spatial data please have the following in mind:</p>
-<ul>
-<li>Always check the projection (cartographic reference system (CRS)) of your data. Depending on what you want to do it could be necessary to change the CRS system, i.e. from an angular unit (like GPS data) to a projected unit in meters. BUT sometimes you cannot easily change it or it will drastically change your data.</li>
-<li>If you want to save you spatial data, please save it as Geopackage (<code>.gpkg</code>) or raster data GeoTiff (<code>.tif</code>). Please give a clear name, document the filename in your lab book and add the EPSG code of your CRS to the file name. Always use <code>utf-8</code> as file encoding.</li>
-<li>If you are not sure how to handle your spatial data please contact Moritz Wenzler, the GIS manager, for help.</li>
-</ul>
-<p>For detailed information about Spatial data go to <a href="#appendixB">Appendix B</a>).</p>
-<p><a href="#toc">↑ Jump back to top.</a><br><br></p>
-<h2 id="backup">Data Backup</h2>
-<p><strong>Important:</strong> backup your work! Make copies of raw data/files and scripts and save it in another location if you work on private computers. PhD students should work on the M-drive or the U-drive, never directly on the C-drive of the computer.</p>
-<h2 id="manuscripts">Manuscript Submissions/Revisions</h2>
-<p>When you are submitting a manuscript create a copy of the related subproject folder and add a suffix <code>submission_1_&lt;JournalAbbreviation&gt;</code>. This copy shall be stored and never changed—we recommend to zip this folder! When conducting a revisions or resubmission, copy the folder to <code>submission_2_&lt;JournalAbbreviation&gt;</code> and revise the paper.</p>
-<p>Please find additional information on ‘how to write a scientific paper’, how to avoid statistical pitfalls or how to organize workflows <a href="https://wolke.izw-berlin.de/index.php/apps/files/?dir=/Abteilung-Department%206/LabGuidelines&amp;fileid=346243">here</a>.</p>
-<h2 id="repository">GitHub repository</h2>
-<p>The final step after your paper gets published is to make the GitHub repository public (or create a repository if you haven’t before). The repository should contain clean code and data that runs properly. If you are using R, please make sure to use a R-Project with the given folder structure (see appendix A).</p>
-<p>The title of the repository should contain the last name of the first author, the year, and the abbreviation of the journal (e.g. <code>Smith_2023_Science</code>). Please add the title of the paper as the description (in quotation marks). Please provide the reference of the paper, including the DOI as a hyperlink, and the abstract in the README file. Add further notes on the files contained and the scripts if needed. Please use this template:</p>
-<pre class="text"><code># Smith et al. (2023) *Science*
-
-&gt; **Richard Smith**, Don Joe Radchuk &amp; **Jane Head** (2023): Study title. 
-*Science* 1-2. DOI: [doi-goes-here](https://doi.org/doi-goes-here)
-
-Abstract text.
-
-## Scripts
-
-... more notes if needed
-</code></pre>
-<p>Add the title in quotation marks as the description and the DOI as link to the repository about (right upper corner). For examples see <a href="https://github.com/orgs/EcoDynIZW/repositories">study repositories on our GitHub</a>).</p>
-<p>Finally, make sure to turn the visibility to public and transfer the ownership to the EcoDynIZW GitHub organization. If you have need help or have questions please ask the data manager for help.</p>
-<p><a href="#toc">↑ Jump back to top.</a><br><br></p>
-<hr />
-<h2 id="appendices">Appendices</h2>
-<h2 id="appendixA">Appendix A) Folder Structure for Project Folders</h2>
+<h2 id="projectfolders">Project Folder Structure</h2>
 <p>A new project can be started by installing the <a href="https://github.com/EcoDynIZW/d6">d6 R-package</a>. Running <code>new_project()</code> with a unique and descriptive name for your project (see below) will create a full scaffolding structure for all your future analysis steps. If you like, you can also specify a path and the project will be created there.</p>
 <p>Please create repositories on the EcoDynIZW account and not on your private
 account!</p>
-<h3 id="root-project-folder">Root project folder</h3>
+<h4 id="root-project-folder">Root project folder</h4>
 <p>Name it like:</p>
 <p><strong><em>species|topic_country|simu_method|approach_surname_firstletterofgivenname</em></strong></p>
 <p>e.g. <em>unicornus_wl_sdm_smith_j</em> (unicornus project in wonderland, species distribution model from John Smith) or <em>stability_simu_rpackage_smith_j</em></p>
@@ -2995,9 +2920,77 @@ additional files looks like this:</p>
     ├── NAMESPACE           —  contains context for R objects
     └── project.Rproj       —  Rproject file: use to start your project</code></pre>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
+<h2 id="backup">Data Backup</h2>
+<p><strong>Important:</strong> backup your work! Make copies of raw data/files and scripts and save it in another location if you work on private computers. PhD students should work on the M-drive or the U-drive, never directly on the C-drive of the computer.</p>
+<h2 id="manuscripts">Manuscript Submissions/Revisions</h2>
+<p>When you are submitting a manuscript create a copy of the related subproject folder and add a suffix <code>submission_1_&lt;JournalAbbreviation&gt;</code>. This copy shall be stored and never changed—we recommend to zip this folder! When conducting a revisions or resubmission, copy the folder to <code>submission_2_&lt;JournalAbbreviation&gt;</code> and revise the paper.</p>
+<p>Please find additional information on ‘how to write a scientific paper’, how to avoid statistical pitfalls or how to organize workflows <a href="https://wolke.izw-berlin.de/index.php/apps/files/?dir=/Abteilung-Department%206/LabGuidelines&amp;fileid=346243">here</a>.</p>
+<h2 id="repository">GitHub repository</h2>
+<p>The final step after your paper gets published is to make the GitHub repository public (or create a repository if you haven’t before). The repository should contain clean code and data that runs properly. If you are using R, please make sure to use a R-Project with the given folder structure (see appendix A).</p>
+<p>The title of the repository should contain the last name of the first author, the year, and the abbreviation of the journal (e.g. <code>Smith_2023_Science</code>). Please add the title of the paper as the description (in quotation marks). Please provide the reference of the paper, including the DOI as a hyperlink, and the abstract in the README file. Add further notes on the files contained and the scripts if needed. Please use this template:</p>
+<pre class="text"><code># Smith et al. (2023) *Science*
+
+&gt; **Richard Smith**, Don Joe Radchuk &amp; **Jane Head** (2023): Study title. 
+*Science* 1-2. DOI: [doi-goes-here](https://doi.org/doi-goes-here)
+
+Abstract text.
+
+## Scripts
+
+... more notes if needed
+</code></pre>
+<p>Add the title in quotation marks as the description and the DOI as link to the repository about (right upper corner). For examples see <a href="https://github.com/orgs/EcoDynIZW/repositories">study repositories on our GitHub</a>).</p>
+<p>Finally, make sure to turn the visibility to public and transfer the ownership to the EcoDynIZW GitHub organization. If you have need help or have questions please ask the data manager for help.</p>
+<p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <hr />
-<h2 id="appendixB">Appendix B) Detailed Spatial Data Information</h2>
+<h2 id="appendices">Appendices</h2>
+<h2 id="appendixA">Appendix A) Scripting</h2>
+<h3 id="general-recommendations">General recommendations</h3>
 <ul>
+<li>Write the author, name and date in a header (you can use the d6 package templates for this as well).</li>
+<li>Keep code in scripts as concise as possible.</li>
+<li>Use in-line comments to explain your code that others can follow your code.</li>
+<li>If possible, use dynamic paths (i.e. see R-package <a href="https://here.r-lib.org/"><code>here</code></a>).</li>
+<li>Always set variables/ parameters at the top of your script; do not set values somewhere inside the code as this is error prone, because these values tend to be forgotten to get changed when updating a script. The same applies to loading packages. Please also make sure to only load packages that are really needed and remove those that you are not using for the final analysis.</li>
+<li>Save the output of a script as .rds file to smoothly load it in the next script. Additionally, save the output in a file format usable beyond R, e.g. use .csv or .txt if you want to save tabular data or GeoTiff if you want to save a raster map.</li>
+<li>Use separate scripts to create figures of publishable quality (700 dpi) from the results. Use a vector graphics format like pdf.</li>
+<li>For simulation studies: Include all scripts, e.g. additional model code, batch files with simulated parameters, simulated landscapes and simulation results, and files used for the analyses.</li>
+</ul>
+<h3 id="r">R</h3>
+<ul>
+<li>Stick to the <a href="https://style.tidyverse.org/index.html">Rstudio style guide</a> to ensure readability of code.</li>
+<li>If you are using RStudio, make sure to set the following under <code>Tools &gt; Global Options &gt; General &gt; Basic</code>:
+<ul>
+<li>untick “Restore .RData into workspace at startup”</li>
+<li>set “Save workspace to .RData on exit:” to “Never”</li>
+<li>untick “Always save history (even when not saving .RData)” (recommended)</li>
+</ul></li>
+</ul>
+<figure>
+<img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/rstudio-settings.png" style="width:65.0%;height:65.0%" alt="A screenshot of the RStudio general settings" />
+<figcaption aria-hidden="true">A screenshot of the RStudio general settings</figcaption>
+</figure>
+<ul>
+<li>We recommend using R-Studio projects and R Markdown documents when scripting in R. If you use another “integrated development environment” (IDE) make sure you can provide versioned plain R scripts using a relative path to the used data files.</li>
+<li>Implement version control by using GitHub. If you install packages or use scripts and code chunks from GitHub provided by others, be aware to acknowledge the code developer prior to publication of scripts.</li>
+<li>Do not save the R history or the R environment. Always start a fresh and an empty R session to avoid artifacts by using objects of functions that were not defined in your script. More details here: <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/" class="uri">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/</a>.</li>
+<li>If possible use log files to document messages and errors.</li>
+</ul>
+<h3 id="python">Python</h3>
+<p>In general we recommend using Jupyter notebooks.
+[under construction]</p>
+<h3 id="netlogo">Netlogo</h3>
+<p>[under construction]</p>
+<h3 id="qgis">QGIS</h3>
+<p>In general we recommend doing GIS analyses in R. If you have to use QGIS use Python as scripting language. However, the RQGIS package provides a great opportunity to script complete workflows in QGIS by using R. Moreover, you can include R scripts in the QGIS toolbox.</p>
+<p>[under construction]</p>
+<p><a href="#toc">↑ Jump back to top.</a><br><br></p>
+<h2 id="appendixB">Appendix B) Spatial Data</h2>
+<p>If you are working with spatial data please have the following in mind:</p>
+<ul>
+<li>Always check the projection (cartographic reference system (CRS)) of your data. Depending on what you want to do it could be necessary to change the CRS system, i.e. from an angular unit (like GPS data) to a projected unit in meters. BUT sometimes you cannot easily change it or it will drastically change your data.</li>
+<li>If you want to save you spatial data, please save it as Geopackage (<code>.gpkg</code>) or raster data GeoTiff (<code>.tif</code>). Please give a clear name, document the filename in your lab book and add the EPSG code of your CRS to the file name. Always use <code>utf-8</code> as file encoding.</li>
+<li>If you are not sure how to handle your spatial data please contact Moritz Wenzler-Meya, the GIS manager, for help.</li>
 <li>When using spatial data give clear names for maps ≤ 13 characters without special characters or spaces.</li>
 <li>Write down the cartographic reference system (CRS) at the end of the file name, e.g. <code>filename_4326</code>.</li>
 <li>Always use <code>utf-8</code> encoding, <strong>NEVER</strong> use the system setting. If you have to use different character encoding settings, then name the used encoding in the filename.</li>
@@ -3007,7 +3000,7 @@ additional files looks like this:</p>
 <li>Always include the Coordinate Reference System as EPSG code (e.g. 4326 for log/lat WGS84 Coordinates) at the end of a file name, e.g. <code>my_env_variable_4326.gpkg</code>.</li>
 <li>Please save all your geo data into geopackage files (<code>.gpkg</code>) format to save and process your data. In general, if you export data from R please save it as an R Studio file (<code>.rds</code>). It will be saved without any losses.</li>
 <li>Store all point/line/polygon data as WGS84 (EPSG 4326).</li>
-<li>If you do not understand this paragraph, contact the geodata-manager (Moritz Wenzler) before doing anything involving geodata.</li>
+<li>If you do not understand this paragraph, contact the geodata-manager (Moritz Wenzler-Meya) before doing anything involving geodata.</li>
 </ul>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <hr />
