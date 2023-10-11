@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
   
 **Here you'll find a list of [offers](msc-bsc-theses-offers.html)&ensp;for Bachelor and Master theses.**
     
-  **For TU Berlin students:** Please consider the [Reader](https://www.oekosys.tu-berlin.de/fileadmin/fg35/Lehre/Downloads/ABSOLVENTINNEN_INFOS_Reader_171023.pdf) for the steps necessary to conduct a thesis. Successful attendance of our courses ‘biodiversity dynamics I + II’ , where we teach spatial R, distribution modelling and occupancy modelling, is of advantage.
+  **For TU Berlin students:** Please consider the [Reader](https://www.static.tu.berlin/fileadmin/www/10002349/pdf-Dateien/ABSOLVENTINNEN_INFOS_Reader_171023.pdf) for the steps necessary to conduct a thesis. Successful attendance of our courses ‘biodiversity dynamics I + II’ , where we teach spatial R, distribution modelling and occupancy modelling, is of advantage.
 </div> 
     
   Below, you will find an overview over currently running theses as well as a list of completed theses for your information.
