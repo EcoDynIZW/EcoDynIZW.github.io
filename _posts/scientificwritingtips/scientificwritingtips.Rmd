@@ -14,33 +14,25 @@ date: 2023-06-22 Enter date in this format
 output:
   distill::distill_article:
     self_contained: false
-    toc: true
-draft: true
+    toc: false
+draft: false
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE) ## keep this, add other settings if needed
 ```
 
-![](man/Intro_str.png){width=40%}
-![](man/Disc_str.png){width=40%}
+# Introduction
 
-[Introduction](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/_posts/scientificwritingtips/man/Introduction_str.pdf) [Discussion](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/_posts/scientificwritingtips/man/Discussion_str.pdf)
+![[link](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/_posts/scientificwritingtips/man/Introduction_str.pdf)](man/Introduction_str.pdf)
 
+# Discussion
 
-<ul class="card-wrapper">
-  <li class="card-repo">
-    <img class="card-repo-img" src='man/Intro_str.png' alt='Introduction Structure.'>
-    <h3>Introduction Structure</h3>
-    <p> </p><p>
-    [link to pdf](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/_posts/scientificwritingtips/man/Introduction_str.pdf)</a> 
-    </p>
-  </li>
+![[link](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/_posts/scientificwritingtips/man/Discussion_str.pdf)](man/Discussion_str.pdf)
 
+# Response Letter
 
-
-
-![[Response Letter](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/_posts/scientificwritingtips/man/ResponseLetter.pdf)](man/ResponseLetter.pdf)
+![[link](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/_posts/scientificwritingtips/man/ResponseLetter.pdf)](man/ResponseLetter.pdf)
 
 
 
