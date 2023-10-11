@@ -67,6 +67,27 @@
     "input_file": {}
   },
   {
+    "path": "posts/scientificwritingtips/",
+    "title": "Scientific Writing Tips",
+    "description": "Find here some guidelines how to write and structure a scientific introduction, a scientific discussion or prepare a response letter for your revisions. You will find three pdf documents, one for each section.",
+    "author": [
+      {
+        "name": "Aimara Planillo",
+        "url": {}
+      }
+    ],
+    "date": "2023-06-22",
+    "categories": [
+      "tutorial",
+      "writing",
+      "workflow"
+    ],
+    "contents": "\r\nIntroduction\r\nlinkDiscussion\r\nlinkResponse Letter\r\nlink\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2023-10-11T13:18:16+02:00",
+    "input_file": "scientificwritingtips.knit.md"
+  },
+  {
     "path": "posts/netlogoturtlespatialprojection/",
     "title": "Netlogo Turtle Spatial Projection",
     "description": "Learn how to transform the relative coordinates of the individuals from Netlogo into coordinates from real maps. This code is especially designed for spatially explicit netlogo models that were set to store the individual coordinates (xcor, ycor) in the output for the turtle data.",
