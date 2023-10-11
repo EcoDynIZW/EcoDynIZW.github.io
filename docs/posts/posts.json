@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/scientificwritingtips/",
+    "title": "Scientific Writing Tips",
+    "description": "Find here some guidelines how to write and structure a scientific introduction, a scientific discussion or prepare a response letter for your revisions. You will find three pdf documents, one for each section.",
+    "author": [
+      {
+        "name": "Aimara Planillo",
+        "url": {}
+      }
+    ],
+    "date": "2023-10-11",
+    "categories": [
+      "tutorial",
+      "writing",
+      "workflow"
+    ],
+    "contents": "\r\nIntroduction\r\nlinkDiscussion\r\nlinkResponse Letter\r\nlink\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2023-10-11T13:20:32+02:00",
+    "input_file": "scientificwritingtips.knit.md"
+  },
+  {
     "path": "posts/clippingmaskberlin/",
     "title": "Clipping a Raster to a Specific Area",
     "description": "Learn how to use a clipping mask to extract a portion of a raster, based on a template extent. In this example we show you how to clip a raster map to the extent and borders of Berlin boundaries.",
@@ -65,27 +86,6 @@
     "preview": "https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/preview-ggplot-workflow.png",
     "last_modified": "2023-07-06T11:26:06+02:00",
     "input_file": {}
-  },
-  {
-    "path": "posts/scientificwritingtips/",
-    "title": "Scientific Writing Tips",
-    "description": "Find here some guidelines how to write and structure a scientific introduction, a scientific discussion or prepare a response letter for your revisions. You will find three pdf documents, one for each section.",
-    "author": [
-      {
-        "name": "Aimara Planillo",
-        "url": {}
-      }
-    ],
-    "date": "2023-06-22",
-    "categories": [
-      "tutorial",
-      "writing",
-      "workflow"
-    ],
-    "contents": "\r\nIntroduction\r\nlinkDiscussion\r\nlinkResponse Letter\r\nlink\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2023-10-11T13:18:16+02:00",
-    "input_file": "scientificwritingtips.knit.md"
   },
   {
     "path": "posts/netlogoturtlespatialprojection/",
