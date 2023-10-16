@@ -16,35 +16,40 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <div class='highlightbox'>
 
-## The TL;DR Version  
+## TL;DR: Guidelines in a Nutshell
 <br>
 
 ### General Information
 
-- Important lab information (server access, responsibilities,...) can be found on our cloud in the folder `Lab_Orga`.
-- Follow our rules how to call project folders: `animal_species_where_what_who`.
-- Create the project folder structure with our [d6 package](https://ecodynizw.github.io/posts/d6package/): `d6::new_project()`.
-- For consistent style, we ask you to use our corporate [d6 theme](): `d6::theme_d6()`.
-- At the end of a project, transfer [your repository](https://ecodynizw.github.io/guidelines.html#repository) to our [EcoDynIZW GitHub account](https://github.com/EcoDynIZW/).
-- Ask Moritz Wenzler-Meya (<a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a>) for help if needed.  
+-  Important lab information (server access, responsibilities,...) can be found on our cloud in the folder `Lab_Orga`.
+-  When sharing documents, please use use the following syntax for the file name: `lastname_topic_YYYYMMDD.docx`. Do <u>not</u> use `v1`, `latest` or similar suffixes.
+-  An overview of geo-spatial data sets is available in our [geodata wiki](https://ecodynizw.github.io/geodata.html).
+-  To fulfill the requirement of a retention period of 10 years for all projects, follow our rules how to set up, maintain, and archive projects (see below).  
 <br>
 
-### Information for Students (BSc | MSc | PhD)
 
-#### Supervisory Meetings
+### Projects
 
-- Plan regular meetings at least 3 months ahead (2 weeks for non-regular meetings). 
-- Prepare for the meeting! Think about open questions, difficulties encountered, and the timeline for upcoming tasks.
-- Write the minutes of the meeting and send it to your supervisor(s).
+-  Create a new project for every study (i.e. publication).
+-  Name project folder using our unified syntax: `species_where_what_who`.<br>&rarr; e.g. `sciurus_vulgaris_de_camtrap_kramer_s`
+-  Comply with [our obligatory project folder structure](https://ecodynizw.github.io/guidelines.html#root-project-folder).<br>&rarr; easily to set up with our [d6 R package](https://ecodynizw.github.io/posts/d6package/): `d6::new_project()`.
+-  Track and control changes of source codes: [set up version control](https://docs.github.com/en/get-started/quickstart/create-a-repo).
+-  For a corporate chart style, please use [our d6 ggplot2 theme](https://github.com/EcoDynIZW/d6#corporate-ggplot2-theme): `d6::theme_d6()`.
+-  [Transfer your repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository) to our [GitHub organization](https://github.com/EcoDynIZW/) at the end of a project.
+-  Ask Moritz Wenzler-Meya (<a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a>) for help if needed.  
+<br>
 
 
-#### Thesis writing
+### Advice for Students (BSc | MSc | PhD)
 
-- Start writing your thesis early enough.
-- Attend writing courses.
-- Regularly send your chapter drafts to your supervisor(s) to get feedback. Allow for sufficient time to read and respond (1-3 weeks).
-- Send the final version of your manuscript/thesis to all supervisors/colleagues at least 4 weeks before the submission date. Keep in mind that you have to revise it afterwards!
+-  Plan regular supervisory meetings at least 3 months ahead.
+   -  Prepare for the meeting! Collect recent achievements, potential problems, and open questions. Provide a timeline for upcoming tasks.
+   -  Write the minutes of the meeting and send it to your supervisor(s).
+-  Start writing your thesis early enough and attend our "write now" meetings.
+   -  Regularly send drafts to your supervisor(s) to get feedback. 
+   -  Allow for sufficient time to read and respond (2-4 weeks).
 </div>
+
 
 
 ## Table of Content {#toc}

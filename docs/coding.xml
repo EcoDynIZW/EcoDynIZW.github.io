@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Ecological Dynamics</title>
+    <link>https://ecodynizw.github.io/</link>
+    <atom:link href="https://ecodynizw.github.io/coding.xml" rel="self" type="application/rss+xml"/>
+    <description>Ecological Dynamics
+</description>
+    <image>
+      <title>Ecological Dynamics</title>
+      <url>https://ecodynizw.github.io/img/d6_purple_round.png</url>
+      <link>https://ecodynizw.github.io/</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Scientific Writing Tips</title>
+      <dc:creator>Aimara Planillo</dc:creator>
+      <link>https://ecodynizw.github.io/posts/scientificwritingtips</link>
+      <description>Find here some guidelines how to write and structure a scientific introduction, a scientific discussion or prepare a response letter for your revisions. You will find three pdf documents, one for each section.</description>
+      <category>tutorial</category>
+      <category>writing</category>
+      <category>workflow</category>
+      <guid>https://ecodynizw.github.io/posts/scientificwritingtips</guid>
+      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Clipping a Raster to a Specific Area</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts/clippingmaskberlin</link>
+      <description>Learn how to use a clipping mask to extract a portion of a raster, based on a template extent. In this example we show you how to clip a raster map to the extent and borders of Berlin boundaries.</description>
+      <category>tutorial</category>
+      <category>spatial</category>
+      <category>Berlin</category>
+      <guid>https://ecodynizw.github.io/posts/clippingmaskberlin</guid>
+      <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts/clippingmaskberlin/clippingmaskberlin_files/figure-html5/example-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>How to Make a Blogpost: a Brief Introduction</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <dc:creator>Cédric Scherer</dc:creator>
+      <link>https://ecodynizw.github.io/posts/howtopost</link>
+      <description>Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a piece of code that might be interesting for your colleagues, consider to turn it into a blogpost for our webpage.</description>
+      <category>tutorial</category>
+      <category>workflow</category>
+      <guid>https://ecodynizw.github.io/posts/howtopost</guid>
+      <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>ggplot2 Workflow Tips</title>
+      <dc:creator>Cedric Scherer</dc:creator>
+      <link>https://ecodynizw.github.io/posts/ggplot-workflow</link>
+      <description>Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends.</description>
+      <category>rstats</category>
+      <category>ggplot2</category>
+      <category>workflow</category>
+      <category>tutorial</category>
+      <guid>https://ecodynizw.github.io/posts/ggplot-workflow</guid>
+      <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/preview-ggplot-workflow.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Netlogo Turtle Spatial Projection</title>
+      <dc:creator>Aimara Planillo</dc:creator>
+      <link>https://ecodynizw.github.io/posts/netlogoturtlespatialprojection</link>
+      <description>Learn how to transform the relative coordinates of the individuals from Netlogo into coordinates from real maps. This code is especially designed for spatially explicit netlogo models that were set to store the individual coordinates (xcor, ycor) in the output for the turtle data.</description>
+      <category>NetLogo</category>
+      <category>spatial</category>
+      <category>tutorial</category>
+      <guid>https://ecodynizw.github.io/posts/netlogoturtlespatialprojection</guid>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Spatial Data Sources in R</title>
+      <dc:creator>Cedric Scherer</dc:creator>
+      <link>https://ecodynizw.github.io/posts/r-spatial-data</link>
+      <description>Learn how to use a suite of R packages to download various spatial data sources. This guide illustrates how to download data of countries, physical objects, and cultural properties as vector or raster objects that can be assessed from within R.</description>
+      <category>tutorial</category>
+      <category>rstats</category>
+      <category>workflow</category>
+      <category>spatial</category>
+      <category>data sources</category>
+      <guid>https://ecodynizw.github.io/posts/r-spatial-data</guid>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/preview-r-spatial-data.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Manage Spatial Data from Our Geodata Archive</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts/d6geodatapackage</link>
+      <description>Learn how to use the {d6geodata} R package that provides functions for accessing data from the Geodata archive of the Department of Ecological Dynamics. The two functions `geo_overview()` and `get_geodata()` are the main components for all members of our Department. Several other functions are within this package but only meant to be used by the Geodata Manager of the Department.</description>
+      <category>tutorial</category>
+      <category>spatial</category>
+      <category>rstats</category>
+      <guid>https://ecodynizw.github.io/posts/d6geodatapackage</guid>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts/d6geodatapackage/d6geodatapackage_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Download Spatial Data from the FIS-Broker Data Base in R</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts/d6berlin-fisbroker</link>
+      <description>Learn how to download WFS (vector) data and ATOM (raster) data from the fisbroker data base using the our custom functions `download_fisbroker_wfs()` and `download_fisbroker_atom()`.</description>
+      <category>tutorial</category>
+      <category>spatial</category>
+      <guid>https://ecodynizw.github.io/posts/d6berlin-fisbroker</guid>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Run NetLogo Simulations in R</title>
+      <dc:creator>Tobias Kürschner</dc:creator>
+      <link>https://ecodynizw.github.io/posts/NLRX</link>
+      <description>Learn how to use the {NLRX} R package to run NetLogo models/experiments. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.</description>
+      <category>tutorial</category>
+      <category>NetLogo</category>
+      <category>rstats</category>
+      <category>modelling</category>
+      <guid>https://ecodynizw.github.io/posts/NLRX</guid>
+      <pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts/NLRX/nlrxpackage_files/figure-html5/spatial-plots-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Coding Basics 2: Loops and Functions</title>
+      <dc:creator>Tobias Kürschner</dc:creator>
+      <link>https://ecodynizw.github.io/posts/coding-basics</link>
+      <description>A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.</description>
+      <category>tutorial</category>
+      <category>workflow</category>
+      <category>rstats</category>
+      <category>NetLogo</category>
+      <guid>https://ecodynizw.github.io/posts/coding-basics</guid>
+      <pubDate>Mon, 14 Nov 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Coding Basics 1: General Tips</title>
+      <dc:creator>Tobias Kürschner</dc:creator>
+      <link>https://ecodynizw.github.io/posts/coding-goodpractice</link>
+      <description>A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code.</description>
+      <category>tutorial</category>
+      <category>workflow</category>
+      <category>rstats</category>
+      <guid>https://ecodynizw.github.io/posts/coding-goodpractice</guid>
+      <pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Turning Equations into Functions in NetLogo</title>
+      <dc:creator>Marius Grabow</dc:creator>
+      <link>https://ecodynizw.github.io/posts/netlogo-weibull</link>
+      <description>While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function &amp; associated cumulative density distribution function—both not yet implemented in NetLogo or NetLogo extensions.</description>
+      <category>NetLogo</category>
+      <category>rstats</category>
+      <category>distributions</category>
+      <guid>https://ecodynizw.github.io/posts/netlogo-weibull</guid>
+      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>imageseg</title>
+      <dc:creator>Jürgen Niedballa</dc:creator>
+      <link>https://ecodynizw.github.io/posts/imageseg</link>
+      <description>imageseg is an R package for deep learning image segmentation using the U-Net model architecture by Ronneberger (2015), implemented in Keras and TensorFlow. It provides pre-trained models for forest structural metrics (canopy density and understory vegetation density) and a workflow to apply these on custom images</description>
+      <guid>https://ecodynizw.github.io/posts/imageseg</guid>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-imageseg.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Isorix</title>
+      <dc:creator>Alexandre Courtiol</dc:creator>
+      <link>https://ecodynizw.github.io/posts/isorix</link>
+      <description>IsoriX is an R package aiming at building isoscapes using mixed models and inferring the geographic origin of organisms based on their isotopic ratios</description>
+      <guid>https://ecodynizw.github.io/posts/isorix</guid>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-isorix.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Manage Camera Trap Data in R</title>
+      <dc:creator>Jürgen Niedballa</dc:creator>
+      <link>https://ecodynizw.github.io/posts/camtrapr</link>
+      <description>Learn how to use the {camtrapR} R package for streamlined and flexible camera trap data management. It should be most useful to researchers and practitioners who regularly handle large amounts of camera trapping data.</description>
+      <category>tutorial</category>
+      <category>rstats</category>
+      <category>camera traping</category>
+      <category>data management</category>
+      <guid>https://ecodynizw.github.io/posts/camtrapr</guid>
+      <pubDate>Mon, 23 May 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-camtrapr.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Simulate Neutral Landscape Models</title>
+      <dc:creator>Cedric Scherer</dc:creator>
+      <link>https://ecodynizw.github.io/posts/nlmr</link>
+      <description>Learn how to use the {NLMR} R package to simulate neutral landscape models (NLMs), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models.</description>
+      <category>tutorial</category>
+      <category>rstats</category>
+      <category>spatial</category>
+      <category>modelling</category>
+      <guid>https://ecodynizw.github.io/posts/nlmr</guid>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-nlmr.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Spatial Datasets and Template Maps for Berlin</title>
+      <dc:creator>Cedric Scherer</dc:creator>
+      <link>https://ecodynizw.github.io/posts/d6berlinpackage</link>
+      <description>Learn how to use the {d6berlin} R package that provides spatial data sets and template maps for Berlin with carefully chosen and aesthetically pleasing defaults. The template maps include Berlin districts, green spaces, imperviousness levels, water bodies, district borders, roads, metro stations, and railways. Templates maps are created with a {ggplot2} wrapper function with the utility to add an inset globe with a locator pin, a scalebar, and a caption stating the data sources.</description>
+      <category>tutorial</category>
+      <category>rstats</category>
+      <category>spatial</category>
+      <category>Berlin</category>
+      <category>ggplot2</category>
+      <category>data sources</category>
+      <category>workflow</category>
+      <guid>https://ecodynizw.github.io/posts/d6berlinpackage</guid>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-d6berlin.png" medium="image" type="image/png"/>
+    </item>
+    <item>
+      <title>Simplify Workflows of D6 Research Projects</title>
+      <dc:creator>Cedric Scherer</dc:creator>
+      <link>https://ecodynizw.github.io/posts/d6package</link>
+      <description>Learn how to use the {d6} package to follow the project workflow within the department “Ecological Dynamics” at the Leibniz Institute for Zoo and Wildlife Research. The package functionality allows you to set up a standardized folder structure, to use templates for standardized reports and provides some helpful utility functions.</description>
+      <category>tutorial</category>
+      <category>rstats</category>
+      <category>workflow</category>
+      <category>data management</category>
+      <guid>https://ecodynizw.github.io/posts/d6package</guid>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-d6.png" medium="image" type="image/png"/>
+    </item>
+  </channel>
+</rss>

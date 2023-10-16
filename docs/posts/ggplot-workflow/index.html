@@ -92,6 +92,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <meta property="description" itemprop="description" content="Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."/>
 
+<link rel="canonical" href="https://ecodynizw.github.io/posts/ggplot-workflow/"/>
 <link rel="icon" type="image/png" href="../../img/d6_purple_round.png"/>
 
 <!--  https://schema.org/Article -->
@@ -103,6 +104,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="og:title" content="Ecological Dynamics: ggplot2 Workflow Tips"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."/>
+<meta property="og:url" content="https://ecodynizw.github.io/posts/ggplot-workflow/"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Ecological Dynamics"/>
 
@@ -110,13 +112,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="twitter:card" content="summary"/>
 <meta property="twitter:title" content="Ecological Dynamics: ggplot2 Workflow Tips"/>
 <meta property="twitter:description" content="Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."/>
+<meta property="twitter:url" content="https://ecodynizw.github.io/posts/ggplot-workflow/"/>
 <meta property="twitter:site" content="@EcoDynIZW"/>
 
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="Ecological Dynamics: ggplot2 Workflow Tips"/>
+<meta name="citation_fulltext_html_url" content="https://ecodynizw.github.io/posts/ggplot-workflow/"/>
+<meta name="citation_online_date" content="2023/06/22"/>
+<meta name="citation_publication_date" content="2023/06/22"/>
+<meta name="citation_author" content="Cedric Scherer"/>
+<meta name="citation_author_institution" content="IZW Berlin"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","categories","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["ggplot2 Workflow Tips"]},{"type":"character","attributes":{},"value":["Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/preview-ggplot-workflow.png"]},{"type":"character","attributes":{},"value":["rstats","ggplot2","workflow","tutorial"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Cedric Scherer"]},{"type":"character","attributes":{},"value":["https://cedricscherer.com"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["2023-06-22"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","categories","author","date","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["ggplot2 Workflow Tips"]},{"type":"character","attributes":{},"value":["Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends."]},{"type":"character","attributes":{},"value":["https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/preview-ggplot-workflow.png"]},{"type":"character","attributes":{},"value":["rstats","ggplot2","workflow","tutorial"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Cedric Scherer"]},{"type":"character","attributes":{},"value":["https://cedricscherer.com"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["2023-06-22"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/posts/ggplot-workflow/"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/posts/ggplot-workflow/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -468,8 +478,8 @@ d-title {
 </style>
 
 <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<link href="../../site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
-<link href="../../site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
 <script src="../../site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
 <script src="../../site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -3098,6 +3108,16 @@ Code to create <code>g3</code>, <code>g4</code>, and <code>g5</code>
 <p><code>{patchwork}</code> offers some great functionality to create basic and pretty complex layouts, add inset plots, merge repeated legends, and automate tag numbering. This makes it a powerful tool as you do not need to adjust tag labels, legends, and more for the individual ggplot.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
+<div class="article-footer">
+  <p class="social_footer">
+    <span class="article-sharing">
+      Share: &nbsp;
+      <a href="https://twitter.com/share?text=ggplot2%20Workflow%20Tips&amp;url=https%3A%2F%2Fecodynizw.github.io%2Fposts%2Fggplot-workflow%2F" aria-label="share on twitter">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+    </span>
+  </p>
+</div>
 <!--/radix_placeholder_article_footer-->
 </div>
 
@@ -3108,7 +3128,18 @@ Code to create <code>g3</code>, <code>g4</code>, and <code>g5</code>
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">Scherer (2023, June 22). Ecological Dynamics: ggplot2 Workflow Tips. Retrieved from https://ecodynizw.github.io/posts/ggplot-workflow/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{scherer2023ggplot2,
+  author = {Scherer, Cedric},
+  title = {Ecological Dynamics: ggplot2 Workflow Tips},
+  url = {https://ecodynizw.github.io/posts/ggplot-workflow/},
+  year = {2023}
+}</pre>
+</div>
 <!--/radix_placeholder_appendices-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <!--radix_placeholder_navigation_after_body--><html><body>
