@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ### General Information
 
 -  Important lab information (server access, responsibilities,...) can be found on our cloud in the folder `Lab_Orga`.
--  When sharing documents, please use use the following syntax for the file name: `lastname_topic_YYYYMMDD.docx`. Do <u>not</u> use `v1`, `latest` or similar suffixes.
+-  When sharing documents, please use use the following syntax for the file name: `lastname_topic_YYYYMMDD.docx`. Do not use `v1`, `latest` or similar suffixes.
 -  An overview of geo-spatial data sets is available in our [geodata wiki](https://ecodynizw.github.io/geodata.html).
 -  To fulfill the requirement of a retention period of 10 years for all projects, follow our rules how to set up, maintain, and archive projects (see below).  
 <br>
