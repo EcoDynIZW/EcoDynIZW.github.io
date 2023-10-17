@@ -88,28 +88,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Ecological Dynamics: Coding</title>
+  <title>Ecological Dynamics: Teaching</title>
 
+  <meta property="description" itemprop="description" content=""/>
 
   <link rel="icon" type="image/png" href="img/d6_purple_round.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Ecological Dynamics: Coding"/>
+  <meta property="og:title" content="Ecological Dynamics: Teaching"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content=""/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Ecological Dynamics"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Ecological Dynamics: Coding"/>
+  <meta property="twitter:title" content="Ecological Dynamics: Teaching"/>
+  <meta property="twitter:description" content=""/>
   <meta property="twitter:site" content="@EcoDynIZW"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing","link-citations"]}},"value":[{"type":"character","attributes":{},"value":["Coding"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]},{"type":"logical","attributes":{},"value":[true]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output","distill::distill_article"]}},"value":[{"type":"character","attributes":{},"value":["Teaching"]},{"type":"character","attributes":{},"value":[""]},{"type":"NULL"},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2681,12 +2684,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Coding","authors":[]}
+{"title":"Teaching","description":"","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2752,540 +2755,9 @@ Wikis
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).on("load", function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      page_category = decodeURIComponent(page_category)
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Coding">Coding</h1>
-<a href="posts/scientificwritingtips/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","writing","workflow"]}</script>
-<div class="metadata">
-<div class="publishedDate">Oct. 11, 2023</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Scientific Writing Tips</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">writing</div>
-<div class="dt-tag">workflow</div>
-</div>
-<p>Find here some guidelines how to write and structure a scientific introduction, a scientific discussion or prepare a response letter for your revisions. You will find three pdf documents, one for each section.</p>
-</div>
-</a>
-<a href="posts/clippingmaskberlin/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","spatial","Berlin"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 26, 2023</div>
-</div>
-<div class="thumbnail">
-<img src="posts/clippingmaskberlin/clippingmaskberlin_files/figure-html5/example-1.png"/>
-</div>
-<div class="description">
-<h2>Clipping a Raster to a Specific Area</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">Berlin</div>
-</div>
-<p>Learn how to use a clipping mask to extract a portion of a raster, based on a template extent. In this example we show you how to clip a raster map to the extent and borders of Berlin boundaries.</p>
-</div>
-</a>
-<a href="posts/howtopost/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","workflow"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 26, 2023</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>How to Make a Blogpost: a Brief Introduction</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">workflow</div>
-</div>
-<p>Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a piece of code that might be interesting for your colleagues, consider to turn it into a blogpost for our webpage.</p>
-</div>
-</a>
-<a href="posts/ggplot-workflow/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","ggplot2","workflow","tutorial"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 22, 2023</div>
-</div>
-<div class="thumbnail">
-<img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/preview-ggplot-workflow.png"/>
-</div>
-<div class="description">
-<h2>ggplot2 Workflow Tips</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">ggplot2</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">tutorial</div>
-</div>
-<p>Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends.</p>
-</div>
-</a>
-<a href="posts/netlogoturtlespatialprojection/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["NetLogo","spatial","tutorial"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 15, 2023</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Netlogo Turtle Spatial Projection</h2>
-<div class="dt-tags">
-<div class="dt-tag">NetLogo</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">tutorial</div>
-</div>
-<p>Learn how to transform the relative coordinates of the individuals from Netlogo into coordinates from real maps. This code is especially designed for spatially explicit netlogo models that were set to store the individual coordinates (xcor, ycor) in the output for the turtle data.</p>
-</div>
-</a>
-<a href="posts/r-spatial-data/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","workflow","spatial","data sources"]}</script>
-<div class="metadata">
-<div class="publishedDate">May 25, 2023</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/preview-r-spatial-data.png"/>
-</div>
-<div class="description">
-<h2>Spatial Data Sources in R</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">data sources</div>
-</div>
-<p>Learn how to use a suite of R packages to download various spatial data sources. This guide illustrates how to download data of countries, physical objects, and cultural properties as vector or raster objects that can be assessed from within R.</p>
-</div>
-</a>
-<a href="posts/d6geodatapackage/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","spatial","rstats"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 3, 2023</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/d6geodatapackage/d6geodatapackage_files/figure-html5/unnamed-chunk-1-1.png"/>
-</div>
-<div class="description">
-<h2>Manage Spatial Data from Our Geodata Archive</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">rstats</div>
-</div>
-<p>Learn how to use the {d6geodata} R package that provides functions for accessing data from the Geodata archive of the Department of Ecological Dynamics. The two functions `geo_overview()` and `get_geodata()` are the main components for all members of our Department. Several other functions are within this package but only meant to be used by the Geodata Manager of the Department.</p>
-</div>
-</a>
-<a href="posts/d6berlin-fisbroker/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","spatial"]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 15, 2023</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Download Spatial Data from the FIS-Broker Data Base in R</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">spatial</div>
-</div>
-<p>Learn how to download WFS (vector) data and ATOM (raster) data from the fisbroker data base using the our custom functions `download_fisbroker_wfs()` and `download_fisbroker_atom()`.</p>
-</div>
-</a>
-<a href="posts/NLRX/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","NetLogo","rstats","modelling"]}</script>
-<div class="metadata">
-<div class="publishedDate">Nov. 23, 2022</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/NLRX/nlrxpackage_files/figure-html5/spatial-plots-1.png"/>
-</div>
-<div class="description">
-<h2>Run NetLogo Simulations in R</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">NetLogo</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">modelling</div>
-</div>
-<p>Learn how to use the {NLRX} R package to run NetLogo models/experiments. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.</p>
-</div>
-</a>
-<a href="posts/coding-basics/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","workflow","rstats","NetLogo"]}</script>
-<div class="metadata">
-<div class="publishedDate">Nov. 14, 2022</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Coding Basics 2: Loops and Functions</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">NetLogo</div>
-</div>
-<p>A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.</p>
-</div>
-</a>
-<a href="posts/coding-goodpractice/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","workflow","rstats"]}</script>
-<div class="metadata">
-<div class="publishedDate">Nov. 13, 2022</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Coding Basics 1: General Tips</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">rstats</div>
-</div>
-<p>A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code.</p>
-</div>
-</a>
-<a href="posts/netlogo-weibull/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["NetLogo","rstats","distributions"]}</script>
-<div class="metadata">
-<div class="publishedDate">Nov. 11, 2022</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Turning Equations into Functions in NetLogo</h2>
-<div class="dt-tags">
-<div class="dt-tag">NetLogo</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">distributions</div>
-</div>
-<p>While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function &amp; associated cumulative density distribution function—both not yet implemented in NetLogo or NetLogo extensions.</p>
-</div>
-</a>
-<a href="posts/imageseg/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Sept. 12, 2022</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-imageseg.png"/>
-</div>
-<div class="description">
-<h2>imageseg</h2>
-<div class="dt-tags"></div>
-<p>imageseg is an R package for deep learning image segmentation using the U-Net model architecture by Ronneberger (2015), implemented in Keras and TensorFlow. It provides pre-trained models for forest structural metrics (canopy density and understory vegetation density) and a workflow to apply these on custom images</p>
-</div>
-</a>
-<a href="posts/isorix/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Sept. 12, 2022</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-isorix.png"/>
-</div>
-<div class="description">
-<h2>Isorix</h2>
-<div class="dt-tags"></div>
-<p>IsoriX is an R package aiming at building isoscapes using mixed models and inferring the geographic origin of organisms based on their isotopic ratios</p>
-</div>
-</a>
-<a href="posts/camtrapr/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","camera traping","data management"]}</script>
-<div class="metadata">
-<div class="publishedDate">May 23, 2022</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-camtrapr.png"/>
-</div>
-<div class="description">
-<h2>Manage Camera Trap Data in R</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">camera traping</div>
-<div class="dt-tag">data management</div>
-</div>
-<p>Learn how to use the {camtrapR} R package for streamlined and flexible camera trap data management. It should be most useful to researchers and practitioners who regularly handle large amounts of camera trapping data.</p>
-</div>
-</a>
-<a href="posts/nlmr/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","spatial","modelling"]}</script>
-<div class="metadata">
-<div class="publishedDate">Aug. 6, 2021</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-nlmr.png"/>
-</div>
-<div class="description">
-<h2>Simulate Neutral Landscape Models</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">modelling</div>
-</div>
-<p>Learn how to use the {NLMR} R package to simulate neutral landscape models (NLMs), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models.</p>
-</div>
-</a>
-<a href="posts/d6berlinpackage/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","spatial","Berlin","ggplot2","data sources","workflow"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 18, 2021</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-d6berlin.png"/>
-</div>
-<div class="description">
-<h2>Spatial Datasets and Template Maps for Berlin</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">Berlin</div>
-<div class="dt-tag">ggplot2</div>
-<div class="dt-tag">data sources</div>
-<div class="dt-tag">workflow</div>
-</div>
-<p>Learn how to use the {d6berlin} R package that provides spatial data sets and template maps for Berlin with carefully chosen and aesthetically pleasing defaults. The template maps include Berlin districts, green spaces, imperviousness levels, water bodies, district borders, roads, metro stations, and railways. Templates maps are created with a {ggplot2} wrapper function with the utility to add an inset globe with a locator pin, a scalebar, and a caption stating the data sources.</p>
-</div>
-</a>
-<a href="posts/d6package/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","workflow","data management"]}</script>
-<div class="metadata">
-<div class="publishedDate">Dec. 9, 2020</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-d6.png"/>
-</div>
-<div class="description">
-<h2>Simplify Workflows of D6 Research Projects</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">data management</div>
-</div>
-<p>Learn how to use the {d6} package to follow the project workflow within the department “Ecological Dynamics” at the Leibniz Institute for Zoo and Wildlife Research. The package functionality allows you to set up a standardized folder structure, to use templates for standardized reports and provides some helpful utility functions.</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:Articles">Articles</a>
-<span class="category-count">(18)</span>
-</li>
-<li>
-<a href="#category:Berlin">Berlin</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:camera_traping">camera traping</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:data_management">data management</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:data_sources">data sources</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:distributions">distributions</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:ggplot2">ggplot2</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:modelling">modelling</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:NetLogo">NetLogo</a>
-<span class="category-count">(4)</span>
-</li>
-<li>
-<a href="#category:rstats">rstats</a>
-<span class="category-count">(11)</span>
-</li>
-<li>
-<a href="#category:spatial">spatial</a>
-<span class="category-count">(7)</span>
-</li>
-<li>
-<a href="#category:tutorial">tutorial</a>
-<span class="category-count">(15)</span>
-</li>
-<li>
-<a href="#category:workflow">workflow</a>
-<span class="category-count">(8)</span>
-</li>
-<li>
-<a href="#category:writing">writing</a>
-<span class="category-count">(1)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Coding</h1>
+<h1>Teaching</h1>
 
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
@@ -3294,7 +2766,129 @@ function init_posts_list() {
 
 
 <div class="d-article">
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h1 id="course-biodiversity-dynamics">Course <em>biodiversity dynamics</em></h1>
+<p>Welcome to the course collection we have developed at our Department. Below you will find the compilation of our courses. These are hosted within one repository, so that data can be shared between the single course blocks The course has a strong focus on ecological data analysis and modelling, especially spatio-temporal data of animals. It covers the whole pipeline from observation and sampling → data analysis → model prediction → conservation concept.<br />
+<br></p>
+<figure>
+<img src="img/teaching/pipeline.png" alt="Course pipeline" />
+<figcaption aria-hidden="true">Course pipeline</figcaption>
+</figure>
+<p>The single course blocks follow a logical order. The first two introductory courses give an overview over handling data in R. These two course blocks are mandatory for all other courses; we then introduce statistical analyses for various types of data, e.g. from spatial distribution models for single species via biodiversity analyses of community counts, towards analyses of population trends. To do the courses, please follow the code step by step in the respective html-files of each course (see below).
+<br></p>
+<p>Each year, we teach a block course (in March) held in English, which comprises 6 ECTS (approx. 180 hrs, of which 60 hrs are preparation, 60 hrs are in presence, and 60 hrs are for preparing a project which will be graded). We will lecture the steps in data analysis, and you will prepare a little spatial conservation concept with data we provide; you are welcome to bring your own data. Drop us a line if you are interested in joining ( assist6[at]izw-berlin.de ).
+<br></p>
+<h2 id="course-announcements">Course announcements</h2>
+<ul>
+<li>20.02.2023: 9 - 15 hrs CET: Introduction to spatial R via zoom; exercises on your own
+<br></li>
+<li>20.-24.03.2023: block course <code>biodiversity dynamics</code> (at IZW; hybrid possibility)
+<br></li>
+</ul>
+<h2 id="prior-steps">Prior steps</h2>
+<h3 id="program-installation">Program installation</h3>
+<ul>
+<li>RStudio Desktop (<a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>) <br></li>
+<li>current R-version (<a href="https://cran.r-project.org/bin/windows/base/" class="uri">https://cran.r-project.org/bin/windows/base/</a>) <br></li>
+<li>RTools (<a href="https://cran.r-project.org/bin/windows/Rtools/" class="uri">https://cran.r-project.org/bin/windows/Rtools/</a>) or you are using the <code>{installr}</code> package by following the examples (<a href="https://search.r-project.org/CRAN/refmans/installr/html/install.Rtools.html" class="uri">https://search.r-project.org/CRAN/refmans/installr/html/install.Rtools.html</a>) <br>
+<br></li>
+</ul>
+<p>If you are <strong>not</strong> familiar with <code>R</code> and <code>RStudio</code>, open <code>RStudio</code> and follow the steps shown here of how to write scripts in R: <a href="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/resources/teaching/L1_Intro_RStudio.pdf">Intro to RStudio</a>
+<br></p>
+<p>If you are familiar with scripting in <code>R</code> in <code>RStudio</code>, here is <a href="https://www.cedricscherer.com/">Cedric’s</a> tip of the day of a cool feature in <code>RStudio</code>: use the rainbow parentheses option. For this, go to <code>Tools</code> → <code>Global Options</code> → <code>Code</code> →<code>Display</code>: tick rainbow parentheses. It helps you visually with closing brackets correctly for function calls and loops.</p>
+<h3 id="change-decimal-separator">Change decimal separator</h3>
+<p>…from comma to point in your computer settings if you are working from a German PC, e.g. in <code>Windows</code> → <code>Settings</code> → <code>Time and Region</code> → <code>Region</code> → <code>Advanced Settings</code> → <code>decimal separator</code>: change here to point.</p>
+<h3 id="download-course">Download course</h3>
+<p>Simply copy our course <code>github repository</code> directly <a href="https://github.com/EcoDynIZW/d6_teaching_collection/archive/refs/heads/main.zip">here</a>. This will download the whole folder structure with some basic data. However, we still recommend that you make a copy of the <code>R-scripts</code> so that you can write your own comments and code into the scripts. <br></p>
+<p>We chose the following folder structure for our courses:
+<br></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> d6_teaching_collection                 <span class="co"># root folder </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">├──</span>  data                              <span class="co"># data folder</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>    └── data_borneo                   <span class="co"># e.g., the Borneo data</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>        ├── geo_raster_current_asc    <span class="co"># geo data, raster ascii format, as in data_borneo</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>        └── animal_data               <span class="co"># animal observation data in borneo</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="ex">├──</span> output                             <span class="co"># storage for files created during course</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="ex">├──</span> R                                  <span class="co"># store here all your scripts, i.e.</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   ├── script_course1.R               <span class="co"># r-files or rmd-files with codes</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   └── script_course2.R</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="ex">├──</span> R_exercises                        <span class="co"># Exercises </span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="ex">└──</span> d6_teaching_collection.Rproj       <span class="co"># the R-project</span></span></code></pre></div>
+<p><br></p>
+<details>
+<summary>
+Optional - use own course folder setup
+</summary>
+<h5 id="optional---use-own-course-folder-setup">Optional - use own course folder setup</h5>
+<p>Only do this if you haven’t done the prior step of downloading the whole course and want to set up your own course folder structure or download only a part of the course. In order to ease access to data and script-functionality, we recommend that you use a similar folder structure as we do (see above). You will find the <code>github repository</code> here: <a href="https://github.com/EcoDynIZW/d6_teaching_collection" class="uri">https://github.com/EcoDynIZW/d6_teaching_collection</a>.</p>
+<ol type="a">
+<li><p>If you are familiar with <code>R</code> and want to do the steps ‘by hand’, create a main (root) folder named <code>d6_teaching_collection</code>, then create the subfolders (<code>data, output, R</code>) relative to this root-folder (= <code>d6_teaching_collection</code>). Create an <code>R-project</code> within this folder (e.g. <code>d6_teaching_collection.Rproj</code>. For this, open <code>RStudio</code> → <code>File</code> → <code>New Project</code> → <code>Existing directory</code>: and then link it with the root folder).
+<br></p></li>
+<li><p>Users familiar with <code>R</code> and <code>RMarkdown</code> could directly implement our <a href="https://github.com/EcoDynIZW/d6">d6 workflow package</a> to make project setups easier and to handle code and projects in a reproducible way. If you chose this option, please read the <code>ReadMe</code> that appears on the github website and install the d6 package (with the options <code>github= FALSE</code>). This has the advantage that you have automatically created a root directory and an <code>R-project</code>. You can then load the data (e.g. data_borneo, provided in zip-files, see below) directly under the root directory. In the <code>d6</code>-package there are already start-rmd-scripts (= <code>RMarkdown</code>-scripts with <code>yaml</code> header → open and execute with the symbol <code>knitR</code>), which make the start easier. But you can also create your own <code>R</code>-scripts, e.g. a new script for each course unit, which you put into the folder <code>R</code>.
+<br></p></li>
+</ol>
+<p>For both options, a) and b), you would need to download the data separately (link to zip.file below)
+<br></p>
+</details>
+<h1 id="follow-the-courses">Follow the courses</h1>
+<p>…when you have downloaded the course folder repository (see above). In the respective course <code>R</code> folder, you will find html-files and rmd-files. Open the html-file in a browser by double-clicking. Open <code>RStudio</code> in parallel by double-clicking on the <code>d6_teaching_collection.Rproj</code>-file. Under <code>Files</code> (lower right window pane) , you can open the <code>R</code>-scripts.
+<br></p>
+<p>Then, either create your own <code>R</code>-script and follow the steps in the html-file (you can copy-paste the commands from the html-file), or save a copy of the rmd-file under your own name and run the code chunks step by step in the <code>RStudio</code> console. But you should always have the html-file opened in parallel to <code>RStudio</code>. Each course comes with exercises as a learning control.</p>
+<details>
+<summary>
+<strong>Courses 1 and 2: Basic concepts in R &amp; Spatial R</strong>
+</summary>
+<div class="highlightbox">
+<p>These courses contain the minimum knowledge for handling, manipulating and visualizing various data types in <code>R</code> (Course1: <code>vectors</code>, <code>data.frames</code>, <code>lists</code>; Course2: spatial data like <code>raster</code> and vector files). The second course builds on the concepts introduced in course 1. It is therefore recommended to start with Course 1.
+<br></p>
+<p>You can run Course 1 without downloading any additional data. Please note that course 1 is <strong>not</strong> meant as a beginners course - a lot of great in-depth courses are available online (see links provided in Course 1). Course 1 is rather a ‘refresher’ of the basic <code>R</code> concepts that are needed for all subsequent courses. In a nutshell, it goes through the <a href="https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf">base R cheatsheet</a>. It is recommended to have the cheatsheet downloaded and to make your own notes into a copy of our script. You will find the course material for Course 1 in the repository under ./R/Course1_R_Intro.
+<br></p>
+<p>For Course 2, you need to have the repository downloaded for access to the spatial data. Please open the .html file in ./R/Course2_R_Spatial.</p>
+</div>
+</details>
+<details>
+<summary>
+<strong>Courses 3_a and 3_b Species distribution models</strong>
+</summary>
+<div class="highlightbox">
+<p>In these courses, you will learn how to establish a functional relationship between the (relative) occurrence probability of species and (environmental) variables. This functional relationship – or species distribution/ occupancy model – can be extrapolated to other similar areas and used as an assessment of the availability of potentially suitable habitat for the respective species.</p>
+<h5 id="presence-only-maxent">presence only / MaxEnt</h5>
+<p>Please download MaxEnt here: <a href="https://biodiversityinformatics.amnh.org/open_source/maxent/" class="uri">https://biodiversityinformatics.amnh.org/open_source/maxent/</a>
+For MaxEnt you may still need to install a Java version. If you double-click the file maxent.jar, an interface should appear.
+<br></p>
+<p>Download course data: For conducting course 3, we will provide you with additional data. Drag and drop the folders “data_borneo” and “data_berlin” from the provided zip files into the main folder (here: <code>d6_teaching_collection</code>).
+<br></p>
+<p>Link to data_borneo and data_berlin will be provided.</p>
+<p>Please open the .html file in ./R/Course3_a_presence_only_sdm.</p>
+<h5 id="repeated-presence-absence-occupancy-models">repeated presence absence / occupancy models</h5>
+<p>Please open the .html file in ./R/Course3_b_presence_absence_occupancy.</p>
+</div>
+</details>
+<details>
+<summary>
+<strong>Course 4 Movement analysis</strong>
+</summary>
+<div class="highlightbox">
+<p>This course is an overview over the first steps for analysing relocation (telemetry) data. Using our collared red fox (Vulpes vulpes) ‘Q von Stralau’ as an example of movement data with fixes every 4 minutes, we will show how to clean your data and make first analyses of the tracks (step length, turning angles) and home range analyses.</p>
+<p>Please open the .html file in ./R/Course4_telemetry_movement.</p>
+</div>
+</details>
+<details>
+<summary>
+<strong>Course 5 Biodiversity metrics</strong>
+</summary>
+<div class="highlightbox">
+<p>In this part of the course we are going to explore more in detail how we measure and compare biodiversity among different sites. We will focus mainly of alpha diversity, which refers to the diversity at a specific site; this is the group of metrics we use to compare diversity among sites. We will explore the classic and current alpha diversity indices for both presence/absence data and abundance data. Then, we will learn which conditions the diversity samples need to meet to be comparable and how to analyse the effects of environmental variables in the diversity metric values. Finally, we will apply all this to statistically analyse urban Berlin bird diversity and create a spatial “map of diversity” for the city.</p>
+<p>Please open the .html file in ./R/Course5_biodiversity_abundance_metrics.</p>
+</div>
+</details>
+<details>
+<summary>
+<strong>Course 6 Population analyses</strong>
+</summary>
+<div class="highlightbox">
+<p>Please open the .html file in ./R/Course6_demography_population_models.</p>
+</div>
+</details>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

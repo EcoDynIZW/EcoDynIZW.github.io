@@ -88,28 +88,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Ecological Dynamics: Coding</title>
+  <title>Ecological Dynamics: Recent Publications</title>
 
+  <meta property="description" itemprop="description" content=""/>
 
   <link rel="icon" type="image/png" href="img/d6_purple_round.png"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Ecological Dynamics: Coding"/>
+  <meta property="og:title" content="Ecological Dynamics: Recent Publications"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content=""/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Ecological Dynamics"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Ecological Dynamics: Coding"/>
+  <meta property="twitter:title" content="Ecological Dynamics: Recent Publications"/>
+  <meta property="twitter:description" content=""/>
   <meta property="twitter:site" content="@EcoDynIZW"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing","link-citations"]}},"value":[{"type":"character","attributes":{},"value":["Coding"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]},{"type":"logical","attributes":{},"value":[true]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Recent Publications"]},{"type":"character","attributes":{},"value":[""]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2681,12 +2684,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Coding","authors":[]}
+{"title":"Recent Publications","description":"","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2752,540 +2755,9 @@ Wikis
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).on("load", function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      page_category = decodeURIComponent(page_category)
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Coding">Coding</h1>
-<a href="posts/scientificwritingtips/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","writing","workflow"]}</script>
-<div class="metadata">
-<div class="publishedDate">Oct. 11, 2023</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Scientific Writing Tips</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">writing</div>
-<div class="dt-tag">workflow</div>
-</div>
-<p>Find here some guidelines how to write and structure a scientific introduction, a scientific discussion or prepare a response letter for your revisions. You will find three pdf documents, one for each section.</p>
-</div>
-</a>
-<a href="posts/clippingmaskberlin/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","spatial","Berlin"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 26, 2023</div>
-</div>
-<div class="thumbnail">
-<img src="posts/clippingmaskberlin/clippingmaskberlin_files/figure-html5/example-1.png"/>
-</div>
-<div class="description">
-<h2>Clipping a Raster to a Specific Area</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">Berlin</div>
-</div>
-<p>Learn how to use a clipping mask to extract a portion of a raster, based on a template extent. In this example we show you how to clip a raster map to the extent and borders of Berlin boundaries.</p>
-</div>
-</a>
-<a href="posts/howtopost/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","workflow"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 26, 2023</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>How to Make a Blogpost: a Brief Introduction</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">workflow</div>
-</div>
-<p>Learn how to contribute to the wiki section of the Ecological Dynamics Department webpage. If you think you have an important information, script, package or just a piece of code that might be interesting for your colleagues, consider to turn it into a blogpost for our webpage.</p>
-</div>
-</a>
-<a href="posts/ggplot-workflow/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","ggplot2","workflow","tutorial"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 22, 2023</div>
-</div>
-<div class="thumbnail">
-<img src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/preview-ggplot-workflow.png"/>
-</div>
-<div class="description">
-<h2>ggplot2 Workflow Tips</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">ggplot2</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">tutorial</div>
-</div>
-<p>Learn how to efficiently use the powerful graphics library {ggplot2} by avoiding repeated code and manual adjustments. You will learn how to define your themes globally and how to use the {patchwork} package to create multi-panel plots with automated numbering and combined legends.</p>
-</div>
-</a>
-<a href="posts/netlogoturtlespatialprojection/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["NetLogo","spatial","tutorial"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 15, 2023</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Netlogo Turtle Spatial Projection</h2>
-<div class="dt-tags">
-<div class="dt-tag">NetLogo</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">tutorial</div>
-</div>
-<p>Learn how to transform the relative coordinates of the individuals from Netlogo into coordinates from real maps. This code is especially designed for spatially explicit netlogo models that were set to store the individual coordinates (xcor, ycor) in the output for the turtle data.</p>
-</div>
-</a>
-<a href="posts/r-spatial-data/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","workflow","spatial","data sources"]}</script>
-<div class="metadata">
-<div class="publishedDate">May 25, 2023</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/preview-r-spatial-data.png"/>
-</div>
-<div class="description">
-<h2>Spatial Data Sources in R</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">data sources</div>
-</div>
-<p>Learn how to use a suite of R packages to download various spatial data sources. This guide illustrates how to download data of countries, physical objects, and cultural properties as vector or raster objects that can be assessed from within R.</p>
-</div>
-</a>
-<a href="posts/d6geodatapackage/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","spatial","rstats"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 3, 2023</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/d6geodatapackage/d6geodatapackage_files/figure-html5/unnamed-chunk-1-1.png"/>
-</div>
-<div class="description">
-<h2>Manage Spatial Data from Our Geodata Archive</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">rstats</div>
-</div>
-<p>Learn how to use the {d6geodata} R package that provides functions for accessing data from the Geodata archive of the Department of Ecological Dynamics. The two functions `geo_overview()` and `get_geodata()` are the main components for all members of our Department. Several other functions are within this package but only meant to be used by the Geodata Manager of the Department.</p>
-</div>
-</a>
-<a href="posts/d6berlin-fisbroker/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","spatial"]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 15, 2023</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Download Spatial Data from the FIS-Broker Data Base in R</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">spatial</div>
-</div>
-<p>Learn how to download WFS (vector) data and ATOM (raster) data from the fisbroker data base using the our custom functions `download_fisbroker_wfs()` and `download_fisbroker_atom()`.</p>
-</div>
-</a>
-<a href="posts/NLRX/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","NetLogo","rstats","modelling"]}</script>
-<div class="metadata">
-<div class="publishedDate">Nov. 23, 2022</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/NLRX/nlrxpackage_files/figure-html5/spatial-plots-1.png"/>
-</div>
-<div class="description">
-<h2>Run NetLogo Simulations in R</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">NetLogo</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">modelling</div>
-</div>
-<p>Learn how to use the {NLRX} R package to run NetLogo models/experiments. This guide gives a brief overview of the basic functionality, how to quickly apply it to a model and shows some example (visual) outputs.</p>
-</div>
-</a>
-<a href="posts/coding-basics/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","workflow","rstats","NetLogo"]}</script>
-<div class="metadata">
-<div class="publishedDate">Nov. 14, 2022</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Coding Basics 2: Loops and Functions</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">NetLogo</div>
-</div>
-<p>A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at both functions and loops in R, with examples from NetLogo and C++ and go over use and basic functionality.</p>
-</div>
-</a>
-<a href="posts/coding-goodpractice/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","workflow","rstats"]}</script>
-<div class="metadata">
-<div class="publishedDate">Nov. 13, 2022</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Coding Basics 1: General Tips</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">rstats</div>
-</div>
-<p>A brief introduction into various coding basics for people who are beginning to use R or other programming languages. In this session, we will be looking at some general tips and information that helps creating good and understandable code. Specifically we are looking at naming conventions, indentations and commenting of code.</p>
-</div>
-</a>
-<a href="posts/netlogo-weibull/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["NetLogo","rstats","distributions"]}</script>
-<div class="metadata">
-<div class="publishedDate">Nov. 11, 2022</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Turning Equations into Functions in NetLogo</h2>
-<div class="dt-tags">
-<div class="dt-tag">NetLogo</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">distributions</div>
-</div>
-<p>While some programming languages, such as R, offer many native functions, others (e.g., NetLogo) offer fewer built-in options. However, users can create their own functions easily. Here, we will show the example of a Weibull density distribution function &amp; associated cumulative density distribution function—both not yet implemented in NetLogo or NetLogo extensions.</p>
-</div>
-</a>
-<a href="posts/imageseg/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Sept. 12, 2022</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-imageseg.png"/>
-</div>
-<div class="description">
-<h2>imageseg</h2>
-<div class="dt-tags"></div>
-<p>imageseg is an R package for deep learning image segmentation using the U-Net model architecture by Ronneberger (2015), implemented in Keras and TensorFlow. It provides pre-trained models for forest structural metrics (canopy density and understory vegetation density) and a workflow to apply these on custom images</p>
-</div>
-</a>
-<a href="posts/isorix/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Sept. 12, 2022</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-isorix.png"/>
-</div>
-<div class="description">
-<h2>Isorix</h2>
-<div class="dt-tags"></div>
-<p>IsoriX is an R package aiming at building isoscapes using mixed models and inferring the geographic origin of organisms based on their isotopic ratios</p>
-</div>
-</a>
-<a href="posts/camtrapr/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","camera traping","data management"]}</script>
-<div class="metadata">
-<div class="publishedDate">May 23, 2022</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-camtrapr.png"/>
-</div>
-<div class="description">
-<h2>Manage Camera Trap Data in R</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">camera traping</div>
-<div class="dt-tag">data management</div>
-</div>
-<p>Learn how to use the {camtrapR} R package for streamlined and flexible camera trap data management. It should be most useful to researchers and practitioners who regularly handle large amounts of camera trapping data.</p>
-</div>
-</a>
-<a href="posts/nlmr/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","spatial","modelling"]}</script>
-<div class="metadata">
-<div class="publishedDate">Aug. 6, 2021</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-nlmr.png"/>
-</div>
-<div class="description">
-<h2>Simulate Neutral Landscape Models</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">modelling</div>
-</div>
-<p>Learn how to use the {NLMR} R package to simulate neutral landscape models (NLMs), a common set of various null models for spatial analysis and as input for spatially-explicit, generic models.</p>
-</div>
-</a>
-<a href="posts/d6berlinpackage/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","spatial","Berlin","ggplot2","data sources","workflow"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 18, 2021</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-d6berlin.png"/>
-</div>
-<div class="description">
-<h2>Spatial Datasets and Template Maps for Berlin</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">spatial</div>
-<div class="dt-tag">Berlin</div>
-<div class="dt-tag">ggplot2</div>
-<div class="dt-tag">data sources</div>
-<div class="dt-tag">workflow</div>
-</div>
-<p>Learn how to use the {d6berlin} R package that provides spatial data sets and template maps for Berlin with carefully chosen and aesthetically pleasing defaults. The template maps include Berlin districts, green spaces, imperviousness levels, water bodies, district borders, roads, metro stations, and railways. Templates maps are created with a {ggplot2} wrapper function with the utility to add an inset globe with a locator pin, a scalebar, and a caption stating the data sources.</p>
-</div>
-</a>
-<a href="posts/d6package/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["tutorial","rstats","workflow","data management"]}</script>
-<div class="metadata">
-<div class="publishedDate">Dec. 9, 2020</div>
-</div>
-<div class="thumbnail">
-<img data-src="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-d6.png"/>
-</div>
-<div class="description">
-<h2>Simplify Workflows of D6 Research Projects</h2>
-<div class="dt-tags">
-<div class="dt-tag">tutorial</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">data management</div>
-</div>
-<p>Learn how to use the {d6} package to follow the project workflow within the department “Ecological Dynamics” at the Leibniz Institute for Zoo and Wildlife Research. The package functionality allows you to set up a standardized folder structure, to use templates for standardized reports and provides some helpful utility functions.</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:Articles">Articles</a>
-<span class="category-count">(18)</span>
-</li>
-<li>
-<a href="#category:Berlin">Berlin</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:camera_traping">camera traping</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:data_management">data management</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:data_sources">data sources</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:distributions">distributions</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:ggplot2">ggplot2</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:modelling">modelling</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:NetLogo">NetLogo</a>
-<span class="category-count">(4)</span>
-</li>
-<li>
-<a href="#category:rstats">rstats</a>
-<span class="category-count">(11)</span>
-</li>
-<li>
-<a href="#category:spatial">spatial</a>
-<span class="category-count">(7)</span>
-</li>
-<li>
-<a href="#category:tutorial">tutorial</a>
-<span class="category-count">(15)</span>
-</li>
-<li>
-<a href="#category:workflow">workflow</a>
-<span class="category-count">(8)</span>
-</li>
-<li>
-<a href="#category:writing">writing</a>
-<span class="category-count">(1)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Coding</h1>
+<h1>Recent Publications</h1>
 
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
@@ -3294,6 +2766,76 @@ function init_posts_list() {
 
 
 <div class="d-article">
+<p>Find all our publication as PDFs also at <a href="https://www.researchgate.net/">ResearchGate</a>.</p>
+<p>For older publications please check here:<br> <a href="publications.html">2023</a> | <a href="pubs-2021.html">2021</a> | <a href="pubs-2020.html">2020</a> | <a href="pubs-2019.html">2019</a> | <a href="pubs-2018.html">2018</a></p>
+<p><br></p>
+<h2 id="section">2022</h2>
+<div class="headerbox">
+<hbox>Peer-Reviewed Publications</hbox>
+</div>
+<p><br></p>
+<ul>
+<li><p><strong>Alexiou I</strong>, Abrams JF, Coudrat CNZ, Nanthavong C, <strong>Nguyen A</strong>, <strong>Niedballa J</strong>, <strong>Wilting A</strong> , <strong>Tilker A</strong> (2022): Camera-trapping reveals new insights in the ecology of three sympatric muntjacs in an overhunted biodiversity hotspot. MAMM BIOL, <strong>102</strong>, 489–500. doi:<span><a href="https://doi.org/10.1007/s42991-022-00248-0">10.1007/s42991-022-00248-0</a></span></p></li>
+<li><p>Antunes AC, Montanarin A, Gräbin DM, …, <strong>Sollmann R</strong>, …, Ribeiro MC (2022): AMAZONIA CAMTRAP: A dataset of mammal, bird, and reptile species recorded with camera traps in the Amazon forest. ECOLOGY, <strong>103(9)</strong>, e3738. doi:<span><a href="https://doi.org/10.1002/ecy.3738">10.1002/ecy.3738</a></span></p></li>
+<li><p>Appleton MR, Courtiol A, Emerton L, …, <strong>Tilker A</strong>, et al. (2022): Protected area personnel and ranger numbers are insufficient to deliver global expectations. NAT SUSTAIN, <strong>5</strong>, 1100–1110. doi:<span><a href="https://doi.org/10.1038/s41893-022-00970-0">10.1038/s41893-022-00970-0</a></span></p></li>
+<li><p>Asad S, Vitalis V, <strong>Guharajan R</strong>, Abrams JF, Lagan P, Kissing J, Sikui J, <strong>Wilting A</strong>, Rödel MO (2022): Variable species but similar amphibian community responses across habitats following reduced impact logging. GLOB ECOL CONSERV, <strong>35</strong>, e02061. doi:<span><a href="https://doi.org/10.1016/j.gecco.2022.e02061">10.1016/j.gecco.2022.e02061</a></span></p></li>
+<li><p>Bolas EC, <strong>Sollmann R</strong>, Crooks KR, Boydston EE, Shaskey L, Boser CL, Dillon A, Van Vuren DH (2022): Role of microhabitat and temporal activity in facilitating coexistence of endemic carnivores on the California Channel Islands. J MAMMAL, <strong>103</strong>, 18-28. doi:<span><a href="https://doi.org/10.1093/jmammal/gyab125">10.1093/jmammal/gyab125</a></span></p></li>
+<li><p><strong>Benhaiem S</strong>, Kaidatzi S, Hofer H, <strong>East ML</strong> (2022): Long-term reproductive costs of snare injuries in a keystone terrestrial by-catch species. ANIM CONSERV. doi:<span><a href="https://doi.org/10.1111/acv.12798">10.1111/acv.12798</a></span></p></li>
+<li><p>Bitariho R, Akampurira E, <strong>Mugerwa B</strong> (2022): Long-term funding of community projects has contributed to mitigation of illegal activities within a premier African protected area, Bwindi impenetrable National Park, Uganda. CONSERV SCI PRACT, e12761. doi:<span><a href="https://doi.org/10.1111/csp2.12761">10.1111/csp2.12761</a></span></p></li>
+<li><p>Brieger F, Kämmerle JL, <strong>Hagen R</strong>, Suchant R (2022): Behavioural reactions to oncoming vehicles as a crucial aspect of wildlife-vehicle collision risk in three common wildlife species. ACCID ANAL PREV, <strong>168</strong>. doi:<span><a href="https://doi.org/10.1016/j.aap.2021.106564">10.1016/j.aap.2021.106564</a></span></p></li>
+<li><p><strong>Calderon Quinonez AP</strong>, <strong>Louvrier J</strong>, <strong>Planillo AP</strong>, [….], <strong>Kramer-Schadt S</strong> (2022): Occupancy models reveal potential of conservation prioritization for Central American jaguars. ANIM CONSERV, doi:<span><a href="https://doi.org/10.1111/acv.12772">10.1111/acv.12772</a></span></p></li>
+<li><p>Cardador L, Tella JL, <strong>Louvrier J</strong>, Anadón JD, Abellán P, Carrete M (2022): Climate matching, anthropogenic factors, and dispersal contribute differentially to the colonisation and extinction of local populations during dynamic avian invasions. DIVERS DISTRIB, <strong>28</strong>, 1908– 1921. doi:<span><a href="https://doi.org/10.1111/ddi.13591">10.1111/ddi.13591</a></span></p></li>
+<li><p>Culhane K, <strong>Sollmann R</strong>, White AM, Tarbill GL, Cooper SD, Young HS (2022): Small mammal responses to fire severity mediated by vegetation characteristics and species traits. ECOL EVOL, <strong>12(5)</strong>, e8918. doi:<span><a href="https://doi.org/10.1002/ece3.8918">10.1002/ece3.8918</a></span></p></li>
+<li><p><strong>East ML</strong>, <strong>Thierer D</strong>, <strong>Benhaiem S</strong>, Metzger S, Hofer H (2022): Infanticide by adult females causes sexual conflict in a female-dominated social mammal. FRONT ECOL EVOL <strong>10</strong>. doi:<span><a href="https://doi.org/10.3389/fevo.2022.860854">10.3389/fevo.2022.860854</a></span></p></li>
+<li><p>Festa F, AncillottoL, Santini L, Pacifici M, Rocha R, Toshkova N, Amorim F, Benítez-5 López A, Domer A, Hamidović D, <strong>Kramer-Schadt S</strong>, Mathews F, <strong>Radchuk V</strong>, Rebelo H, Ruczynski I, <strong>Solem E</strong>, Tsoar A, Russo D, Razgour O (2022): Bat responses to climate change: a systematic review. BIOL REV. doi:<span><a href="https://doi.org/10.1111/brv.12893">10.1111/brv.12893</a></span></p></li>
+<li><p>Figueiredo L, <strong>Scherer C</strong>, Cabral JS (2022): Computational notebooks to facilitate writing and improve reproducibility of (ecological) research. PLOS COMPUT BIOL, <strong>18</strong>, e1010356. doi:<span><a href="https://doi.org/10.1371/journal.pcbi.1010356">10.1371/journal.pcbi.1010356</a></span></p></li>
+<li><p>Fogarty FA, Yen JDL, Fleishman E, <strong>Sollmann R</strong>, Ke A (2022): Multiple-region, N-mixture community models to assess associations of riparian area, fragmentation, and species richness. ECOL APPL, e2698. doi:<span><a href="https://doi.org/10.1002/eap.2698">10.1002/eap.2698</a></span></p></li>
+<li><p><strong>Gicquel M</strong>, <strong>East ML</strong>, Hofer H, <strong>Benhaiem S</strong> (2022): Early-life adversity predicts performance and fitness in a wild social carnivore. J ANIM ECOL, <strong>00</strong>, 1– 13. doi:<span><a href="https://doi.org/10.1111/1365-2656.13785">10.1111/1365-2656.13785</a></span></p></li>
+<li><p><strong>Gicquel M</strong>, <strong>East ML</strong>, Hofer H, Cubaynes S, <strong>Benhaiem S</strong> (2022): Climate change does not decouple interactions between a central place foraging predator and its migratory prey. ECOSPHERE, <strong>13</strong>, e4012. doi:<span><a href="https://doi.org/10.1002/ecs2.4012">10.1002/ecs2.4012</a></span></p></li>
+<li><p>Gorczynski D, Hsieh C, Ahumad J, Akampurira E, Andrianarisoa MH, Espinosa S, Johnson S, Kayijamahe C, Lima MGM, <strong>Mugerwa B</strong>, Rovero F, Salvador J, Santos F, Sheil D, Uzabah, E, Beaudrot L (2022): Human density modulates spatial associations among tropical forest terrestrial mammal species. GLOB CHANG BIOL, <strong>28</strong>, 7205–7216. doi:<span><a href="https://doi.org/10.1111/gcb.16434">10.1111/gcb.16434</a></span></p></li>
+<li><p><strong>Grabow M</strong>, <strong>Louvrier JLP</strong>, <strong>Planillo A</strong>, Kiefer S, <strong>Drenske S</strong>, <strong>Börner K</strong>, Stillfried M, Hagen R, Kimmig S, Straka TM, <strong>Kramer-Schadt S</strong> (2022): Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels. FRONT ECOL EVOL, <strong>10</strong>, 881247. doi:<span><a href="https://doi.org/10.3389/fevo.2022.881247">10.3389/fevo.2022.881247</a></span></p></li>
+<li><p><strong>Guharajan R</strong>, Abrams JF, Abram NK, Lim HY, Gopalasamy RC, Deere NJ, Struebig MJ, Goossens B, Gardner PC, Brodie JF, Granados A, Teoh SW, Hearn AJ, Ross J, Macdonald DW, <strong>Mohamed A</strong>, <strong>Wong ST</strong>, Hastie AYL, Wong W-M, Kretschmar P, Wong ST, Koh SPH, <strong>Wilting A</strong> (2022): Determinants of sun bear <em>Helarctos malayanus</em> habitat use in Sabah, Malaysian Borneo and its predicted distribution under future forest degradation and loss. BIODIVERS CONSERV. doi:<span><a href="https://doi.org/10.1007/s10531-022-02503-9">10.1007/s10531-022-02503-9</a></span></p></li>
+<li><p>Günther T, <strong>Kramer-Schadt S</strong>, Fuhrmann M, Belik V (2022): Environmental factors associated with the prevalence of ESBL/AmpC-producing Escherichia coli in wild boar (Sus scrofa).
+FRONT VET SCI, <strong>9</strong>, 980554. doi:<span><a href="https://doi.org/10.3389/fvets.2022.980554">10.3389/fvets.2022.980554</a></span></p></li>
+<li><p><strong>Hagen R</strong>, Ortmann S, Elliger A, &amp; Arnold J (2022): Evidence for a male-biased sex ratio in the offspring of a large herbivore: The role of environmental conditions in the sex ratio variation. ECOL EVOL, <strong>12</strong>, e8938. doi:<span><a href="https://doi.org/10.1002/ece3.8938">10.1002/ece3.8938</a></span></p></li>
+<li><p>Hering R, Hauptfleisch M, Jago M, Smith T, <strong>Kramer-Schadt S</strong>, Stiegler J, Blaum N (2022): Don’t stop me now: Managed fence gaps could allow migratory ungulates to track dynamic resources and reduce fence related energy loss. FRONT ECOL EVOL, <strong>10</strong>, 907079. doi:<span><a href="https://doi.org/10.3389/fevo.2022.907079">10.3389/fevo.2022.907079</a></span></p></li>
+<li><p>Hering R, Hauptfleisch M, <strong>Kramer-Schadt S</strong>, Stiegler J, Blaum N (2022): Effects of fences and fence gaps on the movement behavior of three southern African antelope species. FRONT CONSERV SCI, <strong>3</strong>, 959423. doi:<span><a href="https://doi.org/10.3389/fcosc.2022.959423">10.3389/fcosc.2022.959423</a></span></p></li>
+<li><p><strong>Kalyahe MM</strong>, Hofer H, <strong>East ML</strong> (2022): Do anthropogenic sources of food increase livestock predation in the area surrounding Ruaha National Park? ENVIRON CONSERV <strong>49</strong>, 105-113. doi:<span><a href="https://doi.org/10.1017/S037689292200008X">10.1017/S037689292200008X</a></span></p></li>
+<li><p>Kappeler PM, <strong>Benhaiem S</strong>, Fichtel C, Fromhage L, Höner OP, Jennions MD, Kaiser S, Krüger O, Schneider JM, Tuni C, van Schaik J, Goymann W (2022): Sex roles and sex ratios in animals. BIOL REV. doi:<span><a href="https://doi.org/10.1111/brv.12915">10.1111/brv.12915</a></span></p></li>
+<li><p>Kitchener A, Hoffmann M, Yamaguchi N, Breitenmoser-Würsten C, <strong>Wilting A</strong> (2022): A system for designating taxonomic certainty in mammals and other taxa. MAMM BIOL, <strong>102</strong>, 251-261. doi:<span><a href="https://doi.org/10.1007/s42991-021-00205-3">10.1007/s42991-021-00205-3</a></span></p></li>
+<li><p>Kitchener AC, Simo FT, <strong>Mugerwa B</strong>, Sanderson JG (2022): Evidence that Temminck described Felis aurata in 1825, not 1827. ARCH NAT HIST, <strong>49</strong>, 78-85. doi:<span><a href="https://doi.org/10.3366/anh.2022.0759">10.3366/anh.2022.0759</a></span></p></li>
+<li><p>Ke A, <strong>Sollmann R</strong>, Frishkoff L, Karp DS (2022): A hierarchical N-mixture model to estimate behavioral variation and a case study of Neotropical birds. ECOL APPL, e2632. <span><a href="doi:%5Bdoi:10.1002/eap.2632" class="uri">doi:[doi:10.1002/eap.2632</a>](<a href="https://doi.org/10.1002/eap.2632" class="uri">https://doi.org/10.1002/eap.2632</a>)</span></p></li>
+<li><p>McLaughlin JP, Schroeder J, White AM, Culhane K, Mirts HE, Tarbill GL, Sire L, Page M, Baker E, Moritz M, Brashares J, Young HS, <strong>Sollmann R</strong> (2022): Food webs for three burn severities after wildfire in the Eldorado National Forest, California. NAT SCI DATA, <strong>9</strong>, 384. doi:<span><a href="https://doi.org/10.1038/s41597-022-01220-w">10.1038/s41597-022-01220-w</a></span></p></li>
+<li><p>Mirts HE, McLaughlin JP, Weller TJ, White AM, Young HS, <strong>Sollmann R</strong> (2022): Bats in the megafire: assessing species‘ site use in a postfire landscape in the Sierra Nevada. J MAMMAL, <strong>103(1)</strong>, 111-123. doi:<span><a href="https://doi.org/10.1093/jmammal/gyab129">10.1093/jmammal/gyab129</a></span></p></li>
+<li><p><strong>Moreno-Sosa AM</strong>, Yacelga M, Craighead K, <strong>Kramer-Schadt S</strong>, <strong>Abrams JF</strong> (2022): Can prey occupancy act as a surrogate for mesopredator occupancy? A case study of ocelot (<em>Leopardus pardalis</em>). MAMM BIOL, <strong>102</strong>, 163-175, doi:<span><a href="https://doi.org/10.1007/s42991-022-00232-8">10.1007/s42991-022-00232-8</a></span></p></li>
+<li><p><strong>Nguyen TV</strong>, <strong>Wilting A</strong>, <strong>Niedballa J</strong>, <strong>Nguyen A</strong>, Rawson BM, Nguyen AQH, Cao TT, Wearn OR, Dao AC, <strong>Tilker A</strong> (2022): Getting the big picture: Landscape-scale occupancy patterns of two Annamite endemics among multiple protected areas. CONS SCI PRACT, e620. doi:<span><a href="https://doi.org/10.1111/csp2.620">10.1111/csp2.620</a></span></p></li>
+<li><p><strong>Niedballa J</strong>, <strong>Axtner J</strong>, Döbert TF, <strong>Tilker A</strong>, <strong>Nguyen A</strong>, <strong>Wong ST</strong>, Fiderer C, Heurich M, &amp; <strong>Wilting A</strong> (2022): imageseg: An R package for deep learning-based image segmentation. METHODS ECOL EVO, <strong>13</strong>, 2363– 2371, doi:<span><a href="https://doi.org/10.1111/2041-210X.13984">10.1111/2041-210X.13984</a></span></p></li>
+<li><p>Reusch C, Lozar M, <strong>Kramer-Schadt S</strong>, Voigt CC (2022): Coastal onshore wind turbines lead to habitat loss for bats in Northern Germany. J ENV MANAGE <strong>310</strong>. doi:<span><a href="https://doi.org/10.1016/j.jenvman.2022.114715">10.1016/j.jenvman.2022.114715</a></span></p></li>
+<li><p>Ripari L &amp; <strong>Premier J</strong>, …, <strong>Kramer-Schadt S</strong>, Heurich M (2022): Human disturbance is the most limiting factor driving habitat selection of a large carnivore throughout Continental Europe. BIOL CONS, <strong>266</strong>, 109446. doi:<span><a href="https://doi.org/10.1016/j.biocon.2021.109446">10.1016/j.biocon.2021.109446</a></span></p></li>
+<li><p>Semper-Pascual A, Bischof R, Milleret C, Beaudrot L, Vallejo-Vargas AF, Ahumada JA, Bitariho R, Jansen PA, Moreira Lima MG, <strong>Mugerwa B</strong>, Rovero F, Santos F, Sheil D (2022): Occupancy winners in tropical protected forests: a pantropical analysis. PROC R SOC B, <strong>289</strong>. doi:<span><a href="https://doi.org/10.1098/rspb.2022.0457">10.1098/rspb.2022.0457</a></span></p></li>
+<li><p>Stiegler J, Lins A, Dammhahn M, <strong>Kramer-Schadt S</strong>, Ortmann S, Blaum N (2022): Personality drives activity and space use in a mammalian herbivore. MOV ECOL, <strong>10</strong>, 33. doi:<span><a href="https://doi.org/10.1016/j.biocon.2021.109446">10.1016/j.biocon.2021.109446</a></span></p></li>
+<li><p>Synodinos AD, Karnatak R, Aguilar-Trigueros CA, Gras P, Heger T, Ionescu D, Maaß S, Musseau CL, Onandia G, <strong>Planillo A</strong>, Weiss L, Wollrab S, Ryo M (2022): The rate of environmental change as an important driver across scales in ecology. OIKOS e09616. doi:<span><a href="https://doi.org/10.1111/oik.09616">10.1111/oik.09616</a></span></p></li>
+<li><p>Vallejo-Vargas AF, Sheil D, Semper-Pascual A, … <strong>Mugerwa B</strong>, … et al. (2022): Consistent diel activity patterns of forest mammals among tropical regions. NAT COMMUN, <strong>13</strong>, 7102. doi:<span><a href="https://doi.org/10.1038/s41467-022-34825-1">10.1038/s41467-022-34825-1</a></span></p></li>
+<li><p>Vlaschenko A, Kravchenko K, Yatsiuk Y, Hukov V, <strong>Kramer-Schadt S</strong>, <strong>Radchuk V</strong> (2022): Bat assemblages are shaped by land cover types and forest age: A case study from eastern Ukraine. FORESTS, <strong>13</strong>, 1732. doi:<span><a href="https://doi.org/10.3390/f13101732">10.3390/f13101732</a></span></p></li>
+<li><p>Voigt CC, <strong>Scherer C</strong>, Runkel V (2022). Modelling the power of acoustic monitoring to predict bat fatalities at wind turbines. CONSERV SCI PRACT, <strong>4</strong>, e12841. doi:<span><a href="https://doi.org/10.1111/csp2.12841">10.1111/csp2.12841</a></span></p></li>
+<li><p><strong>Wong S</strong>, Guharajan R, Petrus A, Jubili J, Lietz R, Abrams J, Hon J, Alen L, Ting N, Wong G, Tchin L, Bijack N, <strong>Kramer-Schadt S</strong>, <strong>Wilting A</strong>, <strong>Sollmann R</strong> (2022): How do terrestrial wildlife communities respond to small-scale Acacia plantations embedded in harvested tropical forest? ECOL EVOL, <strong>12</strong>, e9337. doi:<span><a href="https://doi.org/10.1002/ece3.9337">10.1002/ece3.9337</a></span></p></li>
+</ul>
+<div class="headerbox">
+<hbox>Preprints</hbox>
+</div>
+<p><br></p>
+<ul>
+<li><strong>Mugerwa B</strong>, <strong>Niedballa J</strong>, <strong>Planillo A</strong>, Sheil D, <strong>Kramer-Schadt S</strong>, <strong>Wilting A</strong> (2022): Global disparity of research allocation and the Aichi biodiversity conservation targets. BIORXIV, 2022.04.07.486958, doi:<span><a href="https://doi.org/10.1101/2022.04.07.486958">10.1101/2022.04.07.486958</a></span></li>
+</ul>
+<div class="headerbox">
+<hbox>Book Chapters &amp; Reports</hbox>
+</div>
+<p><br></p>
+<ul>
+<li><p>Gimenez O, <strong>Louvrier J</strong>, Lauret V, Santostasi N (2022): Studying Species Demography and Distribution in Natural Conditions: Hidden Markov Models. In Statistical Approaches for Hidden Variables in Ecology (eds N. Peyrard and O. Gimenez). <a href="https://doi.org/10.1002/9781119902799.ch3">https://doi.org/10.1002/9781119902799.ch3</a></p></li>
+<li><p>Papaïx J, Soubeyrand S, Bonnefon O, Walker E, <strong>Louvrier J</strong>, Klein E, Roques L (2022): Inferring Mechanistic Models in Spatial Ecology Using a Mechanistic-Statistical Approach. In Statistical Approaches for Hidden Variables in Ecology (eds N. Peyrard and O. Gimenez). <a href="https://doi.org/10.1002/9781119902799.ch4">https://doi.org/10.1002/9781119902799.ch4</a></p></li>
+<li><p>Thonicke K, Rahner E, Arneth A, Bartkowski B, Bonn A, Döhler C, Finger R, Freitag J, Grosch R, Grossart H.-P, Grützmacher K, Hartman Scholz A, Häuser C, Hickler T, Hölker F, Jähnig S C, Jeschke J, Kasen R, Kastner T, <strong>Kramer-Schadt S</strong>, Krug C, Lakner S, Loft L, Matzdorf B, Meakins F, De Meester L, Monaghan M T, Müller D, Overmann J, Quaas M, <strong>Radchuk V</strong>, Reyer C, Roos C, Scholz I, Schroer S, Sioen G B, Sommer S, Sommerwerk N, Tockner K, Turk Z, Warner B, Wätzold F, Wende W, Veenstra, van der Voort H (2022): 10 Must-Knows aus der Biodiversitätsforschung 2022 | 10 Must knows from biodiversity science 2022. Leibniz-Forschungsnetzwerk Biodiversität, Potsdam, Deutschland. doi:<span><a href="https://doi.org/10.5281/zenodo.6257476">10.5281/zenodo.6257476</a> | <a href="https://zenodo.org/record/6257527">zenodo.org/record/6257527</a></span></p></li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
