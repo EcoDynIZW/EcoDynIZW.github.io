@@ -2,6 +2,7 @@ name: "D6_Distill_Webpage"
 title: "Ecological Dynamics"
 description: |
   Ecological Dynamics
+base_url: https://ecodynizw.github.io/
 output_dir: "docs"
 #creative_commons: CC BY
 language:
@@ -14,7 +15,6 @@ twitter:
 navbar:
   logo:
     image: img/d6_white.png
-  search: true
   right:
     - text: "Teams"
       menu:
@@ -37,28 +37,25 @@ navbar:
         - text: "Msc/Bsc Theses"
           href: msc-bsc-theses.html
     - text: "Teaching"
-      href: teaching.html 
-    
+      href: teaching.html
     - text: "Wikis"
       menu:
         - text: "Coding"
           href: coding.html
         - text: "Geodata"
           href: geodata.html
-    #- text: "Ressources"
-    #  menu:
-    #    - text: "Guidelines"
-    #      href: guidelines.html
-    #    - text: "Wiki"
-    #      href: wiki.html
-    #- text: "About"
-    #  href: about.html
     - icon: fa fa-twitter
       href: https://twitter.com/EcoDynIZW
   source_url: https://github.com/EcoDynIZW
 output: distill::distill_article
 collections:
   posts:
-    categories: TRUE
-    categories_metadata: TRUE
+    categories: true
+    categories_metadata: true
     authors_metadata: false
+    share: [twitter]
+  geodata:
+    categories: true
+    categories_metadata: true
+    authors_metadata: false
+    share: [twitter]

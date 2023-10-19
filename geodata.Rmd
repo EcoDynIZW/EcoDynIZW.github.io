@@ -2,10 +2,5 @@
 title: "Geodata"
 site: distill::distill_website
 listing: posts_geodata
-link-citations: true
+link-citations: false
 ---
-
-```{r}
-print("Hello World")
-```
-

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Ecological Dynamics</title>
+    <link>https://ecodynizw.github.io/</link>
+    <atom:link href="https://ecodynizw.github.io/geodata.xml" rel="self" type="application/rss+xml"/>
+    <description>Ecological Dynamics
+</description>
+    <image>
+      <title>Ecological Dynamics</title>
+      <url>https://ecodynizw.github.io/img/d6_purple_round.png</url>
+      <link>https://ecodynizw.github.io/</link>
+    </image>
+    <generator>Distill</generator>
+    <lastBuildDate>Thu, 22 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>landcover germany 2021</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/landcover_germany_2021_10m_04326_tif</link>
+      <description>landcover germany 2021</description>
+      <category>10m</category>
+      <category>Germany</category>
+      <category>2021</category>
+      <category>espg:4326</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/landcover_germany_2021_10m_04326_tif</guid>
+      <pubDate>Thu, 22 Jun 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/landcover_germany_2021_10m_04326_tif/landcover_germany_2021_10m_04326_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>ndvi brandenburg 2023</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/ndvi_brandenburg_2023_30m_32633_tif</link>
+      <description>ndvi brandenburg 2023</description>
+      <category>Brandenburg</category>
+      <category>2023</category>
+      <category>epsg:32633</category>
+      <category>30m</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/ndvi_brandenburg_2023_30m_32633_tif</guid>
+      <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/ndvi_brandenburg_2023_30m_32633_tif/ndvi_brandenburg_2023_30m_32633_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>ndvi world 2023</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/ndvi_world_2023_1km_04326_tif</link>
+      <description>ndvi world 2023</description>
+      <category>World</category>
+      <category>2023</category>
+      <category>epsg:4326</category>
+      <category>1km</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/ndvi_world_2023_1km_04326_tif</guid>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/ndvi_world_2023_1km_04326_tif/ndvi_world_2023_1km_04326_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>tree-cover-density berlin 2018</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif</link>
+      <description>tree-cover-density berlin 2018</description>
+      <category>Berlin</category>
+      <category>2018</category>
+      <category>10m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif</guid>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif/tree-cover-density_berlin_2018_10m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>tree-cover-density germany 2015</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/tree-cover-density_germany_2015_100m_03035_tif</link>
+      <description>tree-cover-density germany 2015</description>
+      <category>Germany</category>
+      <category>2015</category>
+      <category>epsg:3035</category>
+      <category>100m</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/tree-cover-density_germany_2015_100m_03035_tif</guid>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/tree-cover-density_germany_2015_100m_03035_tif/tree-cover-density_germany_2015_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>human-modification-index world 2016</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/human-modification-index_world_2016_1km_mollweide_tif</link>
+      <description>human-modification-index world 2016</description>
+      <category>World</category>
+      <category>1km</category>
+      <category>crs:mollweide</category>
+      <category>2016</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/human-modification-index_world_2016_1km_mollweide_tif</guid>
+      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/human-modification-index_world_2016_1km_mollweide_tif/human-modification-index_world_2016_1km_mollweide_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>green-capacity berlin 2020</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/green-capacity_berlin_2020_10m_03035_tif</link>
+      <description>green-capacity berlin 2020</description>
+      <category>Berlin</category>
+      <category>10m</category>
+      <category>epsg:3035</category>
+      <category>2020</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/green-capacity_berlin_2020_10m_03035_tif</guid>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/green-capacity_berlin_2020_10m_03035_tif/green-capacity_berlin_2020_10m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>corine berlin 2018</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/corine_berlin_2018_20m_03035_tif</link>
+      <description>corine berlin 2018</description>
+      <category>20m</category>
+      <category>2018</category>
+      <category>Berlin</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/corine_berlin_2018_20m_03035_tif</guid>
+      <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/corine_berlin_2018_20m_03035_tif/corine_berlin_2018_20m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>mammal-richness world 2015</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/mammal-richness_world_2015_1km_04326_tif</link>
+      <description>mammal-richness world 2015</description>
+      <category>2015</category>
+      <category>World</category>
+      <category>epsg:4326</category>
+      <category>1km</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/mammal-richness_world_2015_1km_04326_tif</guid>
+      <pubDate>Fri, 21 Apr 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/mammal-richness_world_2015_1km_04326_tif/mammal-richness_world_2015_1km_04326_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>landuse atlas 2009</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/landuse_atlas_2009_1m_03035_tif</link>
+      <description>landuse atlas 2009</description>
+      <category>Atlas</category>
+      <category>2019</category>
+      <category>1m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/landuse_atlas_2009_1m_03035_tif</guid>
+      <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/landuse_atlas_2009_1m_03035_tif/landuse_atlas_2009_1m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>distance-to-waterbodies atlas 2009</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/distance-to-waterbodies_atlas_2009_1m_03035_tif</link>
+      <description>distance-to-waterbodies atlas 2009</description>
+      <category>Atlas</category>
+      <category>2009</category>
+      <category>1m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/distance-to-waterbodies_atlas_2009_1m_03035_tif</guid>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/distance-to-waterbodies_atlas_2009_1m_03035_tif/distance-to-waterbodies_atlas_2009_1m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>light-pollution berlin 2021</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/light-pollution_berlin_2021_100m_03035_tif</link>
+      <description>light-pollution berlin 2021</description>
+      <category>Berlin</category>
+      <category>2021</category>
+      <category>100m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/light-pollution_berlin_2021_100m_03035_tif</guid>
+      <pubDate>Thu, 26 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/light-pollution_berlin_2021_100m_03035_tif/light-pollution_berlin_2021_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>noise-day-night berlin 2017</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/noise-day-night_berlin_2017_10m_25833_tif</link>
+      <description>noise-day-night berlin 2017</description>
+      <category>Berlin</category>
+      <category>2017</category>
+      <category>10m</category>
+      <category>epsg:25833</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/noise-day-night_berlin_2017_10m_25833_tif</guid>
+      <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/noise-day-night_berlin_2017_10m_25833_tif/noise-day-night_berlin_2017_10m_25833_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>imperviousness berlin 2018</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2018_10m_03035_tif</link>
+      <description>imperviousness berlin 2018</description>
+      <category>Berlin</category>
+      <category>2018</category>
+      <category>10m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2018_10m_03035_tif</guid>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2018_10m_03035_tif/imperviousness_berlin_2018_10m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>population-density berlin 2019</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/population-density_berlin_2019_10m_03035_tif</link>
+      <description>population-density berlin 2019</description>
+      <category>2019</category>
+      <category>Berlin</category>
+      <category>10m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/population-density_berlin_2019_10m_03035_tif</guid>
+      <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/population-density_berlin_2019_10m_03035_tif/population-density_berlin_2019_10m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>vegetation-heights berlin 2020</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/vegetation-heights_berlin_2020_1m_25833_tif</link>
+      <description>vegetation-heights berlin 2020</description>
+      <category>Berlin</category>
+      <category>2020</category>
+      <category>1m</category>
+      <category>epsg:25833</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/vegetation-heights_berlin_2020_1m_25833_tif</guid>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/vegetation-heights_berlin_2020_1m_25833_tif/vegetation-heights_berlin_2020_1m_25833_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>distance-to-human-settlements atlas 2009</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/distance-to-human-settlements_atlas_2009_1m_03035_tif</link>
+      <description>distance-to-human-settlements atlas 2009</description>
+      <category>Atlas</category>
+      <category>2022</category>
+      <category>1m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/distance-to-human-settlements_atlas_2009_1m_03035_tif</guid>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/distance-to-human-settlements_atlas_2009_1m_03035_tif/distance-to-human-settlements_atlas_2009_1m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>distance-to-kettleholes atlas 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/distance-to-kettleholes_atlas_2022_1m_03035_tif</link>
+      <description>distance-to-kettleholes atlas 2022</description>
+      <category>Atlas</category>
+      <category>2022</category>
+      <category>1m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/distance-to-kettleholes_atlas_2022_1m_03035_tif</guid>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/distance-to-kettleholes_atlas_2022_1m_03035_tif/distance-to-kettleholes_atlas_2022_1m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>distance-to-motorway-rural-road germany 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/distance-to-motorway-rural-road_germany_2022_100m_03035_tif</link>
+      <description>distance-to-motorway-rural-road germany 2022</description>
+      <category>Germany</category>
+      <category>2022</category>
+      <category>100m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/distance-to-motorway-rural-road_germany_2022_100m_03035_tif</guid>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/distance-to-motorway-rural-road_germany_2022_100m_03035_tif/distance-to-motorway-rural-road_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>distance-to-rivers atlas 2009</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/distance-to-rivers_atlas_2009_1m_03035_tif</link>
+      <description>distance-to-rivers atlas 2009</description>
+      <category>Atlas</category>
+      <category>2022</category>
+      <category>1m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/distance-to-rivers_atlas_2009_1m_03035_tif</guid>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/distance-to-rivers_atlas_2009_1m_03035_tif/distance-to-rivers_atlas_2009_1m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>distance-to-roads-paths germany 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/distance-to-roads-paths_germany_2022_100m_03035_tif</link>
+      <description>distance-to-roads-paths germany 2022</description>
+      <category>Germany</category>
+      <category>2022</category>
+      <category>100m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/distance-to-roads-paths_germany_2022_100m_03035_tif</guid>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/distance-to-roads-paths_germany_2022_100m_03035_tif/distance-to-roads-paths_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>motorway-rural-road germany 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/motorway-rural-road_germany_2022_100m_03035_tif</link>
+      <description>motorway-rural-road germany 2022</description>
+      <category>Germany</category>
+      <category>2022</category>
+      <category>100m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/motorway-rural-road_germany_2022_100m_03035_tif</guid>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/motorway-rural-road_germany_2022_100m_03035_tif/motorway-rural-road_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>motorways germany 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/motorways_germany_2022_100m_03035_tif</link>
+      <description>motorways germany 2022</description>
+      <category>Germany</category>
+      <category>2022</category>
+      <category>100m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/motorways_germany_2022_100m_03035_tif</guid>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/motorways_germany_2022_100m_03035_tif/motorways_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>paths germany 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/paths_germany_2022_100m_03035_tif</link>
+      <description>paths germany 2022</description>
+      <category>Germany</category>
+      <category>2022</category>
+      <category>100m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/paths_germany_2022_100m_03035_tif</guid>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/paths_germany_2022_100m_03035_tif/paths_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>roads germany 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/roads_germany_2022_100m_03035_tif</link>
+      <description>roads germany 2022</description>
+      <category>Germany</category>
+      <category>2022</category>
+      <category>100m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/roads_germany_2022_100m_03035_tif</guid>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/roads_germany_2022_100m_03035_tif/roads_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>distance-to-paths germany 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/distance-to-paths_germany_2022_100m_03035_tif</link>
+      <description>distance-to-paths germany 2022</description>
+      <category>Germany</category>
+      <category>2022</category>
+      <category>100m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/distance-to-paths_germany_2022_100m_03035_tif</guid>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/distance-to-paths_germany_2022_100m_03035_tif/distance-to-paths_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>dem berlin 2021</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/dem_berlin_2021_1m_25833_tif</link>
+      <description>dem berlin 2021</description>
+      <category>Berlin</category>
+      <category>2021</category>
+      <category>1m</category>
+      <category>epsg:25833</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/dem_berlin_2021_1m_25833_tif</guid>
+      <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/dem_berlin_2021_1m_25833_tif/dem_berlin_2021_1m_25833_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>distance-to-streets atlas 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/distance-to-streets_atlas_2022_1m_03035_tif</link>
+      <description>distance-to-streets atlas 2022</description>
+      <category>Atlas</category>
+      <category>2022</category>
+      <category>1m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/distance-to-streets_atlas_2022_1m_03035_tif</guid>
+      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/distance-to-streets_atlas_2022_1m_03035_tif/distance-to-streets_atlas_2022_1m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>motorways berlin 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/motorways_berlin_2022_100m_03035_tif</link>
+      <description>motorways berlin 2022</description>
+      <category>Berlin</category>
+      <category>2022</category>
+      <category>100m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/motorways_berlin_2022_100m_03035_tif</guid>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/motorways_berlin_2022_100m_03035_tif/motorways_berlin_2022_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>distance-to-motorways germany 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/distance-to-motorways_germany_2022_100m_03035_tif</link>
+      <description>distance-to-motorways germany 2022</description>
+      <category>Germany</category>
+      <category>2022</category>
+      <category>100m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/distance-to-motorways_germany_2022_100m_03035_tif</guid>
+      <pubDate>Mon, 14 Nov 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/distance-to-motorways_germany_2022_100m_03035_tif/distance-to-motorways_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>distance-to-roads germany 2022</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/distance-to-roads_germany_2022_100m_03035_tif</link>
+      <description>distance-to-roads germany 2022</description>
+      <category>Germany</category>
+      <category>2022</category>
+      <category>100m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/distance-to-roads_germany_2022_100m_03035_tif</guid>
+      <pubDate>Mon, 14 Nov 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/distance-to-roads_germany_2022_100m_03035_tif/distance-to-roads_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+  </channel>
+</rss>

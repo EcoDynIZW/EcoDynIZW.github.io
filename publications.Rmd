@@ -44,6 +44,8 @@ ELIFE, 12:e66550. doi:<span>[10.7554/eLife.66550](https://doi.org/10.7554/eLife.
 
 * Oeser J, Heurich M, **Kramer-Schadt S** et al. (2023): Prerequisites for coexistence: human pressure and refuge habitat availability shape continental-scale habitat use patterns of a large carnivore. LANDSC ECOL. doi:<span>[10.1007/s10980-023-01645-7](https://doi.org/10.1007/s10980-023-01645-7)</span> 
 
+* Oeser J, Heurich M, **Kramer-Schadt S**, Mattisson J, Krofel M, Krojerová-Prokešová J, Zimmermann F, Anders O, Andrén H, Bagrade G, Belotti E, Breitenmoser-Würsten C, Bufka L, Černe R, Drouet-Hoguet N, Duľa M, Fuxjäger C, Gomerčić T, Jędrzejewski W, … Kuemmerle T (2023 b): Integrating animal tracking datasets at a continental scale for mapping Eurasian lynx habitat. DIVERS DISTRIB, **00**, 1–15. doi:<span>[10.1111/ddi.13784](https://doi.org/10.1111/ddi.13784)</span> 
+
 * **Planillo A**, Viñuela J, Malo JE, García JT, Acebes P, Santamaría AE, Domínguez JC, Olea PP (2023): Addressing phase of population cycle and spatial scale is key to understand vole abundance in crop field margins: Implications for managing a cyclic pest species. AGRIC ECOSYST ENVIRON, **345**, 108306. doi:<span>[10.1016/j.agee.2022.108306](https://doi.org/10.1016/j.agee.2022.108306)</span>
 
 * Palmero S, **Premier J**, **Kramer-Schadt S**, Monterroso P and Heurich M (2023): Sampling variables and their thresholds for the precise estimation of wild felid population density with camera traps and spatial capture–recapture methods. MAM REV. doi:<span>[10.1111/mam.12320](https://doi.org/10.1111/mam.12320)</span> 
