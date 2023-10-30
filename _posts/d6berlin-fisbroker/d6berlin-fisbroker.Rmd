@@ -1,12 +1,13 @@
 ---
-title: "Download Spatial Data from the FIS-Broker Data Base in R"
+title: "Download Spatial Data from the Berlin FIS-Broker Data Base in R"
 description: |
-  Learn how to download WFS (vector) data and ATOM (raster) data from the fisbroker data base using the our custom functions `download_fisbroker_wfs()` and `download_fisbroker_atom()`.
+  Learn how to download WFS (vector) data and ATOM (raster) data from the Berlin fisbroker data base using the our custom functions `download_fisbroker_wfs()` and `download_fisbroker_atom()`.
 categories:
   - tutorial
   - spatial
   - rstats
   - data sources
+  - Berlin
 author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
@@ -79,7 +80,7 @@ url <- "https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.
 data_atom <-
   d6berlin::download_fisbroker_atom(
     zip_link = url,
-    path = "_posts/d6berlin-fisbroker/man",
+    path = here::here("_posts", "d6berlin-fisbroker", "man"),
     name = "vegetation_heights"
   )
 

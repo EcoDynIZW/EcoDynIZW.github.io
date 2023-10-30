@@ -6,7 +6,7 @@ preview: https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/im
 categories:
   - tutorial
   - rstats
-  - camera traping
+  - camera trapping
   - data management
 author:
   - name: Jürgen Niedballa
