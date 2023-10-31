@@ -22,6 +22,9 @@ For older Bachelor and Master theses please check here:<br> [2022](msc-bsc-these
 
 <div class='headerbox'><hbox>Completed Theses in 2023</hbox></div><br>
 
+* Fine-scale movements and fitness: Feedback between foraging decisions and reproductive success of Common Starlings (*Sturnus vulgaris*). **Johannes Till**,  <span class='desaturated'>19.10.2023 BSc.
+FU Berlin, Department of Biology, Chemistry and Pharmacy. Supervisors S Kramer-Schadt, M Grabow, Prof. Jens Rolff (FU).</span>
+
 * Wildtiere in der Stadt: Die komplexe beziehung von Urbanisierung, menschlicher Wahrnehmung und Sozialökonomie. **Titus M. Mußhoff**, <span class='desaturated'>30.08.2023 MSc.
 Universität Freiburg. Fakultät für Umwelt und Natürliche Ressourcen. Supervision: Prof. Ilse Storch (ALUF) & S Kramer-Schadt (TUB/ IZW).</span>
 
