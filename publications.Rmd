@@ -48,6 +48,8 @@ ELIFE, 12:e66550. doi:<span>[10.7554/eLife.66550](https://doi.org/10.7554/eLife.
 
 * **Planillo A**, Viñuela J, Malo JE, García JT, Acebes P, Santamaría AE, Domínguez JC, Olea PP (2023): Addressing phase of population cycle and spatial scale is key to understand vole abundance in crop field margins: Implications for managing a cyclic pest species. AGRIC ECOSYST ENVIRON, **345**, 108306. doi:<span>[10.1016/j.agee.2022.108306](https://doi.org/10.1016/j.agee.2022.108306)</span>
 
+*  **Planillo A**, **Wenzler-Meya M**, Reinhardt I, Kluth G, Michler F-U, Stier N, **Louvrier J**, Steyer K, Gillich B, Rieger S, Knauer F, Kuemmerle T, & **Kramer-Schadt S** (2023): Understanding habitat selection of range-expanding populations of large carnivores: 20 years of grey wolves (*Canis lupus*) recolonizing Germany. DIVERS DISTRIB, **00**, 1–16. doi:<span>[10.1111/ddi.13789](https://doi.org/10.1111/ddi.13789)</span> 
+
 * Palmero S, **Premier J**, **Kramer-Schadt S**, Monterroso P and Heurich M (2023): Sampling variables and their thresholds for the precise estimation of wild felid population density with camera traps and spatial capture–recapture methods. MAM REV. doi:<span>[10.1111/mam.12320](https://doi.org/10.1111/mam.12320)</span> 
 
 * Reusch R, Paul AA, Fritze M, **Kramer-Schadt S**, Voigt C (2023): Wind energy production in forests conflicts with tree-roosting bats. CURR BIOL, **33**(4). doi:<span>[10.1016/j.cub.2022.12.050](https://doi.org/10.1016/j.cub.2022.12.050)</span>
