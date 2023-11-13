@@ -23,15 +23,15 @@ draft: true
 knitr::opts_chunk$set(echo = TRUE) ## keep this, add other settings if needed
 ```
 
-Please write some accompanying text for each chunk explaining the reason and/or code and output. Leave an empty line between the text and the chunk.
+
 
 ```{r install}
 library(terra)
 ```
 
-If you want to show pseudo code (code that should not run but you want to show the code as an example), please also add the respective output (the returned values in the console) as text to the same chunk. Use `eval=FALSE` as a chunk option to include (but not run) the code output.
 
-```{r example, eval=FALSE}
+
+```{r dummy data, eval=FALSE}
 ras <- rast(matrix(rep(c("a", "b", "c"), each = 3), nrow = 3, ncol = 3))
 
 ras
@@ -41,9 +41,9 @@ as.data.frame(cats(ras))
 plot(ras)
 ```
 
-lets say you want to reclassify the data, you can add another coulumn by using this:
+lets say you want to reclassify the data, you can add another column by using this:
 
-```{r plot, echo=FALSE}
+```{r reclass table, echo=FALSE}
 recl_df <- data.frame(value = c(1,2,3),
                       label = c("a", "b", "c"),
                       new_label = c("d", "e", "f"))
@@ -58,7 +58,7 @@ plot(ras_new_cat)
 
 Let's say we want to reclassify the spatRaster with a numeric value, we have to take one more step 
 
-```{r}
+```{r reclassify}
 recl_df_num <- data.frame(value = c(1,2,3),
                       label = c("a", "b", "c"),
                       new_label = c("d", "e", "f"),
@@ -76,42 +76,5 @@ ras_new_num <- catalyze(ras_new_cat_2)
 ras_new_num <- ras_new_num$new_value
 
 plot(ras_new_num, type = "continuous")
-
-plot(rast(matrix(rep(c(1,2,3,4,5,6), each = 4), nrow = 9, ncol = 9)), type = "continuous")
-```
-
-
-
-Please knit the whole document in the end, to test if it is working!
-
-# old code 
-
-```{r}
-# reclassify clc table
-clc_newclasses <- read.csv(paste0(geoproc_wd, "/clc_reclassification.csv"))
-head(clc_newclasses)
-unique(clc_newclasses$clc_reclass)
-clc_newclasses$CODE_18 <- as.character(clc_newclasses$CODE_18)
-
-## get table of values in the raster
-clc2 <-clc
-plot(clc2)
-
-clc_data <- as.data.frame(cats(clc2))
-
-## add our new columns
-clc_new <- clc_data %>% 
-  left_join(clc_newclasses, by =c("LABEL3", "CODE_18"))
-
-## assign values of the new columns to a new raster
-clc_fct <- categories(clc2, layer = 1, value = clc_new, active = 7) # column 7 of data: clc_fct without counting the "Values" column
-plot(clc_fct)
-
-## or only the numbered coded factors
-clc_new2 <- clc_new %>% 
-  dplyr::select(Value, clc_fct)
-
-clc_fct2 <- categories(clc2, layer = 1, value = clc_new2, active = 1) # column 7 of data: clc_fct without counting the "Values" column
-plot(clc_fct2)
 ```
 
