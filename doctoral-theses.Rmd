@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class='headerbox'><hbox>Successfully Defended Theses</hbox></div><br>
 
+* **Ana Patricia Calderon Quinonez**: Ecology and conservation of the jaguar (*Panthera onca*) in Central America. 01.11.2023. Institut für Biochemie und Biologie der Universität Potsdam. Kramer-Schadt S, Grimm V.
+
 * **Morgane Gicquel**: Early-life conditions and their long-term consequences in spotted hyenas (*Crocuta Crocuta*). 07.02.2023. Department of Biology, Chemistry and Pharmacy Freie Universität Berlin. Benhaiem S, East ML, Hofer H.
 
 * **Tobias Kürschner**: Disease transmission and persistence in dynamic landscapes. 23.09.2022. Institut für Biochemie und Biologie der Universität Potsdam. Kramer-Schadt S, Grimm V, Berger U.
