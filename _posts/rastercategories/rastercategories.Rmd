@@ -11,7 +11,7 @@ author:
   - name: Aimara Planillo & Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: 2023-11-09
+date: 2023-11-15
 output:
   distill::distill_article:
     self_contained: false
@@ -23,31 +23,42 @@ draft: true
 knitr::opts_chunk$set(echo = TRUE) ## keep this, add other settings if needed
 ```
 
+Imagine you'll get a rasterlayer (in {terra} this is called spatRaster) with categories such as corine landcover.
+You want to calclulate some metrics and therefore you need to reclassify and then transfrom the spatRaster into numeric values.
+{Terra} changed the way how to do this compared to the {raster} package. You have to do some steps to get the numerical values or in our case reclassify the categories and then transform them to numeric values.
 
+
+### Load {terra} package
 
 ```{r install}
 library(terra)
 ```
 
+### Create example data
 
-
-```{r dummy data, eval=FALSE}
+```{r dummy data}
+# a simple spatRaster with 3 categories
 ras <- rast(matrix(rep(c("a", "b", "c"), each = 3), nrow = 3, ncol = 3))
 
 ras
 
+# this shows the categories and the numeric internal representative numeric value it automatically gets.
+# the value is more the counter of categories?
 as.data.frame(cats(ras))
 
 plot(ras)
 ```
 
+### Add categorical column
+
 lets say you want to reclassify the data, you can add another column by using this:
 
-```{r reclass table, echo=FALSE}
-recl_df <- data.frame(value = c(1,2,3),
-                      label = c("a", "b", "c"),
-                      new_label = c("d", "e", "f"))
+```{r reclass table}
+recl_df <- cbind(as.data.frame(cats(ras)),
+                 data.frame(new_label = c("d", "f", "e"))) # I shuffled the characters to show the difference in the end
 
+
+# the function `categories` "activates" the column we want to use. In this case the new added column called new_label
 ras_new_cat <- categories(ras, 
                           layer = 1, 
                           value = recl_df, 
@@ -56,25 +67,61 @@ ras_new_cat <- categories(ras,
 plot(ras_new_cat)
 ```
 
+### Add numerical column
+
 Let's say we want to reclassify the spatRaster with a numeric value, we have to take one more step 
 
 ```{r reclassify}
 recl_df_num <- data.frame(value = c(1,2,3),
                       label = c("a", "b", "c"),
-                      new_label = c("d", "e", "f"),
-                      new_value = c(4, 5, 6))
+                      new_label = c("d", "f", "e"),
+                      new_value = c(5, 4, 6))
+
+# In this case the fourth (numeric) column will be activated
 
 ras_new_cat_2 <- categories(ras, 
                           layer = 1, 
                           value = recl_df_num, 
-                          active = 3) # column 2 (do not count the value column! It has to be numeric)
+                          active = 3) # column 4 (do not count the value column! It has to be numeric)
 
 plot(ras_new_cat_2)
 
-ras_new_num <- catalyze(ras_new_cat_2)
 
+# this function activates our desired column of the spatRaster
+ras_new_num <- catalyze(ras_new_cat_2, index = 3) # column 3 for new_value
+
+# we select only the numerical column
 ras_new_num <- ras_new_num$new_value
 
-plot(ras_new_num, type = "continuous")
+# only the numerical column is left
+ras_new_num
+
+plot(ras_new_num) # shown as categories
+plot(ras_new_num, type = "continuous") # with 'type' we decide to make it numerical 
 ```
 
+### Compare spatRasters
+
+Let's compare the different spatRasters
+
+```{r compare spatRaster, echo=FALSE}
+par(mfrow = c(2,2), mar = c(1.1, 1.1, 0.1, 5.1))
+plot(ras_new_cat_2, main = "categories")
+plot(ras_new_cat_2, type = "continuous", main = "categories as numeric")
+plot(ras_new_num, main = "numeric as categorical")
+plot(ras_new_num, type = "continuous", main = "numeric")
+```
+
+As you can see in the upper right plot that the categories got the internal count value from 1 to 3 instead of the given values. 
+
+### Compare values
+
+Another way of checking if the correct numerical column is used is to show the categories in the spatRaster.
+
+```{r check for categories}
+cats(ras_new_cat_2)
+
+cats(ras_new_num)
+```
+
+The numeric spatRaster does not have any categories or columns left.
