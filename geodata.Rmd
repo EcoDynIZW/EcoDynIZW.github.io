@@ -7,10 +7,48 @@ distill::distill_article:
   toc_depth: 3
 ---
 
-```{r, echo = FALSE}
-shiny::shinyAppFile(
-  "E:/PopDynCloud/GeoData/geodata_mapview/geodata_mapview/app.R",
-  options = list(width = "100%", height = 700)
-)
+# install
+
+```{r}
+sapply(list("sf", "tidyverse", "here", "leaflet", "d6geodata", "terra"), 
+       library, character.only = TRUE, logical.return = TRUE)
 ```
+
+
+
+```{r, echo = FALSE}
+data_list <- list.files("E:/PopDynCloud/GeoData",
+                        pattern = "_interactive.rds",
+                        full.names = TRUE,
+                        recursive = TRUE)
+
+data <- tibble(data_name = unlist(lapply(data_list,
+                                  function(x){str_split(x, pattern = "/")[[1]][6]})),
+               path = unlist(data_list),
+               region = unlist(lapply(data_list,
+                               function(x){str_split(str_split(x, pattern = "/")[[1]][6], 
+                                   pattern = "_")[[1]][2]})))
+
+
+
+
+```
+
+# test plot
+
+```{r}
+ map <- leaflet::leaflet() |>
+    leaflet::addProviderTiles(leaflet::providers$CartoDB.Positron)
+
+for (i in data$data_name) {
+      map <- map |> readRDS((data |> filter(data_name %in% i))$path)
+        
+    }
+
+
+```
+
+
+
+
 
