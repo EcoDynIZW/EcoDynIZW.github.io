@@ -12,7 +12,20 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Categories in Raster Data</title>
+      <dc:creator>Aimara Planillo &amp; Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts/rastercategories</link>
+      <description>Learn how to work with categorial raster data and how to transform the rastervalues into a numerical values using terra package.</description>
+      <category>terra</category>
+      <category>raster</category>
+      <category>spatial</category>
+      <category>tutorial</category>
+      <guid>https://ecodynizw.github.io/posts/rastercategories</guid>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts/rastercategories/rastercategories_files/figure-html5/dummy data-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Scientific Writing Tips</title>
       <dc:creator>Aimara Planillo</dc:creator>
