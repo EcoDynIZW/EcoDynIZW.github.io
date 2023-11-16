@@ -46,7 +46,7 @@ swf <- rast(data$path_tif[2])
 for (i in 1:nrow(data)) {
       map <- map |> 
         leaflet::addRasterImage(
-          data = rast(data[i]$path_tif), group = as.character(data[i]$data_name)
+          x = rast(data$path_tif[i]), group = as.character(data$data_name[i])
           )
     }
 
