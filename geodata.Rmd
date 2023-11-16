@@ -17,7 +17,7 @@ sapply(list("sf", "tidyverse", "here", "leaflet", "d6geodata", "terra"),
 
 
 ```{r, echo = FALSE}
-data_list <- list.files("E:/PopDynCloud/GeoData",
+data_list <- list.files("C:/PopDynCloud/GeoData",
                         pattern = "_interactive.rds",
                         full.names = TRUE,
                         recursive = TRUE)
@@ -27,9 +27,12 @@ data <- tibble(data_name = unlist(lapply(data_list,
                path = unlist(data_list),
                region = unlist(lapply(data_list,
                                function(x){str_split(str_split(x, pattern = "/")[[1]][6], 
-                                   pattern = "_")[[1]][2]})))
+                                   pattern = "_")[[1]][2]}))) |> 
+  group_by(data_name) |> 
+  mutate(path_tif = gsub(pattern = "_tif_interactive.rds$", replacement = ".tif", x = path))
 
 
+swf <- rast(data$path_tif[2])
 
 
 ```
@@ -40,12 +43,18 @@ data <- tibble(data_name = unlist(lapply(data_list,
  map <- leaflet::leaflet() |>
     leaflet::addProviderTiles(leaflet::providers$CartoDB.Positron)
 
-for (i in data$data_name) {
-      map <- map |> readRDS((data |> filter(data_name %in% i))$path)
-        
+for (i in 1:nrow(data)) {
+      map <- map |> 
+        leaflet::addRasterImage(
+          data = rast(data[i]$path_tif), group = as.character(data[i]$data_name)
+          )
     }
 
-
+map |>
+    leaflet::addLayersControl(
+      overlayGroups = data$data_name,
+      options = leaflet::layersControlOptions(collapsed = FALSE)) |>
+    leaflet:: hideGroup(data$data_name[-1]) #hide all groups except the 1st one
 ```
 
 
