@@ -37,8 +37,8 @@ data <- tibble(data_name = unlist(lapply(data_list,
 # test plot
 
 ```{r}
-map <- leaflet::leaflet() |> 
-leaflet::addProviderTiles(leaflet::providers$CartoDB.Positron)
+map <- leaflet::leaflet() #|> 
+#leaflet::addProviderTiles(leaflet::providers$CartoDB.Positron)
 
 for (i in 1:nrow(data)) {
       map <- map |> leaflet::addRasterImage(
@@ -47,11 +47,11 @@ for (i in 1:nrow(data)) {
           layerId = data$data_name[i]) 
     }
 
-map_prov <- map |> leaflet::addLayersControl(
+map <- map |> leaflet::addLayersControl(
       baseGroups = data$data_name, 
       #overlayGroups = data$data_name,
-      options = leaflet::layersControlOptions(collapsed = FALSE)) |>
-    leaflet::hideGroup(data$data_name[-1]) #hide all groups except the 1st one
+      options = leaflet::layersControlOptions(collapsed = TRUE)) #|>
+    #leaflet::hideGroup(data$data_name[-1]) #hide all groups except the 1st one
 ```
 
 
