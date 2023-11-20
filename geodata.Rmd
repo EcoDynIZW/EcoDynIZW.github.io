@@ -1,27 +1,38 @@
 ---
 title: "Geodata"
 site: distill::distill_website
-output:
-distill::distill_article:
-  toc: true
-  toc_depth: 3
+listing: posts_geodata
+link-citations: false
 ---
 
-# install
+<br><br>
 
-```{r}
-sapply(list("sf", "tidyverse", "here", "leaflet", "d6geodata", "terra"), 
-       library, character.only = TRUE, logical.return = TRUE)
-```
-
-
-```{r, layout="l-screen"}
-#leaflet::leaflet() |> 
-readRDS("test_map.rds")|> 
-leaflet::addProviderTiles(leaflet::providers$CartoDB.Positron)
+```{r, layout="l-screen", echo=FALSE, message=FALSE}
+# leaflet::leaflet() |>
+#   leaflet::addProviderTiles(leaflet::providers$CartoDB.Positron) |> 
+#   readRDS("test_map.rds")
     
 ```
 
+
+```{r, layout="l-screen", echo=FALSE, message=FALSE}
+map <- leaflet::leaflet() |> 
+leaflet::addProviderTiles(leaflet::providers$CartoDB.Positron)
+
+for (i in 1:nrow(data)){
+      map <- map |> leaflet::addRasterImage(
+          x = rast(data$path_tif[i]) |> terra::aggregate(10) |> terra::project("epsg:4326"), group = as.character(data$data_name[i]),
+          maxBytes = 16 * 1024 * 1024,
+          layerId = data$data_name[i]) 
+    }
+
+map |> leaflet::addLayersControl(
+      baseGroups = data$data_name, 
+      #overlayGroups = data$data_name,
+      options = leaflet::layersControlOptions(collapsed = FALSE)) |>
+    leaflet::hideGroup(data$data_name[-1]) #hide all groups except the 1st one
+    
+```
 
 
 

@@ -37,22 +37,21 @@ data <- tibble(data_name = unlist(lapply(data_list,
 # test plot
 
 ```{r}
- map <- leaflet::leaflet() #|> 
+map <- leaflet::leaflet() |> 
 leaflet::addProviderTiles(leaflet::providers$CartoDB.Positron)
 
 for (i in 1:nrow(data)) {
-      map <- map |> 
-        leaflet::addRasterImage(
+      map <- map |> leaflet::addRasterImage(
           x = rast(data$path_tif[i]) |> aggregate(10) |> project("epsg:4326"), group = as.character(data$data_name[i]),
-          maxBytes = 16 * 1024 * 1024
-          )
+          maxBytes = 16 * 1024 * 1024,
+          layerId = data$data_name[i]) 
     }
 
-map <- map |>
-    leaflet::addLayersControl(
-      overlayGroups = data$data_name,
+map_prov <- map |> leaflet::addLayersControl(
+      baseGroups = data$data_name, 
+      #overlayGroups = data$data_name,
       options = leaflet::layersControlOptions(collapsed = FALSE)) |>
-    leaflet:: hideGroup(data$data_name[-1]) #hide all groups except the 1st one
+    leaflet::hideGroup(data$data_name[-1]) #hide all groups except the 1st one
 ```
 
 

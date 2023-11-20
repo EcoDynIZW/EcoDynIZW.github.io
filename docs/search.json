@@ -13,7 +13,7 @@
       "title": "Coding",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2023-11-17T12:22:43+01:00"
+      "last_modified": "2023-11-20T09:03:44+01:00"
     },
     {
       "path": "doctoral-theses.html",
@@ -27,8 +27,8 @@
       "path": "geodata.html",
       "title": "Geodata",
       "author": [],
-      "contents": "\r\ninstall\r\n\r\n\r\nsapply(list(\"sf\", \"tidyverse\", \"here\", \"leaflet\", \"d6geodata\", \"terra\"), \r\n       library, character.only = TRUE, logical.return = TRUE)\r\n\r\n[1] TRUE TRUE TRUE TRUE TRUE TRUE\r\n\r\n\r\n\r\n#leaflet::leaflet() |> \r\nreadRDS(\"test_map.rds\")|> \r\nleaflet::addProviderTiles(leaflet::providers$CartoDB.Positron)\r\n\r\n\r\n",
-      "last_modified": "2023-11-17T14:05:10+01:00"
+      "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2023-11-20T10:34:41+01:00"
     },
     {
       "path": "guidelines.html",
@@ -279,5 +279,5 @@
       "last_modified": "2023-11-13T15:55:17+01:00"
     }
   ],
-  "collections": ["posts/posts.json"]
+  "collections": ["posts/posts.json", "posts_geodata/posts_geodata.json"]
 }
