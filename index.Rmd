@@ -60,7 +60,7 @@ library(leaflet)
 leaflet() %>%
   setView(lng = 13.5211, lat = 52.5062, zoom = 04) %>% 
   addProviderTiles(providers$CartoDB.Voyager, group = "Default Map") %>%
-  addProviderTiles(providers$Stamen.Terrain, group = "Terrain Map") %>% 
+  addProviderTiles(providers$Stadia.StamenTerrain, group = "Terrain Map") %>% 
   addProviderTiles(providers$CartoDB.DarkMatter, group = "Dark Map") %>%
   addTiles(group = "OpenStreetMap") %>% 
   addPopups(lng = 13.521167153974313, lat = 52.506286189883994, 
