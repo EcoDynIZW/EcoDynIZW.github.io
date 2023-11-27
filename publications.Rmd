@@ -14,6 +14,8 @@ For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
+* Achter S, Borit M, Cottineau C, Polhill J, **Radchuk V**, Meyer M (2023): How to conduct more systematic reviews of agent-based models and foster theory development - Taking stock and looking ahead. ENVIRON MODEL SOFTW. 105867. doi:<span>[10.1016/j.envsoft.2023.105867](https://doi.org/10.1016/j.envsoft.2023.105867)</span> . 
+
 * Bonenfant C, Rutschmann A, Burton J, Boyles R, García F, **Tilker A**, Schütz E (2023): Cast away on Mindoro island: lack of space limits population growth of the endangered tamaraw. ANIM CONSERV. doi:<span>[10.1111/acv.12842](https://doi.org/10.1111/acv.12842)</span>
 
 * Brodie JF, Mohd-Azlan J, Chen C, ..., **Nguyen A**, ..., et al. (2023): Landscape-scale benefits of protected areas for tropical biodiversity. NATURE, **620**, 807–812. doi:<span>[10.1038/s41586-023-06410-z](https://doi.org/10.1038/s41586-023-06410-z)</span> 
