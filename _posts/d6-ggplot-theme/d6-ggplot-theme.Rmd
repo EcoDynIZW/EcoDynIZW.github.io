@@ -1,7 +1,7 @@
 ---
 title: "Our Corporate D6 ggplot2 Theme"
 description: |
-  Learn how to...
+  Learn how to use the theme_d6() featured in our {d6} package to create figures that mathc our lab identity. The theme function comes with a set of helpful additional options to simplify customization of our corporate D6 theme while ensuring consistency. 
 categories:
   - rstats
   - ggplot2
@@ -12,7 +12,7 @@ author:
     url: https://cedricscherer.com
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/
-date: 2023-06-29
+date: 2023-11-30
 output:
   distill::distill_article:
     self_contained: false
@@ -27,28 +27,35 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE,
 library(patchwork)
 ```
 
-Recently, I added a custom theme for `{ggplot2}` to [our `{d6}` workflow package](https://ecodynizw.github.io/posts/d6package/) which makes it easy to create plots in a style that matches our "lab identity" used for our webpage, posters, and publications. Also, it hopefully simplifies your workflow by a ready-to-use theme with additional options that allow you to adjust the style of your ggplots.
+Recently, I added a custom theme for `{ggplot2}` to [our `{d6}` workflow package](https://ecodynizw.github.io/posts/d6package/) which makes it easy to create plots in a style that matches our lab identity used for our webpage, posters, and publications. Also, it hopefully simplifies your workflow by a ready-to-use theme with additional options that allow you to adjust the style of your ggplots.
 
 > Let me know if there is a theme feature you often modify via the `theme()` function! We can add it as an argument to the complete theme function.
 
 
 ```{r}
-# remotes::install_github("EcoDynIZW/d6")
-library(d6)
-library(ggplot2)
+## install (if needed) and load packages
+d6::simple_load(c("ggplot2", "EcoDynIZW/d6"))
 ```
 
+The default theme features a vertical and horizontal grid, our corporate sans font, and a transparent background. It also uses a larger default `base_size` of 14 pts that controls the size of text labels as well as line elements and borders (the ggplot2 default is 11 pts).
+
 ```{r theme-d6-default}
+## prepare data
 data <- dplyr::filter(economics_long, !variable %in% c("pop", "pce"))
 
+## create base plot
 g <- 
   ggplot(data, aes(x = date, y = value01, color = variable)) +
   geom_line()
 
+## apply corporate theme
 g + d6::theme_d6()
 ```
 
+As usual with complete themes, you can overwrite the base settings, namely `base_family`, `base_size`, `base_size_line`, and `base_size_rect`:
+
 ```{r theme-d6-base-settings}
+## modify theme base setting
 g + d6::theme_d6(base_size = 18, base_rect_size = 2)
 ```
 
@@ -56,6 +63,8 @@ g + d6::theme_d6(base_size = 18, base_rect_size = 2)
 ### Typeface Choices
 
 #### Main Typeface
+
+The default typeface used is [PT Sans](https://fonts.google.com/specimen/PT+Sans). If you prefer a serif typeface, you can switch to [PT Serif](https://fonts.google.com/specimen/PT+Serif) by setting `serif = TRUE`.
 
 ```{r theme-d6-font-serif, eval=FALSE}
 g + d6::theme_d6(serif = FALSE) ## uses PT Sans (default)
@@ -68,8 +77,14 @@ g + d6::theme_d6(serif = TRUE)  ## uses PT Serif
   theme(plot.title = element_text(hjust = .5)) + plot_layout(widths = c(1, .03, 1))
 ```
 
+Note that the typefaces need to be installed on your machine. A warning will inform you if the relevant fonts are not installed.
+
+**Please use the `{systemfonts}` package to access font files as this is the most recent and best implementation to use non-default fonts in combination with {ggplot2}. Loading other font packages, especially the {showtext} package, likely cause problems.**
+
 
 #### Tabular Font Option
+
+For numeric axis labels and legends, you might want to use a tabular typeface (i.e. one where the characters all have the same width). You can set the axis and legend text individually by combining x, y, and l (uppercase letters work as well).
 
 ```{r theme-d6-font-mono, eval=FALSE}
 ## all combinations of upper- and lowercase work
@@ -89,6 +104,8 @@ g + d6::theme_d6(mono = "y")
 
 ### Legend Position
 
+By default, the legend is placed at the bottom. You can easily change the position via the `legend` argument. This is a shortcut to `theme(legend.position)` and thus you can pass either strings specifying the position or a vector defining the x and y position as usual:
+
 ```{r theme-d6-legend, eval=FALSE}
 g + d6::theme_d6(legend = "right")
 g + d6::theme_d6(legend = "none")
@@ -105,6 +122,10 @@ g + d6::theme_d6(legend = c(.65, .8))
 
 
 ### Control Grid
+
+The default themes comes with no grid lines but you can easily add them by specifying "x" for vertical, "y" for horizontal, or "xy" for both, vertical and horizontal grid lines (uppercase letters work as well). 
+
+All theme styles do not feature minor grid lines to avoid cluttering and distractions.
 
 ```{r theme-d6-grid, eval=FALSE}
 g + d6::theme_d6(grid = "none") ## "" works as well (default)
@@ -123,6 +144,8 @@ g + d6::theme_d6(grid = "y") ## "Y" works as well
 
 ### Modify Background Color
 
+By default the background color of all boxes (plot, panel, and legends) is transparent. You can adjust the colors by passing any color name or hex code to the `bg` argument:
+
 ```{r theme-d6-background, eval=FALSE}
 g + d6::theme_d6(bg = "orange")
 g + d6::theme_d6(bg = "grey95")
@@ -137,8 +160,18 @@ g + d6::theme_d6(bg = "beige")
   theme(plot.title = element_text(hjust = .5)) + plot_layout(widths = c(1, .03, 1, .03, 1))
 ```
 
+It is not possible to control individual boxes via `theme_d6()`. If you wish to, for example, color the background of the panel area in a different, you have to specify that via the `theme()` function as usual:
+
+```{r theme-d6-background-var}
+g + d6::theme_d6(bg = "orange") + 
+  theme(panel.background = element_rect(fill = "grey95", color = "transparent"))
+```
+
+
 
 ### Set Plot Margin
+
+Depending on the use case, you might want to adjust the margin around the plot. The default is related to the `base_size` and the same for all sides (top, right, bottom, left): `rep(base_size / 2, 4)`
 
 ```{r theme-d6-margin, eval=FALSE}
 g + d6::theme_d6(margin = rep(0, 4), bg = "grey95")
