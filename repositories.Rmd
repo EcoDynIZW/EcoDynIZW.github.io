@@ -184,6 +184,16 @@ knitr::opts_chunk$set(echo = FALSE)
   
   
   <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/schmied_2024.png' alt='Figure 1 of Schmied et al. 2024: Map of the study area in the southeast of Ruaha National Park in East Africa. The location of 10 ground transects is shown including five perpendicular transects (P1-P5) leading away from the Great Ruaha River (GRR) and five transects alongside the GRR  (transects A6 - A10).'>
+    <h3>Schmied et al. 2024</h3>
+    <p>Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. *WILDL BIOL* (accepted)</p><p>
+    <a href='https://doi.org/10.1002/wlb3.01131'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Schmied_2024_WildlBiol'>![](img/repo/icon-github.png){width=12%}</a>
+    <a href=''>![](img/repo/icon-dryad.png){width=12%}</a> </p>
+  </li>
+  
+  
+  <li class="card-repo">
     <img class="card-repo-img" src='img/repo/voigt_2022.png' alt='Figure 2 of Voigt, Scherer & Runkel 2022: Conceptual overview of the two hypothetical scenarios used for illustration of extreme situations: Low coverage scenario at large wind turbines and when encountering high-frequency echolocating bat species (top row) and high coverage scenario at small wind turbines and with low-frequency echolocating bat species (lower row).'>
     <h3>Voigt et al. 2022</h3>
     <p>Modelling the power of acoustic monitoring to predict bat fatalities at wind turbines. *CONSER SCI PRACT*, 4:e12841.</p><p>
