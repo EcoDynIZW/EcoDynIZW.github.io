@@ -192,30 +192,27 @@ e.g. *unicornus_wl_sdm_smith_j* (unicornus project in wonderland, species distri
 
 The root project folder should hold: 
 
-*	**R_Project_file**: your main file for your R project (if used) — do not confuse this with R-scripts!
+*	**Rproj file**: your main file for your R project (if used) — do not confuse this with R-scripts!
     +	We highly recommend to use R, but if it is necessary to use another programming language and/or program please use the same structure as described in the following: 
-*	**data-raw**: A folder that contains the complete raw data set (e.g. telemetry data, experiment results, electrophoresis images, vegetation survey plots, species lists, etc.). 
+*	**data**: A folder that contains the complete data, with sub folders for raw (e.g. telemetry data, experiment results, electrophoresis images, vegetation survey plots, species lists, etc.) and processed data. If spatial data is used, placde them in a dedicated geo folder. 
     + Do not use MS Excel files use .csv or .txt files to store/ save data. 
     + Metadata belonging to the raw data should be provided in a separate file but it should be given the same name with an additional suffix as the raw data file, e.g. *area1_specieslist.txt* or *area1_specieslist_metadata.txt*
 *	**docs**: A folder that contains anything related with project administration e.g. applications, permits, grants, timeline, research proposal, the electronic lab-book.
-*	**output**: A folder that contains processed raw data
-    + Results of data preparation and wrangling
-    + Results of spatial data processing and spatial analysis, e.g. rasterizing, extracting, calculating on the basic layer and the resulting map used for analyses.
-    + Final results from analyses
+*	**output**: A folder that contains results from your data wrangling and analyses.
 *	**plots**: A folder that contains all produced images for the data exploration, presentations, and publications.
-*	**R**: A folder that contains all scripts that are used within the project. 
+*	**scripts**: A folder that contains all scripts that are used within the project. 
 *	If you need additional subfolders add them. Please use also second-level subfolders inside the subfolders to keep a clear and tidy structure.
 
 The main folder structure created in the root directory should look like this:
 
 ``` text
 .
-└── my_project
-    ├── data-raw
+└── unicornus_wl_sdm_smith_j
+    ├── data
     ├── docs
     ├── output
     ├── plots
-    └── R
+    └── scripts
 ```
 
 The full scaffolding structure including all subdirectories and
@@ -223,28 +220,30 @@ additional files looks like this:
 
 ``` text
 . 
-└── my_project
-    ├── .Rproj.user         —  Rproject files
-    ├── data-raw            —  raw data (tabular data in root folder)
-    │    └── geo-raw        —  raw spatial data
-    ├── docs                —  documents
-    │   ├── admin           —  adminstrative docs, e.g. permits 
-    │   ├── literature      —  literature used for parameterization + ms
-    │   ├── manuscript      —  manuscript drafts (main + supplement)
-    │   ├── presentations   —  talks and poster presentations
-    │   └── reports         —  rendered reports
-    ├── output              —  everything that is computed (except plots)
-    │   ├── data-proc       —  processed tabular data
-    │   └── geo-proc        —  processed spatial data
-    ├── plots               —  plot output
-    ├── R                   —  scripts
-    │   ├── 00_start.R      —  first script to run
-    │   └── XX_submit.R     —  final script to run
-    ├── .gitignore          —  contains which files to ignore for version control
-    ├── .Rbuildignore       —  contains which files to ignore for package builds
-    ├── DESCRIPTION         —  contains project details and package dependencies
-    ├── NAMESPACE           —  contains context for R objects
-    └── project.Rproj       —  Rproject file: use to start your project
+└── unicornus_wl_sdm_smith_j
+    ├── .Rproj.user          —  Rproject files
+    ├── data                 —  main folder data
+    │    ├── geo             —  main folder spatial data (if `geo = TRUE`)
+    │    │    ├── processed  —  processed spatial data files
+    │    │    └── raw        —  raw spatial data files
+    │    ├── processed       —  processed tabular data files
+    │    └── raw             —  raw tabular data files
+    ├── docs                 —  documents main folder
+    │   ├── admin            —  administrative docs, e.g. permits 
+    │   ├── literature       —  literature used for parametrization + manuscript
+    │   ├── manuscript       —  manuscript drafts (main + supplement)
+    │   ├── presentations    —  talks and poster presentations
+    │   └── reports          —  rendered reports
+    ├── output               —  everything that is computed (except plots)
+    ├── plots                —  plot output
+    ├── scripts              —  script files (e.g. .R, .Rmd, .Qmd, .py, .nlogo)
+    │   ├── 00_start.R       —  first script to run after project setup
+    │   └── zz_submit.R      —  final script to run before submission
+    ├── .gitignore           —  contains which files to ignore for version control
+    ├── .Rbuildignore        —  contains which files to ignore for package builds
+    ├── DESCRIPTION          —  contains project details and package dependencies
+    ├── NAMESPACE            —  contains context for R objects
+    └── project.Rproj        —  Rproject file: use to start your project
 ```
 
 [↑ Jump back to top.](#toc)<br><br>

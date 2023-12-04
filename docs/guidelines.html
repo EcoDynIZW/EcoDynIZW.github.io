@@ -2900,59 +2900,56 @@ account!</p>
 </ul>
 <p>The root project folder should hold:</p>
 <ul>
-<li><strong>R_Project_file</strong>: your main file for your R project (if used) — do not confuse this with R-scripts!
+<li><strong>Rproj file</strong>: your main file for your R project (if used) — do not confuse this with R-scripts!
 <ul>
 <li>We highly recommend to use R, but if it is necessary to use another programming language and/or program please use the same structure as described in the following:</li>
 </ul></li>
-<li><strong>data-raw</strong>: A folder that contains the complete raw data set (e.g. telemetry data, experiment results, electrophoresis images, vegetation survey plots, species lists, etc.).
+<li><strong>data</strong>: A folder that contains the complete data, with sub folders for raw (e.g. telemetry data, experiment results, electrophoresis images, vegetation survey plots, species lists, etc.) and processed data. If spatial data is used, placde them in a dedicated geo folder.
 <ul>
 <li>Do not use MS Excel files use .csv or .txt files to store/ save data.</li>
 <li>Metadata belonging to the raw data should be provided in a separate file but it should be given the same name with an additional suffix as the raw data file, e.g. <em>area1_specieslist.txt</em> or <em>area1_specieslist_metadata.txt</em></li>
 </ul></li>
 <li><strong>docs</strong>: A folder that contains anything related with project administration e.g. applications, permits, grants, timeline, research proposal, the electronic lab-book.</li>
-<li><strong>output</strong>: A folder that contains processed raw data
-<ul>
-<li>Results of data preparation and wrangling</li>
-<li>Results of spatial data processing and spatial analysis, e.g. rasterizing, extracting, calculating on the basic layer and the resulting map used for analyses.</li>
-<li>Final results from analyses</li>
-</ul></li>
+<li><strong>output</strong>: A folder that contains results from your data wrangling and analyses.</li>
 <li><strong>plots</strong>: A folder that contains all produced images for the data exploration, presentations, and publications.</li>
-<li><strong>R</strong>: A folder that contains all scripts that are used within the project.</li>
+<li><strong>scripts</strong>: A folder that contains all scripts that are used within the project.</li>
 <li>If you need additional subfolders add them. Please use also second-level subfolders inside the subfolders to keep a clear and tidy structure.</li>
 </ul>
 <p>The main folder structure created in the root directory should look like this:</p>
 <pre class="text"><code>.
-└── my_project
-    ├── data-raw
+└── unicornus_wl_sdm_smith_j
+    ├── data
     ├── docs
     ├── output
     ├── plots
-    └── R</code></pre>
+    └── scripts</code></pre>
 <p>The full scaffolding structure including all subdirectories and
 additional files looks like this:</p>
 <pre class="text"><code>. 
-└── my_project
-    ├── .Rproj.user         —  Rproject files
-    ├── data-raw            —  raw data (tabular data in root folder)
-    │    └── geo-raw        —  raw spatial data
-    ├── docs                —  documents
-    │   ├── admin           —  adminstrative docs, e.g. permits 
-    │   ├── literature      —  literature used for parameterization + ms
-    │   ├── manuscript      —  manuscript drafts (main + supplement)
-    │   ├── presentations   —  talks and poster presentations
-    │   └── reports         —  rendered reports
-    ├── output              —  everything that is computed (except plots)
-    │   ├── data-proc       —  processed tabular data
-    │   └── geo-proc        —  processed spatial data
-    ├── plots               —  plot output
-    ├── R                   —  scripts
-    │   ├── 00_start.R      —  first script to run
-    │   └── XX_submit.R     —  final script to run
-    ├── .gitignore          —  contains which files to ignore for version control
-    ├── .Rbuildignore       —  contains which files to ignore for package builds
-    ├── DESCRIPTION         —  contains project details and package dependencies
-    ├── NAMESPACE           —  contains context for R objects
-    └── project.Rproj       —  Rproject file: use to start your project</code></pre>
+└── unicornus_wl_sdm_smith_j
+    ├── .Rproj.user          —  Rproject files
+    ├── data                 —  main folder data
+    │    ├── geo             —  main folder spatial data (if `geo = TRUE`)
+    │    │    ├── processed  —  processed spatial data files
+    │    │    └── raw        —  raw spatial data files
+    │    ├── processed       —  processed tabular data files
+    │    └── raw             —  raw tabular data files
+    ├── docs                 —  documents main folder
+    │   ├── admin            —  administrative docs, e.g. permits 
+    │   ├── literature       —  literature used for parametrization + manuscript
+    │   ├── manuscript       —  manuscript drafts (main + supplement)
+    │   ├── presentations    —  talks and poster presentations
+    │   └── reports          —  rendered reports
+    ├── output               —  everything that is computed (except plots)
+    ├── plots                —  plot output
+    ├── scripts              —  script files (e.g. .R, .Rmd, .Qmd, .py, .nlogo)
+    │   ├── 00_start.R       —  first script to run after project setup
+    │   └── zz_submit.R      —  final script to run before submission
+    ├── .gitignore           —  contains which files to ignore for version control
+    ├── .Rbuildignore        —  contains which files to ignore for package builds
+    ├── DESCRIPTION          —  contains project details and package dependencies
+    ├── NAMESPACE            —  contains context for R objects
+    └── project.Rproj        —  Rproject file: use to start your project</code></pre>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <h2 id="backup">Data Backup</h2>
 <p><strong>Important:</strong> backup your work! Make copies of raw data/files and scripts and save it in another location if you work on private computers. PhD students should work on the M-drive or the U-drive, never directly on the C-drive of the computer.</p>
