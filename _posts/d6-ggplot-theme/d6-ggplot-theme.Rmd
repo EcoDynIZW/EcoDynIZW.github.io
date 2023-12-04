@@ -17,7 +17,6 @@ output:
   distill::distill_article:
     self_contained: false
     toc: true
-draft: true
 ---
 
 ```{r setup, include=FALSE}
@@ -29,7 +28,9 @@ library(patchwork)
 
 Recently, I added a custom theme for `{ggplot2}` to [our `{d6}` workflow package](https://ecodynizw.github.io/posts/d6package/) which makes it easy to create plots in a style that matches our lab identity used for our webpage, posters, and publications. Also, it hopefully simplifies your workflow by a ready-to-use theme with additional options that allow you to adjust the style of your ggplots.
 
-> Let us know if there is a theme feature you often modify via the `theme()` function! We can add it as an argument to the complete theme function.
+<div class='highlightbox'>
+Let us know if there is a theme feature you often modify via the `theme()` function! We can add it as an argument to the complete theme function.
+</div>
 
 
 ```{r}
@@ -116,7 +117,7 @@ g + d6::theme_d6(legend = c(.65, .8))
   plot_spacer() +
   (g + d6::theme_d6(legend = "none") + ggtitle('legend = "none"')) + 
   plot_spacer() +
-  (g + d6::theme_d6(legend = c(.7, .7)) + ggtitle('legend = c(.7, .7)'))) * 
+  (g + d6::theme_d6(legend = c(.6, .8)) + ggtitle('legend = c(.6, .8)'))) * 
   theme(plot.title = element_text(hjust = .5)) + plot_layout(widths = c(1, .03, 1, .05, 1))
 ```
 
@@ -164,25 +165,17 @@ It is not possible to control individual boxes via `theme_d6()`. If you wish to,
 
 ```{r theme-d6-background-var}
 g + d6::theme_d6(bg = "orange") + 
-  theme(panel.background = element_rect(fill = "grey95", color = "transparent"))
+  theme(panel.background = element_rect(fill = "white", color = "transparent"))
 ```
 
 
 
 ### Set Plot Margin
 
-Depending on the use case, you might want to adjust the margin around the plot. The default is related to the `base_size` and the same for all sides (top, right, bottom, left): `rep(base_size / 2, 4)`
+Depending on the use case, you might want to adjust the margin around the plot. The default is related to the `base_size` and the same for all sides (top, right, bottom, left) specified as `rep(base_size / 2, 4)`. You can modify the margins easily within the `theme_d6()`.
 
 ```{r theme-d6-margin, eval=FALSE}
-g + d6::theme_d6(margin = rep(0, 4), bg = "grey95")
-g + d6::theme_d6(margin = rep(50, 4), bg = "grey95")
-g + d6::theme_d6(margin = c(120, 40, 40, 10), bg = "grey95")
-```
-```{r theme-d6-margin-plots, echo=FALSE, fig.width=16, fig.height=4.7, layout="l-page"}
-((g + d6::theme_d6(margin = rep(0, 4), bg = "grey95") + ggtitle('margin = rep(0, 4)')) + 
-  plot_spacer() +
-  (g + d6::theme_d6(margin = rep(50, 4), bg = "grey95" + ggtitle('margin = rep(50, 4)')) + 
-  plot_spacer() +
-  (g + d6::theme_d6(margin = c(120, 40, 40, 10), bg = "grey95") + ggtitle('margin = c(120, 40, 40, 10)')))) * 
-  theme(plot.title = element_text(hjust = .5)) + plot_layout(widths = c(1, .03, 1, .05, 1))
+g + d6::theme_d6(margin = rep(0, 4), bg = "grey95")           ## no margins
+g + d6::theme_d6(margin = rep(50, 4), bg = "grey95")          ## same margins
+g + d6::theme_d6(margin = c(120, 40, 40, 10), bg = "grey95")  ## different margins
 ```

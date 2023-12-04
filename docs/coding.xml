@@ -12,7 +12,20 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 15 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Our Corporate D6 ggplot2 Theme</title>
+      <dc:creator>Cedric Scherer</dc:creator>
+      <link>https://ecodynizw.github.io/posts/d6-ggplot-theme</link>
+      <description>Learn how to use the theme_d6() featured in our {d6} package to create figures that match our lab identity. The theme function comes with a set of helpful additional options to simplify customization of our corporate D6 theme while ensuring consistency.</description>
+      <category>rstats</category>
+      <category>ggplot2</category>
+      <category>workflow</category>
+      <category>tutorial</category>
+      <guid>https://ecodynizw.github.io/posts/d6-ggplot-theme</guid>
+      <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts/d6-ggplot-theme/d6-ggplot-theme_files/figure-html5/theme-d6-default-1.png" medium="image" type="image/png" width="1820" height="1118"/>
+    </item>
     <item>
       <title>Categories in Raster Data</title>
       <dc:creator>Aimara Planillo &amp; Moritz Wenzler-Meya</dc:creator>
