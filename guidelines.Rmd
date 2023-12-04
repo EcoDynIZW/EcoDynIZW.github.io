@@ -316,7 +316,7 @@ Finally, make sure to turn the visibility to public and transfer the ownership t
     * set "Save workspace to .RData on exit:" to "Never"
     * untick "Always save history (even when not saving .RData)" (recommended)
 
-![A screenshot of the RStudio general settings](https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/rstudio-settings.png){width="65%" height="65%"}
+![A screenshot of the RStudio general settings](https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/rstudio-settings.png){width="65%"}
 
 *	We recommend using R-Studio projects and R Markdown documents when scripting in R. If you use another “integrated development environment” (IDE) make sure you can provide versioned plain R scripts using a relative path to the used data files. 
 *	Implement version control by using GitHub. If you install packages or use scripts and code chunks from GitHub provided by others, be aware to acknowledge the code developer prior to publication of scripts.
