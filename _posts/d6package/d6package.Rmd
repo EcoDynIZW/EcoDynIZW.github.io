@@ -38,8 +38,8 @@ There are five main functionalities:
 <br>The function [`simple_load()` is a utility function](#simple-load-packages) that is currently in an experimental state. It allows you to install (if not yet) and load a set of packages—even a combination of CRAN and GitHub packages—in a single step.
 
 <br>
- matches our "lab identity"
-------------------------------------------------------------------------
+
+---
 
 <br>
 
@@ -47,14 +47,14 @@ There are five main functionalities:
 
 The package is not on CRAN and needs to be installed from GitHub. To do
 so, open Rstudio and run the following two lines in the console. In case
-the `{devtools}` package is already installed, skip that step.
+the `{remotes}` package is already installed, skip that step.
 
 ```{r}
-install.packages("devtools")
-devtools::install_github("EcoDynIZW/d6")
+install.packages("remotes")
+remotes::install_github("EcoDynIZW/d6")
 ```
 
-(Note: If you are asked if you want to update other packgaes either
+(Note: If you are asked if you want to update other packages either
 press “No” (option 3) and continue or update the packages before running
 the install command again.)
 
@@ -89,43 +89,45 @@ countries](https://www.iban.com/country-codes).
 The main folders created in the root folder (here
 `unicornus_wl_sdm_smith_j`) are the following:
 
-``` text
+```{text}
 .
 └── unicornus_wl_sdm_smith_j
-    ├── data-raw
+    ├── data
     ├── docs
     ├── output
     ├── plots
-    └── R
+    └── scripts
 ```
 
-The full scaffolding structure including all subdirectories and
+The full scaffolding structure including all sub directories and
 additional files looks like this:
 
-``` text
+```{text}
 . 
 └── unicornus_wl_sdm_smith_j
-    ├── .Rproj.user         —  Rproject files
-    ├── data-raw            —  raw data (tabular data in root folder)
-    │   └── geo-raw         —  raw spatial data
-    ├── docs                —  documents
-    │   ├── admin           —  adminstrative docs, e.g. permits 
-    │   ├── literature      —  literature used for parameterization + ms
-    │   ├── manuscript      —  manuscript drafts (main + supplement)
-    │   ├── presentations   —  talks and poster presentations
-    │   └── reports         —  rendered reports
-    ├── output              —  everything that is computed (except plots)
-    │   ├── data-proc       —  processed tabular data
-    │   └── geo-proc        —  processed spatial data
-    ├── plots               —  plot output
-    ├── R                   —  scripts
-    │   ├── 00_start.R      —  first script to run
-    │   └── XX_submit.R     —  final script to run
-    ├── .gitignore          —  contains which files to ignore for version control
-    ├── .Rbuildignore       —  contains which files to ignore for package builds
-    ├── DESCRIPTION         —  contains project details and package dependencies
-    ├── NAMESPACE           —  contains context for R objects
-    └── project.Rproj       —  Rproject file: use to start your project
+    ├── .Rproj.user          —  Rproject files
+    ├── data                 —  main folder data
+    │    ├── geo             —  main folder spatial data (if `geo = TRUE`)
+    │    │    ├── processed  —  processed spatial data files
+    │    │    └── raw        —  raw spatial data files
+    │    ├── processed       —  processed tabular data files
+    │    └── raw             —  raw tabular data files
+    ├── docs                 —  documents main folder
+    │   ├── admin            —  administrative docs, e.g. permits 
+    │   ├── literature       —  literature used for parametrization + manuscript
+    │   ├── manuscript       —  manuscript drafts (main + supplement)
+    │   ├── presentations    —  talks and poster presentations
+    │   └── reports          —  rendered reports
+    ├── output               —  everything that is computed (except plots)
+    ├── plots                —  plot output
+    ├── scripts              —  script files (e.g. .R, .Rmd, .Qmd, .py, .nlogo)
+    │   ├── 00_start.R       —  first script to run after project setup
+    │   └── zz_submit.R      —  final script to run before submission
+    ├── .gitignore           —  contains which files to ignore for version control
+    ├── .Rbuildignore        —  contains which files to ignore for package builds
+    ├── DESCRIPTION          —  contains project details and package dependencies
+    ├── NAMESPACE            —  contains context for R objects
+    └── project.Rproj        —  Rproject file: use to start your project
 ```
 
 # 
@@ -203,7 +205,7 @@ department via `install_d6_packages()`:
 d6::install_d6_packages()
 ```
 
-Note that this function is going to check preinstalled versions and will
+Note that this function is going to check pre-installed versions and will
 only install packages that are not installed with your current R
 version.
 
@@ -217,14 +219,14 @@ d6::install_d6_packages(geo = FALSE)
 
 The default packages that are going to be installed are:
 
-``` text
+```{text}
 tidyverse (tibble, dplyr, tidyr, ggplot2, readr, forcats, stringr, purrr), lubridate, here, vroom, patchwork, remotes
 ```
 
 The following packages will be installed in case you specify
 `geo = TRUE`:
 
-``` text
+```{text}
 sf, terra, stars, tmap
 ```
 
@@ -243,7 +245,7 @@ in manuscripts, presentations, and posters.
 
 The theme can be added to a ggplot object as usual:
 
-```r
+```{r}
 library(ggplot2)
 ggplot(mpg, aes(x = displ, y = cty)) +
   geom_point() +
@@ -252,13 +254,13 @@ ggplot(mpg, aes(x = displ, y = cty)) +
 
 Or set as the new global theme by overwriting the current default:
 
-```r
+```{r}
 theme_set(d6::theme_d6())
 ```
 
 ### Typefaces
 
-The D6 corporate theme uses the PT font superfamily and will inform you to
+The D6 corporate theme uses the PT font super family and will inform you to
 install the relevant files in case they are missing on your machine:
 
 - [PT Sans](https://fonts.google.com/specimen/PT+Sans)
@@ -268,7 +270,7 @@ install the relevant files in case they are missing on your machine:
 By default, the theme uses PT Sans. If you prefer serif fonts or such a
 typeface is required, you can set `serif = TRUE` inside the theme:
 
-```r
+```{r}
 ggplot(mpg, aes(x = displ, y = cty)) +
   geom_point() +
   d6::theme_d6(serif = TRUE)
@@ -277,18 +279,18 @@ ggplot(mpg, aes(x = displ, y = cty)) +
 
 ### Additional Utility Arguments
 
-In addition to the common arguments to specify the bas settings
+In addition to the common arguments to specify the base settings
 (`base_family`, `base_size`, `base_line_size`, and `base_rect_size`), 
 we have added the following utility settings to simplify the modification
 of the theme:
 
 -  `grid`: remove or add major grid lines (`"xy"` by default)
 -  `legend`: control legend position (`"bottom"` by default)
--  `mono`: use a tabular, monospaced font for numeric scales such as x, y, and legends (`"none"` by default)
+-  `mono`: use a tabular, mono spaced font for numeric scales such as x, y, and legends (`"none"` by default)
 -  `bg`: define background color (`"transparent"` by default)
 -  `serif`: set main typeface (`FALSE` by default; see above)
 
-```r
+```{r}
 ggplot(mpg, aes(x = class, y = hwy, color = factor(year))) + 
   geom_boxplot() +
   d6::theme_d6(
@@ -310,7 +312,7 @@ ggplot(mpg, aes(x = class, y = hwy, color = factor(year))) +
 The package also provides several templates for your scripts. In
 Rstudio, navigate to `File > New File > RMarkdown... > Templates` and
 choose the template you want to use. All templates come with a
-preformatted YAML header and chunks for the setup.
+pre-formatted YAML header and chunks for the setup.
 
 The following templates are available for now:
 
@@ -329,11 +331,11 @@ The following templates are available for now:
 
 The `render_*()` functions take care of knitting your Rmarkdown files
 into HTML reports. The functions assume that your .Rmd files are saved
-in the `R` directory or any subdirectory, and will store the resulting
+in the `R` directory or any sub directory, and will store the resulting
 .html files in the according directory, namely `./docs/reports/`.
 
 You can render all .Rmd files that are placed in the `R` directory and
-subdirectories in one step:
+sub directories in one step:
 
 ```{r}
 d6::render_all_reports()
@@ -360,15 +362,15 @@ are installed already, installs them if needed, and loads them via
 at the same time. GitHub packages need to be specified as 
 "owner/repository" without any spaces.
 
-```{r, eval=false}
-d6::simple_load(pcks = c("dplyr", "ggplot2", "EcoDynIZ/d6berlin"))
+```{r}
+d6::simple_load(pcks = c("dplyr", "ggplot2", "EcoDynIZW/d6berlin"))
 ```
 
-You can also force a reinstallation of packages. CRAN and GitHub packages 
+You can also force a re-installation of packages. CRAN and GitHub packages 
 are controlled individually via `update_cran` and `update_gh`, respectively.
 
-```{r, eval=false}
-d6::simple_load(pcks = c("dplyr", "ggplot2", "EcoDynIZ/d6berlin"),
+```{r}
+d6::simple_load(pcks = c("dplyr", "ggplot2", "EcoDynIZW/d6berlin"),
                 update_cran = TRUE, update_gh = TRUE)
 ```
 

@@ -12,7 +12,7 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 29 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Nov 2023 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Our Corporate D6 ggplot2 Theme</title>
       <dc:creator>Cedric Scherer</dc:creator>
@@ -23,7 +23,7 @@
       <category>workflow</category>
       <category>tutorial</category>
       <guid>https://ecodynizw.github.io/posts/d6-ggplot-theme</guid>
-      <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
       <media:content url="https://ecodynizw.github.io/posts/d6-ggplot-theme/d6-ggplot-theme_files/figure-html5/theme-d6-default-1.png" medium="image" type="image/png" width="1820" height="1118"/>
     </item>
     <item>
@@ -247,13 +247,13 @@
       <title>Simplify Workflows of D6 Research Projects</title>
       <dc:creator>Cedric Scherer</dc:creator>
       <link>https://ecodynizw.github.io/posts/d6package</link>
-      <description>Learn how to use the {d6} package to follow the project workflow within the department “Ecological Dynamics” at the Leibniz Institute for Zoo and Wildlife Research. The package functionality allows you to set up a standardized folder structure, to use templates for standardized reports and provides some helpful utility functions.</description>
+      <description>Learn how to use the {d6} package to follow the project workflow within the department “Ecological Dynamics” at the Leibniz Institute for Zoo and Wildlife Research. The package functionality allows you to set up a standardized folder structure, to use templates for standardized reports, and provides a corporate theme for ggplot2 and some helpful utility functions.</description>
       <category>tutorial</category>
       <category>rstats</category>
       <category>workflow</category>
       <category>data management</category>
       <guid>https://ecodynizw.github.io/posts/d6package</guid>
-      <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
       <media:content url="https://raw.githubusercontent.com/EcoDynIZW/EcoDynIZW.github.io/main/img/wiki/hex-d6.png" medium="image" type="image/png"/>
     </item>
   </channel>
