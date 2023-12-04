@@ -1,7 +1,7 @@
 ---
 title: "Our Corporate D6 ggplot2 Theme"
 description: |
-  Learn how to use the theme_d6() featured in our {d6} package to create figures that mathc our lab identity. The theme function comes with a set of helpful additional options to simplify customization of our corporate D6 theme while ensuring consistency. 
+  Learn how to use the theme_d6() featured in our {d6} package to create figures that match our lab identity. The theme function comes with a set of helpful additional options to simplify customization of our corporate D6 theme while ensuring consistency. 
 categories:
   - rstats
   - ggplot2
@@ -29,7 +29,7 @@ library(patchwork)
 
 Recently, I added a custom theme for `{ggplot2}` to [our `{d6}` workflow package](https://ecodynizw.github.io/posts/d6package/) which makes it easy to create plots in a style that matches our lab identity used for our webpage, posters, and publications. Also, it hopefully simplifies your workflow by a ready-to-use theme with additional options that allow you to adjust the style of your ggplots.
 
-> Let me know if there is a theme feature you often modify via the `theme()` function! We can add it as an argument to the complete theme function.
+> Let us know if there is a theme feature you often modify via the `theme()` function! We can add it as an argument to the complete theme function.
 
 
 ```{r}
