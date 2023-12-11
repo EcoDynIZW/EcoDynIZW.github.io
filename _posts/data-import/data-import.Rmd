@@ -1,7 +1,7 @@
 ---
 title: "How to Import Rectangular, Plain-Text Data Files"
 description: |
-  Learn how to import (and export) various data file formats using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata.
+  Learn how to import (and export) various rectangular data file formats such as CSV, TXT, and XLSX using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata.
 categories:
   - rstats
   - workflow

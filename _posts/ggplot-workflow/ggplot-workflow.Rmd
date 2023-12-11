@@ -87,6 +87,18 @@ g2 +
 
 This procedure involves a lot of copy-and-paste'ing, which makes it a tedious procedure especially in case you decide to make some general styling changes at a later point. It is also prone to mistakes as you might forget to set specific adjustments for single plots.
 
+Check also our [D6 corporate theme which is part of our {d6} R package](https://github.com/EcoDynIZW/d6#corporate-ggplot2-theme) and the [respective blog post](https://ecodynizw.github.io/posts/d6-ggplot-theme/)! The theme comes with a larger base size and several additional arguments to simplify customization with regard to typefaces, grid lines, margins and more.
+
+```{r d6-theme, fig.show='hide'}
+g1 + d6::theme_d6()
+
+g2 + d6::theme_d6(grid = "y", serif = TRUE)
+```
+```{r d6-theme-plots, echo=FALSE, layout="l-page", fig.height=5.5}
+(g1 + d6::theme_d6()) + 
+(g2 + d6::theme_d6(grid = "y", serif = TRUE))
+```
+
 
 ### Set Themes Globally {#theme-set}
 
