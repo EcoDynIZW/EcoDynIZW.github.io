@@ -53,7 +53,6 @@ ELIFE, 12:e66550. doi:<span>[10.7554/eLife.66550](https://doi.org/10.7554/eLife.
 * **Planillo A**, **Wenzler-Meya M**, Reinhardt I, Kluth G, Michler F-U, Stier N, **Louvrier J**, Steyer K, Gillich B, Rieger S, Knauer F, Kuemmerle T, & **Kramer-Schadt S** (2023): Understanding habitat selection of range-expanding populations of large carnivores: 20 years of grey wolves (*Canis lupus*) recolonizing Germany. DIVERS DISTRIB, **00**, 1–16. doi:<span>[10.1111/ddi.13789](https://doi.org/10.1111/ddi.13789)</span> 
 
 * Palmero S, **Premier J**, **Kramer-Schadt S**, Monterroso P and Heurich M (2023): Sampling variables and their thresholds for the precise estimation of wild felid population density with camera traps and spatial capture–recapture methods. MAM REV. doi:<span>[10.1111/mam.12320](https://doi.org/10.1111/mam.12320)</span> 
-
 * Reusch R, Paul AA, Fritze M, **Kramer-Schadt S**, Voigt C (2023): Wind energy production in forests conflicts with tree-roosting bats. CURR BIOL, **33**(4). doi:<span>[10.1016/j.cub.2022.12.050](https://doi.org/10.1016/j.cub.2022.12.050)</span>
 
 * Revilla-Martín N, Giralt D, **Sanz-Pérez A**, Bota G, Sardà-Palomera F (2023): Disentangling the effects of management, field characteristics of fallows, and surrounding landscape to promote steppe bird conservation. AGRIC ECOSYST ENVIRON **357**, 108657.  doi:<span>[10.1016/j.agee.2023.108657](doi:10.1016/j.agee.2023.108657)</span>
@@ -73,6 +72,8 @@ ELIFE, 12:e66550. doi:<span>[10.7554/eLife.66550](https://doi.org/10.7554/eLife.
 * Svendsen NA, **Radchuk V**, Morel-Journel T, Thuillier V, Schtickzelle N (2023): Complexity vs linearity: relations between functional traits in a heterotrophic protist. BMC ECOL EVOL, **23**, 1. doi:<span>[10.1186/s12862-022-02102-w](https://doi.org/10.1186/s12862-022-02102-w)</span>
 
 * **Tilker** A, Sinovas P (2023): Reading the signs: Camera-trapping provides new insights on scent marking in the large-antlered muntjac (*Muntiacus vuquangensis*). ECOL EVOL, **13**, e9692. doi:<span>[10.1002/ece3.9692](https://doi.org/10.1002/ece3.9692)</span>
+
+* Tourani M, **Sollmann R**, Kays R, Karp DS (2023): Maximum temperatures determine the habitat affiliations of North American mammals. PNAS, **120**(50), e2304411120. doi:<span>[10.1073/pnas.2304411120](https://doi.org/10.1073/pnas.2304411120)</span>
 
 * Ullmann W, Fischer C, **Kramer-Schadt S** et al. (2023): The secret life of wild animals revealed by accelerometer data: how landscape diversity and seasonality influence the behavioural types of European hares. LANDSC ECOL. doi:<span>[10.1007/s10980-023-01765-0](https://doi.org/10.1007/s10980-023-01765-0)</span>
 
