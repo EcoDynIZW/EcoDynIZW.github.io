@@ -28,10 +28,7 @@ Each year, we teach a block course (in March) held in English, which comprises 6
 
 ## Course announcements
 
-* 20.02.2023: 9 - 15 hrs CET: Introduction to spatial R via zoom; exercises on your own 
-<br>
-* 20.-24.03.2023: block course `biodiversity dynamics` (at IZW; hybrid possibility)
-<br>
+Courses take place in  March. Please contact <a href="mailto:kramer@izw-berlin.de">kramer[at]izw-berlin.de</a>
 
 ## Prior steps
 ### Program installation
