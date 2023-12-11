@@ -460,8 +460,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
   <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -2669,7 +2669,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2920,7 +2920,7 @@ account!</p>
 └── unicornus_wl_sdm_smith_j
     ├── data
     ├── docs
-    ├── output
+    ├── results
     ├── plots
     └── scripts</code></pre>
 <p>The full scaffolding structure including all subdirectories and
@@ -2929,26 +2929,22 @@ additional files looks like this:</p>
 └── unicornus_wl_sdm_smith_j
     ├── .Rproj.user          —  Rproject files
     ├── data                 —  main folder data
-    │    ├── geo             —  main folder spatial data (if `geo = TRUE`)
-    │    │    ├── processed  —  processed spatial data files
-    │    │    └── raw        —  raw spatial data files
     │    ├── processed       —  processed tabular data files
+    │    │    └── geo        —  processed geospatial data files
     │    └── raw             —  raw tabular data files
+    │    │    └── geo        —  raw geospatial data files
     ├── docs                 —  documents main folder
     │   ├── admin            —  administrative docs, e.g. permits 
     │   ├── literature       —  literature used for parametrization + manuscript
     │   ├── manuscript       —  manuscript drafts (main + supplement)
     │   ├── presentations    —  talks and poster presentations
     │   └── reports          —  rendered reports
-    ├── output               —  everything that is computed (except plots)
-    ├── plots                —  plot output
+    ├── results              —  explorative plots, tables etc. (except final figures)
+    ├── plots                —  final figures for manuscript and supplementary material
     ├── scripts              —  script files (e.g. .R, .Rmd, .Qmd, .py, .nlogo)
-    │   ├── 00_start.R       —  first script to run after project setup
     │   └── zz_submit.R      —  final script to run before submission
     ├── .gitignore           —  contains which files to ignore for version control
-    ├── .Rbuildignore        —  contains which files to ignore for package builds
-    ├── DESCRIPTION          —  contains project details and package dependencies
-    ├── NAMESPACE            —  contains context for R objects
+    ├── README.md            —  contains project details and package dependencies
     └── project.Rproj        —  Rproject file: use to start your project</code></pre>
 <p><a href="#toc">↑ Jump back to top.</a><br><br></p>
 <h2 id="backup">Data Backup</h2>

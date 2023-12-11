@@ -94,7 +94,7 @@ The main folders created in the root folder (here
 └── unicornus_wl_sdm_smith_j
     ├── data
     ├── docs
-    ├── output
+    ├── results
     ├── plots
     └── scripts
 ```
@@ -107,26 +107,22 @@ additional files looks like this:
 └── unicornus_wl_sdm_smith_j
     ├── .Rproj.user          —  Rproject files
     ├── data                 —  main folder data
-    │    ├── geo             —  main folder spatial data (if `geo = TRUE`)
-    │    │    ├── processed  —  processed spatial data files
-    │    │    └── raw        —  raw spatial data files
     │    ├── processed       —  processed tabular data files
+    │    │    └── geo        —  processed geospatial data files
     │    └── raw             —  raw tabular data files
+    │    │    └── geo        —  raw geospatial data files
     ├── docs                 —  documents main folder
     │   ├── admin            —  administrative docs, e.g. permits 
     │   ├── literature       —  literature used for parametrization + manuscript
     │   ├── manuscript       —  manuscript drafts (main + supplement)
     │   ├── presentations    —  talks and poster presentations
     │   └── reports          —  rendered reports
-    ├── output               —  everything that is computed (except plots)
-    ├── plots                —  plot output
+    ├── results              —  explorative plots, tables etc. (except final figures)
+    ├── plots                —  final figures for manuscript and supplementary material
     ├── scripts              —  script files (e.g. .R, .Rmd, .Qmd, .py, .nlogo)
-    │   ├── 00_start.R       —  first script to run after project setup
     │   └── zz_submit.R      —  final script to run before submission
     ├── .gitignore           —  contains which files to ignore for version control
-    ├── .Rbuildignore        —  contains which files to ignore for package builds
-    ├── DESCRIPTION          —  contains project details and package dependencies
-    ├── NAMESPACE            —  contains context for R objects
+    ├── README.md            —  contains project details and package dependencies
     └── project.Rproj        —  Rproject file: use to start your project
 ```
 
@@ -172,23 +168,10 @@ system as explained
 
 # 
 
-#### Setup without Geo Directories
-
-If your project does not (or will not) contain any spatial data, you can
-prevent the creation of the directories `geo-raw` and `geo-proc` by
-setting `geo` to `FALSE`:
-
-```{r}
-d6::new_project("unicornus_wl_sdm_smith_j", geo = FALSE)
-```
-
-# 
-
 #### Add Documentation to Your Project
 
-After you have set up your project directory, open the file `00_start.R`
-in the `R` folder. Add the details of your project, fill in the readme,
-add a MIT license (if needed) and add package dependencies.
+After you have set up your project directory, open the file `README.md` and add 
+your name, project details, and the goal of your study.
 
 <br>
 
@@ -201,7 +184,7 @@ add a MIT license (if needed) and add package dependencies.
 You can install the packages that are most commonly used in our
 department via `install_d6_packages()`:
 
-```{r}
+```{r, eval=FALSE}
 d6::install_d6_packages()
 ```
 
@@ -209,24 +192,22 @@ Note that this function is going to check pre-installed versions and will
 only install packages that are not installed with your current R
 version.
 
-Again, there is an argument `geo` so you can decide if you want to
-install common geodata packages as well (which is the default). If you
-are not intending to process geodata, set `geo` to `FALSE`:
+The argument `geo` controls the installation of R packages for spatial analysis.
+If you are not intending to process geodata, set `geo` to `FALSE`:
 
-```{r}
+```{r, eval=FALSE}
 d6::install_d6_packages(geo = FALSE)
 ```
 
 The default packages that are going to be installed are:
 
-```{text}
-tidyverse (tibble, dplyr, tidyr, ggplot2, readr, forcats, stringr, purrr), lubridate, here, vroom, patchwork, remotes
+```{text, eval=FALSE}
+tibble, dplyr, tidyr, tibble, ggplot2, readr, forecats, stringr, purrr, lubridate, here, patchwork, usethis, remotes
 ```
 
-The following packages will be installed in case you specify
-`geo = TRUE`:
+The following packages will be installed in case you specify `geo = TRUE`:
 
-```{text}
+```{text, eval=FALSE}
 sf, terra, stars, tmap
 ```
 

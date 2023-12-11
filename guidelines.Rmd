@@ -210,7 +210,7 @@ The main folder structure created in the root directory should look like this:
 └── unicornus_wl_sdm_smith_j
     ├── data
     ├── docs
-    ├── output
+    ├── results
     ├── plots
     └── scripts
 ```
@@ -223,26 +223,22 @@ additional files looks like this:
 └── unicornus_wl_sdm_smith_j
     ├── .Rproj.user          —  Rproject files
     ├── data                 —  main folder data
-    │    ├── geo             —  main folder spatial data (if `geo = TRUE`)
-    │    │    ├── processed  —  processed spatial data files
-    │    │    └── raw        —  raw spatial data files
     │    ├── processed       —  processed tabular data files
+    │    │    └── geo        —  processed geospatial data files
     │    └── raw             —  raw tabular data files
+    │    │    └── geo        —  raw geospatial data files
     ├── docs                 —  documents main folder
     │   ├── admin            —  administrative docs, e.g. permits 
     │   ├── literature       —  literature used for parametrization + manuscript
     │   ├── manuscript       —  manuscript drafts (main + supplement)
     │   ├── presentations    —  talks and poster presentations
     │   └── reports          —  rendered reports
-    ├── output               —  everything that is computed (except plots)
-    ├── plots                —  plot output
+    ├── results              —  explorative plots, tables etc. (except final figures)
+    ├── plots                —  final figures for manuscript and supplementary material
     ├── scripts              —  script files (e.g. .R, .Rmd, .Qmd, .py, .nlogo)
-    │   ├── 00_start.R       —  first script to run after project setup
     │   └── zz_submit.R      —  final script to run before submission
     ├── .gitignore           —  contains which files to ignore for version control
-    ├── .Rbuildignore        —  contains which files to ignore for package builds
-    ├── DESCRIPTION          —  contains project details and package dependencies
-    ├── NAMESPACE            —  contains context for R objects
+    ├── README.md            —  contains project details and package dependencies
     └── project.Rproj        —  Rproject file: use to start your project
 ```
 
