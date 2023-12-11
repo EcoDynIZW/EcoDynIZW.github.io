@@ -16,7 +16,6 @@ output:
   distill::distill_article:
     self_contained: false
     toc: true
-draft: true
 ---
 
 ```{r setup, include=FALSE}
@@ -33,8 +32,8 @@ In this blog post, we will make use of files stored remotely but all the workflo
 
 ### Absolute Paths: Start from the Root Directory
 
--  something like `C:\\Username\\Documents\\...\\data.csv` or `/Users/Username/Documents/.../data.csv`
--  for Windows paths you have to change the backslashes to forward slashes or escape them by using two backslashes
+-  something like `C:\\Username\\Documents\\...\\data.csv` for Windows or `/Users/Username/Documents/.../data.csv` for MacOS and Linux
+-  for Windows paths you have to change the backslashes to forward slashes or escape them by using two backslashes (as in the path above)
 -  will always point to the correct file on your current machine with the current setup
 -  however, this is **<u>not recommended**</u> as it fails to find the file with any other setup
 
@@ -49,6 +48,7 @@ In this blog post, we will make use of files stored remotely but all the workflo
 #### R Projects
 
 To simplify your life, make use of [R projects](https://support.posit.co/hc/en-us/articles/200526207-Using-RStudio-Projects). The `.Rproj` file can be used as a shortcut for opening the project directly from the filesystem with the working directory set to that path. This way, you do not need to set the working directory manually (which again can cause issues on different machines, systems etc.).
+
 
 #### {here} Package
 
@@ -65,8 +65,18 @@ path_to_data <- "https://raw.githubusercontent.com/rfordatascience/tidytuesday/m
 
 Usually, you can specify the symbols used as separators (indicating columns), for quotation marks, for decimal points and more.
 
+If the file would be stored locally, a relative path coudl look like this:
 
-### {utils} (base R)
+```{r, eval=FALSE}
+path_to_data <- "./data/raw/forest.csv"
+path_to_data <- "data/raw/forest.csv"
+
+## with the {here} package
+path_to_data <- here::here("data", "raw", "forest.csv")
+```
+
+
+### {utils} aka "base R"
 
 The `read.*()` functions from the `{utils}` package return data frames.
 
@@ -153,9 +163,14 @@ Different file types can be imported by specifying the separator between columns
 As in the `read.*()` functions, one can specify the type of the columns right away. Multiple ways are possible:
 
 ```{r}
-dat <- data.table::fread(path_to_data, colClasses = c(code = "factor", year = "factor")) ## as in read.*()
-dat <- data.table::fread(path_to_data, colClasses = list(factor = c("code", "year")))    ## by type
-dat <- data.table::fread(path_to_data, colClasses = list(factor = 2:3))                  ## by type with column numbers
+## specified as in read.*()
+dat <- data.table::fread(path_to_data, colClasses = c(code = "factor", year = "factor")) 
+
+## columns specified by type with names
+dat <- data.table::fread(path_to_data, colClasses = list(factor = c("code", "year")))
+
+## columns specified by type with numbers
+dat <- data.table::fread(path_to_data, colClasses = list(factor = 2:3))
 ```
 
 
@@ -175,8 +190,11 @@ The functions from the `{readxl}` package only work with paths to local files, n
 By default, the functions import the first sheet. You can specify the sheet to import by passing either a number or the name of the sheet:
 
 ```{r, eval=FALSE}
-dat <- readxl::read_xlsx("data/data.xlsx", sheet = 2) ## open second sheet
-dat <- readxl::read_xlsx("data/data.xlsx", sheet = "Table 2") ## open sheet named "Table 2"
+## open sheet by number
+dat <- readxl::read_xlsx("data/data.xlsx", sheet = 2)
+
+## open sheet by name
+dat <- readxl::read_xlsx("data/data.xlsx", sheet = "Table 2") 
 ```
 
 
@@ -192,7 +210,7 @@ When passing a CSV file as in this example, the `import()` function uses `fread(
 
 ### Working with R-specific Formats
 
-R provides two file formats for storing data: `.RDS` and `.RData`. RDS files, formerly known as RDA files which one should avoid nowadays, can store a only single R object while RData files can store multiple R objects. Another important difference is that RDS files need to be assigned while Rdata files are loaded and use the object name that has been picked by the person saving the file (for good or worse, as it may overwrite existing objects in your environment).
+R provides two file formats for storing data: `.RDS` and `.RData`. RDS files, formerly known as RDA files which one should avoid nowadays, can store a only single R object while RData files can store multiple R objects. Another important difference is that RDS files need to be assigned while Rdata files are loaded and use the object name that has been picked by the person saving the file (for good or worse, as it may overwrite existing objects with the same name in your environment).
 
 You can open a RDS file with `readRDS()` or `readr::read_rds()`:
 
