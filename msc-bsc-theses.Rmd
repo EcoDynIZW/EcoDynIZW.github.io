@@ -10,8 +10,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class='highlightbox'>
   We are looking for motivated students interested in questions about **wildlife dynamics and distributions** under global change, **animal behavioral ecology** or advancing **theory in ecology and evolution**. Students should have a strong background in (or the will to learn) R, statistics and modelling. Please contact us for possible thesis subjects and state your skills and interests (e.g., CV, certificates,…) along with the name of one or two references.
-  
-**Here you'll find a list of [offers](msc-bsc-theses-offers.html)&ensp;for Bachelor and Master theses.**
     
   **For TU Berlin students:** Please consider the [Reader](https://www.static.tu.berlin/fileadmin/www/10002349/pdf-Dateien/ABSOLVENTINNEN_INFOS_Reader_171023.pdf) for the steps necessary to conduct a thesis. Successful attendance of our courses ‘biodiversity dynamics I + II’ , where we teach spatial R, distribution modelling and occupancy modelling, is of advantage.
 </div> 
