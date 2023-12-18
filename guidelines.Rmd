@@ -198,7 +198,7 @@ The root project folder should hold:
     + Do not use MS Excel files use .csv or .txt files to store/ save data. 
     + Metadata belonging to the raw data should be provided in a separate file but it should be given the same name with an additional suffix as the raw data file, e.g. *area1_specieslist.txt* or *area1_specieslist_metadata.txt*
 *	**docs**: A folder that contains anything related with project administration e.g. applications, permits, grants, timeline, research proposal, the electronic lab-book.
-*	**output**: A folder that contains results from your data wrangling and analyses.
+*	**results**: A folder that contains results from your data wrangling and analyses.
 *	**plots**: A folder that contains all produced images for the data exploration, presentations, and publications.
 *	**scripts**: A folder that contains all scripts that are used within the project. 
 *	If you need additional subfolders add them. Please use also second-level subfolders inside the subfolders to keep a clear and tidy structure.

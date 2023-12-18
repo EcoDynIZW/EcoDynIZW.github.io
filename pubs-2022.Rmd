@@ -75,8 +75,6 @@ FRONT VET SCI, **9**, 980554. doi:<span>[10.3389/fvets.2022.980554](https://doi.
 
 * McLaughlin JP, Schroeder J, White AM, Culhane K, Mirts HE, Tarbill GL, Sire L, Page M, Baker E, Moritz M, Brashares J, Young HS, **Sollmann R** (2022): Food webs for three burn severities after wildfire in the Eldorado National Forest, California. NAT SCI DATA, **9**, 384. doi:<span>[10.1038/s41597-022-01220-w](https://doi.org/10.1038/s41597-022-01220-w)</span>
 
-
-
 * Mirts HE, McLaughlin JP, Weller TJ, White AM, Young HS, **Sollmann R** (2022): Bats in the megafire: assessing species‘ site use in a postfire landscape in the Sierra Nevada. J MAMMAL, **103(1)**, 111-123. doi:<span>[10.1093/jmammal/gyab129](https://doi.org/10.1093/jmammal/gyab129)</span>
 
 * **Moreno-Sosa AM**, Yacelga M, Craighead K, **Kramer-Schadt S**, **Abrams JF** (2022): Can prey occupancy act as a surrogate for mesopredator occupancy? A case study of ocelot (*Leopardus pardalis*). MAMM BIOL, **102**, 163-175, doi:<span>[10.1007/s42991-022-00232-8](https://doi.org/10.1007/s42991-022-00232-8)</span>
@@ -93,9 +91,13 @@ FRONT VET SCI, **9**, 980554. doi:<span>[10.3389/fvets.2022.980554](https://doi.
 
 * Stiegler J, Lins A, Dammhahn M, **Kramer-Schadt S**, Ortmann S, Blaum N (2022): Personality drives activity and space use in a mammalian herbivore. MOV ECOL, **10**, 33. doi:<span>[10.1016/j.biocon.2021.109446](https://doi.org/10.1016/j.biocon.2021.109446)</span>
 
+* Svendsen, NA, **Radchuk V**, Morel-Journel T, Thuillier V, Schtickzelle N (2022): Complexity vs linearity: relations between functional traits in a heterotrophic protist. BMC ECOL EVOL, **23**(1):1.  doi:<span>[10.1186/s12862-022-02102-w](https://doi.org/10.1186/s12862-022-02102-w)</span> 
+
 * Synodinos AD, Karnatak R, Aguilar-Trigueros CA, Gras P, Heger T, Ionescu D, Maaß S, Musseau CL, Onandia G, **Planillo A**, Weiss L, Wollrab S, Ryo M (2022): The rate of environmental change as an important driver across scales in ecology. OIKOS e09616. doi:<span>[10.1111/oik.09616](https://doi.org/10.1111/oik.09616)</span>
 
 * Vallejo-Vargas AF, Sheil D, Semper-Pascual A, ... **Mugerwa B**, ... et al. (2022): Consistent diel activity patterns of forest mammals among tropical regions. NAT COMMUN, **13**, 7102.  doi:<span>[10.1038/s41467-022-34825-1](https://doi.org/10.1038/s41467-022-34825-1)</span>
+
+* van Moorsel, SJ, Thébault E, **Radchuk V**, Narwani A, Montoya JM, Dakos V, Holmes M, De Laender F, Pennekamp F (2022): Predicting effects of multiple interacting global change drivers across trophic levels. GLOB CHANG BIOL 00:1-16. doi:<span>[10.1111/gcb.16548](https://doi.org/10.1111/gcb.16548)</span> 
 
 * Vlaschenko A, Kravchenko K, Yatsiuk Y, Hukov V, **Kramer-Schadt S**, **Radchuk V** (2022): Bat assemblages are shaped by land cover types and forest age: A case study from eastern Ukraine. FORESTS, **13**, 1732. doi:<span>[10.3390/f13101732](https://doi.org/10.3390/f13101732)</span>
 
