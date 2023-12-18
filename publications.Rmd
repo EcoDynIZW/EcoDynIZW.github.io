@@ -75,6 +75,8 @@ ELIFE, 12:e66550. doi:<span>[10.7554/eLife.66550](https://doi.org/10.7554/eLife.
 
 * Svendsen NA, **Radchuk V**, Morel-Journel T, Thuillier V, Schtickzelle N (2023): Complexity vs linearity: relations between functional traits in a heterotrophic protist. BMC ECOL EVOL, **23**, 1. doi:<span>[10.1186/s12862-022-02102-w](https://doi.org/10.1186/s12862-022-02102-w)</span>
 
+* Tarbill GL, White AM & Sollmann R (2023): Response of pollinator taxa to fire is consistent with historic fire regimes in the Sierra Nevada and mediated through floral richness. ECOL EVOL, **13**, e10761. doi:<span>[10.1002/ece3.10761](https://doi.org/10.1002/ece3.10761)</span> 
+
 * **Tilker** A, Sinovas P (2023): Reading the signs: Camera-trapping provides new insights on scent marking in the large-antlered muntjac (*Muntiacus vuquangensis*). ECOL EVOL, **13**, e9692. doi:<span>[10.1002/ece3.9692](https://doi.org/10.1002/ece3.9692)</span>
 
 * Tourani M, **Sollmann R**, Kays R, Karp DS (2023): Maximum temperatures determine the habitat affiliations of North American mammals. PNAS, **120**(50), e2304411120. doi:<span>[10.1073/pnas.2304411120](https://doi.org/10.1073/pnas.2304411120)</span>
