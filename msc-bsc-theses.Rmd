@@ -20,6 +20,8 @@ For older Bachelor and Master theses please check here:<br> [2022](msc-bsc-these
 
 <div class='headerbox'><hbox>Completed Theses in 2023</hbox></div><br>
 
+* Quantifying demographic resilience across animal species. **Malte Ben Kurreck**, <span class='desaturated'>10.10.2023 BSc. FU Berlin, Department of Biology, Chemistry and Farmacy. Supervisors: V Radchuk (IZW), J Louvrier (IZW), U Steiner (FU).</span>
+
 * The acoustic communication of West African sabre-toothed frogs of the genus *Odontobatrachus* (*Anura*, *Odontiobatrachidae*). **Saskia Piorecki**, <span class='desaturated'>03.11.2023 MSc. Fakultät VI Planen Bauen Umwelt, Institut für Ökologie der TU Berlin. Supervisors: S Kramer-Schadt, M.-O. Rödel (Museum für Naturkunde).</span>
 
 * Larger tree diameter and high urbanisation level increases capture rates of red squirrels in Berlin. **Alina Doreen Stemmer**,  <span class='desaturated'>06.11.2023 MSc. FU Berlin, Department of Biology, Chemistry, Pharmacy. Supervisors: S Kramer-Schadt, Sinah Drenske (IZW), Jonathan Jeschke (FU).</span>
