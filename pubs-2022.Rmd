@@ -1,16 +1,14 @@
 ---
-title: "Recent Publications"
+title: "Publications 2022"
 description: ""
 output: distill::distill_article
 ---
 
 Find all our publication as PDFs also at [ResearchGate](https://www.researchgate.net/).   
   
-For older publications please check here:<br> [2023](publications.html)&ensp;|&ensp;[2021](pubs-2021.html)&ensp;|&ensp;[2020](pubs-2020.html)&ensp;|&ensp;[2019](pubs-2019.html)&ensp;|&ensp;[2018](pubs-2018.html) 
+For older publications please check here:<br> [2024](publications.html)&ensp;|&ensp;[2023](pubs-2023.html)&ensp;|&ensp;[2021](pubs-2021.html)&ensp;|&ensp;[2020](pubs-2020.html)&ensp;|&ensp;[2019](pubs-2019.html)&ensp;|&ensp;[2018](pubs-2018.html) 
 
 <br>
-
-## 2022
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 

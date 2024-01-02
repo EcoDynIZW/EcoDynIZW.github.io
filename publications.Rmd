@@ -6,86 +6,15 @@ output: distill::distill_article
 
 Find all our publication as PDFs also at [ResearchGate](https://www.researchgate.net/).   
   
-For older publications please check here:<br> [2022](pubs-2022.html)&ensp;|&ensp;[2021](pubs-2021.html)&ensp;|&ensp;[2020](pubs-2020.html)&ensp;|&ensp;[2019](pubs-2019.html)&ensp;|&ensp;[2018](pubs-2018.html) 
+For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp;[2022](pubs-2022.html)&ensp;|&ensp;[2021](pubs-2021.html)&ensp;|&ensp;[2020](pubs-2020.html)&ensp;|&ensp;[2019](pubs-2019.html)&ensp;|&ensp;[2018](pubs-2018.html) 
 
 <br>
 
-## 2023
+## 2024
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
-* Achter S, Borit M, Cottineau C, Polhill J, **Radchuk V**, Meyer M (2023): How to conduct more systematic reviews of agent-based models and foster theory development - Taking stock and looking ahead. ENVIRON MODEL SOFTW. 105867. doi:<span>[10.1016/j.envsoft.2023.105867](https://doi.org/10.1016/j.envsoft.2023.105867)</span> 
 
-* Bonenfant C, Rutschmann A, Burton J, Boyles R, García F, **Tilker A**, Schütz E (2023): Cast away on Mindoro island: lack of space limits population growth of the endangered tamaraw. ANIM CONSERV. doi:<span>[10.1111/acv.12842](https://doi.org/10.1111/acv.12842)</span>
-
-* Brodie JF, Mohd-Azlan J, Chen C, ..., **Nguyen A**, ..., et al. (2023): Landscape-scale benefits of protected areas for tropical biodiversity. NATURE, **620**, 807–812. doi:<span>[10.1038/s41586-023-06410-z](https://doi.org/10.1038/s41586-023-06410-z)</span> 
-
-* Bubnicki JW, Norton B, Baskauf SJ, Bruce T, Cagnacci F, Casaer J, Churski M, Cromsigt JPGM, Farra SD, Fiderer C, Forrester TD, Hendry H, Heurich M, Hofmeester TR, Jansen PA, Kays R, Kuijper DPJ, Liefting Y, Linnell JDC, Luskin MS, Mann C, Milotic T, Newman P, **Niedballa J**, Oldoni D, Ossi F, Robertson T, Rovero F, Rowcliffe M, Seidenari L, Stachowicz I, Stowell D, Tobler MW, Wieczorek J, Zimmermann F and Desmet P (2023): Camtrap DP: an open standard for the FAIR exchange and archiving of camera trap data. REMOTE SENS ECOL CONSERV. doi:<span>[10.1002/rse2.37](https://doi.org/10.1002/rse2.374)</span> 
-
-* Caro T, Rashid RS, Zeltman J, Gierse L-M and **Sollmann R** (2023): Meta- and subpopulation estimation with disparate data: coconut crabs in the Western Indian Ocean. ANIM CONSERV.
-doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
-
-* Chakravarty R, **Radchuk V**, Managave S, Voigt CC (2023): Increasing species richness along elevational gradients is associated with niche packing in bat assemblages. J ANIM ECOL, **92**, 863– 874. doi:<span>[10.1111/1365-2656.13897](https://doi.org/10.1111/1365-2656.13897)</span>
-
-* Couturier T, Bauduin S, Astruc G, Blanck A, Canonne C, Chambert T, Chiffard J,  Cosquer A, Cubaynes S, Curtet L, Dortel E, Drouet-Hoguet N, Duchamp C, Francesiaz C, Grente O, Jailloux A, Kervellec M, Lauret V, Lebreton J-D, **Louvrier J**, Marescot L, Mathevet R, Navas ML, Perrot C, Poulet N, Quenete P-Y, Salas M, Souchay G, Vanpé C, Besnard A,Gimenez, O. (2023): Building spaces of interactions between researchers and managers: Case studies with wildlife monitoring and conservation in France. ECOL SOLUT EVID, **4**(2), e12245. doi:<span>[10.1002/2688-8319.12245](https://doi.org/10.1002/2688-8319.12245)</span>
-
-* Danabalan R, **Planillo A**, Butschkau S, Deeg S, Pierre G, Thion C, Calvignac-Spencer S, **Kramer-Schadt S**, Mazzoni C (2023): Comparison of mosquito and fly derived DNA as a tool for sampling vertebrate biodiversity in suburban forests in Berlin, Germany. ENVIRON DNA, **00**, 1-12. doi:<span>[10.1002/edn3.398](https://doi.org/10.1002/edn3.398)</span> 
-
-* **Drenske S**, **Radchuk V**, **Scherer C**, Esterer C, Kowarik I, Fritz J, **Kramer-Schadt S** (2023): On the road to self-sustainability: Reintroduced migratory European northern bald ibises *Geronticus eremita* still need management interventions for population viability. ORYX, 1-12. doi:<span>[10.1017/S0030605322000540](https://doi.org/10.1017/S0030605322000540)</span>
-
-* Hermanns K, Marklewitz M, Zirkel F, Kopp A, **Kramer-Schadt S**, Junglen S (2023): Mosquito community composition shapes virus prevalence patterns along anthropogenic disturbance gradients.
-ELIFE, 12:e66550. doi:<span>[10.7554/eLife.66550](https://doi.org/10.7554/eLife.66550)</span>
-
-* Li J, Seeber P, **Axtner J**, et al. (2023): Monitoring terrestrial wildlife by combining hybridization capture and metabarcoding data from waterhole environmental DNA. BIOL CONSERV 284, 110168. doi:<span>[10.1016/j.biocon.2023.110168](https://doi.org/10.1016/j.biocon.2023.110168)</span>
-
-* Lokatis S, Jeschke JM, Bernard-Verdier M, Buchholz S, Grossart H-P, Havemann F, Hölker F, Itescu Y, Kowarik I, **Kramer-Schadt S**, Mietchen D, Musseau CL, **Planillo A**, Schittko C, Straka TM and Heger T (2023): Hypotheses in urban ecology: building a common knowledge base. BIOL REV. doi:<span>[10.1111/brv.12964](https://doi.org/10.1111/brv.12964)</span>
-
-* Milles A, Banitz T, Bielcik M, Frank K, Gallagher CA, Jeltsch F, Jepsen JU, Oro D, **Radchuk V**, Grimm V (2023): Local buffer mechanisms for population persistence. TRENDS ECOL EVOL. doi:<span>[10.1016/j.tree.2023.06.006](https://doi.org/10.1016/j.tree.2023.06.006)</span>
-
-* **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2023): Global disparity of camera trap research allocation and defaunation risk of terrestrial mammals. REMOTE SENS ECOL CONS.  doi:<span>[10.1002/rse2.360](https://doi.org/10.1002/rse2.360)</span>
-
-* Naciri M, **Planillo A**, **Gicquel M**, **East ML**, Hofer H, **Metzger S**, **Benhaiem S** (2023): Three decades of wildlife-vehicle collisions in a protected area: main roads and long-distance commuting trips to migratory prey increase spotted hyena roadkills in the Serengeti. BIOL CONSERV, **279**, 109950. doi:<span>[10.1016/j.biocon.2023.109950](https://doi.org/10.1016/j.biocon.2023.109950)</span>
-
-* Nguyen AT, **Tilker A**, Le Khac Q, Le M (2023): New records of the Annamite striped rabbit in Ngoc Linh, Quang Nam and Kon Tum provinces, Vietnam. MAMMALIA. doi:<span>[10.1515/mammalia-2023-0005](https://doi.org/10.1515/mammalia-2023-0005)</span>
-
-* Oeser J, Heurich M, **Kramer-Schadt S** et al. (2023): Prerequisites for coexistence: human pressure and refuge habitat availability shape continental-scale habitat use patterns of a large carnivore. LANDSC ECOL. doi:<span>[10.1007/s10980-023-01645-7](https://doi.org/10.1007/s10980-023-01645-7)</span> 
-
-* Oeser J, Heurich M, **Kramer-Schadt S**, Mattisson J, Krofel M, Krojerová-Prokešová J, Zimmermann F, Anders O, Andrén H, Bagrade G, Belotti E, Breitenmoser-Würsten C, Bufka L, Černe R, Drouet-Hoguet N, Duľa M, Fuxjäger C, Gomerčić T, Jędrzejewski W, … Kuemmerle T (2023 b): Integrating animal tracking datasets at a continental scale for mapping Eurasian lynx habitat. DIVERS DISTRIB, **00**, 1–15. doi:<span>[10.1111/ddi.13784](https://doi.org/10.1111/ddi.13784)</span> 
-
-* **Planillo A**, Viñuela J, Malo JE, García JT, Acebes P, Santamaría AE, Domínguez JC, Olea PP (2023): Addressing phase of population cycle and spatial scale is key to understand vole abundance in crop field margins: Implications for managing a cyclic pest species. AGRIC ECOSYST ENVIRON, **345**, 108306. doi:<span>[10.1016/j.agee.2022.108306](https://doi.org/10.1016/j.agee.2022.108306)</span>
-
-* **Planillo A**, **Wenzler-Meya M**, Reinhardt I, Kluth G, Michler F-U, Stier N, **Louvrier J**, Steyer K, Gillich B, Rieger S, Knauer F, Kuemmerle T, & **Kramer-Schadt S** (2023): Understanding habitat selection of range-expanding populations of large carnivores: 20 years of grey wolves (*Canis lupus*) recolonizing Germany. DIVERS DISTRIB, **00**, 1–16. doi:<span>[10.1111/ddi.13789](https://doi.org/10.1111/ddi.13789)</span> 
-
-* Palmero S, **Premier J**, **Kramer-Schadt S**, Monterroso P and Heurich M (2023): Sampling variables and their thresholds for the precise estimation of wild felid population density with camera traps and spatial capture–recapture methods. MAM REV. doi:<span>[10.1111/mam.12320](https://doi.org/10.1111/mam.12320)</span> 
-* Reusch R, Paul AA, Fritze M, **Kramer-Schadt S**, Voigt C (2023): Wind energy production in forests conflicts with tree-roosting bats. CURR BIOL, **33**(4). doi:<span>[10.1016/j.cub.2022.12.050](https://doi.org/10.1016/j.cub.2022.12.050)</span>
-
-* Revilla-Martín N, Giralt D, **Sanz-Pérez A**, Bota G, Sardà-Palomera F (2023): Disentangling the effects of management, field characteristics of fallows, and surrounding landscape to promote steppe bird conservation. AGRIC ECOSYST ENVIRON **357**, 108657.  doi:<span>[10.1016/j.agee.2023.108657](doi:10.1016/j.agee.2023.108657)</span>
-
-* Rocha DG and **Sollmann R** (2023): Habitat use patterns suggest that climate-driven vegetation changes will negatively impact mammal communities in the Amazon. ANIM CONSERV. doi:<span>[10.1111/acv.12853](https://doi.org/10.1111/acv.12853)</span>
-
-* Rostro-García S, Kamler JF, **Sollmann R**, Balme G, Augustine BC, Kéry M, Crouthers R, Gray TNE, Groenenberg M, Prum S, Macdonald DW (2023): Population dynamics of the last leopard population of eastern Indochina in the context of improved law enforcement. BIOL CONSERV, **283**. doi:<span>[10.1016/j.biocon.2023.110080](https://doi.org/10.1016/j.biocon.2023.110080)</span>
-
-* Rusman M, Sikhounmeuang S, Phommachak A, Pathoummavan S, Ngonephetsy K, Valao M, Yoganand K, **Tilker A** (2023): A recent record of the Annamite striped rabbit *Nesolagus timminsi* in a local market in southern Lao P.D.R. MAMMALIA, **87**, 615-618. doi:<span>[10.1515/mammalia-2023-0038](https://doi.org/10.1515/mammalia-2023-0038)</span>
-
-* Schmied née Stommel C, Hofer H, **Scherer C**, **Kramer-Schadt S**, East ML (accepted): Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. WILDL BIOL.
-
-* Schmitz OJ, Sylvén M, Atwood TB, Bakker ES, Berzaghi F, Brodie JF, Cromsigt JPGM, Davies AB, Leroux SJ, Schepers FJ, Smith FA, stark S, Svenning J-C, **Tilker A**, Ylänne H (2023): Trophic rewilding can expand natural climate solutions. NAT CLIM CHANG, **13**, 324–333. doi:<span>[10.1038/s41558-023-01631-6](doi:10.1038/s41558-023-01631-6)</span>
-
-* Semper-Pascual A, Sheil D, Beaudrot L, ... , **Mugerwa B**, et al. (2023): Occurrence dynamics of mammals in protected tropical forests respond to human presence and activities. NAT ECOL EVOL. doi:<span>[10.1038/s41559-023-02060-6](https://doi.org/10.1038/s41559-023-02060-6)</span>
-
-* Svendsen NA, **Radchuk V**, Morel-Journel T, Thuillier V, Schtickzelle N (2023): Complexity vs linearity: relations between functional traits in a heterotrophic protist. BMC ECOL EVOL, **23**, 1. doi:<span>[10.1186/s12862-022-02102-w](https://doi.org/10.1186/s12862-022-02102-w)</span>
-
-* Tarbill GL, White AM & **Sollmann R** (2023): Response of pollinator taxa to fire is consistent with historic fire regimes in the Sierra Nevada and mediated through floral richness. ECOL EVOL, **13**, e10761. doi:<span>[10.1002/ece3.10761](https://doi.org/10.1002/ece3.10761)</span> 
-
-* **Tilker** A, Sinovas P (2023): Reading the signs: Camera-trapping provides new insights on scent marking in the large-antlered muntjac (*Muntiacus vuquangensis*). ECOL EVOL, **13**, e9692. doi:<span>[10.1002/ece3.9692](https://doi.org/10.1002/ece3.9692)</span>
-
-* Tourani M, **Sollmann R**, Kays R, Karp DS (2023): Maximum temperatures determine the habitat affiliations of North American mammals. PNAS, **120**(50), e2304411120. doi:<span>[10.1073/pnas.2304411120](https://doi.org/10.1073/pnas.2304411120)</span>
-
-* Ullmann W, Fischer C, **Kramer-Schadt S** et al. (2023): The secret life of wild animals revealed by accelerometer data: how landscape diversity and seasonality influence the behavioural types of European hares. LANDSC ECOL. doi:<span>[10.1007/s10980-023-01765-0](https://doi.org/10.1007/s10980-023-01765-0)</span>
-
-* van Moorsel SJ, Thébault E, **Radchuk V**, Narwani A, Montoya JM, Dakos V, Holmes M, De Laender F, Pennekamp F (2023): Predicting effects of multiple interacting global change drivers across trophic levels. GLOB CHANG BIOL, **29**, 1223– 1238. doi:<span>[10.1111/gcb.16548](https://doi.org/10.1111/gcb.16548)</span>
-
-* Zelnik YR, Clark AT, **Radchuk V**, Hodapp D and Dominguez-Garcia V (2023): Editorial: Stability across spatial and temporal scales. FRONT ECOL EEVOL **11**, 1201269. doi:<span>[10.3389/fevo.2023.1201269](https://doi.org/10.3389/fevo.2023.1201269)</span>
 
 <!--<div class='headerbox'><hbox>Preprints</hbox></div><br>-->
 
