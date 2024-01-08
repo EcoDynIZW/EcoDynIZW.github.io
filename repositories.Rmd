@@ -198,7 +198,16 @@ knitr::opts_chunk$set(echo = FALSE)
     <p>Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. *WILDL BIOL* (accepted)</p><p>
     <a href='https://doi.org/10.1002/wlb3.01131'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Schmied_2024_WildlBiol'>![](img/repo/icon-github.png){width=12%}</a>
-    <a href=''>![](img/repo/icon-dryad.png){width=12%}</a> </p>
+    </p>
+  </li>
+  
+  
+  <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/sollmann_2023_biorxiv.png' alt='Figure 3 of Sollmann 2024: Relationship of occupancy with elevation and forest estimated with an occupancy model353 that does (Mst) and one that does not (Ms) account for temporal variation in detection, for 10 species354 of birds surveyed across Switzerland in 2014. Shaded areas are 95% confidence intervals of355 predictions under Mst.'>
+    <h3>Sollmann 2023</h3>
+    <p>Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. *BIORXIV*</p><p>
+    <a href='https://doi.org/10.1101/2023.08.08.552394'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Sollmann_2024_PCJ'>![](img/repo/icon-github.png){width=12%}</a> </p>
   </li>
   
   
