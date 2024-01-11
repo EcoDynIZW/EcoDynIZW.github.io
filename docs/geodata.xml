@@ -12,7 +12,20 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 08 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>landuse berlin 2021</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/landuse_berlin_2021_poly_03035_gpkg</link>
+      <description>landuse berlin 2021</description>
+      <category>Berlin</category>
+      <category>2021</category>
+      <category>polygon</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/landuse_berlin_2021_poly_03035_gpkg</guid>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/landuse_berlin_2021_poly_03035_gpkg/landuse_berlin_2021_poly_03035_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
     <item>
       <title>tri europe 2016</title>
       <dc:creator>Moritz Wenzler-Meya</dc:creator>
