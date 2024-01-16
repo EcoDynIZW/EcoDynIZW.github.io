@@ -14,7 +14,7 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
-* **Sollmann R** (2024): Estimating the Temporal Scale of Lagged Responses in Species Abundance and Occurrence. ECOSPHERE **15**(1), e4704. doi:<span>[10.1002/ecs2.4704](https://doi.org/10.1002/ecs2.4704)</span> 
+* **Sollmann R** (2024): Estimating the temporal scale of lagged responses in species abundance and occurrence. ECOSPHERE **15**(1), e4704. doi:<span>[10.1002/ecs2.4704](https://doi.org/10.1002/ecs2.4704)</span> 
  
 
 <!--<div class='headerbox'><hbox>Preprints</hbox></div><br>-->
