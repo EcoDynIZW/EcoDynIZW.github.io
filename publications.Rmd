@@ -14,8 +14,13 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
+* **Planillo A**, **Wenzler-Meya M**, Reinhardt I, Kluth G, Michler F-U, Stier N, **Louvrier J**, Steyer K, Gillich B, Rieger S, Knauer F, Kuemmerle T, & **Kramer-Schadt S** (2024): Understanding habitat selection of range-expanding populations of large carnivores: 20 years of grey wolves (*Canis lupus*) recolonizing Germany. DIVERS DISTRIB, **30**, 71–86. doi:<span>[10.1111/ddi.13789](https://doi.org/10.1111/ddi.13789)</span>
+
+* Schmied née Stommel C, Hofer H, **Scherer C**, **Kramer-Schadt S**, East ML (2024): Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. WILDL BIOL, e01131. doi:<span>[10.1002/wlb3.01131](https://doi.org/10.1002/wlb3.01131)</span>
+
 * **Sollmann R** (2024): Estimating the temporal scale of lagged responses in species abundance and occurrence. ECOSPHERE **15**(1), e4704. doi:<span>[10.1002/ecs2.4704](https://doi.org/10.1002/ecs2.4704)</span> 
- 
+
+* **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEERJ, 4, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
 
 <!--<div class='headerbox'><hbox>Preprints</hbox></div><br>-->
 

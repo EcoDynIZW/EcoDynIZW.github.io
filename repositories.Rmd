@@ -195,7 +195,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img class="card-repo-img" src='img/repo/schmied_2024.png' alt='Figure 1 of Schmied et al. 2024: Map of the study area in the southeast of Ruaha National Park in East Africa. The location of 10 ground transects is shown including five perpendicular transects (P1-P5) leading away from the Great Ruaha River (GRR) and five transects alongside the GRR  (transects A6 - A10).'>
     <h3>Schmied et al. 2024</h3>
-    <p>Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. *WILDL BIOL* (accepted)</p><p>
+    <p>Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. *WILDL BIOL*, e01131</p><p>
     <a href='https://doi.org/10.1002/wlb3.01131'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Schmied_2024_WildlBiol'>![](img/repo/icon-github.png){width=12%}</a>
     </p>
@@ -205,8 +205,8 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img class="card-repo-img" src='img/repo/sollmann_2023_biorxiv.png' alt='Figure 3 of Sollmann 2024: Relationship of occupancy with elevation and forest estimated with an occupancy model353 that does (Mst) and one that does not (Ms) account for temporal variation in detection, for 10 species354 of birds surveyed across Switzerland in 2014. Shaded areas are 95% confidence intervals of355 predictions under Mst.'>
     <h3>Sollmann 2024</h3>
-    <p>Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. *BIORXIV*</p><p>
-    <a href='https://doi.org/10.1101/2023.08.08.552394'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <p>Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. *PEERJ* 4, e1.</p><p>
+    <a href='https://doi.org/10.24072/pcjournal.357'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Sollmann_2024_PCJ'>![](img/repo/icon-github.png){width=12%}</a> </p>
   </li>
   
