@@ -93,7 +93,7 @@ ggplot(world) +
 
 You can specify the scale, category, and type you want as in the examples below.
 
-```{r glacier-rnaturalearth}
+```{r glacier-rnaturalearth, results = FALSE}
 glacier_small <- ne_download(type = "glaciated_areas", category = "physical", 
                              scale = "small", returnclass = "sf")
 
@@ -138,7 +138,7 @@ small + large * theme(plot.margin = margin(0, -20, 0, -20))
 
 NaturalEarth also provides several cultural data sets, such as airports, roads, disputed areas. Let's have a look at the urban areas across the world:
 
-```{r urban-rnaturalearth, fig.width=10, fig.height=5, layout="l-page"}
+```{r urban-rnaturalearth, fig.width=10, fig.height=5, layout="l-page", results = FALSE}
 urban <- ne_download(type = "urban_areas", category = "cultural", 
                      scale = "medium", returnclass = "sf")
 
@@ -153,8 +153,10 @@ ggplot() +
 The physical and cultural data sets showcased above are all vector data. NaturalEarth also provides raster data, namely gridded relief data:
 
 ```{r relief-rnaturalearth, fig.width=8, fig.height=5, layout="l-page"}
-relief <- ne_download(type = "MSR_50M", category = "raster",
-                      scale = 50, returnclass = "sf")
+ne_download(type = "MSR_50M", category = "raster",
+                      scale = 50, returnclass = "sf", load = FALSE) # load = TRUE does not work right now
+
+relief <- ne_load(scale = 50, type = "MSR_50M", category = "raster")
 
 terra::plot(relief)
 ```
