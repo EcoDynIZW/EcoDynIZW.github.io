@@ -1732,12 +1732,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>The physical and cultural data sets showcased above are all vector data. NaturalEarth also provides raster data, namely gridded relief data:</p>
 <div class="layout-chunk" data-layout="l-page">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://docs.ropensci.org/rnaturalearth/reference/ne_download.html'>ne_download</a></span><span class='op'>(</span>type <span class='op'>=</span> <span class='st'>"MSR_50M"</span>, category <span class='op'>=</span> <span class='st'>"raster"</span>,</span>
-<span>                      scale <span class='op'>=</span> <span class='fl'>50</span>, returnclass <span class='op'>=</span> <span class='st'>"sf"</span>, load <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span> <span class='co'># load = TRUE does not work right now</span></span></code></pre>
-</div>
-<pre><code>[1] &quot;MSR_50M&quot;</code></pre>
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>relief</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/rnaturalearth/reference/ne_load.html'>ne_load</a></span><span class='op'>(</span>scale <span class='op'>=</span> <span class='fl'>50</span>, type <span class='op'>=</span> <span class='st'>"MSR_50M"</span>, category <span class='op'>=</span> <span class='st'>"raster"</span><span class='op'>)</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>relief</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/rnaturalearth/reference/ne_download.html'>ne_download</a></span><span class='op'>(</span>type <span class='op'>=</span> <span class='st'>"MSR_50M"</span>, category <span class='op'>=</span> <span class='st'>"raster"</span>,</span>
+<span>                      scale <span class='op'>=</span> <span class='fl'>50</span>, returnclass <span class='op'>=</span> <span class='st'>"sf"</span><span class='op'>)</span></span>
 <span></span>
 <span><span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>relief</span><span class='op'>)</span></span></code></pre>
 </div>
@@ -1826,10 +1822,10 @@ First 10 features:
   &lt;chr&gt; &lt;chr&gt;               
 1 craft agricultural_engines
 2 craft atelier             
-3 craft bakery              
-4 craft basket_maker        
-5 craft beekeeper           
-6 craft blacksmith          </code></pre>
+3 craft bag_repair          
+4 craft bakery              
+5 craft basket_maker        
+6 craft beekeeper           </code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>## building the query, e.g. beekeepers</span></span>
 <span><span class='va'>beekeeper_query</span> <span class='op'>&lt;-</span> </span>
@@ -1947,7 +1943,7 @@ Geodetic CRS:  WGS 84
 </div>
 <p><img src="r-spatial-data_files/figure-html5/data-plot-elevatr-1.png" width="864" /></p>
 </div>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

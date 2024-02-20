@@ -153,10 +153,8 @@ ggplot() +
 The physical and cultural data sets showcased above are all vector data. NaturalEarth also provides raster data, namely gridded relief data:
 
 ```{r relief-rnaturalearth, fig.width=8, fig.height=5, layout="l-page"}
-ne_download(type = "MSR_50M", category = "raster",
-                      scale = 50, returnclass = "sf", load = FALSE) # load = TRUE does not work right now
-
-relief <- ne_load(scale = 50, type = "MSR_50M", category = "raster")
+relief <- ne_download(type = "MSR_50M", category = "raster",
+                      scale = 50, returnclass = "sf")
 
 terra::plot(relief)
 ```
