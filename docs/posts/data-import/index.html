@@ -88,9 +88,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-<title>Ecological Dynamics: How to Import Rectangular, Plain-Text Data Files</title>
+<title>Ecological Dynamics: How to Import Tabular, Plain-Text Data Files</title>
 
-<meta property="description" itemprop="description" content="Learn how to import (and export) various data file formats using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata."/>
+<meta property="description" itemprop="description" content="Learn how to import (and export) various tabular data file formats such as CSV, TXT, and XLSX using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata."/>
 
 <link rel="canonical" href="https://ecodynizw.github.io/posts/data-import/"/>
 <link rel="icon" type="image/png" href="../../img/d6_purple_round.png"/>
@@ -101,22 +101,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta name="article:author" content="Cedric Scherer"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Ecological Dynamics: How to Import Rectangular, Plain-Text Data Files"/>
+<meta property="og:title" content="Ecological Dynamics: How to Import Tabular, Plain-Text Data Files"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Learn how to import (and export) various data file formats using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata."/>
+<meta property="og:description" content="Learn how to import (and export) various tabular data file formats such as CSV, TXT, and XLSX using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata."/>
 <meta property="og:url" content="https://ecodynizw.github.io/posts/data-import/"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Ecological Dynamics"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Ecological Dynamics: How to Import Rectangular, Plain-Text Data Files"/>
-<meta property="twitter:description" content="Learn how to import (and export) various data file formats using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata."/>
+<meta property="twitter:title" content="Ecological Dynamics: How to Import Tabular, Plain-Text Data Files"/>
+<meta property="twitter:description" content="Learn how to import (and export) various tabular data file formats such as CSV, TXT, and XLSX using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata."/>
 <meta property="twitter:url" content="https://ecodynizw.github.io/posts/data-import/"/>
 <meta property="twitter:site" content="@EcoDynIZW"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="Ecological Dynamics: How to Import Rectangular, Plain-Text Data Files"/>
+<meta name="citation_title" content="Ecological Dynamics: How to Import Tabular, Plain-Text Data Files"/>
 <meta name="citation_fulltext_html_url" content="https://ecodynizw.github.io/posts/data-import/"/>
 <meta name="citation_online_date" content="2023/12/07"/>
 <meta name="citation_publication_date" content="2023/12/07"/>
@@ -126,7 +126,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["How to Import Rectangular, Plain-Text Data Files"]},{"type":"character","attributes":{},"value":["Learn how to import (and export) various data file formats using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata."]},{"type":"character","attributes":{},"value":["rstats","workflow","tutorial"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Cedric Scherer"]},{"type":"character","attributes":{},"value":["https://cedricscherer.com"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["2023-12-07"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/posts/data-import/"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/posts/data-import/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["How to Import Tabular, Plain-Text Data Files"]},{"type":"character","attributes":{},"value":["Learn how to import (and export) various tabular data file formats such as CSV, TXT, and XLSX using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata."]},{"type":"character","attributes":{},"value":["rstats","workflow","tutorial"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Cedric Scherer"]},{"type":"character","attributes":{},"value":["https://cedricscherer.com"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["2023-12-07"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/posts/data-import/"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/posts/data-import/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2687,7 +2687,7 @@ d-appendix d-footnote-list a.footnote-backlink {
   color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.22/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.25/header-attrs.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2708,7 +2708,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"How to Import Rectangular, Plain-Text Data Files","description":"Learn how to import (and export) various data file formats using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata.","authors":[{"author":"Cedric Scherer","authorURL":"https://cedricscherer.com","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/","orcidID":""}],"publishedDate":"2023-12-07T00:00:00.000+01:00","citationText":"Scherer, 2023"}
+{"title":"How to Import Tabular, Plain-Text Data Files","description":"Learn how to import (and export) various tabular data file formats such as CSV, TXT, and XLSX using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata.","authors":[{"author":"Cedric Scherer","authorURL":"https://cedricscherer.com","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/","orcidID":""}],"publishedDate":"2023-12-07T00:00:00.000+01:00","citationText":"Scherer, 2023"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2776,7 +2776,7 @@ Wikis
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>How to Import Rectangular, Plain-Text Data Files</h1>
+<h1>How to Import Tabular, Plain-Text Data Files</h1>
 
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
@@ -2785,7 +2785,7 @@ Wikis
   <a href="../../coding.html#category:tutorial" class="dt-tag">tutorial</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Learn how to import (and export) various data file formats using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata.</p></p>
+<p><p>Learn how to import (and export) various tabular data file formats such as CSV, TXT, and XLSX using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata.</p></p>
 </div>
 
 <div class="d-byline">
@@ -2817,7 +2817,7 @@ Wikis
 </ul>
 </nav>
 </div>
-<p>There is one essential step to make use of the power of the R programming language to wrangle, analyze, visualize, and communicate our data: getting the data into R. In this blog post, we will show you multiple approaches for various rectangular, plain-text file formats. Note that this blog post is focusing on rectangular data — if you need to import spatial data files, have a look <a href="ADD%20URL">here</a>.</p>
+<p>There is one essential step to make use of the power of the R programming language to wrangle, analyze, visualize, and communicate our data: getting the data into R. In this blog post, we will show you multiple approaches for various tabular, plain-text file formats. Note that this blog post is focusing on tabular data — if you need to import spatial data files, have a look <a href="ADD%20URL">here</a>.</p>
 <h2 id="file-paths">File Paths</h2>
 <p>In this blog post, we will make use of files stored remotely but all the workflows would be the same if the file is placed in a local directory. There are multiple ways how to specify the path to a local file:</p>
 <h3 id="absolute-paths-start-from-the-root-directory">Absolute Paths: Start from the Root Directory</h3>
@@ -2858,7 +2858,7 @@ Wikis
 </div>
 <h3 id="utils-aka-base-r">{utils} aka “base R”</h3>
 <p>The <code>read.*()</code> functions from the <code>{utils}</code> package return data frames.</p>
-<p><code>read.table()</code> is a generic function that can be used for all kinds of rectangular data formats; <code>read.csv()</code> is a short-hand wrapper that calls <code>read.delim()</code> with sensible defaults for CSV files.</p>
+<p><code>read.table()</code> is a generic function that can be used for all kinds of tabular data formats; <code>read.csv()</code> is a short-hand wrapper that calls <code>read.delim()</code> with sensible defaults for CSV files.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/utils/read.table.html'>read.table</a></span><span class='op'>(</span><span class='va'>path_to_data</span>, sep <span class='op'>=</span> <span class='st'>","</span>, quote <span class='op'>=</span> <span class='st'>"\"'"</span>, dec <span class='op'>=</span> <span class='st'>"."</span><span class='op'>)</span></span>
@@ -2972,7 +2972,7 @@ Wikis
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>data</span> <span class='op'>&lt;-</span> <span class='fu'>rio</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/rio/man/import.html'>import</a></span><span class='op'>(</span><span class='va'>path_to_data</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<p>When passing a CSV file as in this example, the <code>import()</code> function uses <code>fread()</code> from the <code>{data.table}</code> package by default. The <code>import()</code> functions supports all kind of rectangular data and also other file format including SAS, SPSS, Stata, R Objects, json, geojson, Apache Arrow, Feather and more.</p>
+<p>When passing a CSV file as in this example, the <code>import()</code> function uses <code>fread()</code> from the <code>{data.table}</code> package by default. The <code>import()</code> functions supports all kind of tabular data and also other file format including SAS, SPSS, Stata, R Objects, json, geojson, Apache Arrow, Feather and more.</p>
 <h3 id="working-with-r-specific-formats">Working with R-specific Formats</h3>
 <p>R provides two file formats for storing data: <code>.RDS</code> and <code>.RData</code>. RDS files, formerly known as RDA files which one should avoid nowadays, can store a only single R object while RData files can store multiple R objects. Another important difference is that RDS files need to be assigned while Rdata files are loaded and use the object name that has been picked by the person saving the file (for good or worse, as it may overwrite existing objects with the same name in your environment).</p>
 <p>You can open a RDS file with <code>readRDS()</code> or <code>readr::read_rds()</code>:</p>
@@ -3007,7 +3007,7 @@ Wikis
   <p class="social_footer">
     <span class="article-sharing">
       Share: &nbsp;
-      <a href="https://twitter.com/share?text=How%20to%20Import%20Rectangular%2C%20Plain-Text%20Data%20Files&amp;url=https%3A%2F%2Fecodynizw.github.io%2Fposts%2Fdata-import%2F" aria-label="share on twitter">
+      <a href="https://twitter.com/share?text=How%20to%20Import%20Tabular%2C%20Plain-Text%20Data%20Files&amp;url=https%3A%2F%2Fecodynizw.github.io%2Fposts%2Fdata-import%2F" aria-label="share on twitter">
         <i class="fab fa-twitter" aria-hidden="true"></i>
       </a>
     </span>
@@ -3026,11 +3026,11 @@ Wikis
 <div class="appendix-bottom">
   <h3 id="citation">Citation</h3>
   <p>For attribution, please cite this work as</p>
-  <pre class="citation-appendix short">Scherer (2023, Dec. 7). Ecological Dynamics: How to Import Rectangular, Plain-Text Data Files. Retrieved from https://ecodynizw.github.io/posts/data-import/</pre>
+  <pre class="citation-appendix short">Scherer (2023, Dec. 7). Ecological Dynamics: How to Import Tabular, Plain-Text Data Files. Retrieved from https://ecodynizw.github.io/posts/data-import/</pre>
   <p>BibTeX citation</p>
   <pre class="citation-appendix long">@misc{scherer2023how,
   author = {Scherer, Cedric},
-  title = {Ecological Dynamics: How to Import Rectangular, Plain-Text Data Files},
+  title = {Ecological Dynamics: How to Import Tabular, Plain-Text Data Files},
   url = {https://ecodynizw.github.io/posts/data-import/},
   year = {2023}
 }</pre>

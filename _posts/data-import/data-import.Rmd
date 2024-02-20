@@ -1,7 +1,7 @@
 ---
-title: "How to Import Rectangular, Plain-Text Data Files"
+title: "How to Import Tabular, Plain-Text Data Files"
 description: |
-  Learn how to import (and export) various rectangular data file formats such as CSV, TXT, and XLSX using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata.
+  Learn how to import (and export) various tabular data file formats such as CSV, TXT, and XLSX using a range of packages such as {utils}, {vroom}, {readr}, {data.table}, {readxl}, and {rio}. The article also includes best practices when specifying paths and a quick discussion on handling R specific formats such as RDS and Rdata.
 categories:
   - rstats
   - workflow
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 library(patchwork)
 ```
 
-There is one essential step to make use of the power of the R programming language to wrangle, analyze, visualize, and communicate our data: getting the data into R. In this blog post, we will show you multiple approaches for various rectangular, plain-text file formats. Note that this blog post is focusing on rectangular data --- if you need to import spatial data files, have a look [here](ADD URL).
+There is one essential step to make use of the power of the R programming language to wrangle, analyze, visualize, and communicate our data: getting the data into R. In this blog post, we will show you multiple approaches for various tabular, plain-text file formats. Note that this blog post is focusing on tabular data --- if you need to import spatial data files, have a look [here](ADD URL).
 
 
 ## File Paths
@@ -80,7 +80,7 @@ path_to_data <- here::here("data", "raw", "forest.csv")
 
 The `read.*()` functions from the `{utils}` package return data frames.
 
-`read.table()` is a generic function that can be used for all kinds of rectangular data formats; `read.csv()` is a short-hand wrapper that calls `read.delim()` with sensible defaults for CSV files.
+`read.table()` is a generic function that can be used for all kinds of tabular data formats; `read.csv()` is a short-hand wrapper that calls `read.delim()` with sensible defaults for CSV files.
 
 ```{r}
 dat <- read.table(path_to_data, sep = ",", quote = "\"'", dec = ".")
@@ -205,7 +205,7 @@ The `{rio}` package describes itself as "the Swiss army knife for data I/O". The
 ```{r}
 data <- rio::import(path_to_data)
 ```
-When passing a CSV file as in this example, the `import()` function uses `fread()` from the `{data.table}` package by default. The `import()` functions supports all kind of rectangular data and also other file format including SAS, SPSS, Stata, R Objects, json, geojson, Apache Arrow, Feather and more.
+When passing a CSV file as in this example, the `import()` function uses `fread()` from the `{data.table}` package by default. The `import()` functions supports all kind of tabular data and also other file format including SAS, SPSS, Stata, R Objects, json, geojson, Apache Arrow, Feather and more.
 
 
 ### Working with R-specific Formats

@@ -2847,18 +2847,15 @@ Wikis
 <span><span class='co'># install.packages("remotes")</span></span>
 <span><span class='co'># remotes::install_github("ropensci/rnaturalearth")</span></span>
 <span></span>
+<span><span class='co'># if downloading raster data such as 'MRS_50m' is not working try to insdtall the developer version of 'rnaturaleart' by using</span></span>
+<span><span class='co'># remotes::install_dev("rnaturalearth")</span></span>
+<span></span>
 <span><span class='co'>## for high resolution data, also install {rnaturalearthhires}</span></span>
 <span><span class='co'># remotes::install_github("ropensci/rnaturalearthhires")</span></span>
 <span></span>
 <span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://docs.ropensci.org/rnaturalearth/'>rnaturalearth</a></span><span class='op'>)</span></span>
 <span></span>
-<span><span class='co'>## store as sp object (SpatialPolygonsDataFrame)</span></span>
-<span><span class='va'>world</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/rnaturalearth/reference/ne_countries.html'>ne_countries</a></span><span class='op'>(</span><span class='op'>)</span> <span class='co'>## `returnclass = "sp"` by default</span></span>
-<span><span class='fu'><a href='https://rdrr.io/r/base/class.html'>class</a></span><span class='op'>(</span><span class='va'>world</span><span class='op'>)</span></span></code></pre>
-</div>
-<pre><code>[1] &quot;sf&quot;         &quot;data.frame&quot;</code></pre>
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>## store as sf object (simple features)</span></span>
+<span><span class='co'>## store as sf object (simple features)</span></span>
 <span><span class='va'>world</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/rnaturalearth/reference/ne_countries.html'>ne_countries</a></span><span class='op'>(</span>returnclass <span class='op'>=</span> <span class='st'>"sf"</span><span class='op'>)</span></span>
 <span><span class='fu'><a href='https://rdrr.io/r/base/class.html'>class</a></span><span class='op'>(</span><span class='va'>world</span><span class='op'>)</span></span></code></pre>
 </div>
@@ -3194,7 +3191,7 @@ Geodetic CRS:  WGS 84
 </div>
 <p><img src="r-spatial-data_files/figure-html5/data-plot-elevatr-1.png" width="864" /></p>
 </div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">

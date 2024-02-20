@@ -55,14 +55,13 @@ theme_update(plot.title = element_text(face = "bold", hjust = .5))
 # install.packages("remotes")
 # remotes::install_github("ropensci/rnaturalearth")
 
+# if downloading raster data such as 'MRS_50m' is not working try to insdtall the developer version of 'rnaturaleart' by using
+# remotes::install_dev("rnaturalearth")
+
 ## for high resolution data, also install {rnaturalearthhires}
 # remotes::install_github("ropensci/rnaturalearthhires")
 
 library(rnaturalearth)
-
-## store as sp object (SpatialPolygonsDataFrame)
-world <- ne_countries() ## `returnclass = "sp"` by default
-class(world)
 
 ## store as sf object (simple features)
 world <- ne_countries(returnclass = "sf")
