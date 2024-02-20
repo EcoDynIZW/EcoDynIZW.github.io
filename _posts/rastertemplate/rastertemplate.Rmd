@@ -56,7 +56,7 @@ values(temp) <- 1 # set a dummy value for visualization purposes
 temp
 ```
 
-We load Berlin borders from the cloud to show the borders  
+We load Berlin districts data set from our cloud to show the borders of berlin  
 
 ```{r berlin borders}
 berlin <- d6geodata::get_geodata(data_name = "districs_berlin_2022_poly_03035_gpkg",
@@ -199,11 +199,29 @@ ext_tab <- terra::extract(x = temp_rast, # template raster as first input
                )
 ```
 
-As you can see, the largest part of the line lays within the purple area and 
+As you already can see on the plot, the largest part of the line lays within the purple area (1). This function can be used in cases such as  
 
 ```{r}
 table(ext_tab$layer)
 ```
+
+Additional example: Plotting data with `{tidyterra}`
+
+```{r}
+library(tidyterra)
+
+ggplot() + 
+  geom_spatraster(data = temp_rast) 
+
+
+ggplot() + 
+  geom_spatraster(data = temp_rast) +
+  scale_fill_whitebox_c(palette = "purple")
+```
+
+
+
+
 
 ## Summary {#summary}
 

@@ -16,6 +16,8 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 * **Calderón AP**, Landaverde-Gonzalez P, Wultsch C, Foster R, Harmsen B, Figueroa O, Garcia-Anleu R, Castañeda F, Amato G, Grimm V, **Kramer-Schadt S**, Zeller AK (2024): Modelling jaguar gene flow in fragmented landscapes offers insights into functional population connectivity. LANDSC ECOL **39**, 12.  doi:<span>[10.1007/s10980-024-01795-2](https://doi.org/10.1007/s10980-024-01795-2)</span>
 
+* **Kürschner T**, **Scherer C**, **Radchuk V**, Blaum N, **Kramer-Schadt S**(2024): Resource asynchrony and landscape homogenization as drivers of virulence evolution: The case of a directly transmitted disease in a social host. ECOL EVOL, **14**, e11065. doi:<span>[10.1002/ece3.11065](https://doi.org/10.1002/ece3.11065)</span>
+
 * **Planillo A**, **Wenzler-Meya M**, Reinhardt I, Kluth G, Michler F-U, Stier N, **Louvrier J**, Steyer K, Gillich B, Rieger S, Knauer F, Kuemmerle T,  **Kramer-Schadt S** (2024): Understanding habitat selection of range-expanding populations of large carnivores: 20 years of grey wolves (*Canis lupus*) recolonizing Germany. DIVERS DISTRIB, **30**, 71–86. doi:<span>[10.1111/ddi.13789](https://doi.org/10.1111/ddi.13789)</span>
 
 * Schmied née Stommel C, Hofer H, **Scherer C**, **Kramer-Schadt S**, East ML (2024): Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. WILDL BIOL, e01131. doi:<span>[10.1002/wlb3.01131](https://doi.org/10.1002/wlb3.01131)</span>
