@@ -139,11 +139,14 @@ knitr::include_graphics("./img/teams/team-ind/logo_serengeti_spotted_hyaena_proj
 ```
 
 <br>
-&emsp;&rarr; [English version](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Serengeti_Hyaena_Project_Leaflet_English.pdf)
+&emsp;&rarr; [English version](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Serengeti Hyaena Project Leaflet_English.pdf)
 
-&emsp;&rarr; [Deutsche Version (in German)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Informationsbroschüre_Serengeti_Tüpfelhyänen-Projekt.pdf)
+&emsp;&rarr; [Deutsche Version (in German)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/ Serengeti Hyaena Project Informationsbroschüre_Deutsch.pdf)
 
-&emsp;&rarr; [Toleo la Kiswahili (in Swahili)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Serengeti Hyaena Project Leaflet_Swahili_small.pdf)
+&emsp;&rarr; [Toleo la Kiswahili (in Swahili)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Serengeti Hyaena Project Leaflet_Swahili.pdf)
+
+&emsp;&rarr; [Version française (in French)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Serengeti Hyaena Project Brochure_Francais.pdf)
+
 :::
 
 <br>
