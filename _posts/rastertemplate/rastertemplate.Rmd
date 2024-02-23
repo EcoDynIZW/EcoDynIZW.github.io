@@ -1,7 +1,7 @@
 ---
 title: "Raster Operations"
 description: |
-  Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you tranform your vector data to your disired raster resolution and extent. In the end we will rasterize vector data with the expanded raster to get information of your vector data like gps point or tracks.
+  Learn how to obtain a template raster from the `{d6geodata}` package, expanding the raster in different ways, rasterizing vector data, and extracting information from a raster using vector data. The methods described involve the use of packages like `{terra}` and `{sf}`, and include examples and plots to illustrate the processes. Additionally, it we show the use of the {tidyterra} package for plotting raster data with ggplot.
   
 preview: ./img/wiki/preview-rastertemplate.png
 categories:
@@ -13,7 +13,7 @@ author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/
-date: 2023-09-27
+date: 2024-02-21
 output:
   distill::distill_article:
     self_contained: false
@@ -56,7 +56,7 @@ values(temp) <- 1 # set a dummy value for visualization purposes
 temp
 ```
 
-We load Berlin districts data set from our cloud to show the borders of berlin  
+We load Berlin districts data set from our cloud to show the borders of Berlin.  
 
 ```{r berlin borders}
 berlin <- d6geodata::get_geodata(data_name = "districs_berlin_2022_poly_03035_gpkg",
@@ -199,28 +199,31 @@ ext_tab <- terra::extract(x = temp_rast, # template raster as first input
                )
 ```
 
-As you already can see on the plot, the largest part of the line lays within the purple area (1). This function can be used in cases such as  
+As you already can see on the plot, the largest part of the line lays within the purple area (1). This function can be used in cases like you need to know in which landuse class your track lays.
 
 ```{r}
 table(ext_tab$layer)
 ```
 
-Additional example: Plotting data with `{tidyterra}`
+## Visualize data with tidyterra {#tidyterra}
+
+There are several ways to plot raster data with ggplot and one relatively new way is to do it with the package `{tidyterra}`. It has some well developed `{ggplot}` functions, but can sometimes not be combined with the base functions of `{ggplot}`. If you use this pacakge you may have to stay within the package functions.
+
 
 ```{r}
 library(tidyterra)
 
 ggplot() + 
-  geom_spatraster(data = temp_rast) 
+  geom_spatraster(data = temp_rast) +
+  p_berlin
 
 
 ggplot() + 
   geom_spatraster(data = temp_rast) +
-  scale_fill_whitebox_c(palette = "purple")
+  scale_fill_whitebox_c(palette = "purple") +
+  p_berlin
+
 ```
-
-
-
 
 
 ## Summary {#summary}

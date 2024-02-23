@@ -90,35 +90,35 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Raster Operations</title>
 
-  <meta property="description" itemprop="description" content="Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you tranform your vector data to your disired raster resolution and extent. In the end we will rasterize vector data with the expanded raster to get information of your vector data like gps point or tracks."/>
+  <meta property="description" itemprop="description" content="Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points."/>
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2023-09-27"/>
-  <meta property="article:created" itemprop="dateCreated" content="2023-09-27"/>
+  <meta property="article:published" itemprop="datePublished" content="2024-02-21"/>
+  <meta property="article:created" itemprop="dateCreated" content="2024-02-21"/>
   <meta name="article:author" content="Moritz Wenzler-Meya"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Raster Operations"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you tranform your vector data to your disired raster resolution and extent. In the end we will rasterize vector data with the expanded raster to get information of your vector data like gps point or tracks."/>
+  <meta property="og:description" content="Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points."/>
   <meta property="og:locale" content="en_US"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Raster Operations"/>
-  <meta property="twitter:description" content="Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you tranform your vector data to your disired raster resolution and extent. In the end we will rasterize vector data with the expanded raster to get information of your vector data like gps point or tracks."/>
+  <meta property="twitter:description" content="Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","categories","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Raster Operations"]},{"type":"character","attributes":{},"value":["Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you tranform your vector data to your disired raster resolution and extent. In the end we will rasterize vector data with the expanded raster to get information of your vector data like gps point or tracks.\n"]},{"type":"character","attributes":{},"value":["./img/wiki/preview-rastertemplate.png"]},{"type":"character","attributes":{},"value":["tutorial","spatial","sf","terra"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["2023-09-27"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[true]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","categories","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Raster Operations"]},{"type":"character","attributes":{},"value":["Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points.\n"]},{"type":"character","attributes":{},"value":["./img/wiki/preview-rastertemplate.png"]},{"type":"character","attributes":{},"value":["tutorial","spatial","sf","terra"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["2024-02-21"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[true]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["rastertemplate_files/anchor-4.2.2/anchor.min.js","rastertemplate_files/bowser-1.9.3/bowser.min.js","rastertemplate_files/distill-2.2.21/template.v2.js","rastertemplate_files/figure-html5/plot-1.png","rastertemplate_files/figure-html5/plot template-1.png","rastertemplate_files/figure-html5/template-1.png","rastertemplate_files/figure-html5/unnamed-chunk-11-1.png","rastertemplate_files/figure-html5/unnamed-chunk-11-2.png","rastertemplate_files/figure-html5/unnamed-chunk-2-1.png","rastertemplate_files/figure-html5/unnamed-chunk-3-1.png","rastertemplate_files/figure-html5/unnamed-chunk-4-1.png","rastertemplate_files/figure-html5/unnamed-chunk-5-1.png","rastertemplate_files/figure-html5/unnamed-chunk-6-1.png","rastertemplate_files/figure-html5/unnamed-chunk-7-1.png","rastertemplate_files/figure-html5/unnamed-chunk-8-1.png","rastertemplate_files/figure-html5/unnamed-chunk-9-1.png","rastertemplate_files/header-attrs-2.23/header-attrs.js","rastertemplate_files/header-attrs-2.24/header-attrs.js","rastertemplate_files/jquery-3.6.0/jquery-3.6.0.js","rastertemplate_files/jquery-3.6.0/jquery-3.6.0.min.js","rastertemplate_files/jquery-3.6.0/jquery-3.6.0.min.map","rastertemplate_files/popper-2.6.0/popper.min.js","rastertemplate_files/tippy-6.2.7/tippy-bundle.umd.min.js","rastertemplate_files/tippy-6.2.7/tippy-light-border.css","rastertemplate_files/tippy-6.2.7/tippy.css","rastertemplate_files/tippy-6.2.7/tippy.umd.min.js","rastertemplate_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["rastertemplate_files/anchor-4.2.2/anchor.min.js","rastertemplate_files/bowser-1.9.3/bowser.min.js","rastertemplate_files/distill-2.2.21/template.v2.js","rastertemplate_files/figure-html5/plot-1.png","rastertemplate_files/figure-html5/plot template-1.png","rastertemplate_files/figure-html5/template-1.png","rastertemplate_files/figure-html5/unnamed-chunk-11-1.png","rastertemplate_files/figure-html5/unnamed-chunk-11-2.png","rastertemplate_files/figure-html5/unnamed-chunk-2-1.png","rastertemplate_files/figure-html5/unnamed-chunk-3-1.png","rastertemplate_files/figure-html5/unnamed-chunk-4-1.png","rastertemplate_files/figure-html5/unnamed-chunk-5-1.png","rastertemplate_files/figure-html5/unnamed-chunk-6-1.png","rastertemplate_files/figure-html5/unnamed-chunk-7-1.png","rastertemplate_files/figure-html5/unnamed-chunk-8-1.png","rastertemplate_files/figure-html5/unnamed-chunk-9-1.png","rastertemplate_files/header-attrs-2.23/header-attrs.js","rastertemplate_files/header-attrs-2.24/header-attrs.js","rastertemplate_files/header-attrs-2.25/header-attrs.js","rastertemplate_files/jquery-3.6.0/jquery-3.6.0.js","rastertemplate_files/jquery-3.6.0/jquery-3.6.0.min.js","rastertemplate_files/jquery-3.6.0/jquery-3.6.0.min.map","rastertemplate_files/popper-2.6.0/popper.min.js","rastertemplate_files/tippy-6.2.7/tippy-bundle.umd.min.js","rastertemplate_files/tippy-6.2.7/tippy-light-border.css","rastertemplate_files/tippy-6.2.7/tippy.css","rastertemplate_files/tippy-6.2.7/tippy.umd.min.js","rastertemplate_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1521,7 +1521,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Raster Operations","description":"Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you tranform your vector data to your disired raster resolution and extent. In the end we will rasterize vector data with the expanded raster to get information of your vector data like gps point or tracks.","authors":[{"author":"Moritz Wenzler-Meya","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/","orcidID":""}],"publishedDate":"2023-09-27T00:00:00.000+02:00","citationText":"Wenzler-Meya, 2023"}
+{"title":"Raster Operations","description":"Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points.","authors":[{"author":"Moritz Wenzler-Meya","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/","orcidID":""}],"publishedDate":"2024-02-21T00:00:00.000+01:00","citationText":"Wenzler-Meya, 2024"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1541,13 +1541,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="dt-tag">terra</div>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Learn how to get a raster template from the <code>{d6geodata}</code> package and how to multiple/expand it. This will help you tranform your vector data to your disired raster resolution and extent. In the end we will rasterize vector data with the expanded raster to get information of your vector data like gps point or tracks.</p></p>
+<p><p>Learn how to get a raster template from the <code>{d6geodata}</code> package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points.</p></p>
 </div>
 
 <div class="d-byline">
   Moritz Wenzler-Meya  (IZW Berlin)<a href="https://ecodynizw.github.io/" class="uri">https://ecodynizw.github.io/</a>
   
-<br/>2023-09-27
+<br/>2024-02-21
 </div>
 
 <div class="d-article">
@@ -1574,6 +1574,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><a href="#plot-of-raster-and-line" id="toc-plot-of-raster-and-line">Plot Of Raster And Line</a></li>
 <li><a href="#extraction-from-line" id="toc-extraction-from-line">Extraction From Line</a></li>
 </ul></li>
+<li><a href="#tidyterra" id="toc-tidyterra">Visualize data with tidyterra</a></li>
 <li><a href="#summary" id="toc-summary">Summary</a></li>
 </ul>
 </nav>
@@ -1615,7 +1616,7 @@ name        : temp
 min value   :    1 
 max value   :    1 </code></pre>
 </div>
-<p>We load Berlin districts data set from our cloud to show the borders of berlin</p>
+<p>We load Berlin districts data set from our cloud to show the borders of Berlin.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>berlin</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/get_geodata.html'>get_geodata</a></span><span class='op'>(</span>data_name <span class='op'>=</span> <span class='st'>"districs_berlin_2022_poly_03035_gpkg"</span>,</span>
@@ -1771,7 +1772,7 @@ max value   :     2 </code></pre>
 <span>               <span class='op'>)</span></span></code></pre>
 </div>
 </div>
-<p>As you already can see on the plot, the largest part of the line lays within the purple area (1). This function can be used in cases such as</p>
+<p>As you already can see on the plot, the largest part of the line lays within the purple area (1). This function can be used in cases like you need to know in which landuse class your track lays.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>ext_tab</span><span class='op'>$</span><span class='va'>layer</span><span class='op'>)</span></span></code></pre>
@@ -1780,19 +1781,22 @@ max value   :     2 </code></pre>
   1   2 
 463  23 </code></pre>
 </div>
-<p>Additional example: Plotting data with <code>{tidyterra}</code></p>
+<h2 id="tidyterra">Visualize data with tidyterra</h2>
+<p>THere are several ways to plot raster data with ggplot and one relatively new way is to do it with the package <code>{tidyterra}</code>. It has some well developed <code>{ggplot}</code> functions, but can sometimes not be combined with the base functions of <code>{ggplot}</code>. If you use this pacakge you may have to stay within the package functions.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dieghernan.github.io/tidyterra/'>tidyterra</a></span><span class='op'>)</span></span>
 <span></span>
 <span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> </span>
-<span>  <span class='fu'><a href='https://dieghernan.github.io/tidyterra/reference/geom_spatraster.html'>geom_spatraster</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>temp_rast</span><span class='op'>)</span> </span></code></pre>
+<span>  <span class='fu'><a href='https://dieghernan.github.io/tidyterra/reference/geom_spatraster.html'>geom_spatraster</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>temp_rast</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='va'>p_berlin</span></span></code></pre>
 </div>
 <img src="rastertemplate_files/figure-html5/unnamed-chunk-11-1.png" width="624" />
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span> </span>
 <span>  <span class='fu'><a href='https://dieghernan.github.io/tidyterra/reference/geom_spatraster.html'>geom_spatraster</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>temp_rast</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://dieghernan.github.io/tidyterra/reference/scale_whitebox.html'>scale_fill_whitebox_c</a></span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"purple"</span><span class='op'>)</span></span></code></pre>
+<span>  <span class='fu'><a href='https://dieghernan.github.io/tidyterra/reference/scale_whitebox.html'>scale_fill_whitebox_c</a></span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"purple"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='va'>p_berlin</span></span></code></pre>
 </div>
 <p><img src="rastertemplate_files/figure-html5/unnamed-chunk-11-2.png" width="624" /></p>
 </div>
