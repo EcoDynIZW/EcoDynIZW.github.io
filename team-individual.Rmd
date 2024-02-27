@@ -141,7 +141,7 @@ knitr::include_graphics("./img/teams/team-ind/logo_serengeti_spotted_hyaena_proj
 <br>
 &emsp;&rarr; [English version](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Serengeti Hyaena Project Leaflet_English.pdf)
 
-&emsp;&rarr; [Deutsche Version (in German)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/ Serengeti Hyaena Project Informationsbroschüre_Deutsch.pdf)
+&emsp;&rarr; [Deutsche Version (in German)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/ Serengeti Hyaena Project Informationsbroschuere_Deutsch.pdf)
 
 &emsp;&rarr; [Toleo la Kiswahili (in Swahili)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Serengeti Hyaena Project Leaflet_Swahili.pdf)
 
