@@ -16,7 +16,7 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 * **Calderón AP**, Landaverde-Gonzalez P, Wultsch C, Foster R, Harmsen B, Figueroa O, Garcia-Anleu R, Castañeda F, Amato G, Grimm V, **Kramer-Schadt S**, Zeller AK (2024): Modelling jaguar gene flow in fragmented landscapes offers insights into functional population connectivity. LANDSC ECOL **39**, 12.  doi:<span>[10.1007/s10980-024-01795-2](https://doi.org/10.1007/s10980-024-01795-2)</span>
 
-* **Kürschner T**, **Scherer C**, **Radchuk V**, Blaum N, **Kramer-Schadt S**(2024): Resource asynchrony and landscape homogenization as drivers of virulence evolution: The case of a directly transmitted disease in a social host. ECOL EVOL, **14**, e11065. doi:<span>[10.1002/ece3.11065](https://doi.org/10.1002/ece3.11065)</span>
+* **Kürschner T**, **Scherer C**, **Radchuk V**, Blaum N, **Kramer-Schadt S** (2024): Resource asynchrony and landscape homogenization as drivers of virulence evolution: The case of a directly transmitted disease in a social host. ECOL EVOL, **14**, e11065. doi:<span>[10.1002/ece3.11065](https://doi.org/10.1002/ece3.11065)</span>
 
 * **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2024): Global disparity of camera trap research allocation and defaunation risk of terrestrial mammals. REMOTE SENS ECOL CONS, **10**, 121-136.  doi:<span>[10.1002/rse2.360](https://doi.org/10.1002/rse2.360)</span>
 
