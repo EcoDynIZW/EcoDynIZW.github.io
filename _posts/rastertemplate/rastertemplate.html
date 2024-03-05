@@ -90,7 +90,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Raster Operations</title>
 
-  <meta property="description" itemprop="description" content="Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points."/>
+  <meta property="description" itemprop="description" content="Learn how to obtain a template raster from the `{d6geodata}` package, expanding the raster in different ways, rasterizing vector data, and extracting information from a raster using vector data. The methods described involve the use of packages like `{terra}` and `{sf}`, and include examples and plots to illustrate the processes. Additionally, we show the use of the {tidyterra} package for plotting raster data with ggplot."/>
 
 
   <!--  https://schema.org/Article -->
@@ -101,19 +101,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Raster Operations"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points."/>
+  <meta property="og:description" content="Learn how to obtain a template raster from the `{d6geodata}` package, expanding the raster in different ways, rasterizing vector data, and extracting information from a raster using vector data. The methods described involve the use of packages like `{terra}` and `{sf}`, and include examples and plots to illustrate the processes. Additionally, we show the use of the {tidyterra} package for plotting raster data with ggplot."/>
   <meta property="og:locale" content="en_US"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Raster Operations"/>
-  <meta property="twitter:description" content="Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points."/>
+  <meta property="twitter:description" content="Learn how to obtain a template raster from the `{d6geodata}` package, expanding the raster in different ways, rasterizing vector data, and extracting information from a raster using vector data. The methods described involve the use of packages like `{terra}` and `{sf}`, and include examples and plots to illustrate the processes. Additionally, we show the use of the {tidyterra} package for plotting raster data with ggplot."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","categories","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Raster Operations"]},{"type":"character","attributes":{},"value":["Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points.\n"]},{"type":"character","attributes":{},"value":["./img/wiki/preview-rastertemplate.png"]},{"type":"character","attributes":{},"value":["tutorial","spatial","sf","terra"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["2024-02-21"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[true]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","categories","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Raster Operations"]},{"type":"character","attributes":{},"value":["Learn how to obtain a template raster from the `{d6geodata}` package, expanding the raster in different ways, rasterizing vector data, and extracting information from a raster using vector data. The methods described involve the use of packages like `{terra}` and `{sf}`, and include examples and plots to illustrate the processes. Additionally, we show the use of the {tidyterra} package for plotting raster data with ggplot.\n"]},{"type":"character","attributes":{},"value":["./img/wiki/preview-rastertemplate.png"]},{"type":"character","attributes":{},"value":["tutorial","spatial","sf","terra"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/"]}]}]},{"type":"character","attributes":{},"value":["2024-02-21"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[true]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1521,7 +1521,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Raster Operations","description":"Learn how to get a raster template from the `{d6geodata}` package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points.","authors":[{"author":"Moritz Wenzler-Meya","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/","orcidID":""}],"publishedDate":"2024-02-21T00:00:00.000+01:00","citationText":"Wenzler-Meya, 2024"}
+{"title":"Raster Operations","description":"Learn how to obtain a template raster from the `{d6geodata}` package, expanding the raster in different ways, rasterizing vector data, and extracting information from a raster using vector data. The methods described involve the use of packages like `{terra}` and `{sf}`, and include examples and plots to illustrate the processes. Additionally, we show the use of the {tidyterra} package for plotting raster data with ggplot.","authors":[{"author":"Moritz Wenzler-Meya","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/","orcidID":""}],"publishedDate":"2024-02-21T00:00:00.000+01:00","citationText":"Wenzler-Meya, 2024"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1541,7 +1541,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="dt-tag">terra</div>
 </div>
 <!--/radix_placeholder_categories-->
-<p><p>Learn how to get a raster template from the <code>{d6geodata}</code> package and how to multiple/expand it. This will help you transform your vector data into a raster in your disired resolution and extent. Afterwards we will rasterize vector data with the expanded raster to transform your vector data into a raster. Finally, we extract the raster values laying underneath your tracks/points.</p></p>
+<p><p>Learn how to obtain a template raster from the <code>{d6geodata}</code> package, expanding the raster in different ways, rasterizing vector data, and extracting information from a raster using vector data. The methods described involve the use of packages like <code>{terra}</code> and <code>{sf}</code>, and include examples and plots to illustrate the processes. Additionally, we show the use of the {tidyterra} package for plotting raster data with ggplot.</p></p>
 </div>
 
 <div class="d-byline">
@@ -1602,7 +1602,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/temp_ras.html'>temp_ras</a></span><span class='op'>(</span><span class='fl'>1000</span><span class='op'>)</span> <span class='co'># resolution is 1000m</span></span>
-<span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/values.html'>values</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fl'>1</span> <span class='co'># set a dummy value for visualization purposes </span></span>
+<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/values.html'>values</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fl'>1</span> <span class='co'># set a dummy value for visualization purposes </span></span>
 <span></span>
 <span><span class='va'>temp</span></span></code></pre>
 </div>
@@ -1650,7 +1650,7 @@ Projected CRS: ETRS89-extended / LAEA Europe</code></pre>
 <p>If you want to expand the raster on all size (similar to a buffer around a polygon) you can just add cells to all sides. You can do this by adding an integer number in the y argument in the function <code>extend</code> of the <code>{terra}</code> package.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_exp_all</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, <span class='co'># template raster as input</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_exp_all</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rspatial.github.io/terra/reference/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, <span class='co'># template raster as input</span></span>
 <span>                              y <span class='op'>=</span> <span class='fl'>10</span>, <span class='co'># number of cells to add</span></span>
 <span>                              fill <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span> <span class='co'># value for new cells</span></span>
 <span></span>
@@ -1663,7 +1663,7 @@ Projected CRS: ETRS89-extended / LAEA Europe</code></pre>
 <p>In this case you can add cells on two opposite sides.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_exp_tb_sides</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>,</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_exp_tb_sides</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rspatial.github.io/terra/reference/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>,</span>
 <span>                                   y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>10</span>, <span class='fl'>0</span><span class='op'>)</span>, <span class='co'># add 10 cells on top and below</span></span>
 <span>                                   fill <span class='op'>=</span> <span class='fl'>2</span>,<span class='op'>)</span></span>
 <span><span class='va'>p3</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_qualitative_map.html'>plot_qualitative_map</a></span><span class='op'>(</span><span class='va'>temp_exp_tb_sides</span><span class='op'>)</span></span>
@@ -1675,11 +1675,11 @@ Projected CRS: ETRS89-extended / LAEA Europe</code></pre>
 <p>In this case we use a workaround by using a costum extent. We are adding on the left (western) side cells by using the xmin of the larger extend. Xmax, ymin, ymax are from the given extent.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_exp_1_sides</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>,</span>
-<span>                                  y <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/pkg/terra/man/ext.html'>ext</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp_exp_all</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='co'># xmin</span></span>
-<span>                                          <span class='fu'><a href='https://rdrr.io/pkg/terra/man/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>, <span class='co'># xmax</span></span>
-<span>                                          <span class='fu'><a href='https://rdrr.io/pkg/terra/man/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>3</span><span class='op'>]</span>, <span class='co'># ymin</span></span>
-<span>                                          <span class='fu'><a href='https://rdrr.io/pkg/terra/man/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>4</span><span class='op'>]</span><span class='op'>)</span>,<span class='co'># ymax</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_exp_1_sides</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rspatial.github.io/terra/reference/extend.html'>extend</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>,</span>
+<span>                                  y <span class='op'>=</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/ext.html'>ext</a></span><span class='op'>(</span><span class='fu'><a href='https://rspatial.github.io/terra/reference/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp_exp_all</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='co'># xmin</span></span>
+<span>                                          <span class='fu'><a href='https://rspatial.github.io/terra/reference/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>, <span class='co'># xmax</span></span>
+<span>                                          <span class='fu'><a href='https://rspatial.github.io/terra/reference/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>3</span><span class='op'>]</span>, <span class='co'># ymin</span></span>
+<span>                                          <span class='fu'><a href='https://rspatial.github.io/terra/reference/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>4</span><span class='op'>]</span><span class='op'>)</span>,<span class='co'># ymax</span></span>
 <span>                                  fill <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span></span>
 <span></span>
 <span><span class='va'>p4</span> <span class='op'>&lt;-</span> <span class='fu'>d6geodata</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/d6geodata/man/plot_qualitative_map.html'>plot_qualitative_map</a></span><span class='op'>(</span><span class='va'>temp_exp_1_sides</span><span class='op'>)</span></span>
@@ -1702,10 +1702,10 @@ Projected CRS: ETRS89-extended / LAEA Europe</code></pre>
 Afterwards, we can use this spatVector to rasterize the data. This works similar with an sf object.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_vec</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/vect.html'>vect</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span>, <span class='fu'><a href='https://rdrr.io/pkg/terra/man/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span><span class='op'>)</span> <span class='co'># spatVector out of smalest raster extent</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_vec</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rspatial.github.io/terra/reference/vect.html'>vect</a></span><span class='op'>(</span><span class='fu'><a href='https://rspatial.github.io/terra/reference/ext.html'>ext</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span>, <span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span><span class='op'>)</span> <span class='co'># spatVector out of smalest raster extent</span></span>
 <span></span>
-<span><span class='va'>temp_rast</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/terra/man/rasterize.html'>rasterize</a></span><span class='op'>(</span><span class='va'>temp_vec</span>, <span class='co'># vector data</span></span>
-<span>                       <span class='va'>temp_exp_all</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='fu'><a href='https://rdrr.io/pkg/terra/man/disaggregate.html'>disagg</a></span><span class='op'>(</span><span class='fl'>10</span><span class='op'>)</span>, </span>
+<span><span class='va'>temp_rast</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/rasterize.html'>rasterize</a></span><span class='op'>(</span><span class='va'>temp_vec</span>, <span class='co'># vector data</span></span>
+<span>                       <span class='va'>temp_exp_all</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/disaggregate.html'>disagg</a></span><span class='op'>(</span><span class='fl'>10</span><span class='op'>)</span>, </span>
 <span>                       <span class='co'># raster data with larger extent, disaggregated to 100m </span></span>
 <span>                       background <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span> <span class='co'># set to 2 to visualize the difference</span></span>
 <span></span>
@@ -1762,7 +1762,7 @@ max value   :     2 </code></pre>
 <p>Here we finally extract the data and view the result with a table.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>ext_tab</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/extract.html'>extract</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp_rast</span>, <span class='co'># template raster as first input</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>ext_tab</span> <span class='op'>&lt;-</span> <span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rspatial.github.io/terra/reference/extract.html'>extract</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp_rast</span>, <span class='co'># template raster as first input</span></span>
 <span>               y <span class='op'>=</span> <span class='va'>dummy_line</span>, <span class='co'># dummy line as second input</span></span>
 <span>               fun<span class='op'>=</span><span class='cn'>NULL</span>, <span class='co'># here you can set a function to summarise the data directly</span></span>
 <span>               method<span class='op'>=</span><span class='st'>"simple"</span>, </span>
@@ -1782,7 +1782,7 @@ max value   :     2 </code></pre>
 463  23 </code></pre>
 </div>
 <h2 id="tidyterra">Visualize data with tidyterra</h2>
-<p>THere are several ways to plot raster data with ggplot and one relatively new way is to do it with the package <code>{tidyterra}</code>. It has some well developed <code>{ggplot}</code> functions, but can sometimes not be combined with the base functions of <code>{ggplot}</code>. If you use this pacakge you may have to stay within the package functions.</p>
+<p>There are several ways to plot raster data with ggplot and one relatively new way is to do it with the package <code>{tidyterra}</code>. It has some well developed <code>{ggplot}</code> functions, but can sometimes not be combined with the base functions of <code>{ggplot}</code>. If you use this pacakge you may have to stay within the package functions.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dieghernan.github.io/tidyterra/'>tidyterra</a></span><span class='op'>)</span></span>

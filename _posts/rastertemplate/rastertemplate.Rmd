@@ -1,7 +1,7 @@
 ---
 title: "Raster Operations"
 description: |
-  Learn how to obtain a template raster from the `{d6geodata}` package, expanding the raster in different ways, rasterizing vector data, and extracting information from a raster using vector data. The methods described involve the use of packages like `{terra}` and `{sf}`, and include examples and plots to illustrate the processes. Additionally, it we show the use of the {tidyterra} package for plotting raster data with ggplot.
+  Learn how to obtain a template raster from the `{d6geodata}` package, expanding the raster in different ways, rasterizing vector data, and extracting information from a raster using vector data. The methods described involve the use of packages like `{terra}` and `{sf}`, and include examples and plots to illustrate the processes. Additionally, we show the use of the {tidyterra} package for plotting raster data with ggplot.
   
 preview: ./img/wiki/preview-rastertemplate.png
 categories:

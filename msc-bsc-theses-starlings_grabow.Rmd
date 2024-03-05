@@ -1,9 +1,9 @@
 ---
-title: "How do starlings adapt feeding effort to disturbances at the nesting site? "
+title: "Master Thesis: How do starlings adapt feeding effort to disturbances at the nesting site? "
 description: ""
 ---
 
-(contact <a href="mailto:grabow@izw-berlin.de">grabow[at]izw-berlin.de</a> or  <a href="mailto:landgraf@izw-berlin.de">landgraf[at]izw-berlin.de</a>)
+(contact <a href="mailto:grabow@izw-berlin.de">grabow[at]izw-berlin.de</a> and <a href="mailto:landgraf@izw-berlin.de">landgraf[at]izw-berlin.de</a>)
 
 **Hintergrund:** 
 Der Reproduktionserfolg bei Singvögeln hängt zu großen Teilen von dem elterlichen Investment ab, also deren Fütterungsraten und Erfolg während der Nahrungssuche. Durch Landnutzungswandel, Insektensterben und Klimawandel wird die Eigenschaft zur effektiven Nahrungssuche zunehmend wichtiger, da Störungen in Ökosystemen vermehrt auftreten. Um den Einfluss solcher Störungen zu bestimmen, nutzen wir ein natürliches Studiensystem in dem natürliche (z.B. invasive Prädatoren) und anthropogene Störungen (z.B. regelmäßige Brutkastenkontrollen durch Forscher) auf verminderte Nahrungs-vorkommen in hochindustrialisierten Agrarlandschaften treffen. Um beobachten zu können, wie sich europäische Stare (Sturnus vulgaris) während der Brutzeit auf Nahrungssuche begeben, werden wir die Stare mit Hochdurchsatztelemetrie (ATLAS – Advanced Tracking of Animals in Real Life Systems) besendern um ihr Bewegungsverhalten in real time zu studieren. Parallel werden wir Kamerafallen und Soundrekorder in der Nähe der Brutkästen ausbringen um durchgehend mögliche Störungen innerhalb des Systems zu dokumentieren, was eine genaue Klassifikation von Störungsevents ermöglicht. Durch regelmäßige Kontrollen der Körpermaße (z.B. Gewicht, Körpermaße) von Jungtieren in einer etablierten Brutkolonie können wir Rückschlüsse auf den Erfolg der Eltern bei der Jungenaufzucht (Anzahl und Zustand der Küken) feststellen und prüfen, ob dieser mit den Fütterungsraten bzw. dem Nahrungsangebot im Habitat erklärbar wird. Anschließend können wir zeitliche Störungsdynamiken innerhalb des Brutzeitraums quantifizieren, um zu überprüfen, ob diese die Fitness (= Reproduktionserfolg) zusätzlich beeinflussen.
