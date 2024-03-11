@@ -30,7 +30,11 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 * **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEERJ, 4, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
 
-<!--<div class='headerbox'><hbox>Preprints</hbox></div><br>-->
+
+<<div class='headerbox'><hbox>'Reports and other scientific outlets</hbox></div><br>
+
+*	Becker J, Liess M, **Kramer-Schadt S**, Franz M, Jager T (2024): Critical Evaluation of Effect Models for the Risk Assessment of Plant Protection Products. UBA Report **41/2024**, ISSN 1862-4804, 596 pages.  <span>[https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/41_2024_texte_critical_evaluation.pdf](https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/41_2024_texte_critical_evaluation.pdf)</span> 
+
 
 
 

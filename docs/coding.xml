@@ -12,7 +12,20 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Raster Operations</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts/rastertemplate</link>
+      <description>Learn how to obtain a template raster from the `{d6geodata}` package, expanding the raster in different ways, rasterizing vector data, and extracting information from a raster using vector data. The methods described involve the use of packages like `{terra}` and `{sf}`, and include examples and plots to illustrate the processes. Additionally, we show the use of the {tidyterra} package for plotting raster data with ggplot.</description>
+      <category>tutorial</category>
+      <category>spatial</category>
+      <category>sf</category>
+      <category>terra</category>
+      <guid>https://ecodynizw.github.io/posts/rastertemplate</guid>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts/rastertemplate/rastertemplate_files/figure-html5/unnamed-chunk-5-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>How to Import Tabular, Plain-Text Data Files</title>
       <dc:creator>Cedric Scherer</dc:creator>
