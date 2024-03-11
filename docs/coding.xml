@@ -17,7 +17,8 @@
       <title>Raster Operations</title>
       <dc:creator>Moritz Wenzler-Meya</dc:creator>
       <link>https://ecodynizw.github.io/posts/rastertemplate</link>
-      <description>Learn how to obtain a template raster from the `{d6geodata}` package, expanding the raster in different ways, rasterizing vector data, and extracting information from a raster using vector data. The methods described involve the use of packages like `{terra}` and `{sf}`, and include examples and plots to illustrate the processes. Additionally, we show the use of the {tidyterra} package for plotting raster data with ggplot.</description>
+      <description>Learn how to 1) obtain a template raster from the `{d6geodata}` package, 2) expand the raster in different ways, 3) rasterize vector data, and 4) extract information from a raster using vector data. 
+The methods described involve the use of packages like `{terra}` and `{sf}`, and include examples and plots to illustrate the processes. Additionally, we show how to use the `{tidyterra}` package for plotting raster data with `{ggplot2}`.</description>
       <category>tutorial</category>
       <category>spatial</category>
       <category>sf</category>
