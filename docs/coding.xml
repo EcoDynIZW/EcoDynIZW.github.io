@@ -12,7 +12,7 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Mar 2024 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Raster Operations</title>
       <dc:creator>Moritz Wenzler-Meya</dc:creator>
@@ -24,7 +24,7 @@ The methods described involve the use of packages like `{terra}` and `{sf}`, and
       <category>sf</category>
       <category>terra</category>
       <guid>https://ecodynizw.github.io/posts/rastertemplate</guid>
-      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
       <media:content url="https://ecodynizw.github.io/posts/rastertemplate/rastertemplate_files/figure-html5/unnamed-chunk-5-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>

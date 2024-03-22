@@ -14,6 +14,8 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
+* Burton AC, Beirne C, Gaynor KM, ..., **Kramer-Schadt S**, ..., **Louvrier J** et al. (2024): Mammal responses to global changes in human activity vary by trophic group and landscape. NAT ECOL EVOL. doi:<span>[10.1038/s41559-024-02363-2](https://doi.org/10.1038/s41559-024-02363-2)</span>
+
 * **Calderón AP**, Landaverde-Gonzalez P, Wultsch C, Foster R, Harmsen B, Figueroa O, Garcia-Anleu R, Castañeda F, Amato G, Grimm V, **Kramer-Schadt S**, Zeller AK (2024): Modelling jaguar gene flow in fragmented landscapes offers insights into functional population connectivity. LANDSC ECOL **39**, 12.  doi:<span>[10.1007/s10980-024-01795-2](https://doi.org/10.1007/s10980-024-01795-2)</span>
 
 * **Kürschner T**, **Scherer C**, **Radchuk V**, Blaum N, **Kramer-Schadt S** (2024): Resource asynchrony and landscape homogenization as drivers of virulence evolution: The case of a directly transmitted disease in a social host. ECOL EVOL, **14**, e11065. doi:<span>[10.1002/ece3.11065](https://doi.org/10.1002/ece3.11065)</span>
