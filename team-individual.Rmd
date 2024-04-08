@@ -102,6 +102,7 @@ We are interested in assessing the effects of illegal bushmeat hunting (snaring)
     <li>[Benhaiem et al. (2022) ANIM CONSERV](https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/acv.12798)</li>
     <li>[Gicquel et al. (2022) ECOSPHERE](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.4012)</li>
     <li>[Kalyahe et al. (2022) ENVIRON CONSERV](https://www.cambridge.org/core/journals/environmental-conservation/article/do-anthropogenic-sources-of-food-increase-livestock-predation-in-the-area-surrounding-ruaha-national-park/A8A65281F07BF90B84300A7C74AE58DE)</li>
+    <li>[Naciri  et al. (2023) BIOL CONSERV ](https://www.sciencedirect.com/science/article/pii/S0006320723000502)</li>
    </ul>
 </small>
 
@@ -123,6 +124,7 @@ We investigate if DNA methylation is a main mechanism through which an individua
   <ul>
     <li>[Guerrero et al. (2020) CURR  ZOOL](https://pubmed.ncbi.nlm.nih.gov/32440291/)</li>
     <li>[Heitlinger et al. (2017) FRONT CELL INFECT MICROBIOL](https://www.frontiersin.org/articles/10.3389/fcimb.2017.00262/full)</li>
+    <li>[Vullioud et al. (2024) COMMUN BIOL](https://www.nature.com/articles/s42003-024-05926-y)</li>
    </ul>
 </small>
 
