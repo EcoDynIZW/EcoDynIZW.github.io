@@ -49,8 +49,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * **Kürschner T**, **Scherer C**, **Radchuk V**, Blaum N, **Kramer-Schadt S**. (2021) Movement can mediate temporal mismatches between resource availability and biological events in host-pathogen interactions. ECOL EVOL 11(10), 5728-41. DOI: [10.1002/ece3.7478](https://doi.org/10.1002/ece3.7478)
 
-* **Louvrier J**; **Planillo A**; **Stillfried M**; **Hagen R**; **Boerner K**; **Kimmig S**; Ortmann S; Schumann A; Brandt M; **Kramer-Schadt S** (2021). Spatiotemporal interactions of a novel mesocarnivore community in an urban environment before and during SARS-CoV-2 lockdown. J ANIM ECOL, 00, 1– 14. DOI: [10.1111/1365-2656.13635](https://doi.org/10.1111/1365-2656.13635)
-
 * Malishev M and **Kramer-Schadt S** (2021). Movement, Models, and Metabolism: Individual-based energy budget models as next-generation extensions for predicting animal movement outcomes across scales. ECOL MODELL 441, 109413. DOI: [10.1016/j.ecolmodel.2020.109413](https://doi.org/10.1016/j.ecolmodel.2020.109413)
 
 * **Marescot L**, **Franz M**, **Benhaiem S**, Hofer H, **Scherer C**, **East ML** & **Kramer-Schadt S** (2021). Keeping the kids at home can limit the persistence of contagious pathogens in social animals. Journal of Animal Ecology. DOI: [10.1111/1365-2656.13555](https://doi.org/10.1111/1365-2656.13555).
@@ -77,7 +75,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * Wikenros C, **Gicquel M**, Zimmermann B, FlagstaO, Akesson M (2021). Age at first reproduction in wolves: different patterns of density dependence for females and males. PRoc R SOC B 288, 2021020. DOI: [10.1098/rspb.2021.0207](https://doi.org/10.1098/rspb.2021.0207)
 
-* **Wilting A**, **Nguyen TV**, **Axtner J**, **Nguyen A**, Schmidt A, Le M, Nguyen AHQ, Rawson BM, **Tilker A**, Fickel J (2021). Creating genetic reference datasets: Indirect sampling of target species using terrestrial leeches as sample “collectors”. ENVIRONMENTAL DNA, 4(2), 311-325. DOI: [10.1002/edn3.256](https://doi.org/10.1002/edn3.256)
 
 
 
