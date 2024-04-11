@@ -14,9 +14,14 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
+* Achter S, Borit M, Cottineau C, Meyer M, Polhill J, **Radchuk V** (2024): How to conduct more systematic reviews of agent-based models and foster theory development - Taking stock and looking ahead. ENVIRON MODEL SOFTW 105867. doi:<span>[10.1016/j.envsoft.2023.105867](https://doi.org/10.1016/j.envsoft.2023.105867)</span> 
+
 * Burton AC, Beirne C, Gaynor KM, ..., **Kramer-Schadt S**, ..., **Louvrier J** et al. (2024): Mammal responses to global changes in human activity vary by trophic group and landscape. NAT ECOL EVOL. doi:<span>[10.1038/s41559-024-02363-2](https://doi.org/10.1038/s41559-024-02363-2)</span>
 
 * **Calderón AP**, Landaverde-Gonzalez P, Wultsch C, Foster R, Harmsen B, Figueroa O, Garcia-Anleu R, Castañeda F, Amato G, Grimm V, **Kramer-Schadt S**, Zeller AK (2024): Modelling jaguar gene flow in fragmented landscapes offers insights into functional population connectivity. LANDSC ECOL **39**, 12.  doi:<span>[10.1007/s10980-024-01795-2](https://doi.org/10.1007/s10980-024-01795-2)</span>
+
+* Caro T, Rashid RS, Zeltman J, Gierse L-M and **Sollmann R** (2024): Meta- and subpopulation estimation with disparate data: coconut crabs in the Western Indian Ocean. ANIM CONSERV.
+doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * **Kürschner T**, **Scherer C**, **Radchuk V**, Blaum N, **Kramer-Schadt S** (2024): Resource asynchrony and landscape homogenization as drivers of virulence evolution: The case of a directly transmitted disease in a social host. ECOL EVOL, **14**, e11065. doi:<span>[10.1002/ece3.11065](https://doi.org/10.1002/ece3.11065)</span>
 
