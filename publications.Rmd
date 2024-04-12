@@ -33,6 +33,8 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * Schmied née Stommel C, Hofer H, **Scherer C**, **Kramer-Schadt S**, East ML (2024): Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. WILDL BIOL, e01131. doi:<span>[10.1002/wlb3.01131](https://doi.org/10.1002/wlb3.01131)</span>
 
+* Sinovas P, Alexiou I, Roberts O, Holden J, Chantha N, **Tilker A** (2024): Status and conservation implications of a newly discovered large-antlered muntjac population in Cambodia. ENDANG SPECIES RES **53**, 493-498. doi:<span>[10.3354/esr01316](https://doi.org/10.3354/esr01316)</span>
+
 * **Sollmann R** (2024): Estimating the temporal scale of lagged responses in species abundance and occurrence. ECOSPHERE **15**(1), e4704. doi:<span>[10.1002/ecs2.4704](https://doi.org/10.1002/ecs2.4704)</span> 
 
 * **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEERJ, 4, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
