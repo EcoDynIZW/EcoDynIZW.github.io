@@ -12,15 +12,28 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 14 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
     <item>
       <title>imperviousness berlin 2021</title>
       <dc:creator>Moritz Wenzler-Meya</dc:creator>
       <link>https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg</link>
       <description>imperviousness berlin 2021</description>
       <guid>https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg</guid>
-      <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
       <media:content url="https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg/imperviousness_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>landuse berlin 2021</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/landuse_berlin_2021_polygon_03035_gpkg</link>
+      <description>landuse berlin 2021</description>
+      <category>Berlin</category>
+      <category>2021</category>
+      <category>polygon</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/landuse_berlin_2021_polygon_03035_gpkg</guid>
+      <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/landuse_berlin_2021_polygon_03035_gpkg/landuse_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
     </item>
     <item>
       <title>landuse berlin 2021</title>
