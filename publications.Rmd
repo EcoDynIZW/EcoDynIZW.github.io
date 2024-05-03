@@ -14,38 +14,40 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
-* Achter S, Borit M, Cottineau C, Meyer M, Polhill J, **Radchuk V** (2024): How to conduct more systematic reviews of agent-based models and foster theory development - Taking stock and looking ahead. ENVIRON MODEL SOFTW 105867. doi:<span>[10.1016/j.envsoft.2023.105867](https://doi.org/10.1016/j.envsoft.2023.105867)</span> 
+* Achter S, Borit M, Cottineau C, Meyer M, Polhill J, **Radchuk V** (2024): How to conduct more systematic reviews of agent-based models and foster theory development - Taking stock and looking ahead. ENVIRON MODEL SOFTW, **173** ,105867. doi:<span>[10.1016/j.envsoft.2023.105867](https://doi.org/10.1016/j.envsoft.2023.105867)</span> 
 
-* Berger U, Bell A, Barton CM, Chappin E, Dreßler G, Filatova T, **Fronville T**, Lee A, van Loon E, Lorscheid I, Meyer M, Müller B, Piou C, **Radchuk V**, Roxburgh N, Schüler L, Troost C, Wijermans N, Williams TG, Wimmler M-C, Grimm V (2024): Towards reusable building blocks for agent-based modelling and theory development. ENVIRON MODEL SOFTW, 175.doi:<span>[10.1016/j.envsoft.2024.106003](https://doi.org/10.1016/j.envsoft.2024.106003)</span>
+* Berger U, Bell A, Barton CM, Chappin E, Dreßler G, Filatova T, **Fronville T**, Lee A, van Loon E, Lorscheid I, Meyer M, Müller B, Piou C, **Radchuk V**, Roxburgh N, Schüler L, Troost C, Wijermans N, Williams TG, Wimmler M-C, Grimm V (2024): Towards reusable building blocks for agent-based modelling and theory development. ENVIRON MODEL SOFTW, **175**. doi:<span>[10.1016/j.envsoft.2024.106003](https://doi.org/10.1016/j.envsoft.2024.106003)</span>
 
 * Burton AC, Beirne C, Gaynor KM, ..., **Kramer-Schadt S**, ..., **Louvrier J** et al. (2024): Mammal responses to global changes in human activity vary by trophic group and landscape. NAT ECOL EVOL. doi:<span>[10.1038/s41559-024-02363-2](https://doi.org/10.1038/s41559-024-02363-2)</span>
 
 * **Calderón AP**, Landaverde-Gonzalez P, Wultsch C, Foster R, Harmsen B, Figueroa O, Garcia-Anleu R, Castañeda F, Amato G, Grimm V, **Kramer-Schadt S**, Zeller AK (2024): Modelling jaguar gene flow in fragmented landscapes offers insights into functional population connectivity. LANDSC ECOL, **39**, 12.  doi:<span>[10.1007/s10980-024-01795-2](https://doi.org/10.1007/s10980-024-01795-2)</span>
 
-* Caro T, Rashid RS, Zeltman J, Gierse L-M and **Sollmann R** (2024): Meta- and subpopulation estimation with disparate data: coconut crabs in the Western Indian Ocean. ANIM CONSERV.
+* Caro T, Rashid RS, Zeltman J, Gierse L-M and **Sollmann R** (2024): Meta- and subpopulation estimation with disparate data: coconut crabs in the Western Indian Ocean. ANIM CONSERV, **27**, 184-195.
 doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * **Fronville T**, Blaum N, **Kramer-Schadt S**, Schlägel U, **Radchuk V** (2024): Performance of five statistical methods to infer interactions among moving individuals in a predator–prey system. METHODS ECOL EVOL, **00**, 1–16. doi:<span>[10.1111/2041-210X.14323](https://doi.org/10.1111/2041-210X.14323)</span>  
 
 * **Kürschner T**, **Scherer C**, **Radchuk V**, Blaum N, **Kramer-Schadt S** (2024): Resource asynchrony and landscape homogenization as drivers of virulence evolution: The case of a directly transmitted disease in a social host. ECOL EVOL, **14**, e11065. doi:<span>[10.1002/ece3.11065](https://doi.org/10.1002/ece3.11065)</span>
 
-* **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2024): Global disparity of camera trap research allocation and defaunation risk of terrestrial mammals. REMOTE SENS ECOL CONS, **10**, 121-136. doi:<span>[10.1002/rse2.360](https://doi.org/10.1002/rse2.360)</span>
-
 * Mendes CP, Wido RA, Zachary A, …, **Wilting A**, et al. (2024): CamTrapAsia: A Dataset of Tropical Forest Vertebrate Communities from 239 Camera Trapping Studies. ECOLOGY, e4299. doi:<span>[10.1002/ecy.4299](https://doi.org/10.1002/ecy.4299)</span>
 
-* **Nguyen A**, **Tilker A**, Le D, **Niedballa J**, **Pflumm L**, Pham XH, Le VS, Luu HT, Tran VB, **Kramer-Schadt S**, **Sollmann R**, **Wilting A** (2024): Ground-dwelling mammal and bird diversity in the southern Annamites: Exploring complex habitat associations and the ghost of past hunting pressure. CONSERV SCI PRACT, e13093.   doi:<span>[10.1111/csp2.13093](https://doi:10.1111/csp2.13093)</span>
+* Milles A, Bielcik M, Banitz T, Gallagher CA, Jeltsch F, Jepsen JU, Oro D, **Radchuk V**, Grimm V (2024): Defining ecological buffer mechanisms should consider diverse approaches. TREE, **39**. doi:<span>[10.1016/j.tree.2023.12.008](https://doi.org/10.1016/j.tree.2023.12.008)</span>
+
+* **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2024): Global disparity of camera trap research allocation and defaunation risk of terrestrial mammals. REMOTE SENS ECOL CONS, **10**, 121-136. doi:<span>[10.1002/rse2.360](https://doi.org/10.1002/rse2.360)</span>
+
+* **Nguyen A**, **Tilker A**, Le D, **Niedballa J**, **Pflumm L**, Pham XH, Le VS, Luu HT, Tran VB, **Kramer-Schadt S**, **Sollmann R**, **Wilting A** (2024): Ground-dwelling mammal and bird diversity in the southern Annamites: Exploring complex habitat associations and the ghost of past hunting pressure. CONSERV SCI PRACT, **6**, e13093.   doi:<span>[10.1111/csp2.13093](https://doi.org/10.1111/csp2.13093)</span>
 
 * **Planillo A**, **Wenzler-Meya M**, Reinhardt I, Kluth G, Michler F-U, Stier N, **Louvrier J**, Steyer K, Gillich B, Rieger S, Knauer F, Kuemmerle T,  **Kramer-Schadt S** (2024): Understanding habitat selection of range-expanding populations of large carnivores: 20 years of grey wolves (*Canis lupus*) recolonizing Germany. DIVERS DISTRIB, **30**, 71–86. doi:<span>[10.1111/ddi.13789](https://doi.org/10.1111/ddi.13789)</span>
 
 * Schmied née Stommel C, Hofer H, **Scherer C**, **Kramer-Schadt S**, East ML (2024): Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. WILDL BIOL, e01131. doi:<span>[10.1002/wlb3.01131](https://doi.org/10.1002/wlb3.01131)</span>
 
-* Sinovas P, Alexiou I, Roberts O, Holden J, Chantha N, **Tilker A** (2024): Status and conservation implications of a newly discovered large-antlered muntjac population in Cambodia. ENDANG SPECIES RES **53**, 493-498. doi:<span>[10.3354/esr01316](https://doi.org/10.3354/esr01316)</span>
+* Sinovas P, Alexiou I, Roberts O, Holden J, Chantha N, **Tilker A** (2024): Status and conservation implications of a newly discovered large-antlered muntjac population in Cambodia. ENDANG SPECIES RES, **53**, 493-498. doi:<span>[10.3354/esr01316](https://doi.org/10.3354/esr01316)</span>
 
-* **Sollmann R** (2024): Estimating the temporal scale of lagged responses in species abundance and occurrence. ECOSPHERE **15**(1), e4704. doi:<span>[10.1002/ecs2.4704](https://doi.org/10.1002/ecs2.4704)</span> 
+* **Sollmann R** (2024): Estimating the temporal scale of lagged responses in species abundance and occurrence. ECOSPHERE, **15**(1), e4704. doi:<span>[10.1002/ecs2.4704](https://doi.org/10.1002/ecs2.4704)</span> 
 
-* **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEERJ, 4, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
+* **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEERJ, **4**, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
 
-* Vullioud C, **Benhaiem S**, Meneghini D, Szyf M, Shao Y, Hofer H, **East ML**, Fickel J, Weyrich A (2024): Epigenetic signatures of social status in wild female spotted hyenas (*Crocuta crocuta*). COMMUN BIOL **7**, 1-12. doi:<span>[10.1038/s42003-024-05926-y](https://doi.org/10.1038/s42003-024-05926-y)</span>
+* Vullioud C, **Benhaiem S**, Meneghini D, Szyf M, Shao Y, Hofer H, **East ML**, Fickel J, Weyrich A (2024): Epigenetic signatures of social status in wild female spotted hyenas (*Crocuta crocuta*). COMMUN BIOL, **7**, 1-12. doi:<span>[10.1038/s42003-024-05926-y](https://doi.org/10.1038/s42003-024-05926-y)</span>
 
 <<div class='headerbox'><hbox>'Reports and other scientific outlets</hbox></div><br>
 
