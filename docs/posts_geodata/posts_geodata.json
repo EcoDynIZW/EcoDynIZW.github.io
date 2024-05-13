@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts_geodata/open-green-areas_berlin_2024_polygon_3035_gpkg/",
+    "title": "open-green-areas berlin 2024",
+    "description": {},
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2024-05-13",
+    "categories": [
+      "Berlin",
+      "2024",
+      "polygon",
+      "epsg:3035"
+    ],
+    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\nopen-green-areas_berlin_2024_polygon_3035_gpkgname\r\nopen-green-areas_berlin_2024_polygon_3035.gpkgepsg\r\n3035crs\r\n+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defsyear_of_data\r\n2024units_of_data\r\narea in [m2]resolution\r\nvectortype_of_data\r\ncontinuous_numerictype_of_file\r\n.gpkgdate_of_compile\r\n2024-05-13source\r\nfisbroker - Umweltatlasshort_description\r\nnamenr is the column with the name of the green areamodified\r\narea [m2] of each polygon was calculatedlink_of_source\r\nhttps://stadtentwicklung.berlin.de/geoinformation/fis-broker/copyright\r\nUmweltatlas Berlin / Grünanlagenbestand Berlin (einschließlich der öffentlichen Spielplätze)\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2024-05-13 16:23:15 CEST\"\r\nR version 4.3.3 (2024-02-29 ucrt)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 19044)\r\n\r\nMatrix products: default\r\n\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.utf8  LC_CTYPE=German_Germany.utf8   \r\n[3] LC_MONETARY=German_Germany.utf8 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\ntime zone: Europe/Berlin\r\ntzcode source: internal\r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.2.0\r\n\r\nloaded via a namespace (and not attached):\r\n [1] gt_0.10.1          sass_0.4.9         utf8_1.2.4        \r\n [4] generics_0.1.3     tidyr_1.3.1        class_7.3-22      \r\n [7] xml2_1.3.6         KernSmooth_2.23-22 distill_1.6       \r\n[10] digest_0.6.35      magrittr_2.0.3     evaluate_0.23     \r\n[13] grid_4.3.3         fastmap_1.1.1      jsonlite_1.8.8    \r\n[16] e1071_1.7-14       DBI_1.2.2          purrr_1.0.2       \r\n[19] fansi_1.0.6        scales_1.3.0       textshaping_0.3.7 \r\n[22] jquerylib_0.1.4    cli_3.6.2          rlang_1.1.3       \r\n[25] units_0.8-5        munsell_0.5.1      withr_3.0.0       \r\n[28] cachem_1.0.8       yaml_2.3.8         tools_4.3.3       \r\n[31] memoise_2.0.1      dplyr_1.1.4        colorspace_2.1-0  \r\n[34] ggplot2_3.5.1      vctrs_0.6.5        R6_2.5.1          \r\n[37] proxy_0.4-27       lifecycle_1.0.4    classInt_0.4-10   \r\n[40] ragg_1.3.0         pkgconfig_2.0.3    pillar_1.9.0      \r\n[43] bslib_0.7.0        gtable_0.3.5       glue_1.7.0        \r\n[46] Rcpp_1.0.12        sf_1.0-16          systemfonts_1.0.6 \r\n[49] highr_0.10         xfun_0.43          tibble_3.2.1      \r\n[52] tidyselect_1.2.1   rstudioapi_0.15.0  knitr_1.46        \r\n[55] farver_2.1.2       htmltools_0.5.8.1  labeling_0.4.3    \r\n[58] rmarkdown_2.26     compiler_4.3.3     downlit_0.4.3     \r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts_geodata/open-green-areas_berlin_2024_polygon_3035_gpkg/open-green-areas_berlin_2024_polygon_3035_gpkg_files/figure-html5/plot-1.png",
+    "last_modified": "2024-05-13T16:23:16+02:00",
+    "input_file": "open-green-areas_berlin_2024_polygon_3035_gpkg.knit.md",
+    "preview_width": 4500,
+    "preview_height": 3000
+  },
+  {
     "path": "posts_geodata/imperviousness_berlin_2021_line_03035_gpkg/",
     "title": "imperviousness berlin 2021",
     "description": {},
@@ -14,25 +38,6 @@
     "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\nimperviousness_berlin_2021_line_03035_gpkgname\r\nimperviousness_berlin_2021_line_03035.gpkgepsg\r\n3035crs\r\nNAyear_of_data\r\n2021units_of_data\r\nimperviousness in %resolution\r\nvectortype_of_data\r\ncontinuous_numerictype_of_file\r\n.gpkgdate_of_compile\r\n2024-04-16source\r\nfisbroker - Umweltatlasshort_description\r\nvg is the imperviousness columnmodified\r\nreprojected to epsg 3035link_of_source\r\nhttps://stadtentwicklung.berlin.de/geoinformation/fis-broker/copyright\r\nUmweltatlas Berlin / Versiegelung 2021 (Umweltatlas)\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2024-04-16 09:43:43 CEST\"\r\nR version 4.3.3 (2024-02-29 ucrt)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 19044)\r\n\r\nMatrix products: default\r\n\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.utf8  LC_CTYPE=German_Germany.utf8   \r\n[3] LC_MONETARY=German_Germany.utf8 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\ntime zone: Europe/Berlin\r\ntzcode source: internal\r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.2.0\r\n\r\nloaded via a namespace (and not attached):\r\n [1] gt_0.10.1          sass_0.4.9         utf8_1.2.4        \r\n [4] generics_0.1.3     tidyr_1.3.1        class_7.3-22      \r\n [7] xml2_1.3.6         KernSmooth_2.23-22 distill_1.6       \r\n[10] digest_0.6.35      magrittr_2.0.3     evaluate_0.23     \r\n[13] grid_4.3.3         fastmap_1.1.1      jsonlite_1.8.8    \r\n[16] e1071_1.7-14       DBI_1.2.2          purrr_1.0.2       \r\n[19] fansi_1.0.6        scales_1.3.0       textshaping_0.3.7 \r\n[22] jquerylib_0.1.4    cli_3.6.2          rlang_1.1.3       \r\n[25] units_0.8-5        munsell_0.5.1      withr_3.0.0       \r\n[28] cachem_1.0.8       yaml_2.3.8         tools_4.3.3       \r\n[31] memoise_2.0.1      dplyr_1.1.4        colorspace_2.1-0  \r\n[34] ggplot2_3.5.0      vctrs_0.6.5        R6_2.5.1          \r\n[37] proxy_0.4-27       lifecycle_1.0.4    classInt_0.4-10   \r\n[40] ragg_1.3.0         pkgconfig_2.0.3    pillar_1.9.0      \r\n[43] bslib_0.7.0        gtable_0.3.4       glue_1.7.0        \r\n[46] Rcpp_1.0.12        sf_1.0-16          systemfonts_1.0.6 \r\n[49] highr_0.10         xfun_0.43          tibble_3.2.1      \r\n[52] tidyselect_1.2.1   rstudioapi_0.15.0  knitr_1.46        \r\n[55] farver_2.1.1       htmltools_0.5.8.1  labeling_0.4.3    \r\n[58] rmarkdown_2.26     compiler_4.3.3     downlit_0.4.3     \r\n\r\n\r\n\r\n\r\n",
     "preview": "posts_geodata/imperviousness_berlin_2021_line_03035_gpkg/imperviousness_berlin_2021_line_03035_gpkg_files/figure-html5/plot-1.png",
     "last_modified": "2024-04-16T09:43:46+02:00",
-    "input_file": {},
-    "preview_width": 4500,
-    "preview_height": 3000
-  },
-  {
-    "path": "posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg/",
-    "title": "imperviousness berlin 2021",
-    "description": {},
-    "author": [
-      {
-        "name": "Moritz Wenzler-Meya",
-        "url": {}
-      }
-    ],
-    "date": "2024-04-15",
-    "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\nimperviousness_berlin_2021_polygon_03035_gpkgname\r\nimperviousness_berlin_2021_polygon_03035.gpkgepsg\r\n3035crs\r\nNAyear_of_data\r\n2021units_of_data\r\nimperviousness in %resolution\r\nvectortype_of_data\r\ncontinuous_numerictype_of_file\r\n.gpkgdate_of_compile\r\n2024-04-15source\r\nfisbroker - Umweltatlasshort_description\r\nvg_2021 is the imperviousness columnmodified\r\nNAlink_of_source\r\nhttps://stadtentwicklung.berlin.de/geoinformation/fis-broker/copyright\r\nUmweltatlas Berlin / Versiegelung 2021 (Umweltatlas)\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2024-04-15 11:24:37 CEST\"\r\nR version 4.3.3 (2024-02-29 ucrt)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 19044)\r\n\r\nMatrix products: default\r\n\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.utf8  LC_CTYPE=German_Germany.utf8   \r\n[3] LC_MONETARY=German_Germany.utf8 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\ntime zone: Europe/Berlin\r\ntzcode source: internal\r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.2.0\r\n\r\nloaded via a namespace (and not attached):\r\n [1] gt_0.10.1          sass_0.4.8         utf8_1.2.4        \r\n [4] generics_0.1.3     tidyr_1.3.1        class_7.3-22      \r\n [7] xml2_1.3.6         KernSmooth_2.23-22 distill_1.6       \r\n[10] digest_0.6.35      magrittr_2.0.3     evaluate_0.23     \r\n[13] grid_4.3.3         fastmap_1.1.1      jsonlite_1.8.8    \r\n[16] e1071_1.7-14       DBI_1.2.2          purrr_1.0.2       \r\n[19] fansi_1.0.6        scales_1.3.0       textshaping_0.3.7 \r\n[22] jquerylib_0.1.4    cli_3.6.2          rlang_1.1.3       \r\n[25] units_0.8-5        munsell_0.5.0      withr_3.0.0       \r\n[28] cachem_1.0.8       yaml_2.3.8         tools_4.3.3       \r\n[31] memoise_2.0.1      dplyr_1.1.4        colorspace_2.1-0  \r\n[34] ggplot2_3.5.0      vctrs_0.6.5        R6_2.5.1          \r\n[37] proxy_0.4-27       lifecycle_1.0.4    classInt_0.4-10   \r\n[40] ragg_1.3.0         pkgconfig_2.0.3    pillar_1.9.0      \r\n[43] bslib_0.6.1        gtable_0.3.4       glue_1.7.0        \r\n[46] Rcpp_1.0.12        sf_1.0-15          systemfonts_1.0.6 \r\n[49] highr_0.10         xfun_0.42          tibble_3.2.1      \r\n[52] tidyselect_1.2.1   rstudioapi_0.15.0  knitr_1.45        \r\n[55] farver_2.1.1       htmltools_0.5.7    labeling_0.4.3    \r\n[58] rmarkdown_2.26     compiler_4.3.3     downlit_0.4.3     \r\n\r\n\r\n\r\n\r\n",
-    "preview": "posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg/imperviousness_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png",
-    "last_modified": "2024-04-15T11:24:39+02:00",
     "input_file": {},
     "preview_width": 4500,
     "preview_height": 3000
@@ -58,6 +63,30 @@
     "preview": "posts_geodata/landuse_berlin_2021_polygon_03035_gpkg/landuse_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png",
     "last_modified": "2024-04-15T16:42:56+02:00",
     "input_file": {},
+    "preview_width": 4500,
+    "preview_height": 3000
+  },
+  {
+    "path": "posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg/",
+    "title": "imperviousness berlin 2021",
+    "description": {},
+    "author": [
+      {
+        "name": "Moritz Wenzler-Meya",
+        "url": {}
+      }
+    ],
+    "date": "2024-04-15",
+    "categories": [
+      "Berlin",
+      "2021",
+      "polygon",
+      "epsg:3035"
+    ],
+    "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\ncolumn\r\n      input\r\n    folder_name\r\nimperviousness_berlin_2021_polygon_03035_gpkgname\r\nimperviousness_berlin_2021_polygon_03035.gpkgepsg\r\n3035crs\r\nNAyear_of_data\r\n2021units_of_data\r\nimperviousness in %resolution\r\nvectortype_of_data\r\ncontinuous_numerictype_of_file\r\n.gpkgdate_of_compile\r\n2024-04-15source\r\nfisbroker - Umweltatlasshort_description\r\nvg_2021 is the imperviousness columnmodified\r\nNAlink_of_source\r\nhttps://stadtentwicklung.berlin.de/geoinformation/fis-broker/copyright\r\nUmweltatlas Berlin / Versiegelung 2021 (Umweltatlas)\r\n\r\n\r\nSession Info\r\n\r\n[1] \"2024-05-13 16:22:52 CEST\"\r\nR version 4.3.3 (2024-02-29 ucrt)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 19044)\r\n\r\nMatrix products: default\r\n\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.utf8  LC_CTYPE=German_Germany.utf8   \r\n[3] LC_MONETARY=German_Germany.utf8 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\ntime zone: Europe/Berlin\r\ntzcode source: internal\r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n[1] patchwork_1.2.0\r\n\r\nloaded via a namespace (and not attached):\r\n [1] gt_0.10.1          sass_0.4.9         utf8_1.2.4        \r\n [4] generics_0.1.3     tidyr_1.3.1        class_7.3-22      \r\n [7] xml2_1.3.6         KernSmooth_2.23-22 distill_1.6       \r\n[10] digest_0.6.35      magrittr_2.0.3     evaluate_0.23     \r\n[13] grid_4.3.3         fastmap_1.1.1      jsonlite_1.8.8    \r\n[16] e1071_1.7-14       DBI_1.2.2          purrr_1.0.2       \r\n[19] fansi_1.0.6        scales_1.3.0       textshaping_0.3.7 \r\n[22] jquerylib_0.1.4    cli_3.6.2          rlang_1.1.3       \r\n[25] units_0.8-5        munsell_0.5.1      withr_3.0.0       \r\n[28] cachem_1.0.8       yaml_2.3.8         tools_4.3.3       \r\n[31] memoise_2.0.1      dplyr_1.1.4        colorspace_2.1-0  \r\n[34] ggplot2_3.5.1      vctrs_0.6.5        R6_2.5.1          \r\n[37] proxy_0.4-27       lifecycle_1.0.4    classInt_0.4-10   \r\n[40] ragg_1.3.0         pkgconfig_2.0.3    pillar_1.9.0      \r\n[43] bslib_0.7.0        gtable_0.3.5       glue_1.7.0        \r\n[46] Rcpp_1.0.12        sf_1.0-16          systemfonts_1.0.6 \r\n[49] highr_0.10         xfun_0.43          tibble_3.2.1      \r\n[52] tidyselect_1.2.1   rstudioapi_0.15.0  knitr_1.46        \r\n[55] farver_2.1.2       htmltools_0.5.8.1  labeling_0.4.3    \r\n[58] rmarkdown_2.26     compiler_4.3.3     downlit_0.4.3     \r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg/imperviousness_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png",
+    "last_modified": "2024-05-13T16:22:53+02:00",
+    "input_file": "imperviousness_berlin_2021_polygon_03035_gpkg.knit.md",
     "preview_width": 4500,
     "preview_height": 3000
   },

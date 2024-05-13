@@ -12,7 +12,20 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 16 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 May 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>open-green-areas berlin 2024</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/open-green-areas_berlin_2024_polygon_3035_gpkg</link>
+      <description>open-green-areas berlin 2024</description>
+      <category>Berlin</category>
+      <category>2024</category>
+      <category>polygon</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/open-green-areas_berlin_2024_polygon_3035_gpkg</guid>
+      <pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/open-green-areas_berlin_2024_polygon_3035_gpkg/open-green-areas_berlin_2024_polygon_3035_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
     <item>
       <title>imperviousness berlin 2021</title>
       <dc:creator>Moritz Wenzler-Meya</dc:creator>
@@ -21,15 +34,6 @@
       <guid>https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2021_line_03035_gpkg</guid>
       <pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
       <media:content url="https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2021_line_03035_gpkg/imperviousness_berlin_2021_line_03035_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
-    </item>
-    <item>
-      <title>imperviousness berlin 2021</title>
-      <dc:creator>Moritz Wenzler-Meya</dc:creator>
-      <link>https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg</link>
-      <description>imperviousness berlin 2021</description>
-      <guid>https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg</guid>
-      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
-      <media:content url="https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg/imperviousness_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
     </item>
     <item>
       <title>landuse berlin 2021</title>
@@ -43,6 +47,19 @@
       <guid>https://ecodynizw.github.io/posts_geodata/landuse_berlin_2021_polygon_03035_gpkg</guid>
       <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
       <media:content url="https://ecodynizw.github.io/posts_geodata/landuse_berlin_2021_polygon_03035_gpkg/landuse_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>imperviousness berlin 2021</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg</link>
+      <description>imperviousness berlin 2021</description>
+      <category>Berlin</category>
+      <category>2021</category>
+      <category>polygon</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg</guid>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg/imperviousness_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
     </item>
     <item>
       <title>tri europe 2016</title>

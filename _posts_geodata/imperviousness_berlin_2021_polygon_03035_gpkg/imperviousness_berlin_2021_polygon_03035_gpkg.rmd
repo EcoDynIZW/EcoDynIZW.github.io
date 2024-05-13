@@ -1,7 +1,10 @@
 ---
 title: 'imperviousness berlin 2021'
 categories:
-
+  - Berlin
+  - '2021'
+  - polygon
+  - epsg:3035
 author:
   - name: Moritz Wenzler-Meya
 
