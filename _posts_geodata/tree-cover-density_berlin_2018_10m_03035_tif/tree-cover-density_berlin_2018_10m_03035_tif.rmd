@@ -9,8 +9,8 @@ author:
   - name: Moritz Wenzler-Meya
 
     affiliation: IZW Berlin
-    affiliation_url: https://ecodynizw.github.io/
-date: '2023-06-07'
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: '2024-05-17'
 output:
   distill::distill_article:
     self_contained: false
@@ -45,7 +45,8 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'),  '/',  'GeoData/data-proc/berlin/tree-cover-density_berlin_2018_10m_03035_tif')
+    paste0(ifelse(dir.exists('T:/wenzler') == T, 'T:/wenzler',
+    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/berlin/tree-cover-density_berlin_2018_10m_03035_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -64,7 +65,8 @@ meta_gt <- gt::gt(meta %>%
 
 ```{r map}
 p_map <-
- readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/', 'GeoData/data-proc/berlin/tree-cover-density_berlin_2018_10m_03035_tif/tree-cover-density_berlin_2018_10m_03035_tif' ,'.rds'))
+ readRDS(paste0(ifelse(dir.exists('T:/wenzler') == T, 'T:/wenzler',
+    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/berlin/tree-cover-density_berlin_2018_10m_03035_tif/tree-cover-density_berlin_2018_10m_03035_tif' ,'.rds'))
 
 ```
 

@@ -12,7 +12,20 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 12 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 May 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>tree-cover-density berlin 2018</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif</link>
+      <description>tree-cover-density berlin 2018</description>
+      <category>Berlin</category>
+      <category>2018</category>
+      <category>10m</category>
+      <category>epsg:3035</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif</guid>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif/tree-cover-density_berlin_2018_10m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
     <item>
       <title>open-green-areas berlin 2024</title>
       <dc:creator>Moritz Wenzler-Meya</dc:creator>
@@ -23,7 +36,7 @@
       <category>polygon</category>
       <category>epsg:3035</category>
       <guid>https://ecodynizw.github.io/posts_geodata/open-green-areas_berlin_2024_polygon_3035_gpkg</guid>
-      <pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
       <media:content url="https://ecodynizw.github.io/posts_geodata/open-green-areas_berlin_2024_polygon_3035_gpkg/open-green-areas_berlin_2024_polygon_3035_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
     </item>
     <item>
@@ -138,19 +151,6 @@
       <guid>https://ecodynizw.github.io/posts_geodata/ndvi_world_2023_1km_04326_tif</guid>
       <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
       <media:content url="https://ecodynizw.github.io/posts_geodata/ndvi_world_2023_1km_04326_tif/ndvi_world_2023_1km_04326_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
-    </item>
-    <item>
-      <title>tree-cover-density berlin 2018</title>
-      <dc:creator>Moritz Wenzler-Meya</dc:creator>
-      <link>https://ecodynizw.github.io/posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif</link>
-      <description>tree-cover-density berlin 2018</description>
-      <category>Berlin</category>
-      <category>2018</category>
-      <category>10m</category>
-      <category>epsg:3035</category>
-      <guid>https://ecodynizw.github.io/posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif</guid>
-      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://ecodynizw.github.io/posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif/tree-cover-density_berlin_2018_10m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
     </item>
     <item>
       <title>tree-cover-density germany 2015</title>
