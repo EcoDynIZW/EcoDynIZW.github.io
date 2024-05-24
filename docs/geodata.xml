@@ -12,7 +12,20 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 16 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 May 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>vegetation-heights berlin 2020</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/vegetation-heights_berlin_2020_1m_25833_tif</link>
+      <description>vegetation-heights berlin 2020</description>
+      <category>Berlin</category>
+      <category>2020</category>
+      <category>1m</category>
+      <category>epsg:25833</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/vegetation-heights_berlin_2020_1m_25833_tif</guid>
+      <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/vegetation-heights_berlin_2020_1m_25833_tif/vegetation-heights_berlin_2020_1m_25833_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
     <item>
       <title>tree-cover-density berlin 2018</title>
       <dc:creator>Moritz Wenzler-Meya</dc:creator>
@@ -23,7 +36,7 @@
       <category>10m</category>
       <category>epsg:3035</category>
       <guid>https://ecodynizw.github.io/posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif</guid>
-      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
       <media:content url="https://ecodynizw.github.io/posts_geodata/tree-cover-density_berlin_2018_10m_03035_tif/tree-cover-density_berlin_2018_10m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
     </item>
     <item>
@@ -294,19 +307,6 @@
       <guid>https://ecodynizw.github.io/posts_geodata/population-density_berlin_2019_10m_03035_tif</guid>
       <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
       <media:content url="https://ecodynizw.github.io/posts_geodata/population-density_berlin_2019_10m_03035_tif/population-density_berlin_2019_10m_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
-    </item>
-    <item>
-      <title>vegetation-heights berlin 2020</title>
-      <dc:creator>Moritz Wenzler-Meya</dc:creator>
-      <link>https://ecodynizw.github.io/posts_geodata/vegetation-heights_berlin_2020_1m_25833_tif</link>
-      <description>vegetation-heights berlin 2020</description>
-      <category>Berlin</category>
-      <category>2020</category>
-      <category>1m</category>
-      <category>epsg:25833</category>
-      <guid>https://ecodynizw.github.io/posts_geodata/vegetation-heights_berlin_2020_1m_25833_tif</guid>
-      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
-      <media:content url="https://ecodynizw.github.io/posts_geodata/vegetation-heights_berlin_2020_1m_25833_tif/vegetation-heights_berlin_2020_1m_25833_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
     </item>
     <item>
       <title>distance-to-human-settlements atlas 2009</title>
