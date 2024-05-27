@@ -2754,137 +2754,137 @@ Wikis
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 <!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).on("load", function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      page_category = decodeURIComponent(page_category)
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).on("load", function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      page_category = decodeURIComponent(page_category)
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
 
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
@@ -2892,7 +2892,7 @@ function init_posts_list() {
 <a href="posts_geodata/vegetation-heights_berlin_2020_1m_25833_tif/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["Berlin","2020","1m","epsg:25833"]}</script>
 <div class="metadata">
-<div class="publishedDate">May 23, 2024</div>
+<div class="publishedDate">May 24, 2024</div>
 <div class="dt-authors">
 <div class="dt-author">Moritz Wenzler-Meya</div>
 </div>
@@ -2972,28 +2972,6 @@ function init_posts_list() {
 <p></p>
 </div>
 </a>
-<a href="posts_geodata/landuse_berlin_2021_polygon_03035_gpkg/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Berlin","2021","polygon","epsg:3035"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 15, 2024</div>
-<div class="dt-authors">
-<div class="dt-author">Moritz Wenzler-Meya</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts_geodata/landuse_berlin_2021_polygon_03035_gpkg/landuse_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png"/>
-</div>
-<div class="description">
-<h2>landuse berlin 2021</h2>
-<div class="dt-tags">
-<div class="dt-tag">Berlin</div>
-<div class="dt-tag">2021</div>
-<div class="dt-tag">polygon</div>
-<div class="dt-tag">epsg:3035</div>
-</div>
-<p></p>
-</div>
-</a>
 <a href="posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["Berlin","2021","polygon","epsg:3035"]}</script>
 <div class="metadata">
@@ -3003,10 +2981,32 @@ function init_posts_list() {
 </div>
 </div>
 <div class="thumbnail">
-<img data-src="posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg/imperviousness_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png"/>
+<img src="posts_geodata/imperviousness_berlin_2021_polygon_03035_gpkg/imperviousness_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png"/>
 </div>
 <div class="description">
 <h2>imperviousness berlin 2021</h2>
+<div class="dt-tags">
+<div class="dt-tag">Berlin</div>
+<div class="dt-tag">2021</div>
+<div class="dt-tag">polygon</div>
+<div class="dt-tag">epsg:3035</div>
+</div>
+<p></p>
+</div>
+</a>
+<a href="posts_geodata/landuse_berlin_2021_polygon_03035_gpkg/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":["Berlin","2021","polygon","epsg:3035"]}</script>
+<div class="metadata">
+<div class="publishedDate">April 15, 2024</div>
+<div class="dt-authors">
+<div class="dt-author">Moritz Wenzler-Meya</div>
+</div>
+</div>
+<div class="thumbnail">
+<img data-src="posts_geodata/landuse_berlin_2021_polygon_03035_gpkg/landuse_berlin_2021_polygon_03035_gpkg_files/figure-html5/plot-1.png"/>
+</div>
+<div class="description">
+<h2>landuse berlin 2021</h2>
 <div class="dt-tags">
 <div class="dt-tag">Berlin</div>
 <div class="dt-tag">2021</div>
@@ -3856,7 +3856,7 @@ function init_posts_list() {
 <a href="#">More articles &raquo;</a>
 </div>
 </div>
-<!--/radix_placeholder_article_listing-->
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
 <h1>Geodata</h1>
@@ -3886,7 +3886,7 @@ function init_posts_list() {
 <div class="distill-site-nav distill-site-footer">
 <p>© Department of Ecological Dynamics, Leibniz Institute for Zoo- and
 Wildlife Research 2020—2024. All rights reserved.</p>
-<p><u><a href="Impressum.html">Impressum</a></u></p>
+<p><u><a href="impressum.html">Impressum</a></u></p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
