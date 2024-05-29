@@ -12,7 +12,20 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>corine-landcover germany 2018</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/corine-landcover_germany_2018_polygon_25832_gpkg</link>
+      <description>corine-landcover germany 2018</description>
+      <category>Germany</category>
+      <category>2018</category>
+      <category>polygon</category>
+      <category>epsg:25832</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/corine-landcover_germany_2018_polygon_25832_gpkg</guid>
+      <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/corine-landcover_germany_2018_polygon_25832_gpkg/corine-landcover_germany_2018_polygon_25832_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
     <item>
       <title>administrativ-units germany 2020</title>
       <dc:creator>Moritz Wenzler-Meya</dc:creator>
