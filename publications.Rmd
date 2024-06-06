@@ -29,6 +29,8 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * Jarquín-Díaz VH, **Ferreira Martins SC**, Balard A, Ďureje Ľ, Macholán M, Piálek J, Bengtsson-Palme J, **Kramer-Schadt S**, Forslund-Startceva SK, Heitlinger E (2024): Aberrant microbiomes are associated with increased antibiotic resistance gene load in hybrid mice, ISME COMMUN, **1**, 4, ycae053. doi:<span>[10.1093/ismeco/ycae053](https://doi.org/10.1093/ismeco/ycae053)</span>   
 
+* Ke A, **Sollmann R**, Frishkoff L, Echeverri A, Zook J, Karp DS (2024): Effects of agriculture and nature reserves on avian behavior in northwestern Costa Rica. CONSERV BIOL, e14241. doi:<span>[10.1111/cobi.14241](https://doi.org/10.1111/cobi.14241)</span>
+
 * **Kürschner T**, **Scherer C**, **Radchuk V**, Blaum N, **Kramer-Schadt S** (2024): Resource asynchrony and landscape homogenization as drivers of virulence evolution: The case of a directly transmitted disease in a social host. ECOL EVOL, **14**, e11065. doi:<span>[10.1002/ece3.11065](https://doi.org/10.1002/ece3.11065)</span>
 
 * Mendes CP, Wido RA, Zachary A, …, **Wilting A**, et al. (2024): CamTrapAsia: A Dataset of Tropical Forest Vertebrate Communities from 239 Camera Trapping Studies. ECOLOGY, e4299. doi:<span>[10.1002/ecy.4299](https://doi.org/10.1002/ecy.4299)</span>
@@ -50,6 +52,8 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 * **Sollmann R** (2024): Estimating the temporal scale of lagged responses in species abundance and occurrence. ECOSPHERE, **15**(1), e4704. doi:<span>[10.1002/ecs2.4704](https://doi.org/10.1002/ecs2.4704)</span> 
 
 * **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEERJ, **4**, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
+
+* Tarbill GL, White AM, **Sollmann R** (2024): Floral richness drives pollinator diversity after fire in upland forest and meadows of the Sierra Nevada, California. INSECT CONSERV DIVERS (in press). doi:<span>[10.1111/icad.12756](https://doi.org/10.1111/icad.12756)</span>   
 
 * Vullioud C, **Benhaiem S**, Meneghini D, Szyf M, Shao Y, Hofer H, **East ML**, Fickel J, Weyrich A (2024): Epigenetic signatures of social status in wild female spotted hyenas (*Crocuta crocuta*). COMMUN BIOL, **7**, 1-12. doi:<span>[10.1038/s42003-024-05926-y](https://doi.org/10.1038/s42003-024-05926-y)</span>
 
