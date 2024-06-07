@@ -64,7 +64,7 @@ ELIFE **12** ,e66550. doi:<span>[10.7554/eLife.66550](https://doi.org/10.7554/eL
 
 * Rasmussen SL, Schrøder BT, Berger A, **Sollmann R**, Macdonald DW, Pertoldi C, Alstrup AKO (2023): Testing the Impact of Robotic Lawn Mowers on European Hedgehogs (Erinaceus europaeus) and Desig-ning a Safety Test. ANIMALS **14**, 122. doi:<span>[10.3390/ani14010122](https://doi.org/10.3390/ani14010122)</span>
 
-* Reusch R, Paul AA, Fritze M, **Kramer-Schadt S**, Voigt C (2023): Wind energy production in forests conflicts with tree-roosting bats. CURR BIOL, **33** 737–743.e3. doi:<span>[10.1016/j.cub.2022.12.050](https://doi.org/10.1016/j.cub.2022.12.050)</span>
+* Reusch R, Paul AA, Fritze M, **Kramer-Schadt S**\*, Voigt C\* (2023): Wind energy production in forests conflicts with tree-roosting bats. CURR BIOL, **33** 737–743.e3. doi:<span>[10.1016/j.cub.2022.12.050](https://doi.org/10.1016/j.cub.2022.12.050)</span>
 
 * Revilla-Martín N, Giralt D, **Sanz-Pérez A**, Bota G, Sardà-Palomera F (2023): Disentangling the effects of management, field characteristics of fallows, and surrounding landscape to promote steppe bird conservation. AGRIC ECOSYST ENVIRON **357**, 108657.  doi:<span>[10.1016/j.agee.2023.108657](doi:10.1016/j.agee.2023.108657)</span>
 
