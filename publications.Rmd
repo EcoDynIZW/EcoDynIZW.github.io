@@ -51,7 +51,7 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * **Sollmann R** (2024): Estimating the temporal scale of lagged responses in species abundance and occurrence. ECOSPHERE, **15**(1), e4704. doi:<span>[10.1002/ecs2.4704](https://doi.org/10.1002/ecs2.4704)</span> 
 
-* **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEERJ, **4**, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
+* **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEER COMMUNITY J, **4**, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
 
 * Tarbill GL, White AM, **Sollmann R** (2024): Floral richness drives pollinator diversity after fire in upland forest and meadows of the Sierra Nevada, California. INSECT CONSERV DIVERS (in press). doi:<span>[10.1111/icad.12756](https://doi.org/10.1111/icad.12756)</span>   
 
