@@ -33,9 +33,15 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * **Kürschner T**, **Scherer C**, **Radchuk V**, Blaum N, **Kramer-Schadt S** (2024): Resource asynchrony and landscape homogenization as drivers of virulence evolution: The case of a directly transmitted disease in a social host. ECOL EVOL, **14**, e11065. doi:<span>[10.1002/ece3.11065](https://doi.org/10.1002/ece3.11065)</span>
 
+* Leonard A, Earth Hologenome Initiative Consortium (...**Kramer-Schadt S**, ..., Voigt, CC,...), Alberdi A (2024): A global initiative for ecological and evolutionary hologenomics. TRENDS ECOL EVOL, **3290**: 1-5. doi:<span>[10.1016/j.tree.2024.03.005](https://doi.org/10.1016/j.tree.2024.03.005)</span> 
+
 * Mendes CP, Wido RA, Zachary A, …, **Wilting A**, et al. (2024): CamTrapAsia: A Dataset of Tropical Forest Vertebrate Communities from 239 Camera Trapping Studies. ECOLOGY, e4299. doi:<span>[10.1002/ecy.4299](https://doi.org/10.1002/ecy.4299)</span>
 
 * Milles A, Bielcik M, Banitz T, Gallagher CA, Jeltsch F, Jepsen JU, Oro D, **Radchuk V**, Grimm V (2024): Defining ecological buffer mechanisms should consider diverse approaches. TREE, **39**. doi:<span>[10.1016/j.tree.2023.12.008](https://doi.org/10.1016/j.tree.2023.12.008)</span>
+
+* Moesch SS, Straka TM, Jeschke JM, Haase D, **Kramer-Schadt S** (2024): The good, the bad, and the unseen: wild mammal encounters influence wildlife preferences of residents across socio-demographic gradients. ECOL SOC **29**(3):6. doi:<span>[10.5751/ES-15211-290306](https://doi.org/10.5751/ES-15211-290306)</span> 
+
+* Moesch SS, Jeschke JM, Lokatis S, Peerenboom G, **Kramer-Schadt S**, Straka TM, Haase D (2024): The frequent five: Insights from interviews with urban wildlife professionals in Germany. PEOPLE NAT, **00**, 1–18. doi:<span>[10.1002/pan3.10697](https://doi.org/10.1002/pan3.10697)</span>
 
 * **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2024): Global disparity of camera trap research allocation and defaunation risk of terrestrial mammals. REMOTE SENS ECOL CONS, **10**, 121-136. doi:<span>[10.1002/rse2.360](https://doi.org/10.1002/rse2.360)</span>
 
@@ -54,6 +60,8 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 * **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEER COMMUNITY J, **4**, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
 
 * Tarbill GL, White AM, **Sollmann R** (2024): Floral richness drives pollinator diversity after fire in upland forest and meadows of the Sierra Nevada, California. INSECT CONSERV DIVERS (in press). doi:<span>[10.1111/icad.12756](https://doi.org/10.1111/icad.12756)</span>   
+
+* **Tilker A**, **Niedballa J**, Viet HL, Abrams JF, Marescot L, Wilkinson N, Rawson BM, **Sollmann R**, **Wilting A** (2024): Addressing the Southeast Asian snaring crisis: Impact of 11 years of snare removal in a biodiversity hotspot. CONSERV LETT, e13021. doi:<span>[10.1111/conl.13021](https://doi.org/10.1111/conl.13021)</span>
 
 * Vullioud C, **Benhaiem S**, Meneghini D, Szyf M, Shao Y, Hofer H, **East ML**, Fickel J, Weyrich A (2024): Epigenetic signatures of social status in wild female spotted hyenas (*Crocuta crocuta*). COMMUN BIOL, **7**, 1-12. doi:<span>[10.1038/s42003-024-05926-y](https://doi.org/10.1038/s42003-024-05926-y)</span>
 
