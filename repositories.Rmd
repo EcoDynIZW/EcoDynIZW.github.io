@@ -203,7 +203,7 @@ knitr::opts_chunk$set(echo = FALSE)
  
 <li class="card-repo">
     <img class="card-repo-img" src='img/repo/scholz_2024_stoten.jpg' alt='Figure 1 of Scholz 2024: <Graphical Abstract.'>
-    <h3>Scholz 2024</h3>
+    <h3>Scholz et al. 2024</h3>
     <p>Host weight, seasonality and anthropogenic factors contribute to parasite community differences between urban and rural foxes. *STOTEN* 936.</p><p>
     <a href=' https://doi.org/10.1016/j.scitotenv.2024.173355'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Scholz_2024_STOTEN'>![](img/repo/icon-github.png){width=12%}</a> 

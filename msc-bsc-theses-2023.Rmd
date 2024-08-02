@@ -1,0 +1,30 @@
+---
+title: "Msc/Bsc Theses 2023"
+description: ""
+---
+
+**2023**
+
+* Quantifying demographic resilience across animal species. **Malte Ben Kurreck**, <span class='desaturated'>10.10.2023 BSc. FU Berlin, Department of Biology, Chemistry and Farmacy. Supervisors: V Radchuk (IZW), J Louvrier (IZW), U Steiner (FU).</span>
+
+* The acoustic communication of West African sabre-toothed frogs of the genus *Odontobatrachus* (*Anura*, *Odontiobatrachidae*). **Saskia Piorecki**, <span class='desaturated'>03.11.2023 MSc. Fakultät VI Planen Bauen Umwelt, Institut für Ökologie der TU Berlin. Supervisors: S Kramer-Schadt, M.-O. Rödel (Museum für Naturkunde).</span>
+
+* Larger tree diameter and high urbanisation level increases capture rates of red squirrels in Berlin. **Alina Doreen Stemmer**,  <span class='desaturated'>06.11.2023 MSc. FU Berlin, Department of Biology, Chemistry, Pharmacy. Supervisors: S Kramer-Schadt, Sinah Drenske (IZW), Jonathan Jeschke (FU).</span>
+
+* Fine-scale movements and fitness: Feedback between foraging decisions and reproductive success of Common Starlings (*Sturnus vulgaris*). **Johannes Till**,  <span class='desaturated'>19.10.2023 BSc.
+FU Berlin, Department of Biology, Chemistry and Pharmacy. Supervisors S Kramer-Schadt, M Grabow, Prof. Jens Rolff (FU).</span>
+
+* Wildtiere in der Stadt: Die komplexe beziehung von Urbanisierung, menschlicher Wahrnehmung und Sozialökonomie. **Titus M. Mußhoff**, <span class='desaturated'>30.08.2023 MSc.
+Universität Freiburg. Fakultät für Umwelt und Natürliche Ressourcen. Supervision: Prof. Ilse Storch (ALUF) & S Kramer-Schadt (TUB/ IZW).</span>
+
+* Food or parasite? Classification of fecal DNA based on taxonomic profiling of interaction data. **Milena Luke**, <span class='desaturated'>11.07.2023 BSc. Humboldt-Universität zu Berlin. Lebenswissenschaftliche Fakultät Institut für Biologie. Supervision: Prof. E. Heitlinger (HU) & S Kramer-Schadt (TUB/ IZW).</span>
+
+* The effect of natural haemosporidian infections on host fitness and movement patterns in passerines. **Sirkka Mang.** <span class='desaturated'>24.04.2023 MSc. Universität Koblenz Landau, Fachbereich 3 Mathematik/ Naturwissenschaften. Supervision: S Kramer-Schadt (TUB/ IZW), Conny Landgraf (IZW).</span>
+
+* Changing climates, shifting phenologies. Analysing long-term data of juvenile bat occurrences for signals of climate change impacts in Bavaria, Germany. **Alec Paul Christoph.** <span class='desaturated'>05.02.2023 MSc. Urban Ecosystem Studies, TU Berlin. Supervison: S Kramer-Schadt (IZW&TUB) & Tanja Straka (TUB).</span>
+
+* Are acoustic measurements at wind masts an effective additional method to evaluate the mortality risk for bats at wind turbines before their construction? **Corinna Seidel.** <span class='desaturated'>17.01.2023 MSc. Urban Ecosystem Studies, TU Berlin. Supervison: S Kramer-Schadt (IZW&TUB) & Volker Kelm (Umweltgutachten K&S).</span>
+
+
+
+

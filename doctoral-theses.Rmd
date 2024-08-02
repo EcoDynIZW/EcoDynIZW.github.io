@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class='headerbox'><hbox>Successfully Defended Theses</hbox></div><br>
 
+* **Seth Timothy Wong**: Ecological Impacts of Mixed and Single Land-use Forestry Practices on Mammals and Their Communities in Malaysian Borneo. 04.05.2025. Faculty VI – Planning Building Environment, Institute of Ecology. Technische Universität Berlin. Sollmann R, Wilting A, Kramer-Schadt S.
+
 * **Ana Patricia Calderon Quinonez**: Ecology and conservation of the jaguar (*Panthera onca*) in Central America. 01.11.2023. Institut für Biochemie und Biologie der Universität Potsdam. Kramer-Schadt S, Grimm V.
 
 * **Morgane Gicquel**: Early-life conditions and their long-term consequences in spotted hyenas (*Crocuta Crocuta*). 07.02.2023. Department of Biology, Chemistry and Pharmacy Freie Universität Berlin. Benhaiem S, East ML, Hofer H.
