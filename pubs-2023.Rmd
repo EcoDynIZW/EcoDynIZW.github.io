@@ -62,11 +62,9 @@ ELIFE **12** ,e66550. doi:<span>[10.7554/eLife.66550](https://doi.org/10.7554/eL
 
 * **Planillo A**, Viñuela J, Malo JE, García JT, Acebes P, Santamaría AE, Domínguez JC, Olea PP (2023): Addressing phase of population cycle and spatial scale is key to understand vole abundance in crop field margins: Implications for managing a cyclic pest species. AGRIC ECOSYST ENVIRON, **345**, 108306. doi:<span>[10.1016/j.agee.2022.108306](https://doi.org/10.1016/j.agee.2022.108306)</span>
 
-* Rasmussen SL, Schrøder BT, Berger A, **Sollmann R**, Macdonald DW, Pertoldi C, Alstrup AKO (2023): Testing the Impact of Robotic Lawn Mowers on European Hedgehogs (Erinaceus europaeus) and Desig-ning a Safety Test. ANIMALS **14**, 122. doi:<span>[10.3390/ani14010122](https://doi.org/10.3390/ani14010122)</span>
-
 * Reusch R, Paul AA, Fritze M, **Kramer-Schadt S**\*, Voigt C\* (2023): Wind energy production in forests conflicts with tree-roosting bats. CURR BIOL, **33** 737–743.e3. doi:<span>[10.1016/j.cub.2022.12.050](https://doi.org/10.1016/j.cub.2022.12.050)</span>
 
-* Revilla-Martín N, Giralt D, **Sanz-Pérez A**, Bota G, Sardà-Palomera F (2023): Disentangling the effects of management, field characteristics of fallows, and surrounding landscape to promote steppe bird conservation. AGRIC ECOSYST ENVIRON **357**, 108657.  doi:<span>[10.1016/j.agee.2023.108657](doi:10.1016/j.agee.2023.108657)</span>
+* Revilla-Martín N, Giralt D, **Sanz-Pérez A**, Bota G, Sardà-Palomera F (2023): Disentangling the effects of management, field characteristics of fallows, and surrounding landscape to promote steppe bird conservation. AGRIC ECOSYST ENVIRON **357**, 108657.  doi:<span>[10.1016/j.agee.2023.108657](https://doi.org/10.1016/j.agee.2023.108657)</span>
 
 * Rocha DG and **Sollmann R** (2023): Habitat use patterns suggest that climate-driven vegetation changes will negatively impact mammal communities in the Amazon. ANIM CONSERV **26**, 663–674. doi:<span>[10.1111/acv.12853](https://doi.org/10.1111/acv.12853)</span>
 
@@ -74,7 +72,7 @@ ELIFE **12** ,e66550. doi:<span>[10.7554/eLife.66550](https://doi.org/10.7554/eL
 
 * Rusman M, Sikhounmeuang S, Phommachak A, Pathoummavan S, Ngonephetsy K, Valao M, Yoganand K, **Tilker A** (2023): A recent record of the Annamite striped rabbit *Nesolagus timminsi* in a local market in southern Lao P.D.R. MAMMALIA **87**, 615-618. doi:<span>[10.1515/mammalia-2023-0038](https://doi.org/10.1515/mammalia-2023-0038)</span>
 
-* Schmitz OJ, Sylvén M, Atwood TB, Bakker ES, Berzaghi F, Brodie JF, Cromsigt JPGM, Davies AB, Leroux SJ, Schepers FJ, Smith FA, stark S, Svenning J-C, **Tilker A**, Ylänne H (2023): Trophic rewilding can expand natural climate solutions. NAT CLIM CHANG, **13**, 324–333. doi:<span>[10.1038/s41558-023-01631-6](doi:10.1038/s41558-023-01631-6)</span>
+* Schmitz OJ, Sylvén M, Atwood TB, Bakker ES, Berzaghi F, Brodie JF, Cromsigt JPGM, Davies AB, Leroux SJ, Schepers FJ, Smith FA, stark S, Svenning J-C, **Tilker A**, Ylänne H (2023): Trophic rewilding can expand natural climate solutions. NAT CLIM CHANG, **13**, 324–333. doi:<span>[10.1038/s41558-023-01631-6](https://doi.org/10.1038/s41558-023-01631-6)</span>
 
 * Semper-Pascual A, Sheil D, Beaudrot L, Dupont P, Dey S, Ahumada J, Akampurira E, Bitariho R, Espinosa S, Jansen PA, Lima MGM, Martin EH, **Mugerwa B**, Rovero F, Santos F, Uzabaho E, Bischof R (2023): Occurrence dynamics of mammals in protected tropical forests respond to human presence and activities. NAT ECOL EVOL **7**, 1092–1103. doi:<span>[10.1038/s41559-023-02060-6](https://doi.org/10.1038/s41559-023-02060-6)</span>
 
