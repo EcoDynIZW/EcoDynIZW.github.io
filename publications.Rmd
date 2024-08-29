@@ -16,6 +16,8 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 * Achter S, Borit M, Cottineau C, Meyer M, Polhill J, **Radchuk V** (2024): How to conduct more systematic reviews of agent-based models and foster theory development - Taking stock and looking ahead. ENVIRON MODEL SOFTW, **173** ,105867. doi:<span>[10.1016/j.envsoft.2023.105867](https://doi.org/10.1016/j.envsoft.2023.105867)</span> 
 
+* Alexiou I, Coudrat CNZ, **Niedballa J**, **Wilting A**, **Tilker A** (2024): Multi-species occupancy modeling of ground-dwelling mammals in central Laos: a case study for monitoring in tropical forests. WILDL BIOL, e01261. doi:<span>[10.1002/wlb3.01261](https://doi.org/10.1002/wlb3.01261)</span>
+
 * Berger U, Bell A, Barton CM, Chappin E, Dreßler G, Filatova T, **Fronville T**, Lee A, van Loon E, Lorscheid I, Meyer M, Müller B, Piou C, **Radchuk V**, Roxburgh N, Schüler L, Troost C, Wijermans N, Williams TG, Wimmler M-C, Grimm V (2024): Towards reusable building blocks for agent-based modelling and theory development. ENVIRON MODEL SOFTW, **175**. doi:<span>[10.1016/j.envsoft.2024.106003](https://doi.org/10.1016/j.envsoft.2024.106003)</span>
 
 * Burton AC, Beirne C, Gaynor KM, ..., **Kramer-Schadt S**, ..., **Louvrier J** et al. (2024): Mammal responses to global changes in human activity vary by trophic group and landscape. NAT ECOL EVOL. doi:<span>[10.1038/s41559-024-02363-2](https://doi.org/10.1038/s41559-024-02363-2)</span>
@@ -26,6 +28,8 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * **Fronville T**, Blaum N, **Kramer-Schadt S**, Schlägel U, **Radchuk V** (2024): Performance of five statistical methods to infer interactions among moving individuals in a predator–prey system. METHODS ECOL EVOL, **00**, 1–16. doi:<span>[10.1111/2041-210X.14323](https://doi.org/10.1111/2041-210X.14323)</span>  
+
+* Gordon IJ, **Sollmann R**, Rantanen EM, Johnson JA, Evans KL, Penteriani V, Boersch-Supan P (2024): Ten years on for the Letter from the Conservation Front Line. ANIM CONSERV, **27**: 139-140. doi:<span>[10.1111/acv.12944](https://doi.org/10.1111/acv.12944)</span> 
 
 * Jarquín-Díaz VH, **Ferreira Martins SC**, Balard A, Ďureje Ľ, Macholán M, Piálek J, Bengtsson-Palme J, **Kramer-Schadt S**, Forslund-Startceva SK, Heitlinger E (2024): Aberrant microbiomes are associated with increased antibiotic resistance gene load in hybrid mice, ISME COMMUN, **1**, 4, ycae053. doi:<span>[10.1093/ismeco/ycae053](https://doi.org/10.1093/ismeco/ycae053)</span>   
 
@@ -49,6 +53,8 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * **Planillo A**, **Wenzler-Meya M**, Reinhardt I, Kluth G, Michler F-U, Stier N, **Louvrier J**, Steyer K, Gillich B, Rieger S, Knauer F, Kuemmerle T,  **Kramer-Schadt S** (2024): Understanding habitat selection of range-expanding populations of large carnivores: 20 years of grey wolves (*Canis lupus*) recolonizing Germany. DIVERS DISTRIB, **30**, 71–86. doi:<span>[10.1111/ddi.13789](https://doi.org/10.1111/ddi.13789)</span>
 
+* Rasmussen SL, Schrøder BT, Berger A, **Sollmann R**, Macdonald DW, Pertoldi C, Alstrup AKO (2024): Testing the Impact of Robotic Lawn Mowers on European Hedgehogs (*Erinaceus europaeus*) and Designing a Safety Test. ANIMALS, **14(1)**:122. doi:<span>[10.3390/ani14010122](https://doi.org/10.3390/ani14010122)</span> 
+
 * Schmied née Stommel C, Hofer H, **Scherer C**, **Kramer-Schadt S**\*, East ML\* (2024): Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. WILDL BIOL, e01131. doi:<span>[10.1002/wlb3.01131](https://doi.org/10.1002/wlb3.01131)</span>
 
 * Scholz C, Jarquín-Díaz VH, **Planillo A**, **Radchuk V**, **Scherer C**, Schulze C, Ortmann S\*, **Kramer-Schadt S**\*, Heitlinger E\* (2024): Host weight, seasonality and anthropogenic factors contribute to parasite community differences between urban and rural foxes. SCI TOTAL ENVIRON, 936. doi:<span>[10.1016/j.scitotenv.2024.173355](https://doi.org/10.1016/j.scitotenv.2024.173355)</span>
@@ -59,11 +65,15 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEER COMMUNITY J, **4**, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
 
+* **Sollmann R**, Adenot N, Spakovszky P, Windt J, Mattsson Brady J (2024): Accounting for observation biases associated with counts of young when estimating fecundity: case study on the arboreal-nesting red kite (*Milvus milvus*). PEER COMMUNITY J, Volume 4 article no. e62. doi:<span>[10.24072/pcjournal.436](https://doi.org/10.24072/pcjournal.436)</span> 
+
 * Tarbill GL, White AM, **Sollmann R** (2024): Floral richness drives pollinator diversity after fire in upland forest and meadows of the Sierra Nevada, California. INSECT CONSERV DIVERS (in press). doi:<span>[10.1111/icad.12756](https://doi.org/10.1111/icad.12756)</span>   
 
 * **Tilker A**, **Niedballa J**, Viet HL, Abrams JF, Marescot L, Wilkinson N, Rawson BM, **Sollmann R**, **Wilting A** (2024): Addressing the Southeast Asian snaring crisis: Impact of 11 years of snare removal in a biodiversity hotspot. CONSERV LETT, e13021. doi:<span>[10.1111/conl.13021](https://doi.org/10.1111/conl.13021)</span>
 
 * Vullioud C, **Benhaiem S**, Meneghini D, Szyf M, Shao Y, Hofer H, **East ML**, Fickel J, Weyrich A (2024): Epigenetic signatures of social status in wild female spotted hyenas (*Crocuta crocuta*). COMMUN BIOL, **7**, 1-12. doi:<span>[10.1038/s42003-024-05926-y](https://doi.org/10.1038/s42003-024-05926-y)</span>
+
+* **Wong ST**, Mohamed A, Mathai J, **Niedballa J**, Kissing J, Lagan P, Hastie AYL, **Wilting A**, **Sollmann R** (2024): Changes in tropical terrestrial vertebrate communities along two anthropogenic gradients: Forest degradation and accessibility. BIOTROPICA, **56**, e13320. doi:<span>[10.1111/btp.13320](https://doi.org/10.1111/btp.13320)</span>
 
 <<div class='headerbox'><hbox>Reports and other scientific outlets</hbox></div><br>
 
