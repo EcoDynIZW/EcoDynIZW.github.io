@@ -219,6 +219,15 @@ knitr::opts_chunk$set(echo = FALSE)
     <a href='https://doi.org/10.24072/pcjournal.357'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Sollmann_2024_PCJ'>![](img/repo/icon-github.png){width=12%}</a> </p>
   </li>
+
+
+  <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/sollmann_caro_2024_EcolEvol.jpg' alt='Figure 1 of Sollmann, Caro 2024: Sites at which coconut crabs were sampled between 2016 and 2023 on/near the Pemba archipelago, Zanzibar. Zanzibar is located off the east coast of Tanzania, East Africa, and is part of that nation.'>
+    <h3>Sollmann, Caro 2024</h3>
+    <p>Spatio-temporal metapopulation trends: The coconut crabs of Zanzibar. *ECOL EVOL*, **14**, e70168.</p><p>
+    <a href='https://doi.org/10.1002/ece3.70168'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Sollmann_Caro_2024_EcolEvol'>![](img/repo/icon-github.png){width=12%}</a> </p>
+  </li>
   
 
   <li class="card-repo">
