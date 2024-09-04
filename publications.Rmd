@@ -18,6 +18,8 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 * Alexiou I, Coudrat CNZ, **Niedballa J**, **Wilting A**, **Tilker A** (2024): Multi-species occupancy modeling of ground-dwelling mammals in central Laos: a case study for monitoring in tropical forests. WILDL BIOL, e01261. doi:<span>[10.1002/wlb3.01261](https://doi.org/10.1002/wlb3.01261)</span>
 
+* Alves GB, Tôrres NM, de Almeida Jácomo AT, Finnegan SP, Trapé Trinca C, Moreira R, Sanz-Pérez A, **Sollmann R**, Silveira L (2024): Jaguar (*Panthera onca*) population dynamics in an “isolated” national park in the Cerrado biome, Brazil. MAMM RES. doi:<span>[10.1007/s13364-024-00758-x](https://doi.org/10.1007/s13364-024-00758-x)</span> 
+
 * Berger U, Bell A, Barton CM, Chappin E, Dreßler G, Filatova T, **Fronville T**, Lee A, van Loon E, Lorscheid I, Meyer M, Müller B, Piou C, **Radchuk V**, Roxburgh N, Schüler L, Troost C, Wijermans N, Williams TG, Wimmler M-C, Grimm V (2024): Towards reusable building blocks for agent-based modelling and theory development. ENVIRON MODEL SOFTW, **175**. doi:<span>[10.1016/j.envsoft.2024.106003](https://doi.org/10.1016/j.envsoft.2024.106003)</span>
 
 * Bubnicki JW, Norton B, Baskauf SJ, Bruce T, Cagnacci F, Casaer J, Churski M, Cromsigt JPGM, Farra SD, Fiderer C, Forrester TD, Hendry H, Heurich M, Hofmeester TR, Jansen PA, Kays R, Kuijper DPJ, Liefting Y, Linnell JDC, Luskin MS, Mann C, Milotic T, Newman P, **Niedballa J**, Oldoni D, Ossi F, Robertson T, Rovero F, Rowcliffe M, Seidenari L, Stachowicz I, Stowell D, Tobler MW, Wieczorek J, Zimmermann F and Desmet P (2023): Camtrap DP: an open standard for the FAIR exchange and archiving of camera trap data. REMOTE SENS ECOL CONSERV. doi:<span>[10.1002/rse2.37](https://doi.org/10.1002/rse2.374)</span> 
@@ -68,6 +70,8 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 * **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEER COMMUNITY J, **4**, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
 
 * **Sollmann R**, Adenot N, Spakovszky P, Windt J, Mattsson Brady J (2024): Accounting for observation biases associated with counts of young when estimating fecundity: case study on the arboreal-nesting red kite (*Milvus milvus*). PEER COMMUNITY J, Volume 4 article no. e62. doi:<span>[10.24072/pcjournal.436](https://doi.org/10.24072/pcjournal.436)</span> 
+
+* **Sollmann R**, Caro T (2024): Spatio-temporal metapopulation trends: The coconut crabs of Zanzibar. ECOL EVOL, **14**, e70168. doi:<span>[10.1002/ece3.70168](https://doi.org/10.1002/ece3.70168)</span>  
 
 * Tarbill GL, White AM, **Sollmann R** (2024): Floral richness drives pollinator diversity after fire in upland forest and meadows of the Sierra Nevada, California. INSECT CONSERV DIVERS (in press). doi:<span>[10.1111/icad.12756](https://doi.org/10.1111/icad.12756)</span>   
 
