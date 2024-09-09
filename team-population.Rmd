@@ -73,6 +73,10 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
 * **Evolution of pathogenic strains in dynamic landscapes**
 * **Pathogen-induced movement strategies and fitness consequences**
 
+![](img/teams/team-pop/DOG.gif)
+
+&ensp;&rarr;&ensp;Ultra high resolution ATLAS tracking data of barn swallows and house martins. Movement data represents individual foraging decisions during one day.
+
 <small>
   <b>Key Publications:</b>
   <ul>
@@ -134,6 +138,7 @@ Wildlife faces big challenges persisting in human-dominated landscapes. We model
     <li>[Struebig et al. (2015) CURR BIOL](https://doi.org/10.1016/j.cub.2014.11.067)</li>
    </ul>
 </small>
+
 
 ```{r, layout="l-screen"}
 knitr::include_graphics("img/banner-mv-csf-bottom.png")
