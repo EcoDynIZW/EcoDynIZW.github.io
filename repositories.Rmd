@@ -171,6 +171,7 @@ Figure 1: Study area map of Nakai-Nam Theun National Park, Laos. Camera trapping
     <a href='https://github.com/EcoDynIZW/Planillo_2023_DivDist'>![](img/repo/icon-github.png){width=12%}</a></p>
   </li>  
   
+  
   <li class="card-repo">
     <img class="card-repo-img" src='img/repo/planillo_2024_wildl_biol.png' alt='Figure 3 of Planillo et al. 2024.'>
     <h3>Planillo et al. 2024</h3>
