@@ -73,6 +73,8 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * **Sollmann R**, Caro T (2024): Spatio-temporal metapopulation trends: The coconut crabs of Zanzibar. ECOL EVOL, **14**, e70168. doi:<span>[10.1002/ece3.70168](https://doi.org/10.1002/ece3.70168)</span>  
 
+* Stiegler J, Gallagher CA, Hering R, ..., **Boerner K**, ... , **Kimmig S**, ... , **Kramer-Schadt S**, ... et al. (2024): Mammals show faster recovery from capture and tagging in human-disturbed landscapes. NAT CSOMMUN **15**, 8079. doi:<span>[10.1038/s41467-024-52381-8](https://doi.org/10.1038/s41467-024-52381-8)</span> 
+
 * Tarbill GL, White AM, **Sollmann R** (2024): Floral richness drives pollinator diversity after fire in upland forest and meadows of the Sierra Nevada, California. INSECT CONSERV DIVERS (in press). doi:<span>[10.1111/icad.12756](https://doi.org/10.1111/icad.12756)</span>   
 
 * **Tilker A**, **Niedballa J**, Viet HL, Abrams JF, Marescot L, Wilkinson N, Rawson BM, **Sollmann R**, **Wilting A** (2024): Addressing the Southeast Asian snaring crisis: Impact of 11 years of snare removal in a biodiversity hotspot. CONSERV LETT, e13021. doi:<span>[10.1111/conl.13021](https://doi.org/10.1111/conl.13021)</span>
