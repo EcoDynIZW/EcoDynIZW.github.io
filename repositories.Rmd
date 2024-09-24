@@ -13,16 +13,16 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 <ul class="card-wrapper">
+
   <li class="card-repo">
-    <img class="card-repo-img" src='img/repo/alexiou_2024_wildl_biol.jpg' alt='
-Figure 1: Study area map of Nakai-Nam Theun National Park, Laos. Camera trapping was conducted in three different biodiversity management zones between February to August 2020. Cameras were placed on the field using a 2.5 km grid.'>
+    <img class="card-repo-img" src='img/repo/alexiou_2024_wildl_biol.jpg' alt='Figure 1: Study area map of Nakai-Nam Theun National Park, Laos. Camera trapping was conducted in three different biodiversity management zones between February to August 2020. Cameras were placed on the field using a 2.5 km grid.'>
     <h3>Alexiou et al. 2024</h3>
     <p>Multi-species occupancy modeling of ground-dwelling mammals in central Laos: a case study for monitoring in tropical forests. *WILDL BIOL*, e01261.</p><p>
     <a href='https://doi.org/10.1002/wlb3.01261'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Alexiou_2024_WILDL-BIOL'>![](img/repo/icon-github.png){width=12%}</a></p>
   </li>
 
-<ul class="card-wrapper">
+
   <li class="card-repo">
     <img class="card-repo-img" src='img/repo/axtner_2019.png' alt='Figure 1 of Axtner et al. 2019: A schematic illustration of the laboratory workflow.'>
     <h3>Axtner et al. 2019</h3>
@@ -126,6 +126,7 @@ Figure 1: Study area map of Nakai-Nam Theun National Park, Laos. Camera trapping
     <a href='https://doi.org/10.1111/1365-2656.13555'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol'>![](img/repo/icon-github.png){width=12%}</a></p>
   </li>
+
 
   <li class="card-repo">
     <img class="card-repo-img" src='img/repo/naciri_2023_biolconserv.jpg' alt='Fig. 1. The Serengeti Ecosystem. The broad location of the migratory herds between August and October (yellow) and between late December and early May (green) is provided (Hopcraft et al., 2015). The road network of the Serengeti NP is shown in black. Thick lines represent the main ‘murram’ roads; thin lines represent the tracks used by game-viewing vehicles and vehicles supplying lodges and campsites. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)'>
