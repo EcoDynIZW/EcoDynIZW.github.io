@@ -171,6 +171,14 @@ Figure 1: Study area map of Nakai-Nam Theun National Park, Laos. Camera trapping
     <a href='https://github.com/EcoDynIZW/Planillo_2023_DivDist'>![](img/repo/icon-github.png){width=12%}</a></p>
   </li>  
   
+  <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/planillo_2024_wildl_biol.png' alt='Figure 3 of Planillo et al. 2024.'>
+    <h3>Planillo et al. 2024</h3>
+    <p>Habitat and density effects on the demography of an expanding wolf population in Central Europe. Wildlife Biology. *WILDL BIOL*.</p><p>
+    <a href='tba'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Planillo_2024_WILDL-BIOL'>![](img/repo/icon-github.png){width=12%}</a></p>
+  </li>  
+  
   
   <li class="card-repo">
     <img class="card-repo-img" src='img/repo/radchuk_2016.png' alt='Figure 1 of Radchuk et al. 2016: schematic representation of the model structure. Scheduling and timing of the major processes is shown in a top row separately for each season: (A) summer; (B) week 44; (C) winter. Processes occurring during the summer season are shown on a white background, and those occurring in winter are shown on a gray background. The bottom row presents more details on the processes specified in the upper row: (D) shows how dispersal, reproduction, survival, and maturation (a submodel within “ageing”) of voles are implemented in the summer; (E) demonstrates how predation affects vole populations in week 44; and (F) shows details on winter survival and ageing. Ageing is the same in summer and winter seasons and is therefore shown on the white background in (E), but maturation occurs only in summer.'>
