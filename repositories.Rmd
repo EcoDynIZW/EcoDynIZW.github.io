@@ -14,6 +14,16 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <ul class="card-wrapper">
   <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/alexiou_2024_wildl_biol.jpg' alt='
+Figure 1: Study area map of Nakai-Nam Theun National Park, Laos. Camera trapping was conducted in three different biodiversity management zones between February to August 2020. Cameras were placed on the field using a 2.5 km grid.'>
+    <h3>Alexiou et al. 2024</h3>
+    <p>Multi-species occupancy modeling of ground-dwelling mammals in central Laos: a case study for monitoring in tropical forests. *WILDL BIOL*, e01261.</p><p>
+    <a href='https://doi.org/10.1002/wlb3.01261'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Alexiou_2024_WILDL-BIOL'>![](img/repo/icon-github.png){width=12%}</a></p>
+  </li>
+
+<ul class="card-wrapper">
+  <li class="card-repo">
     <img class="card-repo-img" src='img/repo/axtner_2019.png' alt='Figure 1 of Axtner et al. 2019: A schematic illustration of the laboratory workflow.'>
     <h3>Axtner et al. 2019</h3>
     <p>An efficient and robust laboratory workflow and tetrapod database for larger scale environmental DNA studies. *GIGASCIENCE*, 8:giz029.</p><p>
@@ -115,6 +125,14 @@ knitr::opts_chunk$set(echo = FALSE)
     <p>‘Keeping the kids at home’ can limit the persistence of contagious pathogens in social animals. *J ANIM ECOL*, 90:2523–2535.</p><p>
     <a href='https://doi.org/10.1111/1365-2656.13555'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Marescot_Franz_Benhaiem_2021_JAnimEcol'>![](img/repo/icon-github.png){width=12%}</a></p>
+  </li>
+
+  <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/naciri_2023_biolconserv.jpg' alt='Fig. 1. The Serengeti Ecosystem. The broad location of the migratory herds between August and October (yellow) and between late December and early May (green) is provided (Hopcraft et al., 2015). The road network of the Serengeti NP is shown in black. Thick lines represent the main ‘murram’ roads; thin lines represent the tracks used by game-viewing vehicles and vehicles supplying lodges and campsites. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)'>
+    <h3>Naciri et al. 2023</h3>
+    <p>‘Three decades of wildlife-vehicle collisions in a protected area: Main roads and long-distance commuting trips to migratory prey increase spotted hyena roadkills in the Serengeti *BIOL CONSERV*, 279, 109950.</p><p>
+    <a href='https://doi.org/10.1016/j.biocon.2023.109950'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Naciri_2023_BiolConserv'>![](img/repo/icon-github.png){width=12%}</a></p>
   </li>
   
   
