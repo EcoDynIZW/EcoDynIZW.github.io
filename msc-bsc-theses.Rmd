@@ -22,6 +22,8 @@ For older Bachelor and Master theses please check here:<br> [2023](msc-bsc-these
 
 <div class='headerbox'><hbox>Completed Theses in 2024</hbox></div><br>
 
+* Untersuchung der biologischen Homogenisierung urbaner Lebensräume unter Verwendung bürgerwissenschaftlicher Daten. **Martin Marunczak**, <span class='desaturated'>23.09.2024 BSc. Humboldt Universität, Lebenswissenschaftliche Fakultät, Institut für Biologie. E Heitlinger (HU), S Kramer-Schadt.</span>
+
 * Computerassistierte fotografische Wiedererkennung bei der Zauneidechse (Lacerta agilis). **David Daniel Beckenbauer**, <span class='desaturated'>22.03.2024 BSc. TU Berlin, Fakultät VI, Studiengang 'Ökologie und Umweltplanung'. Supervisors: S Kramer-Schadt, M.-O. Rödel (MfN).</span>
 
 * Foraging habitat selection by barn swallows and house martins in agricultural landscapes. **Nadja Schedensack** , <span class='desaturated'>16.06.2024 MSc. Ecology and Environmental Planning, TU Berlin. Supervisors: S Kramer-Schadt, Wiebke Ullmann (UPotsdam).</span>
