@@ -226,6 +226,7 @@ knitr::opts_chunk$set(echo = FALSE)
     <p>Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. *WILDL BIOL*, e01131</p><p>
     <a href='https://doi.org/10.1002/wlb3.01131'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Schmied_2024_WildlBiol'>![](img/repo/icon-github.png){width=12%}</a>
+    <a href='https://datadryad.org/stash/dataset/doi:10.5061/dryad.4qrfj6qgx'>![](img/repo/icon-dryad.png){width=12%}</a> </p>
     </p>
   </li>
  
