@@ -63,6 +63,9 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 
 * Scholz C, Jarquín-Díaz VH, **Planillo A**, **Radchuk V**, **Scherer C**, Schulze C, Ortmann S\*, **Kramer-Schadt S**\*, Heitlinger E\* (2024): Host weight, seasonality and anthropogenic factors contribute to parasite community differences between urban and rural foxes. SCI TOTAL ENVIRON, 936. doi:<span>[10.1016/j.scitotenv.2024.173355](https://doi.org/10.1016/j.scitotenv.2024.173355)</span>
 
+* Schultze-Naumburg J, Port M, **Kramer-Schadt S**, Heurich M (2024): Erhaltungszustand des Luchses in Deutschland -
+Untersuchung von Handlungsoptionen zur Verbesserung der Konnektivität. NUL **56(10)**, 16-25. doi:<span>[10.1399/NuL.71170](https://doi.org/10.1399/NuL.71170)</span>
+
 * Sinovas P, Alexiou I, Roberts O, Holden J, Chantha N, **Tilker A** (2024): Status and conservation implications of a newly discovered large-antlered muntjac population in Cambodia. ENDANG SPECIES RES, **53**, 493-498. doi:<span>[10.3354/esr01316](https://doi.org/10.3354/esr01316)</span>
 
 * **Sollmann R** (2024): Estimating the temporal scale of lagged responses in species abundance and occurrence. ECOSPHERE, **15**(1), e4704. doi:<span>[10.1002/ecs2.4704](https://doi.org/10.1002/ecs2.4704)</span> 
@@ -88,6 +91,8 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 *	Becker J, Liess M, **Kramer-Schadt S**, Franz M, Jager T (2024): Critical Evaluation of Effect Models for the Risk Assessment of Plant Protection Products. UBA Report **41/2024**, ISSN 1862-4804, 596 pages.  <span>[https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/41_2024_texte_critical_evaluation.pdf](https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/41_2024_texte_critical_evaluation.pdf)</span> 
 
 * Biersteker L, Planillo A, Lammertsma DR, van der Sluis T, Knauer F, **Kramer-Schadt S**, van der Grift EA, van Eupen M, Jansman HAH (2024): Habitatgeschiktheid voor de wolf in Nederland: een modelanalyse. Wageningen Environmental Research, Rapport 3350, 87 pages, ISSN: 1566-7197; <span>[https://research.wur.nl/en/publications/habitatgeschiktheid-voor-de-wolf-in-nederland-een-modelanalyse](https://research.wur.nl/en/publications/habitatgeschiktheid-voor-de-wolf-in-nederland-een-modelanalyse)</span> 
+
+* Haase D, Keil P, Mascarenhas A, Kaiser J, Albert C, Mayer F, Fischer LK, Strohbach MW, Egerer M, Bartz R, Knapp S, **Kramer-Schadt S**, Straka T, Rhein B, Wellmann T (2024): Urbane Räume, pages 787-889. In: Wirth C, Bruelheide H, Farwig N,  Marx J, Settele J (Hrsg.): Faktencheck Artenvielfalt. Bestandsaufnahme und Perspektiven für den Erhalt der biologischen Vielfalt in Deutschland. 1256 Seiten, ISBN: 978-3-98726-095-7. doi:<span>[10.14512/9783987263361](https://doi.org/10.14512/9783987263361)</span>
 
 * Thonicke K, Rahner E, Arneth A, Bonn A, Borchard N, Chaudhary A, Darbi M, Dutta T, Eberle U, Eisenhauer N, Farwig N, Flocco CG, Freitag J, Grobe P, Grosch R, Grossart HP, Grosse A, Grützmacher K, Hagemann N, Hansjürgens B, Hartman Scholz A, Hassenrück C, Häuser C, Hickler T, Hölker F, Jacob U, Jähnig S, Jürgens K, **Kramer-Schadt S**, Kretsch C, Krug C, Lindner JP, Loft L, Mann C, Matzdorf B, Mehring M, Meier R, Meusemann K, Müller D, Nieberg M, Overmann J, Peters RS, Pörtner L, Pradhan P, Prochnow A, Rduch V, Reyer C, Roos C, Scherber C, Scheunemann N, Schroer S, Schuck A, Sioen GB, Sommer S, Sommerwerk N, Tanneberger F, Tockner K, van der Voort H, Veenstra T, Verburg P, Voss M, Warner B, Wende W, Wesche K (2024): 10 Must-Knows aus der Biodiversitätsforschung 2024. <span>[https://zenodo.org/records/10794362](https://zenodo.org/records/10794362)</span>
 
