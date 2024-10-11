@@ -110,6 +110,16 @@ knitr::opts_chunk$set(echo = FALSE)
   
   
   <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/kuerschner_2024.png' alt='Figure 1 of Kuerschner et al. 2024: Conceptual figure: Landscape homogenization (a) and synchrony/asynchrony (tlag) of host life-history and host resource availability (b) influence host–pathogen dynamics (c) and subsequently the evolution of pathogenic traits (d) that will affect strain occurrence over time where gaps in the background line are times when the strain did not occur in the landscape (e).'>
+    <h3>Kürschner et al. 2024</h3>
+    <p>Resource asynchrony and landscape homogenization as drivers of virulence evolution: The case of a directly transmitted disease in a social host. *ECOL EVOL*, 14, e11065.</p><p>
+    <a href='https://doi.org/10.1002/ece3.11065'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Kuerschner_2024_EcolEvol'>![](img/repo/icon-github.png){width=12%}</a>
+    <a href='https://zenodo.org/records/10666865'>![](img/repo/icon-zenodo.png){width=12%}</a></p>
+  </li>
+  
+  
+  <li class="card-repo">
     <img class="card-repo-img" src='img/repo/louvrier_2021.png' alt='Graphical abstract of Louvrier et al. 2021: schematic illustration of the study workflow showing data sources (spatial data + photo trapping images), environmental filters (icons), species interactions (icons) and circular plots showing species activity patterns.'>
     <h3>Louvrier et al. 2021</h3>
     <p>Spatiotemporal interactions of a novel mesocarnivore community in an urban environment before and during SARS-CoV-2 lockdown. *J ANIM ECOL*, 91:367–380.</p><p>
