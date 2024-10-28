@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-# Course *biodiversity dynamics*
+# Course *Quantitative methods in animal ecology*
 
 Welcome to the course collection we have developed at our Department. Below you will find the compilation of our courses. These are hosted within one repository, so that data can be shared between the single course blocks The course has a strong focus on ecological data analysis and modelling, especially spatio-temporal data of animals. It covers the whole pipeline from observation and sampling &rarr; data analysis &rarr; model prediction &rarr; conservation concept.  
 <br>
