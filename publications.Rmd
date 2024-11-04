@@ -22,6 +22,8 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 * Berger U, Bell A, Barton CM, Chappin E, Dreßler G, Filatova T, **Fronville T**, Lee A, van Loon E, Lorscheid I, Meyer M, Müller B, Piou C, **Radchuk V**, Roxburgh N, Schüler L, Troost C, Wijermans N, Williams TG, Wimmler M-C, Grimm V (2024): Towards reusable building blocks for agent-based modelling and theory development. ENVIRON MODEL SOFTW, **175**. doi:<span>[10.1016/j.envsoft.2024.106003](https://doi.org/10.1016/j.envsoft.2024.106003)</span>
 
+* Bischof R, Vallejo-Vargas A, Semper-Pascual A, Schowanek S, Beaudrot L, Turek D, Jansen P, Rovero F, Johnson S, Lima M, Santos F, Uzabaho E, Espinosa S, Ahumada J, Bitariho R, Salvador J, **Mugerwa B**, Nsanyi Moses S, Sheil D (2024): The moon’s influence on the activity of tropical forest mammals. PROCEEDINGS B, **291**. doi:<span>[10.1098/rspb.2024.0683](https://doi.org/10.1098/rspb.2024.0683)</span> 
+
 * Bubnicki JW, Norton B, Baskauf SJ, Bruce T, Cagnacci F, Casaer J, Churski M, Cromsigt JPGM, Farra SD, Fiderer C, Forrester TD, Hendry H, Heurich M, Hofmeester TR, Jansen PA, Kays R, Kuijper DPJ, Liefting Y, Linnell JDC, Luskin MS, Mann C, Milotic T, Newman P, **Niedballa J**, Oldoni D, Ossi F, Robertson T, Rovero F, Rowcliffe M, Seidenari L, Stachowicz I, Stowell D, Tobler MW, Wieczorek J, Zimmermann F and Desmet P (2023): Camtrap DP: an open standard for the FAIR exchange and archiving of camera trap data. REMOTE SENS ECOL CONSERV. doi:<span>[10.1002/rse2.37](https://doi.org/10.1002/rse2.374)</span> 
 
 * Burton AC, Beirne C, Gaynor KM, ..., **Kramer-Schadt S**, ..., **Louvrier J** et al. (2024): Mammal responses to global changes in human activity vary by trophic group and landscape. NAT ECOL EVOL. doi:<span>[10.1038/s41559-024-02363-2](https://doi.org/10.1038/s41559-024-02363-2)</span>
@@ -30,6 +32,9 @@ For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp
 
 * Caro T, Rashid RS, Zeltman J, Gierse L-M and **Sollmann R** (2024): Meta- and subpopulation estimation with disparate data: coconut crabs in the Western Indian Ocean. ANIM CONSERV, **27**, 184-195.
 doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
+
+* Chakravarty R, **Radchuk V**, Suryawanshi K, Voigt C (2024): Mountains host significantly more data deficient and threatened bat species than lowlands. BIODIVERS CONSERV, **1-16**.
+doi:<span>[10.1007/s10531-024-02958-y](https://doi.org/10.1007/s10531-024-02958-y)</span> 
 
 * **Fronville T**, Blaum N, **Kramer-Schadt S**, Schlägel U, **Radchuk V** (2024): Performance of five statistical methods to infer interactions among moving individuals in a predator–prey system. METHODS ECOL EVOL, **00**, 1–16. doi:<span>[10.1111/2041-210X.14323](https://doi.org/10.1111/2041-210X.14323)</span>  
 
@@ -58,6 +63,8 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 * **Planillo A**, **Wenzler-Meya M**, Reinhardt I, Kluth G, Michler F-U, Stier N, **Louvrier J**, Steyer K, Gillich B, Rieger S, Knauer F, Kuemmerle T,  **Kramer-Schadt S** (2024): Understanding habitat selection of range-expanding populations of large carnivores: 20 years of grey wolves (*Canis lupus*) recolonizing Germany. DIVERS DISTRIB, **30**, 71–86. doi:<span>[10.1111/ddi.13789](https://doi.org/10.1111/ddi.13789)</span>
 
 * Rasmussen SL, Schrøder BT, Berger A, **Sollmann R**, Macdonald DW, Pertoldi C, Alstrup AKO (2024): Testing the Impact of Robotic Lawn Mowers on European Hedgehogs (*Erinaceus europaeus*) and Designing a Safety Test. ANIMALS, **14(1)**:122. doi:<span>[10.3390/ani14010122](https://doi.org/10.3390/ani14010122)</span> 
+
+* Rostro-García S, Kamler JF, **Sollmann R**, Balme G, Sukmasuang R, Godfrey A, Saosoong S, Siripattaranukul K, Suksavate S, Thomas W, Crouthers R, In V, Prum S, Clements GR, Kadir A, Liang SH, Avriandy R, Gunaryadi D, Kholiq K, Pinondang I, Surahman M, Astaras C, Macdonald DW (2024): Leopards on the edge: Assessing population status, habitat use, and threats in Southeast Asia. BIOL CONS, **299**. doi:<span>[10.1016/j.biocon.2024.110810](https://doi.org/10.1016/j.biocon.2024.110810)</span>
 
 * Schmied née Stommel C, Hofer H, **Scherer C**, **Kramer-Schadt S**\*, East ML\* (2024): Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. WILDL BIOL, e01131. doi:<span>[10.1002/wlb3.01131](https://doi.org/10.1002/wlb3.01131)</span>
 
