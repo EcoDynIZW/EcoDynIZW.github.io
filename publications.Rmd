@@ -38,7 +38,7 @@ doi:<span>[10.1007/s10531-024-02958-y](https://doi.org/10.1007/s10531-024-02958-
 
 * **Drenske S**, **Louvrier J**, **Grabow M**, **Landgraf C**, **Kramer-Schadt S** and **Planillo A** (2024): Human and predator presence shape diel activity of urban red squirrels. FRONT ECOL EVOL, **12**:1455142. doi:<span>[10.3389/fevo.2024.1455142](https://doi.org/10.3389/fevo.2024.1455142)</span>
 
-* Ferreira S, Jarquín-Díaz VH, **Planillo A**, Ďureje L, Martincová I, **Kramer-Schadt S**, Forslund-Startceva S, Heitlinger E (2024): Eco-evolutionary dynamics of host-microbiome interactions in a natural population of closely related mice subspecies and their hybrids. PrROCEEDINGS B, accepted.
+* Ferreira S, Jarquín-Díaz VH, **Planillo A**, Ďureje L, Martincová I, **Kramer-Schadt S**, Forslund-Startceva S, Heitlinger E (2024): Eco-evolutionary dynamics of host-microbiome interactions in a natural population of closely related mice subspecies and their hybrids. PRROCEEDINGS B, accepted.
 
 * **Fronville T**, Blaum N, **Kramer-Schadt S**, Schlägel U, **Radchuk V** (2024): Performance of five statistical methods to infer interactions among moving individuals in a predator–prey system. METHODS ECOL EVOL, **00**, 1–16. doi:<span>[10.1111/2041-210X.14323](https://doi.org/10.1111/2041-210X.14323)</span>  
 
