@@ -36,7 +36,7 @@ doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
 * Chakravarty R, **Radchuk V**, Suryawanshi K, Voigt C (2024): Mountains host significantly more data deficient and threatened bat species than lowlands. BIODIVERS CONSERV, **1-16**.
 doi:<span>[10.1007/s10531-024-02958-y](https://doi.org/10.1007/s10531-024-02958-y)</span> 
 
-* Curk Te, Rast W, Portas R, Kohles J, Shatumbu G, Cloete C, Curk Ti, Radchuk V, Aschenborn O, Melzheimer J (2024): Advantages and disadvantages of using social information for carcass detection–A case study using white-backed vultures. ECOL MODELL,**499**, 110941. doi:<span>[10.1016/j.ecolmodel.2024.110941](https://doi.org/10.1016/j.ecolmodel.2024.110941)</span> 
+* Curk Te, Rast W, Portas R, Kohles J, Shatumbu G, Cloete C, Curk Ti, **Radchuk V**, Aschenborn O, Melzheimer J (2024): Advantages and disadvantages of using social information for carcass detection–A case study using white-backed vultures. ECOL MODELL,**499**, 110941. doi:<span>[10.1016/j.ecolmodel.2024.110941](https://doi.org/10.1016/j.ecolmodel.2024.110941)</span> 
 
 * **Drenske S**, **Louvrier J**, **Grabow M**, **Landgraf C**, **Kramer-Schadt S** and **Planillo A** (2024): Human and predator presence shape diel activity of urban red squirrels. FRONT ECOL EVOL, **12**:1455142. doi:<span>[10.3389/fevo.2024.1455142](https://doi.org/10.3389/fevo.2024.1455142)</span>
 
