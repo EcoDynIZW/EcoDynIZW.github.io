@@ -6,121 +6,15 @@ output: distill::distill_article
 
 Find all our publication as PDFs also at [ResearchGate](https://www.researchgate.net/).   
   
-For older publications please check here:<br> [2023](pubs-2023.html)&ensp;|&ensp;[2022](pubs-2022.html)&ensp;|&ensp;[2021](pubs-2021.html)&ensp;|&ensp;[2020](pubs-2020.html)&ensp;|&ensp;[2019](pubs-2019.html)&ensp;|&ensp;[2018](pubs-2018.html) 
+For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp;[2023](pubs-2023.html)&ensp;|&ensp;[2022](pubs-2022.html)&ensp;|&ensp;[2021](pubs-2021.html)&ensp;|&ensp;[2020](pubs-2020.html)&ensp;|&ensp;[2019](pubs-2019.html)&ensp;|&ensp;[2018](pubs-2018.html) 
 
 <br>
 
-## 2024
+## 2025
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
-* Achter S, Borit M, Cottineau C, Meyer M, Polhill J, **Radchuk V** (2024): How to conduct more systematic reviews of agent-based models and foster theory development - Taking stock and looking ahead. ENVIRON MODEL SOFTW, **173** ,105867. doi:<span>[10.1016/j.envsoft.2023.105867](https://doi.org/10.1016/j.envsoft.2023.105867)</span> 
 
-* Alexiou I, Coudrat CNZ, **Niedballa J**, **Wilting A**, **Tilker A** (2024): Multi-species occupancy modeling of ground-dwelling mammals in central Laos: a case study for monitoring in tropical forests. WILDL BIOL, e01261. doi:<span>[10.1002/wlb3.01261](https://doi.org/10.1002/wlb3.01261)</span>
-
-* Alves GB, Tôrres NM, de Almeida Jácomo AT, Finnegan SP, Trapé Trinca C, Moreira R, Sanz-Pérez A, **Sollmann R**, Silveira L (2024): Jaguar (*Panthera onca*) population dynamics in an “isolated” national park in the Cerrado biome, Brazil. MAMM RES. doi:<span>[10.1007/s13364-024-00758-x](https://doi.org/10.1007/s13364-024-00758-x)</span> 
-
-* Berger U, Bell A, Barton CM, Chappin E, Dreßler G, Filatova T, **Fronville T**, Lee A, van Loon E, Lorscheid I, Meyer M, Müller B, Piou C, **Radchuk V**, Roxburgh N, Schüler L, Troost C, Wijermans N, Williams TG, Wimmler M-C, Grimm V (2024): Towards reusable building blocks for agent-based modelling and theory development. ENVIRON MODEL SOFTW, **175**. doi:<span>[10.1016/j.envsoft.2024.106003](https://doi.org/10.1016/j.envsoft.2024.106003)</span>
-
-* Bischof R, Vallejo-Vargas A, Semper-Pascual A, Schowanek S, Beaudrot L, Turek D, Jansen P, Rovero F, Johnson S, Lima M, Santos F, Uzabaho E, Espinosa S, Ahumada J, Bitariho R, Salvador J, **Mugerwa B**, Nsanyi Moses S, Sheil D (2024): The moon’s influence on the activity of tropical forest mammals. PROCEEDINGS B, **291**. doi:<span>[10.1098/rspb.2024.0683](https://doi.org/10.1098/rspb.2024.0683)</span> 
-
-* Bubnicki JW, Norton B, Baskauf SJ, Bruce T, Cagnacci F, Casaer J, Churski M, Cromsigt JPGM, Farra SD, Fiderer C, Forrester TD, Hendry H, Heurich M, Hofmeester TR, Jansen PA, Kays R, Kuijper DPJ, Liefting Y, Linnell JDC, Luskin MS, Mann C, Milotic T, Newman P, **Niedballa J**, Oldoni D, Ossi F, Robertson T, Rovero F, Rowcliffe M, Seidenari L, Stachowicz I, Stowell D, Tobler MW, Wieczorek J, Zimmermann F and Desmet P (2023): Camtrap DP: an open standard for the FAIR exchange and archiving of camera trap data. REMOTE SENS ECOL CONSERV. doi:<span>[10.1002/rse2.37](https://doi.org/10.1002/rse2.374)</span> 
-
-* Burton AC, Beirne C, Gaynor KM, ..., **Kramer-Schadt S**, ..., **Louvrier J** et al. (2024): Mammal responses to global changes in human activity vary by trophic group and landscape. NAT ECOL EVOL. doi:<span>[10.1038/s41559-024-02363-2](https://doi.org/10.1038/s41559-024-02363-2)</span>
-
-* **Calderón AP**, Landaverde-Gonzalez P, Wultsch C, Foster R, Harmsen B, Figueroa O, Garcia-Anleu R, Castañeda F, Amato G, Grimm V, **Kramer-Schadt S**, Zeller AK (2024): Modelling jaguar gene flow in fragmented landscapes offers insights into functional population connectivity. LANDSC ECOL, **39**, 12.  doi:<span>[10.1007/s10980-024-01795-2](https://doi.org/10.1007/s10980-024-01795-2)</span>
-
-* Caro T, Rashid RS, Zeltman J, Gierse L-M and **Sollmann R** (2024): Meta- and subpopulation estimation with disparate data: coconut crabs in the Western Indian Ocean. ANIM CONSERV, **27**, 184-195.
-doi:<span>[10.1111/acv.12896](https://doi.org/10.1111/acv.12896)</span>
-
-* Chakravarty R, **Radchuk V**, Suryawanshi K, Voigt C (2024): Mountains host significantly more data deficient and threatened bat species than lowlands. BIODIVERS CONSERV, **1-16**.
-doi:<span>[10.1007/s10531-024-02958-y](https://doi.org/10.1007/s10531-024-02958-y)</span> 
-
-* Curk Te, Rast W, Portas R, Kohles J, Shatumbu G, Cloete C, Curk Ti, **Radchuk V**, Aschenborn O, Melzheimer J (2024): Advantages and disadvantages of using social information for carcass detection–A case study using white-backed vultures. ECOL MODELL,**499**, 110941. doi:<span>[10.1016/j.ecolmodel.2024.110941](https://doi.org/10.1016/j.ecolmodel.2024.110941)</span> 
-
-* **Drenske S**, **Louvrier J**, **Grabow M**, **Landgraf C**, **Kramer-Schadt S** and **Planillo A** (2024): Human and predator presence shape diel activity of urban red squirrels. FRONT ECOL EVOL, **12**:1455142. doi:<span>[10.3389/fevo.2024.1455142](https://doi.org/10.3389/fevo.2024.1455142)</span>
-
-* Ferreira S, Jarquín-Díaz VH, **Planillo A**, Ďureje L, Martincová I, **Kramer-Schadt S**, Forslund-Startceva S, Heitlinger E (2024): Eco-evolutionary dynamics of host-microbiome interactions in a natural population of closely related mice subspecies and their hybrids. PRROCEEDINGS B, accepted.
-
-* **Fronville T**, Blaum N, **Kramer-Schadt S**, Schlägel U, **Radchuk V** (2024): Performance of five statistical methods to infer interactions among moving individuals in a predator–prey system. METHODS ECOL EVOL, **00**, 1–16. doi:<span>[10.1111/2041-210X.14323](https://doi.org/10.1111/2041-210X.14323)</span>  
-
-* Gordon IJ, **Sollmann R**, Rantanen EM, Johnson JA, Evans KL, Penteriani V, Boersch-Supan P (2024): Ten years on for the Letter from the Conservation Front Line. ANIM CONSERV, **27**: 139-140. doi:<span>[10.1111/acv.12944](https://doi.org/10.1111/acv.12944)</span> 
-
-* **Grabow M**, Ullmann W, **Landgraf C**, **Sollmann R**, Scholz C, Nathan R, Toledo S, Lühken R, Fickel J, Jeltsch F, Blaum N, **Radchuk V**, Tiedemann R, **Kramer-Schadt S** (2024): Sick without signs. Subclinical infections reduce local movements, alter habitat selection, and cause demographic shifts. COMMUN BIOL **7**:1426. doi:<span>[10.1038/s42003-024-07114-4](https://doi.org/10.1038/s42003-024-07114-4)</span> 
-
-* Grimm V, …, **Kramer-Schadt S**,… Railsback S (2024): Using the ODD protocol and NetLogo to replicate agent-based models. ECOL MODELL, accepted.
-
-* Jarquín-Díaz VH, **Ferreira Martins SC**, Balard A, Ďureje Ľ, Macholán M, Piálek J, Bengtsson-Palme J, **Kramer-Schadt S**, Forslund-Startceva SK, Heitlinger E (2024): Aberrant microbiomes are associated with increased antibiotic resistance gene load in hybrid mice, ISME COMMUN, **1**, 4, ycae053. doi:<span>[10.1093/ismeco/ycae053](https://doi.org/10.1093/ismeco/ycae053)</span>   
-
-* Ke A, **Sollmann R**, Frishkoff L, Echeverri A, Zook J, Karp DS (2024): Effects of agriculture and nature reserves on avian behavior in northwestern Costa Rica. CONSERV BIOL, e14241. doi:<span>[10.1111/cobi.14241](https://doi.org/10.1111/cobi.14241)</span>
-
-* **Kürschner T**, **Scherer C**, **Radchuk V**, Blaum N, **Kramer-Schadt S** (2024): Resource asynchrony and landscape homogenization as drivers of virulence evolution: The case of a directly transmitted disease in a social host. ECOL EVOL, **14**, e11065. doi:<span>[10.1002/ece3.11065](https://doi.org/10.1002/ece3.11065)</span>
-
-* Leonard A, Earth Hologenome Initiative Consortium (...**Kramer-Schadt S**, ..., Voigt, CC,...), Alberdi A (2024): A global initiative for ecological and evolutionary hologenomics. TRENDS ECOL EVOL, **3290**: 1-5. doi:<span>[10.1016/j.tree.2024.03.005](https://doi.org/10.1016/j.tree.2024.03.005)</span> 
-
-* Mendes CP, Wido RA, Zachary A, …, **Wilting A**, et al. (2024): CamTrapAsia: A Dataset of Tropical Forest Vertebrate Communities from 239 Camera Trapping Studies. ECOLOGY, e4299. doi:<span>[10.1002/ecy.4299](https://doi.org/10.1002/ecy.4299)</span>
-
-* Milles A, Bielcik M, Banitz T, Gallagher CA, Jeltsch F, Jepsen JU, Oro D, **Radchuk V**, Grimm V (2024): Defining ecological buffer mechanisms should consider diverse approaches. TREE, **39**. doi:<span>[10.1016/j.tree.2023.12.008](https://doi.org/10.1016/j.tree.2023.12.008)</span>
-
-* Moesch SS, Straka TM, Jeschke JM, Haase D, **Kramer-Schadt S** (2024): The good, the bad, and the unseen: wild mammal encounters influence wildlife preferences of residents across socio-demographic gradients. ECOL SOC **29**(3):6. doi:<span>[10.5751/ES-15211-290306](https://doi.org/10.5751/ES-15211-290306)</span> 
-
-* Moesch SS, Jeschke JM, Lokatis S, Peerenboom G, **Kramer-Schadt S**, Straka TM, Haase D (2024): The frequent five: Insights from interviews with urban wildlife professionals in Germany. PEOPLE NAT, **00**, 1–18. doi:<span>[10.1002/pan3.10697](https://doi.org/10.1002/pan3.10697)</span>
-
-* **Mugerwa B**, **Niedballa J**, **Planillo A**, Sheil D, **Kramer-Schadt S**, **Wilting A** (2024): Global disparity of camera trap research allocation and defaunation risk of terrestrial mammals. REMOTE SENS ECOL CONS, **10**, 121-136. doi:<span>[10.1002/rse2.360](https://doi.org/10.1002/rse2.360)</span>
-
-* **Nguyen A**, **Tilker A**, Le D, **Niedballa J**, **Pflumm L**, Pham XH, Le VS, Luu HT, Tran VB, **Kramer-Schadt S**, **Sollmann R**, **Wilting A** (2024): Ground-dwelling mammal and bird diversity in the southern Annamites: Exploring complex habitat associations and the ghost of past hunting pressure. CONSERV SCI PRACT, **6**, e13093.   doi:<span>[10.1111/csp2.13093](https://doi.org/10.1111/csp2.13093)</span>
-
-* **Planillo A**, **Wenzler-Meya M**, Reinhardt I, Kluth G, Michler F-U, Stier N, **Louvrier J**, Steyer K, Gillich B, Rieger S, Knauer F, Kuemmerle T,  **Kramer-Schadt S** (2024): Understanding habitat selection of range-expanding populations of large carnivores: 20 years of grey wolves (*Canis lupus*) recolonizing Germany. DIVERS DISTRIB, **30**, 71–86. doi:<span>[10.1111/ddi.13789](https://doi.org/10.1111/ddi.13789)</span>
-
-* **Planillo A**, Reinhardt I, Kluth G, Collet S, Rolshausen G, Nowak C, Steyer K, Ellwanger G, **Kramer-Schadt S** (2024): Habitat and density effects on the demography of an expanding wolf population in Central Europe. WILDL BIOL, e01246. doi:<span>[10.1002/wlb3.01246](https://doi.org/10.1002/wlb3.01246)</span>
-
-* Rasmussen SL, Schrøder BT, Berger A, **Sollmann R**, Macdonald DW, Pertoldi C, Alstrup AKO (2024): Testing the Impact of Robotic Lawn Mowers on European Hedgehogs (*Erinaceus europaeus*) and Designing a Safety Test. ANIMALS, **14(1)**:122. doi:<span>[10.3390/ani14010122](https://doi.org/10.3390/ani14010122)</span> 
-
-* Rostro-García S, Kamler JF, **Sollmann R**, Balme G, Sukmasuang R, Godfrey A, Saosoong S, Siripattaranukul K, Suksavate S, Thomas W, Crouthers R, In V, Prum S, Clements GR, Kadir A, Liang SH, Avriandy R, Gunaryadi D, Kholiq K, Pinondang I, Surahman M, Astaras C, Macdonald DW (2024): Leopards on the edge: Assessing population status, habitat use, and threats in Southeast Asia. BIOL CONS, **299**. doi:<span>[10.1016/j.biocon.2024.110810](https://doi.org/10.1016/j.biocon.2024.110810)</span>
-
-* Schmied née Stommel C, Hofer H, **Scherer C**, **Kramer-Schadt S**\*, East ML\* (2024): Effect of human induced surface water scarcity on herbivore distribution during the dry season in Ruaha National Park, Tanzania. WILDL BIOL, e01131. doi:<span>[10.1002/wlb3.01131](https://doi.org/10.1002/wlb3.01131)</span>
-
-* Scholz C, Jarquín-Díaz VH, **Planillo A**, **Radchuk V**, **Scherer C**, Schulze C, Ortmann S\*, **Kramer-Schadt S**\*, Heitlinger E\* (2024): Host weight, seasonality and anthropogenic factors contribute to parasite community differences between urban and rural foxes. SCI TOTAL ENVIRON, 936. doi:<span>[10.1016/j.scitotenv.2024.173355](https://doi.org/10.1016/j.scitotenv.2024.173355)</span>
-
-* Schultze-Naumburg J, Port M, **Kramer-Schadt S**, Heurich M (2024): Erhaltungszustand des Luchses in Deutschland -
-Untersuchung von Handlungsoptionen zur Verbesserung der Konnektivität. NUL **56(10)**, 16-25. doi:<span>[10.1399/NuL.71170](https://doi.org/10.1399/NuL.71170)</span>
-
-* Sinovas P, Alexiou I, Roberts O, Holden J, Chantha N, **Tilker A** (2024): Status and conservation implications of a newly discovered large-antlered muntjac population in Cambodia. ENDANG SPECIES RES, **53**, 493-498. doi:<span>[10.3354/esr01316](https://doi.org/10.3354/esr01316)</span>
-
-* **Sollmann R** (2024): Estimating the temporal scale of lagged responses in species abundance and occurrence. ECOSPHERE, **15**(1), e4704. doi:<span>[10.1002/ecs2.4704](https://doi.org/10.1002/ecs2.4704)</span> 
-
-* **Sollmann R** (2024): Mt or not Mt: Temporal variation in detection probability in spatial capture-recapture and occupancy models. PEER COMMUNITY J, **4**, e1. doi:<span>[10.24072/pcjournal.357](https://doi.org/10.24072/pcjournal.357)</span>  
-
-* **Sollmann R**, Adenot N, Spakovszky P, Windt J, Mattsson Brady J (2024): Accounting for observation biases associated with counts of young when estimating fecundity: case study on the arboreal-nesting red kite (*Milvus milvus*). PEER COMMUNITY J, Volume 4 article no. e62. doi:<span>[10.24072/pcjournal.436](https://doi.org/10.24072/pcjournal.436)</span> 
-
-* **Sollmann R**, Caro T (2024): Spatio-temporal metapopulation trends: The coconut crabs of Zanzibar. ECOL EVOL, **14**, e70168. doi:<span>[10.1002/ece3.70168](https://doi.org/10.1002/ece3.70168)</span>  
-
-* Stiegler J, Gallagher CA, Hering R, ..., **Boerner K**, ... , **Kimmig S**, ... , **Kramer-Schadt S**, ... et al. (2024): Mammals show faster recovery from capture and tagging in human-disturbed landscapes. NAT COMMNUN **15**, 8079. doi:<span>[10.1038/s41467-024-52381-8](https://doi.org/10.1038/s41467-024-52381-8)</span> 
-
-* Struebig M, **Wenzler M**, Runting RK, Law EA, Budiharta S, Seaman DJI, **Kramer-Schadt S** (2024): Connectivity conservation to mitigate climate and land-cover change impacts on Borneo. BIOL CONSERV **299**:110838. doi:<span>[j.biocon.2024.110838](https://doi.org/10.1016/j.biocon.2024.110838)</span>  
-
-* Tarbill GL, White AM, **Sollmann R** (2024): Floral richness drives pollinator diversity after fire in upland forest and meadows of the Sierra Nevada, California. INSECT CONSERV DIVERS (in press). doi:<span>[10.1111/icad.12756](https://doi.org/10.1111/icad.12756)</span>   
-
-* **Tilker A**, **Niedballa J**, Viet HL, Abrams JF, Marescot L, Wilkinson N, Rawson BM, **Sollmann R**, **Wilting A** (2024): Addressing the Southeast Asian snaring crisis: Impact of 11 years of snare removal in a biodiversity hotspot. CONSERV LETT, e13021. doi:<span>[10.1111/conl.13021](https://doi.org/10.1111/conl.13021)</span>
-
-* Vullioud C, **Benhaiem S**, Meneghini D, Szyf M, Shao Y, Hofer H, **East ML**, Fickel J, Weyrich A (2024): Epigenetic signatures of social status in wild female spotted hyenas (*Crocuta crocuta*). COMMUN BIOL, **7**, 1-12. doi:<span>[10.1038/s42003-024-05926-y](https://doi.org/10.1038/s42003-024-05926-y)</span>
-
-* **Wong ST**, Mohamed A, Mathai J, **Niedballa J**, Kissing J, Lagan P, Hastie AYL, **Wilting A**, **Sollmann R** (2024): Changes in tropical terrestrial vertebrate communities along two anthropogenic gradients: Forest degradation and accessibility. BIOTROPICA, **56**, e13320. doi:<span>[10.1111/btp.13320](https://doi.org/10.1111/btp.13320)</span>
 
 <<div class='headerbox'><hbox>Reports and other scientific outlets</hbox></div><br>
-
-*	Becker J, Liess M, **Kramer-Schadt S**, Franz M, Jager T (2024): Critical Evaluation of Effect Models for the Risk Assessment of Plant Protection Products. UBA Report **41/2024**, ISSN 1862-4804, 596 pages.  <span>[https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/41_2024_texte_critical_evaluation.pdf](https://www.umweltbundesamt.de/sites/default/files/medien/11850/publikationen/41_2024_texte_critical_evaluation.pdf)</span> 
-
-* Biersteker L, Planillo A, Lammertsma DR, van der Sluis T, Knauer F, **Kramer-Schadt S**, van der Grift EA, van Eupen M, Jansman HAH (2024): Habitatgeschiktheid voor de wolf in Nederland: een modelanalyse. Wageningen Environmental Research, Rapport 3350, 87 pages, ISSN: 1566-7197; <span>[https://research.wur.nl/en/publications/habitatgeschiktheid-voor-de-wolf-in-nederland-een-modelanalyse](https://research.wur.nl/en/publications/habitatgeschiktheid-voor-de-wolf-in-nederland-een-modelanalyse)</span> 
-
-* Haase D, Keil P, Mascarenhas A, Kaiser J, Albert C, Mayer F, Fischer LK, Strohbach MW, Egerer M, Bartz R, Knapp S, **Kramer-Schadt S**, Straka T, Rhein B, Wellmann T (2024): Urbane Räume, pages 787-889. In: Wirth C, Bruelheide H, Farwig N,  Marx J, Settele J (Hrsg.): Faktencheck Artenvielfalt. Bestandsaufnahme und Perspektiven für den Erhalt der biologischen Vielfalt in Deutschland. 1256 Seiten, ISBN: 978-3-98726-095-7. doi:<span>[10.14512/9783987263361](https://doi.org/10.14512/9783987263361)</span>
-
-* Thonicke K, Rahner E, Arneth A, Bonn A, Borchard N, Chaudhary A, Darbi M, Dutta T, Eberle U, Eisenhauer N, Farwig N, Flocco CG, Freitag J, Grobe P, Grosch R, Grossart HP, Grosse A, Grützmacher K, Hagemann N, Hansjürgens B, Hartman Scholz A, Hassenrück C, Häuser C, Hickler T, Hölker F, Jacob U, Jähnig S, Jürgens K, **Kramer-Schadt S**, Kretsch C, Krug C, Lindner JP, Loft L, Mann C, Matzdorf B, Mehring M, Meier R, Meusemann K, Müller D, Nieberg M, Overmann J, Peters RS, Pörtner L, Pradhan P, Prochnow A, Rduch V, Reyer C, Roos C, Scherber C, Scheunemann N, Schroer S, Schuck A, Sioen GB, Sommer S, Sommerwerk N, Tanneberger F, Tockner K, van der Voort H, Veenstra T, Verburg P, Voss M, Warner B, Wende W, Wesche K (2024): 10 Must-Knows aus der Biodiversitätsforschung 2024. <span>[https://zenodo.org/records/10794362](https://zenodo.org/records/10794362)</span>
-
-
-
-
-
-
-<!--<div class='headerbox'><hbox>Book Chapters & Reports</hbox></div><br>-->
 
