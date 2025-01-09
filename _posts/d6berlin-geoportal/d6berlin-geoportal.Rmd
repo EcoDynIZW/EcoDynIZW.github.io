@@ -1,0 +1,114 @@
+---
+title: "Download Spatial Data from the Berlin Geoportal Data Base in R"
+description: |
+  Learn how to download WFS (vector) data and ATOM (raster) data from the Berlin Geoportal data base using our custom functions `download_fisbroker_wfs()` and `download_fisbroker_atom()`.
+categories:
+  - tutorial
+  - spatial
+  - rstats
+  - data sources
+  - Berlin
+author:
+  - name: Moritz Wenzler-Meya
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/
+date: 2023-02-15
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+terra::terraOptions(progress = 0)
+```
+
+The [`{d6berlin}` package](https://github.com/EcoDynIZW/d6berlin) provides several functions for the members of the Ecological Department of the IZW. Now two functions are added to the package: `download_fisbroker_wfs()` and `download_fisbroker_atom()`.
+
+```{r install, eval=FALSE}
+install.packages("remotes")
+remotes::install_github("EcoDynIZW/d6berlin")
+install.packages("rcartocolor")
+install.packages("stars")
+```
+
+```{r library}
+library(d6berlin)
+library(dplyr)
+library(ggplot2)
+```
+
+
+## The FIS-Broker database
+
+The [Geoportal database](https://gdi.berlin.de/viewer/main/#LayerInfoDataDownload) is hosted by the Berlin Senate and provides several geographical data sets. The file formats differ and some data sets have just one of the file formats to offer. The file formats are WMS (Web Media Service: just like a png or jpg), WFS (Web Feature Service: Shapefiles) and ATOM (xml format: raster layers data). This function is only looking for WFS files (shapefiles), because these are the polygons, lines or points that we are looking for. 
+
+For using these two functions you have to select the layer you aim to download from the online data base. 
+
+## WFS Data
+
+As an example we will download the layer containing the districts of Berlin ("ALKIS Bezirke"):
+
+![](man/fisbroker_site_wfs_1_crop.png)
+![](man/fisbroker_site_wfs_2.PNG){width=50%}
+
+```{r example wfs}
+url <- "https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis_bezirk"
+
+data_wfs <- d6berlin::download_fisbroker_wfs(link = url)
+
+glimpse(data_wfs)
+
+ggplot() +
+  geom_sf(data = data_wfs, aes(fill = namgem)) +
+  rcartocolor::scale_fill_carto_d(palette = "Bold")
+```
+
+You got a spatial layer which you can save to disk or to use it directly.
+
+## ATOM Data 
+
+As an example we will download a raster of vegetation heights ("Vegetationshöhen 2020 (Umweltatlas)"):
+
+![](man/fisbroker_site_atom_1_crop.png)
+![](man/fisbroker_site_atom_2.PNG){width=50%}
+
+```{r example atom}
+url <- "https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.zip"
+
+data_atom <-
+  d6berlin::download_fisbroker_atom(
+    zip_link = url,
+    path = here::here("_posts", "d6berlin-fisbroker", "man"),
+    name = "vegetation_heights"
+  )
+
+glimpse(data_atom)
+
+data_atom_10 <- terra::aggregate(data_atom, 10)
+```
+
+
+```{r, preview=TRUE}
+ggplot() +
+  stars::geom_stars(data = stars::st_as_stars(data_atom_10)) +
+  coord_sf(expand = FALSE) + 
+  rcartocolor::scale_fill_carto_c(
+    palette = "Emrld", name = NULL, 
+    guide =  guide_legend(label.position = "bottom")
+  ) + 
+  theme_void()
+```
+
+```{r, echo=FALSE, include=FALSE}
+suppressMessages(file.remove(here::here("_posts", "d6berlin-fisbroker", "man", "vegetation_heights")))
+```
+
+A shortcut to plot this kind of data is the `plot_qualitative_map()` function from our dedicated `{d6geodata}` package. You can install this package with devtools::install_github("EcoDynIZW/d6geodata").
+
+```{r, eval=FALSE}
+d6geodata::plot_quantitative_map(tif = data_atom_10)
+```
+
+
