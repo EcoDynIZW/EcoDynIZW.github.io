@@ -12,7 +12,21 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 11 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Download Spatial Data from the Berlin Geoportal Data Base in R</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts/d6berlin-geoportal</link>
+      <description>Learn how to download WFS (vector) data and ATOM (raster) data from the Berlin Geoportal data base using our custom functions `download_fisbroker_wfs()` and `download_fisbroker_atom()`.</description>
+      <category>tutorial</category>
+      <category>spatial</category>
+      <category>rstats</category>
+      <category>data sources</category>
+      <category>Berlin</category>
+      <guid>https://ecodynizw.github.io/posts/d6berlin-geoportal</guid>
+      <pubDate>Thu, 09 Jan 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts/d6berlin-geoportal/d6berlin-geoportal_files/figure-html5/unnamed-chunk-3-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Raster Operations</title>
       <dc:creator>Moritz Wenzler-Meya</dc:creator>

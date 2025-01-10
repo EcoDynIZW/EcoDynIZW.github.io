@@ -12,7 +12,7 @@ author:
   - name: Moritz Wenzler-Meya
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/
-date: 2023-02-15
+date: 2025-01-10
 output:
   distill::distill_article:
     self_contained: false
@@ -40,7 +40,7 @@ library(ggplot2)
 ```
 
 
-## The FIS-Broker database
+## The Geoportal database
 
 The [Geoportal database](https://gdi.berlin.de/viewer/main/#LayerInfoDataDownload) is hosted by the Berlin Senate and provides several geographical data sets. The file formats differ and some data sets have just one of the file formats to offer. The file formats are WMS (Web Media Service: just like a png or jpg), WFS (Web Feature Service: Shapefiles) and ATOM (xml format: raster layers data). This function is only looking for WFS files (shapefiles), because these are the polygons, lines or points that we are looking for. 
 
@@ -50,11 +50,16 @@ For using these two functions you have to select the layer you aim to download f
 
 As an example we will download the layer containing the districts of Berlin ("ALKIS Bezirke"):
 
-![](man/fisbroker_site_wfs_1_crop.png)
-![](man/fisbroker_site_wfs_2.PNG){width=50%}
+Copy the name or browse for your desired data.
+
+1. Click on the layer
+2. Click on "WFS/Atom Downloaddienste"
+3. Right click on the layer you want to download and copy the link
+
+![](man/geoportal_2_marks.jpg)
 
 ```{r example wfs}
-url <- "https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis_bezirk"
+url <- "https://gdi.berlin.de/services/wfs/alkis_bezirke?REQUEST=GetCapabilities&SERVICE=wfs"
 
 data_wfs <- d6berlin::download_fisbroker_wfs(link = url)
 
@@ -67,12 +72,42 @@ ggplot() +
 
 You got a spatial layer which you can save to disk or to use it directly.
 
+## WFS Data - special case
+
+In some cases you'll get an unusual geometry type like "COMPOUNDCURVE".
+With the following you can transform the data to the desired geometry type:
+
+For example "Straßenabschnitte - Verkehrsobjekte des Regionalen Bezugssytems (RBS)" contains this unusual geometry type.
+
+```{r}
+roads <- d6berlin::download_fisbroker_wfs("https://gdi.berlin.de/services/wfs/rbs_strab?REQUEST=GetCapabilities&SERVICE=wfs")
+
+roads_coll <- sf::st_cast(roads, "GEOMETRYCOLLECTION") # transform to GEOMETRYCOLLECTION
+roads_lines <- sf::st_collection_extract(roads_coll, "LINESTRING") # and now to LINESTRING
+```
+
+Hint: You may find the geometry type in the description of the data. 
+
+```{r}
+roads_lines
+```
+
 ## ATOM Data 
 
 As an example we will download a raster of vegetation heights ("Vegetationshöhen 2020 (Umweltatlas)"):
 
-![](man/fisbroker_site_atom_1_crop.png)
-![](man/fisbroker_site_atom_2.PNG){width=50%}
+1. Click on the layer
+2. Click on "weitere Metadaten"
+
+![](man/geoportal_atom_1_marks.jpg)
+
+Look for the data set which contains the raster data and click on "mehr..."
+
+![](man/geoportal_atom_2_marks.jpg)
+Find the downloadable data and eaither download the data directly or copy the download link for the next step.
+
+![](man/geoportal_atom_3_marks.jpg)
+
 
 ```{r example atom}
 url <- "https://fbinter.stadt-berlin.de/fb/atom/Vegetationshoehen/veghoehe_2020.zip"
@@ -110,5 +145,4 @@ A shortcut to plot this kind of data is the `plot_qualitative_map()` function fr
 ```{r, eval=FALSE}
 d6geodata::plot_quantitative_map(tif = data_atom_10)
 ```
-
 
