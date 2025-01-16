@@ -46,9 +46,7 @@ doi:<span>[10.1007/s10531-024-02958-y](https://doi.org/10.1007/s10531-024-02958-
 
 * Gordon IJ, **Sollmann R**, Rantanen EM, Johnson JA, Evans KL, Penteriani V, Boersch-Supan P (2024): Ten years on for the Letter from the Conservation Front Line. ANIM CONSERV, **27**: 139-140. doi:<span>[10.1111/acv.12944](https://doi.org/10.1111/acv.12944)</span> 
 
-* **Grabow M**, Ullmann W, **Landgraf C**, **Sollmann R**, Scholz C, Nathan R, Toledo S, Lühken R, Fickel J, Jeltsch F, Blaum N, **Radchuk V**, Tiedemann R, **Kramer-Schadt S** (2024): Sick without signs. Subclinical infections reduce local movements, alter habitat selection, and cause demographic shifts. COMMUN BIOL **7**:1426. doi:<span>[10.1038/s42003-024-07114-4](https://doi.org/10.1038/s42003-024-07114-4)</span> 
-
-* Grimm V, …, **Kramer-Schadt S**,… Railsback S (2024): Using the ODD protocol and NetLogo to replicate agent-based models. ECOL MODELL, accepted.
+* **Grabow M**, Ullmann W, **Landgraf C**, **Sollmann R**, Scholz C, Nathan R, Toledo S, Lühken R, Fickel J, Jeltsch F, Blaum N, **Radchuk V**, Tiedemann R, **Kramer-Schadt S** (2024): Sick without signs. Subclinical infections reduce local movements, alter habitat selection, and cause demographic shifts. COMMUN BIOL, **7**:1426. doi:<span>[10.1038/s42003-024-07114-4](https://doi.org/10.1038/s42003-024-07114-4)</span> 
 
 * Jarquín-Díaz VH, **Ferreira Martins SC**, Balard A, Ďureje Ľ, Macholán M, Piálek J, Bengtsson-Palme J, **Kramer-Schadt S**, Forslund-Startceva SK, Heitlinger E (2024): Aberrant microbiomes are associated with increased antibiotic resistance gene load in hybrid mice, ISME COMMUN, **1**, 4, ycae053. doi:<span>[10.1093/ismeco/ycae053](https://doi.org/10.1093/ismeco/ycae053)</span>   
 

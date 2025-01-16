@@ -14,6 +14,11 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
+* Grimm V, …, **Kramer-Schadt S**,… Railsback S (2024): Using the ODD protocol and NetLogo to replicate agent-based models. ECOL MODELL, **501**, 1-8. doi:<span>[10.1016/j.ecolmodel.2024.110967](https://doi.org/10.1016/j.ecolmodel.2024.110967)</span>  
+
+* Premier J, Bastianelli ML, Oeser J, …, **Kramer-Schadt S**, Heurich M (2025): Survival of Eurasian lynx in the human-dominated landscape of Europe. CONSERV BIOL, e14439. doi:<span>[10.1111/cobi.14439](https://doi.org/10.1111/cobi.14439)</span>  
+
+* Straka T, **Radchuk V**, Kowarik I, von der Lippe M, Buchholz S (2025): Urbanization Impacts Top Predators and Alters Biotic Interactions in Predator–Prey–Mutualistic Communities of Urban Dry Grasslands. ECOL EVOL, **15**:e70791 doi:<span>[10.1002/ece3.70791](https://doi.org/10.1002/ece3.70791)</span>  
 
 
 <<div class='headerbox'><hbox>Reports and other scientific outlets</hbox></div><br>
