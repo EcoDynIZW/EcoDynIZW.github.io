@@ -14,6 +14,8 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
+* Gould E, Fraser HS, Parker TH, ... **Sollmann R**, ... et al.(2025): Same data, different analysts: variation in effect sizes due to analytical decisions in ecology and evolutionary biology. BMC BIOL **23**, 35. doi:<span>[10.1186/s12915-024-02101-x](https://doi.org/10.1186/s12915-024-02101-x)</span>  
+
 * Grimm V, …, **Kramer-Schadt S**,… Railsback S (2024): Using the ODD protocol and NetLogo to replicate agent-based models. ECOL MODELL, **501**, 1-8. doi:<span>[10.1016/j.ecolmodel.2024.110967](https://doi.org/10.1016/j.ecolmodel.2024.110967)</span>  
 
 * **Nguyen A**, **Tilker A**, Le QT, Nguyen M, Tran VT, Luu HT, Tran VB, Le D, Pflumm L, **Niedballa J**, **Sollmann R**, **Wilting A** (2025): Ecotones shape ground-dwelling mammal and bird diversity along a habitat gradient in the southern coastal dry forests of Vietnam. BIOTROPICA **57/1** e13422.doi:<span>[10.1111/btp.13422](https://doi.org/10.1111/btp.13422)</span>
@@ -22,6 +24,7 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * Straka T, **Radchuk V**, Kowarik I, von der Lippe M, Buchholz S (2025): Urbanization Impacts Top Predators and Alters Biotic Interactions in Predator–Prey–Mutualistic Communities of Urban Dry Grasslands. ECOL EVOL, **15**:e70791 doi:<span>[10.1002/ece3.70791](https://doi.org/10.1002/ece3.70791)</span>  
 
+* **Wong ST**, Guharajan R, Petrus A, Jubili J, Kissing J, Lagan P, Ong R, **Wilting A**, **Sollmann R** (2025): Terrestrial Wildlife Shows Limited Response in Spatiotemporal Activity to Logging. ECOSPHERE **16(2)**: e70185. doi:<span>[10.1002/ecs2.70185](https://doi.org/10.1002/ecs2.70185)</span> 
 
-<<div class='headerbox'><hbox>Reports and other scientific outlets</hbox></div><br>
+<div class='headerbox'><hbox>Reports and other scientific outlets</hbox></div><br>
 
