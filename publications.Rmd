@@ -14,6 +14,8 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
+* Devarajan K, ... **Sollmann R**, **Tilker A**, **Wilting A**, ...  et al. (2025): When the wild things are: Defining mammalian diel activity and plasticity. SCI ADV **11**, eado3843. doi:<span>[10.1126/sciadv.ado3843](https://doi.org/10.1126/sciadv.ado3843)</span>
+
 * Gould E, Fraser HS, Parker TH, ... **Sollmann R**, ... et al.(2025): Same data, different analysts: variation in effect sizes due to analytical decisions in ecology and evolutionary biology. BMC BIOL **23**, 35. doi:<span>[10.1186/s12915-024-02101-x](https://doi.org/10.1186/s12915-024-02101-x)</span>  
 
 * Greco I, Beaudrot L, Sutherland C, Tenan S, Hsieh C, Gorczynski D, ... **Mugerwa B**, ...  et al. (2025): Landscape-level human disturbance results in loss and contraction of mammalian populations in tropical forests. PLOS BIOL **23(2):** e3002976. doi:<span>[10.1371/journal.pbio.3002976](https://doi.org/10.1371/journal.pbio.3002976)</span> 
