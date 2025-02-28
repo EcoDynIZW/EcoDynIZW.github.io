@@ -88,640 +88,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Ecological Dynamics</title>
+  <title>Ensuring Geospatial Accuracy: CRS Assignments and Transformations</title>
 
-  <meta property="description" itemprop="description" content="Department 6 at Leibniz Institute for Zoo and Wildlife Research (IZW)"/>
+  <meta property="description" itemprop="description" content="This post aims to provide a comprehensive guide on correctly assigning coordinate reference systems (CRS) and handling spatial data with different CRS configurations. It will demonstrate how to project/transform geodata and their coordinates from one CRS to another, ensuring that all spatial objects (maps, rasters, shapefiles) align accurately in a common reference frame."/>
 
-  <link rel="icon" type="image/png" href="img/d6_purple_round.png"/>
 
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2025-02-28"/>
+  <meta property="article:created" itemprop="dateCreated" content="2025-02-28"/>
+  <meta name="article:author" content="Moritz Wenzler-Meya"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Ecological Dynamics"/>
+  <meta property="og:title" content="Ensuring Geospatial Accuracy: CRS Assignments and Transformations"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Department 6 at Leibniz Institute for Zoo and Wildlife Research (IZW)"/>
+  <meta property="og:description" content="This post aims to provide a comprehensive guide on correctly assigning coordinate reference systems (CRS) and handling spatial data with different CRS configurations. It will demonstrate how to project/transform geodata and their coordinates from one CRS to another, ensuring that all spatial objects (maps, rasters, shapefiles) align accurately in a common reference frame."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Ecological Dynamics"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Ecological Dynamics"/>
-  <meta property="twitter:description" content="Department 6 at Leibniz Institute for Zoo and Wildlife Research (IZW)"/>
-  <meta property="twitter:site" content="@EcoDynIZW"/>
+  <meta property="twitter:title" content="Ensuring Geospatial Accuracy: CRS Assignments and Transformations"/>
+  <meta property="twitter:description" content="This post aims to provide a comprehensive guide on correctly assigning coordinate reference systems (CRS) and handling spatial data with different CRS configurations. It will demonstrate how to project/transform geodata and their coordinates from one CRS to another, ensuring that all spatial objects (maps, rasters, shapefiles) align accurately in a common reference frame."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Ecological Dynamics"]},{"type":"character","attributes":{},"value":["Department 6 at Leibniz Institute for Zoo and Wildlife Research (IZW)"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Ensuring Geospatial Accuracy: CRS Assignments and Transformations"]},{"type":"character","attributes":{},"value":["This post aims to provide a comprehensive guide on correctly assigning coordinate reference systems (CRS) and handling spatial data with different CRS configurations. It will demonstrate how to project/transform geodata and their coordinates from one CRS to another, ensuring that all spatial objects (maps, rasters, shapefiles) align accurately in a common reference frame.\n"]},{"type":"character","attributes":{},"value":["Spatial","Tutorial"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Moritz Wenzler-Meya"]},{"type":"character","attributes":{},"value":["IZW Berlin"]},{"type":"character","attributes":{},"value":["https://ecodynizw.github.io/EcoDynIZW"]}]}]},{"type":"character","attributes":{},"value":["2025-02-28"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"logical","attributes":{},"value":[false]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["common_mistakes_with_geodata_files/anchor-4.2.2/anchor.min.js","common_mistakes_with_geodata_files/bowser-1.9.3/bowser.min.js","common_mistakes_with_geodata_files/distill-2.2.21/template.v2.js","common_mistakes_with_geodata_files/header-attrs-2.29/header-attrs.js","common_mistakes_with_geodata_files/jquery-3.6.0/jquery-3.6.0.js","common_mistakes_with_geodata_files/jquery-3.6.0/jquery-3.6.0.min.js","common_mistakes_with_geodata_files/jquery-3.6.0/jquery-3.6.0.min.map","common_mistakes_with_geodata_files/popper-2.6.0/popper.min.js","common_mistakes_with_geodata_files/tippy-6.2.7/tippy-bundle.umd.min.js","common_mistakes_with_geodata_files/tippy-6.2.7/tippy-light-border.css","common_mistakes_with_geodata_files/tippy-6.2.7/tippy.css","common_mistakes_with_geodata_files/tippy-6.2.7/tippy.umd.min.js","common_mistakes_with_geodata_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2100,596 +1499,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </script>
 
-  <style type="text/css">
-  /* base variables */
-
-  /* Edit the CSS properties in this file to create a custom
-     Distill theme. Only edit values in the right column
-     for each row; values shown are the CSS defaults.
-     To return any property to the default,
-     you may set its value to: unset
-     All rows must end with a semi-colon.                      */
-
-  /* Optional: embed custom fonts here with `@import`          */
-  /* This must remain at the top of this file.                 */
-
-
-
-  html {
-    /*-- Main font sizes --*/
-    --title-size:      50px;
-    --body-size:       1.06rem;
-    --code-size:       14px;
-    --aside-size:      12px;
-    --fig-cap-size:    13px;
-    /*-- Main font colors --*/
-    --title-color:     #000000;
-    --header-color:    rgba(0, 0, 0, 0.8);
-    --body-color:      rgba(0, 0, 0, 0.8);
-    --aside-color:     rgba(0, 0, 0, 0.6);
-    --fig-cap-color:   rgba(0, 0, 0, 0.6);
-    /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    sans-serif;
-    --mono-font:       monospace;
-    --body-font:       sans-serif;
-    --navbar-font:     sans-serif;  /* websites + blogs only */
-  }
-
-  /*-- ARTICLE METADATA --*/
-  d-byline {
-    --heading-size:    0.6rem;
-    --heading-color:   rgba(0, 0, 0, 0.5);
-    --body-size:       0.8rem;
-    --body-color:      rgba(0, 0, 0, 0.8);
-  }
-
-  /*-- ARTICLE TABLE OF CONTENTS --*/
-  .d-contents {
-    --heading-size:    18px;
-    --contents-size:   13px;
-  }
-
-  /*-- ARTICLE APPENDIX --*/
-  d-appendix {
-    --heading-size:    15px;
-    --heading-color:   rgba(0, 0, 0, 0.65);
-    --text-size:       0.8em;
-    --text-color:      rgba(0, 0, 0, 0.5);
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  /* These properties only apply to Distill sites and blogs  */
-
-  .distill-site-header {
-    --title-size:       18px;
-    --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
-    --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
-  }
-
-  .distill-site-footer {
-    --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
-    --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
-  }
-
-  /*-- Additional custom styles --*/
-  /* Add any additional CSS rules below                      */
-  </style>
-  <style type="text/css">
-  /* base variables */
-
-  /* Edit the CSS properties in this file to create a custom
-     Distill theme. Only edit values in the right column
-     for each row; values shown are the CSS defaults.
-     To return any property to the default,
-     you may set its value to: unset
-     All rows must end with a semi-colon.                      */
-
-  /* Optional: embed custom fonts here with `@import`          */
-  /* This must remain at the top of this file.                 */
-
-  @import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,200;0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Fira+Mono:wght@400;500;700&family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-
-  html {
-    /*-- Main font sizes --*/
-    --title-size:      3rem;
-    --body-size:       1.07rem;
-    --code-size:       0.875rem;
-    --aside-size:      0.75rem;
-    --fig-cap-size:    0.875rem;
-    /*-- Main font colors --*/
-    --title-color:     #110a31;
-    --header-color:    rgba(0, 0, 0, 0.8);
-    --body-color:      rgba(0, 0, 0, 0.8);
-    --aside-color:     rgba(0, 0, 0, 0.6);
-    --fig-cap-color:   rgba(0, 0, 0, 0.6);
-    /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    PT Sans Caption;
-    --mono-font:       PT Mono;
-    --body-font:       PT Sans;
-    --navbar-font:     PT Sans Narrow;
-  }
-
-  /*-- ARTICLE METADATA --*/
-  d-byline {
-    --heading-size:    0.6rem;
-    --heading-color:   rgba(0, 0, 0, 0.5);
-    --body-size:       0.8rem;
-    --body-color:      rgba(0, 0, 0, 0.8);
-  }
-
-  /*-- ARTICLE TABLE OF CONTENTS --*/
-  .d-contents {
-    --heading-size:    1.125rem;
-    --contents-size:   0.875rem;
-  }
-
-  /*-- ARTICLE APPENDIX --*/
-  d-appendix {
-    --heading-size:    1.125rem;
-    --heading-color:   rgba(0, 0, 0, 0.65);
-    --text-size:       0.8rem;
-    --text-color:      rgba(0, 0, 0, 0.5);
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  /* These properties only apply to Distill sites and blogs  */
-
-  .distill-site-header {
-    --title-size:       1.25rem;
-    --text-size:        1.125rem;
-    --text-color:       rgba(255, 255, 255, .8);
-    --hover-color:      white;
-    --bkgd-color:       #110a31;
-  }
-
-  .distill-site-footer {
-    --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        0.75rem;
-    --hover-color:      white;
-    --bkgd-color:       #110a31;
-  }
-
-  /*-- Additional custom styles --*/
-  /* Add any additional CSS rules below */
-
-  .nav-search {
-    font-size: 0.8rem;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #110a31;
-  }
-
-  /*p {
-    text-align: justify;
-  }*/
-
-  d-article h2 {
-      margin: 1rem 0 1rem 0;
-  }
-
-  d-article h3 {
-      margin: 1rem 0 0.5rem 0;
-  }
-
-  d-article li {
-      margin-bottom: 0;
-  }
-
-  li + li, ul + ul {
-    margin-top: 6px;
-  }
-
-  .headerbox {
-    padding: 10px;
-    text-align: left;
-    background: #110a31;
-    margin: 0.75rem 0 0.375rem 0;
-  }
-  hbox{
-    font-family: PT Sans Caption;
-    color: white;
-    font-size: 1.375rem;
-    font-weight: bold;
-  }
-
-  .headerbox-secondary {
-    padding: 10px;
-    text-align: left;
-    border: 5px solid #110a31;
-    margin: 0.75rem 0 1.0rem 0;
-  }
-  hbox-secondary{
-    font-family: PT Sans Caption;
-    color: #110a31;
-    font-size: 1.375rem;
-    font-weight: bold;
-  }
-
-  .figcaption {
-    font-family: PT Serif;
-    color: grey;
-    font-size: 0.75rem;
-    font-style: italic;
-  }
-
-  .highlightbox {
-    padding: 1.75rem;
-    text-align: left;
-    background: #efefee;
-    padding-bottom: 1.125rem;
-    margin: 0.625rem 0 1.0rem 0;
-  }
-  .highlight {
-    font-family: PT Serif;
-    font-size: 1.125rem;
-    font-weight: 600;
-    line-height: 140%;
-  }
-
-  .desaturated {
-    color: #8c8c8c;
-    font-weight: 200;
-  }
-
-  .orange {
-    color: orange;
-  }
-
-  small {
-    font-size: 0.9rem;
-    line-height: 180%;
-  }
-
-  .nospace {
-    margin-bottom: 0;
-  }
-
-  .column {
-    float: left;
-    width: 50%;
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  @media screen and (max-width: 768px) {
-  	.distill-site-header.responsive{
-  		max-height: 100vh;
-  		overflow-y: auto;
-  		position fixed;
-  		top: 0;
-  	}
-
-    html {
-      --title-size: 2.625rem;
-      --body-size: 1.1rem;
-    }
-
-    .distill-site-header {
-      --title-size: 1.375rem;
-      --text-size:  1.375rem;
-    }
-
-    .highlight {
-        font-family: PT Serif;
-        font-size: 1.05rem;
-        font-weight: 600;
-        line-height: 140%;
-    }
-  }
-
-  .card-column {
-    float: left;
-    position: relative;
-    width: 30%;
-    padding: 6px;
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .card {
-    background-color: #f6f6f6;
-    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
-    transition: 0.3s;
-    padding: 3px 18px 12px 18px;
-    border-radius: 0.5rem;
-    margin: auto;
-    place-items: center;
-  }
-
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 1.5px 7.5px 15px 0 rgba(17, 10, 49, 0.5);
-  }
-
-  .card-wrapper {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: inline-grid;
-    grid-template-columns: repeat(auto-fit, minmax(.5ch, 32ch));
-    grid-gap: 2.5rem;
-    max-width: 80vw;
-    width: 110ch;
-    padding: 3rem 1rem 5rem 1rem;
-    overflow: hidden;
-    place-self: center;
-    justify-content: center; 
-  }
-
-  grid-item {
-    margin: auto;
-  }
-
-  li.card {
-    margin: 0;
-  }
-
-  .card-content {
-    font-size: .9em;
-    line-height: 180%;
-  }
-
-  .card h2 {
-    padding-bottom: .3rem;
-    font-size: 1.6rem;
-  }
-
-  .card-repo {
-    background-color: #f6f6f6;
-    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(17, 10, 49, 0.2);
-    transition: 0.3s;
-    padding: 12px 12px 12px 12px;
-    border-radius: 0.5rem;
-    margin: 12px;
-    place-items: center;
-    overflow: hidden;
-    width: 300px;
-    height: 100%;
-
-    > :last-child {
-      margin-bottom: 0;
-    }
-
-    &:hover,
-    &:focus-within {
-      --card-gradient: #24a9d5 max(8.5rem, 20vh);
-    }
-  }
-
-
-
-
-
-  .card-repo-img {
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    /*border: 1px solid #110a31;*/
-    
-    ~ * {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-  }
-
-  .posts-list .post-preview .thumbnail {
-    max-width: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-
-
-  @media screen and (min-width: 769px) {
-    .posts-list .post-preview .thumbnail {
-      max-width: 300px;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    
-  	.nav-dropdown-content{
-  		max-height:100vh;
-  		overflow-y:auto;
-  	}
-  }</style>
-  <style type="text/css">
-  /* base style */
-
-  /* FONT FAMILIES */
-
-  :root {
-    --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-    --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  }
-
-  body,
-  .posts-list .post-preview p,
-  .posts-list .description p {
-    font-family: var(--body-font), var(--body-default);
-  }
-
-  h1, h2, h3, h4, h5, h6,
-  .posts-list .post-preview h2,
-  .posts-list .description h2 {
-    font-family: var(--heading-font), var(--heading-default);
-  }
-
-  d-article div.sourceCode code,
-  d-article pre code {
-    font-family: var(--mono-font), var(--mono-default);
-  }
-
-
-  /*-- TITLE --*/
-  d-title h1,
-  .posts-list > h1 {
-    color: var(--title-color, black);
-  }
-
-  d-title h1 {
-    font-size: var(--title-size, 50px);
-  }
-
-  /*-- HEADERS --*/
-  d-article h1,
-  d-article h2,
-  d-article h3,
-  d-article h4,
-  d-article h5,
-  d-article h6 {
-    color: var(--header-color, rgba(0, 0, 0, 0.8));
-  }
-
-  /*-- BODY --*/
-  d-article > p,  /* only text inside of <p> tags */
-  d-article > ul, /* lists */
-  d-article > ol {
-    color: var(--body-color, rgba(0, 0, 0, 0.8));
-    font-size: var(--body-size, 1.06rem);
-  }
-
-
-  /*-- CODE --*/
-  d-article div.sourceCode code,
-  d-article pre code {
-    font-size: var(--code-size, 14px);
-  }
-
-  /*-- ASIDE --*/
-  d-article aside {
-    font-size: var(--aside-size, 12px);
-    color: var(--aside-color, rgba(0, 0, 0, 0.6));
-  }
-
-  /*-- FIGURE CAPTIONS --*/
-  figure .caption,
-  figure figcaption,
-  .figure .caption {
-    font-size: var(--fig-cap-size, 13px);
-    color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
-  }
-
-  /*-- METADATA --*/
-  d-byline h3 {
-    font-size: var(--heading-size, 0.6rem);
-    color: var(--heading-color, rgba(0, 0, 0, 0.5));
-  }
-
-  d-byline {
-    font-size: var(--body-size, 0.8rem);
-    color: var(--body-color, rgba(0, 0, 0, 0.8));
-  }
-
-  d-byline a,
-  d-article d-byline a {
-    color: var(--body-color, rgba(0, 0, 0, 0.8));
-  }
-
-  /*-- TABLE OF CONTENTS --*/
-  .d-contents nav h3 {
-    font-size: var(--heading-size, 18px);
-  }
-
-  .d-contents nav a {
-    font-size: var(--contents-size, 13px);
-  }
-
-  /*-- APPENDIX --*/
-  d-appendix h3 {
-    font-size: var(--heading-size, 15px);
-    color: var(--heading-color, rgba(0, 0, 0, 0.65));
-  }
-
-  d-appendix {
-    font-size: var(--text-size, 0.8em);
-    color: var(--text-color, rgba(0, 0, 0, 0.5));
-  }
-
-  d-appendix d-footnote-list a.footnote-backlink {
-    color: var(--text-color, rgba(0, 0, 0, 0.5));
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  .distill-site-header .title {
-    font-size: var(--title-size, 18px);
-    font-family: var(--navbar-font), var(--heading-default);
-  }
-
-  .distill-site-header a,
-  .nav-dropdown .nav-dropbtn {
-    font-family: var(--navbar-font), var(--heading-default);
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    color: var(--text-color, rgba(255, 255, 255, 0.8));
-    font-size: var(--text-size, 15px);
-  }
-
-  .distill-site-header a:hover,
-  .nav-dropdown:hover .nav-dropbtn {
-    color: var(--hover-color, white);
-  }
-
-  .distill-site-header {
-    font-size: var(--text-size, 15px);
-    color: var(--text-color, rgba(255, 255, 255, 0.8));
-    background-color: var(--bkgd-color, #0F2E3D);
-  }
-
-  .distill-site-footer {
-    font-size: var(--text-size, 15px);
-    color: var(--text-color, rgba(255, 255, 255, 0.8));
-    background-color: var(--bkgd-color, #0F2E3D);
-  }
-
-  .distill-site-footer a:hover {
-    color: var(--hover-color, white);
-  }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
-  <link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
-  <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-  <script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
-  <link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-  <script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
-  <script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-  <link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-  <script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
-  <script src="site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
-  <script src="site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="common_mistakes_with_geodata_files/header-attrs-2.29/header-attrs.js"></script>
+  <script src="common_mistakes_with_geodata_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="common_mistakes_with_geodata_files/popper-2.6.0/popper.min.js"></script>
+  <link href="common_mistakes_with_geodata_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="common_mistakes_with_geodata_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="common_mistakes_with_geodata_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="common_mistakes_with_geodata_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="common_mistakes_with_geodata_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="common_mistakes_with_geodata_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="common_mistakes_with_geodata_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
@@ -2701,131 +1521,294 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Ecological Dynamics","description":"Department 6 at Leibniz Institute for Zoo and Wildlife Research (IZW)","authors":[]}
+{"title":"Ensuring Geospatial Accuracy: CRS Assignments and Transformations","description":"This post aims to provide a comprehensive guide on correctly assigning coordinate reference systems (CRS) and handling spatial data with different CRS configurations. It will demonstrate how to project/transform geodata and their coordinates from one CRS to another, ensuring that all spatial objects (maps, rasters, shapefiles) align accurately in a common reference frame.","authors":[{"author":"Moritz Wenzler-Meya","authorURL":"#","affiliation":"IZW Berlin","affiliationURL":"https://ecodynizw.github.io/EcoDynIZW","orcidID":""}],"publishedDate":"2025-02-28T00:00:00.000+01:00","citationText":"Wenzler-Meya, 2025"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a class="logo">
-<img src="img/d6_white.png" alt="Logo"/>
-</a>
-<a href="index.html" class="title">Ecological Dynamics</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-Teams
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="team-individual.html">Individual Dynamics</a>
-<a href="team-population.html">Population Dynamics</a>
-<a href="team-biodiversity.html">Biodiversity Dynamics</a>
-</div>
-</div>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-Research
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="publications.html">Publications</a>
-<a href="repositories.html">Repositories</a>
-<a href="guidelines.html">Guidelines</a>
-<a href="doctoral-theses.html">Doctoral Theses</a>
-<a href="msc-bsc-theses.html">Msc/Bsc Theses</a>
-</div>
-</div>
-<a href="teaching.html">Teaching</a>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-Wikis
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="coding.html">Coding</a>
-<a href="geodata.html">Geodata</a>
-</div>
-</div>
-<a href="https://twitter.com/EcoDynIZW">
-<i class="fa fa-twitter" aria-hidden="true"></i>
-</a>
-<a href="https://github.com/EcoDynIZW" aria-label="Link to source">
-<i class="fab fa-github" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Ecological Dynamics</h1>
+<h1>Ensuring Geospatial Accuracy: CRS Assignments and Transformations</h1>
 
 <!--radix_placeholder_categories-->
+<div class="dt-tags">
+<div class="dt-tag">Spatial</div>
+<div class="dt-tag">Tutorial</div>
+</div>
 <!--/radix_placeholder_categories-->
-<p>Department 6 at Leibniz Institute for Zoo and Wildlife Research (IZW)</p>
+<p><p>This post aims to provide a comprehensive guide on correctly assigning coordinate reference systems (CRS) and handling spatial data with different CRS configurations. It will demonstrate how to project/transform geodata and their coordinates from one CRS to another, ensuring that all spatial objects (maps, rasters, shapefiles) align accurately in a common reference frame.</p></p>
 </div>
 
+<div class="d-byline">
+  Moritz Wenzler-Meya  (IZW Berlin)<a href="https://ecodynizw.github.io/EcoDynIZW" class="uri">https://ecodynizw.github.io/EcoDynIZW</a>
+  
+<br/>2025-02-28
+</div>
 
 <div class="d-article">
-<h1 id="welcome-to-d6">Welcome to D6!</h1>
-<p>We are scientists of the Department of Ecological Dynamics at the <a href="https://www.izw-berlin.de/en/home.html">Leibniz Institute for Zoo and Wildlife Research in Berlin</a>, Germany. Our research is focused on understanding ecological dynamics in space and time, at different levels of organisation, from individuals to communities, and across gradients of human altered environments.</p>
-<p>We investigate how fitness consequences of processes acting at the individual level, such as social behaviour or movements, competition, predator-prey or host-pathogen interactions, shape population and community dynamics, also at evolutionary scales. To ensure transparency and reproducibility, we follow the <a href="https://www.nature.com/articles/sdata201618">FAIR principles</a> and provide code and data of published papers in our GitHub <a href="https://github.com/orgs/EcoDynIZW/repositories.html">repositories</a>.</p>
-<p><strong>→ Follow us on <a href="https://twitter.com/EcoDynIZW">Twitter</a> and <a href="https://github.com/EcoDynIZW">GitHub</a>.</strong></p>
-<ul class="card-wrapper">
-<li class="card">
-<h2 id="our-vision">Our Vision</h2>
-<div class="card-content">
-Our ultimate goal is to predict the <strong>future viability of wildlife populations, species, and communities</strong> faced with accelerating environmental change in the anthropocene and to improve landscape scale planning for conservation.
-</div>
-</li>
-<li class="card">
-<h2 id="our-mission">Our Mission</h2>
-<div class="card-content">
-We advance theory and concepts in ecology and evolution as well as the use of computational toolkits by developing and using a wide range of modern field and lab techniques and dynamic and simulation modeling.
-</div>
-</li>
-<li class="card">
-<h2 id="our-teams">Our Teams</h2>
-<div class="card-content">
-We are organized in three teams spanning all levels from <a href="https://ecodynizw.github.io/team-individual.html">individuals</a> to <a href="https://ecodynizw.github.io/team-population.html">populations</a> to <a href="https://ecodynizw.github.io/team-biodiversity.html">communities</a>. Check out the three team pages for an overview of our current projects, group activities, and our latest publications!
-</div>
-</li>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#load-packages" id="toc-load-packages">Load packages</a></li>
+<li><a href="#set-paths" id="toc-set-paths">Set paths</a></li>
+<li><a href="#load-data" id="toc-load-data">Load data</a>
+<ul>
+<li><a href="#load-geotiff-files" id="toc-load-geotiff-files">Load GeoTIFF files</a></li>
+<li><a href="#load-asc-files" id="toc-load-asc-files">Load ASC files</a></li>
+<li><a href="#set-the-projection-for-an-asc-file" id="toc-set-the-projection-for-an-asc-file">Set the projection for an ASC file</a></li>
+<li><a href="#load-shapefiles" id="toc-load-shapefiles">Load shapefiles</a></li>
+<li><a href="#create-a-shapefile-from-a-dataframe" id="toc-create-a-shapefile-from-a-dataframe">Create a shapefile from a dataframe</a></li>
+</ul></li>
+<li><a href="#how-to-project-transform-data" id="toc-how-to-project-transform-data">How to project / transform data</a>
+<ul>
+<li><a href="#project-a-raster" id="toc-project-a-raster">Project a raster</a></li>
+<li><a href="#project-an-sf-object-shapefile-or-vector-data" id="toc-project-an-sf-object-shapefile-or-vector-data">Project an sf object (shapefile or vector data)</a></li>
+</ul></li>
+<li><a href="#handling-raster-transformations" id="toc-handling-raster-transformations">Handling raster transformations</a></li>
 </ul>
-<div class="layout-chunk" data-layout="l-screen">
-<p><img src="img/banner-mv-csf-top.png" width="1966" /></p>
+</nav>
 </div>
-<div class="layout-chunk" data-layout="l-page">
-<p><img src="img/teams/research-map-vietnam.png" width="1383" /></p>
+<h1 id="load-packages">Load packages</h1>
+<p>Before starting, we need to load the necessary R packages. It is essential to load only the required packages to avoid conflicts, especially between packages like terra and raster, which share function names.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-spatial.github.io/sf/'>sf</a></span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://rspatial.org/'>terra</a></span><span class='op'>)</span></span></code></pre>
 </div>
-<div class="layout-chunk" data-layout="l-screen">
-<p><img src="img/banner-mv-csf-bottom.png" width="1966" /></p>
 </div>
-<h2 class="appendix" id="contact">Contact</h2>
-<p>Department Lead: Prof. Dr. S. Kramer-Schadt<br />
-Deputy Lead: Dr. Andreas Wilting<br />
-Coordination: Dr. Conny Landgraf<br />
-<a href="mailto:assist6@izw-berlin.de">assist6[at]izw-berlin.de</a></p>
-<div class="layout-chunk" data-layout="l-screen-inset shaded">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-3c14d0c673282c2e2050" style="width:650px;height:400px;"></div>
-<script type="application/json" data-for="htmlwidget-3c14d0c673282c2e2050">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[52.5062,13.5211],4,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Voyager",null,"Default Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Stadia.StamenTerrain",null,"Terrain Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,"Dark Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OpenStreetMap",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addPopups","args":[52.50628618988399,13.52116715397431,"<b>Leibniz Institute for<br>Zoo and Wildlife Research<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]},{"method":"addLayersControl","args":[["Default Map","Terrain Map","Dark Map","OpenStreetMap"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]}],"limits":{"lat":[52.50628618988399,52.50628618988399],"lng":[13.52116715397431,13.52116715397431]}},"evals":[],"jsHooks":[]}</script>
+<h1 id="set-paths">Set paths</h1>
+<p>Next, we define the paths to our working directories. Adjust these paths according to your folder structure.</p>
+<div class="layout-chunk" data-layout="l-body">
+
 </div>
-<h2 class="appendix" id="address">Address</h2>
-<p>Leibniz Institute for Zoo and Wildlife Research<br />
-Department of Ecological Dynamics<br />
-Alfred-Kowalke-Str. 17<br />
-D-10315 Berlin, Germany</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>#main_dir &lt;- ""</span></span>
+<span></span>
+<span><span class='va'>subdir_berlin</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>main_dir</span>, <span class='st'>"_DataBerlin"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
+<span><span class='va'>subdir_tif</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"Raster_geotiff"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
+<span><span class='va'>subdir_asc</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"Raster_ascii"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
+<span><span class='va'>subdir_animals</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"Tiererfassungsdaten"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
+<span><span class='va'>subdir_shape</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"Shapefiles"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<h1 id="load-data">Load data</h1>
+<p>Now, we load the necessary datasets. When naming variables, it is best practice to avoid capital letters and use short, descriptive names for ease of typing and readability.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># excel/csv files</span></span>
+<span><span class='va'>boar</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/utils/read.table.html'>read.csv</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_animals</span>, </span>
+<span>                       <span class='st'>"PortalBeee_data_wb_melden_utf8_clean.csv"</span>, </span>
+<span>                       sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/headtail.html'>head</a></span><span class='op'>(</span><span class='va'>boar</span><span class='op'>)</span></span></code></pre>
+</div>
+<pre><code>    id             date    gps_x    gps_y    weather group_size
+1 1163 05.06.2018 00:31 52.44841 13.24755    bedeckt          1
+2 1162 04.06.2018 01:15 52.60615 13.35622    bedeckt         10
+3 1160 14.04.2018 10:39 52.46222 13.58331 regnerisch          5
+4 1154 11.12.2017 05:27 52.44139 13.59104     schnee          1
+5 1112 08.06.2017 12:06 52.61446 13.22352     sonnig         10
+6 1101 12.04.2017 09:59 52.51010 13.22823    bedeckt          5
+  n_piglets
+1         0
+2         6
+3         3
+4         0
+5         6
+6         3</code></pre>
+</div>
+<h2 id="load-geotiff-files">Load GeoTIFF files</h2>
+<p>GeoTIFF files conveniently store CRS information within the file itself. We can extract the CRS specification from one of our GeoTIFFs.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/rast.html'>rast</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='va'>subdir_tif</span>, <span class='st'>"/summer_temp_100m_3035.tif"</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='va'>temp</span></span></code></pre>
+</div>
+<pre><code>class       : SpatRaster 
+dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
+resolution  : 100, 100  (x, y)
+extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
+coord. ref. : +proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs 
+source      : summer_temp_100m_3035.tif 
+name        : summer_temp_100m_3035 
+min value   :                  2052 
+max value   :                  3133 </code></pre>
+</div>
+<h2 id="load-asc-files">Load ASC files</h2>
+<p>Here, we load an ASC raster file. Unlike GeoTIFFs, ASC files often lack embedded CRS information, so we need to define it manually.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>tree_cover</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/rast.html'>rast</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='va'>subdir_asc</span>, <span class='st'>"/tree_cover_density_2012_100m_3035.asc"</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='va'>tree_cover</span></span></code></pre>
+</div>
+<pre><code>class       : SpatRaster 
+dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
+resolution  : 100, 100  (x, y)
+extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
+coord. ref. :  
+source      : tree_cover_density_2012_100m_3035.asc 
+name        : tree_cover_density_2012_100m_3035 </code></pre>
+</div>
+<p>What is missing?</p>
+<h2 id="set-the-projection-for-an-asc-file">Set the projection for an ASC file</h2>
+<p>If a CRS is missing, we must define it based on prior knowledge of the dataset. By checking the coordinate extent, we can infer that these are not latitude and longitude coordinates but belong to the EPSG:3035 projection.</p>
+<p>You can check here what it stands for: <a href="https://epsg.io/3035" class="uri">https://epsg.io/3035</a></p>
+<p>This website also provides the full-text specification (scroll down to ‘export’ and then klick on ‘PROJ.4’):</p>
+<p>+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>tree_cover</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/rast.html'>rast</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='va'>subdir_asc</span>, <span class='st'>"/tree_cover_density_2012_100m_3035.asc"</span><span class='op'>)</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='st'>"+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80                                       +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"</span></span>
+<span></span>
+<span><span class='co'># or </span></span>
+<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'># or</span></span>
+<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_crs.html'>st_crs</a></span><span class='op'>(</span><span class='fl'>3035</span><span class='op'>)</span><span class='op'>$</span><span class='va'>proj4string</span></span>
+<span></span>
+<span><span class='co'># or </span></span>
+<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='st'>"+init=epsg:3035"</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<p>After assigning the CRS, we verify if it has been correctly applied.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>tree_cover</span></span></code></pre>
+</div>
+<pre><code>class       : SpatRaster 
+dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
+resolution  : 100, 100  (x, y)
+extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
+coord. ref. : ETRS89-extended / LAEA Europe 
+source      : tree_cover_density_2012_100m_3035.asc 
+name        : tree_cover_density_2012_100m_3035 </code></pre>
+</div>
+<h2 id="load-shapefiles">Load shapefiles</h2>
+<p>Now, we load vector data in the form of shapefiles. The st_read function from the sf package allows us to read and inspect these files.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>bezirke_sf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_read.html'>st_read</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_shape</span> ,<span class='st'>"polygon_bezirke_utf8_32633.shp"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
+</div>
+<pre><code>Reading layer `polygon_bezirke_utf8_32633&#39; from data source 
+  `C:\Users\wenzler\PopDynCloud\Teaching\_TU_BiodivDynamics\_DataBerlin\Shapefiles\polygon_bezirke_utf8_32633.shp&#39; 
+  using driver `ESRI Shapefile&#39;
+Simple feature collection with 12 features and 4 fields
+Geometry type: POLYGON
+Dimension:     XY
+Bounding box:  xmin: 370001.2 ymin: 5799520 xmax: 415784.6 ymax: 5837259
+Projected CRS: WGS 84 / UTM zone 33N</code></pre>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>bezirke_sf</span></span></code></pre>
+</div>
+<pre><code>Simple feature collection with 12 features and 4 fields
+Geometry type: POLYGON
+Dimension:     XY
+Bounding box:  xmin: 370001.2 ymin: 5799520 xmax: 415784.6 ymax: 5837259
+Projected CRS: WGS 84 / UTM zone 33N
+First 10 features:
+   pkey spatial_na                 spatial_al spatial_ty
+1     1         01                      Mitte    Polygon
+2     2         02   Friedrichshain-Kreuzberg    Polygon
+3     3         03                     Pankow    Polygon
+4     4         04 Charlottenburg-Wilmersdorf    Polygon
+5     5         05                    Spandau    Polygon
+6     6         06        Steglitz-Zehlendorf    Polygon
+7     7         07       Tempelhof-Schöneberg    Polygon
+8     8         08                   Neukölln    Polygon
+9     9         09           Treptow-Köpenick    Polygon
+10   10         10        Marzahn-Hellersdorf    Polygon
+                         geometry
+1  POLYGON ((389584.2 5818316,...
+2  POLYGON ((394411.6 5817146,...
+3  POLYGON ((394333.3 5821237,...
+4  POLYGON ((385026.8 5814426,...
+5  POLYGON ((378907.2 5819189,...
+6  POLYGON ((382247.6 5807410,...
+7  POLYGON ((392312.7 5804063,...
+8  POLYGON ((395336.7 5808951,...
+9  POLYGON ((408562.9 5801028,...
+10 POLYGON ((404013.3 5815479,...</code></pre>
+</div>
+<h2 id="create-a-shapefile-from-a-dataframe">Create a shapefile from a dataframe</h2>
+<p>If our spatial data is stored in a dataframe, we can convert it into an sf object using st_as_sf, specifying the coordinate columns and the CRS.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>boar_sf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_as_sf.html'>st_as_sf</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>boar</span>,</span>
+<span>                    coords <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"gps_x"</span>, <span class='st'>"gps_y"</span><span class='op'>)</span>,</span>
+<span>                    crs <span class='op'>=</span> <span class='fl'>4326</span>, <span class='co'># epsg code to use for crs</span></span>
+<span>                    sf_column_name <span class='op'>=</span> <span class='st'>"geometry"</span>, <span class='co'># standard name</span></span>
+<span>                    remove <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span> <span class='co'># if you want to keep the coordinate columns</span></span></code></pre>
+</div>
+</div>
+<h1 id="how-to-project-transform-data">How to project / transform data</h1>
+<p>When working with spatial data from different sources, their coordinate systems must match to ensure accurate spatial overlays. Below, we explore how to transform different types of spatial data to a common CRS.</p>
+<h2 id="project-a-raster">Project a raster</h2>
+<p>It is generally advisable to transform vector data instead of raster data to preserve spatial accuracy. However, for demonstration purposes, we apply a CRS transformation to a raster.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_utm</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/project.html'>project</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, y <span class='op'>=</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_crs.html'>st_crs</a></span><span class='op'>(</span><span class='fl'>25833</span><span class='op'>)</span><span class='op'>$</span><span class='va'>proj4string</span><span class='op'>)</span> </span>
+<span><span class='va'>temp_utm</span></span></code></pre>
+</div>
+<pre><code>class       : SpatRaster 
+dimensions  : 614, 695, 1  (nrow, ncol, nlyr)
+resolution  : 99.96378, 99.96378  (x, y)
+extent      : 358826.2, 428301, 5788287, 5849665  (xmin, xmax, ymin, ymax)
+coord. ref. : +proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs 
+source(s)   : memory
+name        : summer_temp_100m_3035 
+min value   :              2066.307 
+max value   :              3133.000 </code></pre>
+</div>
+<h2 id="project-an-sf-object-shapefile-or-vector-data">Project an sf object (shapefile or vector data)</h2>
+<p>Transforming vector data is more reliable than raster transformations. Below, we reproject a shapefile to a new CRS.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>bezirke_sf_4326</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_transform.html'>st_transform</a></span><span class='op'>(</span><span class='va'>bezirke_sf</span>, <span class='fl'>4326</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='co'>#synonyms:</span></span>
+<span><span class='co'>#bezirke_sf_4326 &lt;- st_transform(bezirke_sf, st_crs(boar_sf)$proj4string)</span></span>
+<span><span class='co'>#bezirke_sf_4326 &lt;- st_transform(bezirke_sf, st_crs(boar_sf)$epsg)</span></span></code></pre>
+</div>
+</div>
+<h1 id="handling-raster-transformations">Handling raster transformations</h1>
+<p>If transforming a raster is unavoidable, using the resample function afterward can help maintain cell alignment and structure.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_3035</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/project.html'>project</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp_utm</span>, y <span class='op'>=</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_crs.html'>st_crs</a></span><span class='op'>(</span><span class='fl'>3035</span><span class='op'>)</span><span class='op'>$</span><span class='va'>proj4string</span><span class='op'>)</span> </span>
+<span><span class='va'>temp_3035_res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/resample.html'>resample</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp_3035</span>, y <span class='op'>=</span> <span class='va'>temp</span>, method <span class='op'>=</span> <span class='st'>"near"</span><span class='op'>)</span></span>
+<span><span class='va'>temp_3035_res</span></span></code></pre>
+</div>
+<pre><code>class       : SpatRaster 
+dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
+resolution  : 100, 100  (x, y)
+extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
+coord. ref. : +proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs 
+source(s)   : memory
+varname     : summer_temp_100m_3035 
+name        : summer_temp_100m_3035 
+min value   :              2073.621 
+max value   :              3133.000 </code></pre>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp</span></span></code></pre>
+</div>
+<pre><code>class       : SpatRaster 
+dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
+resolution  : 100, 100  (x, y)
+extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
+coord. ref. : +proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs 
+source      : summer_temp_100m_3035.tif 
+name        : summer_temp_100m_3035 
+min value   :                  2052 
+max value   :                  3133 </code></pre>
+</div>
+<p>After resampling, some values may have changed due to interpolation. Always check the transformed raster carefully to ensure its usability.</p>
+<p>Ensuring that all spatial data align within a common coordinate reference system is crucial for accurate spatial analysis. By correctly assigning, transforming, and verifying CRS for different data formats, we can prevent misalignment issues and maintain spatial integrity in geospatial projects.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2840,13 +1823,7 @@ D-10315 Berlin, Germany</p>
 <div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
-<div class="distill-site-nav distill-site-footer">
-<p>© Department of Ecological Dynamics, Leibniz Institute for Zoo- and
-Wildlife Research 2020—2025. All rights reserved.</p>
-<p><u><a href="impressum.html">Impressum</a></u></p>
-</div>
 <!--/radix_placeholder_navigation_after_body-->
-
 
 </body>
 

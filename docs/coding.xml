@@ -12,7 +12,17 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Ensuring Geospatial Accuracy: CRS Assignments and Transformations</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts/common-mistakes-with-geodata</link>
+      <description>This post aims to provide a comprehensive guide on correctly assigning coordinate reference systems (CRS) and handling spatial data with different CRS configurations. It will demonstrate how to project/transform geodata and their coordinates from one CRS to another, ensuring that all spatial objects (maps, rasters, shapefiles) align accurately in a common reference frame.</description>
+      <category>Spatial</category>
+      <category>Tutorial</category>
+      <guid>https://ecodynizw.github.io/posts/common-mistakes-with-geodata</guid>
+      <pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Download Spatial Data from the Berlin Geoportal Data Base in R</title>
       <dc:creator>Moritz Wenzler-Meya</dc:creator>

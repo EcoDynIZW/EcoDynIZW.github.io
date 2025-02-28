@@ -1,0 +1,180 @@
+---
+title: "Ensuring Geospatial Accuracy: CRS Assignments and Transformations"
+description: |
+  This post aims to provide a comprehensive guide on correctly assigning coordinate reference systems (CRS) and handling spatial data with different CRS configurations. It will demonstrate how to project/transform geodata and their coordinates from one CRS to another, ensuring that all spatial objects (maps, rasters, shapefiles) align accurately in a common reference frame.
+categories:
+  - Spatial
+  - Tutorial
+author:
+  - name: Moritz Wenzler-Meya
+    affiliation: IZW Berlin
+    affiliation_url: https://ecodynizw.github.io/EcoDynIZW
+date: 2025-02-28
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+draft: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE) ## keep this, add other settings if needed
+```
+
+# Load packages
+
+Before starting, we need to load the necessary R packages. It is essential to load only the required packages to avoid conflicts, especially between packages like terra and raster, which share function names.
+
+
+```{r install}
+library(sf)
+library(terra)
+```
+
+
+# Set paths
+
+Next, we define the paths to our working directories. Adjust these paths according to your folder structure.
+
+```{r, echo=FALSE}
+#main_dir <- "C:/Users/wenzler/PopDynIZW Dropbox/Teaching/_TU_BiodivDynamics"
+main_dir <- "C:/Users/wenzler/PopDynCloud/Teaching/_TU_BiodivDynamics"
+```
+
+
+```{r}
+#main_dir <- ""
+
+subdir_berlin <- paste(main_dir, "_DataBerlin", sep = "/")
+subdir_tif <- paste(subdir_berlin, "Raster_geotiff", sep = "/")
+subdir_asc <- paste(subdir_berlin, "Raster_ascii", sep = "/")
+subdir_animals <- paste(subdir_berlin, "Tiererfassungsdaten", sep = "/")
+subdir_shape <- paste(subdir_berlin, "Shapefiles", sep = "/")
+```
+
+# Load data
+
+Now, we load the necessary datasets. When naming variables, it is best practice to avoid capital letters and use short, descriptive names for ease of typing and readability.
+
+```{r data}
+# excel/csv files
+boar <- read.csv(paste(subdir_animals, 
+                       "PortalBeee_data_wb_melden_utf8_clean.csv", 
+                       sep = "/"))
+head(boar)
+```
+
+## Load GeoTIFF files
+
+GeoTIFF files conveniently store CRS information within the file itself. We can extract the CRS specification from one of our GeoTIFFs.
+
+```{r}
+temp <- rast(paste0(subdir_tif, "/summer_temp_100m_3035.tif"))
+temp
+```
+
+## Load ASC files
+
+Here, we load an ASC raster file. Unlike GeoTIFFs, ASC files often lack embedded CRS information, so we need to define it manually.
+
+```{r}
+tree_cover <- rast(paste0(subdir_asc, "/tree_cover_density_2012_100m_3035.asc"))
+tree_cover
+```
+
+What is missing?
+
+## Set the projection for an ASC file
+
+If a CRS is missing, we must define it based on prior knowledge of the dataset. By checking the coordinate extent, we can infer that these are not latitude and longitude coordinates but belong to the EPSG:3035 projection.
+
+You can check here what it stands for: https://epsg.io/3035
+
+This website also provides the full-text specification (scroll down to 'export' and then klick on 'PROJ.4'):
+
++proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs 
+
+```{r}
+tree_cover <- rast(paste0(subdir_asc, "/tree_cover_density_2012_100m_3035.asc"))
+
+crs(tree_cover) <- "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80                                       +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+
+# or 
+crs(tree_cover) <- crs(temp)
+
+# or
+crs(tree_cover) <- st_crs(3035)$proj4string
+
+# or 
+crs(tree_cover) <- crs("+init=epsg:3035")
+```
+ 
+After assigning the CRS, we verify if it has been correctly applied.
+
+
+```{r}
+tree_cover
+```
+
+## Load shapefiles
+
+Now, we load vector data in the form of shapefiles. The st_read function from the sf package allows us to read and inspect these files.
+
+```{r}
+bezirke_sf <- st_read(paste(subdir_shape ,"polygon_bezirke_utf8_32633.shp", sep = "/"))
+bezirke_sf
+```
+
+## Create a shapefile from a dataframe
+
+If our spatial data is stored in a dataframe, we can convert it into an sf object using st_as_sf, specifying the coordinate columns and the CRS.
+
+```{r}
+boar_sf <- st_as_sf(x = boar,
+                    coords = c("gps_x", "gps_y"),
+                    crs = 4326, # epsg code to use for crs
+                    sf_column_name = "geometry", # standard name
+                    remove = FALSE) # if you want to keep the coordinate columns
+```
+
+# How to project / transform data
+
+When working with spatial data from different sources, their coordinate systems must match to ensure accurate spatial overlays. Below, we explore how to transform different types of spatial data to a common CRS.
+
+## Project a raster
+
+It is generally advisable to transform vector data instead of raster data to preserve spatial accuracy. However, for demonstration purposes, we apply a CRS transformation to a raster.
+
+```{r}
+temp_utm <- project(x = temp, y = st_crs(25833)$proj4string) 
+temp_utm
+```
+
+## Project an sf object (shapefile or vector data)
+
+Transforming vector data is more reliable than raster transformations. Below, we reproject a shapefile to a new CRS.
+
+```{r}
+bezirke_sf_4326 <- st_transform(bezirke_sf, 4326)
+
+#synonyms:
+#bezirke_sf_4326 <- st_transform(bezirke_sf, st_crs(boar_sf)$proj4string)
+#bezirke_sf_4326 <- st_transform(bezirke_sf, st_crs(boar_sf)$epsg)
+```
+
+# Handling raster transformations
+
+If transforming a raster is unavoidable, using the resample function afterward can help maintain cell alignment and structure.
+
+```{r}
+temp_3035 <- project(x = temp_utm, y = st_crs(3035)$proj4string) 
+temp_3035_res <- resample(x = temp_3035, y = temp, method = "near")
+temp_3035_res
+temp
+```
+
+After resampling, some values may have changed due to interpolation. Always check the transformed raster carefully to ensure its usability.
+
+Ensuring that all spatial data align within a common coordinate reference system is crucial for accurate spatial analysis. By correctly assigning, transforming, and verifying CRS for different data formats, we can prevent misalignment issues and maintain spatial integrity in geospatial projects.
+
+
