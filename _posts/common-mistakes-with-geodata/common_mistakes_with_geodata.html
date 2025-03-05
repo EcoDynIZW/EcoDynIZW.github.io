@@ -1559,7 +1559,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <ul>
 <li><a href="#load-geotiff-files" id="toc-load-geotiff-files">Load GeoTIFF files</a></li>
 <li><a href="#load-asc-files" id="toc-load-asc-files">Load ASC files</a></li>
-<li><a href="#set-the-projection-for-an-asc-file" id="toc-set-the-projection-for-an-asc-file">Set the projection for an ASC file</a></li>
+<li><a href="#set-the-coordinate-reference-system-for-an-asc-file" id="toc-set-the-coordinate-reference-system-for-an-asc-file">Set the coordinate reference system for an ASC file</a></li>
 <li><a href="#load-shapefiles" id="toc-load-shapefiles">Load shapefiles</a></li>
 <li><a href="#create-a-shapefile-from-a-dataframe" id="toc-create-a-shapefile-from-a-dataframe">Create a shapefile from a dataframe</a></li>
 </ul></li>
@@ -1589,37 +1589,37 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>#main_dir &lt;- ""</span></span>
 <span></span>
-<span><span class='va'>subdir_berlin</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>main_dir</span>, <span class='st'>"_DataBerlin"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
-<span><span class='va'>subdir_tif</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"Raster_geotiff"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
-<span><span class='va'>subdir_asc</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"Raster_ascii"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
-<span><span class='va'>subdir_animals</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"Tiererfassungsdaten"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
-<span><span class='va'>subdir_shape</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"Shapefiles"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span></code></pre>
+<span><span class='va'>subdir_berlin</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>main_dir</span>, <span class='st'>"data_berlin"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
+<span><span class='va'>subdir_tif</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"geo_raster_current_gtif"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
+<span><span class='va'>subdir_asc</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"geo_raster_current_asc"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
+<span><span class='va'>subdir_animals</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"animal_data"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
+<span><span class='va'>subdir_shape</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>main_dir</span>, <span class='st'>"data_borneo"</span>, <span class='st'>"geo_vector"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <h1 id="load-data">Load data</h1>
-<p>Now, we load the necessary datasets. When naming variables, it is best practice to avoid capital letters and use short, descriptive names for ease of typing and readability.</p>
+<p>Now, we load the necessary datasets from our d6_teaching_collection github repository (<a href="https://github.com/EcoDynIZW/d6_teaching_collection" class="uri">https://github.com/EcoDynIZW/d6_teaching_collection</a>). When naming variables, it is best practice to avoid capital letters and use short, descriptive names for ease of typing and readability.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># excel/csv files</span></span>
 <span><span class='va'>boar</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/utils/read.table.html'>read.csv</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_animals</span>, </span>
-<span>                       <span class='st'>"PortalBeee_data_wb_melden_utf8_clean.csv"</span>, </span>
+<span>                       <span class='st'>"data_wb_melden_en.csv"</span>, </span>
 <span>                       sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span><span class='op'>)</span></span>
 <span><span class='fu'><a href='https://rspatial.github.io/terra/reference/headtail.html'>head</a></span><span class='op'>(</span><span class='va'>boar</span><span class='op'>)</span></span></code></pre>
 </div>
-<pre><code>    id             date    gps_x    gps_y    weather group_size
-1 1163 05.06.2018 00:31 52.44841 13.24755    bedeckt          1
-2 1162 04.06.2018 01:15 52.60615 13.35622    bedeckt         10
-3 1160 14.04.2018 10:39 52.46222 13.58331 regnerisch          5
-4 1154 11.12.2017 05:27 52.44139 13.59104     schnee          1
-5 1112 08.06.2017 12:06 52.61446 13.22352     sonnig         10
-6 1101 12.04.2017 09:59 52.51010 13.22823    bedeckt          5
-  n_piglets
-1         0
-2         6
-3         3
-4         0
-5         6
-6         3</code></pre>
+<pre><code>  observation id    gps_y    gps_x                 date year
+1           1  9 52.64371 13.31417 2013-06-07T00:00:00Z 2013
+2           2 11 52.61391 13.22447 2013-06-08T00:00:00Z 2013
+3           3 26 52.44837 13.69075 2013-07-24T00:00:00Z 2013
+4           4 32 52.46341 13.24752 2013-08-08T00:00:00Z 2013
+5           5 56 52.61388 13.22801 2013-08-15T00:00:00Z 2013
+6           6 85 52.38521 13.63526 2013-10-07T00:00:00Z 2013
+  group_size n_piglets weather
+1          5         2  cloudy
+2          5        10   sunny
+3         10         4   sunny
+4          1         1   sunny
+5         10         4   sunny
+6         10         7  cloudy</code></pre>
 </div>
 <h2 id="load-geotiff-files">Load GeoTIFF files</h2>
 <p>GeoTIFF files conveniently store CRS information within the file itself. We can extract the CRS specification from one of our GeoTIFFs.</p>
@@ -1654,16 +1654,14 @@ source      : tree_cover_density_2012_100m_3035.asc
 name        : tree_cover_density_2012_100m_3035 </code></pre>
 </div>
 <p>What is missing?</p>
-<h2 id="set-the-projection-for-an-asc-file">Set the projection for an ASC file</h2>
+<h2 id="set-the-coordinate-reference-system-for-an-asc-file">Set the coordinate reference system for an ASC file</h2>
 <p>If a CRS is missing, we must define it based on prior knowledge of the dataset. By checking the coordinate extent, we can infer that these are not latitude and longitude coordinates but belong to the EPSG:3035 projection.</p>
 <p>You can check here what it stands for: <a href="https://epsg.io/3035" class="uri">https://epsg.io/3035</a></p>
 <p>This website also provides the full-text specification (scroll down to ‘export’ and then klick on ‘PROJ.4’):</p>
 <p>+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>tree_cover</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/rast.html'>rast</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='va'>subdir_asc</span>, <span class='st'>"/tree_cover_density_2012_100m_3035.asc"</span><span class='op'>)</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='st'>"+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80                                       +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='st'>"+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80                                       +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"</span></span>
 <span></span>
 <span><span class='co'># or </span></span>
 <span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span></span>
@@ -1692,47 +1690,58 @@ name        : tree_cover_density_2012_100m_3035 </code></pre>
 <p>Now, we load vector data in the form of shapefiles. The st_read function from the sf package allows us to read and inspect these files.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>bezirke_sf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_read.html'>st_read</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_shape</span> ,<span class='st'>"polygon_bezirke_utf8_32633.shp"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>borneo_sf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_read.html'>st_read</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_shape</span> ,<span class='st'>"borneo_admin.shp"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
-<pre><code>Reading layer `polygon_bezirke_utf8_32633&#39; from data source 
-  `C:\Users\wenzler\PopDynCloud\Teaching\_TU_BiodivDynamics\_DataBerlin\Shapefiles\polygon_bezirke_utf8_32633.shp&#39; 
+<pre><code>Reading layer `borneo_admin&#39; from data source 
+  `C:\Users\wenzler\Documents\GitHub\d6_teaching_collection\data\data_borneo\geo_vector\borneo_admin.shp&#39; 
   using driver `ESRI Shapefile&#39;
-Simple feature collection with 12 features and 4 fields
-Geometry type: POLYGON
+Simple feature collection with 158 features and 18 fields
+Geometry type: MULTIPOLYGON
 Dimension:     XY
-Bounding box:  xmin: 370001.2 ymin: 5799520 xmax: 415784.6 ymax: 5837259
-Projected CRS: WGS 84 / UTM zone 33N</code></pre>
+Bounding box:  xmin: 108.5986 ymin: -4.943054 xmax: 119.2697 ymax: 7.380556
+Geodetic CRS:  WGS 84</code></pre>
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>bezirke_sf</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>borneo_sf</span></span></code></pre>
 </div>
-<pre><code>Simple feature collection with 12 features and 4 fields
-Geometry type: POLYGON
+<pre><code>Simple feature collection with 158 features and 18 fields
+Geometry type: MULTIPOLYGON
 Dimension:     XY
-Bounding box:  xmin: 370001.2 ymin: 5799520 xmax: 415784.6 ymax: 5837259
-Projected CRS: WGS 84 / UTM zone 33N
+Bounding box:  xmin: 108.5986 ymin: -4.943054 xmax: 119.2697 ymax: 7.380556
+Geodetic CRS:  WGS 84
 First 10 features:
-   pkey spatial_na                 spatial_al spatial_ty
-1     1         01                      Mitte    Polygon
-2     2         02   Friedrichshain-Kreuzberg    Polygon
-3     3         03                     Pankow    Polygon
-4     4         04 Charlottenburg-Wilmersdorf    Polygon
-5     5         05                    Spandau    Polygon
-6     6         06        Steglitz-Zehlendorf    Polygon
-7     7         07       Tempelhof-Schöneberg    Polygon
-8     8         08                   Neukölln    Polygon
-9     9         09           Treptow-Köpenick    Polygon
-10   10         10        Marzahn-Hellersdorf    Polygon
-                         geometry
-1  POLYGON ((389584.2 5818316,...
-2  POLYGON ((394411.6 5817146,...
-3  POLYGON ((394333.3 5821237,...
-4  POLYGON ((385026.8 5814426,...
-5  POLYGON ((378907.2 5819189,...
-6  POLYGON ((382247.6 5807410,...
-7  POLYGON ((392312.7 5804063,...
-8  POLYGON ((395336.7 5808951,...
-9  POLYGON ((408562.9 5801028,...
-10 POLYGON ((404013.3 5815479,...</code></pre>
+   ID_0 ISO   NAME_0 ID_1 NAME_1  ID_2     NAME_2 VARNAME_2 NL_NAME_2
+1   158 MYS Malaysia 1988  Sabah 23051 Lahad Datu      &lt;NA&gt;      &lt;NA&gt;
+2   158 MYS Malaysia 1988  Sabah 23052      Papar      &lt;NA&gt;      &lt;NA&gt;
+3   158 MYS Malaysia 1988  Sabah 23053  Penampang      &lt;NA&gt;      &lt;NA&gt;
+4   158 MYS Malaysia 1988  Sabah 23054 Pensiangan      &lt;NA&gt;      &lt;NA&gt;
+5   158 MYS Malaysia 1988  Sabah 23055      Pitas      &lt;NA&gt;      &lt;NA&gt;
+6   158 MYS Malaysia 1988  Sabah 23056      Ranau      &lt;NA&gt;      &lt;NA&gt;
+7   158 MYS Malaysia 1988  Sabah 23057   Sandakan      &lt;NA&gt;      &lt;NA&gt;
+8   158 MYS Malaysia 1988  Sabah 23058   Semporna      &lt;NA&gt;      &lt;NA&gt;
+9   158 MYS Malaysia 1988  Sabah 23059   Sipitang      &lt;NA&gt;      &lt;NA&gt;
+10  158 MYS Malaysia 1988  Sabah 23060   Tambunan      &lt;NA&gt;      &lt;NA&gt;
+     HASC_2 CC_2   TYPE_2 ENGTYPE_2 VALIDFR_2 VALIDTO_2 REMARKS_2
+1  MY.SA.LD &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+2  MY.SA.PA &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+3  MY.SA.PE &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+4      &lt;NA&gt; &lt;NA&gt; District  District   Unknown   Unknown      &lt;NA&gt;
+5  MY.SA.PI &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+6  MY.SA.RA &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+7  MY.SA.SA &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+8  MY.SA.SE &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+9  MY.SA.SI &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+10 MY.SA.TM &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+   Shape_Leng Shape_Area                       geometry
+1   6.7475367 0.62106012 MULTIPOLYGON (((118.2299 4....
+2   1.6727672 0.10065591 MULTIPOLYGON (((116.0144 5....
+3   0.9548857 0.03951545 MULTIPOLYGON (((116.0477 5....
+4   4.0257859 0.49725547 MULTIPOLYGON (((116.5357 5....
+5   2.9223456 0.11955352 MULTIPOLYGON (((117.2762 6....
+6   2.4815704 0.24027591 MULTIPOLYGON (((116.9182 6....
+7   7.1555231 0.18354676 MULTIPOLYGON (((117.9468 5....
+8   6.0198462 0.09494946 MULTIPOLYGON (((118.6294 4....
+9   2.9190984 0.22604467 MULTIPOLYGON (((115.7132 5....
+10  1.5307563 0.12152936 MULTIPOLYGON (((116.6079 5....</code></pre>
 </div>
 <h2 id="create-a-shapefile-from-a-dataframe">Create a shapefile from a dataframe</h2>
 <p>If our spatial data is stored in a dataframe, we can convert it into an sf object using st_as_sf, specifying the coordinate columns and the CRS.</p>
@@ -1768,11 +1777,52 @@ max value   :              3133.000 </code></pre>
 <p>Transforming vector data is more reliable than raster transformations. Below, we reproject a shapefile to a new CRS.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>bezirke_sf_4326</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_transform.html'>st_transform</a></span><span class='op'>(</span><span class='va'>bezirke_sf</span>, <span class='fl'>4326</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='co'>#synonyms:</span></span>
-<span><span class='co'>#bezirke_sf_4326 &lt;- st_transform(bezirke_sf, st_crs(boar_sf)$proj4string)</span></span>
-<span><span class='co'>#bezirke_sf_4326 &lt;- st_transform(bezirke_sf, st_crs(boar_sf)$epsg)</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>borneo_sf_4326</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_transform.html'>st_transform</a></span><span class='op'>(</span><span class='va'>borneo_sf</span>, <span class='fl'>4326</span><span class='op'>)</span></span>
+<span><span class='va'>borneo_sf_4326</span></span></code></pre>
+</div>
+<pre><code>Simple feature collection with 158 features and 18 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: 108.5986 ymin: -4.943054 xmax: 119.2697 ymax: 7.380556
+Geodetic CRS:  WGS 84
+First 10 features:
+   ID_0 ISO   NAME_0 ID_1 NAME_1  ID_2     NAME_2 VARNAME_2 NL_NAME_2
+1   158 MYS Malaysia 1988  Sabah 23051 Lahad Datu      &lt;NA&gt;      &lt;NA&gt;
+2   158 MYS Malaysia 1988  Sabah 23052      Papar      &lt;NA&gt;      &lt;NA&gt;
+3   158 MYS Malaysia 1988  Sabah 23053  Penampang      &lt;NA&gt;      &lt;NA&gt;
+4   158 MYS Malaysia 1988  Sabah 23054 Pensiangan      &lt;NA&gt;      &lt;NA&gt;
+5   158 MYS Malaysia 1988  Sabah 23055      Pitas      &lt;NA&gt;      &lt;NA&gt;
+6   158 MYS Malaysia 1988  Sabah 23056      Ranau      &lt;NA&gt;      &lt;NA&gt;
+7   158 MYS Malaysia 1988  Sabah 23057   Sandakan      &lt;NA&gt;      &lt;NA&gt;
+8   158 MYS Malaysia 1988  Sabah 23058   Semporna      &lt;NA&gt;      &lt;NA&gt;
+9   158 MYS Malaysia 1988  Sabah 23059   Sipitang      &lt;NA&gt;      &lt;NA&gt;
+10  158 MYS Malaysia 1988  Sabah 23060   Tambunan      &lt;NA&gt;      &lt;NA&gt;
+     HASC_2 CC_2   TYPE_2 ENGTYPE_2 VALIDFR_2 VALIDTO_2 REMARKS_2
+1  MY.SA.LD &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+2  MY.SA.PA &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+3  MY.SA.PE &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+4      &lt;NA&gt; &lt;NA&gt; District  District   Unknown   Unknown      &lt;NA&gt;
+5  MY.SA.PI &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+6  MY.SA.RA &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+7  MY.SA.SA &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+8  MY.SA.SE &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+9  MY.SA.SI &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+10 MY.SA.TM &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
+   Shape_Leng Shape_Area                       geometry
+1   6.7475367 0.62106012 MULTIPOLYGON (((118.2299 4....
+2   1.6727672 0.10065591 MULTIPOLYGON (((116.0144 5....
+3   0.9548857 0.03951545 MULTIPOLYGON (((116.0477 5....
+4   4.0257859 0.49725547 MULTIPOLYGON (((116.5357 5....
+5   2.9223456 0.11955352 MULTIPOLYGON (((117.2762 6....
+6   2.4815704 0.24027591 MULTIPOLYGON (((116.9182 6....
+7   7.1555231 0.18354676 MULTIPOLYGON (((117.9468 5....
+8   6.0198462 0.09494946 MULTIPOLYGON (((118.6294 4....
+9   2.9190984 0.22604467 MULTIPOLYGON (((115.7132 5....
+10  1.5307563 0.12152936 MULTIPOLYGON (((116.6079 5....</code></pre>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>#synonyms:</span></span>
+<span><span class='co'>#borneo_sf_4326 &lt;- st_transform(borneo_sf, st_crs(boar_sf)$proj4string)</span></span>
+<span><span class='co'>#borneo_sf_4326 &lt;- st_transform(borneo_sf, st_crs(boar_sf)$epsg)</span></span></code></pre>
 </div>
 </div>
 <h1 id="handling-raster-transformations">Handling raster transformations</h1>
@@ -1808,7 +1858,7 @@ max value   :                  3133 </code></pre>
 </div>
 <p>After resampling, some values may have changed due to interpolation. Always check the transformed raster carefully to ensure its usability.</p>
 <p>Ensuring that all spatial data align within a common coordinate reference system is crucial for accurate spatial analysis. By correctly assigning, transforming, and verifying CRS for different data formats, we can prevent misalignment issues and maintain spatial integrity in geospatial projects.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

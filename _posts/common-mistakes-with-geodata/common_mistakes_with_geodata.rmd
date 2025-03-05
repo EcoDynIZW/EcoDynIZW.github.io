@@ -37,29 +37,28 @@ library(terra)
 Next, we define the paths to our working directories. Adjust these paths according to your folder structure.
 
 ```{r, echo=FALSE}
-#main_dir <- "C:/Users/wenzler/PopDynIZW Dropbox/Teaching/_TU_BiodivDynamics"
-main_dir <- "C:/Users/wenzler/PopDynCloud/Teaching/_TU_BiodivDynamics"
+main_dir <- "C:/Users/wenzler/Documents/GitHub/d6_teaching_collection/data"
 ```
 
 
 ```{r}
 #main_dir <- ""
 
-subdir_berlin <- paste(main_dir, "_DataBerlin", sep = "/")
-subdir_tif <- paste(subdir_berlin, "Raster_geotiff", sep = "/")
-subdir_asc <- paste(subdir_berlin, "Raster_ascii", sep = "/")
-subdir_animals <- paste(subdir_berlin, "Tiererfassungsdaten", sep = "/")
-subdir_shape <- paste(subdir_berlin, "Shapefiles", sep = "/")
+subdir_berlin <- paste(main_dir, "data_berlin", sep = "/")
+subdir_tif <- paste(subdir_berlin, "geo_raster_current_gtif", sep = "/")
+subdir_asc <- paste(subdir_berlin, "geo_raster_current_asc", sep = "/")
+subdir_animals <- paste(subdir_berlin, "animal_data", sep = "/")
+subdir_shape <- paste(main_dir, "data_borneo", "geo_vector", sep = "/")
 ```
 
 # Load data
 
-Now, we load the necessary datasets. When naming variables, it is best practice to avoid capital letters and use short, descriptive names for ease of typing and readability.
+Now, we load the necessary datasets from our d6_teaching_collection github repository (https://github.com/EcoDynIZW/d6_teaching_collection). When naming variables, it is best practice to avoid capital letters and use short, descriptive names for ease of typing and readability.
 
 ```{r data}
 # excel/csv files
 boar <- read.csv(paste(subdir_animals, 
-                       "PortalBeee_data_wb_melden_utf8_clean.csv", 
+                       "data_wb_melden_en.csv", 
                        sep = "/"))
 head(boar)
 ```
@@ -84,7 +83,7 @@ tree_cover
 
 What is missing?
 
-## Set the projection for an ASC file
+## Set the coordinate reference system for an ASC file
 
 If a CRS is missing, we must define it based on prior knowledge of the dataset. By checking the coordinate extent, we can infer that these are not latitude and longitude coordinates but belong to the EPSG:3035 projection.
 
@@ -95,8 +94,6 @@ This website also provides the full-text specification (scroll down to 'export' 
 +proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs 
 
 ```{r}
-tree_cover <- rast(paste0(subdir_asc, "/tree_cover_density_2012_100m_3035.asc"))
-
 crs(tree_cover) <- "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80                                       +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
 
 # or 
@@ -121,8 +118,8 @@ tree_cover
 Now, we load vector data in the form of shapefiles. The st_read function from the sf package allows us to read and inspect these files.
 
 ```{r}
-bezirke_sf <- st_read(paste(subdir_shape ,"polygon_bezirke_utf8_32633.shp", sep = "/"))
-bezirke_sf
+borneo_sf <- st_read(paste(subdir_shape ,"borneo_admin.shp", sep = "/"))
+borneo_sf
 ```
 
 ## Create a shapefile from a dataframe
@@ -155,11 +152,12 @@ temp_utm
 Transforming vector data is more reliable than raster transformations. Below, we reproject a shapefile to a new CRS.
 
 ```{r}
-bezirke_sf_4326 <- st_transform(bezirke_sf, 4326)
+borneo_sf_4326 <- st_transform(borneo_sf, 4326)
+borneo_sf_4326
 
 #synonyms:
-#bezirke_sf_4326 <- st_transform(bezirke_sf, st_crs(boar_sf)$proj4string)
-#bezirke_sf_4326 <- st_transform(bezirke_sf, st_crs(boar_sf)$epsg)
+#borneo_sf_4326 <- st_transform(borneo_sf, st_crs(boar_sf)$proj4string)
+#borneo_sf_4326 <- st_transform(borneo_sf, st_crs(boar_sf)$epsg)
 ```
 
 # Handling raster transformations
