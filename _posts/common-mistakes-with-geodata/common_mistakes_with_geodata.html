@@ -1557,16 +1557,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><a href="#set-paths" id="toc-set-paths">Set paths</a></li>
 <li><a href="#load-data" id="toc-load-data">Load data</a>
 <ul>
+<li><a href="#load-csv-files" id="toc-load-csv-files">Load csv files</a></li>
+<li><a href="#create-vector-data-from-a-dataframe" id="toc-create-vector-data-from-a-dataframe">Create vector data from a dataframe</a></li>
+<li><a href="#load-vector-data" id="toc-load-vector-data">Load vector data</a></li>
 <li><a href="#load-geotiff-files" id="toc-load-geotiff-files">Load GeoTIFF files</a></li>
 <li><a href="#load-asc-files" id="toc-load-asc-files">Load ASC files</a></li>
 <li><a href="#set-the-coordinate-reference-system-for-an-asc-file" id="toc-set-the-coordinate-reference-system-for-an-asc-file">Set the coordinate reference system for an ASC file</a></li>
-<li><a href="#load-shapefiles" id="toc-load-shapefiles">Load shapefiles</a></li>
-<li><a href="#create-a-shapefile-from-a-dataframe" id="toc-create-a-shapefile-from-a-dataframe">Create a shapefile from a dataframe</a></li>
 </ul></li>
 <li><a href="#how-to-project-transform-data" id="toc-how-to-project-transform-data">How to project / transform data</a>
 <ul>
+<li><a href="#project-an-sf-object-vector-data" id="toc-project-an-sf-object-vector-data">Project an sf object (vector data)</a></li>
 <li><a href="#project-a-raster" id="toc-project-a-raster">Project a raster</a></li>
-<li><a href="#project-an-sf-object-shapefile-or-vector-data" id="toc-project-an-sf-object-shapefile-or-vector-data">Project an sf object (shapefile or vector data)</a></li>
 </ul></li>
 <li><a href="#handling-raster-transformations" id="toc-handling-raster-transformations">Handling raster transformations</a></li>
 </ul>
@@ -1587,9 +1588,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>#main_dir &lt;- ""</span></span>
-<span></span>
-<span><span class='va'>subdir_berlin</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>main_dir</span>, <span class='st'>"data_berlin"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>#main_dir &lt;- ""</span></span></code></pre>
+</div>
+</div>
+<p>Set the paths for the necessary datasets from our d6_teaching_collection github repository (<a href="https://github.com/EcoDynIZW/d6_teaching_collection" class="uri">https://github.com/EcoDynIZW/d6_teaching_collection</a>). When naming variables, it is best practice to avoid capital letters and use short, descriptive names for ease of typing and readability.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>subdir_berlin</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>main_dir</span>, <span class='st'>"data_berlin"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
 <span><span class='va'>subdir_tif</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"geo_raster_current_gtif"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
 <span><span class='va'>subdir_asc</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"geo_raster_current_asc"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
 <span><span class='va'>subdir_animals</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_berlin</span>, <span class='st'>"animal_data"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span></span>
@@ -1597,7 +1602,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 </div>
 <h1 id="load-data">Load data</h1>
-<p>Now, we load the necessary datasets from our d6_teaching_collection github repository (<a href="https://github.com/EcoDynIZW/d6_teaching_collection" class="uri">https://github.com/EcoDynIZW/d6_teaching_collection</a>). When naming variables, it is best practice to avoid capital letters and use short, descriptive names for ease of typing and readability.</p>
+<p>We will load different data types and demonstrate how to assign and transform the coordinate reference systems.</p>
+<h2 id="load-csv-files">Load csv files</h2>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># excel/csv files</span></span>
@@ -1621,73 +1627,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 5         10         4   sunny
 6         10         7  cloudy</code></pre>
 </div>
-<h2 id="load-geotiff-files">Load GeoTIFF files</h2>
-<p>GeoTIFF files conveniently store CRS information within the file itself. We can extract the CRS specification from one of our GeoTIFFs.</p>
+<h2 id="create-vector-data-from-a-dataframe">Create vector data from a dataframe</h2>
+<p>If our spatial data is stored in a dataframe, we can convert it into an sf object using st_as_sf, specifying the coordinate columns and the CRS.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/rast.html'>rast</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='va'>subdir_tif</span>, <span class='st'>"/summer_temp_100m_3035.tif"</span><span class='op'>)</span><span class='op'>)</span></span>
-<span><span class='va'>temp</span></span></code></pre>
-</div>
-<pre><code>class       : SpatRaster 
-dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
-resolution  : 100, 100  (x, y)
-extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
-coord. ref. : +proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs 
-source      : summer_temp_100m_3035.tif 
-name        : summer_temp_100m_3035 
-min value   :                  2052 
-max value   :                  3133 </code></pre>
-</div>
-<h2 id="load-asc-files">Load ASC files</h2>
-<p>Here, we load an ASC raster file. Unlike GeoTIFFs, ASC files often lack embedded CRS information, so we need to define it manually.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>tree_cover</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/rast.html'>rast</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='va'>subdir_asc</span>, <span class='st'>"/tree_cover_density_2012_100m_3035.asc"</span><span class='op'>)</span><span class='op'>)</span></span>
-<span><span class='va'>tree_cover</span></span></code></pre>
-</div>
-<pre><code>class       : SpatRaster 
-dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
-resolution  : 100, 100  (x, y)
-extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
-coord. ref. :  
-source      : tree_cover_density_2012_100m_3035.asc 
-name        : tree_cover_density_2012_100m_3035 </code></pre>
-</div>
-<p>What is missing?</p>
-<h2 id="set-the-coordinate-reference-system-for-an-asc-file">Set the coordinate reference system for an ASC file</h2>
-<p>If a CRS is missing, we must define it based on prior knowledge of the dataset. By checking the coordinate extent, we can infer that these are not latitude and longitude coordinates but belong to the EPSG:3035 projection.</p>
-<p>You can check here what it stands for: <a href="https://epsg.io/3035" class="uri">https://epsg.io/3035</a></p>
-<p>This website also provides the full-text specification (scroll down to ‘export’ and then klick on ‘PROJ.4’):</p>
-<p>+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='st'>"+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80                                       +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"</span></span>
-<span></span>
-<span><span class='co'># or </span></span>
-<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='co'># or</span></span>
-<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_crs.html'>st_crs</a></span><span class='op'>(</span><span class='fl'>3035</span><span class='op'>)</span><span class='op'>$</span><span class='va'>proj4string</span></span>
-<span></span>
-<span><span class='co'># or </span></span>
-<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='st'>"+init=epsg:3035"</span><span class='op'>)</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>boar_sf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_as_sf.html'>st_as_sf</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>boar</span>,</span>
+<span>                    coords <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"gps_x"</span>, <span class='st'>"gps_y"</span><span class='op'>)</span>,</span>
+<span>                    crs <span class='op'>=</span> <span class='fl'>4326</span>, <span class='co'># epsg code to use for crs</span></span>
+<span>                    sf_column_name <span class='op'>=</span> <span class='st'>"geometry"</span>, <span class='co'># standard name</span></span>
+<span>                    remove <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span> <span class='co'># if you want to keep the coordinate columns</span></span></code></pre>
 </div>
 </div>
-<p>After assigning the CRS, we verify if it has been correctly applied.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>tree_cover</span></span></code></pre>
-</div>
-<pre><code>class       : SpatRaster 
-dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
-resolution  : 100, 100  (x, y)
-extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
-coord. ref. : ETRS89-extended / LAEA Europe 
-source      : tree_cover_density_2012_100m_3035.asc 
-name        : tree_cover_density_2012_100m_3035 </code></pre>
-</div>
-<h2 id="load-shapefiles">Load shapefiles</h2>
-<p>Now, we load vector data in the form of shapefiles. The st_read function from the sf package allows us to read and inspect these files.</p>
+<h2 id="load-vector-data">Load vector data</h2>
+<p>Now, we load vector data. The st_read function from the sf package allows us to read and inspect these files.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>borneo_sf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_read.html'>st_read</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>subdir_shape</span> ,<span class='st'>"borneo_admin.shp"</span>, sep <span class='op'>=</span> <span class='st'>"/"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
@@ -1743,48 +1695,98 @@ First 10 features:
 9   2.9190984 0.22604467 MULTIPOLYGON (((115.7132 5....
 10  1.5307563 0.12152936 MULTIPOLYGON (((116.6079 5....</code></pre>
 </div>
-<h2 id="create-a-shapefile-from-a-dataframe">Create a shapefile from a dataframe</h2>
-<p>If our spatial data is stored in a dataframe, we can convert it into an sf object using st_as_sf, specifying the coordinate columns and the CRS.</p>
+<h2 id="load-geotiff-files">Load GeoTIFF files</h2>
+<p>GeoTIFF files conveniently store CRS information within the file itself. We can extract the CRS specification from one of our GeoTIFFs.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>boar_sf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_as_sf.html'>st_as_sf</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>boar</span>,</span>
-<span>                    coords <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"gps_x"</span>, <span class='st'>"gps_y"</span><span class='op'>)</span>,</span>
-<span>                    crs <span class='op'>=</span> <span class='fl'>4326</span>, <span class='co'># epsg code to use for crs</span></span>
-<span>                    sf_column_name <span class='op'>=</span> <span class='st'>"geometry"</span>, <span class='co'># standard name</span></span>
-<span>                    remove <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span> <span class='co'># if you want to keep the coordinate columns</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/rast.html'>rast</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='va'>subdir_tif</span>, <span class='st'>"/summer_temp_100m_3035.tif"</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='va'>temp</span></span></code></pre>
 </div>
+<pre><code>class       : SpatRaster 
+dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
+resolution  : 100, 100  (x, y)
+extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
+coord. ref. : +proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs 
+source      : summer_temp_100m_3035.tif 
+name        : summer_temp_100m_3035 
+min value   :                  2052 
+max value   :                  3133 </code></pre>
+</div>
+<h2 id="load-asc-files">Load ASC files</h2>
+<p>Here, we load an ASC raster file. Unlike GeoTIFFs, ASC files often lack embedded CRS information, so we need to define it manually.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>tree_cover</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/rast.html'>rast</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='va'>subdir_asc</span>, <span class='st'>"/tree_cover_density_2012_100m_3035.asc"</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='va'>tree_cover</span></span></code></pre>
+</div>
+<pre><code>class       : SpatRaster 
+dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
+resolution  : 100, 100  (x, y)
+extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
+coord. ref. :  
+source      : tree_cover_density_2012_100m_3035.asc 
+name        : tree_cover_density_2012_100m_3035 </code></pre>
+</div>
+<p>What is missing?</p>
+<h2 id="set-the-coordinate-reference-system-for-an-asc-file">Set the coordinate reference system for an ASC file</h2>
+<p>If a CRS is missing, we must define it based on prior knowledge of the dataset. By checking the coordinate extent, we can infer that these are not latitude and longitude coordinates but belong to the EPSG:3035 projection.</p>
+<p>You can check here what it stands for: <a href="https://epsg.io/3035" class="uri">https://epsg.io/3035</a></p>
+<p>This website also provides the full-text specification (scroll down to ‘export’ and then klick on ‘PROJ.4’):</p>
+<p>+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
+But his method is quite old and needs a lot of characters what can leads to more errors.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='st'>"+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80                                       +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"</span></span></code></pre>
+</div>
+</div>
+<p>A better option is to use a crs from a file you already using.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># or </span></span>
+<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>temp</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<p>or using the state of the art wkt-crs (Well-known text representation of coordinate reference systems).</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># or</span></span>
+<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_crs.html'>st_crs</a></span><span class='op'>(</span><span class='fl'>3035</span><span class='op'>)</span><span class='op'>$</span><span class='va'>wkt</span></span></code></pre>
+</div>
+</div>
+<p>or staying in the terra envirinment using just the epsg code.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'># or </span></span>
+<span><span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='va'>tree_cover</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/crs.html'>crs</a></span><span class='op'>(</span><span class='st'>"epsg:3035"</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<p>After assigning the CRS, we verify if it has been correctly applied.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>tree_cover</span></span></code></pre>
+</div>
+<pre><code>class       : SpatRaster 
+dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
+resolution  : 100, 100  (x, y)
+extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
+coord. ref. : ETRS89-extended / LAEA Europe (EPSG:3035) 
+source      : tree_cover_density_2012_100m_3035.asc 
+name        : tree_cover_density_2012_100m_3035 </code></pre>
 </div>
 <h1 id="how-to-project-transform-data">How to project / transform data</h1>
 <p>When working with spatial data from different sources, their coordinate systems must match to ensure accurate spatial overlays. Below, we explore how to transform different types of spatial data to a common CRS.</p>
-<h2 id="project-a-raster">Project a raster</h2>
-<p>It is generally advisable to transform vector data instead of raster data to preserve spatial accuracy. However, for demonstration purposes, we apply a CRS transformation to a raster.</p>
+<h2 id="project-an-sf-object-vector-data">Project an sf object (vector data)</h2>
+<p>Transforming vector data is more reliable than raster transformations. Below, we reproject an sf object to a new CRS.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_utm</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/project.html'>project</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, y <span class='op'>=</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_crs.html'>st_crs</a></span><span class='op'>(</span><span class='fl'>25833</span><span class='op'>)</span><span class='op'>$</span><span class='va'>proj4string</span><span class='op'>)</span> </span>
-<span><span class='va'>temp_utm</span></span></code></pre>
-</div>
-<pre><code>class       : SpatRaster 
-dimensions  : 614, 695, 1  (nrow, ncol, nlyr)
-resolution  : 99.96378, 99.96378  (x, y)
-extent      : 358826.2, 428301, 5788287, 5849665  (xmin, xmax, ymin, ymax)
-coord. ref. : +proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs 
-source(s)   : memory
-name        : summer_temp_100m_3035 
-min value   :              2066.307 
-max value   :              3133.000 </code></pre>
-</div>
-<h2 id="project-an-sf-object-shapefile-or-vector-data">Project an sf object (shapefile or vector data)</h2>
-<p>Transforming vector data is more reliable than raster transformations. Below, we reproject a shapefile to a new CRS.</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>borneo_sf_4326</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_transform.html'>st_transform</a></span><span class='op'>(</span><span class='va'>borneo_sf</span>, <span class='fl'>4326</span><span class='op'>)</span></span>
-<span><span class='va'>borneo_sf_4326</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>borneo_sf_3035</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_transform.html'>st_transform</a></span><span class='op'>(</span><span class='va'>borneo_sf</span>, <span class='fl'>3035</span><span class='op'>)</span></span>
+<span><span class='va'>borneo_sf_3035</span></span></code></pre>
 </div>
 <pre><code>Simple feature collection with 158 features and 18 fields
 Geometry type: MULTIPOLYGON
 Dimension:     XY
-Bounding box:  xmin: 108.5986 ymin: -4.943054 xmax: 119.2697 ymax: 7.380556
-Geodetic CRS:  WGS 84
+Bounding box:  xmin: 13226770 ymin: 4169872 xmax: 14197800 ymax: 6257863
+Projected CRS: ETRS89-extended / LAEA Europe
 First 10 features:
    ID_0 ISO   NAME_0 ID_1 NAME_1  ID_2     NAME_2 VARNAME_2 NL_NAME_2
 1   158 MYS Malaysia 1988  Sabah 23051 Lahad Datu      &lt;NA&gt;      &lt;NA&gt;
@@ -1809,35 +1811,55 @@ First 10 features:
 9  MY.SA.SI &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
 10 MY.SA.TM &lt;NA&gt; District  District   Unknown   Present      &lt;NA&gt;
    Shape_Leng Shape_Area                       geometry
-1   6.7475367 0.62106012 MULTIPOLYGON (((118.2299 4....
-2   1.6727672 0.10065591 MULTIPOLYGON (((116.0144 5....
-3   0.9548857 0.03951545 MULTIPOLYGON (((116.0477 5....
-4   4.0257859 0.49725547 MULTIPOLYGON (((116.5357 5....
-5   2.9223456 0.11955352 MULTIPOLYGON (((117.2762 6....
-6   2.4815704 0.24027591 MULTIPOLYGON (((116.9182 6....
-7   7.1555231 0.18354676 MULTIPOLYGON (((117.9468 5....
-8   6.0198462 0.09494946 MULTIPOLYGON (((118.6294 4....
-9   2.9190984 0.22604467 MULTIPOLYGON (((115.7132 5....
-10  1.5307563 0.12152936 MULTIPOLYGON (((116.6079 5....</code></pre>
+1   6.7475367 0.62106012 MULTIPOLYGON (((13458143 60...
+2   1.6727672 0.10065591 MULTIPOLYGON (((13355721 58...
+3   0.9548857 0.03951545 MULTIPOLYGON (((13352723 58...
+4   4.0257859 0.49725547 MULTIPOLYGON (((13424936 58...
+5   2.9223456 0.11955352 MULTIPOLYGON (((13283399 60...
+6   2.4815704 0.24027591 MULTIPOLYGON (((13325784 59...
+7   7.1555231 0.18354676 MULTIPOLYGON (((13376142 60...
+8   6.0198462 0.09494946 MULTIPOLYGON (((13511000 60...
+9   2.9190984 0.22604467 MULTIPOLYGON (((13418281 57...
+10  1.5307563 0.12152936 MULTIPOLYGON (((13359817 59...</code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>#synonyms:</span></span>
-<span><span class='co'>#borneo_sf_4326 &lt;- st_transform(borneo_sf, st_crs(boar_sf)$proj4string)</span></span>
-<span><span class='co'>#borneo_sf_4326 &lt;- st_transform(borneo_sf, st_crs(boar_sf)$epsg)</span></span></code></pre>
+<span><span class='co'>#borneo_sf_3035 &lt;- st_transform(borneo_sf, crs(tree_cover))</span></span>
+<span><span class='co'>#borneo_sf_3035 &lt;- st_transform(borneo_sf, st_crs(3035)$wkt)</span></span></code></pre>
 </div>
 </div>
-<h1 id="handling-raster-transformations">Handling raster transformations</h1>
-<p>If transforming a raster is unavoidable, using the resample function afterward can help maintain cell alignment and structure.</p>
+<h2 id="project-a-raster">Project a raster</h2>
+<p>It is generally advisable to transform vector data instead of raster data to preserve spatial accuracy.
+More specific, it can lead to unusual cell sizes which can can corrupt you calculations with these files.</p>
+<p>However, for demonstration purposes, we apply a CRS transformation to a raster.</p>
+<p>In this case we want change the CRS from the temperature raster from EPSG 3035 to EPSG 25833 (UTM).</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_3035</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/project.html'>project</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp_utm</span>, y <span class='op'>=</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_crs.html'>st_crs</a></span><span class='op'>(</span><span class='fl'>3035</span><span class='op'>)</span><span class='op'>$</span><span class='va'>proj4string</span><span class='op'>)</span> </span>
-<span><span class='va'>temp_3035_res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/resample.html'>resample</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp_3035</span>, y <span class='op'>=</span> <span class='va'>temp</span>, method <span class='op'>=</span> <span class='st'>"near"</span><span class='op'>)</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_utm</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/project.html'>project</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, y <span class='op'>=</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_crs.html'>st_crs</a></span><span class='op'>(</span><span class='fl'>25833</span><span class='op'>)</span><span class='op'>$</span><span class='va'>wkt</span><span class='op'>)</span> </span>
+<span><span class='va'>temp_utm</span></span></code></pre>
+</div>
+<pre><code>class       : SpatRaster 
+dimensions  : 614, 695, 1  (nrow, ncol, nlyr)
+resolution  : 99.96378, 99.96378  (x, y)
+extent      : 358826.2, 428301, 5788287, 5849665  (xmin, xmax, ymin, ymax)
+coord. ref. : ETRS89 / UTM zone 33N (EPSG:25833) 
+source(s)   : memory
+name        : summer_temp_100m_3035 
+min value   :              2066.307 
+max value   :              3133.000 </code></pre>
+</div>
+<h1 id="handling-raster-transformations">Handling raster transformations</h1>
+<p>If transforming a raster is unavoidable, using the resample function afterward can help maintain cell alignment and structure. Nevertheless, you need a raster with the correct cellsize and projection as a template for the resampling prozess.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_3035</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/project.html'>project</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp_utm</span>, y <span class='op'>=</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_crs.html'>st_crs</a></span><span class='op'>(</span><span class='fl'>3035</span><span class='op'>)</span><span class='op'>$</span><span class='va'>wkt</span><span class='op'>)</span> </span>
+<span><span class='va'>temp_3035_res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/resample.html'>resample</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp_3035</span>, y <span class='op'>=</span> <span class='va'>temp</span>, method <span class='op'>=</span> <span class='st'>"near"</span><span class='op'>)</span> <span class='co'># change method depending on the data input</span></span>
 <span><span class='va'>temp_3035_res</span></span></code></pre>
 </div>
 <pre><code>class       : SpatRaster 
 dimensions  : 570, 657, 1  (nrow, ncol, nlyr)
 resolution  : 100, 100  (x, y)
 extent      : 4521040, 4586740, 3243800, 3300800  (xmin, xmax, ymin, ymax)
-coord. ref. : +proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs 
+coord. ref. : ETRS89-extended / LAEA Europe (EPSG:3035) 
 source(s)   : memory
 varname     : summer_temp_100m_3035 
 name        : summer_temp_100m_3035 

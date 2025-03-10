@@ -43,7 +43,12 @@ main_dir <- "C:/Users/wenzler/Documents/GitHub/d6_teaching_collection/data"
 
 ```{r}
 #main_dir <- ""
+```
 
+
+Set the paths for the necessary datasets from our d6_teaching_collection github repository (https://github.com/EcoDynIZW/d6_teaching_collection). When naming variables, it is best practice to avoid capital letters and use short, descriptive names for ease of typing and readability.
+
+```{r}
 subdir_berlin <- paste(main_dir, "data_berlin", sep = "/")
 subdir_tif <- paste(subdir_berlin, "geo_raster_current_gtif", sep = "/")
 subdir_asc <- paste(subdir_berlin, "geo_raster_current_asc", sep = "/")
@@ -53,7 +58,9 @@ subdir_shape <- paste(main_dir, "data_borneo", "geo_vector", sep = "/")
 
 # Load data
 
-Now, we load the necessary datasets from our d6_teaching_collection github repository (https://github.com/EcoDynIZW/d6_teaching_collection). When naming variables, it is best practice to avoid capital letters and use short, descriptive names for ease of typing and readability.
+We will load different data types and demonstrate how to assign and transform the coordinate reference systems.
+
+## Load csv files 
 
 ```{r data}
 # excel/csv files
@@ -61,6 +68,27 @@ boar <- read.csv(paste(subdir_animals,
                        "data_wb_melden_en.csv", 
                        sep = "/"))
 head(boar)
+```
+
+## Create vector data from a dataframe
+
+If our spatial data is stored in a dataframe, we can convert it into an sf object using st_as_sf, specifying the coordinate columns and the CRS.
+
+```{r}
+boar_sf <- st_as_sf(x = boar,
+                    coords = c("gps_x", "gps_y"),
+                    crs = 4326, # epsg code to use for crs
+                    sf_column_name = "geometry", # standard name
+                    remove = FALSE) # if you want to keep the coordinate columns
+```
+
+## Load vector data
+
+Now, we load vector data. The st_read function from the sf package allows us to read and inspect these files.
+
+```{r}
+borneo_sf <- st_read(paste(subdir_shape ,"borneo_admin.shp", sep = "/"))
+borneo_sf
 ```
 
 ## Load GeoTIFF files
@@ -92,81 +120,79 @@ You can check here what it stands for: https://epsg.io/3035
 This website also provides the full-text specification (scroll down to 'export' and then klick on 'PROJ.4'):
 
 +proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs 
+But his method is quite old and needs a lot of characters what can leads to more errors.
 
 ```{r}
 crs(tree_cover) <- "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80                                       +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+```
 
+A better option is to use a crs from a file you already using.
+
+```{r}
 # or 
 crs(tree_cover) <- crs(temp)
+```
 
+or using the state of the art wkt-crs (Well-known text representation of coordinate reference systems).
+
+```{r}
 # or
-crs(tree_cover) <- st_crs(3035)$proj4string
+crs(tree_cover) <- st_crs(3035)$wkt
+```
 
+or staying in the terra envirinment using just the epsg code.
+
+```{r}
 # or 
-crs(tree_cover) <- crs("+init=epsg:3035")
+crs(tree_cover) <- crs("epsg:3035")
 ```
  
 After assigning the CRS, we verify if it has been correctly applied.
 
-
 ```{r}
 tree_cover
-```
-
-## Load shapefiles
-
-Now, we load vector data in the form of shapefiles. The st_read function from the sf package allows us to read and inspect these files.
-
-```{r}
-borneo_sf <- st_read(paste(subdir_shape ,"borneo_admin.shp", sep = "/"))
-borneo_sf
-```
-
-## Create a shapefile from a dataframe
-
-If our spatial data is stored in a dataframe, we can convert it into an sf object using st_as_sf, specifying the coordinate columns and the CRS.
-
-```{r}
-boar_sf <- st_as_sf(x = boar,
-                    coords = c("gps_x", "gps_y"),
-                    crs = 4326, # epsg code to use for crs
-                    sf_column_name = "geometry", # standard name
-                    remove = FALSE) # if you want to keep the coordinate columns
 ```
 
 # How to project / transform data
 
 When working with spatial data from different sources, their coordinate systems must match to ensure accurate spatial overlays. Below, we explore how to transform different types of spatial data to a common CRS.
 
-## Project a raster
 
-It is generally advisable to transform vector data instead of raster data to preserve spatial accuracy. However, for demonstration purposes, we apply a CRS transformation to a raster.
+## Project an sf object (vector data)
 
-```{r}
-temp_utm <- project(x = temp, y = st_crs(25833)$proj4string) 
-temp_utm
-```
-
-## Project an sf object (shapefile or vector data)
-
-Transforming vector data is more reliable than raster transformations. Below, we reproject a shapefile to a new CRS.
+Transforming vector data is more reliable than raster transformations. Below, we reproject an sf object to a new CRS.
 
 ```{r}
-borneo_sf_4326 <- st_transform(borneo_sf, 4326)
-borneo_sf_4326
+borneo_sf_3035 <- st_transform(borneo_sf, 3035)
+borneo_sf_3035
 
 #synonyms:
-#borneo_sf_4326 <- st_transform(borneo_sf, st_crs(boar_sf)$proj4string)
-#borneo_sf_4326 <- st_transform(borneo_sf, st_crs(boar_sf)$epsg)
+#borneo_sf_3035 <- st_transform(borneo_sf, crs(tree_cover))
+#borneo_sf_3035 <- st_transform(borneo_sf, st_crs(3035)$wkt)
+```
+
+
+## Project a raster
+
+It is generally advisable to transform vector data instead of raster data to preserve spatial accuracy.
+More specific, it can lead to unusual cell sizes which can can corrupt you calculations with these files.
+
+However, for demonstration purposes, we apply a CRS transformation to a raster.
+
+In this case we want change the CRS from the temperature raster from EPSG 3035 to EPSG 25833 (UTM).
+
+```{r}
+temp_utm <- project(x = temp, y = st_crs(25833)$wkt) 
+temp_utm
 ```
 
 # Handling raster transformations
 
-If transforming a raster is unavoidable, using the resample function afterward can help maintain cell alignment and structure.
+If transforming a raster is unavoidable, using the resample function afterward can help maintain cell alignment and structure. Nevertheless, you need a raster with the correct cellsize and projection as a template for the resampling prozess.
 
 ```{r}
-temp_3035 <- project(x = temp_utm, y = st_crs(3035)$proj4string) 
-temp_3035_res <- resample(x = temp_3035, y = temp, method = "near")
+temp_3035 <- project(x = temp_utm, y = st_crs(3035)$wkt) 
+temp_3035_res <- resample(x = temp_3035, y = temp, method = "near") # change method depending on the data input
 temp_3035_res
 temp
 ```
