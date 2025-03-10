@@ -175,11 +175,11 @@ borneo_sf_3035
 ## Project a raster
 
 It is generally advisable to transform vector data instead of raster data to preserve spatial accuracy.
-More specific, it can lead to unusual cell sizes which can can corrupt you calculations with these files.
+More specific, it can lead to unusual cell sizes which can can corrupt your calculations with these files.
 
 However, for demonstration purposes, we apply a CRS transformation to a raster.
 
-In this case we want change the CRS from the temperature raster from EPSG 3035 to EPSG 25833 (UTM).
+In this case we want to change the CRS from the temperature raster from EPSG 3035 to EPSG 25833 (UTM).
 
 ```{r}
 temp_utm <- project(x = temp, y = st_crs(25833)$wkt) 

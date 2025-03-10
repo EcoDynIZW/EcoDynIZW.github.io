@@ -3074,9 +3074,9 @@ First 10 features:
 </div>
 <h2 id="project-a-raster">Project a raster</h2>
 <p>It is generally advisable to transform vector data instead of raster data to preserve spatial accuracy.
-More specific, it can lead to unusual cell sizes which can can corrupt you calculations with these files.</p>
+More specific, it can lead to unusual cell sizes which can can corrupt your calculations with these files.</p>
 <p>However, for demonstration purposes, we apply a CRS transformation to a raster.</p>
-<p>In this case we want change the CRS from the temperature raster from EPSG 3035 to EPSG 25833 (UTM).</p>
+<p>In this case we want to change the CRS from the temperature raster from EPSG 3035 to EPSG 25833 (UTM).</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>temp_utm</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rspatial.github.io/terra/reference/project.html'>project</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>temp</span>, y <span class='op'>=</span> <span class='fu'><a href='https://r-spatial.github.io/sf/reference/st_crs.html'>st_crs</a></span><span class='op'>(</span><span class='fl'>25833</span><span class='op'>)</span><span class='op'>$</span><span class='va'>wkt</span><span class='op'>)</span> </span>
