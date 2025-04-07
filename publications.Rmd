@@ -16,11 +16,15 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * Devarajan K, ... **Sollmann R**, **Tilker A**, **Wilting A**, ...  et al. (2025): When the wild things are: Defining mammalian diel activity and plasticity. SCI ADV **11**, eado3843. doi:<span>[10.1126/sciadv.ado3843](https://doi.org/10.1126/sciadv.ado3843)</span>
 
+*  Fialas P C, Santini L, Russo D, … **Kramer-Schadt S** …, Razgour O (2025): Changes in community composition and functional diversity of European bats under climate change. CONSERV BIOL, e70025. doi:<span>[10.1111/cobi.70025 ](https://doi.org/10.1111/cobi.70025)</span>
+
 * Gould E, Fraser HS, Parker TH, ... **Sollmann R**, ... et al.(2025): Same data, different analysts: variation in effect sizes due to analytical decisions in ecology and evolutionary biology. BMC BIOL **23**, 35. doi:<span>[10.1186/s12915-024-02101-x](https://doi.org/10.1186/s12915-024-02101-x)</span>  
 
 * Greco I, Beaudrot L, Sutherland C, Tenan S, Hsieh C, Gorczynski D, ... **Mugerwa B**, ...  et al. (2025): Landscape-level human disturbance results in loss and contraction of mammalian populations in tropical forests. PLOS BIOL **23(2):** e3002976. doi:<span>[10.1371/journal.pbio.3002976](https://doi.org/10.1371/journal.pbio.3002976)</span> 
 
 * Grimm V, …, **Kramer-Schadt S**,… Railsback S (2024): Using the ODD protocol and NetLogo to replicate agent-based models. ECOL MODELL, **501**, 1-8. doi:<span>[10.1016/j.ecolmodel.2024.110967](https://doi.org/10.1016/j.ecolmodel.2024.110967)</span>  
+
+* Jeltsch F, Roeleke M, Abdelfattah A, Arlinghaus R, Berg G, Blaum N, De Meester L, Dittmann E, Eccard JA, Fournier B, Gaedke U, Gallagher C, Govaert L, Hauber M, Jeschke JM, **Kramer-Schadt S**, Linstädter A, Lucke U, Mazza V, Metzler R, Nendel C, **Radchuk V**, Rillig MC, Ryo M, Scheiter K, Tiedemann R, Tietjen B, Voigt CC, Weithoff G, Wolinska J, Zurell D (2025): The need for an individual-based global change ecology. IBE **1**: e148200. doi:<span>[10.3897/ibe.1.148200](https://doi.org/10.3897/ibe.1.148200)</span>
 
 * **Nguyen A**, **Tilker A**, Le QT, Nguyen M, Tran VT, Luu HT, Tran VB, Le D, Pflumm L, **Niedballa J**, **Sollmann R**, **Wilting A** (2025): Ecotones shape ground-dwelling mammal and bird diversity along a habitat gradient in the southern coastal dry forests of Vietnam. BIOTROPICA **57/1** e13422. doi:<span>[10.1111/btp.13422](https://doi.org/10.1111/btp.13422)</span>
 
