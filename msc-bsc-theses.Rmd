@@ -18,21 +18,13 @@ knitr::opts_chunk$set(echo = FALSE)
     
   Below, you will find an overview over currently running theses as well as a list of completed theses for your information.
 
-For older Bachelor and Master theses please check here:<br> [2023](msc-bsc-theses-2023.html)&ensp;[2022](msc-bsc-theses-2022.html)&ensp;[2021](msc-bsc-theses-2021.html)&ensp;[2020](msc-bsc-theses-2020.html)&ensp;[2019](msc-bsc-theses-2019.html)&ensp;[2018](msc-bsc-theses-2018.html)<br>
+For older Bachelor and Master theses please check here:<br> [2024](msc-bsc-theses-2024.html)&ensp;[2023](msc-bsc-theses-2023.html)&ensp;[2022](msc-bsc-theses-2022.html)&ensp;[2021](msc-bsc-theses-2021.html)&ensp;[2020](msc-bsc-theses-2020.html)&ensp;[2019](msc-bsc-theses-2019.html)&ensp;[2018](msc-bsc-theses-2018.html)<br>
 
-<div class='headerbox'><hbox>Completed Theses in 2024</hbox></div><br>
+<div class='headerbox'><hbox>Completed Theses in 2025</hbox></div><br>
 
-* Tracking an urban dweller: Red fox movement patterns and energetic costs in a human-dominated landscape. **Julia Bolk**, <span class='desaturated'>2024 MSc. Humboldt Universität zu Berlin, Lebenswissenschaftliche Fakultät, Institut für Biologie. Supervisors: R Krahe (HUB), C. Scholz, S Kramer-Schadt.</span>
+* Saisonale Dynamik der Stadtwildtiere: von Tageslicht bis Jahreszeiten. **Sarina Beiter**, <span class='desaturated'>2025 MSc. Fakultät für Umwelt und Natürliche Ressourcen Umweltwissenschaften | Naturschutz und Landnutzung der Universität Freiburg. Supervisors: Ilse Storch (Universität Freiburg), S Kramer-Schadt.</span>
 
-* Co-occurrence of red squirrels (**Sciurus vulgaris**) and meso-carnivores in private gardens in Berlin, Germany. **Josefa Vergara**,  <span class='desaturated'>2024 MSc. Geographischen Institut der Humboldt-Universität zu Berlin. Supervisors: Prof. Dr. Tobias Kümmerle (HUB), Dr. Julie Louvrier.</span>
 
-* Which factors influence the risk of receiving conspecific biting wounds in spotted hyenas (*Crocuta crocuta*). **Jana Marie Kühnapfel**, <span class='desaturated'>08.07.2024 BSc. Friedrich-Schiller-Universität Jena. Fakultät für Biowissenschaften. Supervisors: S. Benhaiem, E. White.</span>
-
-* Untersuchung der biologischen Homogenisierung urbaner Lebensräume unter Verwendung bürgerwissenschaftlicher Daten. **Martin Marunczak**, <span class='desaturated'>23.09.2024 BSc. Humboldt Universität, Lebenswissenschaftliche Fakultät, Institut für Biologie. E Heitlinger (HU), S Kramer-Schadt.</span>
-
-* Computerassistierte fotografische Wiedererkennung bei der Zauneidechse (Lacerta agilis). **David Daniel Beckenbauer**, <span class='desaturated'>22.03.2024 BSc. TU Berlin, Fakultät VI, Studiengang 'Ökologie und Umweltplanung'. Supervisors: S Kramer-Schadt, M.-O. Rödel (MfN).</span>
-
-* Foraging habitat selection by barn swallows and house martins in agricultural landscapes. **Nadja Schedensack** , <span class='desaturated'>16.06.2024 MSc. Ecology and Environmental Planning, TU Berlin. Supervisors: S Kramer-Schadt, Wiebke Ullmann (UPotsdam).</span>
 
 
 
