@@ -235,6 +235,24 @@ knitr::opts_chunk$set(echo = FALSE)
     <a href='https://github.com/EcoDynIZW/Rocha_Sollmann_2023_AnimConserv'>![](img/repo/icon-github.png){width=12%}</a>
     <a href='https://doi.org/10.25338/B84060'>![](img/repo/icon-dryad.png){width=12%}</a> </p>
   </li>
+
+<li class="card-repo">
+    <img class="card-repo-img" src='img/repo/sanz-perez_2025_biolconserv.jpg' alt='Graphical Abstract: Range expansion is a common feature of invasive, reintroduced, and recovering populations. This process is driven by population growth and dispersal, and intrinsic species characteristics and dispersal mechanisms yield contrasting population structures in space. The spatial distribution of sex and age classes is key to understanding and forecasting range expansions, but mapping age and sex categories is methodologically challenging. Here, we develop an age-structured open population spatial capture recapture (OPSCR) model to understand how spatial sex and age structures can shape population dynamics, as well as recovery processes. We use the endangered Pyrenean brown bear population as a case study, analysing non-invasive monitoring data from 2017 to 2021. Results revealed an expansion front dominated by adult (>4 years) and subadult males (2–4 years), while females and juveniles (<2 years) prevailed at the core. This, together with an overall decrease in density towards the expansion front in spite of available habitat, suggest an expansion process constrained by female philopatry. Future projections suggest continued population growth even under demographic stochasticity, and potential for population spread with increased reproduction events at the periphery. Our novel OPSCR model allows for statistically rigorous mapping of the sex and age structure of a population from non-invasive monitoring data. This is an important step towards better understanding and predicting the dynamics of recovering populations worldwide. In the case of large carnivores, it could inform conservation action such as anticipating the adoption of damage prevention measures and raising awareness campaigns to improve co-existence in future expansion areas.'>
+    <h3>Sanz-Perez et al. 2025</h3>
+    <p>Mapping sex- and age-structure reveals lonely males at the front in an expanding brown bear population. *BIOL CONSERV*.</p><p>
+    <a href='https://doi.org/10.1016/j.biocon.2025.111122'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Sanz-Perez_2025_BIOLCONSERV'>![](img/repo/icon-github.png){width=12%}</a>
+    <a href='https://doi.org/10.5281/zenodo.14779070'>![](img/repo/icon-zenodo.png){width=12%}</a> </p>
+  </li>
+
+<li class="card-repo">
+    <img class="card-repo-img" src='img/repo/sanz-perez_2025_biodiversconserv.jpg' alt='Figure 1: Study area in the Lleida Plain (north-eastern Spain, top-left map) and study design including the Genetic Mark Recapture (GMR) sampling stations and distribution of the Multispecies and Sandgrouse Hierarchical Distance Sampling transects (Multispecies HDS, Sandgrouse HDS) within the Special Protection Areas (yellow shaded area). Detailed sampling design is shown in the white circle. (Color figure online).'>
+    <h3>Sanz-Perez et al. 2025</h3>
+    <p>How to better count elusive birds? Comparing non-invasive monitoring methods to estimate population size of the threatened Pin-tailed sandgrouse (*Pterocles alchata*). *BIODIVERS CONSERV*.</p><p>
+    <a href='https://doi.org/10.1007/s10531-025-03061-6'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Sanz-Perez_2025_BIODIVERSCONSERV'>![](img/repo/icon-github.png){width=12%}</a>
+    <a href='https://zenodo.org/records/14387266?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6Ijc5NjlkYTdiLTY0ZTItNDVjZi05OGU1LWFiYzFjZTc3ODQxYSIsImRhdGEiOnt9LCJyYW5kb20iOiI3MDRiMzllYWYyMjJlNjU1ZjBjMWUxMDk2YzhlYjlkMSJ9.-XL0ckizaV1vrU6spF7Pjh0iVvmluqFyM3Hz_mDNLu7LssAymPSepS-QKvdYYBGxFhFH5pzO7f8jxG1IIP9Vdw'>![](img/repo/icon-zenodo.png){width=12%}</a> </p>
+  </li>
   
   
   <li class="card-repo">
