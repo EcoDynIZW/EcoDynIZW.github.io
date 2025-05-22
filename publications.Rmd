@@ -28,9 +28,13 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * Grimm V, …, **Kramer-Schadt S**,… Railsback S (2024): Using the ODD protocol and NetLogo to replicate agent-based models. ECOL MODELL, **501**, 1-8. doi:<span>[10.1016/j.ecolmodel.2024.110967](https://doi.org/10.1016/j.ecolmodel.2024.110967)</span>  
 
+<<<<<<< Updated upstream
 * Jeltsch F, Roeleke M, Abdelfattah A, Arlinghaus R, Berg G, Blaum N, De Meester L, Dittmann E, Eccard JA, Fournier B, Gaedke U, Gallagher C, Govaert L, Hauber M, Jeschke JM, **Kramer-Schadt S**, Linstädter A, Lucke U, Mazza V, Metzler R, Nendel C, **Radchuk V**, Rillig MC, Ryo M, Scheiter K, Tiedemann R, Tietjen B, Voigt CC, Weithoff G, Wolinska J, Zurell D (2025): The need for an individual-based global change ecology. IBE **1**: e148200. doi:<span>[10.3897/ibe.1.148200](https://doi.org/10.3897/ibe.1.148200)</span>
 
 * Morib G, **Tilker A**, Davranoglou LR, et al. (2025): Attenborough’s echidna rediscovered by combining Indigenous knowledge with camera-trapping. NPJ BIODIVERS **4**, 19. doi:<span>[10.1038/s44185-025-00086-6](https://doi.org/10.1038/s44185-025-00086-6)</span>
+=======
+* Jeltsch F, Roeleke M, Abdelfattah A, Arlinghaus R, Berg G, Blaum N, De Meester L, Dittmann E, Eccard JA, Fournier B, Gaedke U, Gallagher C, Govaert L, Hauber M, Jeschke JM, Kramer-Schadt S, Linstädter A, Lucke U, Mazza V, Metzler R, Nendel C, Radchuk V, Rillig MC, Ryo M, Scheiter K, Tiedemann R, Tietjen B, Voigt CC, Weithoff G, Wolinska J, Zurell D (2025) The need for an individual-based global change ecology. Individual-based Ecology **1**: e148200. doi:<span>[10.3897/ibe.1.148200](https://doi.org/10.3897/ibe.1.148200)</span> 
+>>>>>>> Stashed changes
 
 * **Nguyen A**, **Tilker A**, Le QT, Nguyen M, Tran VT, Luu HT, Tran VB, Le D, Pflumm L, **Niedballa J**, **Sollmann R**, **Wilting A** (2025): Ecotones shape ground-dwelling mammal and bird diversity along a habitat gradient in the southern coastal dry forests of Vietnam. BIOTROPICA **57/1** e13422. doi:<span>[10.1111/btp.13422](https://doi.org/10.1111/btp.13422)</span>
 
