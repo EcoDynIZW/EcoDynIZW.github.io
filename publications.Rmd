@@ -16,13 +16,13 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * Devarajan K, ... **Sollmann R**, **Tilker A**, **Wilting A**, ...  et al. (2025): When the wild things are: Defining mammalian diel activity and plasticity. SCI ADV **11**, eado3843. doi:<span>[10.1126/sciadv.ado3843](https://doi.org/10.1126/sciadv.ado3843)</span>
 
-*  Fialas P C, Santini L, Russo D, … **Kramer-Schadt S** …, Razgour O (2025): Changes in community composition and functional diversity of European bats under climate change. CONSERV BIOL, e70025. doi:<span>[10.1111/cobi.70025 ](https://doi.org/10.1111/cobi.70025)</span>
+*  Fialas P C, Santini L, Russo D, … **Kramer-Schadt S** , **Radchuk V**, …, Razgour O (2025): Changes in community composition and functional diversity of European bats under climate change. CONSERV BIOL, e70025. doi:<span>[10.1111/cobi.70025 ](https://doi.org/10.1111/cobi.70025)</span>
 
 * Fischer C, Frühauf A, Inchauste L, Cassiano MHA, ... , **Kramer-Schadt S**, ... , **Wenzler-Meya M**, ... , Drexler JF (2025): The spatiotemporal ecology of Oropouche virus across Latin America: a multidisciplinary, laboratory-based, modelling study. LANCET INFECT DIS. doi:<span>[10.1016/S1473-3099(25)00110-0](https://doi.org/10.1016/S1473-3099(25)00110-0)</span>  
 
 * Gould E, Fraser HS, Parker TH, ... **Sollmann R**, ... et al.(2025): Same data, different analysts: variation in effect sizes due to analytical decisions in ecology and evolutionary biology. BMC BIOL **23**, 35. doi:<span>[10.1186/s12915-024-02101-x](https://doi.org/10.1186/s12915-024-02101-x)</span>  
 
-* Grabow M, Landgraf C, Niedballa J, Scholz C, Pufelski J, Nathan R, Toledo S, Jeltsch F, Blaum N, Radchuk V, Tiedemann R, Kramer-Schadt S (2025): Pathogen-induced alterations in fine-scale movement behaviour predict impaired reproductive success. PROC R SOC B, **292**:20250238. doi:<span>[10.1098/rspb.2025.0238](http://doi.org/10.1098/rspb.2025.0238)</span>
+* **Grabow M**, **Landgraf C**, **Niedballa J**, Scholz C, Pufelski J, Nathan R, Toledo S, Jeltsch F, Blaum N, **Radchuk V**, Tiedemann R, **Kramer-Schadt S** (2025): Pathogen-induced alterations in fine-scale movement behaviour predict impaired reproductive success. PROC R SOC B, **292**:20250238. doi:<span>[10.1098/rspb.2025.0238](http://doi.org/10.1098/rspb.2025.0238)</span>
 
 * Greco I, Beaudrot L, Sutherland C, Tenan S, Hsieh C, Gorczynski D, ... **Mugerwa B**, ...  et al. (2025): Landscape-level human disturbance results in loss and contraction of mammalian populations in tropical forests. PLOS BIOL **23(2):** e3002976. doi:<span>[10.1371/journal.pbio.3002976](https://doi.org/10.1371/journal.pbio.3002976)</span> 
 
