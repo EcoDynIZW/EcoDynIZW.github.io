@@ -34,6 +34,8 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * **Nguyen A**, **Tilker A**, Le QT, Nguyen M, Tran VT, Luu HT, Tran VB, Le D, Pflumm L, **Niedballa J**, **Sollmann R**, **Wilting A** (2025): Ecotones shape ground-dwelling mammal and bird diversity along a habitat gradient in the southern coastal dry forests of Vietnam. BIOTROPICA **57/1** e13422. doi:<span>[10.1111/btp.13422](https://doi.org/10.1111/btp.13422)</span>
 
+* Nguyen AT, **Nguyen A**, Le M, **Wilting A**, **Tilker A** (2025): Camera-trapping reveals both defaunation and conservation priority species in an unprotected forest in Vietnam. GECCO **61**, e03644. doi:<span>[10.1016/j.gecco.2025.e03644](https://doi.org/10.1016/j.gecco.2025.e03644)</span> 
+
 * Pflumm L, Kang H, **Wilting A** and **Niedballa J** (2025): GEE-PICX: generating cloud-free Sentinel-2 and Landsat image composites and spectral indices for custom areas and time frames – a Google Earth Engine web application. ECOGRAPHY e07385. doi:<span>[10.1111/ecog.07385](https://doi.org/10.1111/ecog.07385)</span>
 
 * Premier J, Bastianelli ML, Oeser J, …, **Kramer-Schadt S**, Heurich M (2025): Survival of Eurasian lynx in the human-dominated landscape of Europe. CONSERV BIOL, e14439. doi:<span>[10.1111/cobi.14439](https://doi.org/10.1111/cobi.14439)</span>  
