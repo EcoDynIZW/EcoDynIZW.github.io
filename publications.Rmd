@@ -42,6 +42,10 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * Premier J, Bastianelli ML, Oeser J, …, **Kramer-Schadt S**, Heurich M (2025): Survival of Eurasian lynx in the human-dominated landscape of Europe. CONSERV BIOL, e14439. doi:<span>[10.1111/cobi.14439](https://doi.org/10.1111/cobi.14439)</span>  
 
+* Premier J, Brady D, Cartwright S, Robinson H, Weckworth B, Oeser J, Eagle A, **Kramer-Schadt S**, Heurich M (2025):
+Exploring the ecological feasibility of restoring Eurasian lynx to Great Britain using spatially explicit individual-based modelling.
+J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](https://doi.org/10.1016/j.jenvman.2025.125646)</span>   
+
 * Pringle S, Dallimer M, Goddard MA, …,**Kramer-Schadt S**, …, et al. (2025): Opportunities and challenges for monitoring terrestrial biodiversity in the robotics age. NAT ECOL EVOL. doi:<span>[10.1038/s41559-025-02704-9](https://doi.org/10.1038/s41559-025-02704-9)</span>   
 
 * Sanz-Pérez A, Sazatornil V, Palazón S, Vanpé C, Quenette PY, Sentilles J, Kervellec M, Milleret C, López-Bao JV, Afonso Jordana I, Jato R, Solà de la Torre J, **Sollmann R** (2025): Mapping sex- and age-structure reveals lonely males at the front in an expanding brown bear population. BIOL CONSERV, 306. doi:<span>[10.1016/j.biocon.2025.111122](https://doi.org/10.1016/j.biocon.2025.111122)</span> 
