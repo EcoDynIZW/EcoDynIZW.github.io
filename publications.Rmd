@@ -22,6 +22,8 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * Fischer C, Frühauf A, Inchauste L, Cassiano MHA, ... , **Kramer-Schadt S**, ... , **Wenzler-Meya M**, ... , Drexler JF (2025): The spatiotemporal ecology of Oropouche virus across Latin America: a multidisciplinary, laboratory-based, modelling study. LANCET INFECT DIS. doi:<span>[10.1016/S1473-3099(25)00110-0](https://doi.org/10.1016/S1473-3099(25)00110-0)</span>  
 
+* **Fronville T**, Blaum N, Jeltsch F, **Kramer-Schadt S**, **Radchuk V** (2025): Considering landscape heterogeneity improves the inference of inter-individual interactions from movement data. MOVE ECOL **13**, 41. doi:<span>[10.1186/s40462-025-00567-0](https://doi.org/10.1186/s40462-025-00567-0)</span>
+
 * Gould E, Fraser HS, Parker TH, ... **Sollmann R**, ... et al.(2025): Same data, different analysts: variation in effect sizes due to analytical decisions in ecology and evolutionary biology. BMC BIOL **23**, 35. doi:<span>[10.1186/s12915-024-02101-x](https://doi.org/10.1186/s12915-024-02101-x)</span>  
 
 * **Grabow M**, **Landgraf C**, **Niedballa J**, Scholz C, Pufelski J, Nathan R, Toledo S, Jeltsch F, Blaum N, **Radchuk V**, Tiedemann R, **Kramer-Schadt S** (2025): Pathogen-induced alterations in fine-scale movement behaviour predict impaired reproductive success. PROC R SOC B, **292**:20250238. doi:<span>[10.1098/rspb.2025.0238](http://doi.org/10.1098/rspb.2025.0238)</span>
