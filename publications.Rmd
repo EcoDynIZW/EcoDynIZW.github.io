@@ -60,6 +60,8 @@ J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](htt
 
 * Straka T, **Radchuk V**, Kowarik I, von der Lippe M, Buchholz S (2025): Urbanization Impacts Top Predators and Alters Biotic Interactions in Predator–Prey–Mutualistic Communities of Urban Dry Grasslands. ECOL EVOL, **15**:e70791 doi:<span>[10.1002/ece3.70791](https://doi.org/10.1002/ece3.70791)</span>  
 
+* **Veloso Soares SP**, Jarquín-Díaz VH, **Veiga MM**. **Karl S**, Czirják GA, Weyrich A, **Metzger S**, **East ML**, Hofer H, Heitlinger E, **Benhaiem S**, Ferreira SCM (2025): Mucosal immune responses and intestinal microbiome associations in wild spotted hyenas (*Crocuta crocuta*). COMMUN BIOL **8**, 924. doi:<span>[10.1038/s42003-025-08243-0](https://doi.org/10.1038/s42003-025-08243-0)</span> 
+
 * **Wong ST**, Guharajan R, Petrus A, Jubili J, Kissing J, Lagan P, Ong R, **Wilting A**, **Sollmann R** (2025): Terrestrial Wildlife Shows Limited Response in Spatiotemporal Activity to Logging. ECOSPHERE **16(2)**: e70185. doi:<span>[10.1002/ecs2.70185](https://doi.org/10.1002/ecs2.70185)</span> 
 
 <div class='headerbox'><hbox>Reports and other scientific outlets</hbox></div><br>
