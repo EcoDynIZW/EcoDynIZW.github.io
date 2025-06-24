@@ -56,6 +56,8 @@ J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](htt
 
 * Scholz C, **Grabow M**, Reusch C, Korn M, Hoffmeister U, Voigt CC (2025): Oak woodlands and urban green spaces: Landscape management for a forest-affiliated bat, the Leisler's bat (*Nyctalus leisleri*). Journal of Environmental Management, 387, **125753**. doi:<span>[10.1016/j.jenvman.2025.125753](https://doi.org/10.1016/j.jenvman.2025.125753)</span>
 
+* Schwantes CJ, Sánchez CA, Stevens T, … **Kramer-Schadt S**, …, et al. (2025): A minimum data standard for wildlife disease research and surveillance. SCI DATA **12**, 1054. doi:<span>[10.1038/s41597-025-05332-x](https://doi.org/10.1038/s41597-025-05332-x)</span>  
+
 * Signer J, **Scherer C**, **Radchuk V**, Scholz C, Jeltsch F and **Kramer-Schadt S** (2025): The 4th Dimension in Animal Movement: The Effect of Temporal Resolution and Landscape Configuration in Habitat-Selection Analyses. ECOL EVOL, **15**:e71434. doi:<span>[10.1002/ece3.71434](https://doi.org/10.1002/ece3.71434)</span>  
 
 * Straka T, **Radchuk V**, Kowarik I, von der Lippe M, Buchholz S (2025): Urbanization Impacts Top Predators and Alters Biotic Interactions in Predator–Prey–Mutualistic Communities of Urban Dry Grasslands. ECOL EVOL, **15**:e70791 doi:<span>[10.1002/ece3.70791](https://doi.org/10.1002/ece3.70791)</span>  

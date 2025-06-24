@@ -102,7 +102,7 @@
   </url>
   <url>
     <loc>https://ecodynizw.github.io/publications.html</loc>
-    <lastmod>2025-06-16T09:31:20+02:00</lastmod>
+    <lastmod>2025-06-24T10:52:20+02:00</lastmod>
   </url>
   <url>
     <loc>https://ecodynizw.github.io/pubs-2018.html</loc>
@@ -251,6 +251,14 @@
   <url>
     <loc>https://ecodynizw.github.io/posts/d6package/</loc>
     <lastmod>2023-12-08T13:17:48+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://ecodynizw.github.io/posts_geodata/corine-landcover_germany_2021_100m_03035_tif/</loc>
+    <lastmod>2025-06-24T10:53:01+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://ecodynizw.github.io/posts_geodata/corine-landcover_germany_2021_polygon_25832_gpkg/</loc>
+    <lastmod>2025-06-24T11:41:23+02:00</lastmod>
   </url>
   <url>
     <loc>https://ecodynizw.github.io/posts_geodata/water-density_europe_2025_1km_03035_tif/</loc>
