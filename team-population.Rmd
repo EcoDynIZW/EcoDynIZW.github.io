@@ -77,6 +77,7 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
 
 &ensp;&rarr;&ensp;Ultra high resolution ATLAS tracking data of barn swallows and house martins. Movement data represents individual foraging decisions during one day.
 
+
 <br>
 <video autoplay loop muted playsinline controls width="100%">
   <source src="img/Steph_CSF_viro_2.mp4" type="video/mp4">
