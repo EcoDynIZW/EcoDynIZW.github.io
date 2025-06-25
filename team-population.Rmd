@@ -70,13 +70,21 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
 &ensp;&rarr;&ensp;see also [BioMove Graduate School](https://www.bio-move.org/)
 
 * **Movement effects on pathogen spread and disease persistence**
+<small>
+  <ul>
+    <li>[Kürschner et al. (2021) ECOL EVOL](https://doi.org/10.1002/ece3.7478)</li>
+  <li>[Scherer et al. (2020) OIKOS](https://doi.org/10.1111/oik.07002'>10.1111/oik.07002)</li>
+  <li>[Scherer et al. (2019) J ANIM ECOL](https://doi.org/10.1111/1365-2656.13070)</li>
+    <li>[Kramer-Schadt et al. (2009) OIKOS](https://doi.org/10.1111/j.1600-0706.2008.16582.x)</li>
+   </ul>
+</small>
+
 * **Evolution of pathogenic strains in dynamic landscapes**
-* **Pathogen-induced movement strategies and fitness consequences**
-
-![](img/teams/team-pop/DOG.gif)
-
-&ensp;&rarr;&ensp;Ultra high resolution ATLAS tracking data of barn swallows and house martins. Movement data represents individual foraging decisions during one day.
-
+<small>
+  <ul>
+    <li>[Kürschner et al. (2024) ECOL EVOL](https://doi.org/10.1002/ece3.11065)</li>
+   </ul>
+</small>
 
 <br>
 <video autoplay loop muted playsinline width="640" controls>
@@ -84,19 +92,20 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
   Your browser does not support the video tag.
 </video>
 <br>
-&ensp;&rarr;&ensp;simulation of virulence evolution in different host density landscapes.
+&ensp;&rarr;&ensp;Simulation of virulence evolution in different host density landscapes, Kürschner et al. (2025) ECOL EVOL.
 <br>
 
+* **Pathogen-induced movement strategies and fitness consequences**
 <small>
-  <b>Key Publications:</b>
   <ul>
-    <li>[Kürschner et al. (2021) ECOL EVOL](https://doi.org/10.1002/ece3.7478)</li>
-  <li>[Scherer et al. (2020) OIKOS](https://doi.org/10.1111/oik.07002'>10.1111/oik.07002)</li>
-  <li>[Scherer et al. (2019) J ANIM ECOL](https://doi.org/10.1111/1365-2656.13070)</li>
-  <li>[Marescot et al. (2018) FUNCT ECOL](https://doi.org/10.1111/1365-2435.13059)</li>
-    <li>[Kramer-Schadt et al. (2009) OIKOS](https://doi.org/10.1111/j.1600-0706.2008.16582.x)</li>
+    <li>[Grabow et al. (2024) COMMUN BIOL](https://doi.org/10.1038/s42003-024-07114-4)</li>
+    <li>[Grabow et al. (2025) PROC R SOC B](http://doi.org/10.1098/rspb.2025.0238)</li>
    </ul>
 </small>
+
+![](img/teams/team-pop/DOG.gif)
+
+&ensp;&rarr;&ensp;Ultra high resolution ATLAS tracking data of barn swallows and house martins. Movement data represents individual foraging decisions during one day, Grabow et al. (2025) PROC R SOC B.
 
 
 <div class='headerbox'><hbox>Applied Ecology</hbox></div>
