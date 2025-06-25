@@ -122,17 +122,25 @@ Urbanisation poses risks and opportunities for wildlife. We investigate how spec
 &ensp;&rarr;&ensp;see also [WT Impact](https://www.wtimpact.de/)
 
 * **Bridging spatial data in community distribution models**
-* **Effects of species interactions and human disturbance on community compositions**
-* **Ecology of red foxes (*Vulpes vulpes*) in anthropogenic landscapes**
-* **Human perceptions of urban wildlife**
-
 <small>
-  <b>Key Publications:</b>  
   <ul>
-    <li>[Planillo et al. (2021) LANDSC URBAN PLA](https://doi.org/10.1016/j.landurbplan.2021.104098'>10.1016/j.landurbplan.2021.104098)</li>
-    <li>[Planillo, Kramer-Schadt, et al. (2020)  DIVERS DISTRIB](https://doi.org/10.1111/ddi.13169'>10.1111/ddi.13169)</li>
-    <li>[Gras et al. (2018) FRONT ECOL EVOL](https://doi.org/10.3389/fevo.2018.00136)</li>
-    <li>[Stillfried et al. (2017) FRONT ECOL EVOL](https://doi.org/10.3389/fevo.2017.00157)</li>
+    <li>[Drenske et al. (2024) FRONT ECOL EVOL](https://doi.org/10.3389/fevo.2024.1455142'>10.3389/fevo.2024.1455142)</li>
+    <li>[Stillfried et al. (2017) FRONT ECOL EVOL](https://doi.org/10.3389/fevo.2017.00157'>10.3389/fevo.2017.00157)</li>
+   </ul>
+</small>
+
+* **Effects of species interactions and human disturbance on community compositions**
+<small>
+  <ul>
+    <li>[Louvrier et al. (2022) J ANIM ECOL](https://doi.org/10.1111/1365-2656.13635)</li>
+    <li>[Planillo, Kramer-Schadt, et al. (2021)  DIVERS DISTRIB](https://doi.org/10.1111/ddi.13169)</li>
+   </ul>
+</small>
+
+* **Human perceptions of urban wildlife**
+<small>
+  <ul>
+    <li>[Moesch et al. (2024) ECOL SOC](https://doi.org/10.5751/ES-15211-290306)</li>
    </ul>
 </small>
 
@@ -145,16 +153,24 @@ Urbanisation poses risks and opportunities for wildlife. We investigate how spec
 Wildlife faces big challenges persisting in human-dominated landscapes. We model their population dynamics, viability and connectivity using individual-based models on a spatially-explicit basis, with the aim of supporting wildlife management and conservation.
 
 * **Wolf population dynamics and establishment in Germany**
-* **Jaguar connectivity and conservation prioritization in Central America**
-* **Modelling genetic processes to support the conservation management of Eurasian lynx**
-
 <small>
-  <b>Key Publications:</b>
+  <ul>
+    <li>[Planillo et al. (2024) WILDL BIOL](https://doi.org/10.1002/wlb3.01246)</li>
+    <li>[Planillo et al. (2024) DIVERS DISTRIB](https://doi.org/10.1111/ddi.13789)</li>
+   </ul>
+</small>
+
+* **Jaguar connectivity and conservation prioritization in Central America**
+<small>
+  <ul>
+    <li>[Calderon et al. (2022) ANIM CONSERV](https://doi.org/10.1111/acv.12772)</li>
+    <li>[Calderon et al. (2024) LANDSC ECOL](https://doi.org/10.1007/s10980-024-01795-2)</li>
+   </ul>
+</small>
+* **Modelling genetic processes to support the conservation management of Eurasian lynx**
+<small>
   <ul>
     <li>[Premier et al. (2020) MOV ECOL](https://doi.org/10.1186/s40462-020-00204-y)</li>
-    <li>[Heurich, Schultze-Naumburg et al. (2018) BIOL CONSERV](https://doi.org/10.1016/j.biocon.2018.05.011'>10.1016/j.biocon.2018.05.011)</li>
-    <li>[Radchuk, Ims & Andreassen (2016) ECOLOGY ](https://doi.org/10.1890/15-0756.1'>10.1890/15-0756.1)</li>
-    <li>[Struebig et al. (2015) CURR BIOL](https://doi.org/10.1016/j.cub.2014.11.067)</li>
    </ul>
 </small>
 
