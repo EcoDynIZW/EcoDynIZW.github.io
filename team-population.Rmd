@@ -121,7 +121,7 @@ Urbanisation poses risks and opportunities for wildlife. We investigate how spec
 &ensp;&rarr;&ensp;see also [BIBS — rural-urban coupling](https://www.bbib.org/rural-urban-coupling.html)  
 &ensp;&rarr;&ensp;see also [WT Impact](https://www.wtimpact.de/)
 
-* **Bridging spatial data in community distribution models**
+* **Bridging spatial data in species distribution models**
 <small>
   <ul>
     <li>[Drenske et al. (2024) FRONT ECOL EVOL](https://doi.org/10.3389/fevo.2024.1455142'>10.3389/fevo.2024.1455142)</li>
