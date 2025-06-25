@@ -79,7 +79,7 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
 
 
 <br>
-<video autoplay loop muted playsinline width="90%">
+<video autoplay loop muted playsinline autosize: true>
   <source src="img/Steph_CSF_viro_4.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
