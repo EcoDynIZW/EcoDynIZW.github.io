@@ -28,6 +28,8 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * **Grabow M**, **Landgraf C**, **Niedballa J**, Scholz C, Pufelski J, Nathan R, Toledo S, Jeltsch F, Blaum N, **Radchuk V**, Tiedemann R, **Kramer-Schadt S** (2025): Pathogen-induced alterations in fine-scale movement behaviour predict impaired reproductive success. PROC R SOC B, **292**:20250238. doi:<span>[10.1098/rspb.2025.0238](http://doi.org/10.1098/rspb.2025.0238)</span>
 
+*  **Grabow M**, Mang S, Blaum N, Tiedemann R, **Radchuk V**, **Kramer-Schadt S** (2025): Subtle stressors—Strong responses. Consistent negative effects of avian blood parasites on phenotypic and demographic traits across songbirds. J ANIM ECOL, **00**, 1–14. doi:<span>[10.1111/1365-2656.70106](https://doi.org/10.1111/1365-2656.70106)</span> 
+
 * Greco I, Beaudrot L, Sutherland C, Tenan S, Hsieh C, Gorczynski D, ... **Mugerwa B**, ...  et al. (2025): Landscape-level human disturbance results in loss and contraction of mammalian populations in tropical forests. PLOS BIOL **23(2):** e3002976. doi:<span>[10.1371/journal.pbio.3002976](https://doi.org/10.1371/journal.pbio.3002976)</span> 
 
 * Grimm V, …, **Kramer-Schadt S**,… Railsback S (2024): Using the ODD protocol and NetLogo to replicate agent-based models. ECOL MODELL, **501**, 1-8. doi:<span>[10.1016/j.ecolmodel.2024.110967](https://doi.org/10.1016/j.ecolmodel.2024.110967)</span>  
