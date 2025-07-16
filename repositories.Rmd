@@ -99,7 +99,7 @@ knitr::opts_chunk$set(echo = FALSE)
   
   
   <li class="card-repo">
-    <img class="card-repo-img" src='img/repo/grabow_2022.png' alt='Figure 5 of Grabow et al. 2022: Ccmparison of the single distribution models for red squirrels in Berlin, showing predicted models (left) and differences between reference model and respective model (right).' width="300">
+    <img class="card-repo-img" src='img/repo/grabow_2022.png' alt='Figure 5 of Grabow et al. 2022: Comparison of the single distribution models for red squirrels in Berlin, showing predicted models (left) and differences between reference model and respective model (right).' width="300">
     <h3>Grabow et al. 2022</h3>
     <p>Data-integration of opportunistic species observations into hierarchical modeling frameworks improves spatial predictions for urban red squirrels.  *FRONT ECOL EVOL*, 10:881247.</p><p>
     <a href='https://dx.doi.org/10.3389/fevo.2022.881247'>![](img/repo/icon-paper.png){width=12%}</a> 
@@ -114,6 +114,24 @@ knitr::opts_chunk$set(echo = FALSE)
     <a href='https://doi.org/10.1038/s42003-024-07114-4'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Grabow_2024_COMMSBIOL'>![](img/repo/icon-github.png){width=12%}</a></p>
   </li>
+ 
+ 
+   <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/grabow_2025_ProcRSocB.jpg' alt='Figure 1 of Grabow et al. 2025: Overview over the hypothesis and predictions related to pathogen-induced alterations in foraging behaviour and subsequent consequences on fitness proxies, such as impaired reproduction or body conditions. (A) Infections that remain ‘hidden’ due to the absence of visible clinical signs require active testing for detection and classification of individuals’ infection status. In the case of avian blood parasites, this requires active collection of blood and analyses via PCR to obtain infection statuses. (B) By imposing costs on hosts, this infection can alter behaviour, including parental care movements. (C) Reduced movements may reduce parental foraging range sizes, and (D) restrict host’s foraging to specific habitat types, as resources are not distributed homogeneously. The map and pie chart are for illustrative purposes only, representing predicted foraging habitat utilization rather than actual distribution. For the distribution of habitat types, see figure 2C. (E) Juvenile development (ontogeny) is entirely dependent on the food provision of adults. (F) Therefore, reproductive success (measured as juvenile condition) is related to the foraging behaviour of adults. Eventually, the foraging behaviour of adults will determine fitness proxies, such as reproduction and regulation of body condition Starling illustrations created with the help of DALL·E 3.' width="300">
+    <h3>Grabow et al. 2025</h3>
+    <p>Pathogen-induced alterations in fine-scale movement behaviour predict impaired reproductive success. *PROC R SOC B*, 292:20250238.</p><p>
+    <a href='http://doi.org/10.1098/rspb.2025.0238'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://dx.doi.org/10.5281/ZENODO.13997859'>![](img/repo/icon-zenodo.png){width=12%}</a></p>
+  </li>  
+ 
+  
+  <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/grabow_2025_JAnimEcol.jpg' alt='Figure 2 of Grabow et al. 2025: Overview map of included studies. Upper panel (a): Study locations (per reference) with included effect sizes. Point sizes indicate the number of individuals included in analyses; colour gradient shows the overall infection prevalence reported in the study. Lower panel (b): Study locations in Europe, with point sizes indicating the number of individuals included in analyses; colour gradient shows the overall infection prevalence reported in the study.' width="300">
+    <h3>Grabow et al. 2025</h3>
+    <p>Subtle stressors—Strong responses. Consistent negative effects of avian blood parasites on phenotypic and demographic traits across songbirds. *J ANIM ECOL*, 00, 1–14.</p><p>
+    <a href='https://doi.org/10.1111/1365-2656.70106'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://zenodo.org/records/14420924'>![](img/repo/icon-zenodo.png){width=12%}</a></p>
+  </li>  
   
   
   <li class="card-repo">
