@@ -96,6 +96,24 @@ knitr::opts_chunk$set(echo = FALSE)
     <a href='https://doi.org/10.3389/fevo.2024.1455142'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Drenske_2024_FrontEcolEvol'>![](img/repo/icon-github.png){width=12%}</a></p>
   </li>  
+
+
+ <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/fronville_2024_MethodsEcolEvol.jpg' alt='Figure 1 of Fronville et al. 2024: Scheme reflecting the workflow: (a) We simulated movement tracks of individual predator and prey individuals which either interacted with each other or not. The moving individuals may be in one of the two behavioural states: a persistent movement and a non-persistent movement that is very similar to correlated random walk. (b) We investigated the performance of the statistical methods by varying four factors relevant for field ecologists: four levels of perceptual range of the predator; five levels of proportion of tracked preys; two levels of temporal resolution; four levels of duration of tracking period. (c) The five different statistical methods that were applied to the generated movement tracks. The three on the top (Cs, Cr, DI) are the interaction indices while the two on the bottom are the SSF-based approaches.' width="300">
+    <h3>Fronville et al. 2024</h3>
+    <p>Performance of five statistical methods to infer interactions among moving individuals in a predator–prey system.  *METHODS ECOL EVOL*, 00, 1–16.</p><p>
+    <a href='https://doi.org/10.1111/2041-210X.14323'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/Fronville/Methods-inferring-interactions.git'>![](img/repo/icon-github.png){width=12%}</a>
+    <a href='https://doi.org/10.5281/zenodo.10869701'>![](img/repo/icon-zenodo.png){width=12%}</a></p>
+  </li>
+  
+  
+ <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/fronville_2025_MoveEcol.png' alt='Figure 1 of Fronville et al. 2025: Schematic representation of the four scenarios: Panels A–C show correlated movements of two individuals caused by habitat quality and barriers (no social interaction). A.a moving next to each other along a linear resource gradient, A.b moving from opposite initial locations towards the resource in the centre. B moving in a realistic landscape where resources are clustered in space. C Movement in a homogeneous matrix with barriers randomly scattered in the landscape blocking the movement of individuals. In Panel D the two individuals are attracted to each other and move as a group in the landscape, irrespective of habitat quality or other features. The violet and blue arrows depict the movement path of two individuals, the direction shown by the arrow. In panel A, B and D each grid cell reflects habitat quality that ranges from zero (orange) to one (green). Panel C shows the matrix in grey and the barriers, which are avoided by the individuals, in black.' width="300">
+    <h3>Fronville et al. 2025</h3>
+    <p>Considering landscape heterogeneity improves the inference of inter-individual interactions from movement data.  *MOVE ECOL*, 13, 41.</p><p>
+    <a href='(https://doi.org/10.1186/s40462-025-00567-0'>![](img/repo/icon-paper.png){width=12%}</a>></p>
+  </li>  
   
   
   <li class="card-repo">
