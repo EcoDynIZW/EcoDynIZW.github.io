@@ -1,10 +1,10 @@
 ---
-title: 'light-pollution europe 2016'
+title: 'humanfootprint europe 2009'
 categories:
   - Europe
   - 1km
-  - epsg:3035
-  - '2016'
+  - epsg:4326
+  - '2009'
 author:
   - name: Moritz Wenzler-Meya
 
@@ -46,7 +46,7 @@ ggplot2::theme_update(
 # get path
 path <-
     paste0(ifelse(dir.exists('T:/wenzler') == T, 'T:/wenzler',
-    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/europe/light-pollution_europe_2016_1km_03035_tif')
+    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/europe/humanfootprint_europe_2009_1km_04326_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -66,7 +66,7 @@ meta_gt <- gt::gt(meta %>%
 ```{r map}
 p_map <-
  readRDS(paste0(ifelse(dir.exists('T:/wenzler') == T, 'T:/wenzler',
-    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/europe/light-pollution_europe_2016_1km_03035_tif/light-pollution_europe_2016_1km_03035_tif' ,'.rds'))
+    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/europe/humanfootprint_europe_2009_1km_04326_tif/humanfootprint_europe_2009_1km_04326_tif' ,'.rds'))
 
 ```
 
