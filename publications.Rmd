@@ -24,6 +24,8 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * Fischer C, Frühauf A, Inchauste L, Cassiano MHA, ... , **Kramer-Schadt S**, ... , **Wenzler-Meya M**, ... , Drexler JF (2025): The spatiotemporal ecology of Oropouche virus across Latin America: a multidisciplinary, laboratory-based, modelling study. LANCET INFECT DIS. doi:<span>[10.1016/S1473-3099(25)00110-0](https://doi.org/10.1016/S1473-3099(25)00110-0)</span>  
 
+* Fradin G, Alexandrov T, Apollonio M, ... **Kramer-Schadt S**, ... Chamaillé-Jammes, S. (2025): Anthropization impacts the selection of resting sites and their centrality in movement networks: wild boar across Europe as an example. OIKOS e11295. doi:<span>[10.1002/oik.11295](https://doi.org/10.1002/oik.11295)</span>   
+
 * **Fronville T**, Blaum N, Jeltsch F, **Kramer-Schadt S**, **Radchuk V** (2025): Considering landscape heterogeneity improves the inference of inter-individual interactions from movement data. MOVE ECOL **13**, 41. doi:<span>[10.1186/s40462-025-00567-0](https://doi.org/10.1186/s40462-025-00567-0)</span>
 
 * Gould E, Fraser HS, Parker TH, ... **Sollmann R**, ... et al.(2025): Same data, different analysts: variation in effect sizes due to analytical decisions in ecology and evolutionary biology. BMC BIOL **23**, 35. doi:<span>[10.1186/s12915-024-02101-x](https://doi.org/10.1186/s12915-024-02101-x)</span>  
