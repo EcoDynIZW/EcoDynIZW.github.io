@@ -14,7 +14,7 @@ We are scientists of the Department of Ecological Dynamics at the [Leibniz Insti
 
 We investigate how fitness consequences of processes acting at the individual level, such as social behaviour or movements, competition, predator-prey or host-pathogen interactions, shape population and community dynamics, also at evolutionary scales. To ensure transparency and reproducibility, we follow the [FAIR principles](https://www.nature.com/articles/sdata201618) and provide code and data of published papers in our GitHub [repositories](https://github.com/orgs/EcoDynIZW/repositories.html). 
   
-**&rarr; Follow us on [Twitter](https://twitter.com/EcoDynIZW) and [GitHub](https://github.com/EcoDynIZW).**
+**&rarr; Follow us on [Bluesky](https://bsky.app/profile/ecodynizw.bsky.social) and [GitHub](https://github.com/EcoDynIZW).**
 
 <ul class="card-wrapper">
   <li class="card">
