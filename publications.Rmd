@@ -16,6 +16,8 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * Bauduin S, Germain E, Zimmermann F, Idelberger S, Herdtfelder M, Heurich M, **Kramer-Schadt S**, Duchamp C, Drouet-Hoguet N, Morand A, Blanc L, Charbonnel A, Gimenez O (2025): Modelling Eurasian lynx populations in Western Europe: What prospects for the next 50 years?. PEER COMMUNITY J, **Volume 5**, article no. e60. doi:<span>[10.24072/pcjournal.543](https://doi.org/10.24072/pcjournal.543)</span> 
 
+* Brodie JF, Mohd‐Azlan J, Chen C, Wearn OR, Deith MCM, Ball JGC, Slade EM, Burslem DFRP, Teoh SW, Williams PJ, **Nguyen A**, Moore JH, Goetz SJ, Burns P, Jantz P, Hakkenberg CR, Kaszta Z, Cushman S, Coomes D, Helmy OE, Reynolds G, Rodríguez JP, Jetz W, Luskin MS (2025): Reply to: Causal claims, causal assumptions and protected area impact. NATURE **638**, E42–E44. doi:<span>[10.1038/s41586-024-08513-7](https://doi.org/10.1038/s41586-024-08513-7)</span>
+
 * Curk Te, Rast W, Portas R, Kohles J, Shatumbu G, Cloete C, Curk Ti, **Radchuk V**, Aschenborn O, Melzheimer J (2025): Advantages and disadvantages of using social information for carcass detection–A case study using white-backed vultures. ECOL MODELL **499**, 110941. doi:<span>[10.1016/j.ecolmodel.2024.110941](https://doi.org/10.1016/j.ecolmodel.2024.110941)</span>
 
 * Devarajan K, ... **Sollmann R**, **Tilker A**, **Wilting A**, ...  et al. (2025): When the wild things are: Defining mammalian diel activity and plasticity. SCI ADV **11**, eado3843. doi:<span>[10.1126/sciadv.ado3843](https://doi.org/10.1126/sciadv.ado3843)</span>
@@ -27,6 +29,8 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 * Fradin G, Alexandrov T, Apollonio M, ... **Kramer-Schadt S**, ... Chamaillé-Jammes, S. (2025): Anthropization impacts the selection of resting sites and their centrality in movement networks: wild boar across Europe as an example. OIKOS e11295. doi:<span>[10.1002/oik.11295](https://doi.org/10.1002/oik.11295)</span>   
 
 * **Fronville T**, Blaum N, Jeltsch F, **Kramer-Schadt S**, **Radchuk V** (2025): Considering landscape heterogeneity improves the inference of inter-individual interactions from movement data. MOVE ECOL **13**, 41. doi:<span>[10.1186/s40462-025-00567-0](https://doi.org/10.1186/s40462-025-00567-0)</span>
+
+* **Gicquel M**, Alonso JC, Nilsson L, Low M, Alonso JA, Boiko D, Bridge D, Dulau P, Heinicke T, Kettner A, Kiat Y, Kurlavičius P, Lundgren S, Modrow M, Nowald G, Ojaste I, Salvi A, Sandvik J, Ticháčková M, ... Månsson J (2025): Factors affecting detection probability: Insights from banding data in a long-term continent-wide monitoring program. ECOL IINDIC, **178**, Article 114020. doi:<span>[10.1016/j.ecolind.2025.114020](https://doi.org/10.1016/j.ecolind.2025.114020)</span> 
 
 * Gould E, Fraser HS, Parker TH, ... **Sollmann R**, ... et al.(2025): Same data, different analysts: variation in effect sizes due to analytical decisions in ecology and evolutionary biology. BMC BIOL **23**, 35. doi:<span>[10.1186/s12915-024-02101-x](https://doi.org/10.1186/s12915-024-02101-x)</span>  
 
@@ -57,10 +61,11 @@ J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](htt
 * Pringle S, Dallimer M, Goddard MA, …,**Kramer-Schadt S**, …, et al. (2025): Opportunities and challenges for monitoring terrestrial biodiversity in the robotics age. NAT ECOL EVOL. doi:<span>[10.1038/s41559-025-02704-9](https://doi.org/10.1038/s41559-025-02704-9)</span>   
 
 * Sanz-Pérez A, Sazatornil V, Palazón S, Vanpé C, Quenette PY, Sentilles J, Kervellec M, Milleret C, López-Bao JV, Afonso Jordana I, Jato R, Solà de la Torre J, **Sollmann R** (2025): Mapping sex- and age-structure reveals lonely males at the front in an expanding brown bear population. BIOL CONSERV, 306. doi:<span>[10.1016/j.biocon.2025.111122](https://doi.org/10.1016/j.biocon.2025.111122)</span> 
-
 * Sanz-Pérez A, **Sollmann R**, Godinho R, et al. (2025): How to better count elusive birds? Comparing non-invasive monitoring methods to estimate population size of the threatened Pin-tailed sandgrouse (*Pterocles alchata*). BIODIVERS CONSERV. doi:<span>[10.1007/s10531-025-03061-6](https://doi.org/10.1007/s10531-025-03061-6)</span>
 
 * Scholz C, **Grabow M**, Reusch C, Korn M, Hoffmeister U, Voigt CC (2025): Oak woodlands and urban green spaces: Landscape management for a forest-affiliated bat, the Leisler's bat (*Nyctalus leisleri*). Journal of Environmental Management, 387, **125753**. doi:<span>[10.1016/j.jenvman.2025.125753](https://doi.org/10.1016/j.jenvman.2025.125753)</span>
+
+* Scholz C, Teige T, Ngoufack Djoumessi KP, Buchholz S, Pritsch F, **Planillo A**, Voigt CC (2025): Dietary diversification of an insect predator along an urban‐rural gradient. LANDSC URBAN PLAN **256**, 105273. doi:<span>[10.1016/j.landurbplan.2024.105273](https://doi.org/10.1016/j.landurbplan.2024.105273)</span>  
 
 * Schwantes CJ, Sánchez CA, Stevens T, … **Kramer-Schadt S**, …, et al. (2025): A minimum data standard for wildlife disease research and surveillance. SCI DATA **12**, 1054. doi:<span>[10.1038/s41597-025-05332-x](https://doi.org/10.1038/s41597-025-05332-x)</span>  
 
@@ -68,7 +73,11 @@ J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](htt
 
 * Straka T, **Radchuk V**, Kowarik I, von der Lippe M, Buchholz S (2025): Urbanization Impacts Top Predators and Alters Biotic Interactions in Predator–Prey–Mutualistic Communities of Urban Dry Grasslands. ECOL EVOL, **15**:e70791 doi:<span>[10.1002/ece3.70791](https://doi.org/10.1002/ece3.70791)</span>  
 
+* Tran DV, Phan DV, Vu TT, Lau KA, Pham NT, Pham HT, Nguyen TC, Pham TV, **Tilker A** (2025): First observation of mating behavior of the endangered forest musk deer *Moschus berezovskii* in the wild. TROP ZOOL 37, 3–4. doi:<span>[10.4081/tz.2024.186](https://doi.org/10.4081/tz.2024.186)</span>
+
 * **Veloso Soares SP**, Jarquín-Díaz VH, **Veiga MM**. **Karl S**, Czirják GA, Weyrich A, **Metzger S**, **East ML**, Hofer H, Heitlinger E, **Benhaiem S**, Ferreira SCM (2025): Mucosal immune responses and intestinal microbiome associations in wild spotted hyenas (*Crocuta crocuta*). COMMUN BIOL **8**, 924. doi:<span>[10.1038/s42003-025-08243-0](https://doi.org/10.1038/s42003-025-08243-0)</span> 
+
+* **Vlaschenko A**, Shulenko A, Yerofeieva M, Bohodist V, Zemliana K, Kulynych A, But A, Parfilov O, Putiatina V, Prylutska A, Kravchenko K (2025): Urban bat rescue crisis in eastern Europe: A new challenge for bat conservation. ANIM CONSERV. doi:<span>[10.1111/acv.70018](https://doi.org/10.1111/acv.70018)</span>
 
 * **Wilting A**, Roellig K, **Tilker A** (2025): Defaunation: Loss of top predators disrupts food webs. CURR BIOL, **14**, 35. doi:<span>[10.1016/j.cub.2025.05.059](https://doi.org/10.1016/j.cub.2025.05.059)</span> 
 
