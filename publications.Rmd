@@ -50,6 +50,8 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * Nguyen AT, **Nguyen A**, Le M, **Wilting A**, **Tilker A** (2025): Camera-trapping reveals both defaunation and conservation priority species in an unprotected forest in Vietnam. GECCO **61**, e03644. doi:<span>[10.1016/j.gecco.2025.e03644](https://doi.org/10.1016/j.gecco.2025.e03644)</span> 
 
+* Pawlak J, **Radchuk V**, Tiedemann R , Weithoff R, (accepted): Niche separation of two cryptic species through temperature-dependent hatching. ECOSPHERE. doi:<span>[10.1002/ecs2.70418](https://doi.org/10.1002/ecs2.70418)</span>
+
 * Pflumm L, Kang H, **Wilting A** and **Niedballa J** (2025): GEE-PICX: generating cloud-free Sentinel-2 and Landsat image composites and spectral indices for custom areas and time frames – a Google Earth Engine web application. ECOGRAPHY e07385. doi:<span>[10.1111/ecog.07385](https://doi.org/10.1111/ecog.07385)</span>
 
 * Premier J, Bastianelli ML, Oeser J, …, **Kramer-Schadt S**, Heurich M (2025): Survival of Eurasian lynx in the human-dominated landscape of Europe. CONSERV BIOL, e14439. doi:<span>[10.1111/cobi.14439](https://doi.org/10.1111/cobi.14439)</span>  
@@ -72,6 +74,8 @@ J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](htt
 * Signer J, **Scherer C**, **Radchuk V**, Scholz C, Jeltsch F and **Kramer-Schadt S** (2025): The 4th Dimension in Animal Movement: The Effect of Temporal Resolution and Landscape Configuration in Habitat-Selection Analyses. ECOL EVOL, **15**:e71434. doi:<span>[10.1002/ece3.71434](https://doi.org/10.1002/ece3.71434)</span>  
 
 * Straka T, **Radchuk V**, Kowarik I, von der Lippe M, Buchholz S (2025): Urbanization Impacts Top Predators and Alters Biotic Interactions in Predator–Prey–Mutualistic Communities of Urban Dry Grasslands. ECOL EVOL, **15**:e70791 doi:<span>[10.1002/ece3.70791](https://doi.org/10.1002/ece3.70791)</span>  
+
+# Tovstukha I, Fritze M, Kravchenko K, Kovalov V, **Vlaschenko A** (2025): Urbanisation may alter baseline cellular immunity in bats: a pilot study. BIOLOGIA. doi:<span>[10.1007/s11756-025-02027-x](https://doi.org/10.1007/s11756-025-02027-x)</span>   
 
 * Tran DV, Phan DV, Vu TT, Lau KA, Pham NT, Pham HT, Nguyen TC, Pham TV, **Tilker A** (2025): First observation of mating behavior of the endangered forest musk deer *Moschus berezovskii* in the wild. TROP ZOOL 37, 3–4. doi:<span>[10.4081/tz.2024.186](https://doi.org/10.4081/tz.2024.186)</span>
 
