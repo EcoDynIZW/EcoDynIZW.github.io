@@ -101,6 +101,8 @@ Untersuchung von Handlungsoptionen zur Verbesserung der Konnektivität. NUL **56
 
 * **Tilker A**, **Niedballa J**, Viet HL, Abrams JF, Marescot L, Wilkinson N, Rawson BM, **Sollmann R**, **Wilting A** (2024): Addressing the Southeast Asian snaring crisis: Impact of 11 years of snare removal in a biodiversity hotspot. CONSERV LETT, e13021. doi:<span>[10.1111/conl.13021](https://doi.org/10.1111/conl.13021)</span>
 
+* Tran DV, Phan DV, Vu TT, Lau KA, Pham NT, Pham HT, Nguyen TC, Pham TV, **Tilker A** (2024): First observation of mating behavior of the endangered forest musk deer *Moschus berezovskii* in the wild. TROP ZOOL 37, 3–4. doi:<span>[10.4081/tz.2024.186](https://doi.org/10.4081/tz.2024.186)</span>
+
 * Vullioud C, **Benhaiem S**, Meneghini D, Szyf M, Shao Y, Hofer H, **East ML**, Fickel J, Weyrich A (2024): Epigenetic signatures of social status in wild female spotted hyenas (*Crocuta crocuta*). COMMUN BIOL, **7**, 1-12. doi:<span>[10.1038/s42003-024-05926-y](https://doi.org/10.1038/s42003-024-05926-y)</span>
 
 * **Wong ST**, Mohamed A, Mathai J, **Niedballa J**, Kissing J, Lagan P, Hastie AYL, **Wilting A**, **Sollmann R** (2024): Changes in tropical terrestrial vertebrate communities along two anthropogenic gradients: Forest degradation and accessibility. BIOTROPICA, **56**, e13320. doi:<span>[10.1111/btp.13320](https://doi.org/10.1111/btp.13320)</span>
