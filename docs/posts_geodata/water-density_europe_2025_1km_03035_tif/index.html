@@ -103,13 +103,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="og:title" content="Ecological Dynamics: water-density europe 2025"/>
 <meta property="og:type" content="article"/>
 <meta property="og:url" content="https://ecodynizw.github.io/posts_geodata/water-density_europe_2025_1km_03035_tif/"/>
+<meta property="og:image" content="https://ecodynizw.github.io/posts_geodata/water-density_europe_2025_1km_03035_tif/water-density_europe_2025_1km_03035_tif_files/figure-html5/plot-1.png"/>
+<meta property="og:image:width" content="4500"/>
+<meta property="og:image:height" content="3000"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Ecological Dynamics"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
-<meta property="twitter:card" content="summary"/>
+<meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="Ecological Dynamics: water-density europe 2025"/>
 <meta property="twitter:url" content="https://ecodynizw.github.io/posts_geodata/water-density_europe_2025_1km_03035_tif/"/>
+<meta property="twitter:image" content="https://ecodynizw.github.io/posts_geodata/water-density_europe_2025_1km_03035_tif/water-density_europe_2025_1km_03035_tif_files/figure-html5/plot-1.png"/>
+<meta property="twitter:image:width" content="4500"/>
+<meta property="twitter:image:height" content="3000"/>
 <meta property="twitter:site" content="@EcoDynIZW"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
@@ -128,7 +134,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["water-density_europe_2025_1km_03035_tif_files/anchor-4.2.2/anchor.min.js","water-density_europe_2025_1km_03035_tif_files/bowser-1.9.3/bowser.min.js","water-density_europe_2025_1km_03035_tif_files/distill-2.2.21/template.v2.js","water-density_europe_2025_1km_03035_tif_files/figure-html5/plot-1.png","water-density_europe_2025_1km_03035_tif_files/header-attrs-2.29/header-attrs.js","water-density_europe_2025_1km_03035_tif_files/jquery-3.6.0/jquery-3.6.0.js","water-density_europe_2025_1km_03035_tif_files/jquery-3.6.0/jquery-3.6.0.min.js","water-density_europe_2025_1km_03035_tif_files/jquery-3.6.0/jquery-3.6.0.min.map","water-density_europe_2025_1km_03035_tif_files/popper-2.6.0/popper.min.js","water-density_europe_2025_1km_03035_tif_files/tippy-6.2.7/tippy-bundle.umd.min.js","water-density_europe_2025_1km_03035_tif_files/tippy-6.2.7/tippy-light-border.css","water-density_europe_2025_1km_03035_tif_files/tippy-6.2.7/tippy.css","water-density_europe_2025_1km_03035_tif_files/tippy-6.2.7/tippy.umd.min.js","water-density_europe_2025_1km_03035_tif_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["water-density_europe_2025_1km_03035_tif_files/anchor-4.2.2/anchor.min.js","water-density_europe_2025_1km_03035_tif_files/bowser-1.9.3/bowser.min.js","water-density_europe_2025_1km_03035_tif_files/distill-2.2.21/template.v2.js","water-density_europe_2025_1km_03035_tif_files/figure-html5/plot-1.png","water-density_europe_2025_1km_03035_tif_files/header-attrs-2.29/header-attrs.js","water-density_europe_2025_1km_03035_tif_files/header-attrs-2.30/header-attrs.js","water-density_europe_2025_1km_03035_tif_files/jquery-3.6.0/jquery-3.6.0.js","water-density_europe_2025_1km_03035_tif_files/jquery-3.6.0/jquery-3.6.0.min.js","water-density_europe_2025_1km_03035_tif_files/jquery-3.6.0/jquery-3.6.0.min.map","water-density_europe_2025_1km_03035_tif_files/popper-2.6.0/popper.min.js","water-density_europe_2025_1km_03035_tif_files/tippy-6.2.7/tippy-bundle.umd.min.js","water-density_europe_2025_1km_03035_tif_files/tippy-6.2.7/tippy-light-border.css","water-density_europe_2025_1km_03035_tif_files/tippy-6.2.7/tippy.css","water-density_europe_2025_1km_03035_tif_files/tippy-6.2.7/tippy.umd.min.js","water-density_europe_2025_1km_03035_tif_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2803,214 +2809,24 @@ Wikis
 
 </div>
 <div class="layout-chunk" data-layout="l-screen">
-<pre><code>$data
-list()
-attr(,&quot;class&quot;)
-[1] &quot;waiver&quot;
-
-$layers
-$layers[[1]]
-mapping: x = ~x, y = ~y, fill = ~`water-density_europe_2025_1km_03035.tif` 
-geom_raster: hjust = 0.5, vjust = 0.5, interpolate = FALSE, na.rm = FALSE
-stat_identity: na.rm = FALSE
-position_identity 
-
-
-$scales
-&lt;ggproto object: Class ScalesList, gg&gt;
-    add: function
-    add_defaults: function
-    add_missing: function
-    backtransform_df: function
-    clone: function
-    find: function
-    get_scales: function
-    has_scale: function
-    input: function
-    map_df: function
-    n: function
-    non_position_scales: function
-    scales: list
-    set_palettes: function
-    train_df: function
-    transform_df: function
-    super:  &lt;ggproto object: Class ScalesList, gg&gt;
-
-$guides
-&lt;Guides[1] ggproto object&gt;
-
-fill : &lt;GuideLegend&gt;
-
-$mapping
-named list()
-attr(,&quot;class&quot;)
-[1] &quot;uneval&quot;
-
-$theme
-$theme$legend.title
-$family
-NULL
-
-$face
-NULL
-
-$colour
-NULL
-
-$size
-NULL
-
-$hjust
-[1] 0.5
-
-$vjust
-NULL
-
-$angle
-NULL
-
-$lineheight
-NULL
-
-$margin
-NULL
-
-$debug
-NULL
-
-$inherit.blank
-[1] FALSE
-
-attr(,&quot;class&quot;)
-[1] &quot;element_text&quot; &quot;element&quot;     
-
-attr(,&quot;complete&quot;)
-[1] FALSE
-attr(,&quot;validate&quot;)
-[1] TRUE
-
-$coordinates
-&lt;ggproto object: Class CoordSf, CoordCartesian, Coord, gg&gt;
-    aspect: function
-    backtransform_range: function
-    clip: on
-    crs: NULL
-    datum: crs
-    default: FALSE
-    default_crs: NULL
-    determine_crs: function
-    distance: function
-    draw_panel: function
-    expand: FALSE
-    fixup_graticule_labels: function
-    get_default_crs: function
-    is_free: function
-    is_linear: function
-    label_axes: list
-    label_graticule: 
-    labels: function
-    limits: list
-    lims_method: cross
-    modify_scales: function
-    ndiscr: 100
-    params: list
-    range: function
-    record_bbox: function
-    render_axis_h: function
-    render_axis_v: function
-    render_bg: function
-    render_fg: function
-    reverse: none
-    setup_data: function
-    setup_layout: function
-    setup_panel_guides: function
-    setup_panel_params: function
-    setup_params: function
-    train_panel_guides: function
-    transform: function
-    super:  &lt;ggproto object: Class CoordSf, CoordCartesian, Coord, gg&gt;
-
-$facet
-&lt;ggproto object: Class FacetNull, Facet, gg&gt;
-    attach_axes: function
-    attach_strips: function
-    compute_layout: function
-    draw_back: function
-    draw_front: function
-    draw_labels: function
-    draw_panel_content: function
-    draw_panels: function
-    finish_data: function
-    format_strip_labels: function
-    init_gtable: function
-    init_scales: function
-    map_data: function
-    params: list
-    set_panel_size: function
-    setup_data: function
-    setup_panel_params: function
-    setup_params: function
-    shrink: TRUE
-    train_scales: function
-    vars: function
-    super:  &lt;ggproto object: Class FacetNull, Facet, gg&gt;
-
-$plot_env
-&lt;environment: 0x0000020bfca2c180&gt;
-
-$layout
-&lt;ggproto object: Class Layout, gg&gt;
-    coord: NULL
-    coord_params: list
-    facet: NULL
-    facet_params: list
-    finish_data: function
-    get_scales: function
-    layout: NULL
-    map_position: function
-    panel_params: NULL
-    panel_scales_x: NULL
-    panel_scales_y: NULL
-    render: function
-    render_labels: function
-    reset_scales: function
-    resolve_label: function
-    setup: function
-    setup_panel_guides: function
-    setup_panel_params: function
-    train_position: function
-    super:  &lt;ggproto object: Class Layout, gg&gt;
-
-$labels
-$labels$x
-[1] &quot;x&quot;
-
-$labels$y
-[1] &quot;y&quot;
-
-$labels$fill
-[1] &quot;water-density_europe_2025_1km_03035.tif&quot;
-
-
-attr(,&quot;class&quot;)
-[1] &quot;gg&quot;     &quot;ggplot&quot;</code></pre>
-<div id="puulfydqve" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#puulfydqve table {
+<p><img src="water-density_europe_2025_1km_03035_tif_files/figure-html5/plot-1.png" width="2250" /></p>
+<div id="nwbhhioljg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nwbhhioljg table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#puulfydqve thead, #puulfydqve tbody, #puulfydqve tfoot, #puulfydqve tr, #puulfydqve td, #puulfydqve th {
+#nwbhhioljg thead, #nwbhhioljg tbody, #nwbhhioljg tfoot, #nwbhhioljg tr, #nwbhhioljg td, #nwbhhioljg th {
   border-style: none;
 }
 
-#puulfydqve p {
+#nwbhhioljg p {
   margin: 0;
   padding: 0;
 }
 
-#puulfydqve .gt_table {
+#nwbhhioljg .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3036,12 +2852,12 @@ attr(,&quot;class&quot;)
   border-left-color: #D3D3D3;
 }
 
-#puulfydqve .gt_caption {
+#nwbhhioljg .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#puulfydqve .gt_title {
+#nwbhhioljg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3053,7 +2869,7 @@ attr(,&quot;class&quot;)
   border-bottom-width: 0;
 }
 
-#puulfydqve .gt_subtitle {
+#nwbhhioljg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3065,7 +2881,7 @@ attr(,&quot;class&quot;)
   border-top-width: 0;
 }
 
-#puulfydqve .gt_heading {
+#nwbhhioljg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3077,13 +2893,13 @@ attr(,&quot;class&quot;)
   border-right-color: #D3D3D3;
 }
 
-#puulfydqve .gt_bottom_border {
+#nwbhhioljg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#puulfydqve .gt_col_headings {
+#nwbhhioljg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3098,7 +2914,7 @@ attr(,&quot;class&quot;)
   border-right-color: #D3D3D3;
 }
 
-#puulfydqve .gt_col_heading {
+#nwbhhioljg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3118,7 +2934,7 @@ attr(,&quot;class&quot;)
   overflow-x: hidden;
 }
 
-#puulfydqve .gt_column_spanner_outer {
+#nwbhhioljg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3130,15 +2946,15 @@ attr(,&quot;class&quot;)
   padding-right: 4px;
 }
 
-#puulfydqve .gt_column_spanner_outer:first-child {
+#nwbhhioljg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#puulfydqve .gt_column_spanner_outer:last-child {
+#nwbhhioljg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#puulfydqve .gt_column_spanner {
+#nwbhhioljg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3150,11 +2966,11 @@ attr(,&quot;class&quot;)
   width: 100%;
 }
 
-#puulfydqve .gt_spanner_row {
+#nwbhhioljg .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#puulfydqve .gt_group_heading {
+#nwbhhioljg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3180,7 +2996,7 @@ attr(,&quot;class&quot;)
   text-align: left;
 }
 
-#puulfydqve .gt_empty_group_heading {
+#nwbhhioljg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3195,15 +3011,15 @@ attr(,&quot;class&quot;)
   vertical-align: middle;
 }
 
-#puulfydqve .gt_from_md > :first-child {
+#nwbhhioljg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#puulfydqve .gt_from_md > :last-child {
+#nwbhhioljg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#puulfydqve .gt_row {
+#nwbhhioljg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3222,7 +3038,7 @@ attr(,&quot;class&quot;)
   overflow-x: hidden;
 }
 
-#puulfydqve .gt_stub {
+#nwbhhioljg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3235,7 +3051,7 @@ attr(,&quot;class&quot;)
   padding-right: 5px;
 }
 
-#puulfydqve .gt_stub_row_group {
+#nwbhhioljg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3249,15 +3065,15 @@ attr(,&quot;class&quot;)
   vertical-align: top;
 }
 
-#puulfydqve .gt_row_group_first td {
+#nwbhhioljg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#puulfydqve .gt_row_group_first th {
+#nwbhhioljg .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#puulfydqve .gt_summary_row {
+#nwbhhioljg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3267,16 +3083,16 @@ attr(,&quot;class&quot;)
   padding-right: 5px;
 }
 
-#puulfydqve .gt_first_summary_row {
+#nwbhhioljg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#puulfydqve .gt_first_summary_row.thick {
+#nwbhhioljg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#puulfydqve .gt_last_summary_row {
+#nwbhhioljg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3286,7 +3102,7 @@ attr(,&quot;class&quot;)
   border-bottom-color: #D3D3D3;
 }
 
-#puulfydqve .gt_grand_summary_row {
+#nwbhhioljg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3296,7 +3112,7 @@ attr(,&quot;class&quot;)
   padding-right: 5px;
 }
 
-#puulfydqve .gt_first_grand_summary_row {
+#nwbhhioljg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3306,7 +3122,7 @@ attr(,&quot;class&quot;)
   border-top-color: #D3D3D3;
 }
 
-#puulfydqve .gt_last_grand_summary_row_top {
+#nwbhhioljg .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3316,11 +3132,11 @@ attr(,&quot;class&quot;)
   border-bottom-color: #D3D3D3;
 }
 
-#puulfydqve .gt_striped {
+#nwbhhioljg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#puulfydqve .gt_table_body {
+#nwbhhioljg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3329,7 +3145,7 @@ attr(,&quot;class&quot;)
   border-bottom-color: #D3D3D3;
 }
 
-#puulfydqve .gt_footnotes {
+#nwbhhioljg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3343,7 +3159,7 @@ attr(,&quot;class&quot;)
   border-right-color: #D3D3D3;
 }
 
-#puulfydqve .gt_footnote {
+#nwbhhioljg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3352,7 +3168,7 @@ attr(,&quot;class&quot;)
   padding-right: 5px;
 }
 
-#puulfydqve .gt_sourcenotes {
+#nwbhhioljg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3366,7 +3182,7 @@ attr(,&quot;class&quot;)
   border-right-color: #D3D3D3;
 }
 
-#puulfydqve .gt_sourcenote {
+#nwbhhioljg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3374,72 +3190,72 @@ attr(,&quot;class&quot;)
   padding-right: 5px;
 }
 
-#puulfydqve .gt_left {
+#nwbhhioljg .gt_left {
   text-align: left;
 }
 
-#puulfydqve .gt_center {
+#nwbhhioljg .gt_center {
   text-align: center;
 }
 
-#puulfydqve .gt_right {
+#nwbhhioljg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#puulfydqve .gt_font_normal {
+#nwbhhioljg .gt_font_normal {
   font-weight: normal;
 }
 
-#puulfydqve .gt_font_bold {
+#nwbhhioljg .gt_font_bold {
   font-weight: bold;
 }
 
-#puulfydqve .gt_font_italic {
+#nwbhhioljg .gt_font_italic {
   font-style: italic;
 }
 
-#puulfydqve .gt_super {
+#nwbhhioljg .gt_super {
   font-size: 65%;
 }
 
-#puulfydqve .gt_footnote_marks {
+#nwbhhioljg .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#puulfydqve .gt_asterisk {
+#nwbhhioljg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#puulfydqve .gt_indent_1 {
+#nwbhhioljg .gt_indent_1 {
   text-indent: 5px;
 }
 
-#puulfydqve .gt_indent_2 {
+#nwbhhioljg .gt_indent_2 {
   text-indent: 10px;
 }
 
-#puulfydqve .gt_indent_3 {
+#nwbhhioljg .gt_indent_3 {
   text-indent: 15px;
 }
 
-#puulfydqve .gt_indent_4 {
+#nwbhhioljg .gt_indent_4 {
   text-indent: 20px;
 }
 
-#puulfydqve .gt_indent_5 {
+#nwbhhioljg .gt_indent_5 {
   text-indent: 25px;
 }
 
-#puulfydqve .katex-display {
+#nwbhhioljg .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#puulfydqve div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nwbhhioljg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3491,7 +3307,7 @@ attr(,&quot;class&quot;)
 Session Info
 </summary>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code>[1] &quot;2025-10-10 13:29:39 CEST&quot;</code></pre>
+<pre><code>[1] &quot;2025-10-13 10:23:20 CEST&quot;</code></pre>
 <pre><code>R version 4.5.0 (2025-04-11 ucrt)
 Platform: x86_64-w64-mingw32/x64
 Running under: Windows 10 x64 (build 19044)
@@ -3535,12 +3351,12 @@ loaded via a namespace (and not attached):
 [52] sf_1.0-21            systemfonts_1.3.1    xfun_0.53           
 [55] tibble_3.3.0         tidyselect_1.2.1     rstudioapi_0.17.1   
 [58] knitr_1.50           dichromat_2.0-0.1    farver_2.1.2        
-[61] htmltools_0.5.8.1    rmarkdown_2.30       d6geodata_0.0.0.9000
-[64] compiler_4.5.0       S7_0.2.0             downlit_0.4.4       
-[67] stars_0.6-8         </code></pre>
+[61] htmltools_0.5.8.1    labeling_0.4.3       rmarkdown_2.30      
+[64] d6geodata_0.0.0.9000 compiler_4.5.0       S7_0.2.0            
+[67] downlit_0.4.4        stars_0.6-8         </code></pre>
 </div>
 </details>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
