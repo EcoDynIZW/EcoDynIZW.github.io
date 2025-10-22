@@ -61,7 +61,6 @@ Exploring the ecological feasibility of restoring Eurasian lynx to Great Britain
 J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](https://doi.org/10.1016/j.jenvman.2025.125646)</span>   
 
 * Pringle S, Dallimer M, Goddard MA, …,**Kramer-Schadt S**, …, et al. (2025): Opportunities and challenges for monitoring terrestrial biodiversity in the robotics age. NAT ECOL EVOL. doi:<span>[10.1038/s41559-025-02704-9](https://doi.org/10.1038/s41559-025-02704-9)</span>   
-
 * Sanz-Pérez A, Sazatornil V, Palazón S, Vanpé C, Quenette PY, Sentilles J, Kervellec M, Milleret C, López-Bao JV, Afonso Jordana I, Jato R, Solà de la Torre J, **Sollmann R** (2025): Mapping sex- and age-structure reveals lonely males at the front in an expanding brown bear population. BIOL CONSERV, 306. doi:<span>[10.1016/j.biocon.2025.111122](https://doi.org/10.1016/j.biocon.2025.111122)</span> 
 * Sanz-Pérez A, **Sollmann R**, Godinho R, et al. (2025): How to better count elusive birds? Comparing non-invasive monitoring methods to estimate population size of the threatened Pin-tailed sandgrouse (*Pterocles alchata*). BIODIVERS CONSERV. doi:<span>[10.1007/s10531-025-03061-6](https://doi.org/10.1007/s10531-025-03061-6)</span>
 
@@ -72,6 +71,8 @@ J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](htt
 * Schwantes CJ, Sánchez CA, Stevens T, … **Kramer-Schadt S**, …, et al. (2025): A minimum data standard for wildlife disease research and surveillance. SCI DATA **12**, 1054. doi:<span>[10.1038/s41597-025-05332-x](https://doi.org/10.1038/s41597-025-05332-x)</span>  
 
 * Signer J, **Scherer C**, **Radchuk V**, Scholz C, Jeltsch F and **Kramer-Schadt S** (2025): The 4th Dimension in Animal Movement: The Effect of Temporal Resolution and Landscape Configuration in Habitat-Selection Analyses. ECOL EVOL, **15**:e71434. doi:<span>[10.1002/ece3.71434](https://doi.org/10.1002/ece3.71434)</span>  
+
+* Storch I, Klop-Toker K, **Kramer-Schadt S** and Tsukada H (2025): Pathogens and policy – wildlife management lessons from disease ecology. WILDL BIOL, **5**, e01563. doi:<span>[10.1002/wlb3.01563](https://doi.org/10.1002/wlb3.01563)</span>
 
 * Straka T, **Radchuk V**, Kowarik I, von der Lippe M, Buchholz S (2025): Urbanization Impacts Top Predators and Alters Biotic Interactions in Predator–Prey–Mutualistic Communities of Urban Dry Grasslands. ECOL EVOL, **15**:e70791 doi:<span>[10.1002/ece3.70791](https://doi.org/10.1002/ece3.70791)</span>  
 
