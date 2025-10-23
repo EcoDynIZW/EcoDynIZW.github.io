@@ -320,6 +320,14 @@ knitr::opts_chunk$set(echo = FALSE)
     <a href='https://doi.org/10.5281/zenodo.11198275'>![](img/repo/icon-zenodo.png){width=12%}</a> </p>
   </li>  
   
+
+<li class="card-repo">
+    <img class="card-repo-img" src='img/repo/signer_2025_ecolevol.jpg' alt='Figure 1 of Signer 2025: Schematic of the implemented analytical methods and simulation study of scenario 1. (A) For each of the replicated landscape settings with different spatial autocorrelation and their combinations, we (B) simulated 20 repetitions of nearly-continuous animal movement tracks influenced by these variables and subsampled the tracks to three different sampling intervals. (C) The tracks of different intervals were analyzed with three method variants (iSSA, RSA, and wRSA). Multicollinearity assessment of the combined landscape scenarios is provided in Figure S2.'>
+    <h3>Signer et al. 2025</h3>
+    <p>The 4th Dimension in Animal Movement: The Effect of Temporal Resolution and Landscape Configuration in Habitat-Selection Analyses. *ECOL EVOL* 15:e71434</p><p>
+    <a href=' https://doi.org/10.1002/ece3.71434'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Signer_2025_EcolEvol'>![](img/repo/icon-github.png){width=12%}</a> </p>
+  </li>   
   
   
   <li class="card-repo">
