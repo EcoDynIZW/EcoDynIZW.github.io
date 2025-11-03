@@ -72,6 +72,8 @@ J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](htt
 
 * Signer J, **Scherer C**, **Radchuk V**, Scholz C, Jeltsch F and **Kramer-Schadt S** (2025): The 4th Dimension in Animal Movement: The Effect of Temporal Resolution and Landscape Configuration in Habitat-Selection Analyses. ECOL EVOL, **15**:e71434. doi:<span>[10.1002/ece3.71434](https://doi.org/10.1002/ece3.71434)</span>  
 
+* Solem E, **Radchuk V**, Schwarz J, **Kramer-Schadt S** & Planillo A (2025): Multi-scale analysis reveals vegetation buffers human disturbance impacts on urban bird functional diversity. URBAN ECOSYST **28**, 223. doi:<span>[10.1007/s11252-025-01829-w3](https://doi.org/10.1007/s11252-025-01829-w)</span>
+
 * Storch I, Klop-Toker K, **Kramer-Schadt S** and Tsukada H (2025): Pathogens and policy – wildlife management lessons from disease ecology. WILDL BIOL, **5**, e01563. doi:<span>[10.1002/wlb3.01563](https://doi.org/10.1002/wlb3.01563)</span>
 
 * Straka T, **Radchuk V**, Kowarik I, von der Lippe M, Buchholz S (2025): Urbanization Impacts Top Predators and Alters Biotic Interactions in Predator–Prey–Mutualistic Communities of Urban Dry Grasslands. ECOL EVOL, **15**:e70791 doi:<span>[10.1002/ece3.70791](https://doi.org/10.1002/ece3.70791)</span>  
