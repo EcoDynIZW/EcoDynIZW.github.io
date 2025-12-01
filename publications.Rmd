@@ -40,7 +40,7 @@ For older publications please check here:<br> [2024](pubs-2024.html)&ensp;|&ensp
 
 * Greco I, Beaudrot L, Sutherland C, Tenan S, Hsieh C, Gorczynski D, ... **Mugerwa B**, ...  et al. (2025): Landscape-level human disturbance results in loss and contraction of mammalian populations in tropical forests. PLOS BIOL **23(2):** e3002976. doi:<span>[10.1371/journal.pbio.3002976](https://doi.org/10.1371/journal.pbio.3002976)</span> 
 
-* Grimm V, …, **Kramer-Schadt S**,… Railsback S (2024): Using the ODD protocol and NetLogo to replicate agent-based models. ECOL MODELL, **501**, 1-8. doi:<span>[10.1016/j.ecolmodel.2024.110967](https://doi.org/10.1016/j.ecolmodel.2024.110967)</span>  
+* Grimm V, …, **Kramer-Schadt S**,… Railsback S (2025): Using the ODD protocol and NetLogo to replicate agent-based models. ECOL MODELL, **501**, 1-8. doi:<span>[10.1016/j.ecolmodel.2024.110967](https://doi.org/10.1016/j.ecolmodel.2024.110967)</span>  
 
 * Jeltsch F, Roeleke M, Abdelfattah A, Arlinghaus R, Berg G, Blaum N, De Meester L, Dittmann E, Eccard JA, Fournier B, Gaedke U, Gallagher C, Govaert L, Hauber M, Jeschke JM, **Kramer-Schadt S**, Linstädter A, Lucke U, Mazza V, Metzler R, Nendel C, **Radchuk V**, Rillig MC, Ryo M, Scheiter K, Tiedemann R, Tietjen B, Voigt CC, Weithoff G, Wolinska J, Zurell D (2025): The need for an individual-based global change ecology. IBE **1**: e148200. doi:<span>[10.3897/ibe.1.148200](https://doi.org/10.3897/ibe.1.148200)</span>
 
@@ -85,6 +85,10 @@ J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](htt
 * **Veloso Soares SP**, Jarquín-Díaz VH, **Veiga MM**. **Karl S**, Czirják GA, Weyrich A, **Metzger S**, **East ML**, Hofer H, Heitlinger E, **Benhaiem S**, Ferreira SCM (2025): Mucosal immune responses and intestinal microbiome associations in wild spotted hyenas (*Crocuta crocuta*). COMMUN BIOL **8**, 924. doi:<span>[10.1038/s42003-025-08243-0](https://doi.org/10.1038/s42003-025-08243-0)</span> 
 
 * **Vlaschenko A**, Shulenko A, Yerofeieva M, Bohodist V, Zemliana K, Kulynych A, But A, Parfilov O, Putiatina V, Prylutska A, Kravchenko K (2025): Urban bat rescue crisis in eastern Europe: A new challenge for bat conservation. ANIM CONSERV. doi:<span>[10.1111/acv.70018](https://doi.org/10.1111/acv.70018)</span>
+
+* Vukelić M, **White EW**, Fennessy J, et al. (2025): Monitoring African Megafauna in an Anthropogenic Landscape: A 15-Year Case Study of the Vulnerable West African Giraffe. ANIM CONSERV 1–14. doi:<span>[10.1111/acv.70039](https://doi.org/10.1111/acv.70039)</span>
+
+* Wellmann T, Knapp S, Albert C, Egerer M, Fischer LK, Kaiser J, **Kramer-Schadt S**, et. al (2025): Status and trends of Germany’s urban biodiversity: a nationwide assessment and identified knowledge gaps. BASIC APPL ECOL 89. doi:<span>[10.1016/j.baae.2025.10.002](https://doi.org/10.1016/j.baae.2025.10.002)</span>
 
 * **Wilting A**, Roellig K, **Tilker A** (2025): Defaunation: Loss of top predators disrupts food webs. CURR BIOL, **14**, 35. doi:<span>[10.1016/j.cub.2025.05.059](https://doi.org/10.1016/j.cub.2025.05.059)</span> 
 
