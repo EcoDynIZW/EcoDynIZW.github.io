@@ -76,6 +76,8 @@ J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](htt
 
 * Solem E, **Radchuk V**, Schwarz J, **Kramer-Schadt S** & Planillo A (2025): Multi-scale analysis reveals vegetation buffers human disturbance impacts on urban bird functional diversity. URBAN ECOSYST **28**, 223. doi:<span>[10.1007/s11252-025-01829-w3](https://doi.org/10.1007/s11252-025-01829-w)</span>
 
+* Soto DX, Voigt CC, **Wilting A** and Fickel J (2025): Feeding Niches Under Threat: Unveiling Carnivore Dietary Patterns on the Sunda Shelf in Southeast Asia. J BIOGEOGR e70109. doi:<span>[10.1111/jbi.70109](https://doi.org/10.1111/jbi.70109)</span> 
+
 * Storch I, Klop-Toker K, **Kramer-Schadt S** and Tsukada H (2025): Pathogens and policy – wildlife management lessons from disease ecology. WILDL BIOL, **5**, e01563. doi:<span>[10.1002/wlb3.01563](https://doi.org/10.1002/wlb3.01563)</span>
 
 * Straka T, **Radchuk V**, Kowarik I, von der Lippe M, Buchholz S (2025): Urbanization Impacts Top Predators and Alters Biotic Interactions in Predator–Prey–Mutualistic Communities of Urban Dry Grasslands. ECOL EVOL, **15**:e70791 doi:<span>[10.1002/ece3.70791](https://doi.org/10.1002/ece3.70791)</span>  
@@ -93,6 +95,9 @@ J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](htt
 * **Wilting A**, Roellig K, **Tilker A** (2025): Defaunation: Loss of top predators disrupts food webs. CURR BIOL, **14**, 35. doi:<span>[10.1016/j.cub.2025.05.059](https://doi.org/10.1016/j.cub.2025.05.059)</span> 
 
 * **Wong ST**, Guharajan R, Petrus A, Jubili J, Kissing J, Lagan P, Ong R, **Wilting A**, **Sollmann R** (2025): Terrestrial Wildlife Shows Limited Response in Spatiotemporal Activity to Logging. ECOSPHERE **16(2)**: e70185. doi:<span>[10.1002/ecs2.70185](https://doi.org/10.1002/ecs2.70185)</span> 
+
+* Yoganand K, **Tilker A** (2025): Emerging trafficking of live striped rabbits driven by demand for exotic pets in India and Thailand. ORYX **59(3)**, 285 – 286. doi:<span>[10.1017/S0030605325102056](https://doi.org/10.1017/S0030605325102056)</span>
+
 
 <div class='headerbox'><hbox>Reports and other scientific outlets</hbox></div><br>
 
