@@ -174,7 +174,7 @@ knitr::opts_chunk$set(echo = FALSE)
   
   <li class="card-repo">
     <img class="card-repo-img" src='img/repo/louvrier_2021.png' alt='Graphical abstract of Louvrier et al. 2021: schematic illustration of the study workflow showing data sources (spatial data + photo trapping images), environmental filters (icons), species interactions (icons) and circular plots showing species activity patterns.'>
-    <h3>Louvrier et al. 2021</h3>
+    <h3>Louvrier et al. 2022</h3>
     <p>Spatiotemporal interactions of a novel mesocarnivore community in an urban environment before and during SARS-CoV-2 lockdown. *J ANIM ECOL*, 91:367–380.</p><p>
     <a href='https://doi.org/10.1111/1365-2656.13635'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Louvrier_2021_JAnimEcol'>![](img/repo/icon-github.png){width=12%}</a>
