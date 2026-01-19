@@ -7,7 +7,7 @@ description: ""
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[2025](publications.html)&ensp;|&ensp;[2024](pubs-2024.html)&ensp;|&ensp;[2023](pubs-2023.html)&ensp;|&ensp;[2022](pubs-2022.html)&ensp;|&ensp;[2020](pubs-2020.html)&ensp;|&ensp;[2019](pubs-2019.html)&ensp;|&ensp;[2018](pubs-2018.html)
+[2026](publications.html)&ensp;|&ensp; [2025](pubs-2025.html)&ensp;|&ensp;[2024](pubs-2024.html)&ensp;|&ensp;[2023](pubs-2023.html)&ensp;|&ensp;[2022](pubs-2022.html)&ensp;|&ensp;[2020](pubs-2020.html)&ensp;|&ensp;[2019](pubs-2019.html)&ensp;|&ensp;[2018](pubs-2018.html)
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
