@@ -63,7 +63,9 @@ Exploring the ecological feasibility of restoring Eurasian lynx to Great Britain
 J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](https://doi.org/10.1016/j.jenvman.2025.125646)</span>   
 
 * Pringle S, Dallimer M, Goddard MA, …,**Kramer-Schadt S**, …, et al. (2025): Opportunities and challenges for monitoring terrestrial biodiversity in the robotics age. NAT ECOL EVOL. doi:<span>[10.1038/s41559-025-02704-9](https://doi.org/10.1038/s41559-025-02704-9)</span>   
+
 * Sanz-Pérez A, Sazatornil V, Palazón S, Vanpé C, Quenette PY, Sentilles J, Kervellec M, Milleret C, López-Bao JV, Afonso Jordana I, Jato R, Solà de la Torre J, **Sollmann R** (2025): Mapping sex- and age-structure reveals lonely males at the front in an expanding brown bear population. BIOL CONSERV, 306. doi:<span>[10.1016/j.biocon.2025.111122](https://doi.org/10.1016/j.biocon.2025.111122)</span> 
+
 * Sanz-Pérez A, **Sollmann R**, Godinho R, et al. (2025): How to better count elusive birds? Comparing non-invasive monitoring methods to estimate population size of the threatened Pin-tailed sandgrouse (*Pterocles alchata*). BIODIVERS CONSERV. doi:<span>[10.1007/s10531-025-03061-6](https://doi.org/10.1007/s10531-025-03061-6)</span>
 
 * Scholz C, **Grabow M**, Reusch C, Korn M, Hoffmeister U, Voigt CC (2025): Oak woodlands and urban green spaces: Landscape management for a forest-affiliated bat, the Leisler's bat (*Nyctalus leisleri*). Journal of Environmental Management, 387, **125753**. doi:<span>[10.1016/j.jenvman.2025.125753](https://doi.org/10.1016/j.jenvman.2025.125753)</span>
@@ -84,7 +86,11 @@ J ENVIRON MANAGE, **389**, 125646. doi:<span>[10.1016/j.jenvman.2025.125646](htt
 
 * Tovstukha I, Fritze M, Kravchenko K, Kovalov V, **Vlaschenko A** (2025): Urbanisation may alter baseline cellular immunity in bats: a pilot study. BIOLOGIA. doi:<span>[10.1007/s11756-025-02027-x](https://doi.org/10.1007/s11756-025-02027-x)</span>   
 
+* Tran DV, Phan DV, Vu TT, Lau KA, Pham NT, Pham HT, Nguyen TC, Pham TV, **Tilker A** (2025): First observation of mating behavior of the endangered forest musk deer *Moschus berezovskii* in the wild. TROP ZOOL 37, 3–4. doi:<span>[10.4081/tz.2024.186](https://doi.org/10.4081/tz.2024.186)</span>
+
 * **Veloso Soares SP**, Jarquín-Díaz VH, **Veiga MM**. **Karl S**, Czirják GA, Weyrich A, **Metzger S**, **East ML**, Hofer H, Heitlinger E, **Benhaiem S**, Ferreira SCM (2025): Mucosal immune responses and intestinal microbiome associations in wild spotted hyenas (*Crocuta crocuta*). COMMUN BIOL **8**, 924. doi:<span>[10.1038/s42003-025-08243-0](https://doi.org/10.1038/s42003-025-08243-0)</span> 
+
+* **Vlaschenko A**, Yerofieiva M, Tovstukha I. Holovko O, Kornieikov O, Ruedi M, Muzyka D (2025): New genetically confirmed record of *Myotis alcathoe* (Chiroptera, Mammalia) from Ukraine. ZOODIVERSITY **59**, 7-12. doi:<span>[10.15407/zoo2025.01.007](https://doi.org/10.15407/zoo2025.01.007)</span>
 
 * **Vlaschenko A**, Shulenko A, Yerofeieva M, Bohodist V, Zemliana K, Kulynych A, But A, Parfilov O, Putiatina V, Prylutska A, Kravchenko K (2025): Urban bat rescue crisis in eastern Europe: A new challenge for bat conservation. ANIM CONSERV. doi:<span>[10.1111/acv.70018](https://doi.org/10.1111/acv.70018)</span>
 
