@@ -257,9 +257,17 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img class="card-repo-img" src='img/repo/radchuk_2019.png' alt='Figure 3 of Radchuk et al. 2019: trait changes in response to temperature. For each study in the phenotypic responses to climate with selection (PRCS) dataset, the changes in morphological traits are shown in grey and the changes in phenological traits are shown in black. Each study is identified by the publication identity, the trait and the species. Studies are sorted by trait category (black: phenological; grey: morphological), and within it by species, trait name and publication identity. Overall, phenological traits in both the PRCS dataset (black) and the PRC dataset (dark blue) were negatively affected by temperature. Morphological traits were not associated with temperature in the PRCS (grey) and showed a tendency to a negative association with temperature in the PRC dataset (cyan). In the PRC dataset there was significant variation among taxa in the effect of temperature on phenological (blue) traits, and a tendency to such variation for morphological traits (cyan).'>
     <h3>Radchuk et al. 2019</h3>
-    <p>Adaptive responses of animals to climate change are most likely insufficient. *NAT COM*, 10:3109.</p><p>
+    <p>Adaptive responses of animals to climate change are most likely insufficient. *NAT COMMUN*, 10:3109.</p><p>
     <a href='https://doi.org/10.1038/s41467-019-10924-4'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Radchuk_2019_NatCom'>![](img/repo/icon-github.png){width=12%}</a></p>
+  </li>
+
+  <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/radchuk_2026.png' alt='Figure 2 of Radchuk et al. 2026: Map of the studies, colour-coded for different taxa, with the number of studies per taxon shown. A selection of studied species is shown, with each inset giving information for that species on its generation time (T, in years; also depicted by the black bar next to it), its diet (carnivore: C, herbivore: H, and omnivore: O) and whether the species is a migrant (M) or a resident (R). The inset shows the number of studies per taxon and trait category. Illustration credits for the species pictures taken from Wikipedia: Svalbard reindeer—Bjørn Christian Tørrissen, four-striped grass mouse—C.R. Selvakumar, silver gull—JJ Harrison, snow petrel—Samuel Blanc, northern giant petrel—Liam Quinn, green turtle—Brocken Inaglory, green-rumped parrotlet—Jam.mohd, Columbian ground squirrel—Martin Pot, red-winged fairy-wren—John Anderson, grey-headed albatross—John Harrison. Two species pictures were provided by the co-authors of this study: painted turtle (credit: FJ) and Atlantic yellow-nosed albatross (credit: SOp). The remaining pictures were taken from Pixabay (https://pixabay.com/photos/).'>
+    <h3>Radchuk et al. 2026</h3>
+    <p>Map of the studies, colour-coded for different taxa, with the number of studies per taxon shown. *NAT COMMUN* 17:479.</p><p>
+    <a href='https://doi.org/10.1038/s41467-025-68172-8'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://doi.org/10.5281/zenodo.17629266'>![](img/repo/icon-zenodo.png){width=12%}</a></p>
   </li>
 
 
