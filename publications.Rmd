@@ -14,6 +14,8 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
+* Liang Y, **Kramer-Schadt S**, et al. (2026): Extra-territorial excursions of Eurasian lynx (*Lynx lynx*) during the mating season across Europe. PROC R SOC B **293**:20252235. doi:<span>[10.1098/rspb.2025.2235](https://doi.org/10.1098/rspb.2025.2235)</span> 
+
 * **Radchuk V**, Jones CV, McLean N, ..., **Kramer-Schadt S**, ...  et al. (2026): Changes in phenology mediate vertebrate population responses to temperature globally. NAT COMMUN **17**, 479. doi:<span>[10.1038/s41467-025-68172-8](https://doi.org/10.1038/s41467-025-68172-8)</span> 
 
 
