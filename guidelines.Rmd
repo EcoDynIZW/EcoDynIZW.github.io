@@ -78,7 +78,7 @@ knitr::include_graphics("img/banner-mv-csf-top.png")
 
 The department is composed of three teams on (1) Individual Dynamics, (2) Population Dynamics and (3) Biodiversity Dynamics. 
 
-Stephanie Kramer-Schadt is the department head and leader of the Population Dynamics team. Conny Landgraf is the assistant of the department head; she can assist with administrative duties (e.g. contracts, travel sheets, etc.). Moritz Wenzler-Meya and Jan Axtner are responsible for data management, data storage and the working group’s R code collection. As each department member has a specific area of expertise, we created an expert list (see 1.3) if you need help on specific topics. PhD students and scientists are obliged to update this expert list with their own skills and responsibilities as well. 
+Stephanie Kramer-Schadt is the department head and leader of the Population Dynamics team. Susanne Braun is the assistant of the department head; she can assist with administrative duties (e.g. contracts, travel sheets, etc.). Moritz Wenzler-Meya and Jan Axtner are responsible for data management, data storage and the working group’s R code collection. Dagmar Thierer and Stephan Karl are the lab technicians. As each department member has a specific area of expertise, we created an expert list (see 1.3) if you need help on specific topics. PhD students and scientists are obliged to update this expert list with their own skills and responsibilities as well. 
 
 For information on the Department, check [our webpage](https://www.ecological-dynamics-izw.com) or subscribe to [our Bluesky account](https://bsky.app/profile/ecodynizw.bsky.social) (\@ecodynizw.bsky.social) for news about papers, helpful R-code, courses or scientific positions.
 
