@@ -257,6 +257,22 @@
     <lastmod>2023-12-08T13:17:48+01:00</lastmod>
   </url>
   <url>
+    <loc>https://ecodynizw.github.io/posts_geodata/dem_world_2000_1km_54030_tif/</loc>
+    <lastmod>2026-02-05T09:33:42+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://ecodynizw.github.io/posts_geodata/boundaries_world_2025_vector_04326_gpkg/</loc>
+    <lastmod>2026-02-05T09:29:57+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://ecodynizw.github.io/posts_geodata/evi_world_2014_1km_54030_tif/</loc>
+    <lastmod>2026-02-05T10:08:16+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://ecodynizw.github.io/posts_geodata/humanfootprint_europe_2009_1km_03035_tif/</loc>
+    <lastmod>2026-02-05T10:16:02+01:00</lastmod>
+  </url>
+  <url>
     <loc>https://ecodynizw.github.io/posts_geodata/corine-landcover_germany_2021_100m_03035_tif/</loc>
     <lastmod>2025-06-24T10:53:01+02:00</lastmod>
   </url>
@@ -267,6 +283,10 @@
   <url>
     <loc>https://ecodynizw.github.io/posts_geodata/water-density_europe_2025_1km_03035_tif/</loc>
     <lastmod>2025-10-13T10:23:22+02:00</lastmod>
+  </url>
+  <url>
+    <loc>https://ecodynizw.github.io/posts_geodata/bioregions_europe_2016_polygon_3035_gpkg/</loc>
+    <lastmod>2026-02-05T10:04:03+01:00</lastmod>
   </url>
   <url>
     <loc>https://ecodynizw.github.io/posts_geodata/corine-landcover_germany_2018_polygon_25832_gpkg/</loc>

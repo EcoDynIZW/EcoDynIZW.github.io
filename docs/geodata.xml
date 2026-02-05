@@ -12,7 +12,59 @@
       <link>https://ecodynizw.github.io/</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 18 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>dem world 2000</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/dem_world_2000_1km_54030_tif</link>
+      <description>dem world 2000</description>
+      <category>World</category>
+      <category>1km</category>
+      <category>esri:54030</category>
+      <category>2000</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/dem_world_2000_1km_54030_tif</guid>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/dem_world_2000_1km_54030_tif/dem_world_2000_1km_54030_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>boundaries world 2025</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/boundaries_world_2025_vector_04326_gpkg</link>
+      <description>boundaries world 2025</description>
+      <category>World</category>
+      <category>epsg:4326</category>
+      <category>2025</category>
+      <category>polygon</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/boundaries_world_2025_vector_04326_gpkg</guid>
+      <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/boundaries_world_2025_vector_04326_gpkg/boundaries_world_2025_vector_04326_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>evi world 2014</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/evi_world_2014_1km_54030_tif</link>
+      <description>evi world 2014</description>
+      <category>World</category>
+      <category>1km</category>
+      <category>esri:54030</category>
+      <category>2014</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/evi_world_2014_1km_54030_tif</guid>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/evi_world_2014_1km_54030_tif/evi_world_2014_1km_54030_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>humanfootprint europe 2009</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/humanfootprint_europe_2009_1km_03035_tif</link>
+      <description>humanfootprint europe 2009</description>
+      <category>Europe</category>
+      <category>1km</category>
+      <category>epsg:3035</category>
+      <category>2009</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/humanfootprint_europe_2009_1km_03035_tif</guid>
+      <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/humanfootprint_europe_2009_1km_03035_tif/humanfootprint_europe_2009_1km_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
     <item>
       <title>corine-landcover germany 2021</title>
       <dc:creator>Moritz Wenzler-Meya</dc:creator>
@@ -51,6 +103,19 @@
       <guid>https://ecodynizw.github.io/posts_geodata/water-density_europe_2025_1km_03035_tif</guid>
       <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
       <media:content url="https://ecodynizw.github.io/posts_geodata/water-density_europe_2025_1km_03035_tif/water-density_europe_2025_1km_03035_tif_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
+    </item>
+    <item>
+      <title>bioregions europe 2016</title>
+      <dc:creator>Moritz Wenzler-Meya</dc:creator>
+      <link>https://ecodynizw.github.io/posts_geodata/bioregions_europe_2016_polygon_3035_gpkg</link>
+      <description>bioregions europe 2016</description>
+      <category>Europe</category>
+      <category>2016</category>
+      <category>epsg:3035</category>
+      <category>Polygon</category>
+      <guid>https://ecodynizw.github.io/posts_geodata/bioregions_europe_2016_polygon_3035_gpkg</guid>
+      <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
+      <media:content url="https://ecodynizw.github.io/posts_geodata/bioregions_europe_2016_polygon_3035_gpkg/bioregions_europe_2016_polygon_3035_gpkg_files/figure-html5/plot-1.png" medium="image" type="image/png" width="4500" height="3000"/>
     </item>
     <item>
       <title>corine-landcover germany 2018</title>
