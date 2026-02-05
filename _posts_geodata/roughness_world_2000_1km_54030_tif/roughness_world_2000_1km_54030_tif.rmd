@@ -1,16 +1,16 @@
 ---
-title: 'flii world 2019'
+title: 'roughness world 2000'
 categories:
   - World
   - 1km
-  - esri:54009
-  - '2019'
+  - esri:54030
+  - '2000'
 author:
   - name: Moritz Wenzler-Meya
 
     affiliation: IZW Berlin
     affiliation_url: https://ecodynizw.github.io/EcoDynIZW
-date: '2026-01-23'
+date: '2026-02-05'
 output:
   distill::distill_article:
     self_contained: false
@@ -46,7 +46,7 @@ ggplot2::theme_update(
 # get path
 path <-
     paste0(ifelse(dir.exists('T:/wenzler') == T, 'T:/wenzler',
-    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/world/flii_world_2019_1km_54009_tif')
+    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/world/roughness_world_2000_1km_54030_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -66,7 +66,7 @@ meta_gt <- gt::gt(meta %>%
 ```{r map}
 p_map <-
  readRDS(paste0(ifelse(dir.exists('T:/wenzler') == T, 'T:/wenzler',
-    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/world/flii_world_2019_1km_54009_tif/flii_world_2019_1km_54009_tif' ,'.rds'))
+    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/world/roughness_world_2000_1km_54030_tif/roughness_world_2000_1km_54030_tif' ,'.rds'))
 
 ```
 
