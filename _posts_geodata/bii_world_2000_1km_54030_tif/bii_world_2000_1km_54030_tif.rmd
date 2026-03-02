@@ -1,10 +1,10 @@
 ---
-title: 'roadless-areas world 2016'
+title: 'bii world 2000'
 categories:
   - World
   - 1km
   - esri:54030
-  - '2016'
+  - '2000'
 author:
   - name: Moritz Wenzler-Meya
 
@@ -46,7 +46,7 @@ ggplot2::theme_update(
 # get path
 path <-
     paste0(ifelse(dir.exists('T:/wenzler') == T, 'T:/wenzler',
-    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/world/roadless-areas_world_2016_1km_54030_tif')
+    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/world/bii_world_2000_1km_54030_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -66,7 +66,7 @@ meta_gt <- gt::gt(meta %>%
 ```{r map}
 p_map <-
  readRDS(paste0(ifelse(dir.exists('T:/wenzler') == T, 'T:/wenzler',
-    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/world/roadless-areas_world_2016_1km_54030_tif/roadless-areas_world_2016_1km_54030_tif' ,'.rds'))
+    ifelse(dir.exists('C:/PopDynCloud') == T, 'C:/PopDynCloud', 'E:/PopDynCloud')),  '/',  'GeoData/data/world/bii_world_2000_1km_54030_tif/bii_world_2000_1km_54030_tif' ,'.rds'))
 
 ```
 
