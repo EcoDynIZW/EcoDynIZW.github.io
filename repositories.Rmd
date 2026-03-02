@@ -173,6 +173,16 @@ knitr::opts_chunk$set(echo = FALSE)
   
   
   <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/kuerschner_2026_ecosphere.jpg' alt='Figure 1 of Kuerschner et al. 2026: A conceptual diagram of a spatially explicit individual-based model (IBM) modeling approach simulating disease dynamics with a pattern-oriented virtual observer to mimic data-generating surveillance of disease in wild animals. Field data patterns are derived from Scherer et al. (2019).'>
+    <h3>Kürschner et al. 2026</h3>
+    <p>Reconciling dynamic epidemiological models with long-term outbreak data: The case of classical swine fever in Germany. *ECOSPHERE*, 17(2), e70539.</p><p>
+    <a href='https://doi.org/10.1002/ecs2.70539'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Kuerschner_2026_ECOSPHERE'>![](img/repo/icon-github.png){width=12%}</a>
+    <a href='https://doi.org/10.5281/zenodo.17650527'>![](img/repo/icon-zenodo.png){width=12%}</a></p>
+  </li>  
+  
+  
+  <li class="card-repo">
     <img class="card-repo-img" src='img/repo/louvrier_2021.png' alt='Graphical abstract of Louvrier et al. 2021: schematic illustration of the study workflow showing data sources (spatial data + photo trapping images), environmental filters (icons), species interactions (icons) and circular plots showing species activity patterns.'>
     <h3>Louvrier et al. 2022</h3>
     <p>Spatiotemporal interactions of a novel mesocarnivore community in an urban environment before and during SARS-CoV-2 lockdown. *J ANIM ECOL*, 91:367–380.</p><p>
