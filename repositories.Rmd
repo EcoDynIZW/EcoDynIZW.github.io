@@ -103,6 +103,7 @@ knitr::opts_chunk$set(echo = FALSE)
     <h3>Figueiredo et al. 2026</h3>
     <p>estar: An R package to measure ecological stability. *METHODS ECOL EVOL*, 00, 1–11.</p><p>
     <a href='https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210x.70265'>![](img/repo/icon-paper.png){width=12%}</a>
+    <a href='https://github.com/ludmillafigueiredo/estar'>![](img/repo/icon-github.png){width=12%}</a>
     <a href='https://doi.org/10.5281/zenodo.18388784'>![](img/repo/icon-zenodo.png){width=12%}</a></p>
   </li>  
 
