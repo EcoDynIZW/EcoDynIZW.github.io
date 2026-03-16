@@ -14,6 +14,8 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 <div class='headerbox'><hbox>Peer-Reviewed Publications</hbox></div><br>
 
+* Bruckermann T, Bock D, Greving H, Schumann A, Stillfried M, **Börner K**, … Harms U. (2026): Attitudes and motivation influence how participants engage in different scientific activities in the online community of a citizen science project. BEHAV INF TECHNOL, 1–18. doi:<span>[10.1080/0144929X.2026.2641601](https://doi.org/10.1080/0144929X.2026.2641601)</span>   
+
 * **Figueiredo L**, **Scherer C**, **Kramer-Schadt S**, Cabral JS, Kéfi S, Van den Brink PJ, **Radchuk V** (2026): estar: An R package to measure ecological stability. METHODS ECOL EVOL. **00**, 1–11. doi:<span>[10.1111/2041-210x.70265](https://doi.org/10.1111/2041-210x.70265)</span>  
 
 * **Kasper K**, Tee TL, **Guharajan R**,  **Mohamed A**, **Wong ST**, **Niedballa J**, Abrams JF, Kissing J, Samejima H, **Sollmann R**, **Wilting A**,  Wong W-M (2026): Estimating Sunda Clouded Leopard Lifespans From Minimum Residence Times via Long-Term Photo-Tracking. BIOTROPICA **58**, no. 2: e70169. doi:<span>[10.1111/btp.70169](https://doi.org/10.1111/btp.70169)</span> 
@@ -26,6 +28,7 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * **Radchuk V**, Jones CV, McLean N, ..., **Kramer-Schadt S**, ...  et al. (2026): Changes in phenology mediate vertebrate population responses to temperature globally. NAT COMMUN **17**, 479. doi:<span>[10.1038/s41467-025-68172-8](https://doi.org/10.1038/s41467-025-68172-8)</span> 
 
+* **White EW**, Höner OP, Mosna M, **Radchuk V**, **Benhaiem S**, Davidian E (2026): The Effect of Social Rank on Reproductive Traits Depends on Rank Metric: Evidence From a Group-Living Carnivore.” ECOL EVOL **16**, no. 3: e73229. doi:<span>[10.1002/ece3.73229](https://doi.org/10.1002/ece3.73229)</span>
 
 <div class='headerbox'><hbox>Reports and other scientific outlets</hbox></div><br>
 
