@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class='headerbox'><hbox>Successfully Defended Theses</hbox></div><br>
 
+* **An The Truong Nguyen**: Terrestrail mammal and bird communities in heavily hunted landscapes of the Greater Annamites in Vietnam. 18.03.2026 Technische Universität Berlin. Wilting A, Sollmann R, Kramer-Schadt S.
+
 * **Marius Grabow**: Host-pathogen dynamics of a community with moving hosts. 11.03.2025. Faculty VI – Planning Building Environment, Institute of Ecology. Technische Universität Berlin. Kramer-Schadt S, Radchuk V, Blaum N.
 
 * **Seth Timothy Wong**: Ecological Impacts of Mixed and Single Land-use Forestry Practices on Mammals and Their Communities in Malaysian Borneo. 04.05.2024. Faculty VI – Planning Building Environment, Institute of Ecology. Technische Universität Berlin. Sollmann R, Wilting A, Kramer-Schadt S.
