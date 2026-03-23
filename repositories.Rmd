@@ -170,7 +170,7 @@ knitr::opts_chunk$set(echo = FALSE)
     <a href='https://github.com/Kathahara/Kasper_2026_Biotropica'>![](img/repo/icon-github.png){width=12%}</a>
     <a href='https://doi.org/10.5281/zenodo.18388424'>![](img/repo/icon-zenodo.png){width=12%}</a></p>
   </li>
-  https://github.com/Kathahara/Kasper_2026_Biotropica
+
   
   <li class="card-repo">
     <img class="card-repo-img" src='img/repo/kuerschner_2021.png' alt='Figure 2 of Kuerschner et al. 2021: a heatmap showing coexistence probability estimated as the proportion of simulation runs in which both host and pathogen survived (color gradient) for different sets of movement rules and temporal mismatch.'>
