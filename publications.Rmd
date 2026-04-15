@@ -20,6 +20,8 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * Gomez CR, Sartor CC, Macdonald DW, Johnson PJ, Goossens B, Panjang E, Gardner PC, Abram NK, **Guharajan R**, **Wong ST**, Jubili J, Kuntagil J, Acheh SNA, Kissing J, William WO, Brodie J, Helmy O, Bernard H, Matsuda I, Hearn AJ (2026): Habitat suitability model for identifying human‐wildlife interface and implications for wildlife trade of Sunda pangolin in Borneo. ENVIRON MONIT ASSESS **198**, 108. doi:<span>[10.1007/s10661-025-14922-6](https://doi.org/10.1007/s10661-025-14922-6)</span>
 
+* Greving H, Bruckermann T, Schumann A, **Stillfried M**, **Börner K**, **Hagen R**, et al. (2026): The influence of psychological ownership on pride in a Citizen Science project on wildlife ecology. PLOS ONE **21(4):** e0345321. doi:<span>[10.1371/journal.pone.0345321](https://doi.org/10.1371/journal.pone.0345321)</span> 
+
 * **Kasper K**, Tee TL, **Guharajan R**,  **Mohamed A**, **Wong ST**, **Niedballa J**, Abrams JF, Kissing J, Samejima H, **Sollmann R**, **Wilting A**,  Wong W-M (2026): Estimating Sunda Clouded Leopard Lifespans From Minimum Residence Times via Long-Term Photo-Tracking. BIOTROPICA **58**, no. 2: e70169. doi:<span>[10.1111/btp.70169](https://doi.org/10.1111/btp.70169)</span> 
 
 * **Kürschner T**, **Radchuk V**, **Planillo A**, **Scherer C**, Blaum N, Staubach C, Thulke HH, **Kramer-Schadt S** (2026): Reconciling Dynamic Epidemiological Models with Long-Term Outbreak Data: The Case of Classical Swine Fever in Germany. ECOSPHERE **17(2)** e70539. doi:<span>[10.1002/ecs2.70539](https://doi.org/10.1002/ecs2.70539)</span>  

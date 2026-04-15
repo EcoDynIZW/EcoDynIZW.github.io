@@ -22,6 +22,10 @@ For older Bachelor and Master theses please check here:<br> [2024](msc-bsc-these
 
 <div class='headerbox'><hbox>Completed Theses in 2025</hbox></div><br>
 
+* Neophobia and innovative problem-solving in Eurasian red squirrels (*Sciurus vulgaris*) along an urban gradient in Berlin. **Johanna Leona Eul**. <span class='desaturated'>30.01.2026 MSc. Universität Potsdam, Master in Ecology, Evolution and Conservation. Supervisor: Stephanie  Prof Jana Eccard (UP), Sinah Drenske, Conny Landgraf.</span>
+
+* Inference of Animal Behaviour from Relocation Data: A Performance Comparison of Statistical and Machine Learning Methods. **Ender Daldaban**. <span class='desaturated'>03.01.2026 BSc, TU Berlin, Ecology and Environmental Planning. Supervisor: Stephanie Kramer-Schadt, Marius Grabow.</span>
+
 * Ecological and Sociodemographic Factors Influencing the Risk of Receiving Aggressive Acts in Adult Female Spotted Hyenas (*Crocuta crocuta*). **Antonia Laura Schmitt**. <span class='desaturated'>07.10.2025 BSc. Lebenwissenschaftliche Fakultät Institut für Biologie, Humboldt-Universität zu Berlin. Supervisor: Sarah Benhaiem (IZW), Ella White (IZW), Morgane Gicquel (IZW),  Rüdiger Krahe (HU).</span>
 
 * Are red squirrels (*Sciurus vulgaris*) capable of distinguishing between humans as risk, disturbance or resource?. **Celina Last**.  <span class='desaturated'>29.07.2025 BSc. Ökologie und Umweltplanung. Institut für Ökologie der Technischen Universität Berlin. Supervisor: Stephanie Kramer-Schadt (IZW/ TUB), Sinah Drenske (IZW).</span>
