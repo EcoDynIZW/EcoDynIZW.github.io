@@ -43,46 +43,73 @@ knitr::include_graphics("img/banner-mv-csf-top.png")
 
 ![](img/teams/team-pop/stability.png)
 
-**Dr. Cédric Scherer, Thibault Fronville**
+<font size="5"> **Responses of wildlife to climate change**</font> 
 
-To understand how populations and communities react to global change we study how their stability is affected by disturbances. To this end we model disturbances of different types and intensity and measure several stability metrics.
+**Dr. Ashlee Mikkelsen, Dr. Rohit Chakravarty, Guillaume Chero, Carys Jones**
 
-* **Animal responses to climate change**
-* **Environmental variation effects on stability of populations and communities**
+We study how species and communities in the wild cope with climate change. To this end we often combine long-term individual observations with process-based simulations. We also use comparative studies to synthetize the current state of knowledge.
+
+<small>
+  <b>Key Publications:</b>
+  <ul>
+    <li>[Chakravarty et al. (2021) SCI REP](https://doi.org/10.1038/s41598-021-01939-3)</li>
+    <li>[Chakravarty et al. (2023) J ANIM ECOL](https://doi.org/10.1111/1365-2656.13897)</li>
+   <li>[Radchuk et al. (2019) NAT COMMUN](https://doi.org/10.1038/s41467-019-10924-4'>10.1038/s41467-019-10924-4)</li>  
+   <li>[Radchuk et al. (2026) NAT COMMUN](https://doi.org/10.1038/s41467-025-68172-8)</li>  
+   </ul>
+</small>
+
+
+<font size="5"> **Quantifying stability of populations and communities**</font> 
+
+**Dr. Cedric Scherer, Dr. Julie Louvrier, Dr. Ludmilla Figueiredo, Ella White, Malte Kurreck**
+
+We contribute to advancing conceptual frameworks and developing methodological tools to improve quantification of ecological stability and resilience. We test the existing and newly developed methods on the simulated data that provides clear benchmarks and support the pick-up of methods by practitioners by offering training workshops.
 
 <small>
   <b>Key Publications:</b>
   <ul>
     <li>[Radchuk et al. (2019) ECOL LETT](https://doi.org/10.1111/ele.13226)</li>
-   <li>[Radchuk et al. (2019) NAT COMMUN](https://doi.org/10.1038/s41467-019-10924-4'>10.1038/s41467-019-10924-4)</li>  
+   <li>[Figueiredo et al. (2026) METHODS ECOL EVOL](https://doi.org/10.1111/2041-210x.70265)</li>  
    </ul>
 </small>
 
+
+<div class='headerbox-secondary'><hbox-secondary>Movement ecology: Advancing methods</headerbox-secondary></div>
+
+**Thibault Fronville**
+
+Movement of animals in the wild is shaped by a combination of biotic and abiotic factors, e.g. landscape structure, presence of con- and hetero-specifics and intrinsic state of the moving individual. To improve our understanding of how these biotic and abiotic factors affect movement, we test the exiting and contribute to developing new methods.
+
+<small>
+  <b>Key Publications:</b>
+  <ul>
+    <li>[Fronville et al. (2024) METHODS ECOL EVOL](https://doi.org/10.1111/2041-210X.14323)</li>
+    <li>[Fronville et al. (2025) MOVE ECOL](https://doi.org/10.1186/s40462-025-00567-0)</li>
+   </ul>
+</small>
 
 <div class='headerbox-secondary'><hbox-secondary>Wildlife disease dynamics: Linking host and pathogen traits</headerbox-secondary></div>
 
 ![](img/teams/team-pop/disease.png)
 
-**Dr. Cédric Scherer, Tobias Kürschner, Marius Grabow**
+**Dr. Tobias Kürschner, Dr. Marius Grabow, Dr. Simeon Lisovski, Nikki Pearson**
 
 Pathogens are an integral part of biodiversity, influencing population dynamics of their hosts and playing an important functional role in shaping community structure. Here, our aim is to understand the effect that species as ‘mobile pathogen links’ with their different movement types and life-history strategies have on disease distribution, spread, persistence and evolution. 
 
-&ensp;&rarr;&ensp;see also [BioMove Graduate School](https://www.bio-move.org/)
+<font size="5"> **Wildlife in a ONE HEALTH context**</font>
 
-* **Movement effects on pathogen spread and disease persistence**
+[soil-transmitted helminth infections at the livestock-wildlife interface](https://www.vetmed.fu-berlin.de/en/einrichtungen/sonstige/grk3096/index.html)
+
+[West-Nile infections in wild birds](https://www.gesundheitsforschung-bmftr.de/de/wnvcombat-kontrolle-von-wnv-infektionen-unter-anwendung-eines-ganzheitlichen-one-health-19682.php)
+
+
+<font size="5"> **Movement effects on pathogen spread and disease persistence**</font>
 <small>
   <ul>
-    <li>[Kürschner et al. (2021) ECOL EVOL](https://doi.org/10.1002/ece3.7478)</li>
   <li>[Scherer et al. (2020) OIKOS](https://doi.org/10.1111/oik.07002'>10.1111/oik.07002)</li>
-  <li>[Scherer et al. (2019) J ANIM ECOL](https://doi.org/10.1111/1365-2656.13070)</li>
-    <li>[Kramer-Schadt et al. (2009) OIKOS](https://doi.org/10.1111/j.1600-0706.2008.16582.x)</li>
-   </ul>
-</small>
-
-* **Evolution of pathogenic strains in dynamic landscapes**
-<small>
-  <ul>
-    <li>[Kürschner et al. (2024) ECOL EVOL](https://doi.org/10.1002/ece3.11065)</li>
+  <li>[Kürschner et al. (2024) ECOL EVOL](https://doi.org/10.1002/ece3.11065)</li>
+  <li>[Kürschner et al. (2026) ECOSPHERE](https://doi.org/10.1002/ecs2.70539)</li>
    </ul>
 </small>
 
@@ -92,10 +119,10 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
   Your browser does not support the video tag.
 </video>
 <br>
-&ensp;&rarr;&ensp;Simulation of virulence evolution in different host density landscapes, Kürschner et al. (2025) ECOL EVOL.
+&ensp;&rarr;&ensp;Simulation of virulence evolution in different host density landscapes, Kürschner et al. (2024) ECOL EVOL.
 <br>
 
-* **Pathogen-induced movement strategies and fitness consequences**
+<font size="5"> **Pathogen-induced movement strategies and fitness consequences**</font>
 <small>
   <ul>
     <li>[Grabow et al. (2024) COMMUN BIOL](https://doi.org/10.1038/s42003-024-07114-4)</li>
@@ -114,32 +141,14 @@ Pathogens are an integral part of biodiversity, influencing population dynamics 
 
 ![](img/teams/team-pop/urban.png)
 
-**Dr. Aimara Planillo, Dr. Julie Louvrier, Sinah Drenske, Simon Moesch**
+**Sinah Drenske**
 
 Urbanisation poses risks and opportunities for wildlife. We investigate how species cope with these everyday challenges by analysing the spatial factors and species interactions that underlie their distributions along a rural to urban gradient and by making inference on their behavioral plasticity. 
 
-&ensp;&rarr;&ensp;see also [BIBS — rural-urban coupling](https://www.bbib.org/rural-urban-coupling.html)  
-&ensp;&rarr;&ensp;see also [WT Impact](https://www.wtimpact.de/)
-
-* **Bridging spatial data in species distribution models**
 <small>
   <ul>
     <li>[Drenske et al. (2024) FRONT ECOL EVOL](https://doi.org/10.3389/fevo.2024.1455142'>10.3389/fevo.2024.1455142)</li>
-    <li>[Stillfried et al. (2017) FRONT ECOL EVOL](https://doi.org/10.3389/fevo.2017.00157'>10.3389/fevo.2017.00157)</li>
-   </ul>
-</small>
-
-* **Effects of species interactions and human disturbance on community compositions**
-<small>
-  <ul>
     <li>[Louvrier et al. (2022) J ANIM ECOL](https://doi.org/10.1111/1365-2656.13635)</li>
-    <li>[Planillo, Kramer-Schadt, et al. (2021)  DIVERS DISTRIB](https://doi.org/10.1111/ddi.13169)</li>
-   </ul>
-</small>
-
-* **Human perceptions of urban wildlife**
-<small>
-  <ul>
     <li>[Moesch et al. (2024) ECOL SOC](https://doi.org/10.5751/ES-15211-290306)</li>
    </ul>
 </small>
@@ -148,29 +157,15 @@ Urbanisation poses risks and opportunities for wildlife. We investigate how spec
 
 ![](img/teams/team-pop/wildlife.png)
 
-**Dr. Julie Louvrier, Dr. Aimara Planillo, Dr. Cédric Scherer, Dr. Joe Premier, Ana Patricia Calderon, Eva Sánchez Arribas**
+**Eva Sánchez Arribas**
 
 Wildlife faces big challenges persisting in human-dominated landscapes. We model their population dynamics, viability and connectivity using individual-based models on a spatially-explicit basis, with the aim of supporting wildlife management and conservation.
 
-* **Wolf population dynamics and establishment in Germany**
 <small>
   <ul>
     <li>[Planillo et al. (2024) WILDL BIOL](https://doi.org/10.1002/wlb3.01246)</li>
     <li>[Planillo et al. (2024) DIVERS DISTRIB](https://doi.org/10.1111/ddi.13789)</li>
-   </ul>
-</small>
-
-* **Jaguar connectivity and conservation prioritization in Central America**
-<small>
-  <ul>
-    <li>[Calderon et al. (2022) ANIM CONSERV](https://doi.org/10.1111/acv.12772)</li>
-    <li>[Calderon et al. (2024) LANDSC ECOL](https://doi.org/10.1007/s10980-024-01795-2)</li>
-   </ul>
-</small>
-* **Modelling genetic processes to support the conservation management of Eurasian lynx**
-<small>
-  <ul>
-    <li>[Premier et al. (2020) MOV ECOL](https://doi.org/10.1186/s40462-020-00204-y)</li>
+    <li>[Sánchez Arribas et al. (2026) CONSERV BIOL](https://doi.org/10.1111/cobi.70321)</li>
    </ul>
 </small>
 
