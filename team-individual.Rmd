@@ -3,7 +3,7 @@ title: "Team 1: Individual Dynamics"
 description: |
   <b>Lead: Dr. Sarah Benhaiem & Dr. Sonja Metzger (field coordination)</b>  
   <b>Assistance: Dagmar Thierer & Stephan Karl</b>  
-  In collaboration with Dr. Marion L. East & Prof. Heribert Hofer (co-founders of the Serengeti Hyena Project)
+  In collaboration with Dr. Marion L. East & Prof. Heribert Hofer (co-founders of the Serengeti Hyena Project) & Prof. Dr. Julius Nyahongo
 ---
 
 ```{r setup, include=FALSE}
@@ -16,17 +16,18 @@ knitr::include_graphics("img/teams/team-ind/header.png")
 
 <div class='highlightbox'>
   <span class='highlight'>
-  Welcome! We study the behaviour, ecology and health of three clans of spotted hyenas (*Crocuta crocuta*) in the Serengeti National Park in Tanzania since 1987. We are currently interested in the impact of early life conditions, infections and human activities on individual performance and fitness at all life stages. With our collaborators we also study the role of epigenetic mechanisms in mediating the effects of the social environment on life history trade-offs, hormones and immunity, and the demographic consequences of disturbances. Our interdisciplinary research applies non-invasive or minimally invasive methods and to further this aim we have developed and verified several faecal assays for spotted hyenas. 
+  Welcome! We study spotted hyaenas (**Crocuta crocuta**) in the Serengeti National Park, Tanzania. Since 1987, we have followed thousands of individually known hyaenas to investigate how social and environmental conditions shape survival, reproduction, health and life-history trade-offs across the lifespan. Together with our collaborators, we study hormones, immunity, epigenetics and demographic resilience. The long-term nature of the project provides a unique opportunity to examine how this highly social carnivore responds to environmental variability within a complex ecosystem. Our interdisciplinary research combines behavioural observations, demographic monitoring and non-invasive methods, including several faecal assays developed and validated for spotted hyaenas.
   </span>
 </div>
 
 ![Figure: M. Gicquel (from [Gicquel et al. 2022 Ecosphere](https://doi.org/10.1002/ecs2.4012))](img/teams/team-ind/gicquel_2022.png)
-
+<br>
 **Why are spotted hyenas so interesting to study?**<br>
 
-This highly social mammal has several unusual traits: female social dominance, an erectile ‘pseudopenis’ in females (similar to that of the male penis), an exceptionally long lactation period and intense sibling competing. It is a keystone carnivore in the ecosystem, which both hunts and scavenges. All these aspects make hyenas an interesting model species to study social behaviour, sexual conflict, maternal effects, host-pathogen interactions, immunology or endocrinology. 
-Our study population experiences extreme and unpredictable fluctuations in prey abundance throughout the year, because of the migratory movements of its main prey (wildebeest, zebras and Thompson’s gazelles) and the low abundance of resident herbivores. We discovered that Serengeti hyenas solve this problem by commuting long distances to forage throughout the year. Individuals leave their clan territory and travel to areas up to 70 km to locate areas with large aggregations of migratory herbivores where they feed before returning to their clan territory. In the context of global change, the commuting system of Serengeti hyenas is particularly valuable to study how animals cope with a variable and uncertain resource. 
-Unfortunately, commuting hyenas in the Serengeti can get killed by wire snares set illegally by bushmeat hunters along some borders of the Park or become victims of road accidents. These anthropogenic threats are likely to intensify with the expected increases in local human populations and traffic volume associated with tourism. Changes in rainfall patterns driven by global warming may also have cascading effects on this large slow-reproducing mammal.
+Spotted hyaenas live in social groups known as clans, which can contain up to 120 individuals. Their societies are characterised by female dominance, stable linear dominance hierarchies and strong social bonds among related females. Many aspects of hyaena society resemble those of cercopithecine primates, making them a valuable model system for studying the evolution and consequences of complex social processes in mammals.
+
+Our study clans live in the Serengeti National Park, Tanzania, where prey availability fluctuates strongly throughout the year because of the migratory movements of wildebeest, zebras and Thomson’s gazelles. Previous research on this population revealed that Serengeti hyaenas cope with this variable resource by commuting long distances to forage in areas with large aggregations of migratory herbivores, before returning to their clan territories. Commuting hyaenas may be injured or killed by wire snares set illegally by bushmeat hunters, or by road collisions associated with increasing traffic and tourism pressure within the park. Combined with ongoing changes in rainfall patterns and prey movements, these anthropogenic pressures may alter how hyaenas respond to environmental variability and disease outbreaks. 
+Our long-term project, covering thousands of individuals across multiple generations, provides a rare opportunity to investigate how ecological and social processes shape behaviour, health, life-history trajectories and population resilience through the integration of behavioural, demographic and physiological data.
   
 <br>
 
@@ -36,99 +37,105 @@ knitr::include_graphics("img/banner-mv-csf-top.png")
 
 # Running Projects
 
-<div class='headerbox'><hbox>Behavioural Ecology, Ecology, and Demography</hbox></div>
-
-
-<div class='headerbox-secondary'><hbox-secondary>Ecological, social and maternal effects on individual performance, population dynamics and resilience</div>
-
-
-![](img/teams/team-ind/hyenas_metzger_1.png){width=44%}
-![](img/teams/team-ind/gicquel_2022_2.png){width=55%}
-
-**Current team & collaborators: Morgane Gicquel, Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Viktoriia Radchuk (Dept. 6, IZW), Oliver Höner (Dept. 1, IZW), Adam Clark (University of Graz), Stephanie Kramer-Schadt (Dept. 6, IZW)**
-
-We investigate how ecological and social conditions (e.g. rainfall, maternal rank, litter size), behaviours (e.g. infanticides), and disturbances (e.g. epidemics, droughts) influence the reproductive performance and survival prospects of spotted hyenas at different life stages, and their demographic resilience.
-
-<small>
-  <b>Key Publications:</b>
-  <ul>
-    <li>[Benhaiem et al. (2018) COMMUN BIOL](https://www.nature.com/articles/s42003-018-0197-1)</li>
-    <li>[Benhaiem et al. (2018) FRONT VET SCI](https://www.frontiersin.org/articles/10.3389/fvets.2018.00197/full)</li>
-    <li>[East et al. (2022) FRONT ECOL EVOL](https://www.frontiersin.org/articles/10.3389/fevo.2022.860854/full)</li>
-    <li>[Gicquel et al. (2022) J ANIM ECOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13785)</li>
-     <li>[Marescot et al. (2018) FUNCT ECOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2435.13059)</li>
-   </ul>
-</small>
-
-
-<div class='headerbox'><hbox>Disease ecology</hbox></div>
-
-<div class='headerbox-secondary'><hbox-secondary>Disease ecology: consequences of infections on allostatic load and fitness</div>
-
-![](img/teams/team-ind/hyenas_metzger_2.png){width=60%}
-![](img/teams/team-ind/ferreira_2021.png){width=39%}
-
-**Current team & collaborators: Miguel Veiga, Susana Soares, Dagmar Thierer, Stephan Karl, Sonja Metzger, Joshua Dalijono (student helper), Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 3, IZW), Sarah Benhaiem, Jella Wauters (Dept. 4, IZW)**
-
-We investigate the interactions between spotted hyenas and their pathogens, including their gastrointestinal parasitic community and viruses. We are particularly interested in the causes and consequences of infections in individuals, immunosenescence and the interactions between allostatic load (“stress”), immunity and infections.
-
-<small>
-  <b>Key Publications:</b>
-  <ul>
-    <li>[Davidian et al. (2015) METHODS ECOL EVOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12338)</li>
-    <li>[Ferreira et al. (2019) ECOL EVOL](https://onlinelibrary.wiley.com/doi/10.1002/ece3.5431)</li>
-    <li>[Ferreira et al. (2021) ECOL EVOL](https://onlinelibrary.wiley.com/doi/10.1002/ece3.7602)</li>
-    <li>[Marescot et al. (2021) J ANIM ECOL](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13555)</li>
-     <li>[Olarte‐Castillo et al. (2021) MOL ECOL](https://onlinelibrary.wiley.com/doi/10.1111/mec.15910)</li>
-   </ul>
-</small>
-
-
-<div class='headerbox'><hbox>Conservation</hbox></div>
-
-
-<div class='headerbox-secondary'><hbox-secondary>Human-wildlife conflicts and climate change in the Serengeti</div>
-
-![](img/teams/team-ind/hyenas_metzger_3.png){width=60%}
-![](img/teams/team-ind/gicquel_2022_3.png){width=39%}
-
-**Current team & collaborators: Marwan Naciri (former MSc student), Montan Kalyahe, Morgane Gicquel, Dagmar Thierer, Stephan Karl, Sonja Metzger, Sarah Benhaiem, Marion L. East, Heribert Hofer, Aimara Planillo (Dept. 6, IZW), Sarah Cubaynes (CEFE, Montpellier)**
-
-We are interested in assessing the effects of illegal bushmeat hunting (snaring), roadkills and changes in rainfall patterns driven by global warming on spotted hyenas. We also investigate the factors that influence the likelihood of predation on livestock and consumption of discarded livestock ‘waste’. 
-
-<small>
-  <b>Key Publications:</b>
-  <ul>
-    <li>[Benhaiem et al. (2022) ANIM CONSERV](https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/acv.12798)</li>
-    <li>[Gicquel et al. (2022) ECOSPHERE](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.4012)</li>
-    <li>[Kalyahe et al. (2022) ENVIRON CONSERV](https://www.cambridge.org/core/journals/environmental-conservation/article/do-anthropogenic-sources-of-food-increase-livestock-predation-in-the-area-surrounding-ruaha-national-park/A8A65281F07BF90B84300A7C74AE58DE)</li>
-    <li>[Naciri  et al. (2023) BIOL CONSERV ](https://www.sciencedirect.com/science/article/pii/S0006320723000502)</li>
-   </ul>
-</small>
-
-
-<div class='headerbox'><hbox>Social Epigenetics</hbox></div>
-
-
-<div class='headerbox-secondary'><hbox-secondary>Epigenetic stability and plasticity of social environmental effects</div>
+<div class='headerbox'><hbox>The costs and benefits of living in complex societies</hbox></div>
+<br>
 
 ![](img/teams/team-ind/hyenas_metzger_4.png){width=51%}
-![](img/teams/team-ind/guerrero_2021.png){width=48%}
 
-**Current team & collaborators: Alexandra Weyrich (Dept. 2, IZW, PI), Colin Vullioud (Dept. 2, IZW), Jörns Fickel (Dept. 2, IZW), Lena Ruf (Dept. 2, IZW), Nick Mewes (Dept. 2, IZW), Sarah Benhaiem, Marion L. East, Heribert Hofer, Gábor Á. Czirják (Dept. 2, IZW), Emmanuel Heitlinger (Humboldt University), Jerzy Adamski (Helmholtz-Center Munich), Alexander Cecil (Helmholtz-Center Munich), Moshe Szyf (McGill University), Yoav Soen (Weizmann Institute of Science)**
+*Picture: Sonja Metzger*
 
-We investigate if DNA methylation is a main mechanism through which an individual’s social environment regulates gene expression and physiological responses. We hypothesize that changes in social status will led to changes in epigenetic patterns. To test our hypotheses, we study the DNA methylation patterns in the spotted hyena.
+Spotted hyaenas provide a powerful system for investigating how individuals navigate complex social relationships shaped by dominance hierarchies, kinship and social bonds. We investigate the costs and benefits of living in such complex social groups. 
+
+Current topics
+
+*	Sex roles and maternal investment 
+*	Sibling rivalry and maternal effects
+*	Agonistic interactions and drivers of conspecific injuries
+*	Fitness consequences of social rank 
+*	Infanticide and adoptions 
+
+<small>
+  <b>Selected publications:</b>
+  <ul>
+    <li>[East et al. (2022) FRONT ECOL EVOL](https://doi.org/10.3389/fevo.2022.860854)</li>
+    <li>[Kappeler et al. (2023) BIOL REV](https://doi.org/10.1111/brv.12915)</li>
+    <li>[White et al. (2026) ECOL EVOL](https://doi.org/10.1002/ece3.73229)</li>
+   </ul>
+</small>
+
+
+<div class='headerbox'><hbox>Individual life history trajectories and demographic resilience</hbox></div>
+
+![](img/teams/team-ind/gicquel_2022_4.png){width=55%}![](img/teams/team-ind/white_2025.png){width=55%}
+
+We investigate how environmental conditions shape individual life histories and how populations resist and recover from environmental disturbances.
+
+Current topics:
+
+*	Early life adversity and senescence  
+*	Resistance and recovery following disease outbreaks and other disturbances 
+
+<small>
+  <b>Selected publications:</b>
+  <ul>
+    <li>[Gicquel et al. (2022) J ANIM ECOL](https://doi.org/10.1111/1365-2656.13785)</li>
+    <li>[White et al. (2025) preprint on spotted hyaena resilience](https://www.authorea.com/doi/full/10.22541/au.173644757.79726606)</li>
+   </ul>
+</small>
+
+
+<div class='headerbox'><hbox>Environmental variability and human disturbance</hbox></div>
+<br>
+![](img/teams/team-ind/hyenas_metzger_3.png){width=50%}
+![](img/teams/team-ind/hyenas3.jpg){width=50%}
+
+*Pictures: Sonja Metzger*
+
+We study how climate variability and human activities influence behaviour, fitness and mortality risk in Serengeti spotted hyaenas.
+
+Current topics
+
+*	Climate-driven changes in prey migration  and feeding events
+*	Illegal bushmeat hunting (snaring) and anthropogenic mortality 
+*	Roadkills and disturbance through tourism pressure 
+*	Human induced surface water scarcity
+*	Management and conservation metrics 
+
 
 <small>
   <b>Key Publications:</b>
   <ul>
-    <li>[Guerrero et al. (2020) CURR  ZOOL](https://pubmed.ncbi.nlm.nih.gov/32440291/)</li>
-    <li>[Heitlinger et al. (2017) FRONT CELL INFECT MICROBIOL](https://www.frontiersin.org/articles/10.3389/fcimb.2017.00262/full)</li>
-    <li>[Vullioud et al. (2024) COMMUN BIOL](https://www.nature.com/articles/s42003-024-05926-y)</li>
+    <li>[Sidous et al. (2026) in print / under review ](https://www.biorxiv.org/content/10.64898/2026.02.10.705143.abstract)</li>
+    <li>[Schmied et al. (2024) WILDL BIOL](https://nsojournals.onlinelibrary.wiley.com/doi/full/10.1002/wlb3.01131)</li>
+    <li>[Naciri et al. (2023) BIOL CONSERV ](https://www.sciencedirect.com/science/article/pii/S0006320723000502)</li>
+    <li>[Benhaiem et al. (2023) ANIM CONSERV ](https://zslpublications.onlinelibrary.wiley.com/doi/full/10.1111/acv.12798)</li>
    </ul>
 </small>
 
+
+<div class='headerbox'><hbox>Integrative approaches to health and fitness</hbox></div>
 <br>
+![](img/teams/team-ind/soares_2025.jpg){width=60%}
+
+*Source: Soares et al. 2025*
+
+We combine behavioural and demographic data with physiological, immunological and epigenetic approaches to investigate mechanisms linking social and environmental conditions to health and fitness.
+
+Current topics
+
+*	Epigenetic signatures of social rank 
+*	Gut microbiome, health and metabolome
+*	Early-life effects on allostatic load and immunity 
+
+
+<small>
+  <b>Selected publications:</b>
+  <ul>
+    <li>[Vullioud et al. (2024) COMMUN BIOL](https://doi.org/10.1038/s42003-024-05926-y)</li>
+    <li>[Soares et al. (2025) COMMUN BIOL](https://www.nature.com/articles/s42003-025-08243-0)</li>
+    <li>[Soares et al. (2025) preprint on early-life effects and immunity](https://www.biorxiv.org/content/10.64898/2025.12.16.694767v1.abstract)</li>
+   </ul>
+</small>
 
 
 <div class='headerbox'><hbox>General Information</hbox></div>
@@ -149,16 +156,6 @@ knitr::include_graphics("./img/teams/team-ind/logo_serengeti_spotted_hyaena_proj
 
 &emsp;&rarr; [Version française (in French)](https://github.com/EcoDynIZW/EcoDynIZW.github.io/raw/main/resources/hyaena-leaflet/Serengeti Hyaena Project Brochure_Francais.pdf)
 
-:::
-
-<br>
-
-Here is an overview of our research interests, methods and partners since the establishment of the project in 1987:
-
-![](img/teams/team-ind/research.png)
-![](img/teams/team-ind/methods.png)
-
-<br>
 
 ```{r, layout="l-screen"}
 knitr::include_graphics("img/banner-mv-csf-bottom.png")

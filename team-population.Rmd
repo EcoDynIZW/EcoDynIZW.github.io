@@ -62,6 +62,8 @@ We study how species and communities in the wild cope with climate change. To th
 
 <font size="5"> **Quantifying stability of populations and communities**</font> 
 
+![](img/teams/team-pop/FigStab_Figueiredo.jpg)
+
 **Dr. Cedric Scherer, Dr. Julie Louvrier, Dr. Ludmilla Figueiredo, Ella White, Malte Kurreck**
 
 We contribute to advancing conceptual frameworks and developing methodological tools to improve quantification of ecological stability and resilience. We test the existing and newly developed methods on the simulated data that provides clear benchmarks and support the pick-up of methods by practitioners by offering training workshops.
