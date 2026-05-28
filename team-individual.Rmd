@@ -116,7 +116,7 @@ Current topics
 
 <div class='headerbox'><hbox>Integrative approaches to health and fitness</hbox></div>
 <br>
-![](img/teams/team-ind/soares_2025.png){width=60%}
+![](img/teams/team-ind/Soares_2025.png){width=60%}
 
 *Source: Soares et al. 2025*
 
