@@ -45,7 +45,9 @@ knitr::include_graphics("img/banner-mv-csf-top.png")
 
 <font size="5"> **Responses of wildlife to climate change**</font> 
 
-**Dr. Ashlee Mikkelsen, Dr. Rohit Chakravarty, Guillaume Chero, Carys Jones**
+![](img/teams/team-pop/AnimalResponses.png)
+
+**Ashlee Mikkelsen, Rohit Chakravarty, Guillaume Chero, Carys Jones**
 
 We study how species and communities in the wild cope with climate change. To this end we often combine long-term individual observations with process-based simulations. We also use comparative studies to synthetize the current state of knowledge.
 
@@ -64,7 +66,7 @@ We study how species and communities in the wild cope with climate change. To th
 
 ![](img/teams/team-pop/FigStab_Figueiredo.jpg)
 
-**Dr. Cedric Scherer, Dr. Julie Louvrier, Dr. Ludmilla Figueiredo, Ella White, Malte Kurreck**
+**Cedric Scherer, Julie Louvrier, Ludmilla Figueiredo, Ella White, Malte Kurreck**
 
 We contribute to advancing conceptual frameworks and developing methodological tools to improve quantification of ecological stability and resilience. We test the existing and newly developed methods on the simulated data that provides clear benchmarks and support the pick-up of methods by practitioners by offering training workshops.
 
@@ -79,9 +81,11 @@ We contribute to advancing conceptual frameworks and developing methodological t
 
 <div class='headerbox-secondary'><hbox-secondary>Movement ecology: Advancing methods</headerbox-secondary></div>
 
+![](img/teams/team-pop/Figure 1_Fronville_et_al_MEE_2024.png)
+
 **Thibault Fronville**
 
-Movement of animals in the wild is shaped by a combination of biotic and abiotic factors, e.g. landscape structure, presence of con- and hetero-specifics and intrinsic state of the moving individual. To improve our understanding of how these biotic and abiotic factors affect movement, we test the exiting and contribute to developing new methods.
+Movement of animals in the wild is shaped by a combination of biotic and abiotic factors, e.g. landscape structure, presence of con- and hetero-specifics and intrinsic state of the moving individual. To improve our understanding of how these biotic and abiotic factors affect movement, we test the existing and contribute to developing new methods.
 
 <small>
   <b>Key Publications:</b>
@@ -95,7 +99,7 @@ Movement of animals in the wild is shaped by a combination of biotic and abiotic
 
 ![](img/teams/team-pop/disease.png)
 
-**Dr. Tobias Kürschner, Dr. Marius Grabow, Dr. Simeon Lisovski, Nikki Pearson**
+**Tobias Kürschner, Marius Grabow, Simeon Lisovski, Nikki Pearson**
 
 Pathogens are an integral part of biodiversity, influencing population dynamics of their hosts and playing an important functional role in shaping community structure. Here, our aim is to understand the effect that species as ‘mobile pathogen links’ with their different movement types and life-history strategies have on disease distribution, spread, persistence and evolution. 
 
