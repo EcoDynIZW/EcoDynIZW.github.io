@@ -20,10 +20,11 @@ knitr::include_graphics("img/teams/team-ind/header.png")
   </span>
 </div>
 
-!(img/teams/team-ind/gicquel_2022.png)
+![](img/teams/team-ind/gicquel_2022.png)
 <br>
 [*Figure: M. Gicquel (from [Gicquel et al. 2022 Ecosphere*](https://doi.org/10.1002/ecs2.4012))]
 <br>
+
 **Why are spotted hyenas so interesting to study?**<br>
 
 Spotted hyaenas live in social groups known as clans, which can contain up to 120 individuals. Their societies are characterised by female dominance, stable linear dominance hierarchies and strong social bonds among related females. Many aspects of hyaena society resemble those of cercopithecine primates, making them a valuable model system for studying the evolution and consequences of complex social processes in mammals.
