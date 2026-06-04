@@ -26,7 +26,6 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * Hoang Quoc H, Le QT, Tran BV, ... **Wilting A** and **Tilker A** (2026): Distribution and conservation status of the silver-backed chevrotain *Tragulus versicolor* in Vietnam. ORYX, **2026**:1-6. doi:<span>[10.1017/S0030605325102329](https://doi.org/10.1017/S0030605325102329)</span>
 
-
 * **Kasper K**, Tee TL, **Guharajan R**,  **Mohamed A**, **Wong ST**, **Niedballa J**, Abrams JF, Kissing J, Samejima H, **Sollmann R**, **Wilting A**,  Wong W-M (2026): Estimating Sunda Clouded Leopard Lifespans From Minimum Residence Times via Long-Term Photo-Tracking. BIOTROPICA **58**, no. 2: e70169. doi:<span>[10.1111/btp.70169](https://doi.org/10.1111/btp.70169)</span> 
 
 * **Kasper K**, Say-Sallaz E, Stępniak K et al. (2026): Anatomy of a ‘Problem Wolf’: A Multidisciplinary Study from Białowieża, Poland. HUM ECOL **54**, 35. doi:<span>[10.1007/s10745-026-00692-3](https://doi.org/10.1007/s10745-026-00692-3)</span>  
@@ -50,5 +49,7 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 * **White EW**, Höner OP, Mosna M, **Radchuk V**, **Benhaiem S**, Davidian E (2026): The Effect of Social Rank on Reproductive Traits Depends on Rank Metric: Evidence From a Group-Living Carnivore.” ECOL EVOL **16**, no. 3: e73229. doi:<span>[10.1002/ece3.73229](https://doi.org/10.1002/ece3.73229)</span>
 
 <div class='headerbox'><hbox>Reports and other scientific outlets</hbox></div><br>
+
+* ENETWILD consortium, Cerri J, Morelle K, Plis K, Acevedo P, Alexandrov T, Apollonio M, Arnold J, Bas G, Baubet E, Brivio F, Brogi R, Casaer J, Chamaille-Jammes S, Della Libera F, Farkas A, Fiderer C, Fischer C, Fodor JT, Grignolio S, Handschuh M, Heurich M, Jerina K, Jezek M, Kjellander P, Klamm A, **Kramer-Schadt S**, Licoppe A, Linderoth P, Nahlik A, Ortmann S, Said S, Scandura M, Scheppers T, Suter S, Tari T, Vicente J, Wielgus E, Podgórski T (2026): Estimation of wild boar movement and social behaviour parameters relevant for ASF control across ecological, demographic and anthropogenic gradients. Zenodo. doi:<span>[10.5281/zenodo.18998680](https://doi.org/10.5281/zenodo.18998680)</span>
 
 * **Konstantin Börner**, Bien chasser le chevreuil. Dans le respect de sa biologie, Paris: Éditions du Gerfaut 2026, S. 160.
