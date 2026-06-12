@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r, layout="l-screen-inset"}
-knitr::include_graphics("img/teams/team-ind/header.png")
+knitr::include_graphics("img/teams/team-ind/Hyaenas_walking.jpg")
 ```
 
 <div class='highlightbox'>
@@ -43,7 +43,8 @@ knitr::include_graphics("img/banner-mv-csf-top.png")
 <div class='headerbox'><hbox>The costs and benefits of living in complex societies</hbox></div>
 <br>
 
-![](img/teams/team-ind/hyenas_metzger_4.png){width=51%}
+![](img/teams/team-ind/Hyaena_behaviour.png)
+
 
 *Picture: Sonja Metzger*
 
@@ -89,7 +90,7 @@ Current topics:
 
 <div class='headerbox'><hbox>Environmental variability and human disturbance</hbox></div>
 <br>
-![](img/teams/team-ind/hyenas_metzger_3.png){width=57.2%}![](img/teams/team-ind/hyena3.jpg){width=42.8%}
+![](img/teams/team-ind/Snare_roadkill_victims.jpg)
 
 *Pictures: Sonja Metzger*
 
@@ -146,7 +147,7 @@ Current topics
 
 ::: {.floatting}
 ```{r out.width='28%', out.extra='style="float:left; padding:2px"'}
-knitr::include_graphics("./img/teams/team-ind/logo_serengeti_spotted_hyaena_project.png")
+knitr::include_graphics("./img/teams/team-ind/logo_serengeti_spotted_hyaena_project.jpg")
 ```
 
 <br>
