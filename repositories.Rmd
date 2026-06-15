@@ -240,6 +240,16 @@ knitr::opts_chunk$set(echo = FALSE)
   
   
   <li class="card-repo">
+    <img class="card-repo-img" src='img/repo/Patzina-Mehling_2026_nat_commun.png' alt='Figure 7 of Patzina-Mehling et al. 2026: The biplot of the PCA linked mosquito MIR to the abundances of the bird species based on bloodmeal host frequency in the field sampling and bird species abundance (based on a spatial model), as well as with spatial characteristics of the sites (tree cover, imperviousness, presence of water, human density). Modelled positions of the study sites in the biplot are marked by coloured dots. Source data are provided in the Source Data file. MIR minimum infection rate, mosq mosquito, ab abundance, hum humidity, Cov coverage, div diversity, imperv imperviousness, humPopDens human population density, seq sequence, temp temperature.'>
+    <h3>Patzina-Mehling et al. 2026</h3>
+    <p>Fine-scale heterogeneity and local amplification of West Nile virus in urban environments in Berlin. **NAT COMMUN** 17, 4597.</p><p>
+    <a href='https://doi.org/10.1038/s41467-026-73251-5'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://github.com/EcoDynIZW/Patzina-Mehling_2026_NatCommun'>![](img/repo/icon-github.png){width=12%}</a>
+    <a href='https://doi.org/10.5281/zenodo.19577441'>![](img/repo/icon-zenodo.png){width=12%}</a></p>
+  </li>
+  
+  
+  <li class="card-repo">
     <img class="card-repo-img" src='img/repo/planillo_2021_divdist.jpg' alt='Figure 6 of Planillo et al. 2021: associations among bird species in urban areas identified by the JSDM, whose 95 CI did not overlap zero. All associations were positive. Species have been categorized based on their response group. The size of the dot represents the number of sites where the species was recorded (total 29 sites).'>
     <h3>Planillo et al. 2021</h3>
     <p>Arthropod abundance modulates bird community responses to urbanization. *DIV DIST*, 27:34-49.</p><p>
@@ -309,6 +319,18 @@ knitr::opts_chunk$set(echo = FALSE)
     <a href='https://github.com/EcoDynIZW/Rocha_Sollmann_2023_AnimConserv'>![](img/repo/icon-github.png){width=12%}</a>
     <a href='https://doi.org/10.25338/B84060'>![](img/repo/icon-dryad.png){width=12%}</a> </p>
   </li>
+
+
+<li class="card-repo">
+    <img class="card-repo-img" src='img/repo/sanchez_2026_conserv_biol.jpg' alt='Figure 1 of Sanchez et al. 2026: (a) Layers used in the spatially explicit individual-based model of six lynx populations in central Europe that tracks lynx throughout their lifetime (reference layer, suitability layer; mortality layers, mortality probability of the modeled lynx based on multiple sources; spatial location layers, auxiliary layers used to track individuals in space); (b) movement of an individual lynx from patch A (target or regional born in that patch) to patch B (target or regional), where it becomes a resident within a year of simulation; (c) study area (red) in Europe in the simulation; (d) distribution of lynx populations modified from Kaczensky et al. (2021) (squares, area occupied by lynx); (e) lynx populations as defined in the model; (f) spatial location layers showing the nested distribution of target patches (1−26 darker color, areas of high lynx density and areas of importance for connectivity) within regional patches (30−160 lighter color, large areas surrounding target patches); and (g) visual representation of timeline from the first lynx reintroductions (years in bold) in the 1970s to the end of the simulation (timeline shows distribution of phases 1 and 2, "reference period" and "release and projection period" in phase 2, and scenarios S1 [absence of ULyCA2 and LIFE Lynx population reinforcements] and S2 [ULyCA2 and LIFE Lynx population reinforcements, red color]).'>
+    <h3>Sanchez et al. 2026</h3>
+    <p>Translocation effects on regional and local population viability and connectivity. **CONSERV BIOL**, e70321.</p><p>
+    <a href='https://doi.org/10.1111/cobi.70321'>![](img/repo/icon-paper.png){width=12%}</a> 
+    <a href='https://doi.org/10.5281/zenodo.19921537'>![](img/repo/icon-zenodo.png){width=12%}</a>
+    <a href='https://datadryad.org/stash/share/t4ms7dAQA6fYBKb5nXPTBY_fBD1KK-Rj82pW8ehg5i0'>![](img/repo/icon-dryad.png){width=12%}</a></p>
+  </li>
+  
+
 
 <li class="card-repo">
     <img class="card-repo-img" src='img/repo/sanz-perez_2025_biolconserv.jpg' alt='Graphical Abstract: Range expansion is a common feature of invasive, reintroduced, and recovering populations. This process is driven by population growth and dispersal, and intrinsic species characteristics and dispersal mechanisms yield contrasting population structures in space. The spatial distribution of sex and age classes is key to understanding and forecasting range expansions, but mapping age and sex categories is methodologically challenging. Here, we develop an age-structured open population spatial capture recapture (OPSCR) model to understand how spatial sex and age structures can shape population dynamics, as well as recovery processes. We use the endangered Pyrenean brown bear population as a case study, analysing non-invasive monitoring data from 2017 to 2021. Results revealed an expansion front dominated by adult (>4 years) and subadult males (2–4 years), while females and juveniles (<2 years) prevailed at the core. This, together with an overall decrease in density towards the expansion front in spite of available habitat, suggest an expansion process constrained by female philopatry. Future projections suggest continued population growth even under demographic stochasticity, and potential for population spread with increased reproduction events at the periphery. Our novel OPSCR model allows for statistically rigorous mapping of the sex and age structure of a population from non-invasive monitoring data. This is an important step towards better understanding and predicting the dynamics of recovering populations worldwide. In the case of large carnivores, it could inform conservation action such as anticipating the adoption of damage prevention measures and raising awareness campaigns to improve co-existence in future expansion areas.'>
