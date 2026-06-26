@@ -98,7 +98,7 @@ Movement of animals in the wild is shaped by a combination of biotic and abiotic
 
 **Tobias Kürschner, Marius Grabow, Simeon Lisovski, Nikki Pearson**
 
-Pathogens are an integral part of biodiversity, influencing population dynamics of their hosts and playing an important functional role in shaping community structure. Here, our aim is to understand the effect that species as ‘mobile pathogen links’ with their different movement types and life-history strategies have on disease distribution, spread, persistence and evolution. 
+Pathogens are an integral part of biodiversity, influencing population dynamics of their hosts and playing an important functional role in shaping community structure. Here, our aim is to understand the effect that species as ‘mobile pathogen links’ with their different movement types and life-history strategies have on disease distribution, spread, persistence and evolution. We include  the knowledge about drivers of disease spread and distributions in One Health projects.
 
 Current topics
 
