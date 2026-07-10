@@ -22,6 +22,8 @@ For older Bachelor and Master theses please check here:<br> [2025](msc-bsc-these
 
 <div class='headerbox'><hbox>Completed Theses in 2026</hbox></div><br>
 
+* Impact of Social Networks on Population’s Resilience to Perturbations. **Soualiyou Ngah-nsangou**, <span class='desaturated'>15.06.2026 MSc. University of Montpellier, Quantitative Ecology and Evolution. Supervisor: Sarah Cubaynes, Sarah Benhaiem</span>
+
 * Neophobia and innovative problem-solving in Eurasian red squirrels (*Sciurus vulgaris*) along an urban gradient in Berlin. **Johanna Leona Eul**. <span class='desaturated'>30.01.2026 MSc. Universität Potsdam, Master in Ecology, Evolution and Conservation. Supervisor: Stephanie  Prof Jana Eccard (UP), Sinah Drenske, Conny Landgraf.</span>
 
 * Inference of Animal Behaviour from Relocation Data: A Performance Comparison of Statistical and Machine Learning Methods. **Ender Daldaban**. <span class='desaturated'>03.01.2026 BSc, TU Berlin, Ecology and Environmental Planning. Supervisor: Stephanie Kramer-Schadt, Marius Grabow.</span>
