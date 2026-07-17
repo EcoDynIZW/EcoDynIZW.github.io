@@ -37,7 +37,7 @@ terra::terraOptions(progress = 0)
 
 ```{r}
 library(llmcoder)
-llmcoder_setup("ollama", model = "qwen2.5-coder:7b")
+llmcoder_setup("ollama", model = "codestral")
 # Load the mtcars dataset and create a scatter plot of mpg vs wt, colored by number of cylinders# Load the mtcars dataset
 
 library(tidyverse)
