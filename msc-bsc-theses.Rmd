@@ -22,7 +22,7 @@ For older Bachelor and Master theses please check here:<br> [2025](msc-bsc-these
 
 <div class='headerbox'><hbox>Completed Theses in 2026</hbox></div><br>
 
-*  SPATIAL ECOLOGY OF ALPINE CHAMOIS (RUPICAPRA RUPICAPRA L.) IN THE KARWENDEL ALPS: SEX-SPECIFIC, SEASONAL & INTERSPECIFIC MULTI SCALE PATTERNS DERIVED FROM MAXENT MODELS. **Leoni Visca**, <span class='desaturated'>25.07.2026 BSc. Ecology and Environmental Planning, TU Berlin (S. Kramer-Schadt, Wibke Peters, LWF).</span>
+*  Spatial ecology of alpine chamois (*rupicapra rupicapra l.*) in the Karwendel Alps: Sex-specific, seasonal & interspecific multi scale patterns derived from maxent models. **Leoni Visca**, <span class='desaturated'>25.07.2026 BSc. Ecology and Environmental Planning, TU Berlin (S. Kramer-Schadt, Wibke Peters, LWF).</span>
 
 * Reconstructing vertebrate communities before defaunation in the Central Annamites, Vietnam. **Ahmed M. Baqai**, <span class='desaturated'>20.07.2026 MSc. Ecology and Environmental Planning, TU Berlin (A. Wilting, R. Sollmann, S. Kramer-Schadt).</span>
 
