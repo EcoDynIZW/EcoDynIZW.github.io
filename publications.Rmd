@@ -18,6 +18,8 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * **Figueiredo L**, **Scherer C**, **Kramer-Schadt S**, Cabral JS, Kéfi S, Van den Brink PJ, **Radchuk V** (2026): estar: An R package to measure ecological stability. METHODS ECOL EVOL. **00**, 1–11. doi:<span>[10.1111/2041-210x.70265](https://doi.org/10.1111/2041-210x.70265)</span>  
 
+* **Gicquel M**, **Planillo A**, Heitlinger E, Forslund-Startceva SK, **Kramer-Schadt S**, Ferreira SCM, Jarquin-Diaz VH (2026): Farming practices exert selection pressures on the resistome of natural populations of house mice. NAT COMMUN **17**, 7848.doi:<span>[10.1038/s41467-026-76403-9](https://doi.org/10.1038/s41467-026-76403-9)</span> 
+
 * Gomez CR, Sartor CC, Macdonald DW, Johnson PJ, Goossens B, Panjang E, Gardner PC, Abram NK, **Guharajan R**, **Wong ST**, Jubili J, Kuntagil J, Acheh SNA, Kissing J, William WO, Brodie J, Helmy O, Bernard H, Matsuda I, Hearn AJ (2026): Habitat suitability model for identifying human‐wildlife interface and implications for wildlife trade of Sunda pangolin in Borneo. ENVIRON MONIT ASSESS **198**, 108. doi:<span>[10.1007/s10661-025-14922-6](https://doi.org/10.1007/s10661-025-14922-6)</span>
 
 * Greving H, Bruckermann T, Schumann A, **Stillfried M**, **Börner K**, **Hagen R**, et al. (2026 a): The influence of psychological ownership on pride in a Citizen Science project on wildlife ecology. PLOS ONE **21(4):** e0345321. doi:<span>[10.1371/journal.pone.0345321](https://doi.org/10.1371/journal.pone.0345321)</span> 
@@ -38,6 +40,8 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * Lorenz S, Fisch K, **Grabow M**, Nathan R, Kelling M, Shuang L, Ullmann W, Xu X, Scharnweber K (2026): Species-specific aquatic habitat use predicts pesticide residues in feces of insectivorous birds and bats. ENVIRON POLLUT, **399**, 128206. doi:<span>[10.1016/j.envpol.2026.128206](https://doi.org/10.1016/j.envpol.2026.128206)</span>
 
+* Malsch-Fröhlich E, Tetzlaff D, LeFevre GH, **Kramer-Schadt S**, **Wenzler-Meya M**, Spahr S (2026): Tracing the occurrence and spatial drivers of organic contaminants in urban ponds along urbanization gradients. WATER RES, e126747. doi:<span>[10.1016/j.watres.2026.126747](https://doi.org/10.1016/j.watres.2026.126747)</span>
+
 * Morales-González A, Fernández-Gil A, Quevedo M, **Kramer-Schadt S**, Paniw M, Revilla E (2026): Resident mortality determines grey wolf range dynamics. J APPL ECOL, **63**, e70465.  doi:<span>[10.1111/1365-2664.70465](https://doi.org/10.1111/1365-2664.70465 )</span>
 
 * Nguyen AT, **Nguyen A**, Nguyen TV, ... , **Niedballa J**, **Wilting A**, **Tilker A** (2026): New record of dhole *Cuon alpinus* in Vietnam, yet apparent decline of the species across the country. ORYX. **2026**:1-4. doi:<span>[10.1017/S0030605325101580](https://doi.org/10.1017/S0030605325101580)</span> 
@@ -46,9 +50,13 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * Patzina-Mehling C, Kopp A, Lee YS, Birkl MXL, Ebers S, Voigt K, Graff SL, Beisel U, **Landgraf C**, **Ganz F**, **Planillo A**, **Kramer-Schadt S**, Junglen S (2026): Fine-scale heterogeneity and local amplification of West Nile virus in urban environments in Berlin. NAT COMMUN **17**, 4597. doi:<span>[10.1038/s41467-026-73251-5](https://doi.org/10.1038/s41467-026-73251-5)</span>  
 
+* Pin C, **Wilting A**, Gale GA, Kamler JF, Auda E, **Sollmann R** (2026): Assessing spatial and temporal interactions of the Endangered large-spotted civet and large Indian civet in Cambodia’s lowland dry forests. MAMM BIOL.  doi:<span>[10.1007/s42991-026-00615-1](https://doi.org/10.1007/s42991-026-00615-1)</span> 
+
 * **Radchuk V**, Jones CV, McLean N, ..., **Kramer-Schadt S**, ...  et al. (2026): Changes in phenology mediate vertebrate population responses to temperature globally. NAT COMMUN **17**, 479. doi:<span>[10.1038/s41467-025-68172-8](https://doi.org/10.1038/s41467-025-68172-8)</span> 
 
 * **Sánchez Arribas E**., **Planillo A**, Premier J, **Kürschner T**, Belotti E, Breitenmoser-Würsten C, Bufka L, Černe R, Engleder T, Fležar U, Gomerčić T, Krofel M, Mináriková T, Molinari P, Poláková S, Poledníková K, Potočnik H, Sindičić M, Topličanec I, … **Kramer-Schadt S**\*, Molinari-Jobin A\* (2026): Translocation effects on regional and local population viability and connectivity. CONSERV BIOL, e70321. doi:<span>[10.1111/cobi.70321](https://doi.org/10.1111/cobi.70321)</span> 
+
+* **Sollmann R**, Kays R, Cove MV, et al. (2026): Combining Disparate Camera-Trap Surveys: Impacts of Spatial Bias and Design Variation on Large-Scale Ecological Inference. J BIOGEOGR **53**, no. 8: e70333. doi:<span>[10.1111/jbi.70333](https://doi.org/10.1111/jbi.70333)</span> 
 
 * Stuardo JV, **Drenske S** and **Louvrier J** (2026): Urbanisation and human activities influence the co-occurrence of red squirrels *Sciurus vulgaris* and meso-carnivores in Berlin, Germany. WILDL BIOL, e01452. doi:<span>[10.1002/wlb3.01452](https://doi.org/10.1002/wlb3.01452)</span>
 
