@@ -411,7 +411,7 @@ knitr::opts_chunk$set(echo = FALSE)
   <li class="card-repo">
     <img class="card-repo-img" src='img/repo/Sollmann_2026_j_biogeogr.jpg' alt='Figure 1 of Sollmann et al. 2026: Conceptual overview of the present study. We investigate the influence of environmental variables on sampling bias and variation in study design in Snapshot USA and Snapshot Europe data, and test whether variation in design affects inference about wildlife ecology.'>
     <h3>Sollmann et al. 2026</h3>
-    <p>Spatio-temporal metapopulation trends: The coconut crabs of Zanzibar. *ECOL EVOL*, **14**, e70168.</p><p>
+    <p>Combining Disparate Camera-Trap Surveys: Impacts of Spatial Bias and Design Variation on Large-Scale Ecological Inference. *J BIOGEOGR*, **53**, no. 8: e70333.</p><p>
     <a href='https://doi.org/10.1111/jbi.70333'>![](img/repo/icon-paper.png){width=12%}</a> 
     <a href='https://github.com/EcoDynIZW/Sollmann-et-al-2026-Snapshot'>![](img/repo/icon-github.png){width=12%}</a> </p>
   </li>
