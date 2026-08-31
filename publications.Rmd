@@ -70,6 +70,8 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * **White EW**, Höner OP, Mosna M, **Radchuk V**, **Benhaiem S**, Davidian E (2026): The Effect of Social Rank on Reproductive Traits Depends on Rank Metric: Evidence From a Group-Living Carnivore.” ECOL EVOL **16**, no. 3: e73229. doi:<span>[10.1002/ece3.73229](https://doi.org/10.1002/ece3.73229)</span>
 
+* Wielgus E, Alexandrov T, Apollonio M, Arnold J, Bas G, Baubet E, Chamaillé-Jammes S, Farkas A, Fischer C. Jerina K, Ježek M, Kjellander P, Klamm A, **Kramer-Schadt S**, Licoppe A, Morelle K, Náhlik A, Scheppers T, Suter S, … Heurich, M. (2026): How big is enough? Movement-informed zoning for African swine fever mitigation. J APPL ECOL, **63**, e70559.  doi:<span>[10.1111/1365-2664.70559](https://doi.org/10.1111/1365-2664.70559)</span>
+
 <div class='headerbox'><hbox>Reports and other scientific outlets</hbox></div><br>
 
 * ENETWILD consortium, Cerri J, Morelle K, Plis K, Acevedo P, Alexandrov T, Apollonio M, Arnold J, Bas G, Baubet E, Brivio F, Brogi R, Casaer J, Chamaille-Jammes S, Della Libera F, Farkas A, Fiderer C, Fischer C, Fodor JT, Grignolio S, Handschuh M, Heurich M, Jerina K, Jezek M, Kjellander P, Klamm A, **Kramer-Schadt S**, Licoppe A, Linderoth P, Nahlik A, Ortmann S, Said S, Scandura M, Scheppers T, Suter S, Tari T, Vicente J, Wielgus E, Podgórski T (2026): Estimation of wild boar movement and social behaviour parameters relevant for ASF control across ecological, demographic and anthropogenic gradients. Zenodo. doi:<span>[10.5281/zenodo.18998680](https://doi.org/10.5281/zenodo.18998680)</span>
