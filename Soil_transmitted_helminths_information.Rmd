@@ -1,6 +1,8 @@
 ---
 title: "Biotic and abiotic drivers influence the infections of soil-transmitted helminth infections at the human-livestock-wildlife interface"
 description: ""
+output: distill::distill_article
+
 ---
 
 (contact <a href="mailto:pearson@izw-berlin.de">pearson[at]izw-berlin.de</a>)
@@ -21,5 +23,3 @@ What does this mean for you? You would need to collect samples for us while carr
 Through your help, we would gain a broad coverage of Germany. In return we offer first hand info on prevalences in your samples and co-authorship for major contributions.
 
 Have we piqued your interest? If so, please feel free to contact us.
-
-Workflow:

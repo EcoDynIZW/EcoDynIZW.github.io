@@ -104,6 +104,8 @@ Current topics
 
 * [Soil-transmitted helminth infections at the livestock-wildlife interface](https://www.vetmed.fu-berlin.de/en/einrichtungen/sonstige/grk3096/index.html)
 
+* [Biotic and abiotic drivers influence the infections of soil-transmitted helminth infections at the human-livestock-wildlife interface](Soil_transmitted_helminths_information.html)
+
 * [West-Nile infections in wild birds](https://www.gesundheitsforschung-bmftr.de/de/wnvcombat-kontrolle-von-wnv-infektionen-unter-anwendung-eines-ganzheitlichen-one-health-19682.php)
 
 * Movement effects on pathogen spread and disease persistence
