@@ -20,6 +20,8 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * **Gicquel M**, **Planillo A**, Heitlinger E, Forslund-Startceva SK, **Kramer-Schadt S**, Ferreira SCM, Jarquin-Diaz VH (2026): Farming practices exert selection pressures on the resistome of natural populations of house mice. NAT COMMUN **17**, 7848.doi:<span>[10.1038/s41467-026-76403-9](https://doi.org/10.1038/s41467-026-76403-9)</span> 
 
+* Gielen MC, Johannes X, Kashe N, Khumo G, Langwane HK, Zoronxhogo Z, **Radchuk V**, Schtickzelle, N. (2026): Integrating Indigenous knowledge and modern statistical approaches to model wildlife density based on animal track counts. CONSERV BIOL, e70397.  doi:<span>[10.1111/cobi.70397](https://doi.org/10.1111/cobi.70397)</span>
+
 * Gomez CR, Sartor CC, Macdonald DW, Johnson PJ, Goossens B, Panjang E, Gardner PC, Abram NK, **Guharajan R**, **Wong ST**, Jubili J, Kuntagil J, Acheh SNA, Kissing J, William WO, Brodie J, Helmy O, Bernard H, Matsuda I, Hearn AJ (2026): Habitat suitability model for identifying human‐wildlife interface and implications for wildlife trade of Sunda pangolin in Borneo. ENVIRON MONIT ASSESS **198**, 108. doi:<span>[10.1007/s10661-025-14922-6](https://doi.org/10.1007/s10661-025-14922-6)</span>
 
 * Greving H, Bruckermann T, Schumann A, **Stillfried M**, **Börner K**, **Hagen R**, et al. (2026 a): The influence of psychological ownership on pride in a Citizen Science project on wildlife ecology. PLOS ONE **21(4):** e0345321. doi:<span>[10.1371/journal.pone.0345321](https://doi.org/10.1371/journal.pone.0345321)</span> 
@@ -62,6 +64,8 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * **Sánchez Arribas E**., **Planillo A**, Premier J, **Kürschner T**, Belotti E, Breitenmoser-Würsten C, Bufka L, Černe R, Engleder T, Fležar U, Gomerčić T, Krofel M, Mináriková T, Molinari P, Poláková S, Poledníková K, Potočnik H, Sindičić M, Topličanec I, … **Kramer-Schadt S**\*, Molinari-Jobin A\* (2026): Translocation effects on regional and local population viability and connectivity. CONSERV BIOL, e70321. doi:<span>[10.1111/cobi.70321](https://doi.org/10.1111/cobi.70321)</span> 
 
+* **Sánchez Arribas E**, Gibellieri M, **Planillo A**, ... **Kramer-Schadt S** et al. (2026): Reproductive parameters in female European wildcats (Felis silvestris) across environmental gradients. MAMM BIOL. doi:<span>[10.1007/s42991-026-00625-z]( https://doi.org/10.1007/s42991-026-00625-z)</span> 
+
 * **Sollmann R**, Kays R, Cove MV, et al. (2026): Combining Disparate Camera-Trap Surveys: Impacts of Spatial Bias and Design Variation on Large-Scale Ecological Inference. J BIOGEOGR **53**, no. 8: e70333. doi:<span>[10.1111/jbi.70333](https://doi.org/10.1111/jbi.70333)</span> 
 
 * Stuardo JV, **Drenske S** and **Louvrier J** (2026): Urbanisation and human activities influence the co-occurrence of red squirrels *Sciurus vulgaris* and meso-carnivores in Berlin, Germany. WILDL BIOL, e01452. doi:<span>[10.1002/wlb3.01452](https://doi.org/10.1002/wlb3.01452)</span>
@@ -79,6 +83,9 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 * Wielgus E, Alexandrov T, Apollonio M, Arnold J, Bas G, Baubet E, Chamaillé-Jammes S, Farkas A, Fischer C. Jerina K, Ježek M, Kjellander P, Klamm A, **Kramer-Schadt S**, Licoppe A, Morelle K, Náhlik A, Scheppers T, Suter S, … Heurich, M. (2026): How big is enough? Movement-informed zoning for African swine fever mitigation. J APPL ECOL, **63**, e70559.  doi:<span>[10.1111/1365-2664.70559](https://doi.org/10.1111/1365-2664.70559)</span>
 
 <div class='headerbox'><hbox>Reports and other scientific outlets</hbox></div><br>
+
+
+* **Börner K** (2026): La migration en question. In LA REVUE NATIONALE DE LA CHASSE, No 950, S. 52-55.
 
 * ENETWILD consortium, Cerri J, Morelle K, Plis K, Acevedo P, Alexandrov T, Apollonio M, Arnold J, Bas G, Baubet E, Brivio F, Brogi R, Casaer J, Chamaille-Jammes S, Della Libera F, Farkas A, Fiderer C, Fischer C, Fodor JT, Grignolio S, Handschuh M, Heurich M, Jerina K, Jezek M, Kjellander P, Klamm A, **Kramer-Schadt S**, Licoppe A, Linderoth P, Nahlik A, Ortmann S, Said S, Scandura M, Scheppers T, Suter S, Tari T, Vicente J, Wielgus E, Podgórski T (2026): Estimation of wild boar movement and social behaviour parameters relevant for ASF control across ecological, demographic and anthropogenic gradients. Zenodo. doi:<span>[10.5281/zenodo.18998680](https://doi.org/10.5281/zenodo.18998680)</span>
 
