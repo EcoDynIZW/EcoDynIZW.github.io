@@ -16,9 +16,9 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * Bruckermann T, Bock D, Greving H, Schumann A, Stillfried M, **Börner K**, … Harms U. (2026): Attitudes and motivation influence how participants engage in different scientific activities in the online community of a citizen science project. BEHAV INF TECHNOL, 1–18. doi:<span>[10.1080/0144929X.2026.2641601](https://doi.org/10.1080/0144929X.2026.2641601)</span>   
 
-* **Figueiredo L**, **Scherer C**, **Kramer-Schadt S**, Cabral JS, Kéfi S, Van den Brink PJ, **Radchuk V** (2026): estar: An R package to measure ecological stability. METHODS ECOL EVOL. **00**, 1–11. doi:<span>[10.1111/2041-210x.70265](https://doi.org/10.1111/2041-210x.70265)</span>  
-
 * **Drenske S**, **Landgraf C**, **Berger AT**, **Stemmer AD**, **Planillo A**, **Eul JL**, Wist B, Röllig K, **Mikkelsen AJ**, Dammhahn M, Fickel J, **Kramer-Schadt S** (2026): Urbanisation Leaves a Genetic Signature but No Detectable Demographic Effects in a Small Mammal Population. ECOL EVOL, **16**, no. 9: e74273. doi:<span>[10.1002/ece3.74273](https://doi.org/10.1002/ece3.74273)</span>
+
+* **Figueiredo L**, **Scherer C**, **Kramer-Schadt S**, Cabral JS, Kéfi S, Van den Brink PJ, **Radchuk V** (2026): estar: An R package to measure ecological stability. METHODS ECOL EVOL. **00**, 1–11. doi:<span>[10.1111/2041-210x.70265](https://doi.org/10.1111/2041-210x.70265)</span> 
 
 * **Gicquel M**, **Planillo A**, Heitlinger E, Forslund-Startceva SK, **Kramer-Schadt S**, Ferreira SCM, Jarquin-Diaz VH (2026): Farming practices exert selection pressures on the resistome of natural populations of house mice. NAT COMMUN **17**, 7848. doi:<span>[10.1038/s41467-026-76403-9](https://doi.org/10.1038/s41467-026-76403-9)</span> 
 
@@ -29,6 +29,8 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 * Greving H, Bruckermann T, Schumann A, **Stillfried M**, **Börner K**, **Hagen R**, et al. (2026 a): The influence of psychological ownership on pride in a Citizen Science project on wildlife ecology. PLOS ONE **21(4):** e0345321. doi:<span>[10.1371/journal.pone.0345321](https://doi.org/10.1371/journal.pone.0345321)</span> 
 
 * Greving H, Bruckermann T, **Hagen R**, Schumann A, **Börner K**, **Kimmig SE**, Lewanzik D, Lorenz J, Marggraf L, **Stillfried M**, Straka TM, Voigt-Heucke S, Voigt CC, Brandt M, Harms U, Kimmerle J (2026 b): Who Engages in Citizen Science Projects on Urban Wildlife Ecology? Findings on Participant Groups from Cluster Analyses.  	CITIZ SCI: THEORY PRACT, **11(1)**: 12, 1–13. doi:<span>[10.5334/cstp.910](https://doi.org/10.5334/cstp.910)</span>  
+
+* Grimm V, ... , **Radchuk V**, et al. (2026): Twenty years of the ODD protocol: development, usage, extensions, and lessons learned about modelling standards development. ENVIRON MODELL SOFTW, 207. doi:<span>[10.1016/j.envsoft.2026.107203](https://doi.org/10.1016/j.envsoft.2026.107203)</span>
 
 * Hoang Quoc H, Le QT, Tran BV, ... **Wilting A** and **Tilker A** (2026): Distribution and conservation status of the silver-backed chevrotain *Tragulus versicolor* in Vietnam. ORYX, **2026**:1-6. doi:<span>[10.1017/S0030605325102329](https://doi.org/10.1017/S0030605325102329)</span>
 
@@ -66,7 +68,9 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * **Sánchez Arribas E**., **Planillo A**, Premier J, **Kürschner T**, Belotti E, Breitenmoser-Würsten C, Bufka L, Černe R, Engleder T, Fležar U, Gomerčić T, Krofel M, Mináriková T, Molinari P, Poláková S, Poledníková K, Potočnik H, Sindičić M, Topličanec I, … **Kramer-Schadt S**\*, Molinari-Jobin A\* (2026): Translocation effects on regional and local population viability and connectivity. CONSERV BIOL, e70321. doi:<span>[10.1111/cobi.70321](https://doi.org/10.1111/cobi.70321)</span> 
 
-* **Sánchez Arribas E**, Gibellieri M, **Planillo A**, ... **Kramer-Schadt S** et al. (2026): Reproductive parameters in female European wildcats (Felis silvestris) across environmental gradients. MAMM BIOL. doi:<span>[10.1007/s42991-026-00625-z]( https://doi.org/10.1007/s42991-026-00625-z)</span> 
+* **Sánchez Arribas E**, Gibellieri M, **Planillo A**, ... **Kramer-Schadt S** et al. (2026): Reproductive parameters in female European wildcats (Felis silvestris) across environmental gradients. MAMM BIOL. doi:<span>[10.1007/s42991-026-00625-z](https://doi.org/10.1007/s42991-026-00625-z)</span> 
+
+* Sidous M, **Gicquel M**, **Metzger S**, **East ML**, Hofer H, Nyahongo JW, **Benhaiem S**, Cubaynes S (2026): How Did Spotted Hyenas Respond to Decreased Prey Availability in Their Clan Territories over the Last Decades?. ECOSPHERE **17(10)**: e70800. doi:<span>[10.1002/ecs2.70800](https://doi.org/10.1002/ecs2.70800)</span> 
 
 * **Sollmann R**, Kays R, Cove MV, et al. (2026): Combining Disparate Camera-Trap Surveys: Impacts of Spatial Bias and Design Variation on Large-Scale Ecological Inference. J BIOGEOGR **53**, no. 8: e70333. doi:<span>[10.1111/jbi.70333](https://doi.org/10.1111/jbi.70333)</span> 
 
