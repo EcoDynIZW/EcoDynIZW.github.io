@@ -56,6 +56,8 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * Morales-González A, Fernández-Gil A, Quevedo M, **Kramer-Schadt S**, Paniw M, Revilla E (2026): Resident mortality determines grey wolf range dynamics. J APPL ECOL, **63**, e70465.  doi:<span>[10.1111/1365-2664.70465](https://doi.org/10.1111/1365-2664.70465 )</span>
 
+* **Niedballa J**, **Sollmann R**, Courtiol A, Deere NJ, Struebig MJ, **Wilting A** (2026): The camtrapR R package: From data management to interactive ecological analysis of camera trap data. METHODS ECOL EVOL, **00**, 1–8.  doi:<span>[10.1111/2041-210x.70409](https://doi.org/10.1111/2041-210x.70409)</span> 
+
 * Nguyen AT, **Nguyen A**, Nguyen TV, ... , **Niedballa J**, **Wilting A**, **Tilker A** (2026): New record of dhole *Cuon alpinus* in Vietnam, yet apparent decline of the species across the country. ORYX. **2026**:1-4. doi:<span>[10.1017/S0030605325101580](https://doi.org/10.1017/S0030605325101580)</span> 
 
 * Nguyen LV, Vo MV, Le QT, **Nguyen A**, **Wilting A**, Roellig K, Hackländer K, Hudson R, **Tilker A** (2026): Observations on Burrow Use and Reproduction in the Annamite Striped Rabbit (*Nesolagus timminsi*) in Vietnam. ECOL EVOL, **16**, no. 6: e73680. doi:<span>[10.1002/ece3.73680](https://doi.org/10.1002/ece3.73680)</span>
