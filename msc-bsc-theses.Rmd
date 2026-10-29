@@ -22,7 +22,9 @@ For older Bachelor and Master theses please check here:<br> [2025](msc-bsc-these
 
 <div class='headerbox'><hbox>Completed Theses in 2026</hbox></div><br>
 
-* Space use and habitat preferences of territorial male cheetahs in Namibia. **Agnes Kurth**, <span class='desaturated'>15.07.2026 MSC. Georg-August Universität Göttingen, Deutschland, Georg-August Universität Göttingen, Deutschland. (Wachter B. and Kramer-Schadt S.)</span>
+* Non-invasive monitoring of reproductive parameters in common starling (*Sturnus vulgaris*) in Brandenburg. **Konstantin Andreas Grandl**, <span class='desaturated'>15.10.2026 MSc. TU Dresden, Dresden, Deutschland, (H. Kühl, M. Grabow)</span>
+
+* Space use and habitat preferences of territorial male cheetahs in Namibia. **Agnes Kurth**, <span class='desaturated'>15.07.2026 MSC. Georg-August Universität Göttingen, Deutschland. (Wachter B. and Kramer-Schadt S.)</span>
 
 * Spatial ecology of alpine chamois (*rupicapra rupicapra l.*) in the Karwendel Alps: Sex-specific, seasonal & interspecific multi scale patterns derived from maxent models. **Leoni Visca**, <span class='desaturated'>25.07.2026 BSc. Ecology and Environmental Planning, TU Berlin (S. Kramer-Schadt, Wibke Peters, LWF).</span>
 
