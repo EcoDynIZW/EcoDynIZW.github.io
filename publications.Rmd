@@ -68,6 +68,8 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * **Radchuk V**, Jones CV, McLean N, ..., **Kramer-Schadt S**, ...  et al. (2026): Changes in phenology mediate vertebrate population responses to temperature globally. NAT COMMUN **17**, 479. doi:<span>[10.1038/s41467-025-68172-8](https://doi.org/10.1038/s41467-025-68172-8)</span> 
 
+* Salvatori M, Palencia P, Iannarilli F, Cagnacci F, Hofmeester TR, Jansen P, Rovero F, **Sollmann R** (2026): Camera Trapping and Sampling Design: A Synthesis of Current Evidence. MAMMAL REV **56**, no. 4: e70050. doi:<span>[10.1111/mam.70050](https://doi.org/10.1111/mam.70050)</span>
+
 * **Sánchez Arribas E**., **Planillo A**, Premier J, **Kürschner T**, Belotti E, Breitenmoser-Würsten C, Bufka L, Černe R, Engleder T, Fležar U, Gomerčić T, Krofel M, Mináriková T, Molinari P, Poláková S, Poledníková K, Potočnik H, Sindičić M, Topličanec I, … **Kramer-Schadt S**\*, Molinari-Jobin A\* (2026): Translocation effects on regional and local population viability and connectivity. CONSERV BIOL, e70321. doi:<span>[10.1111/cobi.70321](https://doi.org/10.1111/cobi.70321)</span> 
 
 * **Sánchez Arribas E**, Gibellieri M, **Planillo A**, ... **Kramer-Schadt S** et al. (2026): Reproductive parameters in female European wildcats (Felis silvestris) across environmental gradients. MAMM BIOL. doi:<span>[10.1007/s42991-026-00625-z](https://doi.org/10.1007/s42991-026-00625-z)</span> 
@@ -101,7 +103,6 @@ For older publications please check here:<br> [2025](pubs-2025.html)&ensp;|&ensp
 
 * **East ML** (2026): Reproductive behavior in the Hyaenidae. In: Encyclopedia of Animal Behavior (chief editor Benjamin Oldroyd), 3rd edition, Vol. 3 (ed by Benjamin Oldroyd and Rosalyn Gloag), pp 322-331. Amsterdam – New York, Elsevier.
 doi:<span>[10.1016/B978-0-12-809633-8.90127-4](https://doi.org/10.1016/B978-0-12-809633-8.90127-4)</span>
-
 
 * ENETWILD consortium, Cerri J, Morelle K, Plis K, Acevedo P, Alexandrov T, Apollonio M, Arnold J, Bas G, Baubet E, Brivio F, Brogi R, Casaer J, Chamaille-Jammes S, Della Libera F, Farkas A, Fiderer C, Fischer C, Fodor JT, Grignolio S, Handschuh M, Heurich M, Jerina K, Jezek M, Kjellander P, Klamm A, **Kramer-Schadt S**, Licoppe A, Linderoth P, Nahlik A, Ortmann S, Said S, Scandura M, Scheppers T, Suter S, Tari T, Vicente J, Wielgus E, Podgórski T (2026): Estimation of wild boar movement and social behaviour parameters relevant for ASF control across ecological, demographic and anthropogenic gradients. Zenodo. doi:<span>[10.5281/zenodo.18998680](https://doi.org/10.5281/zenodo.18998680)</span>
 
