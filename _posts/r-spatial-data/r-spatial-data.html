@@ -20,6 +20,7 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -1500,7 +1501,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="r-spatial-data_files/header-attrs-2.25/header-attrs.js"></script>
+  <script src="r-spatial-data_files/header-attrs-2.32/header-attrs.js"></script>
   <script src="r-spatial-data_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="r-spatial-data_files/popper-2.6.0/popper.min.js"></script>
   <link href="r-spatial-data_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -1581,8 +1582,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span></span>
 <span></span>
 <span><span class='co'>### set "empty" theme with centered titles for ggplot output</span></span>
-<span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme_get.html'>theme_set</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_void</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span>
-<span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme_get.html'>theme_update</a></span><span class='op'>(</span>plot.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>face <span class='op'>=</span> <span class='st'>"bold"</span>, hjust <span class='op'>=</span> <span class='fl'>.5</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
+<span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/get_theme.html'>theme_set</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_void</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span>
+<span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/get_theme.html'>theme_update</a></span><span class='op'>(</span>plot.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>face <span class='op'>=</span> <span class='st'>"bold"</span>, hjust <span class='op'>=</span> <span class='fl'>.5</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <p><br></p>
@@ -1663,7 +1664,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='va'>economy</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> </span>
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>coord_sf</a></span><span class='op'>(</span>crs <span class='op'>=</span> <span class='st'>"+proj=eqearth"</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="r-spatial-data_files/figure-html5/plot-world-rnaturalearth-1.png" width="960" /></p>
+<p><img src="r-spatial-data_files/figure-html5/plot-world-rnaturalearth-1.png" alt="" width="960" /></p>
 </div>
 <p><strong>NOTE:</strong> Unfortunately, NaturalEarth is using <a href="https://github.com/nvkelso/natural-earth-vector/issues/391">weird <em>de-facto</em> and <em>on-the-ground rules</em> to define country borders which do not follow the borders the UN and most countries agree on</a>. For correct and official borders, please use the <code>{rgeoboundaries}</code> package (see below).</p>
 <h3 id="physical-data-sources">Physical Data Sources</h3>
@@ -1709,7 +1710,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span></span>
 <span><span class='va'>small</span> <span class='op'>+</span> <span class='va'>large</span> <span class='op'>*</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span>plot.margin <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>margin</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='op'>-</span><span class='fl'>20</span>, <span class='fl'>0</span>, <span class='op'>-</span><span class='fl'>20</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="r-spatial-data_files/figure-html5/glacier-rnaturalearth-patchwork-1.png" width="1440" /></p>
+<p><img src="r-spatial-data_files/figure-html5/glacier-rnaturalearth-patchwork-1.png" alt="" width="1440" /></p>
 </div>
 <h3 id="cultural-data-sources">Cultural Data Sources</h3>
 <p>NaturalEarth also provides several cultural data sets, such as airports, roads, disputed areas. Let’s have a look at the urban areas across the world:</p>
@@ -1723,7 +1724,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>urban</span>, color <span class='op'>=</span> <span class='st'>"firebrick"</span>, fill <span class='op'>=</span> <span class='st'>"firebrick"</span><span class='op'>)</span> <span class='op'>+</span> </span>
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>coord_sf</a></span><span class='op'>(</span>crs <span class='op'>=</span> <span class='st'>"+proj=eqearth"</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="r-spatial-data_files/figure-html5/urban-rnaturalearth-1.png" width="960" /></p>
+<p><img src="r-spatial-data_files/figure-html5/urban-rnaturalearth-1.png" alt="" width="960" /></p>
 </div>
 <h3 id="relief-data">Relief Data</h3>
 <p>The physical and cultural data sets showcased above are all vector data. NaturalEarth also provides raster data, namely gridded relief data:</p>
@@ -1732,9 +1733,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>relief</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/rnaturalearth/reference/ne_download.html'>ne_download</a></span><span class='op'>(</span>type <span class='op'>=</span> <span class='st'>"MSR_50M"</span>, category <span class='op'>=</span> <span class='st'>"raster"</span>,</span>
 <span>                      scale <span class='op'>=</span> <span class='fl'>50</span>, returnclass <span class='op'>=</span> <span class='st'>"sf"</span><span class='op'>)</span></span>
 <span></span>
-<span><span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>relief</span><span class='op'>)</span></span></code></pre>
+<span><span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rspatial.github.io/terra/reference/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>relief</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="r-spatial-data_files/figure-html5/relief-rnaturalearth-1.png" width="768" /></p>
+<p><img src="r-spatial-data_files/figure-html5/relief-rnaturalearth-1.png" alt="" width="768" /></p>
 </div>
 <p><br></p>
 <h2 id="rgeoboundaries">{rgeoboundaries}</h2>
@@ -1782,7 +1783,7 @@ First 10 features:
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"grey40"</span>, lwd <span class='op'>=</span> <span class='fl'>.2</span><span class='op'>)</span> <span class='op'>+</span> </span>
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>coord_sf</a></span><span class='op'>(</span>crs <span class='op'>=</span> <span class='st'>"+proj=eqearth"</span><span class='op'>)</span> </span></code></pre>
 </div>
-<p><img src="r-spatial-data_files/figure-html5/rgeoboundaries-world-1.png" width="960" /></p>
+<p><img src="r-spatial-data_files/figure-html5/rgeoboundaries-world-1.png" alt="" width="960" /></p>
 </div>
 <p>Lower administrative levels are available as well, e.g. in Germany <code>adm1</code> represents federal states (“Bundesländer”), adm2 districts (“Kreise”) and so on.</p>
 <p>Let’s plot the admin 1 levels for the DACH countries:</p>
@@ -1794,7 +1795,7 @@ First 10 features:
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggsf.html'>geom_sf</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='va'>shapeGroup</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_brewer.html'>scale_fill_brewer</a></span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"Set2"</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="r-spatial-data_files/figure-html5/rgeoboundaries-country-1.png" width="576" /></p>
+<p><img src="r-spatial-data_files/figure-html5/rgeoboundaries-country-1.png" alt="" width="576" /></p>
 </div>
 <h2 id="osmdata">{osmdata}</h2>
 <p><a href="https://www.openstreetmap.org">OpenStreetMap</a> (<a href="https://www.openstreetmap.org" class="uri">https://www.openstreetmap.org</a>) is a collaborative project to create a free editable geographic database of the world. The geodata underlying the maps is considered the primary output of the project and is accessible from R via the <code>{osmdata}</code> package.</p>
@@ -1809,8 +1810,8 @@ First 10 features:
 <span><span class='co'>## explore features + tags</span></span>
 <span><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='fu'><a href='https://docs.ropensci.org/osmdata/reference/available_features.html'>available_features</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
-<pre><code>[1] &quot;4wd_only&quot;  &quot;abandoned&quot; &quot;abutters&quot;  &quot;access&quot;    &quot;addr&quot;     
-[6] &quot;addr:city&quot;</code></pre>
+<pre><code>[1] &quot;abutters&quot;    &quot;access&quot;      &quot;addr:*&quot;      &quot;admin_level&quot;
+[5] &quot;aeroway&quot;     &quot;amenity&quot;    </code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='fu'><a href='https://docs.ropensci.org/osmdata/reference/available_tags.html'>available_tags</a></span><span class='op'>(</span><span class='st'>"craft"</span><span class='op'>)</span><span class='op'>)</span></span></code></pre>
 </div>
@@ -1825,13 +1826,15 @@ First 10 features:
 6 craft beekeeper           </code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>## building the query, e.g. beekeepers</span></span>
-<span><span class='va'>beekeeper_query</span> <span class='op'>&lt;-</span> </span>
-<span>  <span class='co'>## you can automatically retrieve a boudning box (pr specify one manually)</span></span>
-<span>  <span class='fu'><a href='https://docs.ropensci.org/osmdata/reference/getbb.html'>getbb</a></span><span class='op'>(</span><span class='st'>"Berlin"</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span></span>
+<span>  <span class='co'>## you can automatically retrieve a bounding box (pr specify one manually)</span></span>
+<span><span class='va'>bounding_box</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/osmdata/reference/getbb.html'>getbb</a></span><span class='op'>(</span>place_name <span class='op'>=</span> <span class='st'>"Berlin"</span><span class='op'>)</span></span>
 <span>  <span class='co'>## build an Overpass query</span></span>
-<span>  <span class='fu'><a href='https://docs.ropensci.org/osmdata/reference/opq.html'>opq</a></span><span class='op'>(</span>timeout <span class='op'>=</span> <span class='fl'>999</span><span class='op'>)</span> <span class='op'><a href='https://magrittr.tidyverse.org/reference/pipe.html'>%&gt;%</a></span></span>
+<span><span class='va'>query</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/osmdata/reference/opq.html'>opq</a></span><span class='op'>(</span>bbox <span class='op'>=</span> <span class='va'>bounding_box</span><span class='op'>)</span></span>
 <span>  <span class='co'>## access particular feature</span></span>
-<span>  <span class='fu'><a href='https://docs.ropensci.org/osmdata/reference/add_osm_feature.html'>add_osm_feature</a></span><span class='op'>(</span><span class='st'>"craft"</span>, <span class='st'>"beekeeper"</span><span class='op'>)</span></span>
+<span><span class='va'>beekeeper_query</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/osmdata/reference/add_osm_feature.html'>add_osm_feature</a></span><span class='op'>(</span>opq <span class='op'>=</span> <span class='va'>query</span>, </span>
+<span>                                   key <span class='op'>=</span> <span class='st'>"craft"</span>, </span>
+<span>                                   value <span class='op'>=</span> <span class='st'>"beekeeper"</span><span class='op'>)</span></span>
 <span>  </span>
 <span><span class='co'>## download data</span></span>
 <span><span class='va'>sf_beekeepers</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://docs.ropensci.org/osmdata/reference/osmdata_sf.html'>osmdata_sf</a></span><span class='op'>(</span><span class='va'>beekeeper_query</span><span class='op'>)</span></span></code></pre>
@@ -1848,7 +1851,7 @@ First 10 features:
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>sf_beekeepers</span><span class='op'>$</span><span class='va'>osm_points</span><span class='op'>)</span></span></code></pre>
 </div>
-<pre><code>Simple feature collection with 6 features and 27 fields
+<pre><code>Simple feature collection with 6 features and 41 fields
 Geometry type: POINT
 Dimension:     XY
 Bounding box:  xmin: 13.24443 ymin: 52.35861 xmax: 13.69093 ymax: 52.573
@@ -1867,27 +1870,62 @@ Geodetic CRS:  WGS 84
 417509805          &lt;NA&gt;        &lt;NA&gt;        &lt;NA&gt;       &lt;NA&gt;
 597668310          &lt;NA&gt;        &lt;NA&gt;        &lt;NA&gt;       &lt;NA&gt;
 597668311          &lt;NA&gt;        &lt;NA&gt;        &lt;NA&gt;       &lt;NA&gt;
-          contact:email contact:phone contact:website craft email
-358407135          &lt;NA&gt;          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;
-358407138          &lt;NA&gt;          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;
-417509803          &lt;NA&gt;          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;
-417509805          &lt;NA&gt;          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;
-597668310          &lt;NA&gt;          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;
-597668311          &lt;NA&gt;          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;
-          facebook instagram man_made opening_hours operator organic
-358407135     &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;
-358407138     &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;
-417509803     &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;
-417509805     &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;
-597668310     &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;
-597668311     &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;     &lt;NA&gt;    &lt;NA&gt;
-          phone product shop source website wheelchair works
-358407135  &lt;NA&gt;    &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
-358407138  &lt;NA&gt;    &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
-417509803  &lt;NA&gt;    &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
-417509805  &lt;NA&gt;    &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
-597668310  &lt;NA&gt;    &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
-597668311  &lt;NA&gt;    &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
+          check_date:currency:XBT contact:email contact:mobile
+358407135                    &lt;NA&gt;          &lt;NA&gt;           &lt;NA&gt;
+358407138                    &lt;NA&gt;          &lt;NA&gt;           &lt;NA&gt;
+417509803                    &lt;NA&gt;          &lt;NA&gt;           &lt;NA&gt;
+417509805                    &lt;NA&gt;          &lt;NA&gt;           &lt;NA&gt;
+597668310                    &lt;NA&gt;          &lt;NA&gt;           &lt;NA&gt;
+597668311                    &lt;NA&gt;          &lt;NA&gt;           &lt;NA&gt;
+          contact:phone contact:website craft currency:XBT email
+358407135          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;
+358407138          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;
+417509803          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;
+417509805          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;
+597668310          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;
+597668311          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;
+          facebook  fax instagram man_made opening_hours
+358407135     &lt;NA&gt; &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;
+358407138     &lt;NA&gt; &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;
+417509803     &lt;NA&gt; &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;
+417509805     &lt;NA&gt; &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;
+597668310     &lt;NA&gt; &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;
+597668311     &lt;NA&gt; &lt;NA&gt;      &lt;NA&gt;     &lt;NA&gt;          &lt;NA&gt;
+          opening_hours:signed operator operator:legal organic
+358407135                 &lt;NA&gt;     &lt;NA&gt;           &lt;NA&gt;    &lt;NA&gt;
+358407138                 &lt;NA&gt;     &lt;NA&gt;           &lt;NA&gt;    &lt;NA&gt;
+417509803                 &lt;NA&gt;     &lt;NA&gt;           &lt;NA&gt;    &lt;NA&gt;
+417509805                 &lt;NA&gt;     &lt;NA&gt;           &lt;NA&gt;    &lt;NA&gt;
+597668310                 &lt;NA&gt;     &lt;NA&gt;           &lt;NA&gt;    &lt;NA&gt;
+597668311                 &lt;NA&gt;     &lt;NA&gt;           &lt;NA&gt;    &lt;NA&gt;
+          organic:label payment:lightning
+358407135          &lt;NA&gt;              &lt;NA&gt;
+358407138          &lt;NA&gt;              &lt;NA&gt;
+417509803          &lt;NA&gt;              &lt;NA&gt;
+417509805          &lt;NA&gt;              &lt;NA&gt;
+597668310          &lt;NA&gt;              &lt;NA&gt;
+597668311          &lt;NA&gt;              &lt;NA&gt;
+          payment:lightning_contactless payment:onchain phone produce
+358407135                          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;
+358407138                          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;
+417509803                          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;
+417509805                          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;
+597668310                          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;
+597668311                          &lt;NA&gt;            &lt;NA&gt;  &lt;NA&gt;    &lt;NA&gt;
+          product ref:Bioland ref:vatin shop source
+358407135    &lt;NA&gt;        &lt;NA&gt;      &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;
+358407138    &lt;NA&gt;        &lt;NA&gt;      &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;
+417509803    &lt;NA&gt;        &lt;NA&gt;      &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;
+417509805    &lt;NA&gt;        &lt;NA&gt;      &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;
+597668310    &lt;NA&gt;        &lt;NA&gt;      &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;
+597668311    &lt;NA&gt;        &lt;NA&gt;      &lt;NA&gt; &lt;NA&gt;   &lt;NA&gt;
+          toilets:wheelchair website wheelchair works
+358407135               &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
+358407138               &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
+417509803               &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
+417509805               &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
+597668310               &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
+597668311               &lt;NA&gt;    &lt;NA&gt;       &lt;NA&gt;  &lt;NA&gt;
                            geometry
 358407135 POINT (13.69068 52.35918)
 358407138 POINT (13.69093 52.35894)
@@ -1911,7 +1949,7 @@ Geodetic CRS:  WGS 84
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Beekeepers in Berlin"</span>,</span>
 <span>       caption <span class='op'>=</span> <span class='st'>"© OpenStreetMap contributors"</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="r-spatial-data_files/figure-html5/plot-osmdata-1.png" width="576" /></p>
+<p><img src="r-spatial-data_files/figure-html5/plot-osmdata-1.png" alt="" width="576" /></p>
 </div>
 <h2 id="elevatr">{elevatr}</h2>
 <p>The <a href="https://github.com/jhollist/elevatr/"><code>{elevatr}</code></a> (<a href="https://github.com/jhollist/elevatr/" class="uri">https://github.com/jhollist/elevatr/</a>) is an R package that provides access to elevation data from AWS Open Data Terrain Tiles and the Open Topography Global data sets API for raster digital elevation models (DEMs).</p>
@@ -1921,7 +1959,7 @@ Geodetic CRS:  WGS 84
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='co'>## install package</span></span>
 <span><span class='co'># install.packages("elevatr")</span></span>
 <span></span>
-<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/jhollist/elevatr/'>elevatr</a></span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/usepa/elevatr/'>elevatr</a></span><span class='op'>)</span></span>
 <span></span>
 <span><span class='co'>## manually specify corners of the bounding box of the US</span></span>
 <span><span class='va'>bbox_usa</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>125.0011</span>, <span class='op'>-</span><span class='fl'>66.9326</span><span class='op'>)</span>, </span>
@@ -1936,9 +1974,9 @@ Geodetic CRS:  WGS 84
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>elev_usa</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/elevatr/man/get_elev_raster.html'>get_elev_raster</a></span><span class='op'>(</span>locations <span class='op'>=</span> <span class='va'>sf_bbox_usa</span>, z <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span></span>
 <span></span>
-<span><span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/terra/man/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>elev_usa</span><span class='op'>)</span></span></code></pre>
+<span><span class='fu'>terra</span><span class='fu'>::</span><span class='fu'><a href='https://rspatial.github.io/terra/reference/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>elev_usa</span><span class='op'>)</span></span></code></pre>
 </div>
-<p><img src="r-spatial-data_files/figure-html5/data-plot-elevatr-1.png" width="864" /></p>
+<p><img src="r-spatial-data_files/figure-html5/data-plot-elevatr-1.png" alt="" width="864" /></p>
 </div>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

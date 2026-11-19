@@ -207,13 +207,15 @@ head(available_features())
 head(available_tags("craft"))
 
 ## building the query, e.g. beekeepers
-beekeeper_query <- 
-  ## you can automatically retrieve a boudning box (pr specify one manually)
-  getbb("Berlin") %>%
+
+  ## you can automatically retrieve a bounding box (pr specify one manually)
+bounding_box <- getbb(place_name = "Berlin")
   ## build an Overpass query
-  opq(timeout = 999) %>%
+query <- opq(bbox = bounding_box)
   ## access particular feature
-  add_osm_feature("craft", "beekeeper")
+beekeeper_query <- add_osm_feature(opq = query, 
+                                   key = "craft", 
+                                   value = "beekeeper")
   
 ## download data
 sf_beekeepers <- osmdata_sf(beekeeper_query)
