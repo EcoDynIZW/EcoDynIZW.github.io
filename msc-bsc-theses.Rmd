@@ -22,6 +22,9 @@ For older Bachelor and Master theses please check here:<br> [2025](msc-bsc-these
 
 <div class='headerbox'><hbox>Completed Theses in 2026</hbox></div><br>
 
+* Untersuchung zum Erfolg einer Ansiedlung der Östlichen Smaragdeidechse (*Lacerta viridis*) im Raum Potsdam. Populationsbewertung mithilfe von Capture-Mark-Recapture-Daten und des Bewertungsschemas für das bundesweite FFH-Monitoring. 
+**Malte Mohrbacher**, <span class='desaturated'>26.11.2026 BSc. TU Berlin, Ecology and Environmental Planning. Supervisor: Stephanie Kramer-Schadt, N. Schneeweiß (LfU BB).</span>
+
 * Nisten ohne Sorgen: Singvogelschutz im Park Sanssouci. Wie wirkt sich die Anbringung von Prädatorenschutzvorrichtungen (Tunnelaufsätzen) an Nistkästen im Park Sanssouci auf den Bruterfolg und das Prädationsrisiko höhlenbrütender Singvögel aus? **Mia Spuhl**, <span class='desaturated'>01.11.2026 BSc. TU Berlin, Ecology and Environmental Planning. Supervisor: Stephanie Kramer-Schadt, Jana Eccard (UP).</span>
 
 * Non-invasive monitoring of reproductive parameters in common starling (*Sturnus vulgaris*) in Brandenburg. **Konstantin Andreas Grandl**, <span class='desaturated'>15.10.2026 MSc. TU Dresden, Dresden, Deutschland, (H. Kühl, M. Grabow)</span>
